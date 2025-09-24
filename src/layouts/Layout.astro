@@ -1,0 +1,29 @@
+---
+import MetaTags from '@/components/MetaTags.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  schema?: object;
+}
+
+const { title, description, schema } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/images/brand/logo.png" />
+    <MetaTags title={title} description={description} schema={schema} />
+  </head>
+  <body class="font-display">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

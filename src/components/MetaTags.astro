@@ -1,0 +1,44 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  schema?: object;
+}
+
+const { title, description, schema }: Props = Astro.props;
+
+const baseUrl = 'https://www.kilometrosporexplorar.es';
+const pathname = Astro.url.pathname;
+const fullUrl = `${baseUrl}${pathname}`;
+---
+
+<link rel="sitemap" href={`${baseUrl}/sitemap-index.xml`} />
+<link rel="canonical" href={fullUrl} />
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<!-- Open Graph tags -->
+<meta property="og:title" content={title} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={fullUrl} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={`${baseUrl}/images/brand/logo.png`} />
+<meta property="og:image:width" content="850" />
+<meta property="og:image:height" content="425" />
+<meta property="og:image:alt" content="Logo de Kilómetros por Explorar" />
+
+<!-- Twitter tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={`${baseUrl}/images/brand/logo.png`} />
+<meta name="twitter:image:alt" content="Logo de Kilómetros por Explorar" />
+<meta name="twitter:site" content="@kilometrosporexplorar" />
+<meta name="twitter:creator" content="@kilometrosporexplorar" />
+
+<!-- Schema -->
+{
+  schema && (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  )
+}

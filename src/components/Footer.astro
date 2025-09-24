@@ -1,0 +1,125 @@
+---
+import Instagram from '@/assets/logos/instagram.svg';
+import TikTok from '@/assets/logos/tiktok.svg';
+import Facebook from '@/assets/logos/facebook.svg';
+import Logo from '@/assets/logo.svg';
+
+interface Social {
+  name: 'Instagram' | 'TikTok' | 'Facebook';
+  href: string;
+  icon: typeof Instagram;
+}
+
+interface FooterLink {
+  title: string;
+  sublinks?: { title: string; url: string }[];
+}
+
+const socials: Social[] = [
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/kilometrosporexplorar',
+    icon: Instagram,
+  },
+  {
+    name: 'TikTok',
+    href: 'https://www.tiktok.com/@kilometrosporexplorar',
+    icon: TikTok,
+  },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/kilometrosporexplorar',
+    icon: Facebook,
+  },
+];
+
+const footerLinks: FooterLink[] = [
+  {
+    title: 'Destinos Populares',
+    sublinks: [
+      {
+        title: 'Kioto',
+        url: '/destinos/kioto',
+      },
+      {
+        title: 'Santorini',
+        url: '/destinos/santorini',
+      },
+      {
+        title: 'Machu Picchu',
+        url: '/destinos/machu-picchu',
+      },
+    ],
+  },
+  {
+    title: 'Contacto',
+    sublinks: [
+      {
+        title: 'contacto@kilometrosporexplorar.es',
+        url: 'mailto:contacto@kilometrosporexplorar.es',
+      },
+    ],
+  },
+  {
+    title: 'Otros',
+    sublinks: [
+      {
+        title: 'Aviso Legal',
+        url: '/aviso-legal',
+      },
+      {
+        title: 'Términos y Condiciones',
+        url: '/terminos-y-condiciones',
+      },
+      {
+        title: 'Política de Privacidad',
+        url: '/politica-de-privacidad-y-cookies',
+      },
+    ],
+  },
+];
+---
+
+<footer class="text-gray-900 border-t border-gray-300">
+  <div class="max-w-5xl mx-auto pt-8 lg:pt-12 pb-4 px-8">
+    <div class="flex flex-row items-center justify-between">
+      <Logo class="w-16 h-auto" />
+      <div class="flex flex-row gap-2">
+        {
+          socials.map(social => (
+            <a
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
+              class="hover:scale-110 transition-transform duration-200"
+            >
+              <social.icon />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+    <div class="mt-6 flex flex-wrap justify-between lg:gap-12 text-gray-900">
+      {
+        footerLinks.map(link => (
+          <div class="flex flex-col my-4 lg:my-0">
+            <p class="font-semibold text-xl">{link.title}</p>
+            {link.sublinks && (
+              <div>
+                {link.sublinks.map(sublink => (
+                  <div>
+                    <a href={sublink.url} class="hover:text-primary text-lg">
+                      {sublink.title}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))
+      }
+    </div>
+    <div class="mt-4 text-center">&copy 2025 Kilómetros por Explorar</div>
+  </div>
+</footer>

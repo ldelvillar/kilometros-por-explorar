@@ -1,0 +1,12 @@
+dist/
+node_modules/
+.build/
+.next/
+out/
+.git/
+.env
+.env.*.local
+.vscode/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

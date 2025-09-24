@@ -1,0 +1,58 @@
+---
+import Logo from '@/assets/logo.svg';
+import Menu from '@/assets/menu.svg';
+---
+
+<header
+  class="w-full sticky top-0 bg-white text-gray-800 border border-gray-300 z-40"
+>
+  <div class="container mx-auto p-3 flex items-center justify-between">
+    <a href="/" class="flex items-center font-bold text-lg">
+      <Logo class="size-8 mr-2" />
+      Kilómetros por Explorar
+    </a>
+
+    <nav class="hidden lg:flex lg:items-center space-x-8 text-base">
+      <a href="/destinos" class="hover:text-primary">Destinos</a>
+      <a href="/blog" class="hover:text-primary">Blog</a>
+      <a href="/clientes" class="hover:text-primary">Clientes</a>
+      <a href="/sobre-nosotros" class="hover:text-primary">Sobre Nosotros</a>
+      <a
+        href="/contacto"
+        class="px-4 py-2 bg-primary font-bold text-white rounded-xl hover:bg-primary/90 transition duration-300"
+        >Planifica tu Viaje</a
+      >
+    </nav>
+
+    <button id="menu-toggle" class="lg:hidden focus:outline-none">
+      <Menu class="size-6" />
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav
+    id="mobile-menu"
+    class="space-y-4 p-4 lg:hidden h-screen hidden backdrop-blur-lg"
+  >
+    <a href="/destinos" class="block hover:text-gray-900">Destinos</a>
+    <a href="/blog" class="block hover:text-gray-900">Blog</a>
+    <a href="/clientes" class="block hover:text-gray-900">Clientes</a>
+    <a href="/sobre-nosotros" class="block hover:text-gray-900"
+      >Sobre Nosotros</a
+    >
+    <a
+      href="/contacto"
+      class="px-4 py-2 bg-primary font-bold text-white rounded-xl hover:bg-primary/90 transition duration-300"
+      >Planifica tu Viaje</a
+    >
+  </nav>
+</header>
+
+<script>
+  // Toggle mobile menu
+  document.getElementById('menu-toggle')?.addEventListener('click', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu?.classList.toggle('hidden');
+    mobileMenu?.classList.toggle('block');
+  });
+</script>

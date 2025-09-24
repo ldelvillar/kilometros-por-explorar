@@ -1,0 +1,36 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Hero from '@/sections/Hero.astro';
+import Services from '@/sections/Services.astro';
+import PopularDestinations from '@/sections/PopularDestinations.astro';
+import Testimonials from '@/sections/Testimonials.astro';
+import Faq from '@/sections/Faq.astro';
+import Contact from '@/sections/Contact.astro';
+
+const title = 'Planificación Profesional de Viajes - Kilómetros por Explorar';
+const description =
+  'Planificamos tu viaje de forma profesional y económica. Descubre destinos, itinerarios personalizados a medida y consejos de viaje con nosotros.';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'TravelAgency',
+  name: 'Kilómetros por Explorar',
+  description: description,
+  url: 'https://www.kilometrosporexplorar.es',
+  logo: 'https://www.kilometrosporexplorar.es/images/brand/logo.png',
+  sameAs: [
+    'https://www.facebook.com/kilometrosporexplorar',
+    'https://www.instagram.com/kilometrosporexplorar',
+  ],
+};
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <main>
+    <Hero />
+    <Services />
+    <PopularDestinations />
+    <Testimonials />
+    <Faq />
+    <Contact />
+  </main>
+</Layout>

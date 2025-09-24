@@ -1,0 +1,64 @@
+---
+import ContactForm from '@/components/ContactForm.astro';
+import Location from '@/assets/location.svg';
+---
+
+<section class="max-w-7xl mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
+  <div class="md:w-1/2">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8">Contáctanos</h2>
+    <p class="mb-8 text-gray-600 leading-relaxed">
+      Estamos aquí para ayudarte a planificar tu viaje ideal. Completa el
+      formulario a continuación o escríbenos a <a
+        href="mailto:info@kilometrosporexplorar.es"
+        class="text-primary hover:underline">info@kilometrosporexplorar.es</a
+      > y nos pondremos en contacto contigo lo antes posible.
+    </p>
+
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold text-gray-800 mb-4">
+        Nuestra Ubicación
+      </h3>
+      <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280747604!2d-3.818313074683268!3d40.437574334217685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2ses!4v1695486987654!5m2!1sen!2ses"
+          width="100%"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de Kilómetros por Explorar en Madrid"></iframe>
+      </div>
+      <div class="mt-4 text-sm text-gray-600">
+        <p class="flex items-center gap-2">
+          <Location class="size-4" />
+          Madrid, España
+        </p>
+        <a
+          href="https://maps.google.com/?q=Madrid,Spain"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 mt-2 text-primary hover:text-primary/80 transition-colors duration-200"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            ></path>
+          </svg>
+          Ver en Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 md:w-1/2">
+    <ContactForm />
+  </div>
+</section>

@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Onest';
+  src:
+    url('/fonts/Onest-VariableFont_wght.woff2') format('woff2-variations'),
+    url('/fonts/Onest-VariableFont_wght.woff2') format('woff2'),
+    url('/fonts/Onest-VariableFont_wght.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #12a3ed;
+  --font-display: 'Onest', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
