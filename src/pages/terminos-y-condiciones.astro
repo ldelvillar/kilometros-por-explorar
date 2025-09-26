@@ -1,0 +1,313 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getWebPageSchema, getCombinedSchema } from '../config/schemas';
+
+const title = 'Términos y Condiciones';
+const description =
+  'Lee los términos y condiciones de uso de nuestros servicios de viajes y planificación de itinerarios personalizados.';
+const pathname = Astro.url.pathname;
+
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <section class="max-w-4xl mx-auto py-20 px-4">
+    <h1 class="text-4xl font-bold mb-6 text-gray-900">
+      Términos y Condiciones
+    </h1>
+    <p class="text-lg text-gray-700 mb-8">
+      Bienvenido a Kilómetros por Explorar. Al acceder y utilizar nuestro sitio
+      web, solicitar información o contratar nuestros servicios de planificación
+      de viajes, aceptas los siguientes términos y condiciones. Te recomendamos
+      leerlos detenidamente antes de utilizar nuestros servicios turísticos.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      1. Información General y Naturaleza de los Servicios
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Kilómetros por Explorar es una agencia de servicios turísticos
+      especializada en la planificación personalizada de viajes, asesoramiento
+      de destinos, creación de itinerarios a medida y coordinación de servicios
+      turísticos. Actuamos como intermediarios entre los viajeros y los
+      proveedores de servicios turísticos (hoteles, compañías aéreas, empresas
+      de actividades, etc.).
+    </p>
+    <p class="mb-4 text-gray-700">
+      <strong>Importante:</strong> No somos operadores turísticos directos ni propietarios
+      de los servicios que comercializamos (alojamientos, transportes, actividades).
+      Nuestra función es planificar, asesorar y coordinar tu experiencia de viaje
+      con proveedores externos.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      2. Uso del Sitio Web y Servicios
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        El usuario se compromete a proporcionar información veraz y actualizada
+        en las consultas y solicitudes de viaje.
+      </li>
+      <li>
+        No está permitido el uso de nuestros servicios para actividades
+        ilegales, turismo no ético o destinos con restricciones legales
+        vigentes.
+      </li>
+      <li>
+        Los usuarios deben cumplir con todos los requisitos de documentación,
+        visados y vacunación exigidos por los destinos.
+      </li>
+      <li>
+        Nos reservamos el derecho de rechazar solicitudes de servicios que
+        consideren inadecuados o que puedan comprometer la seguridad del
+        viajero.
+      </li>
+      <li>
+        La información sobre destinos, precios y disponibilidad puede cambiar
+        sin previo aviso debido a la naturaleza dinámica del sector turístico.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      3. Propiedad Intelectual y Contenidos Turísticos
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Todos los contenidos, itinerarios, guías de viaje, fotografías, textos
+      descriptivos de destinos y materiales presentes en este sitio son
+      propiedad de Kilómetros por Explorar o de sus respectivos titulares y
+      están protegidos por la legislación vigente de propiedad intelectual.
+    </p>
+    <p class="mb-4 text-gray-700">
+      Los itinerarios y planificaciones personalizadas son creaciones originales
+      de nuestro equipo. Queda prohibida su reproducción, distribución o uso
+      comercial sin autorización expresa por escrito.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      4. Proceso de Contratación y Servicios
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Consulta inicial:</strong> El servicio comienza con una consulta
+        gratuita para entender tus necesidades de viaje.
+      </li>
+      <li>
+        <strong>Propuesta personalizada:</strong> Elaboramos un presupuesto detallado
+        con itinerario, servicios incluidos y condiciones específicas.
+      </li>
+      <li>
+        <strong>Confirmación:</strong> La contratación se formaliza mediante la aceptación
+        del presupuesto y el abono de las señas acordadas.
+      </li>
+      <li>
+        <strong>Gestión y coordinación:</strong> Nos encargamos de coordinar reservas
+        y servicios con proveedores externos.
+      </li>
+      <li>
+        <strong>Asistencia:</strong> Proporcionamos soporte durante el proceso de
+        planificación y, cuando sea posible, durante el viaje.
+      </li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      <strong>Importante:</strong> Los precios finales de servicios turísticos pueden
+      variar hasta la confirmación definitiva debido a cambios en tarifas de proveedores,
+      disponibilidad y tipos de cambio cuando aplique.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      5. Responsabilidad y Limitaciones Específicas del Sector Turístico
+    </h2>
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-gray-900">
+      5.1. Responsabilidad de Kilómetros por Explorar
+    </h3>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        Somos responsables de la calidad del asesoramiento profesional y la
+        planificación de viajes según estándares profesionales del sector.
+      </li>
+      <li>
+        Nos responsabilizamos de la correcta coordinación con proveedores y la
+        gestión de reservas según lo acordado.
+      </li>
+      <li>
+        Mantenemos seguros profesionales y responsabilidad civil específicos
+        para actividades de intermediación turística.
+      </li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-gray-900">
+      5.2. Limitaciones de Responsabilidad
+    </h3>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Servicios de terceros:</strong> No nos responsabilizamos de la calidad
+        directa de servicios prestados por hoteles, aerolíneas, empresas de actividades
+        u otros proveedores externos.
+      </li>
+      <li>
+        <strong>Fuerza mayor:</strong> No asumimos responsabilidad por cancelaciones
+        o cambios debidos a condiciones meteorológicas, huelgas, desastres naturales,
+        restricciones gubernamentales, pandemias o situaciones imprevistas.
+      </li>
+      <li>
+        <strong>Documentación:</strong> Es responsabilidad del viajero obtener pasaportes,
+        visados, vacunas y documentación requerida para el destino.
+      </li>
+      <li>
+        <strong>Comportamiento del viajero:</strong> No nos responsabilizamos de
+        consecuencias derivadas del comportamiento inadecuado del cliente durante
+        el viaje.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      6. Política de Cancelaciones y Modificaciones
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Cancelaciones por el cliente:</strong> Se aplicarán las condiciones
+        de cancelación específicas de cada proveedor turístico más nuestros gastos
+        de gestión.
+      </li>
+      <li>
+        <strong>Modificaciones:</strong> Los cambios en fechas, destinos o servicios
+        están sujetos a disponibilidad y pueden generar costes adicionales.
+      </li>
+      <li>
+        <strong>Reembolsos:</strong> Se procesarán según las condiciones de cada
+        proveedor, descontando gastos no recuperables y comisiones de gestión.
+      </li>
+      <li>
+        <strong>Seguros de cancelación:</strong> Recomendamos encarecidamente la
+        contratación de seguros de viaje que cubran cancelaciones.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      7. Protección de Datos y Confidencialidad
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Los datos personales facilitados serán tratados conforme a nuestra <a
+        href="/politica-de-privacidad-y-cookies"
+        class="text-primary underline">Política de Privacidad y Cookies</a
+      > y la normativa vigente en materia de protección de datos.
+    </p>
+    <p class="mb-4 text-gray-700">
+      <strong>Importante:</strong> Algunos datos pueden ser compartidos con proveedores
+      turísticos, autoridades de destino y entidades de seguridad según requisitos
+      legales del país de destino.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      8. Precios y Condiciones de Pago
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        Los precios se confirman en el momento de la aceptación del presupuesto
+        y pueden incluir servicios, tasas, impuestos y gastos de gestión.
+      </li>
+      <li>
+        Se requiere una seña del 30-50% para iniciar gestiones, con el saldo
+        pendiente antes del inicio del viaje.
+      </li>
+      <li>
+        Los pagos se pueden realizar por transferencia bancaria, tarjeta de
+        crédito o métodos acordados específicamente.
+      </li>
+      <li>
+        Cambios en tipos de cambio pueden afectar el precio final cuando se
+        trate de servicios en moneda extranjera.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      9. Modificaciones de los Términos
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Kilómetros por Explorar se reserva el derecho de actualizar estos términos
+      y condiciones para adaptarlos a cambios legislativos del sector turístico,
+      nuevos servicios o mejoras operativas. Las modificaciones serán publicadas
+      en esta página y notificadas a clientes con servicios activos.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      10. Resolución de Conflictos y Reclamaciones
+    </h2>
+    <p class="mb-4 text-gray-700">
+      En caso de cualquier incidencia o reclamación relacionada con nuestros
+      servicios:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Primera instancia:</strong> Contacta directamente con nuestro equipo
+        para resolución amistosa del conflicto.
+      </li>
+      <li>
+        <strong>Mediación:</strong> Podemos recurrir a servicios de mediación especializados
+        en turismo si es necesario.
+      </li>
+      <li>
+        <strong>Arbitraje de consumo:</strong> Los consumidores pueden acudir a las
+        Juntas Arbitrales de Consumo competentes.
+      </li>
+      <li>
+        <strong>Jurisdicción:</strong> En caso de procedimiento judicial, será competente
+        la jurisdicción española según lo establecido en el Aviso Legal.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      11. Recomendaciones y Buenas Prácticas
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Seguros:</strong> Recomendamos encarecidamente contratar seguros
+        de viaje que cubran cancelación, asistencia médica y responsabilidad civil.
+      </li>
+      <li>
+        <strong>Documentación:</strong> Verifica requisitos de entrada al destino
+        con antelación suficiente (pasaporte, visados, vacunas).
+      </li>
+      <li>
+        <strong>Información actualizada:</strong> Consulta las recomendaciones de
+        viaje del Ministerio de Asuntos Exteriores para tu destino.
+      </li>
+      <li>
+        <strong>Comunicación:</strong> Mantén comunicación fluida con nuestro equipo
+        durante todo el proceso de planificación.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      12. Contacto y Asistencia
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Para cualquier consulta relacionada con estos términos y condiciones,
+      reclamaciones o asistencia, puedes contactarnos:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Email:</strong>
+        <a
+          href="mailto:contacto@kilometrosporexplorar.es"
+          class="text-primary underline">contacto@kilometrosporexplorar.es</a
+        >
+      </li>
+      <li>
+        <strong>Teléfono:</strong> +34 604 11 26 28
+      </li>
+      <li>
+        <strong>Formulario web:</strong>
+        <a href="/contacto" class="text-primary underline"
+          >formulario de contacto</a
+        >
+      </li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      <strong>Horario de atención:</strong> Lunes a viernes de 9:00 a 18:00h. Para
+      emergencias durante viajes activos, proporcionamos números de contacto de emergencia
+      según el destino.
+    </p>
+  </section>
+</Layout>

@@ -1,0 +1,244 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getWebPageSchema, getCombinedSchema } from '../config/schemas';
+
+const title = 'Aviso Legal';
+const description =
+  'Consulta el aviso legal de Kilómetros por Explorar: información sobre titularidad, condiciones de uso, propiedad intelectual y limitación de responsabilidad.';
+const pathname = Astro.url.pathname;
+
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <section class="max-w-4xl mx-auto py-20 px-4">
+    <h1 class="text-4xl font-bold mb-6 text-gray-900">Aviso Legal</h1>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      1. Identificación y Titularidad
+    </h2>
+    <p class="mb-4 text-gray-700">
+      En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de
+      Servicios de la Sociedad de la Información y Comercio Electrónico, se
+      exponen los datos identificativos:
+    </p>
+    <ul class="mb-4 text-gray-700 pl-6 list-disc">
+      <li><b>Razón Social:</b> Kilómetros por Explorar</li>
+      <li><b>NIF/CIF:</b> [Pendiente de asignar]</li>
+      <li>
+        <b>Dirección:</b> [Dirección completa de la empresa]
+      </li>
+      <li>
+        <b>Correo electrónico:</b>
+        <a
+          href="mailto:contacto@kilometrosporexplorar.es"
+          class="text-primary underline">contacto@kilometrosporexplorar.es</a
+        >
+      </li>
+      <li>
+        <b>Teléfono:</b> +34 604 11 26 28
+      </li>
+      <li>
+        <b>Sitio Web:</b>
+        <a
+          href="https://www.kilometrosporexplorar.es"
+          class="text-primary underline">https://www.kilometrosporexplorar.es</a
+        >
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">2. Finalidad</h2>
+    <p class="mb-4 text-gray-700">
+      El sitio web tiene como finalidad ofrecer servicios de planificación y
+      asesoramiento de viajes, creación de itinerarios personalizados, reservas
+      de alojamientos y actividades turísticas, así como información y consejos
+      sobre destinos de viaje para particulares y empresas.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      3. Condiciones de Uso
+    </h2>
+    <p class="mb-4 text-gray-700">
+      El acceso y uso de este sitio web atribuye la condición de Usuario e
+      implica la aceptación plena de todas las cláusulas y condiciones de uso
+      incluidas en este Aviso Legal, así como en la <a
+        href="/politica-de-privacidad-y-cookies"
+        class="text-primary underline">Política de Privacidad y Cookies</a
+      > y los <a href="/terminos-y-condiciones" class="text-primary underline"
+        >Términos y Condiciones</a
+      >.
+    </p>
+    <p class="mb-4 text-gray-700">
+      El Usuario se compromete a no utilizar los contenidos del sitio web con
+      fines ilícitos, prohibidos o lesivos de derechos e intereses de terceros,
+      o que puedan dañar, inutilizar, sobrecargar o impedir la normal
+      utilización del sitio.
+    </p>
+    <p class="mb-4 text-gray-700">
+      El Titular se reserva el derecho de retirar comentarios o aportaciones que
+      vulneren la legalidad vigente, los derechos de terceros o que, a su
+      juicio, no resulten adecuados para su publicación.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      4. Medidas de Seguridad
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Los datos personales facilitados podrán almacenarse en bases de datos,
+      automatizadas o no, titularidad exclusiva de Kilómetros por Explorar,
+      asumiendo todas las medidas técnicas, organizativas y de seguridad para
+      garantizar la confidencialidad, integridad y calidad de la información,
+      conforme a la normativa vigente en materia de protección de datos.
+    </p>
+    <p class="mb-4 text-gray-700">
+      No obstante, el Usuario debe ser consciente de que las medidas de
+      seguridad en Internet no son inexpugnables.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      5. Tratamiento de Datos Personales
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Toda la información relativa al tratamiento de datos personales se
+      encuentra detallada en nuestra <a
+        href="/politica-de-privacidad-y-cookies"
+        class="text-primary underline">Política de Privacidad y Cookies</a
+      >.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      6. Contenidos e información turística
+    </h2>
+    <p class="mb-4 text-gray-700">
+      El Titular ha obtenido la información turística y los materiales incluidos
+      en el sitio web de fuentes consideradas fiables, incluyendo proveedores
+      turísticos, organismos oficiales de turismo y experiencia propia. Sin
+      embargo, no garantiza que toda la información sea exacta, completa o esté
+      actualizada en todo momento, especialmente en lo referente a precios,
+      disponibilidad, condiciones climáticas y servicios de terceros.
+    </p>
+    <p class="mb-4 text-gray-700">
+      La información sobre destinos, alojamientos, actividades y servicios
+      turísticos tiene carácter orientativo. Los usuarios deben verificar
+      siempre las condiciones actuales antes de realizar cualquier reserva o
+      viaje.
+    </p>
+    <p class="mb-4 text-gray-700">
+      Queda prohibido transmitir o enviar a través del sitio web cualquier
+      contenido ilegal, virus informáticos o mensajes que afecten derechos del
+      Titular o de terceros.
+    </p>
+    <p class="mb-4 text-gray-700">
+      El Titular se reserva el derecho a modificar, suspender, cancelar o
+      restringir el contenido del sitio web sin necesidad de previo aviso,
+      especialmente cuando se trate de actualizaciones de información turística
+      o cambios en las condiciones de los servicios ofrecidos.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      7. Enlaces a otros sitios web y servicios de terceros
+    </h2>
+    <p class="mb-4 text-gray-700">
+      El sitio web puede proporcionar enlaces a otros sitios gestionados por
+      terceros, incluyendo proveedores de servicios turísticos, sistemas de
+      reservas, compañías aéreas, hoteles y otras entidades del sector
+      turístico. El Titular no se responsabiliza del contenido ni de las
+      políticas de privacidad de dichos sitios. El establecimiento de un enlace
+      no implica en ningún caso la existencia de relaciones comerciales o de
+      otra índole entre el Titular y el propietario del sitio enlazado.
+    </p>
+    <p class="mb-4 text-gray-700">
+      Los usuarios que accedan a sitios web de terceros lo hacen bajo su propia
+      responsabilidad y deben consultar las condiciones de uso y políticas de
+      privacidad de cada sitio.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      8. Propiedad intelectual e industrial
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Todos los derechos están reservados. Queda prohibida la reproducción,
+      almacenamiento permanente y difusión de los contenidos del sitio web con
+      fines públicos o comerciales sin el consentimiento previo y por escrito
+      del Titular.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      9. Servicios turísticos y responsabilidad
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Kilómetros por Explorar actúa como intermediario en la planificación y
+      asesoramiento de viajes. Los servicios turísticos (alojamientos,
+      transportes, actividades, etc.) son prestados por terceros proveedores
+      independientes. Por tanto, el Titular no asume responsabilidad directa
+      sobre la calidad, disponibilidad o prestación de dichos servicios.
+    </p>
+    <p class="mb-4 text-gray-700">
+      Los precios, disponibilidad y condiciones de los servicios turísticos
+      pueden variar sin previo aviso y están sujetos a las condiciones
+      particulares de cada proveedor. Es responsabilidad del cliente verificar y
+      aceptar las condiciones específicas de cada servicio contratado.
+    </p>
+    <p class="mb-4 text-gray-700">
+      El Titular no se hace responsable de cancelaciones, retrasos, cambios de
+      itinerario o cualquier inconveniente derivado de circunstancias ajenas a
+      su control, incluyendo pero no limitándose a: condiciones meteorológicas,
+      huelgas, desastres naturales, restricciones gubernamentales, o situaciones
+      de fuerza mayor.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      10. Limitación de responsabilidad técnica
+    </h2>
+    <p class="mb-4 text-gray-700">
+      El Titular no garantiza que los servicios o contenidos del sitio web sean
+      ininterrumpidos o estén libres de errores, ni que los defectos sean
+      corregidos, ni que el sitio web o el servidor estén libres de virus u
+      otros componentes nocivos, aunque se ponen todos los medios para evitar
+      este tipo de incidentes.
+    </p>
+    <p class="mb-4 text-gray-700">
+      El Titular declina cualquier responsabilidad por daños y perjuicios
+      derivados de interrupciones, errores, caídas de red o cualquier otro daño
+      indirecto causado por causas ajenas al Titular.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      11. Normativa aplicable al sector turístico
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Los servicios de intermediación turística prestados por Kilómetros por
+      Explorar se rigen por la normativa española aplicable al sector turístico,
+      incluyendo la Ley General de Defensa de los Consumidores y Usuarios, el
+      Real Decreto Legislativo 1/2007 del Texto Refundido de la Ley General para
+      la Defensa de los Consumidores, y demás normativa autonómica aplicable.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      12. Jurisdicción
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Este Aviso Legal se rige íntegramente por la legislación española. Para la
+      resolución de cualquier conflicto que pudiera derivarse del acceso al
+      sitio web o de la contratación de servicios turísticos, el usuario y el
+      Titular acuerdan someterse expresamente a los juzgados y tribunales de
+      Madrid, renunciando a cualquier otro fuero general o especial que les
+      pudiera corresponder.
+    </p>
+    <p class="mb-4 text-gray-700">
+      Sin perjuicio de lo anterior, en caso de controversias derivadas de la
+      contratación de servicios turísticos, los consumidores podrán acudir a los
+      organismos de resolución alternativa de conflictos competentes.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">13. Contacto</h2>
+    <p class="mb-4 text-gray-700">
+      Para cualquier consulta relacionada con este Aviso Legal, puedes
+      contactarnos en <a
+        href="mailto:contacto@kilometrosporexplorar.es"
+        class="text-primary underline">contacto@kilometrosporexplorar.es</a
+      >.
+    </p>
+  </section>
+</Layout>

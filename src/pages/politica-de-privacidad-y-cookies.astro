@@ -1,0 +1,382 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getWebPageSchema, getCombinedSchema } from '../config/schemas';
+
+const title = 'Política de Privacidad y Cookies';
+const description =
+  'Consulta nuestra política de privacidad para conocer cómo protegemos y tratamos tus datos personales en Kilómetros por Explorar.';
+const pathname = Astro.url.pathname;
+
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <section class="max-w-4xl mx-auto py-20 px-4">
+    <h1 class="text-4xl font-bold mb-6 text-gray-900">
+      Política de Privacidad
+    </h1>
+    <p class="text-lg text-gray-700 mb-8">
+      En Kilómetros por Explorar nos comprometemos a proteger la privacidad de
+      nuestros usuarios y clientes. A continuación, te explicamos cómo
+      recopilamos, utilizamos y protegemos tus datos personales cuando accedes a
+      nuestro sitio web, solicitas información sobre viajes o contratas nuestros
+      servicios de planificación turística.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      1. Responsable del Tratamiento
+    </h2>
+    <p class="mb-4 text-gray-700">
+      El responsable del tratamiento de los datos es Kilómetros por Explorar,
+      con domicilio en [Dirección completa de la empresa]. Para cualquier
+      consulta relacionada con la protección de datos, puedes contactarnos en:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        Email: <a
+          href="mailto:contacto@kilometrosporexplorar.es"
+          class="text-primary underline">contacto@kilometrosporexplorar.es</a>
+      </li>
+      <li>Teléfono: +34 604 11 26 28</li>
+      <li>
+        Formulario de contacto: <a
+          href="/contacto"
+          class="text-primary underline">contacto</a>
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      2. Datos que Recopilamos
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Datos identificativos:</strong> nombre completo, correo electrónico,
+        teléfono, dirección postal, documento de identidad (para gestiones de viaje).
+      </li>
+      <li>
+        <strong>Datos de viaje:</strong> preferencias de destino, fechas de viaje,
+        número de viajeros, presupuesto, necesidades especiales, experiencias anteriores
+        de viaje.
+      </li>
+      <li>
+        <strong>Datos de navegación:</strong> dirección IP, tipo de dispositivo,
+        páginas visitadas, destinos consultados, tiempo de permanencia en el sitio.
+      </li>
+      <li>
+        <strong>Información de contacto:</strong> datos proporcionados a través de
+        formularios de consulta, solicitudes de presupuesto o contratación de servicios.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      3. Finalidad del Tratamiento
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Planificación de viajes:</strong> diseñar itinerarios personalizados,
+        gestionar reservas y coordinar servicios turísticos según tus preferencias.
+      </li>
+      <li>
+        <strong>Gestión comercial:</strong> procesar solicitudes de información,
+        elaborar presupuestos y gestionar la contratación de servicios de viaje.
+      </li>
+      <li>
+        <strong>Comunicación:</strong> mantener contacto durante el proceso de planificación,
+        enviar confirmaciones de reservas y proporcionar asistencia durante el viaje
+        si es necesario.
+      </li>
+      <li>
+        <strong>Mejora de servicios:</strong> analizar preferencias y experiencias
+        para personalizar futuras recomendaciones y mejorar nuestros servicios.
+      </li>
+      <li>
+        <strong>Obligaciones legales:</strong> cumplir con normativas del sector
+        turístico, fiscales y de protección de datos.
+      </li>
+      <li>
+        <strong>Marketing (con consentimiento):</strong> enviar ofertas personalizadas,
+        novedades sobre destinos y promociones especiales relacionadas con viajes.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      4. Legitimación
+    </h2>
+    <p class="mb-4 text-gray-700">
+      El tratamiento de tus datos se basa en las siguientes bases legales:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Consentimiento:</strong> para consultas iniciales, marketing y comunicaciones
+        promocionales.
+      </li>
+      <li>
+        <strong>Ejecución contractual:</strong> para la planificación, gestión y
+        prestación de servicios de viaje contratados.
+      </li>
+      <li>
+        <strong>Interés legítimo:</strong> para mejorar nuestros servicios y proporcionar
+        recomendaciones personalizadas.
+      </li>
+      <li>
+        <strong>Obligación legal:</strong> para cumplir con normativas del sector
+        turístico y fiscales.
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      5. Conservación de los Datos
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Los plazos de conservación varían según el tipo de datos y su finalidad:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Consultas y presupuestos:</strong> 2 años desde la última comunicación.
+      </li>
+      <li>
+        <strong>Datos de clientes activos:</strong> durante la vigencia de la relación
+        comercial y 6 años posteriores para obligaciones fiscales.
+      </li>
+      <li>
+        <strong>Marketing (con consentimiento):</strong> hasta la retirada del consentimiento
+        o 3 años sin actividad.
+      </li>
+      <li><strong>Datos de navegación web:</strong> máximo 2 años.</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      6. Destinatarios y Cesiones de Datos
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Para la prestación de servicios turísticos, tus datos pueden ser
+      compartidos con:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Proveedores turísticos:</strong> hoteles, aerolíneas, empresas de
+        actividades, agencias locales (solo datos necesarios para la reserva).
+      </li>
+      <li>
+        <strong>Sistemas de pago:</strong> entidades bancarias y pasarelas de pago
+        para procesar transacciones.
+      </li>
+      <li>
+        <strong>Seguros de viaje:</strong> compañías aseguradoras para la contratación
+        de pólizas.
+      </li>
+      <li>
+        <strong>Autoridades competentes:</strong> cuando sea requerido por ley (inmigración,
+        seguridad, etc.).
+      </li>
+      <li>
+        <strong>Proveedores tecnológicos:</strong> servicios de email, CRM y hosting
+        bajo acuerdos de confidencialidad.
+      </li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      Todos los terceros están obligados a mantener la confidencialidad y
+      seguridad de tus datos personales.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      7. Transferencias Internacionales de Datos
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Debido a la naturaleza internacional de los servicios turísticos, tus
+      datos personales pueden ser transferidos a países fuera del Espacio
+      Económico Europeo (EEE):
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Destinos de viaje:</strong> hoteles y proveedores locales en el país
+        de destino necesitan ciertos datos para confirmar reservas.
+      </li>
+      <li>
+        <strong>Servicios tecnológicos:</strong> algunos proveedores de servicios
+        (email, CRM) pueden tener servidores en países terceros con decisión de adecuación
+        o cláusulas contractuales tipo.
+      </li>
+      <li>
+        <strong>Requisitos legales:</strong> autoridades de inmigración y seguridad
+        del país de destino pueden requerir datos del viajero.
+      </li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      En todos los casos, nos aseguramos de que existan garantías adecuadas para
+      la protección de tus datos, mediante decisiones de adecuación de la
+      Comisión Europea, cláusulas contractuales tipo o certificaciones
+      apropiadas.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      8. Derechos de los Usuarios
+    </h2>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>Acceder, rectificar o suprimir tus datos personales.</li>
+      <li>Solicitar la limitación u oposición al tratamiento.</li>
+      <li>Solicitar la portabilidad de tus datos.</li>
+      <li>Retirar el consentimiento en cualquier momento.</li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      Para ejercer estos derechos, puedes contactarnos:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        Email: <a
+          href="mailto:contacto@kilometrosporexplorar.es"
+          class="text-primary underline">contacto@kilometrosporexplorar.es</a>
+      </li>
+      <li>Teléfono: +34 604 11 26 28</li>
+      <li>
+        Formulario web: <a href="/contacto" class="text-primary underline"
+          >formulario de contacto</a>
+      </li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      <strong>Importante para viajeros:</strong> Ten en cuenta que algunos derechos
+      (como la supresión) pueden estar limitados una vez iniciado el proceso de reserva
+      o durante un viaje activo, debido a obligaciones contractuales con proveedores
+      turísticos y requisitos legales de las autoridades de destino.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">8. Seguridad</h2>
+    <p class="mb-4 text-gray-700">
+      En Kilómetros por Explorar aplicamos medidas técnicas y organizativas
+      específicas para el sector turístico para proteger tus datos personales:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        Cifrado de datos sensibles durante la transmisión y almacenamiento
+      </li>
+      <li>Acceso restringido a datos de viaje solo a personal autorizado</li>
+      <li>Copias de seguridad regulares y procedimientos de recuperación</li>
+      <li>Auditorías periódicas de seguridad</li>
+      <li>
+        Protocolos específicos para el manejo de datos durante emergencias de
+        viaje
+      </li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      9. Cambios en la Política
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Nos reservamos el derecho de modificar esta política de privacidad para
+      adaptarla a novedades legislativas o mejoras en nuestros procesos.
+      Cualquier cambio será publicado en esta página.
+    </p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-900">
+      10. Política de Cookies
+    </h2>
+    <p class="mb-4 text-gray-700">
+      Este sitio web utiliza cookies propias y de terceros para mejorar tu
+      experiencia de búsqueda de viajes, recordar tus preferencias de destinos,
+      analizar patrones de navegación turística y ofrecer recomendaciones
+      personalizadas. Al navegar por nuestro sitio, aceptas el uso de cookies en
+      los términos establecidos en esta política.
+    </p>
+    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-900">
+      ¿Qué son las cookies?
+    </h3>
+    <p class="mb-4 text-gray-700">
+      Las cookies son pequeños archivos de texto que se almacenan en tu
+      dispositivo cuando visitas una página web. En el contexto turístico, nos
+      ayudan a recordar tus búsquedas de destinos, preferencias de viaje,
+      presupuestos consultados y facilitar futuras planificaciones.
+    </p>
+    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-900">
+      Tipos de cookies que utilizamos
+    </h3>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <b>Cookies técnicas:</b> esenciales para el funcionamiento del sitio, gestión
+        de formularios de consulta y proceso de solicitud de presupuestos.
+      </li>
+      <li>
+        <b>Cookies de preferencias de viaje:</b> guardan tus destinos favoritos,
+        fechas de interés, número de viajeros y preferencias de alojamiento.
+      </li>
+      <li>
+        <b>Cookies de análisis:</b> nos ayudan a entender qué destinos son más consultados,
+        temporadas de mayor interés y comportamiento de navegación turística (Google
+        Analytics, Hotjar).
+      </li>
+      <li>
+        <b>Cookies de personalización:</b> permiten ofrecer recomendaciones de destinos
+        basadas en tus búsquedas anteriores y mejorar la experiencia de planificación.
+      </li>
+      <li>
+        <b>Cookies de marketing:</b> para mostrar ofertas relevantes de destinos
+        y promociones de viajes (con tu consentimiento).
+      </li>
+    </ul>
+    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-900">
+      Gestión de cookies
+    </h3>
+    <p class="mb-4 text-gray-700">
+      Puedes configurar tu navegador para aceptar o rechazar el uso de cookies,
+      así como eliminarlas en cualquier momento. Ten en cuenta que deshabilitar
+      cookies puede afectar funcionalidades como:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>Guardado de preferencias de destinos y fechas de viaje</li>
+      <li>Funcionalidad del formulario de consultas</li>
+      <li>Personalización de recomendaciones turísticas</li>
+      <li>Análisis de rendimiento del sitio para mejoras</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-900">
+      Cookies de terceros en el sector turístico
+    </h3>
+    <p class="mb-4 text-gray-700">
+      Utilizamos servicios de terceros especializados en turismo y viajes:
+    </p>
+    <ul class="list-disc pl-6 text-gray-700 mb-4">
+      <li>
+        <strong>Google Analytics:</strong> análisis de destinos más buscados y comportamiento
+        de usuarios
+      </li>
+      <li>
+        <strong>Mapas y geolocalización:</strong> para mostrar ubicaciones de destinos
+        y rutas
+      </li>
+      <li>
+        <strong>Redes sociales:</strong> integración de contenido turístico de Instagram,
+        Facebook
+      </li>
+      <li>
+        <strong>Sistemas de reservas:</strong> cookies necesarias para procesos de
+        booking (cuando aplicable)
+      </li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      Consulta las políticas de privacidad de estos proveedores para más
+      información sobre su uso de cookies.
+    </p>
+
+    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-900">
+      Actualizaciones
+    </h3>
+    <p class="mb-4 text-gray-700">
+      Nos reservamos el derecho de modificar esta política de cookies para
+      adaptarla a nuevas funcionalidades turísticas, cambios legislativos o
+      mejoras en la experiencia de usuario. Los cambios serán publicados en esta
+      página.
+    </p>
+
+    <h3 class="text-xl font-semibold mt-6 mb-2 text-gray-900">
+      Contacto sobre cookies
+    </h3>
+    <p class="mb-4 text-gray-700">
+      Si tienes dudas sobre nuestra política de cookies o deseas más información
+      sobre cómo utilizamos las cookies para mejorar tu experiencia de
+      planificación de viajes, contacta con nosotros en <a
+        href="mailto:contacto@kilometrosporexplorar.es"
+        class="text-primary underline">contacto@kilometrosporexplorar.es</a
+      >.
+    </p>
+  </section>
+</Layout>
