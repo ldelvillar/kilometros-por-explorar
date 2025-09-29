@@ -1,36 +1,8 @@
 ---
 import { Image } from 'astro:assets';
+import { getFeaturedDestinations } from '@/data/destinations';
 
-interface Destination {
-  name: string;
-  description: string;
-  href: string;
-  image: string;
-}
-
-const destinations: Destination[] = [
-  {
-    name: 'Kioto, Japón',
-    description:
-      'Experimenta la belleza serena de templos antiguos y jardines vibrantes.',
-    href: '/destinos/kyoto',
-    image: '/images/destinations/kyoto.webp',
-  },
-  {
-    name: 'Santorini, Grecia',
-    description:
-      'Descubre atardeceres impresionantes y pueblos icónicos de casas blancas.',
-    href: '/destinos/santorini',
-    image: '/images/destinations/santorini.webp',
-  },
-  {
-    name: 'Machu Picchu, Perú',
-    description:
-      'Explora las ruinas místicas de una civilización antigua en lo alto de los Andes.',
-    href: '/destinos/machu-picchu',
-    image: '/images/destinations/machu-picchu.webp',
-  },
-];
+const featuredDestinations = getFeaturedDestinations();
 ---
 
 <section class="max-w-7xl mx-auto px-4 py-16">
@@ -38,7 +10,7 @@ const destinations: Destination[] = [
 
   <div class="grid md:grid-cols-3 gap-6">
     {
-      destinations.map(destination => (
+      featuredDestinations.map(destination => (
         <a href={destination.href} class="group">
           <article class="space-y-4">
             <Image

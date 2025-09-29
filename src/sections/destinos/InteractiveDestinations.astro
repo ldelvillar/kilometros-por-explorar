@@ -1,0 +1,284 @@
+---
+import DestinationCard from '@/components/DestinationCard.astro';
+import DestinationSearch from '@/components/DestinationSearch.astro';
+import {
+  getFeaturedDestinations,
+  getDestinationsByCategory,
+} from '@/data/destinations';
+
+const featuredDestinations = getFeaturedDestinations();
+const culturalDestinations = getDestinationsByCategory('cultural');
+const beachDestinations = getDestinationsByCategory('playa');
+const natureDestinations = getDestinationsByCategory('naturaleza');
+const cityDestinations = getDestinationsByCategory('ciudad');
+---
+
+<section class="max-w-7xl mx-auto px-4 pt-4">
+  <DestinationSearch />
+
+  <!-- All Destinations - Always visible initially (organized by categories) -->
+  <div id="all-destinations-section" class="destination-section">
+    <!-- Featured Destinations -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Destinos Destacados</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          featuredDestinations.map((destination, index) => (
+            <DestinationCard
+              destination={destination}
+              loading={index < 3 ? 'eager' : 'lazy'}
+            />
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Cultural Destinations -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Viajes Culturales</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          culturalDestinations.map(destination => (
+            <DestinationCard destination={destination} />
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Beach Destinations -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Escapadas de Playa</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          beachDestinations.map(destination => (
+            <DestinationCard destination={destination} />
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Nature Destinations -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Naturaleza</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          natureDestinations.map(destination => (
+            <DestinationCard destination={destination} />
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- City Destinations -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Ciudades Europeas</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          cityDestinations.map(destination => (
+            <DestinationCard destination={destination} />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Cultural Destinations -->
+  <div id="cultural-section" class="destination-section hidden">
+    <div class="grid md:grid-cols-3 gap-6">
+      {
+        culturalDestinations.map(destination => (
+          <DestinationCard destination={destination} />
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Beach Destinations -->
+  <div id="beach-section" class="destination-section hidden">
+    <div class="grid md:grid-cols-3 gap-6">
+      {
+        beachDestinations.map(destination => (
+          <DestinationCard destination={destination} />
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Nature Destinations -->
+  <div id="nature-section" class="destination-section hidden">
+    <div class="grid md:grid-cols-3 gap-6">
+      {
+        natureDestinations.map(destination => (
+          <DestinationCard destination={destination} />
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- City Destinations -->
+  <div id="city-section" class="destination-section hidden">
+    <div class="grid md:grid-cols-3 gap-6">
+      {
+        cityDestinations.map(destination => (
+          <DestinationCard destination={destination} />
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Search Results (initially hidden) -->
+  <div id="search-results" class="destination-section hidden">
+    <div id="search-results-grid" class="grid md:grid-cols-3 gap-6">
+      <!-- Results will be populated by JavaScript -->
+    </div>
+    <div id="no-results" class="text-center py-8 hidden">
+      <p class="text-gray-500">
+        No se encontraron destinos que coincidan con tu búsqueda.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { searchDestinations } from '@/data/destinations';
+
+  // Category mapping for navigation
+  const categoryMapping = {
+    'Todos los Destinos': 'all-destinations-section',
+    'Viajes Culturales': 'cultural-section',
+    'Escapadas de Playa': 'beach-section',
+    Naturaleza: 'nature-section',
+    'Ciudades Europeas': 'city-section',
+  };
+
+  // Initialize functionality when DOM is loaded
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('nav button');
+    const searchInput = document.querySelector(
+      'input[placeholder="Buscar destinos..."]'
+    ) as HTMLInputElement;
+    const sections = document.querySelectorAll('.destination-section');
+
+    let currentSection = 'all-destinations-section';
+    let isSearching = false;
+
+    // Function to show specific section
+    function showSection(sectionId: string) {
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      });
+      currentSection = sectionId;
+    }
+
+    // Function to create destination card HTML
+    function createDestinationCard(destination: any) {
+      return `
+        <a href="${destination.href}" class="group destination-card" data-category="${destination.category}">
+          <article class="space-y-4">
+            <img
+              src="${destination.image}"
+              alt="${destination.name}"
+              class="w-full h-48 object-cover rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+            <div class="space-y-2">
+              <h3 class="text-lg font-medium text-gray-800 destination-name">
+                ${destination.name}
+              </h3>
+              <p class="text-gray-600 text-sm destination-description">
+                ${destination.description}
+              </p>
+            </div>
+          </article>
+        </a>
+      `;
+    }
+
+    // Function to display search results
+    function displaySearchResults(results: any[]) {
+      const resultsGrid = document.getElementById('search-results-grid');
+      const noResults = document.getElementById('no-results');
+
+      if (!resultsGrid || !noResults) return;
+
+      if (results.length === 0) {
+        resultsGrid.innerHTML = '';
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+        resultsGrid.innerHTML = results.map(createDestinationCard).join('');
+      }
+
+      showSection('search-results');
+    }
+
+    // Tab navigation functionality
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        if (isSearching) {
+          // Clear search when switching tabs
+          searchInput.value = '';
+          isSearching = false;
+        }
+
+        // Remove active state from all tabs
+        tabs.forEach(t => {
+          t.classList.remove('border-gray-900', 'text-gray-900');
+          t.classList.add('border-transparent', 'text-gray-500');
+        });
+
+        // Add active state to clicked tab
+        this.classList.remove('border-transparent', 'text-gray-500');
+        this.classList.add('border-gray-900', 'text-gray-900');
+
+        // Show corresponding section
+        const tabText = this.textContent?.trim() || '';
+        const sectionId =
+          categoryMapping[tabText as keyof typeof categoryMapping];
+        if (sectionId) {
+          showSection(sectionId);
+        }
+      });
+    });
+
+    // Search functionality
+    if (searchInput) {
+      let searchTimeout: number;
+
+      searchInput.addEventListener('input', function () {
+        const query = this.value.trim();
+
+        // Clear previous timeout
+        clearTimeout(searchTimeout);
+
+        // Delay search to avoid too many operations
+        searchTimeout = setTimeout(() => {
+          if (query.length === 0) {
+            // Return to previous section when search is cleared
+            isSearching = false;
+            showSection(currentSection);
+          } else if (query.length >= 2) {
+            // Perform search with minimum 2 characters
+            isSearching = true;
+            const results = searchDestinations(query);
+            displaySearchResults(results);
+          }
+        }, 300);
+      });
+    }
+  });
+</script>
+
+<style>
+  .destination-section {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .destination-section.hidden {
+    display: none;
+  }
+</style>
