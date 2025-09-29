@@ -1,0 +1,63 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '@/layouts/Layout.astro';
+
+const title = 'Página no encontrada - Kilómetros por Explorar';
+const description =
+  'Lo sentimos, la página que buscas no existe. Te ayudamos a encontrar tu camino de vuelta.';
+---
+
+<Layout title={title} description={description}>
+  <main class="max-w-6xl mx-auto px-4 pt-4 pb-20">
+    <div class="bg-primary/10 h-64 w-full rounded-2xl">
+      <Image
+        src="/images/404.webp"
+        alt="Ilustración de página no encontrada"
+        class="h-full w-full object-contain"
+        width={800}
+        height={400}
+      />
+    </div>
+    <div
+      class="mt-8 max-w-4xl mx-auto flex flex-col justify-center items-center"
+    >
+      <h1 class="text-2xl font-bold">Oops! Parece que nos hemos perdido</h1>
+      <p class="mt-4 text-center text-gray-600">
+        Parece que la página que buscas no existe o ha sido movida. No te
+        preocupes, incluso los mejores viajeros se pierden a veces. Vamos a
+        ayudarte a encontrar el camino de vuelta.
+      </p>
+      <div class="mt-8 flex items-center gap-4">
+        <a
+          href="/"
+          class="bg-primary text-white font-bold px-4 py-3 rounded-xl hover:bg-primary/90 transition duration-300"
+        >
+          Volver al Inicio
+        </a>
+        <a
+          href="/destinos"
+          class="text-primary font-bold px-4 py-3 rounded-xl border border-primary hover:bg-primary/10 transition duration-300"
+        >
+          Explorar Destinos
+        </a>
+      </div>
+    </div>
+
+    <style>
+      main {
+        animation: fadeIn 0.6s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </main>
+</Layout>
