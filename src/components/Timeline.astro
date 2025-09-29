@@ -1,0 +1,66 @@
+---
+import HalfArrow from '@/assets/halfArrow.svg';
+
+interface TimelineItem {
+  title: string;
+  date: string;
+  description: string;
+  link?: string;
+}
+
+const timelineItems: TimelineItem[] = [
+  {
+    title: 'Comenzamos Nuestro Viaje',
+    date: 'Enero 2024',
+    description:
+      'En enero de 2024 nos conocimos y desde entonces no hemos dejado de coleccionar experiencias increíbles. Con más de 12 países en nuestro mapa personal, cada viaje nos ha demostrado que las mejores aventuras se viven en compañía.',
+  },
+  {
+    title: 'Lanzamiento del Blog',
+    date: 'Noviembre 2024',
+    description:
+      'Iniciamos nuestro viaje compartiendo nuestras primeras aventuras y consejos de viaje en diferentes plataformas y foros. Hoy en día, nuestro blog es una fuente confiable de inspiración y guía para viajeros de todo el mundo.',
+    link: '/blog',
+  },
+  {
+    title: 'Lanzamiento de la App Móvil',
+    date: 'Julio 2025',
+    description:
+      'Después de planificar cientos de viajes, creamos la app que nos hubiera gustado tener desde el primer día: una herramienta que facilita la planificación de viajes para tener todo lo necesario en un mismo lugar.',
+  },
+];
+---
+
+<ol class="mt-6 ml-1 relative border-s border-gray-200">
+  {
+    timelineItems.map((item, index) => (
+      <li
+        class={`${index === timelineItems.length - 1 ? '' : 'mb-20 md:mb-24'} ms-6`}
+      >
+        <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white" />
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-[40%]">
+            <h3 class="text-xl font-bold text-primary">{item.title}</h3>
+            <time class="text-sm font-normal leading-none text-gray-700">
+              {item.date}
+            </time>
+          </div>
+          <div class="md:w-[60%] md:ml-8">
+            <p class="max-w-lg text-gray-700 mt-8 md:mt-0">
+              {item.description}
+            </p>
+            {item.link && (
+              <a
+                href={item.link}
+                class="mt-6 inline-flex text-sm font-medium text-primary hover:underline focus:text-primary"
+              >
+                Ver más
+                <HalfArrow class="size-5" />
+              </a>
+            )}
+          </div>
+        </div>
+      </li>
+    ))
+  }
+</ol>

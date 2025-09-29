@@ -13,15 +13,18 @@ const description =
       <Image
         src="/images/404.webp"
         alt="Ilustración de página no encontrada"
-        class="h-full w-full object-contain"
         width={800}
         height={400}
+        class="h-full w-full object-contain select-none pointer-events-none"
+        loading="eager"
       />
     </div>
     <div
       class="mt-8 max-w-4xl mx-auto flex flex-col justify-center items-center"
     >
-      <h1 class="text-2xl font-bold">Oops! Parece que nos hemos perdido</h1>
+      <h1 class="text-2xl font-bold text-center">
+        Oops! Parece que nos hemos perdido
+      </h1>
       <p class="mt-4 text-center text-gray-600">
         Parece que la página que buscas no existe o ha sido movida. No te
         preocupes, incluso los mejores viajeros se pierden a veces. Vamos a
