@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import CTA from '@/sections/shared/Cta.astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+
+export async function getStaticPaths() {
+  const posts: CollectionEntry<'blog'>[] = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id.replace('.md', '') },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const title = `${post.data.title} | VLR`;
+const description = post.data.description;
+const pathname = Astro.url.pathname;
+
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <main class="relative z-10 flex flex-1 flex-col bg-white pt-2">
+    <div class="max-w-5xl mx-auto w-full md:-mb-10 lg:-mb-12 xl:-mb-16">
+      <Image
+        width="500"
+        height="500"
+        src={post.data.image}
+        alt={post.data.title}
+        class="w-full h-[240px] md:h-[420px] object-cover"
+        loading="eager"
+      />
+    </div>
+
+    <div
+      class="relative max-w-5xl mx-auto grid grid-cols-1 gap-6 overflow-hidden md:z-10"
+    >
+      <div
+        class="bg-white max-w-full mx-auto w-fit px-4 md:px-36 lg:px-40 xl:px-44 md:pt-12 lg:pt-16 xl:pt-20"
+      >
+        <header class="max-w-3xl mx-auto w-full mt-8 md:mt-0 mb-8 text-center">
+          <div
+            class="mb-4 flex flex-wrap items-center justify-center gap-4 text-neutral-600"
+          >
+            <span class="capitalize">{post.data.author}</span>
+            <span> | </span>
+            <time datetime={post.data.date.toISOString()}>
+              {
+                post.data.date.toLocaleDateString('es-ES', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })
+              }
+            </time>
+          </div>
+          <h1 class="font-bold text-3xl md:text-4xl text-gray-900">
+            {post.data.title}
+          </h1>
+        </header>
+
+        <hr class="-mx-24 my-8 lg:my-16 border-t border-gray-300" />
+      </div>
+
+      <div class="px-4 md:pl-10 lg:pl-12 xl:pl-16">
+        <article class="prose lg:prose-lg max-w-3xl">
+          <Content />
+        </article>
+      </div>
+
+      <hr class="-mx-16 my-8 border-t border-gray-300 lg:my-16" />
+    </div>
+
+    <CTA />
+  </main>
+</Layout>

@@ -1,0 +1,96 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import HalfArrow from '@/assets/halfArrow.svg';
+import Arrow from '@/assets/arrow.svg';
+import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
+
+const title = 'Blog - Kilómetros por Explorar';
+const description =
+  'Explora nuestro blog para descubrir consejos de viaje, itinerarios personalizados y experiencias únicas. Kilómetros por Explorar te ayuda a planificar el viaje de tus sueños.';
+const pathname = Astro.url.pathname;
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+
+const posts: CollectionEntry<'blog'>[] = await getCollection('blog');
+const sortedPosts: CollectionEntry<'blog'>[] = posts.sort(
+  (a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) =>
+    new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <main class="max-w-6xl mx-auto px-4 pt-4 pb-20 animate-fade-in-up">
+    <h1 class="mb-8 text-4xl font-extrabold text-gray-800 tracking-tight">
+      Nuestro Blog
+    </h1>
+
+    <div id="posts-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {
+        sortedPosts.map((post, index) => (
+          <article class="group h-full bg-white rounded-2xl shadow-lg overflow-hidden">
+            <a
+              href={`/blog/${post.id.replace('.md', '')}`}
+              class="flex flex-col h-full"
+            >
+              <div class="h-52 overflow-hidden">
+                <Image
+                  src={post.data.image}
+                  width="600"
+                  height="600"
+                  alt={post.data.title}
+                  class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                  loading={index < 3 ? 'eager' : 'lazy'}
+                />
+              </div>
+
+              <div class="p-6 flex flex-col flex-1 text-start">
+                <h2 class="font-bold text-2xl text-primary mb-4">
+                  {post.data.title}
+                </h2>
+                <p class="text-neutral-800 mb-4 flex-1">
+                  {post.data.description}
+                </p>
+                <div class="flex items-center justify-between text-sm text-neutral-500 mb-2">
+                  <span>
+                    {new Date(post.data.date).toLocaleDateString('es-ES', {
+                      day: '2-digit',
+                      month: 'short',
+                      year: 'numeric',
+                    })}
+                  </span>
+                  <span class="capitalize">{post.data.author}</span>
+                </div>
+                <div class="flex items-center gap-2 font-semibold text-primary">
+                  <span>Leer más</span>
+                  <div class="relative size-4">
+                    <HalfArrow class="size-4 absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
+                    <Arrow class="size-4 absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </main>
+</Layout>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+</style>
