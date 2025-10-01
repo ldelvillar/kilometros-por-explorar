@@ -1,56 +1,84 @@
-<form class="space-y-6">
+<form class="space-y-6" autocomplete="on">
   <div class="space-y-2">
     <label for="name" class="text-gray-800 font-medium text-base"
-      >Tu Nombre*</label
+      >Tu nombre*</label
     >
     <input
       type="text"
       id="name"
       placeholder="Introduce tu nombre"
       required
-      class="w-full h-14 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
+      class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
     />
   </div>
 
   <div class="space-y-2">
     <label for="lastName" class="text-gray-800 font-medium text-base"
-      >Tus apellidos</label
+      >Tus apellidos (opcional)</label
     >
     <input
       type="text"
       id="lastName"
       placeholder="Introduce tus apellidos"
-      class="w-full h-14 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
+      class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
     />
   </div>
 
   <div class="space-y-2">
     <label for="email" class="text-gray-800 font-medium text-base"
-      >Tu Email*</label
+      >Tu email*</label
     >
     <input
       type="email"
       id="email"
       placeholder="Introduce tu email"
       required
-      class="w-full h-14 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
+      class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
+    />
+  </div>
+
+  <div class="space-y-2">
+    <label for="phone" class="text-gray-800 font-medium text-base"
+      >Tu teléfono (opcional)</label
+    >
+    <input
+      type="tel"
+      id="phone"
+      placeholder="Introduce tu teléfono"
+      class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
     />
   </div>
 
   <div class="space-y-2">
     <label for="message" class="text-gray-800 font-medium text-base"
-      >Tu mensaje</label
+      >Tu mensaje (opcional)</label
     >
     <textarea
       id="message"
       placeholder="Cuéntanos más sobre tu viaje ideal..."
-      class="w-full min-h-36 px-4 py-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
+      class="w-full min-h-36 mt-1 px-4 py-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
     ></textarea>
+  </div>
+
+  <div class="flex items-center">
+    <input
+      id="privacy"
+      name="privacy"
+      type="checkbox"
+      class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+      required
+    />
+    <label for="privacy" class="ml-2 block text-sm text-gray-600">
+      Acepto la <a
+        href="/politica-de-privacidad-y-cookies"
+        class="text-primary hover:underline">política de privacidad</a
+      > y el tratamiento de mis datos
+    </label>
   </div>
 
   <button
     type="submit"
-    class="bg-primary text-white font-bold px-4 py-3 rounded-xl hover:bg-primary/90 transition duration-300"
+    class="px-4 py-3 w-full bg-primary text-white font-bold rounded-xl hover:bg-primary/90 transition duration-300"
   >
     Enviar Consulta
   </button>
