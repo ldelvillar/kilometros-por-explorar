@@ -1,21 +1,16 @@
-// Configuración global del sitio web
 export const SITE_CONFIG = {
-  // Dominio principal del sitio
   domain: 'https://www.kilometrosporexplorar.es',
 
-  // Información básica del sitio
   name: 'Kilómetros por Explorar',
   description:
     'Descubre los destinos más increíbles del mundo con nuestras experiencias de viaje únicas.',
 
-  // Información de la empresa/organización
   company: {
     name: 'Kilómetros por Explorar',
-    email: 'info@kilometrosporexplorar.es',
-    phone: '+34 XXX XXX XXX', // Cambia por tu teléfono real
+    email: 'contacto@kilometrosporexplorar.es',
+    phone: '+34 604 11 26 28',
   },
 
-  // Redes sociales
   social: {
     twitter: '@kilometrosporexplorar',
     instagram: '@kilometrosporexplorar',
@@ -36,7 +31,6 @@ export const SITE_CONFIG = {
 
 // Funciones de utilidad
 export const getSiteUrl = (path: string = '') => {
-  // Asegurar que el path empiece con /
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   return `${SITE_CONFIG.domain}${normalizedPath}`;
 };
