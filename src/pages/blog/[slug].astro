@@ -2,13 +2,12 @@
 import { Image } from 'astro:assets';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import CTA from '@/sections/shared/Cta.astro';
+import CTA from '@/components/Cta.astro';
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 
 interface Props {
   post: CollectionEntry<'blog'>;
 }
-
-import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 
 export async function getStaticPaths() {
   const posts: CollectionEntry<'blog'>[] = await getCollection('blog');

@@ -4,6 +4,7 @@ description: 'Guía completa sobre los mejores sitios que visitar si vas a estar
 date: 2025-07-25
 image: '/images/destinations/paris.webp'
 author: 'Lucas'
+destinations: ['paris']
 ---
 
 París, la Ciudad de la Luz, es uno de esos destinos que merece ser saboreado con calma, pero si tienes solo cuatro días, no te preocupes. Con una buena planificación, puedes vivir la esencia parisina y llevarte recuerdos inolvidables. Esta guía te ayudará a aprovechar cada momento, combinando los imprescindibles con experiencias auténticas que harán de tu viaje algo especial.

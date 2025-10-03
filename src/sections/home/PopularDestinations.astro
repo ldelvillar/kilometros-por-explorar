@@ -11,7 +11,7 @@ const featuredDestinations = getFeaturedDestinations();
   <div class="grid md:grid-cols-3 gap-6">
     {
       featuredDestinations.map(destination => (
-        <a href={destination.href} class="group">
+        <a href={`destinos/${destination.href}`} class="group">
           <article class="space-y-4">
             <Image
               src={destination.image}
@@ -25,7 +25,9 @@ const featuredDestinations = getFeaturedDestinations();
               <h3 class="text-lg font-medium text-gray-800">
                 {destination.name}
               </h3>
-              <p class="text-gray-600 text-sm">{destination.description}</p>
+              <p class="text-gray-600 text-sm">
+                {destination.shortDescription}
+              </p>
             </div>
           </article>
         </a>

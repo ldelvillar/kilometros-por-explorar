@@ -1,0 +1,40 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Hero from '@/components/destinations/Hero.astro';
+import RelatedArticles from '@/components/destinations/RelatedArticles.astro';
+import Cta from '@/components/Cta.astro';
+
+import { allDestinationsData, type Destination } from '@/data/destinations';
+import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
+import DestinationCustomers from '@/components/destinations/DestinationCustomers.astro';
+
+interface Props {
+  destination: Destination;
+}
+
+export async function getStaticPaths() {
+  const destinations = allDestinationsData;
+  return destinations.map(destination => ({
+    params: { slug: destination.href },
+    props: { destination },
+  }));
+}
+
+const { destination } = Astro.props;
+
+const title = `${destination.name} | Kilómetros por Explorar`;
+const description = destination.shortDescription;
+const pathname = Astro.url.pathname;
+
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <main>
+    <Hero destination={destination} />
+    <RelatedArticles destination={destination} />
+    <DestinationCustomers destination={destination} />
+  </main>
+  <Cta />
+</Layout>

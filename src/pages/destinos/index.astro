@@ -2,13 +2,9 @@
 import Layout from '@/layouts/Layout.astro';
 import Hero from '@/sections/destinos/Hero.astro';
 import InteractiveDestinations from '@/sections/destinos/InteractiveDestinations.astro';
+import Cta from '@/components/Cta.astro';
 
-import Cta from '@/sections/shared/Cta.astro';
-import {
-  getWebPageSchema,
-  getCombinedSchema,
-  getTouristDestinationSchema,
-} from '@/config/schemas';
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 
 const title = 'Destinos de Viaje - Kilómetros por Explorar';
 const description =
@@ -17,8 +13,6 @@ const pathname = Astro.url.pathname;
 
 const pageSchema = getWebPageSchema(title, description, pathname);
 const schema = getCombinedSchema(pageSchema);
-
-// Datos de destinos
 ---
 
 <Layout title={title} description={description} schema={schema}>

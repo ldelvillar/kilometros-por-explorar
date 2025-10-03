@@ -11,7 +11,7 @@ const { destination, loading = 'lazy' } = Astro.props;
 ---
 
 <a
-  href={destination.href}
+  href={`destinos/${destination.href}`}
   class="group destination-card"
   data-category={destination.category}
 >
@@ -29,7 +29,7 @@ const { destination, loading = 'lazy' } = Astro.props;
         {destination.name}
       </h3>
       <p class="text-gray-600 text-sm destination-description">
-        {destination.description}
+        {destination.shortDescription}
       </p>
     </div>
   </article>

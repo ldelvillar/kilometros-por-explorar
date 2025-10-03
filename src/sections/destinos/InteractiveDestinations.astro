@@ -1,6 +1,6 @@
 ---
-import DestinationCard from '@/components/DestinationCard.astro';
-import DestinationSearch from '@/components/DestinationSearch.astro';
+import DestinationCard from '@/components/destinations/DestinationCard.astro';
+import DestinationSearch from '@/components/destinations/DestinationSearch.astro';
 import {
   getFeaturedDestinations,
   getDestinationsByCategory,
@@ -177,7 +177,7 @@ const cityDestinations = getDestinationsByCategory('ciudad');
     // Function to create destination card HTML
     function createDestinationCard(destination: any) {
       return `
-        <a href="${destination.href}" class="group destination-card" data-category="${destination.category}">
+        <a href="${'destinos/' + destination.href}" class="group destination-card" data-category="${destination.category}">
           <article class="space-y-4">
             <img
               src="${destination.image}"
@@ -190,7 +190,7 @@ const cityDestinations = getDestinationsByCategory('ciudad');
                 ${destination.name}
               </h3>
               <p class="text-gray-600 text-sm destination-description">
-                ${destination.description}
+                ${destination.shortDescription}
               </p>
             </div>
           </article>
