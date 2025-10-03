@@ -3,14 +3,12 @@ import Layout from '@/layouts/Layout.astro';
 import Hero from '@/sections/home/Hero.astro';
 import Services from '@/sections/home/Services.astro';
 import PopularDestinations from '@/sections/home/PopularDestinations.astro';
+import Blog from '@/sections/home/Blog.astro';
 import Testimonials from '@/sections/home/Testimonials.astro';
 import Faq from '@/sections/home/Faq.astro';
 import Contact from '@/sections/home/Contact.astro';
-import {
-  getOrganizationSchema,
-  getCombinedSchema,
-  getWebPageSchema,
-} from '../config/schemas';
+
+import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 
 const title = 'Planificación Profesional de Viajes - Kilómetros por Explorar';
 const description =
@@ -27,6 +25,7 @@ const schema = getCombinedSchema(pageSchema);
     <Services />
     <PopularDestinations />
     <Testimonials />
+    <Blog />
     <Faq />
     <Contact />
   </main>
