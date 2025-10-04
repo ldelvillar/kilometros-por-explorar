@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getWebPageSchema, getCombinedSchema } from '../config/schemas';
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import { SITE_CONFIG } from '@/config/site';
 
 const title = 'Términos y Condiciones';
 const description =
@@ -295,7 +296,15 @@ const schema = getCombinedSchema(pageSchema);
         >
       </li>
       <li>
-        <strong>Teléfono:</strong> +34 604 11 26 28
+        <strong>Teléfonos:</strong>
+        <a
+          href={`tel:${SITE_CONFIG.company.phone}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone}</a
+        >,
+        <a
+          href={`tel:${SITE_CONFIG.company.phone2}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone2}</a
+        >
       </li>
       <li>
         <strong>Formulario web:</strong>
@@ -305,9 +314,9 @@ const schema = getCombinedSchema(pageSchema);
       </li>
     </ul>
     <p class="mb-4 text-gray-700">
-      <strong>Horario de atención:</strong> Lunes a viernes de 9:00 a 18:00h. Para
-      emergencias durante viajes activos, proporcionamos números de contacto de emergencia
-      según el destino.
+      <strong>Horario de atención:</strong> Lunes a viernes de 9:00 a 18:00h, sábados
+      de 10:00 a 14:00h. Para emergencias durante viajes activos, proporcionamos
+      números de contacto de emergencia según el destino.
     </p>
   </section>
 </Layout>

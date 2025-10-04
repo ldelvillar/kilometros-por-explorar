@@ -9,13 +9,15 @@ export const SITE_CONFIG = {
     name: 'Kilómetros por Explorar',
     email: 'contacto@kilometrosporexplorar.es',
     phone: '+34 604 11 26 28',
+    phone2: '+34 619 45 87 64',
+    address: 'Madrid, España',
   },
 
   social: {
     twitter: '@kilometrosporexplorar',
-    instagram: '@kilometrosporexplorar',
-    facebook: 'kilometrosporexplorar',
-    tiktok: '@kilometrosporexplorar',
+    instagram: 'https://www.instagram.com/kilometrosporexplorar',
+    facebook: 'https://www.facebook.com/kilometrosporexplorar',
+    tiktok: 'https://www.tiktok.com/@kilometrosporexplorar',
   },
 
   // Configuración SEO por defecto

@@ -3,6 +3,7 @@ import Instagram from '@/assets/logos/instagram.svg';
 import TikTok from '@/assets/logos/tiktok.svg';
 import Facebook from '@/assets/logos/facebook.svg';
 import Logo from '@/assets/logo.svg';
+import { SITE_CONFIG } from '@/config/site';
 
 interface Social {
   name: 'Instagram' | 'TikTok' | 'Facebook';
@@ -12,23 +13,23 @@ interface Social {
 
 interface FooterLink {
   title: string;
-  sublinks?: { title: string; url: string }[];
+  sublinks?: { title: string; url?: string }[];
 }
 
 const socials: Social[] = [
   {
     name: 'Instagram',
-    href: 'https://www.instagram.com/kilometrosporexplorar',
+    href: SITE_CONFIG.social.instagram,
     icon: Instagram,
   },
   {
     name: 'TikTok',
-    href: 'https://www.tiktok.com/@kilometrosporexplorar',
+    href: SITE_CONFIG.social.tiktok,
     icon: TikTok,
   },
   {
     name: 'Facebook',
-    href: 'https://www.facebook.com/kilometrosporexplorar',
+    href: SITE_CONFIG.social.facebook,
     icon: Facebook,
   },
 ];
@@ -38,16 +39,16 @@ const footerLinks: FooterLink[] = [
     title: 'Destinos Populares',
     sublinks: [
       {
-        title: 'Kioto',
-        url: '/destinos/kioto',
+        title: 'Japón',
+        url: '/destinos/japon',
       },
       {
-        title: 'Santorini',
-        url: '/destinos/santorini',
+        title: 'Islandia',
+        url: '/destinos/islandia',
       },
       {
-        title: 'Machu Picchu',
-        url: '/destinos/machu-picchu',
+        title: 'Estambul',
+        url: '/destinos/estambul',
       },
     ],
   },
@@ -55,8 +56,16 @@ const footerLinks: FooterLink[] = [
     title: 'Contacto',
     sublinks: [
       {
-        title: 'contacto@kilometrosporexplorar.es',
-        url: 'mailto:contacto@kilometrosporexplorar.es',
+        title: SITE_CONFIG.company.email,
+        url: `mailto:${SITE_CONFIG.company.email}`,
+      },
+      {
+        title: SITE_CONFIG.company.phone,
+        url: `tel:${SITE_CONFIG.company.phone}`,
+      },
+      {
+        title: SITE_CONFIG.company.phone2,
+        url: `tel:${SITE_CONFIG.company.phone2}`,
       },
     ],
   },

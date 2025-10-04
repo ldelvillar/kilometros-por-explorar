@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getWebPageSchema, getCombinedSchema } from '../config/schemas';
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import { SITE_CONFIG } from '@/config/site';
 
 const title = 'Aviso Legal';
 const description =
@@ -27,7 +28,8 @@ const schema = getCombinedSchema(pageSchema);
       <li><b>Razón Social:</b> Kilómetros por Explorar</li>
       <li><b>NIF/CIF:</b> [Pendiente de asignar]</li>
       <li>
-        <b>Dirección:</b> [Dirección completa de la empresa]
+        <b>Dirección:</b>
+        {SITE_CONFIG.company.address}
       </li>
       <li>
         <b>Correo electrónico:</b>
@@ -37,7 +39,18 @@ const schema = getCombinedSchema(pageSchema);
         >
       </li>
       <li>
-        <b>Teléfono:</b> +34 604 11 26 28
+        <b>Teléfono 1:</b>
+        <a
+          href={`tel:${SITE_CONFIG.company.phone}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone}</a
+        >
+      </li>
+      <li>
+        <b>Teléfono 2:</b>
+        <a
+          href={`tel:${SITE_CONFIG.company.phone2}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone2}</a
+        >
       </li>
       <li>
         <b>Sitio Web:</b>

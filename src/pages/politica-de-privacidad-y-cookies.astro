@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getWebPageSchema, getCombinedSchema } from '../config/schemas';
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import { SITE_CONFIG } from '@/config/site';
 
 const title = 'Política de Privacidad y Cookies';
 const description =
@@ -29,20 +30,30 @@ const schema = getCombinedSchema(pageSchema);
     </h2>
     <p class="mb-4 text-gray-700">
       El responsable del tratamiento de los datos es Kilómetros por Explorar,
-      con domicilio en [Dirección completa de la empresa]. Para cualquier
-      consulta relacionada con la protección de datos, puedes contactarnos en:
+      con domicilio en {SITE_CONFIG.company.address}. Para cualquier consulta
+      relacionada con la protección de datos, puedes contactarnos en:
     </p>
     <ul class="list-disc pl-6 text-gray-700 mb-4">
       <li>
         Email: <a
           href="mailto:contacto@kilometrosporexplorar.es"
-          class="text-primary underline">contacto@kilometrosporexplorar.es</a>
+          class="text-primary underline">contacto@kilometrosporexplorar.es</a
+        >
       </li>
-      <li>Teléfono: +34 604 11 26 28</li>
+      <li>
+        Teléfonos: <a
+          href={`tel:${SITE_CONFIG.company.phone}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone}</a
+        >, <a
+          href={`tel:${SITE_CONFIG.company.phone2}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone2}</a
+        >
+      </li>
       <li>
         Formulario de contacto: <a
           href="/contacto"
-          class="text-primary underline">contacto</a>
+          class="text-primary underline">contacto</a
+        >
       </li>
     </ul>
 
@@ -226,12 +237,22 @@ const schema = getCombinedSchema(pageSchema);
       <li>
         Email: <a
           href="mailto:contacto@kilometrosporexplorar.es"
-          class="text-primary underline">contacto@kilometrosporexplorar.es</a>
+          class="text-primary underline">contacto@kilometrosporexplorar.es</a
+        >
       </li>
-      <li>Teléfono: +34 604 11 26 28</li>
+      <li>
+        Teléfonos: <a
+          href={`tel:${SITE_CONFIG.company.phone}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone}</a
+        >, <a
+          href={`tel:${SITE_CONFIG.company.phone2}`}
+          class="text-primary underline">{SITE_CONFIG.company.phone2}</a
+        >
+      </li>
       <li>
         Formulario web: <a href="/contacto" class="text-primary underline"
-          >formulario de contacto</a>
+          >formulario de contacto</a
+        >
       </li>
     </ul>
     <p class="mb-4 text-gray-700">

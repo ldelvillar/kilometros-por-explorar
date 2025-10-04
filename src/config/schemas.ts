@@ -11,10 +11,10 @@ export const getOrganizationSchema = () => ({
   email: SITE_CONFIG.company.email,
   telephone: SITE_CONFIG.company.phone,
   sameAs: [
-    `https://www.instagram.com/${SITE_CONFIG.social.instagram.replace('@', '')}`,
-    `https://www.facebook.com/${SITE_CONFIG.social.facebook}`,
-    `https://www.tiktok.com/${SITE_CONFIG.social.tiktok.replace('@', '')}`,
-    `https://www.twitter.com/${SITE_CONFIG.social.twitter.replace('@', '')}`,
+    SITE_CONFIG.social.instagram,
+    SITE_CONFIG.social.facebook,
+    SITE_CONFIG.social.tiktok,
+    SITE_CONFIG.social.twitter,
   ],
 });
 
