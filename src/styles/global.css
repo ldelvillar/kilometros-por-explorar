@@ -12,9 +12,20 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Blimone';
+  src:
+    url('/fonts/Blimone-Regular.woff2') format('woff2'),
+    url('/fonts/Blimone-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-primary: #12a3ed;
   --font-display: 'Onest', sans-serif;
+  --font-blimone: 'Blimone', 'Onest', sans-serif;
 }
 
 html {
