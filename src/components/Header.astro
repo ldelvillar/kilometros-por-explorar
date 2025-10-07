@@ -3,9 +3,7 @@ import Logo from '@/assets/logo.svg';
 import Menu from '@/assets/menu.svg';
 ---
 
-<header
-  class="w-full sticky top-0 bg-white text-gray-800 border border-gray-300 z-40"
->
+<header class="w-full fixed top-0 text-white z-40">
   <div class="container mx-auto p-3 flex items-center justify-between">
     <a href="/" class="flex items-center font-bold text-lg">
       <Logo class="size-8 mr-2" />
@@ -55,4 +53,40 @@ import Menu from '@/assets/menu.svg';
     mobileMenu?.classList.toggle('hidden');
     mobileMenu?.classList.toggle('block');
   });
+
+  // Add background to header on scroll only on home page
+  const header = document.querySelector('header');
+
+  if (window.location.pathname === '/') {
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        header?.classList.add(
+          'bg-white',
+          'text-gray-800',
+          'border-b',
+          'border-gray-300',
+          'shadow-md'
+        );
+        header?.classList.remove('text-white');
+      } else {
+        header?.classList.remove(
+          'bg-white',
+          'border-b',
+          'border-gray-300',
+          'text-gray-800',
+          'shadow-md'
+        );
+        header?.classList.add('text-white');
+      }
+    });
+  } else {
+    header?.classList.remove('text-white');
+    header?.classList.add(
+      'bg-white',
+      'text-gray-800',
+      'border-b',
+      'border-gray-300',
+      'shadow-md'
+    );
+  }
 </script>

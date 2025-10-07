@@ -1,9 +1,14 @@
-<section
-  class="relative h-[600px] bg-[url(/images/hero.webp)] bg-cover bg-center rounded-3xl mx-4 my-5 overflow-hidden"
->
-  <div class="absolute inset-0 bg-black/40 rounded-3xl"></div>
+<section class="relative h-[100dvh] overflow-hidden">
   <div
-    class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-8"
+    id="hero-bg"
+    class="absolute inset-0 bg-[url(/images/hero.webp)] bg-cover bg-center will-change-transform"
+    style="transform: translateY(0px);"
+  >
+  </div>
+  <div class="absolute inset-0 bg-black/40"></div>
+  <div
+    id="hero-content"
+    class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-8 will-change-transform"
   >
     <div class="max-w-2xl space-y-4">
       <h1 class="text-5xl font-extrabold leading-tight tracking-tight">
@@ -22,3 +27,45 @@
     </a>
   </div>
 </section>
+
+<script>
+  // Parallax effect on scroll
+  let ticking = false;
+
+  function updateParallax() {
+    const heroBg = document.getElementById('hero-bg');
+    const heroContent = document.getElementById('hero-content');
+    const scrolled = window.scrollY;
+
+    if (heroBg) {
+      // Move background slower than scroll (parallax effect)
+      heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+
+    if (heroContent) {
+      // Move content slightly for depth effect
+      heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
+
+      // Optional: fade out content as user scrolls
+      const opacity = Math.max(0, 1 - scrolled / 500);
+      heroContent.style.opacity = `${opacity}`;
+    }
+
+    ticking = false;
+  }
+
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(updateParallax);
+      ticking = true;
+    }
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', requestTick, { passive: true });
+
+  // Clean up on page unload
+  document.addEventListener('astro:before-swap', () => {
+    window.removeEventListener('scroll', requestTick);
+  });
+</script>
