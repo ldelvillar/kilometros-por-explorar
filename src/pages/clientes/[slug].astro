@@ -1,0 +1,117 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import Layout from '@/layouts/Layout.astro';
+import CustomerTimeline from '@/components/customers/CustomerTimeline.astro';
+import Cta from '@/components/Cta.astro';
+
+interface Props {
+  customer: CollectionEntry<'customers'>;
+}
+
+export async function getStaticPaths() {
+  const customers = await getCollection('customers');
+  return customers.map(customer => ({
+    params: { slug: customer.id.replace('.md', '') },
+    props: { customer },
+  }));
+}
+
+const { customer } = Astro.props;
+const { Content } = await customer.render();
+
+const title = `Descubre la Aventura de ${customer.data.name} | Kilómetros por Explorar`;
+const description = customer.data.title;
+
+const pathname = Astro.url.pathname;
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <!-- Hero Section -->
+  <section
+    id="hero"
+    class="relative max-w-6xl mx-auto px-4 lg:px-8 pt-24 overflow-hidden z-10"
+  >
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-sm text-gray-600 mb-6">
+      <a href="/clientes" class="hover:text-primary transition-colors"
+        >Clientes</a
+      >
+      <span>/</span>
+      <span class="text-primary font-medium">{customer.data.name}</span>
+    </nav>
+
+    <!-- Customer flag -->
+    <div class="mb-6">
+      <img
+        src={customer.data.destinationFlagImage}
+        alt={`Bandera de ${customer.data.destination}`}
+        width={300}
+        height={150}
+        class="h-12 w-auto object-contain"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Hero Title -->
+    <h1
+      class="font-bold text-3xl md:text-[42px] lg:text-5xl text-gray-900 md:leading-14 mb-10 lg:mb-18"
+    >
+      {customer.data.title}
+    </h1>
+
+    <!-- Key Metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+      {
+        customer.data.metrics.map((metric, index) => (
+          <div
+            class={`flex flex-col items-center justify-center md:p-4 ${index < 3 ? 'md:border-r md:border-gray-100' : ''}`}
+          >
+            <span class="font-blimone font-bold text-3xl md:text-5xl bg-gradient-to-b from-blue-700 to-primary bg-clip-text text-transparent mb-2">
+              {metric.value}
+            </span>
+            <p class="text-lg text-gray-600 text-center">{metric.label}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Image -->
+    <div class="relative overflow-hidden shadow-lg lg:mx-3 mt-18">
+      <Image
+        src={customer.data.image}
+        alt={`Foto del viaje de ${customer.data.name}`}
+        width={800}
+        height={600}
+        class="w-full max-h-[600px] object-cover"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <!-- Timeline Section-->
+  <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-12 md:pt-16">
+    <div class="max-w-4xl mx-auto flex flex-col lg:flex-row-reverse gap-12">
+      <div class="px-4">
+        <CustomerTimeline
+          description={customer.data.description}
+          destination={customer.data.destination}
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="max-w-4xl mx-auto px-4 py-8">
+    <hr class="border-t border-gray-200 mb-8 lg:mb-16" />
+    <article class="max-w-none prose md:prose-lg lg:prose-xl text-gray-800">
+      <Content />
+    </article>
+    <hr class="border-t border-gray-200 mt-8 lg:mt-16" />
+  </section>
+
+  <Cta />
+</Layout>

@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import Arrow from '@/assets/arrow.svg';
+import HalfArrow from '@/assets/halfArrow.svg';
+
+interface Props {
+  customer: CollectionEntry<'customers'>;
+  loading?: 'eager' | 'lazy';
+}
+
+const { customer, loading } = Astro.props;
+---
+
+<article class="group h-full">
+  <a
+    href={`/clientes/${customer.id.replace('.md', '')}`}
+    class="flex flex-col h-full bg-white overflow-hidden"
+  >
+    {/* Image Container */}
+    <div class="relative h-[420px] md:h-[475px] rounded-lg overflow-hidden">
+      <Image
+        src={customer.data.image}
+        width={600}
+        height={400}
+        alt={`Historia de éxito de ${customer.data.name}`}
+        class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+        loading={loading}
+      />
+
+      {/* Overlay */}
+      <div class="absolute inset-0 bg-black/20"></div>
+
+      {/* Company Logo */}
+      <div class="absolute top-4 left-4 z-10">
+        <div class="bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg">
+          <img
+            src={customer.data.destinationFlagImage}
+            width={80}
+            height={40}
+            alt={`Bandera de ${customer.data.destination}`}
+            class="h-8 w-auto object-contain"
+            loading={loading}
+          />
+        </div>
+      </div>
+
+      {/* Company Name Overlay */}
+      <div class="absolute bottom-4 left-4 z-10">
+        <h3 class="text-white font-bold text-lg lg:text-xl">
+          {customer.data.name}
+        </h3>
+      </div>
+    </div>
+
+    {/* Content */}
+    <div class="py-8 flex flex-col flex-1">
+      <p
+        class="font-semibold text-xl text-gray-900 leading-tight line-clamp-4 mb-6 flex-1"
+      >
+        {customer.data.title}
+      </p>
+
+      <div class="flex items-center gap-2 font-semibold text-primary mt-auto">
+        <span class="relative animated-underline">Leer caso completo</span>
+        <div class="relative size-4">
+          <HalfArrow
+            class="size-4 absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+          />
+          <Arrow
+            class="size-4 absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1"
+          />
+        </div>
+      </div>
+    </div>
+  </a>
+</article>

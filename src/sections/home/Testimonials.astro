@@ -1,10 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
-import CustomerCard from '@/components/CustomerCard.astro';
+import CustomerCard from '@/components/customers/CustomerCard.astro';
 
-const customers: CollectionEntry<'customers'>[] =
-  await getCollection('customers');
+const customers = await getCollection('customers');
 ---
 
 <section class="max-w-7xl mx-auto px-4 py-16">

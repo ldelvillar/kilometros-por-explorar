@@ -13,11 +13,27 @@ const blog = defineCollection({
 });
 
 const customers = defineCollection({
-  name: z.string(),
-  testimonial: z.string(),
-  href: z.string(),
-  image: z.string(),
-  destination: z.string(),
+  type: 'content',
+  schema: z.object({
+    featured: z.boolean().default(false),
+    title: z.string(),
+    name: z.string(),
+    image: z.string(),
+    destination: z.object({
+      name: z.string(),
+      href: z.string(),
+    }),
+    destinationFlagImage: z.string(),
+    metrics: z
+      .array(
+        z.object({
+          label: z.string(),
+          value: z.string(),
+        })
+      )
+      .length(4),
+    description: z.string(),
+  }),
 });
 
 export const collections = {

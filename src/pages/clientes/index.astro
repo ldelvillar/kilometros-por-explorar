@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import FeaturedCustomerCard from '@/components/customers/FeaturedCustomerCard.astro';
+import CustomerCard from '@/components/customers/CustomerCard.astro';
+import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+
+const customers = await getCollection('customers');
+const featuredCustomers = customers.filter(
+  customer => customer.data.featured === true
+);
+
+const title = 'Historias de Viajeros Satisfechos | Kilómetros por Explorar';
+const description =
+  'Descubre las experiencias inolvidables de viajeros que organizaron sus viajes con nosotros. Explora sus aventuras y únete a la comunidad de viajeros felices con Kilómetros por Explorar.';
+
+const pathname = Astro.url.pathname;
+const pageSchema = getWebPageSchema(title, description, pathname);
+const schema = getCombinedSchema(pageSchema);
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <main>
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6">
+      <h1 class="mb-2 text-4xl font-extrabold text-gray-800 tracking-tight">
+        Viajeros Satisfechos
+      </h1>
+      <p class="mb-8 text-gray-600 text-lg leading-relaxed">
+        Conoce historias de viajeros que han encontrado su destino ideal gracias
+        a Kilómetros por Explorar.
+      </p>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-14"
+      >
+        {
+          featuredCustomers.map(customer => (
+            <FeaturedCustomerCard customer={customer} loading="eager" />
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6">
+      <h2 class="mb-6 text-4xl font-extrabold text-gray-800 tracking-tight">
+        Todas las historias
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-14"
+      >
+        {
+          customers.map(customer => (
+            <CustomerCard customer={customer} loading="lazy" />
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>

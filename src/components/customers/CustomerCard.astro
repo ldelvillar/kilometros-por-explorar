@@ -10,7 +10,7 @@ interface Props {
 const { customer, loading } = Astro.props;
 ---
 
-<a href={customer.data.href} class="group">
+<a href={`/clientes/${customer.id.replace('.md', '')}`} class="group">
   <article class="space-y-4">
     <Image
       src={customer.data.image}
@@ -24,7 +24,7 @@ const { customer, loading } = Astro.props;
       <h3 class="text-lg font-medium text-gray-800">
         {customer.data.name}
       </h3>
-      <p class="text-gray-600 text-sm">"{customer.data.testimonial}"</p>
+      <p class="text-gray-600 text-sm">{customer.data.title}</p>
     </div>
   </article>
 </a>

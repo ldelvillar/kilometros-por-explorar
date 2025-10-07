@@ -32,3 +32,69 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
 }
+
+.animated-underline {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover .animated-underline::after {
+  width: 100%;
+}
+
+.prose blockquote {
+  border: none;
+  padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary, #432dd7),
+    #00a055 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style: normal;
+  quotes: none;
+  position: relative;
+}
+.prose blockquote p {
+  margin-bottom: 6px;
+}
+.prose blockquote p:first-child::before {
+  content: '“';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3.75rem;
+  color: var(--color-primary, #432dd7);
+  pointer-events: none;
+  line-height: 1;
+}
+.prose blockquote p::after {
+  content: none !important;
+}
+@media (max-width: 768px) {
+  .prose blockquote p:first-child::before {
+    font-size: 2.5rem;
+    left: -0.1em;
+  }
+  .prose blockquote {
+    font-size: 1.25rem;
+  }
+}

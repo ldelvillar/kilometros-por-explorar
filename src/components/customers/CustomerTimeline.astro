@@ -1,0 +1,59 @@
+---
+import DotCircle from '@/assets/dotCircle.svg';
+import Location from '@/assets/location.svg';
+import Arrow from '@/assets/arrow.svg';
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+
+interface Props {
+  description: string;
+  destination: {
+    name: string;
+    href: string;
+  };
+}
+
+interface TimelineItem {
+  icon: AstroComponentFactory;
+  title: string;
+  content: any;
+}
+
+const { description, destination } = Astro.props;
+
+const timelineItems: TimelineItem[] = [
+  {
+    icon: DotCircle,
+    title: 'Sobre el viaje',
+    content: description,
+  },
+  {
+    icon: Location,
+    title: 'Destino',
+    content: destination,
+  },
+];
+---
+
+<ol class="max-w-4xl mx-auto relative border-s border-gray-200">
+  {
+    timelineItems.map(item => (
+      <li class="mb-10 ms-7 lg:ms-12">
+        <span class="absolute flex items-center justify-center size-8 bg-gray-100 rounded-full -start-4">
+          <item.icon class="size-4 text-primary" aria-hidden="true" />
+        </span>
+        <h3 class=" font-semibold text-xl text-gray-900 mb-3">{item.title}</h3>
+        {item.title !== 'Destino' ? (
+          <p class="font-normal text-gray-500">{item.content}</p>
+        ) : (
+          <a
+            href={item.content.href}
+            class="group flex flex-row items-center gap-2 text-blue-500 w-fit"
+          >
+            <span class="relative animated-underline">{item.content.name}</span>
+            <Arrow class="size-5 -rotate-45 group-hover:rotate-0 transition-transform duration-600" />
+          </a>
+        )}
+      </li>
+    ))
+  }
+</ol>
