@@ -13,7 +13,9 @@ const { destination } = Astro.props;
 const customers: CollectionEntry<'customers'>[] =
   await getCollection('customers');
 const relatedCustomers = customers.filter(
-  customer => customer.data.destination.name === destination.href
+  customer =>
+    customer.data.destination.href.replace('/destinos/', '') ===
+    destination.href
 );
 ---
 
