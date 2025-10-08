@@ -4,7 +4,7 @@ title: 'Descubre cómo el viaje soñado de Javier y sus amigos a Japón se hizo 
 name: 'Javier López'
 image: '/images/customers/kyoto.webp'
 destination: { name: 'Japón', href: '/destinos/japon' }
-destinationFlagImage: '/src/assets/flags/japan.svg'
+destinationFlagImage: '/images/flags/japan.svg'
 metrics:
   [
     { value: '14', label: 'Días en destino' },

@@ -5,7 +5,7 @@ name: 'Olivia Hayes'
 image: '/images/customers/republica-dominicana.webp'
 destination:
   { name: 'República Dominicana', href: '/destinos/republica-dominicana' }
-destinationFlagImage: '/src/assets/flags/dominican-republic.svg'
+destinationFlagImage: '/images/flags/dominican-republic.svg'
 metrics:
   [
     { value: '15', label: 'Días en destino' },
