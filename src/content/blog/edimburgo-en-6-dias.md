@@ -1,7 +1,7 @@
 ---
 title: 'Qué ver en Edimburgo en seis días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Edimburgo durante 6 días, incluyendo excursiones a las Highlands y Glasgow.'
-date: 2025-09-08
+date: 2025-10-05
 image: '/images/destinations/edinburgh.webp'
 author: 'Lucas'
 destinations: ['edimburgo']

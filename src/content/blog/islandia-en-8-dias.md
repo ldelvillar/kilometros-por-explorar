@@ -1,7 +1,7 @@
 ---
 title: 'Ruta por Islandia en ocho días'
 description: 'Guía completa para recorrer Islandia en 8 días: desde el Círculo Dorado hasta la península de Snæfellsnes, pasando por glaciares, cascadas y auroras boreales.'
-date: 2025-10-08
+date: 2025-08-04
 image: '/images/destinations/iceland.webp'
 author: 'Lucas'
 destinations: ['islandia']
@@ -17,7 +17,7 @@ Hemos diseñado este itinerario basándonos en nuestra propia experiencia recorr
 
 1. [Día 1: Llegada a Reykjavík y primera noche](#día-1-llegada-a-reykjavík-y-primera-noche)
 2. [Día 2: El Círculo Dorado](#día-2-el-círculo-dorado)
-3. [Día 3: Costa sur - el día de las cascadas](#día-3-costa-sur-el-día-de-las-cascadas)
+3. [Día 3: Costa sur - el día de las cascadas](#día-3-costa-sur---el-día-de-las-cascadas)
 4. [Día 4: Glaciares y lagunas del sureste](#día-4-glaciares-y-lagunas-del-sureste)
 5. [Día 5: Explorando los fiordos del este](#día-5-explorando-los-fiordos-del-este)
 6. [Día 6: Ruta por el norte volcánico](#día-6-ruta-por-el-norte-volcánico)
