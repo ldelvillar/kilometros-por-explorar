@@ -24,7 +24,7 @@ export const allDestinationsData: Destination[] = [
     featured: true,
   },
   {
-    name: 'Marrakech y sus Alrededores',
+    name: 'Marrakech y sus alrededores',
     shortDescription:
       'Explora los vibrantes zocos, palacios y jardines de Marrakech. Sumérgete en la cultura marroquí y descubre la magia del desierto del Sahara y los montes del Atlas.',
     longDescription:
@@ -235,7 +235,7 @@ export const allDestinationsData: Destination[] = [
     category: 'ciudad',
   },
   {
-    name: 'Cracovia y Alrededores',
+    name: 'Cracovia y alrededores',
     shortDescription:
       'Descubre la joya histórica de Polonia, con su impresionante casco antiguo y vibrante vida nocturna. Conoce Auschwitz y las impresionantes minas de sal de Wieliczka.',
     longDescription:
