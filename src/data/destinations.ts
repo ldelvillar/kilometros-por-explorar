@@ -161,6 +161,16 @@ export const allDestinationsData: Destination[] = [
     href: 'croacia',
     category: 'naturaleza',
   },
+  {
+    name: 'Madeira',
+    shortDescription:
+      'Descubre la isla de la eterna primavera, con sus paisajes volcánicos, exuberante vegetación y acantilados impresionantes.',
+    longDescription:
+      'Explora la belleza natural de Madeira, desde sus impresionantes acantilados hasta sus exuberantes bosques de laurisilva, Patrimonio de la Humanidad. Realiza senderismo por levadas, los antiguos canales de riego de la isla, y disfruta de vistas panorámicas en puntos como el Pico do Arieiro. Saborea la deliciosa gastronomía local, incluyendo el famoso vino de Madeira y platos a base de pescado fresco.',
+    image: '/images/destinations/madeira.webp',
+    href: 'madeira',
+    category: 'naturaleza',
+  },
 
   // Ciudades
   {
@@ -252,6 +262,16 @@ export const allDestinationsData: Destination[] = [
       'Explora Gamla Stan con callejuelas empedradas hasta el Palacio Real y descubre el Museo Vasa con un barco de guerra del siglo XVII. Recorre el famoso metro considerado la galería de arte más larga del mundo y las islas como Djurgården y Södermalm. Disfruta de saunas auténticas, cocina nórdica y excursiones por el archipiélago de 30.000 islas.',
     image: '/images/destinations/stockholm.webp',
     href: 'estocolmo',
+    category: 'ciudad',
+  },
+  {
+    name: 'Lisboa',
+    shortDescription:
+      'Explora la encantadora capital de Portugal, con sus colinas, tranvías históricos y vistas panorámicas al río Tajo. Disfruta de su vibrante vida cultural y deliciosa gastronomía.',
+    longDescription:
+      'Pasea por las estrechas calles de Alfama, el barrio más antiguo de Lisboa, y disfruta de las impresionantes vistas desde el mirador de Santa Catarina. Visita la icónica Torre de Belém y el Monasterio de los Jerónimos, ambos Patrimonio de la Humanidad. No te pierdas la oportunidad de probar los famosos pasteles de nata y disfrutar de la animada vida nocturna en el Bairro Alto.',
+    image: '/images/destinations/lisbon.webp',
+    href: 'lisboa',
     category: 'ciudad',
   },
 ];
