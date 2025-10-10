@@ -184,7 +184,7 @@ export const allDestinationsData: Destination[] = [
     category: 'ciudad',
   },
   {
-    name: 'París y Disneyland',
+    name: 'París',
     shortDescription:
       'Descubre la magia de París, desde la Torre Eiffel hasta los encantos de Disneyland, donde los sueños se hacen realidad.',
     longDescription:
@@ -212,6 +212,16 @@ export const allDestinationsData: Destination[] = [
       'Camina por 2.800 años de historia desde el icónico Coliseo y el Foro Romano hasta la Capilla Sixtina de Miguel Ángel en el Vaticano. Lanza tu moneda en la Fontana di Trevi, explora el auténtico barrio de Trastevere y disfruta de la dolce vita. Saborea la cocina romana auténtica con carbonara, cacio e pepe y supplì en trattorias familiares.',
     image: '/images/destinations/rome.webp',
     href: 'roma',
+    category: 'ciudad',
+  },
+  {
+    name: 'Lisboa',
+    shortDescription:
+      'Explora la encantadora capital de Portugal, con sus colinas, tranvías históricos y vistas panorámicas al río Tajo. Disfruta de su vibrante vida cultural y deliciosa gastronomía.',
+    longDescription:
+      'Pasea por las estrechas calles de Alfama, el barrio más antiguo de Lisboa, y disfruta de las impresionantes vistas desde el mirador de Santa Catarina. Visita la icónica Torre de Belém y el Monasterio de los Jerónimos, ambos Patrimonio de la Humanidad. No te pierdas la oportunidad de probar los famosos pasteles de nata y disfrutar de la animada vida nocturna en el Bairro Alto.',
+    image: '/images/destinations/lisbon.webp',
+    href: 'lisboa',
     category: 'ciudad',
   },
   {
@@ -245,6 +255,26 @@ export const allDestinationsData: Destination[] = [
     category: 'ciudad',
   },
   {
+    name: 'Viena',
+    shortDescription:
+      'Descubre la elegancia imperial de Viena, una ciudad que combina historia, música clásica y una vibrante escena cultural.',
+    longDescription:
+      'Pasea por el Palacio de Schönbrunn, declarado Patrimonio de la Humanidad, y disfruta de un concierto de música clásica en la Ópera de Viena. Explora el centro histórico con la Catedral de San Esteban y visita museos de renombre como el Museo de Historia del Arte. No te pierdas la deliciosa repostería austriaca, como el famoso strudel de manzana.',
+    image: '/images/destinations/vienna.webp',
+    href: 'viena',
+    category: 'ciudad',
+  },
+  {
+    name: 'Budapest',
+    shortDescription:
+      'Descubre la joya del Danubio, donde la historia imperial se encuentra con la vibrante vida moderna en una ciudad de contrastes fascinantes.',
+    longDescription:
+      'Pasea por el impresionante Parlamento y cruza el icónico Puente de las Cadenas. Relájate en los baños termales de Széchenyi y explora el barrio judío con su rica historia. Disfruta de la gastronomía local con platos como el goulash y los pasteles chimney cake, y no te pierdas la animada vida nocturna en las ruinas de los bares.',
+    image: '/images/destinations/budapest.webp',
+    href: 'budapest',
+    category: 'ciudad',
+  },
+  {
     name: 'Cracovia y alrededores',
     shortDescription:
       'Descubre la joya histórica de Polonia, con su impresionante casco antiguo y vibrante vida nocturna. Conoce Auschwitz y las impresionantes minas de sal de Wieliczka.',
@@ -252,6 +282,16 @@ export const allDestinationsData: Destination[] = [
       'Explora el casco histórico Patrimonio de la Humanidad con la Plaza del Mercado Principal medieval y la Basílica de Santa María con su altar gótico. Visita el emotivo memorial de Auschwitz-Birkenau y desciende a las Minas de Sal de Wieliczka con esculturas talladas en sal. Disfruta de pierogi, vodka premium y la vibrante vida nocturna del barrio judío de Kazimierz.',
     image: '/images/destinations/krakow.webp',
     href: 'cracovia',
+    category: 'ciudad',
+  },
+  {
+    name: 'Oporto',
+    shortDescription:
+      'Explora la encantadora ciudad de Oporto, famosa por su vino, arquitectura y vistas al río Duero. Disfruta de su ambiente relajado y su rica historia.',
+    longDescription:
+      'Descubre la Ribeira, el casco antiguo Patrimonio de la Humanidad con calles empedradas y coloridas casas. Visita bodegas de vino de Oporto en Vila Nova de Gaia y cruza el icónico Puente de Luis I. Disfruta de la gastronomía local con platos como la francesinha y pasea por la Avenida dos Aliados con su arquitectura impresionante.',
+    image: '/images/destinations/porto.webp',
+    href: 'oporto',
     category: 'ciudad',
   },
   {
@@ -265,13 +305,53 @@ export const allDestinationsData: Destination[] = [
     category: 'ciudad',
   },
   {
-    name: 'Lisboa',
+    name: 'Copenhague',
     shortDescription:
-      'Explora la encantadora capital de Portugal, con sus colinas, tranvías históricos y vistas panorámicas al río Tajo. Disfruta de su vibrante vida cultural y deliciosa gastronomía.',
+      'Explora la capital danesa, famosa por su diseño, gastronomía y ambiente acogedor. Disfruta de sus canales, castillos y su cultura vikinga única.',
     longDescription:
-      'Pasea por las estrechas calles de Alfama, el barrio más antiguo de Lisboa, y disfruta de las impresionantes vistas desde el mirador de Santa Catarina. Visita la icónica Torre de Belém y el Monasterio de los Jerónimos, ambos Patrimonio de la Humanidad. No te pierdas la oportunidad de probar los famosos pasteles de nata y disfrutar de la animada vida nocturna en el Bairro Alto.',
-    image: '/images/destinations/lisbon.webp',
-    href: 'lisboa',
+      'Pasea por los coloridos edificios de Nyhavn, visita el Palacio de Christiansborg y disfruta de la vista desde la Torre Redonda. No te pierdas el famoso parque de atracciones Tivoli y prueba la deliciosa gastronomía local, incluyendo el smørrebrød y los pasteles daneses.',
+    image: '/images/destinations/copenhagen.webp',
+    href: 'copenhague',
+    category: 'ciudad',
+  },
+  {
+    name: 'Florencia',
+    shortDescription:
+      'Sumérgete en el Renacimiento italiano en Florencia, cuna del arte y la cultura. Admira obras maestras de artistas históricos y disfruta de una de las mejores gastronomías del mundo.',
+    longDescription:
+      'Explora la Catedral de Santa María del Fiore, con su impresionante cúpula diseñada por Brunelleschi. Visita la Galería Uffizi para contemplar obras de Botticelli y Da Vinci, y no te pierdas el David de Miguel Ángel en la Accademia. Pasea por el Ponte Vecchio y disfruta de la deliciosa gastronomía toscana en una trattoria local.',
+    image: '/images/destinations/florence.webp',
+    href: 'florencia',
+    category: 'ciudad',
+  },
+  {
+    name: 'Atenas',
+    shortDescription:
+      'Descubre la cuna de la civilización occidental en Atenas, donde la historia antigua se mezcla con una vibrante vida moderna.',
+    longDescription:
+      'Visita la Acrópolis, un símbolo de la antigua Grecia, y explora el Partenón. Pasea por el barrio de Plaka, con sus calles estrechas y casas neoclásicas, y disfruta de la deliciosa gastronomía griega en una taberna local. No te pierdas el Museo de la Acrópolis y el Mercado Central de Atenas.',
+    image: '/images/destinations/athens.webp',
+    href: 'atenas',
+    category: 'ciudad',
+  },
+  {
+    name: 'Bruselas',
+    shortDescription:
+      'Descubre la capital de Europa, famosa por su arquitectura impresionante, deliciosa gastronomía y vibrante vida cultural.',
+    longDescription:
+      'Explora la Grand Place, Patrimonio de la Humanidad, con sus edificios góticos y barrocos. Visita el Atomium y el Manneken Pis, y disfruta de la gastronomía local con gofres, chocolate y cerveza belga. No te pierdas los museos de cómics y la vibrante escena artística de la ciudad.',
+    image: '/images/destinations/brussels.webp',
+    href: 'bruselas',
+    category: 'ciudad',
+  },
+  {
+    name: 'Nápoles y la Costa Amalfitana',
+    shortDescription:
+      'Descubre Nápoles, la cuna de la pizza, y explora la impresionante Costa Amalfitana con sus acantilados y pueblos pintorescos.',
+    longDescription:
+      'Visita el centro histórico de Nápoles, declarado Patrimonio de la Humanidad, y prueba la auténtica pizza napolitana. Recorre la costa amalfitana, deteniéndote en pueblos como Positano y Amalfi, y disfruta de las impresionantes vistas al mar Mediterráneo.',
+    image: '/images/destinations/naples.webp',
+    href: 'napoles',
     category: 'ciudad',
   },
 ];
