@@ -6,6 +6,7 @@
     <input
       type="text"
       id="name"
+      name="name"
       placeholder="Introduce tu nombre"
       required
       class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
@@ -19,6 +20,7 @@
     <input
       type="text"
       id="lastName"
+      name="lastName"
       placeholder="Introduce tus apellidos"
       class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
     />
@@ -31,6 +33,7 @@
     <input
       type="email"
       id="email"
+      name="email"
       placeholder="Introduce tu email"
       required
       class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
@@ -44,6 +47,7 @@
     <input
       type="tel"
       id="phone"
+      name="phone"
       placeholder="Introduce tu teléfono"
       class="w-full h-14 mt-1 px-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
     />
@@ -51,13 +55,14 @@
 
   <div class="space-y-2">
     <label for="message" class="text-gray-800 font-medium text-base"
-      >Tu mensaje (opcional)</label
+      >Tu mensaje*</label
     >
     <textarea
       id="message"
+      name="message"
       placeholder="Cuéntanos más sobre tu viaje ideal..."
       class="w-full min-h-36 mt-1 px-4 py-4 bg-gray-100 rounded-xl border-0 text-gray-600 placeholder-gray-500 focus:outline-primary"
-    ></textarea>
+      required></textarea>
   </div>
 
   <div class="flex items-center">
@@ -65,7 +70,7 @@
       id="privacy"
       name="privacy"
       type="checkbox"
-      class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded"
+      class="size-4 text-primary border border-gray-600 rounded"
       required
     />
     <label for="privacy" class="ml-2 block text-sm text-gray-600">
@@ -83,3 +88,54 @@
     Enviar Consulta
   </button>
 </form>
+
+<script>
+  const form = document.querySelector('form');
+  const CONTACT_ENDPOINT = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT;
+
+  form?.addEventListener('submit', async event => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+
+    // Deshabilitar botón para evitar envíos múltiples
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton?.textContent || 'Enviar Consulta';
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = 'Enviando...';
+    }
+
+    try {
+      const response = await fetch(CONTACT_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('Mensaje enviado con éxito. Revisa tu email.');
+        form.reset();
+      } else {
+        const errorData = await response.json().catch(() => ({}));
+        console.error('Error del servidor:', errorData);
+        alert(
+          'Ha ocurrido un error al enviar el formulario. Por favor, inténtalo de nuevo o contáctanos por teléfono.'
+        );
+      }
+    } catch (error) {
+      console.error('Error de red:', error);
+      alert(
+        'Error de conexión. Por favor, verifica tu conexión a internet e inténtalo de nuevo.'
+      );
+    } finally {
+      // Rehabilitar botón
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalText;
+      }
+    }
+  });
+</script>

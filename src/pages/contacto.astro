@@ -213,33 +213,3 @@ const schema = getCombinedSchema(pageSchema);
     </section>
   </main>
 </Layout>
-
-<script>
-  // Form handling
-  const form = document.querySelector('form');
-
-  form?.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData);
-
-    // Simple validation
-    if (!data.name || !data.email || !data.message) {
-      alert('Por favor, completa todos los campos obligatorios.');
-      return;
-    }
-
-    if (!data.privacy) {
-      alert('Debes aceptar la política de privacidad para continuar.');
-      return;
-    }
-
-    // Here you would normally send the data to your backend
-    alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
-
-    // Reset form
-    this.reset();
-  });
-</script>
