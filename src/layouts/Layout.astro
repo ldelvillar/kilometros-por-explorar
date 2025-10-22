@@ -1,6 +1,7 @@
 ---
 import MetaTags from '@/components/MetaTags.astro';
 import Header from '@/components/Header.astro';
+import Chatbot from '@/components/Chatbot.tsx';
 import Footer from '@/components/Footer.astro';
 import '@/styles/global.css';
 
@@ -24,6 +25,7 @@ const { title, description, schema } = Astro.props;
   <body class="font-display">
     <Header />
     <slot />
+    <Chatbot client:load />
     <Footer />
   </body>
 </html>

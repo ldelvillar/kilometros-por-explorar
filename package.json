@@ -9,9 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^4.1.1",
     "@astrojs/sitemap": "^3.6.0",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.13.10",
+    "preact": "^10.27.2",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {

@@ -100,7 +100,9 @@
     const data = Object.fromEntries(formData);
 
     // Deshabilitar botón para evitar envíos múltiples
-    const submitButton = form.querySelector('button[type="submit"]');
+    const submitButton: HTMLButtonElement | null = form.querySelector(
+      'button[type="submit"]'
+    );
     const originalText = submitButton?.textContent || 'Enviar Consulta';
 
     if (submitButton) {
