@@ -17,7 +17,7 @@ export const SITE_CONFIG = {
     twitter: '@kilometrosporexplorar',
     instagram: 'https://www.instagram.com/kilometrosporexplorar',
     facebook: 'https://www.facebook.com/kilometrosporexplorar',
-    tiktok: 'https://www.tiktok.com/@kilometrosporexpl',
+    tiktok: 'https://www.tiktok.com/@kilometrosporexplorar',
   },
 
   // Configuración SEO por defecto
