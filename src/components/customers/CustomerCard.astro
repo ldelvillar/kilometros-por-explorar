@@ -10,7 +10,7 @@ interface Props {
 const { customer, loading } = Astro.props;
 ---
 
-<a href={`/clientes/${customer.id.replace('.md', '')}`} class="group">
+<a href={`/viajeros/${customer.id.replace('.md', '')}`} class="group">
   <article class="space-y-4">
     <Image
       src={customer.data.image}
