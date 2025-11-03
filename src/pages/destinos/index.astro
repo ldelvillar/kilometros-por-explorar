@@ -1,7 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import Hero from '@/sections/destinos/Hero.astro';
-import InteractiveDestinations from '@/sections/destinos/InteractiveDestinations.astro';
+import InteractiveDestinations from '@/components/destinations/InteractiveDestinations.astro';
 import Cta from '@/components/Cta.astro';
 
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
@@ -17,7 +16,17 @@ const schema = getCombinedSchema(pageSchema);
 
 <Layout title={title} description={description} schema={schema}>
   <main class="animate-fade-in-up">
-    <Hero />
+    <section class="px-4 pt-24 pb-4 mx-auto max-w-7xl">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Explora nuestros destinos
+      </h1>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Descubre un mundo de posibilidades con nuestros destinos de viaje
+        cuidadosamente seleccionados. Ya sea que busques relajación, aventura o
+        inmersión cultural, tenemos la escapada perfecta para ti.
+      </p>
+    </section>
+
     <InteractiveDestinations />
     <Cta />
   </main>
