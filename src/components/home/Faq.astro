@@ -6,39 +6,56 @@ interface Faq {
 
 const faqs: Faq[] = [
   {
-    question: '¿Qué tipos de viajes planifican?',
+    question: '¿Sois una agencia de viajes?',
     answer:
-      'Planificamos una amplia gama de viajes, incluyendo lunas de miel, vacaciones familiares, aventuras en solitario y tours grupales. Ya sea que busques una escapada relajante a la playa, una caminata aventurera o una exploración cultural, podemos adaptar un viaje a tus preferencias.',
+      'No, no somos una agencia de viajes. Somos planificadores de viajes personalizados. Diseñamos tu itinerario a medida, optimizamos rutas y buscamos alojamientos, actividades y recomendaciones, pero las reservas las haces tú directamente con los enlaces que te facilitamos. Esto te da total transparencia, flexibilidad y control, sin paquetes cerrados ni comisiones ocultas.',
   },
   {
-    question: '¿Cómo funciona el proceso de reserva?',
+    question: '¿Qué incluye exactamente vuestro servicio?',
     answer:
-      'Nuestro proceso de reserva es sencillo y transparente. Primero, nos reunimos contigo para entender tus necesidades y preferencias. Luego, diseñamos un itinerario personalizado y te presentamos las opciones disponibles. Una vez que apruebes el plan, nos encargamos de todas las reservas y detalles logísticos para que puedas disfrutar de tu viaje sin preocupaciones.',
+      'Nuestro servicio incluye la planificación completa de tu viaje, totalmente personalizada según tus gustos, presupuesto y estilo de viaje. Diseñamos un itinerario detallado día por día, optimizamos rutas y transporte, seleccionamos actividades y recomendaciones, y te damos acceso a una app de viaje con mapas digitales, lugares marcados, horarios, distancias y toda la información organizada para que puedas seguirla fácilmente desde tu móvil. También podemos buscar alojamientos y vuelos si lo necesitas.',
   },
   {
-    question: '¿En qué destinos se especializan?',
+    question: '¿Cómo funciona el proceso de planificación?',
     answer:
-      'Nos especializamos en una variedad de destinos alrededor del mundo, desde playas paradisíacas hasta ciudades históricas y maravillas naturales. Ya sea que desees explorar Europa, Asia, América o cualquier otro lugar, tenemos el conocimiento y la experiencia para crear un viaje inolvidable adaptado a tus intereses.',
+      'Es muy sencillo. Primero, nos cuentas tu idea de viaje a través de un breve formulario. Con esa información, diseñamos una propuesta inicial y, una vez confirmada, empezamos a crear tu itinerario personalizado. Cuando está listo, te lo entregamos en una app de viaje con mapas digitales, rutas, recomendaciones y toda la información organizada día por día. Si lo necesitas, también hacemos los ajustes o revisiones incluidos en tu paquete hasta dejar el viaje perfecto.',
   },
   {
-    question: '¿Qué sucede si necesito cambiar mis planes de viaje?',
+    question: '¿Trabajáis con cualquier destino?',
     answer:
-      'Entendemos que los planes pueden cambiar. Si necesitas modificar tu itinerario, trabajaremos contigo para hacer los ajustes necesarios. Dependiendo de las políticas de los proveedores, puede haber cargos adicionales por cambios o cancelaciones, pero siempre te informaremos de cualquier costo antes de proceder.',
+      'Sí, trabajamos con prácticamente cualquier destino del mundo. Podemos planificar viajes por Europa, América, Asia, África u Oceanía, tanto en ciudades como en rutas más complejas. Si tienes un destino muy concreto o poco habitual, nos lo indicas y adaptamos el itinerario a lo que necesitas. Nuestro objetivo es crear el viaje perfecto, sea donde sea. Además, si es un destino que no hemos visitado personalmente, te lo comentaremos siempre para que lo tengas en cuenta.',
+  },
+  {
+    question: '¿Hacéis viajes para grupos, familias o lunas de miel?',
+    answer:
+      'Sí, planificamos viajes para todo tipo de viajeros: parejas, familias, grupos de amigos y también lunas de miel. Adaptamos el itinerario al ritmo, intereses y necesidades de cada caso, ya sea un viaje relajado en pareja, unas vacaciones familiares con actividades para todos o una ruta más dinámica para un grupo. Solo tienes que contarnos qué tipo de viaje buscas y lo diseñamos a medida.',
   },
 ];
 ---
 
-<section class="max-w-7xl mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold text-gray-800 mb-8">Preguntas Frecuentes</h2>
+<section class="max-w-7xl mx-auto px-4 py-16 md:py-24">
+  <h2 class="text-3xl font-bold text-gray-800 mb-12">Preguntas frecuentes</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="space-y-4">
     {
-      faqs.map(faq => (
-        <details class="bg-gray-50 border border-gray-200 rounded-xl p-4 h-fit">
-          <summary class="cursor-pointer font-medium text-gray-800 text-base">
-            {faq.question}
+      faqs.map((faq, index) => (
+        <details
+          class="group bg-white border-2 border-gray-200 hover:border-[#12a3ed] rounded-xl p-6 transition-all duration-300 hover:shadow-lg cursor-pointer"
+          open={index === 0}
+        >
+          <summary class="flex items-center justify-between select-none">
+            <h3 class="font-semibold text-gray-900 text-lg group-open:text-[#12a3ed] transition-colors duration-300">
+              {faq.question}
+            </h3>
+            <span class="ml-4 flex-shrink-0 text-[#12a3ed] font-bold text-2xl transition-all duration-300 mt-1 group-open:hidden">
+              +
+            </span>
+            <span class="ml-4 flex-shrink-0 text-[#12a3ed] font-bold text-2xl transition-all duration-300 mt-1 hidden group-open:block">
+              −
+            </span>
           </summary>
-          <div class="mt-4 text-gray-600 text-sm">
+
+          <div class="mt-6 text-gray-700 leading-relaxed space-y-4 text-base border-t-2 border-gray-100 pt-6">
             <p>{faq.answer}</p>
           </div>
         </details>
@@ -46,3 +63,19 @@ const faqs: Faq[] = [
     }
   </div>
 </section>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details summary {
+    list-style: none;
+  }
+
+  @media (max-width: 768px) {
+    details summary {
+      padding-right: 2rem;
+    }
+  }
+</style>
