@@ -1,29 +1,32 @@
 ---
-import Layout from '@/layouts/Layout.astro';
-import Hero from '@/components/destinations/Hero.astro';
-import RelatedArticles from '@/components/destinations/RelatedArticles.astro';
-import Cta from '@/components/Cta.astro';
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
-import { allDestinationsData, type Destination } from '@/data/destinations';
-import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
+import Layout from '@/layouts/Layout.astro';
+import RelatedArticles from '@/components/destinations/RelatedArticles.astro';
 import DestinationCustomers from '@/components/destinations/DestinationCustomers.astro';
+import Cta from '@/components/Cta.astro';
+import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 
 interface Props {
-  destination: Destination;
+  destination: CollectionEntry<'destinations'>;
 }
 
 export async function getStaticPaths() {
-  const destinations = allDestinationsData;
+  const destinations = await getCollection('destinations');
   return destinations.map(destination => ({
-    params: { slug: destination.href },
-    props: { destination },
+    params: { slug: destination.id.replace('.md', '') },
+    props: {
+      destination,
+    },
   }));
 }
 
 const { destination } = Astro.props;
 
-const title = `${destination.name} | Kilómetros por Explorar`;
-const description = destination.shortDescription;
+const title = `${destination.data.name} | Kilómetros por Explorar`;
+const description = destination.data.shortDescription;
 const pathname = Astro.url.pathname;
 
 const pageSchema = getWebPageSchema(title, description, pathname);
@@ -32,7 +35,22 @@ const schema = getCombinedSchema(pageSchema);
 
 <Layout title={title} description={description} schema={schema}>
   <main>
-    <Hero destination={destination} />
+    <!-- Hero -->
+    <section class="px-4 pt-24 mx-auto max-w-7xl">
+      <h1 class="text-3xl font-bold text-gray-800 mb-4">
+        {destination.data.name}
+      </h1>
+      <p class="text-gray-600 mb-8">{destination.data.longDescription}</p>
+      <Image
+        src={destination.data.image}
+        alt={`Imagen de ${destination.data.name}`}
+        class="h-[400px] md:h-[600px] rounded-2xl object-cover w-full"
+        width={1200}
+        height={600}
+        loading="eager"
+      />
+    </section>
+
     <RelatedArticles destination={destination} />
     <DestinationCustomers destination={destination} />
   </main>

@@ -1,16 +1,46 @@
 ---
 import DestinationCard from '@/components/destinations/DestinationCard.astro';
 import DestinationSearch from '@/components/destinations/DestinationSearch.astro';
-import {
-  getFeaturedDestinations,
-  getDestinationsByCategory,
-} from '@/data/destinations';
+import { getCollection } from 'astro:content';
 
-const featuredDestinations = getFeaturedDestinations();
-const culturalDestinations = getDestinationsByCategory('cultural');
-const beachDestinations = getDestinationsByCategory('playa');
-const natureDestinations = getDestinationsByCategory('naturaleza');
-const cityDestinations = getDestinationsByCategory('ciudad');
+const featuredDestinations = await getCollection('destinations', ({ data }) => {
+  return data.featured === true;
+});
+const culturalDestinations = await getCollection('destinations', ({ data }) => {
+  return data.category === 'cultural';
+});
+const beachDestinations = await getCollection('destinations', ({ data }) => {
+  return data.category === 'playa';
+});
+const natureDestinations = await getCollection('destinations', ({ data }) => {
+  return data.category === 'naturaleza';
+});
+const cityDestinations = await getCollection('destinations', ({ data }) => {
+  return data.category === 'ciudad';
+});
+
+// Combine all destinations for search functionality
+const allDestinations = [
+  ...featuredDestinations,
+  ...culturalDestinations,
+  ...beachDestinations,
+  ...natureDestinations,
+  ...cityDestinations,
+];
+
+// Remove duplicates based on id
+const uniqueDestinations = Array.from(
+  new Map(allDestinations.map(item => [item.id, item])).values()
+);
+
+// Prepare destinations data for client-side search
+const destinationsData = uniqueDestinations.map(destination => ({
+  name: destination.data.name,
+  shortDescription: destination.data.shortDescription,
+  image: destination.data.image,
+  href: destination.id.replace('.md', ''),
+  category: destination.data.category,
+}));
 ---
 
 <section class="max-w-7xl mx-auto px-4 pt-4">
@@ -139,9 +169,7 @@ const cityDestinations = getDestinationsByCategory('ciudad');
   </div>
 </section>
 
-<script>
-  import { searchDestinations } from '@/data/destinations';
-
+<script define:vars={{ destinationsData }}>
   // Category mapping for navigation
   const categoryMapping = {
     'Todos los Destinos': 'all-destinations-section',
@@ -156,14 +184,15 @@ const cityDestinations = getDestinationsByCategory('ciudad');
     const tabs = document.querySelectorAll('nav button');
     const searchInput = document.querySelector(
       'input[placeholder="Buscar destinos..."]'
-    ) as HTMLInputElement;
+    );
     const sections = document.querySelectorAll('.destination-section');
 
     let currentSection = 'all-destinations-section';
     let isSearching = false;
+    let searchTimeout;
 
     // Function to show specific section
-    function showSection(sectionId: string) {
+    function showSection(sectionId) {
       sections.forEach(section => {
         if (section.id === sectionId) {
           section.classList.remove('hidden');
@@ -175,9 +204,9 @@ const cityDestinations = getDestinationsByCategory('ciudad');
     }
 
     // Function to create destination card HTML
-    function createDestinationCard(destination: any) {
+    function createDestinationCard(destination) {
       return `
-        <a href="${'destinos/' + destination.href}" class="group destination-card" data-category="${destination.category}">
+        <a href="/destinos/${destination.href}" class="group destination-card" data-category="${destination.category}">
           <article class="space-y-4">
             <img
               src="${destination.image}"
@@ -198,8 +227,19 @@ const cityDestinations = getDestinationsByCategory('ciudad');
       `;
     }
 
+    // Function to perform client-side search
+    function performSearch(query) {
+      const lowerQuery = query.toLowerCase();
+      const results = destinationsData.filter(destination => {
+        const name = destination.name.toLowerCase();
+        const description = destination.shortDescription.toLowerCase();
+        return name.includes(lowerQuery) || description.includes(lowerQuery);
+      });
+      return results;
+    }
+
     // Function to display search results
-    function displaySearchResults(results: any[]) {
+    function displaySearchResults(results) {
       const resultsGrid = document.getElementById('search-results-grid');
       const noResults = document.getElementById('no-results');
 
@@ -219,7 +259,7 @@ const cityDestinations = getDestinationsByCategory('ciudad');
     // Tab navigation functionality
     tabs.forEach(tab => {
       tab.addEventListener('click', function () {
-        if (isSearching) {
+        if (isSearching && searchInput) {
           // Clear search when switching tabs
           searchInput.value = '';
           isSearching = false;
@@ -237,8 +277,7 @@ const cityDestinations = getDestinationsByCategory('ciudad');
 
         // Show corresponding section
         const tabText = this.textContent?.trim() || '';
-        const sectionId =
-          categoryMapping[tabText as keyof typeof categoryMapping];
+        const sectionId = categoryMapping[tabText];
         if (sectionId) {
           showSection(sectionId);
         }
@@ -247,8 +286,6 @@ const cityDestinations = getDestinationsByCategory('ciudad');
 
     // Search functionality
     if (searchInput) {
-      let searchTimeout: number;
-
       searchInput.addEventListener('input', function () {
         const query = this.value.trim();
 
@@ -264,7 +301,7 @@ const cityDestinations = getDestinationsByCategory('ciudad');
           } else if (query.length >= 2) {
             // Perform search with minimum 2 characters
             isSearching = true;
-            const results = searchDestinations(query);
+            const results = performSearch(query);
             displaySearchResults(results);
           }
         }, 300);

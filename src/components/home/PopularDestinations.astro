@@ -1,8 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-import { getFeaturedDestinations } from '@/data/destinations';
+import { getCollection } from 'astro:content';
 
-const featuredDestinations = getFeaturedDestinations();
+const featuredDestinations = await getCollection('destinations', ({ data }) => {
+  return data.featured === true;
+});
 ---
 
 <section class="max-w-7xl mx-auto px-4 py-16">
@@ -11,11 +13,11 @@ const featuredDestinations = getFeaturedDestinations();
   <div class="grid md:grid-cols-3 gap-6">
     {
       featuredDestinations.map(destination => (
-        <a href={`destinos/${destination.href}`} class="group">
+        <a href={`destinos/${destination.id.replace('.md', '')}`} class="group">
           <article class="space-y-4">
             <Image
-              src={destination.image}
-              alt={destination.name}
+              src={destination.data.image}
+              alt={destination.data.name}
               class="w-full h-48 object-cover rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300"
               width={400}
               height={300}
@@ -23,10 +25,10 @@ const featuredDestinations = getFeaturedDestinations();
             />
             <div class="space-y-2">
               <h3 class="text-lg font-medium text-gray-800">
-                {destination.name}
+                {destination.data.name}
               </h3>
               <p class="text-gray-600 text-sm">
-                {destination.shortDescription}
+                {destination.data.shortDescription}
               </p>
             </div>
           </article>

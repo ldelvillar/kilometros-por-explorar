@@ -1,9 +1,9 @@
 ---
 import { Image } from 'astro:assets';
-import type { Destination } from '@/data/destinations';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  destination: Destination;
+  destination: CollectionEntry<'destinations'>;
   loading?: 'eager' | 'lazy';
 }
 
@@ -11,14 +11,14 @@ const { destination, loading = 'lazy' } = Astro.props;
 ---
 
 <a
-  href={`destinos/${destination.href}`}
+  href={`/destinos/${destination.id.replace('.md', '')}`}
   class="group destination-card"
-  data-category={destination.category}
+  data-category={destination.data.category}
 >
   <article class="space-y-4">
     <Image
-      src={destination.image}
-      alt={destination.name}
+      src={destination.data.image}
+      alt={destination.data.name}
       class="w-full h-48 object-cover rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300"
       width={400}
       height={300}
@@ -26,10 +26,10 @@ const { destination, loading = 'lazy' } = Astro.props;
     />
     <div class="space-y-2">
       <h3 class="text-lg font-medium text-gray-800 destination-name">
-        {destination.name}
+        {destination.data.name}
       </h3>
       <p class="text-gray-600 text-sm destination-description">
-        {destination.shortDescription}
+        {destination.data.shortDescription}
       </p>
     </div>
   </article>

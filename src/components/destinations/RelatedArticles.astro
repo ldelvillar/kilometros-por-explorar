@@ -1,22 +1,19 @@
 ---
 import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
 import BlogCard from '@/components/BlogCard.astro';
-import type { Destination } from '@/data/destinations';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  destination: Destination;
+  destination: CollectionEntry<'destinations'>;
 }
 
 const { destination } = Astro.props;
 
-const posts: CollectionEntry<'blog'>[] = await getCollection('blog');
+const posts = await getCollection('blog', ({ data }) => {
+  return data.destinations?.includes(destination.id.replace('.md', ''));
+});
 const sortedPosts = posts.sort(
-  (a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) =>
-    new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-);
-const filteredPosts = sortedPosts.filter(post =>
-  post.data.destinations?.includes(destination.href)
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
 ---
 
@@ -26,9 +23,9 @@ const filteredPosts = sortedPosts.filter(post =>
   </h2>
 
   {
-    filteredPosts.length > 0 ? (
+    sortedPosts.length > 0 ? (
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {filteredPosts.map(post => (
+        {sortedPosts.map(post => (
           <BlogCard post={post} loading="lazy" />
         ))}
       </div>

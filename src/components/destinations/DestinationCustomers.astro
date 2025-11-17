@@ -1,22 +1,20 @@
 ---
 import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
-import type { Destination } from '@/data/destinations';
 import CustomerCard from '@/components/customers/CustomerCard.astro';
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  destination: Destination;
+  destination: CollectionEntry<'destinations'>;
 }
 
 const { destination } = Astro.props;
 
-const customers: CollectionEntry<'customers'>[] =
-  await getCollection('customers');
-const relatedCustomers = customers.filter(
-  customer =>
-    customer.data.destination.href.replace('/destinos/', '') ===
-    destination.href
-);
+const relatedCustomers = await getCollection('customers', ({ data }) => {
+  return (
+    data.destination.href.replace('/destinos/', '') ===
+    destination.id.replace('.md', '')
+  );
+});
 ---
 
 {

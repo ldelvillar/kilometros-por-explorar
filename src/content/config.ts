@@ -1,5 +1,23 @@
 import { defineCollection, z } from 'astro:content';
 
+const destinations = defineCollection({
+  type: 'content',
+  schema: z.object({
+    name: z.string(),
+    shortDescription: z.string(),
+    longDescription: z.string(),
+    image: z.string(),
+    category: z.enum([
+      'cultural',
+      'playa',
+      'naturaleza',
+      'ciudad',
+      'destacados',
+    ]),
+    featured: z.boolean().default(false),
+  }),
+});
+
 const blog = defineCollection({
   type: 'content',
   schema: z.object({
@@ -37,6 +55,7 @@ const customers = defineCollection({
 });
 
 export const collections = {
+  destinations,
   blog,
   customers,
 };
