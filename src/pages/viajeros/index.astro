@@ -5,18 +5,15 @@ import FeaturedCustomerCard from '@/components/customers/FeaturedCustomerCard.as
 import CustomerCard from '@/components/customers/CustomerCard.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 
-const customers = await getCollection('customers');
-const featuredCustomers = customers.filter(
-  customer => customer.data.featured === true
-);
-
 const title = 'Historias de Viajeros Satisfechos | Kilómetros por Explorar';
 const description =
   'Descubre las experiencias inolvidables de viajeros que organizaron sus viajes con nosotros. Explora sus aventuras y únete a la comunidad de viajeros felices con Kilómetros por Explorar.';
-
 const pathname = Astro.url.pathname;
 const pageSchema = getWebPageSchema(title, description, pathname);
 const schema = getCombinedSchema(pageSchema);
+
+const customers = await getCollection('customers');
+const featuredCustomers = customers.filter(customer => customer.data.featured);
 ---
 
 <Layout title={title} description={description} schema={schema}>
@@ -41,7 +38,7 @@ const schema = getCombinedSchema(pageSchema);
       </div>
     </section>
 
-    <!-- <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6">
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6">
       <h2 class="mb-6 text-4xl font-extrabold text-gray-800 tracking-tight">
         Todas las historias
       </h2>
@@ -54,6 +51,6 @@ const schema = getCombinedSchema(pageSchema);
           ))
         }
       </div>
-    </section> -->
+    </section>
   </main>
 </Layout>
