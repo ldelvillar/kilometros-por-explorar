@@ -3,30 +3,29 @@ import DestinationCard from '@/components/destinations/DestinationCard.astro';
 import DestinationSearch from '@/components/destinations/DestinationSearch.astro';
 import { getCollection } from 'astro:content';
 
-const featuredDestinations = await getCollection('destinations', ({ data }) => {
-  return data.featured === true;
-});
-const culturalDestinations = await getCollection('destinations', ({ data }) => {
-  return data.category === 'cultural';
-});
-const beachDestinations = await getCollection('destinations', ({ data }) => {
-  return data.category === 'playa';
-});
-const natureDestinations = await getCollection('destinations', ({ data }) => {
-  return data.category === 'naturaleza';
-});
-const cityDestinations = await getCollection('destinations', ({ data }) => {
-  return data.category === 'ciudad';
-});
+const allDestinations = await getCollection('destinations');
 
-// Combine all destinations for search functionality
-const allDestinations = [
-  ...featuredDestinations,
-  ...culturalDestinations,
-  ...beachDestinations,
-  ...natureDestinations,
-  ...cityDestinations,
-];
+const featuredDestinations = allDestinations.filter(
+  destination => destination.data.featured === true
+);
+const culturalDestinations = allDestinations.filter(
+  ({ data }) => data.category === 'cultural'
+);
+const beachDestinations = allDestinations.filter(
+  ({ data }) => data.category === 'playa'
+);
+const natureDestinations = allDestinations.filter(
+  ({ data }) => data.category === 'naturaleza'
+);
+const cityDestinations = allDestinations.filter(
+  ({ data }) => data.category === 'ciudad'
+);
+const boatDestinations = allDestinations.filter(
+  ({ data }) => data.category === 'barco'
+);
+const surprisePackDestinations = allDestinations.filter(
+  ({ data }) => data.category === 'sorpresa'
+);
 
 // Remove duplicates based on id
 const uniqueDestinations = Array.from(
@@ -65,7 +64,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Cultural Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Viajes Culturales</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Viajes culturales</h2>
       <div class="grid md:grid-cols-3 gap-6">
         {
           culturalDestinations.map(destination => (
@@ -77,7 +76,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Beach Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Escapadas de Playa</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Playa</h2>
       <div class="grid md:grid-cols-3 gap-6">
         {
           beachDestinations.map(destination => (
@@ -99,12 +98,36 @@ const destinationsData = uniqueDestinations.map(destination => ({
       </div>
     </div>
 
+    <!-- Boat Destinations -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Viajes en barco</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          boatDestinations.map(destination => (
+            <DestinationCard destination={destination} />
+          ))
+        }
+      </div>
+    </div>
+
     <!-- City Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Ciudades Europeas</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Ciudades europeas</h2>
       <div class="grid md:grid-cols-3 gap-6">
         {
           cityDestinations.map(destination => (
+            <DestinationCard destination={destination} />
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Surprise Pack Destinations -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Packs sorpresa</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {
+          surprisePackDestinations.map(destination => (
             <DestinationCard destination={destination} />
           ))
         }
@@ -145,11 +168,33 @@ const destinationsData = uniqueDestinations.map(destination => ({
     </div>
   </div>
 
+  <!-- Boat Destinations -->
+  <div id="boat-section" class="destination-section hidden">
+    <div class="grid md:grid-cols-3 gap-6">
+      {
+        boatDestinations.map(destination => (
+          <DestinationCard destination={destination} />
+        ))
+      }
+    </div>
+  </div>
+
   <!-- City Destinations -->
   <div id="city-section" class="destination-section hidden">
     <div class="grid md:grid-cols-3 gap-6">
       {
         cityDestinations.map(destination => (
+          <DestinationCard destination={destination} />
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Surprise Pack Destinations -->
+  <div id="surprise-section" class="destination-section hidden">
+    <div class="grid md:grid-cols-3 gap-6">
+      {
+        surprisePackDestinations.map(destination => (
           <DestinationCard destination={destination} />
         ))
       }
@@ -172,11 +217,13 @@ const destinationsData = uniqueDestinations.map(destination => ({
 <script define:vars={{ destinationsData }}>
   // Category mapping for navigation
   const categoryMapping = {
-    'Todos los Destinos': 'all-destinations-section',
-    'Viajes Culturales': 'cultural-section',
-    'Escapadas de Playa': 'beach-section',
+    'Todos los destinos': 'all-destinations-section',
+    'Viajes culturales': 'cultural-section',
+    Playa: 'beach-section',
     Naturaleza: 'nature-section',
-    'Ciudades Europeas': 'city-section',
+    'Ciudades europeas': 'city-section',
+    'Viajes en barco': 'boat-section',
+    'Packs sorpresa': 'surprise-section',
   };
 
   // Initialize functionality when DOM is loaded

@@ -13,6 +13,8 @@ const destinations = defineCollection({
       'naturaleza',
       'ciudad',
       'destacados',
+      'barco',
+      'sorpresa',
     ]),
     featured: z.boolean().default(false),
   }),
