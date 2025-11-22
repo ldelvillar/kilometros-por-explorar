@@ -4,6 +4,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
 import CTA from '@/components/Cta.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import '@/styles/prose.css';
 
 interface Props {
   post: CollectionEntry<'blog'>;
