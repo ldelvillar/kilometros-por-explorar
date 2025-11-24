@@ -5,6 +5,7 @@ import Envelope from '@/assets/envelope.svg';
 import Phone from '@/assets/phone.svg';
 import Location from '@/assets/location.svg';
 import Clock from '@/assets/clock.svg';
+import Instagram from '@/assets/logos/instagram.svg';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { SITE_CONFIG } from '@/config/site';
 
@@ -20,25 +21,78 @@ const schema = getCombinedSchema(pageSchema);
 
 <Layout title={title} description={description} schema={schema}>
   <main class="animate-fade-in-up">
-    <!-- Hero Section -->
-    <section class="px-4 pt-8 pb-12 md:pt-24 md:pb-16">
+    <section class="px-4 pt-24 pb-12 md:pb-16">
       <div class="mx-auto max-w-6xl">
-        <h1 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
-          Contacta con Nosotros
-        </h1>
-        <p class="text-lg text-gray-600">
-          Estamos aquí para ayudarte a planificar las vacaciones de tus sueños.
-          Contáctanos con cualquier pregunta o para comenzar a planificar tu
-          viaje.
-        </p>
-      </div>
-    </section>
+        <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
+          <!-- Contact Information -->
+          <div>
+            <h1 class="mb-6 text-3xl font-bold text-gray-900">
+              Contacta con nosotros
+            </h1>
+            <p class="mb-6 text-lg leading-[1.4] text-gray-700">
+              Estamos aquí para ayudarte a planificar tu viaje ideal. Completa
+              el formulario a continuación o contáctanos a través de los métodos
+              indicados y nos pondremos en contacto contigo lo antes posible.
+            </p>
 
-    <!-- Contact Content -->
-    <section class="px-4 pb-16">
-      <div class="mx-auto max-w-6xl">
+            <div class="space-y-4 text-lg text-gray-700">
+              <div class="flex items-center space-x-4">
+                <Envelope class="size-6 text-primary" />
+                <a
+                  href={`mailto:${SITE_CONFIG.company.email}`}
+                  class="hover:text-primary">{SITE_CONFIG.company.email}</a
+                >
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <Phone class="size-6 text-primary" />
+                <span>
+                  <a
+                    href={`tel:${SITE_CONFIG.company.phone}`}
+                    class="hover:text-primary">{SITE_CONFIG.company.phone}</a
+                  >, <a
+                    href={`tel:${SITE_CONFIG.company.phone2}`}
+                    class="hover:text-primary">{SITE_CONFIG.company.phone2}</a
+                  >
+                </span>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <Instagram class="size-6 text-primary" />
+                <a
+                  href={SITE_CONFIG.social.instagram}
+                  class="hover:text-primary">@kilometrosporexplorar</a
+                >
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <Location class="size-6 text-primary" />
+                <p class="">Madrid, España</p>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <Clock class="size-6 text-primary" />
+                <div>
+                  <p>Lunes - Viernes: 9:00 - 18:00</p>
+                  <p>Sábados: 10:00 - 14:00</p>
+                  <p>Domingos: Cerrado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <h2 class="mb-8 text-3xl font-bold text-gray-900">
+              Solicitud de información
+            </h2>
+
+            <ContactForm />
+          </div>
+        </div>
+
         <!-- Google Maps Embed -->
-        <div class="relative mb-16 h-96 overflow-hidden rounded-xl shadow-lg">
+        <div class="relative mt-16 h-96 overflow-hidden rounded-xl shadow-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-3.9244243!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1696234567890!5m2!1sen!2sus"
             width="100%"
@@ -51,94 +105,14 @@ const schema = getCombinedSchema(pageSchema);
             class="absolute inset-0"></iframe>
         </div>
 
-        <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
-          <!-- Contact Information -->
-          <div>
-            <h2 class="mb-8 text-3xl font-bold text-gray-900">
-              Información de Contacto
-            </h2>
-
-            <div class="space-y-8">
-              <div class="flex items-start space-x-4">
-                <div
-                  class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg"
-                >
-                  <Envelope class="text-primary size-6" />
-                </div>
-                <div>
-                  <h3 class="mb-2 text-xl font-semibold text-gray-900">
-                    Email
-                  </h3>
-                  <p class="text-gray-600">{SITE_CONFIG.company.email}</p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div
-                  class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg"
-                >
-                  <Phone class="text-primary size-6" />
-                </div>
-                <div>
-                  <h3 class="mb-2 text-xl font-semibold text-gray-900">
-                    Teléfonos
-                  </h3>
-                  <p class="text-gray-600">{SITE_CONFIG.company.phone}</p>
-                  <p class="text-gray-600">{SITE_CONFIG.company.phone2}</p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div
-                  class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg"
-                >
-                  <Location class="text-primary size-6" />
-                </div>
-                <div>
-                  <h3 class="mb-2 text-xl font-semibold text-gray-900">
-                    Ubicación
-                  </h3>
-                  <p class="text-gray-600">Madrid, España</p>
-                  <p class="text-gray-600">Disponemos de consultas virtuales</p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div
-                  class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg"
-                >
-                  <Clock class="text-primary h-6 w-6" />
-                </div>
-                <div>
-                  <h3 class="mb-2 text-xl font-semibold text-gray-900">
-                    Horarios
-                  </h3>
-                  <p class="text-gray-600">Lunes - Viernes: 9:00 - 18:00</p>
-                  <p class="text-gray-600">Sábados: 10:00 - 14:00</p>
-                  <p class="text-gray-600">Domingos: Cerrado</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <div>
-            <h2 class="mb-8 text-3xl font-bold text-gray-900">
-              Solicitud de Información
-            </h2>
-
-            <ContactForm />
-          </div>
-        </div>
-
         <!-- Additional Info -->
         <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div class="rounded-xl bg-gray-50 p-6 text-center">
             <div
-              class="bg-primary/10 mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg"
+              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10"
             >
               <svg
-                class="text-primary h-6 w-6"
+                class="h-6 w-6 text-primary"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -160,10 +134,10 @@ const schema = getCombinedSchema(pageSchema);
 
           <div class="rounded-xl bg-gray-50 p-6 text-center">
             <div
-              class="bg-primary/10 mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg"
+              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10"
             >
               <svg
-                class="text-primary h-6 w-6"
+                class="h-6 w-6 text-primary"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -185,10 +159,10 @@ const schema = getCombinedSchema(pageSchema);
 
           <div class="rounded-xl bg-gray-50 p-6 text-center">
             <div
-              class="bg-primary/10 mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg"
+              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10"
             >
               <svg
-                class="text-primary h-6 w-6"
+                class="h-6 w-6 text-primary"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
