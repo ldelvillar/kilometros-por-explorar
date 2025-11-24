@@ -18,17 +18,17 @@ const featuredCustomers = customers.filter(customer => customer.data.featured);
 
 <Layout title={title} description={description} schema={schema}>
   <main class="animate-fade-in-up">
-    <section class="px-4 lg:px-8 pt-24 pb-6 mx-auto max-w-7xl">
-      <h1 class="mb-2 text-4xl font-extrabold text-gray-800 tracking-tight">
+    <section class="mx-auto max-w-7xl px-4 pt-24 pb-6 lg:px-8">
+      <h1 class="mb-2 text-4xl font-extrabold tracking-tight text-gray-800">
         Viajeros Satisfechos
       </h1>
-      <p class="mb-8 text-gray-600 text-lg leading-relaxed">
+      <p class="mb-8 text-lg leading-relaxed text-gray-600">
         Conoce historias de viajeros que han encontrado su destino ideal gracias
         a Kilómetros por Explorar.
       </p>
 
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-14"
+        class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-14 lg:grid-cols-3"
       >
         {
           featuredCustomers.map(customer => (
@@ -38,12 +38,12 @@ const featuredCustomers = customers.filter(customer => customer.data.featured);
       </div>
     </section>
 
-    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6">
-      <h2 class="mb-6 text-4xl font-extrabold text-gray-800 tracking-tight">
+    <section class="mx-auto max-w-7xl px-4 pt-16 pb-6 lg:px-8">
+      <h2 class="mb-6 text-4xl font-extrabold tracking-tight text-gray-800">
         Todas las historias
       </h2>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-14"
+        class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-14 lg:grid-cols-3"
       >
         {
           customers.map(customer => (

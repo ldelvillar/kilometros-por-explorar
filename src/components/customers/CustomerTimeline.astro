@@ -34,23 +34,23 @@ const timelineItems: TimelineItem[] = [
 ];
 ---
 
-<ol class="max-w-4xl mx-auto relative border-s border-gray-200">
+<ol class="relative mx-auto max-w-4xl border-s border-gray-200">
   {
     timelineItems.map(item => (
-      <li class="mb-10 ms-7 lg:ms-12">
-        <span class="absolute flex items-center justify-center size-8 bg-gray-100 rounded-full -start-4">
-          <item.icon class="size-4 text-primary" aria-hidden="true" />
+      <li class="ms-7 mb-10 lg:ms-12">
+        <span class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-gray-100">
+          <item.icon class="text-primary size-4" aria-hidden="true" />
         </span>
-        <h3 class=" font-semibold text-xl text-gray-900 mb-3">{item.title}</h3>
+        <h3 class="mb-3 text-xl font-semibold text-gray-900">{item.title}</h3>
         {item.title !== 'Destino' ? (
           <p class="font-normal text-gray-500">{item.content}</p>
         ) : (
           <a
             href={item.content.href}
-            class="group flex flex-row items-center gap-2 text-blue-500 w-fit"
+            class="group flex w-fit flex-row items-center gap-2 text-blue-500"
           >
-            <span class="relative animated-underline">{item.content.name}</span>
-            <Arrow class="size-5 -rotate-45 group-hover:rotate-0 transition-transform duration-600" />
+            <span class="animated-underline relative">{item.content.name}</span>
+            <Arrow class="size-5 -rotate-45 transition-transform duration-600 group-hover:rotate-0" />
           </a>
         )}
       </li>

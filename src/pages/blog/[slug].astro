@@ -30,25 +30,25 @@ const schema = getCombinedSchema(pageSchema);
 ---
 
 <Layout title={title} description={description} schema={schema}>
-  <main class="pt-20 bg-white">
+  <main class="bg-white pt-20">
     <!-- Hero image -->
-    <div class="max-w-5xl mx-auto w-full">
+    <div class="mx-auto w-full max-w-5xl">
       <Image
         width="1200"
         height="600"
         src={post.data.image}
         alt={post.data.title}
-        class="w-full h-[240px] md:h-[420px] object-cover"
+        class="h-[240px] w-full object-cover md:h-[420px]"
         loading="eager"
       />
     </div>
 
     <!-- Content -->
     <div
-      class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white relative -mt-12 md:-mt-16 lg:-mt-20 z-10"
+      class="relative z-10 mx-auto -mt-12 max-w-4xl bg-white px-4 sm:px-6 md:-mt-16 lg:-mt-20 lg:px-8"
     >
       <!-- Header -->
-      <header class="pt-8 md:pt-12 mb-8 text-center">
+      <header class="mb-8 pt-8 text-center md:pt-12">
         <div
           class="mb-4 flex flex-wrap items-center justify-center gap-4 text-neutral-600"
         >
@@ -64,19 +64,19 @@ const schema = getCombinedSchema(pageSchema);
             }
           </time>
         </div>
-        <h1 class="font-bold text-3xl md:text-4xl text-gray-900">
+        <h1 class="text-3xl font-bold text-gray-900 md:text-4xl">
           {post.data.title}
         </h1>
       </header>
 
-      <hr class="my-8 lg:my-16 border-t border-gray-300" />
+      <hr class="my-8 border-t border-gray-300 lg:my-16" />
 
       <!-- Article -->
-      <article class="prose lg:prose-lg max-w-[800px] mx-auto mb-12">
+      <article class="prose lg:prose-lg mx-auto mb-12 max-w-[800px]">
         <Content />
       </article>
 
-      <hr class="my-8 lg:my-16 border-t border-gray-300" />
+      <hr class="my-8 border-t border-gray-300 lg:my-16" />
     </div>
 
     <CTA />

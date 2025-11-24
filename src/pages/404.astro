@@ -8,21 +8,21 @@ const description =
 ---
 
 <Layout title={title} description={description}>
-  <main class="max-w-6xl mx-auto px-4 pt-24 pb-20 animate-fade-in-up">
+  <main class="animate-fade-in-up mx-auto max-w-6xl px-4 pt-24 pb-20">
     <div class="bg-primary/10 h-64 w-full rounded-2xl">
       <Image
         src="/images/404.webp"
         alt="Ilustración de página no encontrada"
         width={800}
         height={400}
-        class="h-full w-full object-contain select-none pointer-events-none"
+        class="pointer-events-none h-full w-full object-contain select-none"
         loading="eager"
       />
     </div>
     <div
-      class="mt-8 max-w-4xl mx-auto flex flex-col justify-center items-center"
+      class="mx-auto mt-8 flex max-w-4xl flex-col items-center justify-center"
     >
-      <h1 class="text-2xl font-bold text-center">
+      <h1 class="text-center text-2xl font-bold">
         Oops! Parece que nos hemos perdido
       </h1>
       <p class="mt-4 text-center text-gray-600">
@@ -33,13 +33,13 @@ const description =
       <div class="mt-8 flex items-center gap-4">
         <a
           href="/"
-          class="bg-primary text-white font-bold px-4 py-3 rounded-xl hover:bg-primary/90 transition duration-300"
+          class="bg-primary hover:bg-primary/90 rounded-xl px-4 py-3 font-bold text-white transition duration-300"
         >
           Volver al Inicio
         </a>
         <a
           href="/destinos"
-          class="text-primary font-bold px-4 py-3 rounded-xl border border-primary hover:bg-primary/10 transition duration-300"
+          class="text-primary border-primary hover:bg-primary/10 rounded-xl border px-4 py-3 font-bold transition duration-300"
         >
           Explorar Destinos
         </a>

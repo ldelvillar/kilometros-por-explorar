@@ -12,8 +12,8 @@ interface Props {
 const { post, loading } = Astro.props;
 ---
 
-<article class="group h-full bg-white rounded-2xl shadow-lg overflow-hidden">
-  <a href={`/blog/${post.id.replace('.md', '')}`} class="flex flex-col h-full">
+<article class="group h-full overflow-hidden rounded-2xl bg-white shadow-lg">
+  <a href={`/blog/${post.id.replace('.md', '')}`} class="flex h-full flex-col">
     <div class="h-52 overflow-hidden">
       <Image
         src={post.data.image}
@@ -25,15 +25,15 @@ const { post, loading } = Astro.props;
       />
     </div>
 
-    <div class="p-6 flex flex-col flex-1 text-start">
-      <h2 class="font-bold text-2xl text-primary mb-4">
+    <div class="flex flex-1 flex-col p-6 text-start">
+      <h2 class="text-primary mb-4 text-2xl font-bold">
         {post.data.title}
       </h2>
-      <p class="text-neutral-800 mb-4 flex-1">
+      <p class="mb-4 flex-1 text-neutral-800">
         {post.data.description}
       </p>
       <div
-        class="flex items-center justify-between text-sm text-neutral-500 mb-2"
+        class="mb-2 flex items-center justify-between text-sm text-neutral-500"
       >
         <span>
           {
@@ -46,14 +46,14 @@ const { post, loading } = Astro.props;
         </span>
         <span class="capitalize">{post.data.author}</span>
       </div>
-      <div class="flex items-center gap-2 font-semibold text-primary">
+      <div class="text-primary flex items-center gap-2 font-semibold">
         <span>Leer más</span>
         <div class="relative size-4">
           <HalfArrow
-            class="size-4 absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+            class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
           />
           <Arrow
-            class="size-4 absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1"
+            class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
           />
         </div>
       </div>

@@ -3,21 +3,21 @@ import Logo from '@/assets/logo.svg';
 import Menu from '@/assets/menu.svg';
 ---
 
-<header class="w-full fixed top-0 text-white z-40">
-  <div class="container mx-auto p-3 flex items-center justify-between">
-    <a href="/" class="flex items-center font-bold text-lg">
-      <Logo class="size-8 mr-2" />
+<header class="fixed top-0 z-40 w-full text-white">
+  <div class="container mx-auto flex items-center justify-between p-3">
+    <a href="/" class="flex items-center text-lg font-bold">
+      <Logo class="mr-2 size-8" />
       Kilómetros por Explorar
     </a>
 
-    <nav class="hidden lg:flex lg:items-center space-x-8 text-base">
+    <nav class="hidden space-x-8 text-base lg:flex lg:items-center">
       <a href="/destinos" class="hover:text-primary">Destinos</a>
       <a href="/blog" class="hover:text-primary">Blog</a>
       <a href="/viajeros" class="hover:text-primary">Viajeros</a>
       <a href="/sobre-nosotros" class="hover:text-primary">Sobre Nosotros</a>
       <a
         href="/contacto"
-        class="px-4 py-2 bg-primary font-bold text-white rounded-xl hover:bg-primary/90 transition duration-300"
+        class="bg-primary hover:bg-primary/90 rounded-xl px-4 py-2 font-bold text-white transition duration-300"
         >Planifica tu Viaje</a
       >
     </nav>
@@ -25,7 +25,7 @@ import Menu from '@/assets/menu.svg';
     <button
       id="menu-toggle"
       aria-label="Abrir y cerrar menú de navegación"
-      class="lg:hidden focus:outline-none"
+      class="focus:outline-none lg:hidden"
     >
       <Menu class="size-6" />
     </button>
@@ -34,7 +34,7 @@ import Menu from '@/assets/menu.svg';
   <!-- Mobile menu -->
   <nav
     id="mobile-menu"
-    class="space-y-4 p-4 lg:hidden h-screen hidden backdrop-blur-lg"
+    class="hidden h-screen space-y-4 p-4 backdrop-blur-lg lg:hidden"
   >
     <a href="/destinos" class="block hover:text-gray-900">Destinos</a>
     <a href="/blog" class="block hover:text-gray-900">Blog</a>
@@ -44,7 +44,7 @@ import Menu from '@/assets/menu.svg';
     >
     <a
       href="/contacto"
-      class="px-4 py-2 bg-primary font-bold text-white rounded-xl hover:bg-primary/90 transition duration-300"
+      class="bg-primary hover:bg-primary/90 rounded-xl px-4 py-2 font-bold text-white transition duration-300"
       >Planifica tu Viaje</a
     >
   </nav>

@@ -42,15 +42,15 @@ const destinationsData = uniqueDestinations.map(destination => ({
 }));
 ---
 
-<section class="max-w-7xl mx-auto px-4 pt-4">
+<section class="mx-auto max-w-7xl px-4 pt-4">
   <DestinationSearch />
 
   <!-- All Destinations - Always visible initially (organized by categories) -->
   <div id="all-destinations-section" class="destination-section">
     <!-- Featured Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Destinos Destacados</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Destinos Destacados</h2>
+      <div class="grid gap-6 md:grid-cols-3">
         {
           featuredDestinations.map((destination, index) => (
             <DestinationCard
@@ -64,8 +64,8 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Cultural Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Viajes culturales</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Viajes culturales</h2>
+      <div class="grid gap-6 md:grid-cols-3">
         {
           culturalDestinations.map(destination => (
             <DestinationCard destination={destination} />
@@ -76,8 +76,8 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Beach Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Playa</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Playa</h2>
+      <div class="grid gap-6 md:grid-cols-3">
         {
           beachDestinations.map(destination => (
             <DestinationCard destination={destination} />
@@ -88,8 +88,8 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Nature Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Naturaleza</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Naturaleza</h2>
+      <div class="grid gap-6 md:grid-cols-3">
         {
           natureDestinations.map(destination => (
             <DestinationCard destination={destination} />
@@ -100,8 +100,8 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Boat Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Viajes en barco</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Viajes en barco</h2>
+      <div class="grid gap-6 md:grid-cols-3">
         {
           boatDestinations.map(destination => (
             <DestinationCard destination={destination} />
@@ -112,8 +112,8 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- City Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Ciudades europeas</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Ciudades europeas</h2>
+      <div class="grid gap-6 md:grid-cols-3">
         {
           cityDestinations.map(destination => (
             <DestinationCard destination={destination} />
@@ -124,8 +124,8 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Surprise Pack Destinations -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Packs sorpresa</h2>
-      <div class="grid md:grid-cols-3 gap-6">
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Packs sorpresa</h2>
+      <div class="grid gap-6 md:grid-cols-3">
         {
           surprisePackDestinations.map(destination => (
             <DestinationCard destination={destination} />
@@ -137,7 +137,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
   <!-- Cultural Destinations -->
   <div id="cultural-section" class="destination-section hidden">
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid gap-6 md:grid-cols-3">
       {
         culturalDestinations.map(destination => (
           <DestinationCard destination={destination} />
@@ -148,7 +148,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
   <!-- Beach Destinations -->
   <div id="beach-section" class="destination-section hidden">
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid gap-6 md:grid-cols-3">
       {
         beachDestinations.map(destination => (
           <DestinationCard destination={destination} />
@@ -159,7 +159,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
   <!-- Nature Destinations -->
   <div id="nature-section" class="destination-section hidden">
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid gap-6 md:grid-cols-3">
       {
         natureDestinations.map(destination => (
           <DestinationCard destination={destination} />
@@ -170,7 +170,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
   <!-- Boat Destinations -->
   <div id="boat-section" class="destination-section hidden">
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid gap-6 md:grid-cols-3">
       {
         boatDestinations.map(destination => (
           <DestinationCard destination={destination} />
@@ -181,7 +181,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
   <!-- City Destinations -->
   <div id="city-section" class="destination-section hidden">
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid gap-6 md:grid-cols-3">
       {
         cityDestinations.map(destination => (
           <DestinationCard destination={destination} />
@@ -192,7 +192,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
   <!-- Surprise Pack Destinations -->
   <div id="surprise-section" class="destination-section hidden">
-    <div class="grid md:grid-cols-3 gap-6">
+    <div class="grid gap-6 md:grid-cols-3">
       {
         surprisePackDestinations.map(destination => (
           <DestinationCard destination={destination} />
@@ -203,10 +203,10 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
   <!-- Search Results (initially hidden) -->
   <div id="search-results" class="destination-section hidden">
-    <div id="search-results-grid" class="grid md:grid-cols-3 gap-6">
+    <div id="search-results-grid" class="grid gap-6 md:grid-cols-3">
       <!-- Results will be populated by JavaScript -->
     </div>
-    <div id="no-results" class="text-center py-8 hidden">
+    <div id="no-results" class="hidden py-8 text-center">
       <p class="text-gray-500">
         No se encontraron destinos que coincidan con tu búsqueda.
       </p>

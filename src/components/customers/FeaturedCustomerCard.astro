@@ -15,10 +15,10 @@ const { customer, loading } = Astro.props;
 <article class="group h-full">
   <a
     href={`/viajeros/${customer.id.replace('.md', '')}`}
-    class="flex flex-col h-full bg-white overflow-hidden"
+    class="flex h-full flex-col overflow-hidden bg-white"
   >
     {/* Image Container */}
-    <div class="relative h-[420px] md:h-[475px] rounded-lg overflow-hidden">
+    <div class="relative h-[420px] overflow-hidden rounded-lg md:h-[475px]">
       <Image
         src={customer.data.image}
         width={600}
@@ -33,7 +33,7 @@ const { customer, loading } = Astro.props;
 
       {/* Company Logo */}
       <div class="absolute top-4 left-4 z-10">
-        <div class="bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg">
+        <div class="rounded-lg bg-white/90 p-2 shadow-lg backdrop-blur-sm">
           <img
             src={customer.data.destinationFlagImage}
             width={80}
@@ -47,28 +47,28 @@ const { customer, loading } = Astro.props;
 
       {/* Company Name Overlay */}
       <div class="absolute bottom-4 left-4 z-10">
-        <h3 class="text-white font-bold text-lg lg:text-xl">
+        <h3 class="text-lg font-bold text-white lg:text-xl">
           {customer.data.name}
         </h3>
       </div>
     </div>
 
     {/* Content */}
-    <div class="pt-8 pb-1 flex flex-col flex-1">
+    <div class="flex flex-1 flex-col pt-8 pb-1">
       <p
-        class="font-semibold text-xl text-gray-900 leading-tight line-clamp-4 mb-6 flex-1"
+        class="mb-6 line-clamp-4 flex-1 text-xl leading-tight font-semibold text-gray-900"
       >
         {customer.data.title}
       </p>
 
-      <div class="flex items-center gap-2 font-semibold text-primary mt-auto">
-        <span class="relative animated-underline">Leer caso completo</span>
+      <div class="text-primary mt-auto flex items-center gap-2 font-semibold">
+        <span class="animated-underline relative">Leer caso completo</span>
         <div class="relative size-4">
           <HalfArrow
-            class="size-4 absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+            class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
           />
           <Arrow
-            class="size-4 absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1"
+            class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
           />
         </div>
       </div>

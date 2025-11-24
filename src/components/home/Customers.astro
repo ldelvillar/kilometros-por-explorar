@@ -7,10 +7,10 @@ import Arrow from '@/assets/arrow.svg';
 const customers = await getCollection('customers', ({ data }) => data.featured);
 ---
 
-<section class="max-w-7xl mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold text-gray-800 mb-8">Viajeros satisfechos</h2>
+<section class="mx-auto max-w-7xl px-4 py-16">
+  <h2 class="mb-8 text-3xl font-bold text-gray-800">Viajeros satisfechos</h2>
 
-  <div class="grid md:grid-cols-3 gap-8">
+  <div class="grid gap-8 md:grid-cols-3">
     {
       customers.map(customer => (
         <FeaturedCustomerCard customer={customer} loading="lazy" />
@@ -20,15 +20,15 @@ const customers = await getCollection('customers', ({ data }) => data.featured);
 
   <a
     href="/viajeros"
-    class="group mt-12 mx-auto w-fit px-4 py-3 flex items-center gap-2 font-semibold text-white rounded-lg bg-primary hover:bg-primary/90 transition"
+    class="group bg-primary hover:bg-primary/90 mx-auto mt-12 flex w-fit items-center gap-2 rounded-lg px-4 py-3 font-semibold text-white transition"
   >
     <span>Ver todas las historias</span>
     <div class="relative size-4">
       <HalfArrow
-        class="size-4 absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+        class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
       />
       <Arrow
-        class="size-4 absolute inset-0 transition-all duration-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1"
+        class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
       />
     </div>
   </a>

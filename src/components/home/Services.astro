@@ -31,23 +31,23 @@ const services: Service[] = [
 ];
 ---
 
-<section class="max-w-7xl mx-auto px-4 py-16">
-  <h2 class="mb-4 text-4xl font-extrabold text-gray-800 tracking-tight">
+<section class="mx-auto max-w-7xl px-4 py-16">
+  <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-800">
     Planificación integral de viajes
   </h2>
-  <p class="mb-12 text-gray-600 text-lg">
+  <p class="mb-12 text-lg text-gray-600">
     Ofrecemos servicios de planificación integral de viajes para asegurar que tu
     viaje sea inolvidable sin que tengas que preocuparte por los detalles.
   </p>
 
-  <div class="grid md:grid-cols-3 gap-6">
+  <div class="grid gap-6 md:grid-cols-3">
     {
       services.map(service => (
-        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 space-y-4">
+        <div class="space-y-4 rounded-xl border border-gray-200 bg-gray-50 p-6">
           <service.icon class="size-6 text-gray-800" />
           <div class="space-y-2">
             <h3 class="text-xl font-bold text-gray-800">{service.title}</h3>
-            <p class="text-gray-600 text-sm">{service.description}</p>
+            <p class="text-sm text-gray-600">{service.description}</p>
           </div>
         </div>
       ))

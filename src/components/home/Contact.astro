@@ -4,10 +4,10 @@ import Location from '@/assets/location.svg';
 import { SITE_CONFIG } from '@/config/site';
 ---
 
-<section class="max-w-7xl mx-auto px-4 py-16 flex flex-col md:flex-row gap-12">
+<section class="mx-auto flex max-w-7xl flex-col gap-12 px-4 py-16 md:flex-row">
   <div class="md:w-1/2">
-    <h2 class="text-3xl font-bold text-gray-800 mb-8">Contáctanos</h2>
-    <p class="mb-8 text-gray-600 leading-relaxed">
+    <h2 class="mb-8 text-3xl font-bold text-gray-800">Contáctanos</h2>
+    <p class="mb-8 leading-relaxed text-gray-600">
       Estamos aquí para ayudarte a planificar tu viaje ideal. Completa el
       formulario a continuación o escríbenos a <a
         href={'mailto:' + SITE_CONFIG.company.email}
@@ -16,10 +16,10 @@ import { SITE_CONFIG } from '@/config/site';
     </p>
 
     <div class="mb-8">
-      <h3 class="text-xl font-semibold text-gray-800 mb-4">
+      <h3 class="mb-4 text-xl font-semibold text-gray-800">
         Nuestra Ubicación
       </h3>
-      <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md">
+      <div class="overflow-hidden rounded-xl bg-gray-100 shadow-md">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280747604!2d-3.818313074683268!3d40.437574334217685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2ses!4v1695486987654!5m2!1sen!2ses"
           width="100%"
@@ -39,10 +39,10 @@ import { SITE_CONFIG } from '@/config/site';
           href="https://maps.google.com/?q=Madrid,Spain"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-1 mt-2 text-primary hover:text-primary/80 transition-colors duration-200"
+          class="text-primary hover:text-primary/80 mt-2 inline-flex items-center gap-1 transition-colors duration-200"
         >
           <svg
-            class="w-4 h-4"
+            class="h-4 w-4"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

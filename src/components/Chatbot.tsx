@@ -156,19 +156,19 @@ export default function Chatbot() {
   if (!config) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed right-6 bottom-6 z-50">
       {/* Chat Window */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 w-80 h-96 bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col overflow-hidden animate-in slide-in-from-bottom-2 duration-200">
+        <div className="animate-in slide-in-from-bottom-2 absolute right-0 bottom-16 flex h-96 w-80 flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-2xl duration-200">
           {/* Header */}
-          <div className="bg-primary text-white p-4 flex justify-between items-center">
+          <div className="bg-primary flex items-center justify-between p-4 text-white">
             <div className="flex items-center gap-2">
               <Bot className="size-5" />
               <span className="font-semibold">Asistente Virtual</span>
             </div>
             <button
               onClick={toggleChat}
-              className="text-white hover:text-gray-200 transition-colors"
+              className="text-white transition-colors hover:text-gray-200"
               aria-label="Cerrar chat"
             >
               <Cross className="size-5" />
@@ -176,7 +176,7 @@ export default function Chatbot() {
           </div>
 
           {/* Messages Area */}
-          <div className="flex-1 p-4 overflow-y-auto bg-gray-50 space-y-4">
+          <div className="flex-1 space-y-4 overflow-y-auto bg-gray-50 p-4">
             {messages.map((message: Message) => (
               <div
                 key={message.id}
@@ -185,14 +185,14 @@ export default function Chatbot() {
                 }`}
               >
                 <div
-                  className={`max-w-xs p-3 rounded-lg shadow-sm ${
+                  className={`max-w-xs rounded-lg p-3 shadow-sm ${
                     message.sender === 'user'
                       ? 'bg-primary text-white'
-                      : 'bg-white text-gray-700 border border-gray-100'
+                      : 'border border-gray-100 bg-white text-gray-700'
                   }`}
                 >
                   <p className="text-sm whitespace-pre-wrap">{message.text}</p>
-                  <span className="text-xs opacity-70 mt-1 block">
+                  <span className="mt-1 block text-xs opacity-70">
                     {formatTime(message.timestamp)}
                   </span>
                 </div>
@@ -202,11 +202,11 @@ export default function Chatbot() {
             {/* Typing Indicator */}
             {isTyping && (
               <div className="flex justify-start">
-                <div className="bg-white p-3 rounded-lg shadow-sm border border-gray-100 flex items-center gap-1">
+                <div className="flex items-center gap-1 rounded-lg border border-gray-100 bg-white p-3 shadow-sm">
                   <div className="flex space-x-1">
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.3s]"></div>
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:-0.15s]"></div>
-                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+                    <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.3s]"></div>
+                    <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400 [animation-delay:-0.15s]"></div>
+                    <div className="h-2 w-2 animate-bounce rounded-full bg-gray-400"></div>
                   </div>
                 </div>
               </div>
@@ -216,7 +216,7 @@ export default function Chatbot() {
           </div>
 
           {/* Input Area */}
-          <div className="p-4 border-t border-gray-200 bg-white">
+          <div className="border-t border-gray-200 bg-white p-4">
             <form onSubmit={handleSubmit} className="flex gap-2">
               <input
                 ref={inputRef}
@@ -227,14 +227,14 @@ export default function Chatbot() {
                 }
                 onKeyPress={handleKeyPress}
                 placeholder="Escribe tu mensaje..."
-                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                className="focus:ring-primary flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-transparent focus:ring-2 focus:outline-none"
                 maxLength={500}
                 disabled={isTyping}
               />
               <button
                 type="submit"
                 disabled={!inputValue.trim() || isTyping}
-                className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-primary hover:bg-primary/90 rounded-lg px-4 py-2 text-white transition-colors disabled:cursor-not-allowed disabled:opacity-50"
                 aria-label="Enviar mensaje"
               >
                 <Send className="size-5" />
@@ -247,10 +247,10 @@ export default function Chatbot() {
       {/* Floating Button */}
       <button
         onClick={toggleChat}
-        className="flex items-center justify-center size-14 bg-primary hover:bg-primary/90 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 group"
+        className="bg-primary hover:bg-primary/90 group flex size-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-200 hover:shadow-xl"
         aria-label={isOpen ? 'Cerrar chat' : 'Abrir chat'}
       >
-        <Bot className="size-8 group-hover:scale-110 transition-transform" />
+        <Bot className="size-8 transition-transform group-hover:scale-110" />
       </button>
     </div>
   );

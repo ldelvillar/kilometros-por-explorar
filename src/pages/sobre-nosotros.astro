@@ -17,14 +17,14 @@ const schema = getCombinedSchema(pageSchema);
 
 <Layout title={title} description={description} schema={schema}>
   <main class="animate-fade-in-up">
-    <section class="px-4 pt-24 pb-20 mx-auto max-w-6xl">
-      <h1 class="mb-4 text-4xl font-extrabold text-gray-800 tracking-tight">
+    <section class="mx-auto max-w-6xl px-4 pt-24 pb-20">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-800">
         Sobre Nosotros
       </h1>
       <Image
         src="/images/team/couple.webp"
         alt="Foto de los fundadores de Kilómetros por explorar"
-        class="md:hidden my-6 size-24 justify-self-center rounded-full"
+        class="my-6 size-24 justify-self-center rounded-full md:hidden"
         width={100}
         height={100}
         loading="eager"
@@ -33,11 +33,11 @@ const schema = getCombinedSchema(pageSchema);
         Conoce al equipo detrás de Kilómetros por explorar, una pareja
         apasionada por crear experiencias de viaje inolvidables.
       </p>
-      <div class="mt-12 flex flex-col md:flex-row items-center gap-4">
+      <div class="mt-12 flex flex-col items-center gap-4 md:flex-row">
         <Image
           src="/images/team/couple.webp"
           alt="Foto de los fundadores de Kilómetros por explorar"
-          class="hidden md:block size-24 rounded-full"
+          class="hidden size-24 rounded-full md:block"
           width={100}
           height={100}
           loading="eager"
@@ -77,7 +77,7 @@ const schema = getCombinedSchema(pageSchema);
           <Image
             src="/images/team/lucas.webp"
             alt="Foto de Lucas"
-            class="size-32 md:size-48 rounded-full"
+            class="size-32 rounded-full md:size-48"
             width={100}
             height={100}
             loading="lazy"
@@ -85,20 +85,20 @@ const schema = getCombinedSchema(pageSchema);
           <h3 class="mt-4 text-lg font-medium text-gray-800">
             Lucas del Villar
           </h3>
-          <p class="text-gray-600 text-sm">Co-Fundador & CEO</p>
+          <p class="text-sm text-gray-600">Co-Fundador & CEO</p>
         </div>
 
         <div class="flex flex-col items-center">
           <Image
             src="/images/team/lucia.webp"
             alt="Foto de Lucía"
-            class="size-32 md:size-48 rounded-full"
+            class="size-32 rounded-full md:size-48"
             width={100}
             height={100}
             loading="lazy"
           />
           <h3 class="mt-4 text-lg font-medium text-gray-800">Lucía Ruiz</h3>
-          <p class="text-gray-600 text-sm">Co-Fundadora & CEO</p>
+          <p class="text-sm text-gray-600">Co-Fundadora & CEO</p>
         </div>
       </div>
     </section>

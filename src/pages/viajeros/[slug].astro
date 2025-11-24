@@ -34,10 +34,10 @@ const schema = getCombinedSchema(pageSchema);
   <!-- Hero Section -->
   <section
     id="hero"
-    class="relative max-w-6xl mx-auto px-4 lg:px-8 pt-24 overflow-hidden z-10"
+    class="relative z-10 mx-auto max-w-6xl overflow-hidden px-4 pt-24 lg:px-8"
   >
     <!-- Breadcrumb -->
-    <nav class="flex items-center gap-2 text-sm text-gray-600 mb-6">
+    <nav class="mb-6 flex items-center gap-2 text-sm text-gray-600">
       <a href="/viajeros" class="hover:text-primary transition-colors"
         >Viajeros</a
       >
@@ -59,43 +59,43 @@ const schema = getCombinedSchema(pageSchema);
 
     <!-- Hero Title -->
     <h1
-      class="font-bold text-3xl md:text-[42px] lg:text-5xl text-gray-900 md:leading-14 mb-10 lg:mb-18"
+      class="mb-10 text-3xl font-bold text-gray-900 md:text-[42px] md:leading-14 lg:mb-18 lg:text-5xl"
     >
       {customer.data.title}
     </h1>
 
     <!-- Key Metrics -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+    <div class="mb-8 grid grid-cols-2 gap-6 md:grid-cols-4">
       {
         customer.data.metrics.map((metric, index) => (
           <div
             class={`flex flex-col items-center justify-center md:p-4 ${index < 3 ? 'md:border-r md:border-gray-100' : ''}`}
           >
-            <span class="font-blimone font-bold text-3xl md:text-5xl bg-gradient-to-b from-blue-700 to-primary bg-clip-text text-transparent mb-2">
+            <span class="font-blimone to-primary mb-2 bg-gradient-to-b from-blue-700 bg-clip-text text-3xl font-bold text-transparent md:text-5xl">
               {metric.value}
             </span>
-            <p class="text-lg text-gray-600 text-center">{metric.label}</p>
+            <p class="text-center text-lg text-gray-600">{metric.label}</p>
           </div>
         ))
       }
     </div>
 
     <!-- Image -->
-    <div class="relative overflow-hidden shadow-lg lg:mx-3 mt-18">
+    <div class="relative mt-18 overflow-hidden shadow-lg lg:mx-3">
       <Image
         src={customer.data.image}
         alt={`Foto del viaje de ${customer.data.name}`}
         width={800}
         height={600}
-        class="w-full max-h-[600px] object-cover"
+        class="max-h-[600px] w-full object-cover"
         loading="eager"
       />
     </div>
   </section>
 
   <!-- Timeline Section-->
-  <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-12 md:pt-16">
-    <div class="max-w-4xl mx-auto flex flex-col lg:flex-row-reverse gap-12">
+  <section class="mx-auto max-w-7xl px-4 pt-12 md:pt-16 lg:px-8">
+    <div class="mx-auto flex max-w-4xl flex-col gap-12 lg:flex-row-reverse">
       <div class="px-4">
         <CustomerTimeline
           description={customer.data.description}
@@ -106,12 +106,12 @@ const schema = getCombinedSchema(pageSchema);
   </section>
 
   <!-- Content Section -->
-  <section class="max-w-4xl mx-auto px-4 py-8">
-    <hr class="border-t border-gray-200 mb-8 lg:mb-16" />
-    <article class="max-w-none prose md:prose-lg lg:prose-xl text-gray-800">
+  <section class="mx-auto max-w-4xl px-4 py-8">
+    <hr class="mb-8 border-t border-gray-200 lg:mb-16" />
+    <article class="prose md:prose-lg lg:prose-xl max-w-none text-gray-800">
       <Content />
     </article>
-    <hr class="border-t border-gray-200 mt-8 lg:mt-16" />
+    <hr class="mt-8 border-t border-gray-200 lg:mt-16" />
   </section>
 
   <Cta />
