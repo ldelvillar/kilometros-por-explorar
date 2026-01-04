@@ -1,499 +1,216 @@
 ---
-title: 'Cuánto cuesta un viaje a Japón: presupuesto completo y detallado'
-description: 'Guía completa de presupuesto para viajar a Japón en 2025: vuelos, alojamiento, comida, transporte y actividades con precios reales.'
+title: '¿Cuánto cuesta viajar a Japón? Presupuesto completo de 14 días'
+description: 'Desglose honesto y detallado del presupuesto para 14 días en Japón: vuelos, alojamiento, JR Pass, comida, actividades y trucos para ahorrar.'
 date: 2025-11-17
 image: '/images/blog/cuanto-cuesta-viajar-japon.webp'
-author: 'Lucas'
+author: 'Lucas & Lucía'
 destinations: ['japon']
 ---
 
-Japón es uno de esos destinos que te obsesiona desde el momento en que empiezas a investigar. La mezcla de tradición milenaria con tecnología futurista, templos zen junto a neones parpadeantes, ceremonia del té en Kioto y karaoke hasta las 6 AM en Tokio... es un país que no se parece a ningún otro. Pero hay una pregunta que me hacen constantemente, incluso antes que "¿cuántos días necesito?" o "¿qué ciudades visitar?": **¿cuánto cuesta realmente viajar a Japón?**
+Después de tres semanas explorando Japón (Tokio, Kioto, Osaka, Hiroshima, Nara y los Alpes Japoneses) y de ayudar a decenas de clientes a planificar sus viajes japoneses, podemos decirte exactamente dónde va cada euro. Japón tiene reputación de ser caro, y aunque los precios son más altos que en el sudeste asiático, el yen debilitado de los últimos años ha hecho el destino mucho más accesible de lo que muchos creen.
 
-Después de pasar tres semanas explorando Japón (Tokio, Kioto, Osaka, Hiroshima, Nara y los Alpes Japoneses), con un presupuesto medio-alto pero sin derrochar, y de ayudar a planificar viajes a decenas de clientes con presupuestos muy variados, puedo decirte con total honestidad: Japón NO es tan caro como crees. Sí, has leído bien. La fama de "país carísimo" está desactualizada. Con el yen más débil que en décadas y sabiendo dónde gastar y dónde ahorrar, es perfectamente posible viajar a Japón con un presupuesto razonable sin sacrificar experiencias esenciales.
-
-Esta guía te va a desglosar el presupuesto real de un viaje a Japón con cifras concretas basadas en mi experiencia y los precios actuales de 2025. No voy a darte rangos vagos tipo "entre 50 y 200 euros al día" - te voy a mostrar exactamente en qué gasté mi dinero, dónde puedes ahorrar, dónde merece la pena gastar más, y cómo calcular tu presupuesto según tu estilo de viaje. Al final de este artículo, tendrás una idea clara de cuánto dinero necesitas para tu viaje a Japón y cómo distribuirlo inteligentemente.
+Esta guía te mostrará cómo aprovechar tu presupuesto al máximo para 14 días, desde las opciones más económicas hasta las experiencias premium. Lo que verás en este artículo es un desglose realista y honesto: precios reales que hemos pagado, alternativas que descubrimos en el camino, y dónde puedes ahorrar sin sacrificar la experiencia.
 
 ## Índice
 
-1. [Presupuesto resumen: ¿cuánto cuesta Japón en total?](#presupuesto-resumen-cuánto-cuesta-japón-en-total)
-2. [Vuelos a Japón: la mayor inversión](#vuelos-a-japón-la-mayor-inversión)
-3. [Alojamiento: de hostels a ryokans](#alojamiento-de-hostels-a-ryokans)
-4. [Transporte interno: el JR Pass y otras opciones](#transporte-interno-el-jr-pass-y-otras-opciones)
-5. [Comida en Japón: más barato de lo que imaginas](#comida-en-japón-más-barato-de-lo-que-imaginas)
-6. [Atracciones y actividades: templos, museos y experiencias](#atracciones-y-actividades-templos-museos-y-experiencias)
-7. [Internet y comunicación: eSIM vs pocket wifi](#internet-y-comunicación-esim-vs-pocket-wifi)
-8. [Presupuesto por perfiles de viajero](#presupuesto-por-perfiles-de-viajero)
-9. [Cómo ahorrar dinero en Japón sin sacrificar experiencias](#cómo-ahorrar-dinero-en-japón-sin-sacrificar-experiencias)
-10. [Gastos inesperados y extras a considerar](#gastos-inesperados-y-extras-a-considerar)
+1. [Vuelos: cómo encontrar los mejores precios](#vuelos-cómo-encontrar-los-mejores-precios)
+2. [Alojamiento: todos los presupuestos](#alojamiento-todos-los-presupuestos)
+3. [Transporte en Japón: el JR Pass y alternativas](#transporte-en-japón-el-jr-pass-y-alternativas)
+4. [Comida: la clave para ahorrar](#comida-la-clave-para-ahorrar)
+5. [Actividades: coste de atracciones principales](#actividades-coste-de-atracciones-principales)
+6. [Presupuesto día a día: ejemplos reales](#presupuesto-día-a-día-ejemplos-reales)
 
-## Presupuesto resumen: ¿cuánto cuesta Japón en total?
+## Vuelos: cómo encontrar los mejores precios
 
-Vamos directo al grano. Para un viaje de **14 días a Japón** (la duración que recomiendo para un primer viaje), el presupuesto total desde España ronda entre **2,500€ y 5,500€ por persona**, dependiendo de tu estilo de viaje. Sí, es un rango amplio, pero Japón ofrece opciones para todos los presupuestos.
+El vuelo es generalmente el gasto más fácil de controlar porque los precios están públicos y comparables. Desde España, la mayoría de vuelos a Japón parten de Madrid o Barcelona hacia Tokio (Narita o Haneda) u Osaka (Kansai), con al menos una escala.
 
-**Mi presupuesto personal (14 días, estilo medio-alto):**
+### Rango de precios (por persona, ida y vuelta)
 
-- Vuelo: 850€
-- JR Pass (14 días): 480€
-- Alojamiento: 1,120€ (80€/noche promedio)
-- Comida: 560€ (40€/día)
-- Transporte local: 140€
-- Atracciones y actividades: 280€
-- Internet (eSIM): 25€
-- Extras y souvenirs: 200€
-- **TOTAL: 3,655€**
+- **De 600€ a 850€** sería un buen precio
+- **Entre 850€ y 1.100€** sería un precio normal
+- **Más de 1.100€** sería un precio alto
 
-Esto incluye volar desde Madrid, dormir en hoteles cómodos de 3 estrellas, comer bien sin restricciones (incluyendo varios restaurantes buenos), tomar el tren bala a varias ciudades, visitar templos y museos, y comprar algunos souvenirs. No me privé de nada que quisiera hacer, pero tampoco derroché en lujos innecesarios.
+### Consejos para ahorrar en vuelos
 
-**Desglose por perfil de viajero (14 días):**
+- Compara vuelos periódicamente y con la mayor antelación posible (mínimo 3-4 meses)
+- Sé flexible con fechas si puedes cambiarlas 3-4 días
+- Skyscanner, Kayak y Google Flights te muestran las mejores ofertas automáticamente
+- Considera vuelos multidestino (entrar por Tokio y salir por Osaka) para ahorrar tiempo y dinero
 
-- **Presupuesto mochilero:** 2,500-3,200€ (hostels, comida económica, sin JR Pass, transporte en buses nocturnos)
-- **Presupuesto medio:** 3,200-4,200€ (hoteles sencillos, mezcla comida barata/restaurantes, JR Pass, actividades seleccionadas)
-- **Presupuesto confortable:** 4,200-5,500€ (buenos hoteles, restaurantes de calidad, JR Pass, todas las actividades)
-- **Presupuesto lujo:** 5,500€+ (ryokans tradicionales, kaiseki, experiencias premium, Green Car JR Pass)
+**IMPORTANTE:** Evita volar durante Golden Week (finales de abril-principios de mayo), hanami en Kioto (finales de marzo-principios de abril) o Año Nuevo japonés. Los precios pueden duplicarse fácilmente.
 
-**IMPORTANTE:** Estos presupuestos son para viajeros **desde España**. Si viajas desde Latinoamérica, los vuelos pueden costar significativamente más (1,200-2,000€), lo que aumenta el presupuesto total. También asumen viajar en temporada media (primavera u otoño) - viajar en temporada alta (Año Nuevo, Golden Week, hanami de Kioto) puede aumentar costes un 30-50% en alojamiento.
+## Alojamiento: todos los presupuestos
 
-## Vuelos a Japón: la mayor inversión
+El alojamiento es donde los gastos pueden dispararse o contenerse significativamente según tus prioridades. Hay que tener en cuenta que los precios suben bastante en temporada alta (primavera con los cerezos y otoño con los colores).
 
-El vuelo es, con diferencia, el mayor gasto individual de tu viaje a Japón. Desde España, estamos hablando de aproximadamente 11,000 km de distancia, lo que significa vuelos largos con al menos una escala.
+### Hostels y capsule hotels
 
-**Precios desde España (ida y vuelta, clase turista):**
+**Precio aproximado:** 15-35€ por noche y persona
 
-- **Temporada baja (enero-febrero, mayo-junio, octubre-noviembre):** 650-900€
-- **Temporada media (marzo-abril, septiembre):** 850-1,200€
-- **Temporada alta (julio-agosto, diciembre):** 1,200-1,800€
-- **Hanami en Kioto (finales marzo-principios abril):** 1,400-2,000€
+Los hostels son la opción más económica, ideales para mochileros. Japón también ofrece los famosos capsule hotels, una experiencia única que cuesta entre 20-35€ por noche. K's House, Nui Hostel y First Cabin son opciones fiables.
 
-Mi vuelo desde Madrid a Tokio (Narita) con escala en Doha costó 850€ reservado con 4 meses de antelación en abril. Volé con Qatar Airways - 7 horas Madrid-Doha, 3 horas de escala, 10 horas Doha-Tokio. El vuelo fue cómodo, con buena comida y entretenimiento, y llegué descansado. La vuelta fue Osaka (Kansai)-Doha-Madrid para aprovechar la ruta de norte a sur por Japón.
+- **Ventajas:** Muy económico, ambiente social, experiencia única (capsule hotels).
+- **Desventajas:** Sin privacidad, baños compartidos, espacio limitado.
 
-**Aerolíneas y rutas típicas:**
+### Business hotels
 
-- **Qatar Airways (Doha):** Generalmente la mejor relación calidad-precio, vuelos cómodos, buenas conexiones. 650-1,000€.
-- **Emirates (Dubai):** Muy buena pero ligeramente más cara. 750-1,200€.
-- **Turkish Airlines (Estambul):** A menudo la más económica, pero los vuelos pueden ser más largos. 600-950€.
-- **Lufthansa/ANA (Frankfurt/Múnich):** Directas o una escala europea. 900-1,400€.
-- **Air France/KLM (París/Ámsterdam):** Similar a Lufthansa. 850-1,300€.
+**Precio aproximado:** 40-70€ por noche (habitación doble)
 
-**Mis consejos para ahorrar en vuelos:**
+Los business hotels japoneses son la mejor relación calidad-precio que hemos encontrado. Habitaciones pequeñas pero funcionales, limpias, con baño privado y ubicación céntrica. Cadenas como Toyoko Inn, Super Hotel o APA Hotel están por todas partes.
 
-1. **Reserva con 3-6 meses de antelación** - los precios suben significativamente cuando te acercas a la fecha.
-2. **Sé flexible con fechas** - cambiar tu viaje una semana puede ahorrarte 200-400€.
-3. **Considera vuelos multidestino** - entrar por Tokio y salir por Osaka (o viceversa) cuesta lo mismo que ida/vuelta y te ahorra un tren bala de 13,000¥.
-4. **Usa buscadores como Skyscanner, Google Flights o Momondo** - configura alertas de precio.
-5. **Evita volar en Golden Week** (finales abril-principios mayo) y Año Nuevo japonés (fines diciembre-principios enero) - precios astronómicos.
+- **Ventajas:** Privacidad, limpieza impecable, ubicación céntrica, desayuno incluido frecuentemente.
+- **Desventajas:** Habitaciones pequeñas, decoración funcional sin encanto.
 
-**Aeropuertos japoneses:**
+### Hoteles estándar y ryokans
 
-- **Tokio Narita (NRT):** Principal hub internacional, 60-90 minutos del centro de Tokio.
-- **Tokio Haneda (HND):** Más cerca del centro (20-30 minutos) pero menos vuelos internacionales.
-- **Osaka Kansai (KIX):** Perfecto si tu ruta va de sur a norte, 75 minutos de Osaka/Kioto.
+**Precio aproximado:** +80€ por noche
 
-El Narita Express (N'EX) desde Narita a Tokio cuesta 3,070¥ (~20€) y tarda 60 minutos. Desde Haneda, el tren Keikyu cuesta solo 410¥ (~2.70€) y tarda 20 minutos a Shinagawa. Esto también afecta tu presupuesto total.
+Los hoteles de 3-4 estrellas cuestan entre 80€ y 150€ por noche. Los ryokans tradicionales (con cena kaiseki y desayuno incluidos) arrancan desde 100€ y pueden superar los 250€ por persona. Al menos una noche en ryokan es una experiencia que recomendamos.
 
-## Alojamiento: de hostels a ryokans
+### Presupuesto total alojamiento (14 noches)
 
-El alojamiento en Japón tiene fama de caro, pero la realidad es más matizada. Los hoteles occidentales estándar SÍ son caros, pero Japón ofrece opciones económicas únicas que no encontrarás en otros países.
+- **Economía (hostels/capsules):** 210-450€
+- **Económico-medio (business hotels):** 560-850€
+- **Medio (business + algún ryokan):** 850-1.100€
+- **Cómodo (hoteles + ryokan):** 1.200-1.800€
 
-**Tipos de alojamiento y precios por noche (habitación individual/doble):**
+### Nuestra recomendación
 
-**Hostels (dormitorios compartidos):**
+Los business hotels son oro para Japón. Nosotros dormimos en ellos la mayoría de noches y añadimos una noche en ryokan tradicional en la zona de Kioto. La experiencia del ryokan es cara pero vale la pena al menos una vez.
 
-- Dormitorio 4-8 camas: 2,500-4,000¥ (~17-27€) por persona
-- Excelentes para mochileros, ambiente social, a menudo incluyen desayuno
-- Recomendados: K's House (varias ubicaciones), Nui Hostel (Tokio), Len Kyoto
+## Transporte en Japón: el JR Pass y alternativas
 
-**Capsule Hotels:**
+El transporte es el gasto más complejo de calcular en Japón. El país tiene una red de trenes eficiente pero cara, y la decisión sobre el JR Pass puede marcar la diferencia en tu presupuesto.
 
-- Cápsula básica: 3,000-5,000¥ (~20-34€)
-- Experiencia única japonesa, limpio, funcional, baños compartidos
-- Perfecto para una noche de experiencia o si llegas muy tarde/sales muy temprano
-- Recomendados: First Cabin, Nine Hours, Capsule Hotels cerca de estaciones grandes
+### Opción 1: JR Pass
 
-**Business Hotels:**
+**Precio aproximado:** 340€ (7 días), 545€ (14 días), 680€ (21 días)
 
-- Habitación individual pequeña: 6,000-10,000¥ (~41-68€)
-- Habitación doble: 9,000-14,000¥ (~61-95€)
-- Funcionalmente diseñados, limpios, ubicación céntrica, baño privado minúsculo
-- Cadenas: Toyoko Inn, Super Hotel, APA Hotel, Hotel Route Inn
-- **Esta fue mi opción principal** - 80% de mis noches en business hotels
+El JR Pass te da viajes ilimitados en trenes JR, incluyendo la mayoría de líneas Shinkansen (tren bala). Un solo trayecto Tokio-Kioto cuesta unos 90€, así que si haces 2-3 viajes largos, el pase de 7 días se amortiza.
 
-**Hoteles medios:**
+- **Ventajas:** Flexibilidad total, cubre también trenes locales JR en ciudades.
+- **Desventajas:** Caro si tu ruta es compacta (solo Tokio-Kioto-Osaka).
 
-- Habitación doble: 12,000-20,000¥ (~82-136€)
-- Más espacio, mejores amenidades, a menudo occidental
-- Recomendados: Richmond Hotel, Daiwa Roynet, Hotel Gracery
+### Opción 2: Billetes individuales
 
-**Hoteles de lujo:**
+**Precio aproximado:** Variable según ruta
 
-- Habitación doble: 25,000-60,000¥+ (~170-410€+)
-- Marcas internacionales (Hyatt, Hilton) o japonesas premium
-- Solo si el presupuesto no es problema
+Si solo vas a hacer Tokio-Kioto-Osaka, puede salir más barato comprar billetes individuales de Shinkansen y usar tarjetas IC (Suica/Pasmo) para transporte local. Calcula tu ruta antes de decidir.
 
-**Ryokans tradicionales:**
+### Gastos adicionales a sumar
 
-- Con media pensión (cena kaiseki + desayuno): 15,000-40,000¥ (~102-273€) por persona
-- Experiencia cultural única, tatami, futon, onsen privado
-- **Mi recomendación:** Al menos una noche en ryokan en Kioto o Hakone
-- Yo pagué 28,000¥ por persona (189€) en un ryokan en Kioto con kaiseki espectacular - caro pero inolvidable
+- **Tarjeta IC (Suica/Pasmo):** Recargable para metros y buses. El transporte local cuesta 1-3€ por trayecto
+- **Traslado aeropuerto-ciudad:** Narita a Tokio cuesta unos 20€ en tren, Haneda unos 3€
+- **Taxis:** Muy caros (mínimo 5€, luego 2€/km). Solo en emergencias o grupos grandes
 
-**Mi estrategia de alojamiento (14 noches, 1,120€ total):**
+### Precio total aproximado para 14 días
 
-- 10 noches en business hotels: 7,500¥/noche promedio = 75,000¥ (510€)
-- 1 noche en ryokan tradicional: 28,000¥ (189€)
-- 2 noches en hoteles medios: 14,000¥/noche = 28,000¥ (190€)
-- 1 noche en capsule hotel (por experiencia): 3,500¥ (24€)
+- **Sin JR Pass (ruta compacta):** 250-350€
+- **Con JR Pass 7 días + transporte local:** 400-500€
+- **Con JR Pass 14 días + transporte local:** 600-700€
 
-**Consejos para ahorrar en alojamiento:**
+Calcula tu ruta concreta antes de comprar el JR Pass. Nosotros lo compramos de 14 días y, siendo honestos, probablemente habríamos ahorrado unos 100€ con billetes individuales. Pero la comodidad de no pensar en cada trayecto tiene su valor.
 
-1. **Reserva en booking.com, Agoda o directamente** - compara precios, a veces directo es más barato.
-2. **Quédate cerca de estaciones JR** - conveniente para moverte, a menudo más barato que zonas ultra-céntricas.
-3. **Los business hotels son oro** - relación calidad-precio insuperable, están por todas partes.
-4. **El ryokan es opcional pero recomendado** - hazlo una noche, vale la pena la experiencia cultural.
-5. **Airbnb es complicado** - Japón tiene leyes estrictas sobre alquileres turísticos, opciones limitadas y a menudo no más baratas que hoteles.
+## Comida: la clave para ahorrar
 
-**Ubicaciones recomendadas:**
+Los precios de la comida en Japón son sorprendentemente accesibles si sabes dónde buscar. De hecho, es uno de los países donde mejor hemos comido por menos dinero.
 
-- **Tokio:** Shinjuku (conveniente, muchas opciones), Asakusa (más barato, auténtico), Shibuya/Harajuku (céntrico pero caro)
-- **Kioto:** Cerca de la estación de Kioto (conveniente para trenes), Gion (tradicional pero caro), áreas menos turísticas como Nijo
-- **Osaka:** Namba/Dotonbori (bullicioso, céntrico), Umeda (buenas conexiones), Shin-Osaka (cerca de estaciones de tren bala)
+### Konbinis y supermercados
 
-## Transporte interno: el JR Pass y otras opciones
+Los konbinis (7-Eleven, Lawson, FamilyMart) son una bendición. Tienen comida fresca, barata y de calidad. A continuación te dejamos algunos precios de referencia:
 
-El transporte en Japón es eficiente, puntual, limpio... y puede ser caro si no planeas bien. La pregunta del millón: **¿Merece la pena el JR Pass?**
+- Onigiri (bola de arroz): 1-1,50€
+- Bento preparado: 3-5€
+- Sándwich: 1,50-2,50€
+- Café: 1-1,50€
 
-**JR Pass (Japan Rail Pass):**
+### Restaurantes económicos
 
-El JR Pass te da viajes ilimitados en trenes JR (incluyendo casi todos los trenes bala Shinkansen) por un período determinado.
+Las cadenas de gyudon (arroz con carne) como Yoshinoya, Sukiya o Matsuya ofrecen comidas completas por 3-5€. Los ramen shops locales cuestan entre 6-9€ por un cuenco abundante.
 
-**Precios JR Pass (2025):**
+### Restaurantes y bares
 
-- 7 días: 50,000¥ (~340€)
-- 14 días: 80,000¥ (~545€)
-- 21 días: 100,000¥ (~680€)
+Las opciones varían mucho, estos son algunos precios de referencia:
 
-**¿Cuándo MERECE la pena el JR Pass?**
+- **Ramen:** Un cuenco cuesta 6-10€.
+- **Izakaya (taberna):** Una cena con bebidas son unos 20-30€ por persona.
+- **Sushi de calidad media:** Entre 10-25€ por persona.
+- **Restaurantes locales:** Un menú del día cuesta unos 8-12€.
 
-Si vas a hacer viajes largos entre ciudades principales, SÍ. Un solo viaje Tokio-Kioto en Shinkansen cuesta 13,320¥ (~91€). Tokio-Osaka 13,870¥ (~94€). Si haces al menos 2-3 trayectos largos, el pase de 7 días ya se amortiza.
+### Consejos para ahorrar en comida
 
-**Mi ruta con JR Pass de 14 días (costo 80,000¥):**
+Nosotros recomendamos hacer la comida principal al mediodía, cuando los restaurantes ofrecen menús del día (teishoku) mucho más baratos que por la noche. Los konbinis son perfectos para desayunos y cenas ligeras.
 
-- Tokio → Hakone (ida y vuelta): ~4,000¥ x2 = 8,000¥
-- Tokio → Takayama: 14,000¥
-- Takayama → Kioto: 8,000¥
-- Kioto → Nara (ida y vuelta, varios días): ~1,500¥ x4 = 6,000¥
-- Kioto → Hiroshima: 11,000¥
-- Hiroshima → Osaka: 10,000¥
-- Osaka → Kansai Airport: 2,500¥
-- **Total sin JR Pass:** ~59,500¥ (~405€)
-- **Con JR Pass 14 días:** 80,000¥ (~545€)
+### Presupuesto total comida por persona (14 días)
 
-**Espera, ¿pagué MÁS con el JR Pass?** Técnicamente sí, pero el JR Pass me dio libertad total - tomé trenes locales dentro de Tokio, Kioto y Osaka sin pensar en el costo, hice excursiones de día espontáneas, y no tuve que comprar billetes cada vez. Para mí, la comodidad valió los 140€ extra. Además, mi ruta fue relativamente compacta - si hubiera ido a más ciudades (Sapporo, Fukuoka, etc.), habría ahorrado muchísimo.
+- **Presupuesto económico (200-280€):** Konbinis, gyudon chains, ramen barato.
+- **Presupuesto medio (280-400€):** Mezcla de konbinis, restaurantes locales e izakayas ocasionales.
+- **Presupuesto alto (+450€):** Restaurantes buenos, sushi de calidad, kaiseki.
 
-**Alternativa sin JR Pass:**
+Nosotros gastamos unos 320€ por persona en comida, mezclando konbinis para desayunos, restaurantes locales para almuerzos, y alguna cena especial en izakayas.
 
-Si tu ruta es solo Tokio-Kioto-Osaka, compra billetes individuales de Shinkansen y usa tarjetas IC (Suica/Pasmo) para transporte local. Ahorrarás dinero pero tendrás menos flexibilidad.
+## Actividades: coste de atracciones principales
 
-**Transporte local en ciudades (sin JR Pass):**
+La mayoría de las atracciones japonesas son **gratuitas o muy baratas**. Pasear por barrios como Shibuya, Shinjuku o Gion, explorar templos, caminar por parques... no cuesta nada.
 
-- **Metro Tokio:** 170-320¥ (~1.15-2.20€) por trayecto, compra tarjeta Suica/Pasmo recargable
-- **Metro Kioto:** Similar, aunque Kioto es más compacta - muchas veces caminas
-- **Metro Osaka:** 180-400¥ por trayecto
-- **Buses:** 230-260¥ por trayecto, útiles en Kioto
-- **Taxis:** CAROS - 700¥ mínimo, luego ~300¥ por km. Solo emergencias o grupos.
+### Entradas gratuitas o casi
 
-**Mi gasto en transporte local (con JR Pass cubriendo mucho):** ~20,000¥ (136€) en 14 días - básicamente solo metros/buses en días sin usar JR Pass y algunos taxis nocturnos.
+Muchos de los lugares más emblemáticos de Japón son gratis: Fushimi Inari (las famosas puertas torii rojas), Meiji Shrine en Tokio, Sensoji en Asakusa, el bambú de Arashiyama, Nara Park con sus ciervos... La mayoría de templos que cobran entrada cuestan entre 3-5€.
 
-**Sin JR Pass, esperaría gastar:** ~35,000-45,000¥ (238-306€) en transporte local + Shinkansens individuales.
+### Actividades recomendadas
 
-## Comida en Japón: más barato de lo que imaginas
+**Ceremonia del té tradicional:** 15-35€. Una experiencia cultural que vale la pena. Kioto tiene muchas opciones.
 
-Aquí viene una sorpresa agradable: **la comida en Japón puede ser increíblemente barata sin sacrificar calidad**. De hecho, comí mejor en Japón que en casi cualquier país europeo, a menudo por menos dinero.
+**Onsen/sento (baños termales):** 3-10€ en baños públicos. La experiencia de un onsen es parte esencial de Japón. Los onsens de ryokans de lujo cuestan mucho más, pero los públicos son igual de auténticos.
 
-**Desayunos:**
+**Alquiler de kimono:** 20-50€ por día. Popular en Kioto para pasear por Gion o Arashiyama.
 
-- **Konbini (7-Eleven, Lawson, FamilyMart):** 300-600¥ (~2-4€) - onigiri, sándwich, café
-- **Cafeterías/bakeries:** 500-800¥ (~3.40-5.45€) - set de desayuno occidental
-- **Desayuno de hotel (si incluido):** 0¥ - muchos business hotels lo incluyen
-- **Mercado/supermercado:** 400-700¥ (~2.70-4.75€) - bentos matutinos
+**Excursión al Monte Fuji:** 30-80€ dependiendo del tour. Solo accesible en verano (julio-agosto) para subir, pero visible todo el año desde zonas como Hakone.
 
-**Yo desayunaba principalmente en konbinis** - 2 onigiris (bolas de arroz rellenas), un café iced latte, y a veces un pastelito = 450¥ (~3€). Barato, delicioso, conveniente. Los desayunos de hotel cuando estaban incluidos eran bonus.
+### Trampas para turistas a evitar
 
-**Almuerzos:**
+**TeamLab:** Los museos digitales TeamLab cuestan 25-35€ y suelen tener colas enormes. Creemos que son visualmente atractivos pero caros para lo que ofrecen. Si tienes presupuesto ajustado, hay mejores formas de gastarlo.
 
-- **Ramen shops:** 800-1,200¥ (~5.45-8.20€) - cuenco abundante de ramen
-- **Soba/Udon shops:** 600-1,000¥ (~4-6.80€)
-- **Gyudon (arroz con carne) chains:** 400-700¥ (~2.70-4.75€) - Yoshinoya, Sukiya, Matsuya
-- **Curry japonés:** 600-900¥ (~4-6.10€) - CoCo Ichibanya
-- **Sets de menú del día:** 800-1,500¥ (~5.45-10.20€) - restaurantes normales
-- **Bentōs de supermercado:** 400-800¥ (~2.70-5.45€)
+**Robot Restaurant:** Espectáculo en Shinjuku que cuesta unos 80€. Es kitsch, ruidoso y muy turístico. Puede ser divertido si te sobra presupuesto, pero no es representativo de la cultura japonesa.
 
-**Cenas:**
+### Presupuesto total actividades (14 días)
 
-- **Izakayas (tabernas japonesas):** 2,500-4,000¥ (~17-27€) por persona con bebidas
-- **Yakiniku (parrillada):** 2,000-4,000¥ (~13.60-27€)
-- **Sushi de calidad media:** 1,500-3,000¥ (~10-20€)
-- **Restaurantes de lujo/kaiseki:** 5,000-15,000¥+ (~34-102€+)
-- **Conveyor belt sushi (kaiten-zushi):** 1,000-2,000¥ (~6.80-13.60€)
+- **Presupuesto económico (50-100€):** Priorizando templos gratuitos y experiencias low-cost.
+- **Presupuesto medio (100-200€):** Templos principales, alguna ceremonia del té, onsen público.
+- **Presupuesto alto (+250€):** Todas las experiencias que quieras, tours guiados, actividades premium.
 
-**Mi gasto diario en comida (promedio):**
+## Presupuesto día a día: ejemplos reales
 
-- Desayuno: 450¥
-- Almuerzo: 950¥
-- Cena: 2,800¥
-- Snacks/bebidas: 600¥
-- **Total diario: ~5,800¥ (~40€)**
+A continuación te mostramos cuánto gastamos nosotros por persona en nuestro viaje de 14 días en abril (temporada media), sin contar los vuelos:
 
-Esto incluye comer bien - ramen auténtico, izakayas con sake, algunos restaurantes buenos. Podría haber gastado mucho menos comiendo solo gyudon y konbini, o mucho más comiendo kaiseki cada noche.
+| Día       | Transporte | Alojamiento | Comida   | Actividades            | Total      |
+| --------- | ---------- | ----------- | -------- | ---------------------- | ---------- |
+| 1         | 20€        | 55€         | 15€      | 0€                     | 90€        |
+| 2         | 8€         | 55€         | 22€      | 0€                     | 85€        |
+| 3         | 5€         | 55€         | 28€      | 15€ (templos)          | 103€       |
+| 4         | 45€        | 55€         | 18€      | 0€                     | 118€       |
+| 5         | 8€         | 55€         | 24€      | 5€ (templos)           | 92€        |
+| 6         | 5€         | 55€         | 32€      | 25€ (ceremonia del té) | 117€       |
+| 7         | 45€        | 55€         | 20€      | 8€ (castillo)          | 128€       |
+| 8         | 8€         | 120€        | 15€      | 8€ (onsen)             | 151€       |
+| 9         | 45€        | 55€         | 26€      | 0€                     | 126€       |
+| 10        | 5€         | 55€         | 30€      | 5€ (templos)           | 95€        |
+| 11        | 8€         | 55€         | 22€      | 0€                     | 85€        |
+| 12        | 5€         | 55€         | 35€      | 0€                     | 95€        |
+| 13        | 8€         | 55€         | 28€      | 20€ (museo)            | 111€       |
+| 14        | 20€        | 0€          | 12€      | 0€                     | 32€        |
+| **TOTAL** | **235€**   | **820€**    | **327€** | **86€**                | **1.468€** |
 
-**Experiencias culinarias especiales (precios reales que pagué):**
+**Gasto total por persona: 1.468€ + 780€ (vuelos) = 2.248€.**
 
-- **Kaiseki de 9 platos en ryokan:** 15,000¥ (~102€) - incluido en la estancia
-- **Sushi omakase en Tokio:** 8,500¥ (~58€) - espectacular, reservado con antelación
-- **Okonomiyaki en Osaka:** 1,200¥ (~8.20€) - delicioso y barato
-- **Kobe beef en Kobe:** 6,000¥ (~41€) por 100g - caro pero lo hice una vez
-- **Ramen Ichiran (famoso):** 980¥ (~6.70€) - hype justificado
+Este presupuesto incluye JR Pass de 7 días (incluido en transporte), business hotels la mayoría de noches, una noche en ryokan con cena kaiseki, y comida mezclando konbinis con restaurantes locales.
 
-**Bebidas:**
+En temporada alta (hanami o otoño), los mismos gastos serían:
 
-- **Agua en konbini:** 100¥ (~0.70€) - 2 litros
-- **Café en máquinas vending:** 120-150¥ (~0.80-1€)
-- **Cerveza en konbini:** 200-400¥ (~1.35-2.70€) - mucho más barato que en restaurantes
-- **Cerveza en restaurante:** 500-800¥ (~3.40-5.45€)
-- **Sake en izakaya:** 400-800¥ (~2.70-5.45€) por vaso
+- Vuelos: +150-250€ por persona
+- Alojamiento: +200-300€ por persona
+- Transporte: similar
 
-**Cómo ahorrar en comida:**
+Estimado en temporada alta por persona: **2.600-2.800€**.
 
-1. **Konbinis son tus amigos** - comida sorprendentemente buena y barata.
-2. **Almuerza menús del día** - muchos restaurantes ofrecen sets a mediodía mucho más baratos que la cena.
-3. **Supermercados después de las 8 PM** - bentos y sushi con 20-50% de descuento.
-4. **Come en cadenas de gyudon** - Yoshinoya es barato, rápido y decente.
-5. **El agua del grifo es potable y gratuita** - lleva botella reutilizable.
-6. **Compra bebidas en konbinis, no en restaurantes** - ahorra 50-70%.
-
-**14 días de comida: 560€** (incluyendo algunas comidas especiales). Perfectamente posible hacerlo con 350-400€ comiendo más económico, o gastar 1,000€+ comiendo lujo cada día.
-
-## Atracciones y actividades: templos, museos y experiencias
-
-Buenas noticias: muchas de las mejores experiencias en Japón son **gratuitas o muy baratas**. Pasear por Tokio, explorar templos de Kioto, caminar por parques tradicionales... no cuestan nada.
-
-**Entradas típicas:**
-
-- **Templos/santuarios principales:** 300-600¥ (~2-4€) - algunos gratis
-- **Castillos:** 500-700¥ (~3.40-4.75€)
-- **Museos:** 500-1,500¥ (~3.40-10.20€)
-- **Jardines tradicionales:** 300-500¥ (~2-3.40€)
-- **Observatorios/torres:** 800-2,000¥ (~5.45-13.60€)
-
-**Experiencias especiales:**
-
-- **Onsen/sento (baños termales):** 400-1,500¥ (~2.70-10.20€) - onsens públicos
-- **Ceremonia del té:** 2,000-5,000¥ (~13.60-34€)
-- **Clases de cocina:** 5,000-10,000¥ (~34-68€)
-- **Kimono rental:** 3,000-8,000¥ (~20-54€) por día
-- **Sumo tournament:** 3,800-14,000¥ (~26-95€) dependiendo del asiento
-- **Studio Ghibli Museum:** 1,000¥ (~6.80€) - DEBE reservarse con antelación
-
-**Mi gasto en actividades (14 días, ~40,000¥ / 272€):**
-
-- Templos/santuarios en Kioto (varios): 3,500¥
-- Castillo de Osaka: 600¥
-- Tokyo Skytree: 2,100¥
-- Ghibli Museum: 1,000¥
-- Onsen en Hakone: 1,500¥
-- Ceremonia del té en Kioto: 3,500¥
-- Fushimi Inari (gratis), Meiji Shrine (gratis), Sensoji (gratis): 0¥
-- Nara Park y Todaiji: 600¥
-- Hiroshima Peace Memorial y Museo: 200¥
-- Arashiyama Bamboo Grove (gratis): 0¥
-- Varios museos pequeños: 2,000¥
-- **Experiencia en kaiseki del ryokan (ya incluida en alojamiento)**
-
-**Lo que muchos no saben:**
-
-- **Los mejores templos de Kioto son gratis o casi:** Fushimi Inari (gratis), Kiyomizu-dera (300¥), Kinkaku-ji (500¥)
-- **Tokio tiene muchos miradores gratuitos:** Tokyo Metropolitan Government Building tiene observatorio gratis, vs 2,100¥ del Skytree
-- **Caminar por barrios es gratis y fascinante:** Shinjuku de noche, Harajuku, Shibuya, Akihabara... solo pasear ya es experiencia
-- **Parques son gratis:** Ueno Park, Yoyogi Park, Nara Park
-
-**Presupuesto recomendado para actividades:** 25,000-40,000¥ (~170-272€) para 14 días si quieres hacer varias cosas especiales. Posible hacerlo con 15,000¥ (~102€) priorizando lo gratuito y low-cost.
-
-## Internet y comunicación: eSIM vs pocket wifi
-
-Estar conectado en Japón es casi imprescindible - para Google Maps, traducción, buscar restaurantes, comunicarte. Tienes dos opciones principales:
-
-**eSIM (mi recomendación):**
-
-- **Precio:** 15-40€ para 15-30 días con datos ilimitados o generosos (10-50GB)
-- **Ventaja:** Activas antes de volar, funciona al aterrizar, no ocupas espacio, no devuelves nada
-- **Desventaja:** Tu teléfono debe ser compatible con eSIM (iPhone XR+, Google Pixel 3+, Samsung S20+)
-- **Proveedores:** Airalo, Holafly, Ubigi
-
-**Yo usé Holafly eSIM:** 25€ por 15 días con datos ilimitados a velocidad normal. Funcionó perfectamente en todo Japón, 4G consistente en ciudades y 3G en zonas rurales. Lo activé en el avión y al aterrizar ya tenía internet. Cero complicaciones.
-
-**Pocket WiFi:**
-
-- **Precio:** 800-1,500¥ (~5.45-10.20€) por día, o 6,000-12,000¥ (~41-82€) por 15 días
-- **Ventaja:** Puedes compartir con varias personas/dispositivos
-- **Desventaja:** Tienes que recogerlo en el aeropuerto o hotel, devolverlo al final, llevar un dispositivo extra, cargarlo diariamente
-- **Proveedores:** Japan Wireless, Ninja WiFi, Global Advanced Communications
-
-**SIM física local:**
-
-- **Precio:** Similar a eSIM, 2,000-4,000¥ (~13.60-27€) por 15 días
-- **Ventaja:** A veces más barata que pocket wifi
-- **Desventaja:** Tienes que comprarla en Japón (aeropuerto o tiendas), cambiar tu SIM
-
-**Mi recomendación:** eSIM si tu teléfono es compatible - es lo más conveniente y económico. Pocket WiFi solo si viajas en grupo y pueden dividir el costo.
-
-**Comunicación:**
-
-- **WhatsApp funciona en Japón** con datos/wifi
-- **LINE es la app local** - útil para comunicarte con japoneses (hoteles, reservas)
-- **Wifi gratis:** Común en hoteles, konbinis, Starbucks, estaciones grandes - pero no consistente
-- **Google Translate funciona offline** - descarga el pack de japonés antes de viajar
-
-## Presupuesto por perfiles de viajero
-
-Ahora que hemos desglosado todos los costes, aquí van presupuestos completos para diferentes estilos de viaje. Todos asumen **14 días desde España**.
-
-### Presupuesto Mochilero (2,500-3,200€)
-
-**Vuelo:** 700€ (temporada baja, Turkish Airlines)
-**Alojamiento:** 400€ (hostels dormitorios, ~29€/noche)
-**Transporte:** 400€ (sin JR Pass, buses nocturnos + trenes regionales + IC cards)
-**Comida:** 350€ (~25€/día - konbinis, gyudon, ramen barato)
-**Actividades:** 150€ (priorizando templos gratuitos, evitando museos caros)
-**Internet:** 20€ (eSIM básica)
-**Extras:** 100€ (souvenirs mínimos)
-**TOTAL: ~2,620€**
-
-**Estilo:** Compartir dormitorios, comer económico pero auténtico, moverse en transporte lento pero barato, priorizar experiencias gratuitas, viajar ligero.
-
-### Presupuesto Medio (3,200-4,200€)
-
-**Vuelo:** 850€ (temporada media, Qatar Airways)
-**Alojamiento:** 850€ (business hotels, ~61€/noche)
-**Transporte:** 550€ (JR Pass 14 días + transporte local mínimo)
-**Comida:** 450€ (~32€/día - mezcla konbini/restaurantes decentes)
-**Actividades:** 250€ (actividades principales + alguna experiencia especial)
-**Internet:** 25€ (eSIM ilimitada)
-**Extras:** 200€ (souvenirs, imprevistos)
-**TOTAL: ~3,675€**
-
-**Estilo:** Habitaciones privadas cómodas, comer bien sin lujos, libertad de movimiento con JR Pass, hacer las actividades que te interesan, algún capricho ocasional. **Este fue mi estilo.**
-
-### Presupuesto Confortable (4,200-5,500€)
-
-**Vuelo:** 1,000€ (temporada alta o mejor aerolínea)
-**Alojamiento:** 1,400€ (hoteles 3-4 estrellas + 1-2 noches ryokan, ~100€/noche)
-**Transporte:** 600€ (JR Pass 14 días + taxis ocasionales)
-**Comida:** 700€ (~50€/día - restaurantes buenos, kaiseki 1-2 veces)
-**Actividades:** 400€ (todas las actividades que quieras + experiencias premium)
-**Internet:** 30€
-**Extras:** 400€ (souvenirs de calidad, sake premium, caprichos)
-**TOTAL: ~4,530€**
-
-**Estilo:** Comodidad en alojamientos, comer en buenos lugares, ryokan tradicional, no preocuparte por precios en actividades, comprar lo que te guste.
-
-### Presupuesto Lujo (5,500€+)
-
-**Vuelo:** 1,500€+ (business class o primera clase)
-**Alojamiento:** 2,500€+ (hoteles 5 estrellas, ryokans premium, ~179€/noche)
-**Transporte:** 800€ (JR Pass Green Car + taxis sin restricciones)
-**Comida:** 1,000€+ (~71€/día - kaiseki múltiples veces, restaurantes estrella Michelin)
-**Actividades:** 600€+ (experiencias exclusivas, guías privados)
-**Internet:** 40€ (ilimitado premium)
-**Extras:** 600€+ (souvenirs de lujo, arte, sake premium)
-**TOTAL: ~6,540€+**
-
-**Estilo:** Máximo confort, mejores experiencias culinarias, alojamientos tradicionales de lujo, sin restricciones de presupuesto.
-
-## Cómo ahorrar dinero en Japón sin sacrificar experiencias
-
-Aquí van mis mejores consejos para ahorrar sin sentir que te estás privando de la experiencia japonesa:
-
-**1. Come tu comida principal al mediodía**
-Los menús del día (teishoku) en restaurantes buenos cuestan 1,000-1,500¥ vs 3,000-5,000¥ la misma comida en la cena. Haz del almuerzo tu comida grande, cena ligero de konbini.
-
-**2. Los konbinis son oro**
-Lawson, 7-Eleven y FamilyMart tienen comida increíblemente buena y barata. Onigiris, bentos, ensaladas, café... todo fresco diariamente. Desayunar y cenar de konbini puede ahorrarte 2,000¥ (~13.60€) al día.
-
-**3. Compra el JR Pass solo si tiene sentido matemático**
-Calcula tu ruta ANTES de comprar. Si solo haces Tokio-Kioto-Osaka, probablemente no necesitas JR Pass de 14 días. Considera pase de 7 días o billetes individuales.
-
-**4. Quédate en business hotels**
-Son limpios, cómodos, bien ubicados y mucho más baratos que hoteles occidentales "normales". Toyoko Inn, APA Hotel, Super Hotel - todos excelentes.
-
-**5. Visita templos gratuitos primero**
-Fushimi Inari en Kioto es gratis y uno de los más impresionantes. Meiji Shrine en Tokio es gratis. Sensoji en Asakusa es gratis. Muchos de los mejores templos no cobran entrada.
-
-**6. Usa supermercados después de las 8 PM**
-Los bentos y sushi preparados ese día se descuentan 20-50%. Literalmente la misma comida, mucho más barata.
-
-**7. Bebe en konbinis, no en restaurantes**
-Una cerveza Asahi cuesta 250¥ (~1.70€) en konbini vs 600¥ (~4€) en restaurante. Compra en konbini y bebe en tu hotel o en parques (legal en Japón).
-
-**8. Camina o usa bicicleta cuando sea posible**
-Kioto es perfecta para bicicleta (500-1,000¥/día de alquiler). Tokio tiene barrios muy caminables. Ahorras transporte y ves más.
-
-**9. Ve a onsens públicos, no privados**
-Un onsen público/sento cuesta 500-1,000¥ (~3.40-6.80€) vs 5,000-15,000¥ (~34-102€) en ryokans de lujo. La experiencia es similar.
-
-**10. Evita taxis completamente**
-El transporte público en Japón es tan bueno que raramente necesitas taxi. Si lo usas, el costo se dispara rápido. Solo en emergencias o grupos de 4+ que dividen.
-
-**11. Compra una botella de agua reutilizable**
-El agua del grifo es potable en todo Japón. Llena tu botella gratis en hoteles/restaurantes. Ahorra 100-200¥ diarios.
-
-**12. Haz free walking tours en ciudades principales**
-Tokio, Kioto y Osaka tienen free walking tours (propina al final). Excelente forma de orientarte y aprender sin gastar.
-
-**Errores caros que cometí:**
-
-- **Comer en zona turística de Shibuya** - pagué 4,500¥ (~31€) por ramen mediocre que habría costado 950¥ (~6.50€) tres calles más allá.
-- **Tomar taxi desde hotel al barrio cercano** - 1,800¥ (~12€) por trayecto que era 15 minutos caminando.
-- **No investigar si templo merecía la entrada** - pagué 600¥ en templo poco interesante cuando hay mejores gratis.
-
-## Gastos inesperados y extras a considerar
-
-Hay costes que a menudo la gente olvida al presupuestar Japón. Aquí van para que no te sorprendan:
-
-**Seguro de viaje:** 40-80€ para 15 días. **IMPORTANTE** - no viajes sin seguro. Sistema médico japonés es caro para extranjeros. Yo uso Mondo o IATI.
-
-**Visado:** España tiene exención de visado para turismo hasta 90 días. Gratis. Otras nacionalidades verificar.
-
-**Envío de maletas (Takkyubin):** 2,000-3,000¥ (~13.60-20€) para enviar maleta de hotel a hotel. Muy útil si cambias de ciudad y no quieres cargar maleta. Yo lo usé una vez entre Tokio y Kioto - comodidad total.
-
-**Monedas:** Las máquinas y muchas tiendas pequeñas solo aceptan efectivo. Siempre lleva 5,000-10,000¥ (~34-68€) en efectivo. Los cajeros 7-Eleven aceptan tarjetas internacionales sin problema.
-
-**Lockers de estación:** 300-700¥ (~2-4.75€) por día dependiendo del tamaño. Útil si tienes medio día antes de check-in o después de check-out.
-
-**Lavanderías:** 300-400¥ (~2-2.70€) por lavado, 100¥ por secado. Si vas 14+ días, necesitarás lavar ropa. Muchos hoteles tienen lavadoras.
-
-**Souvenirs reales que compré:**
-
-- Kit Kat sabores japoneses: 1,500¥ (~10€)
-- Set de sake cups: 3,000¥ (~20€)
-- Ukiyo-e prints: 2,000¥ (~13.60€)
-- Omamori (amuletos) de templos: 800¥ (~5.45€)
-- Cuchillo japonés: 8,000¥ (~54€)
-- **Total souvenirs:** ~15,000¥ (~102€)
-
-**Propinas:** NO se dan en Japón. Ni en restaurantes, taxis, hoteles. Nada. Si intentas dejar propina, te la devolverán o se confundirán. Esto ahorra mucho vs viajar en EEUU o Europa.
-
-**Conversión de moneda:** Cambiar dinero en España antes de ir es mala idea (tasas terribles). Mejor sacar yenes de cajeros en Japón con tarjeta sin comisiones internacionales (Revolut, N26, Wise). Yo saqué todo en cajeros 7-Eleven.
-
-**Tarjetas de crédito:** Japón sigue siendo muy cash-based. Muchos restaurantes pequeños, templos, taxis solo aceptan efectivo. Lleva siempre cash, aunque las tarjetas funcionan en sitios grandes.
-
-**Apps útiles (gratuitas):**
-
-- Google Maps (navegación)
-- Google Translate (offline)
-- Hyperdia o Japan Transit Planner (rutas de tren)
-- Tabelog (restaurantes - versión japonesa de TripAdvisor pero mejor)
-
-Al final, mi viaje de 14 días a Japón costó 3,655€ todo incluido desde España - menos de lo que muchos pagan por dos semanas en Ibiza. Japón tiene fama de caro, pero la realidad es que con planificación inteligente, puedes tener una experiencia increíble sin vaciar tu cuenta bancaria. El país ofrece opciones para todos los presupuestos, desde el mochilero más austero hasta el viajero de lujo más exigente.
-
-Lo más importante no es cuánto gastas, sino cómo gastas. Priorizando experiencias auténticas (templos al amanecer sin turistas, ramen en pequeños locales de barrio, conversaciones con locals, perderte en callejones de Kioto), dormiendo limpio y cómodo sin necesidad de lujos, y comiendo la increíble comida japonesa sin pagar precios turísticos, puedes tener el viaje de tu vida sin arruinarte. Japón me demostró que viajar bien no significa necesariamente viajar caro - significa viajar inteligentemente, con respeto por la cultura local, y abierto a experimentar el país como lo viven los japoneses, no como lo venden las guías turísticas de lujo.
-
-Esta guía te ha dado los números reales, las estrategias de ahorro, y la transparencia total sobre dónde va cada yen. Ahora tienes todo lo necesario para calcular tu presupuesto, adaptarlo a tu estilo de viaje, y planificar tu aventura japonesa con confianza. ¿Mi consejo final? No dejes que el miedo al costo te impida ir a Japón. Es más accesible de lo que crees, y vale absolutamente cada céntimo. Sayonara, y buen viaje.
+Nuestro veredicto personal: Japón cuesta dinero, pero cada euro que gastas te lleva a experiencias que no encontrarás en ningún otro lugar del mundo. No es el destino más barato, pero es mucho más accesible de lo que su fama sugiere. 14 días es el tiempo perfecto para ver Tokio, Kioto, Osaka y alguna excursión sin sentir que vas corriendo.
