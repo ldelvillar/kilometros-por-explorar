@@ -5,6 +5,7 @@ import Layout from '@/layouts/Layout.astro';
 import CTA from '@/components/Cta.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import '@/styles/prose.css';
+import BlogCard from '@/components/blog/BlogEntryCard.astro';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -72,7 +73,7 @@ const schema = getCombinedSchema(pageSchema);
       <hr class="my-8 border-t border-gray-300 lg:my-16" />
 
       <!-- Article -->
-      <article class="prose lg:prose-lg mx-auto mb-12 max-w-[800px]">
+      <article class="mx-auto prose mb-12 max-w-[800px] lg:prose-lg">
         <Content />
       </article>
 
