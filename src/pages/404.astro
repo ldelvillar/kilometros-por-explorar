@@ -8,8 +8,8 @@ const description =
 ---
 
 <Layout title={title} description={description}>
-  <main class="animate-fade-in-up mx-auto max-w-6xl px-4 pt-24 pb-20">
-    <div class="bg-primary/10 h-64 w-full rounded-2xl">
+  <main id="main" class="animate-fade-in-up mx-auto max-w-6xl px-4 pt-24 pb-20">
+    <div class="h-64 w-full rounded-2xl bg-primary/10">
       <Image
         src="/images/404.webp"
         alt="Ilustración de página no encontrada"
@@ -33,13 +33,13 @@ const description =
       <div class="mt-8 flex items-center gap-4">
         <a
           href="/"
-          class="bg-primary hover:bg-primary/90 rounded-xl px-4 py-3 font-bold text-white transition duration-300"
+          class="rounded-xl bg-primary px-4 py-3 font-bold text-white transition duration-300 hover:bg-primary/90"
         >
           Volver al Inicio
         </a>
         <a
           href="/destinos"
-          class="text-primary border-primary hover:bg-primary/10 rounded-xl border px-4 py-3 font-bold transition duration-300"
+          class="rounded-xl border border-primary px-4 py-3 font-bold text-primary transition duration-300 hover:bg-primary/10"
         >
           Explorar Destinos
         </a>

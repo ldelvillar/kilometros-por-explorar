@@ -62,7 +62,7 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems);
 ---
 
 <Layout title={title} description={description} schema={schema}>
-  <main class="bg-white pt-20">
+  <main id="main" class="bg-white pt-20">
     <!-- Breadcrumbs -->
     <div class="mx-auto max-w-5xl py-4">
       <Breadcrumbs items={breadcrumbItems} includeSchema={false} />
