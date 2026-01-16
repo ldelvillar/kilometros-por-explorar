@@ -1,0 +1,51 @@
+---
+import { getBreadcrumbSchema, type BreadcrumbItem } from '@/config/schemas';
+
+interface Props {
+  items: BreadcrumbItem[];
+  class?: string;
+  /** Si es false, no renderiza el schema JSON-LD (útil cuando se pasa en el schema combinado de la página) */
+  includeSchema?: boolean;
+}
+
+const { items, class: className, includeSchema = true } = Astro.props;
+
+const breadcrumbSchema = getBreadcrumbSchema(items);
+---
+
+<nav aria-label="Breadcrumb" class:list={['text-sm', className]}>
+  <ol class="flex flex-wrap items-center gap-1.5">
+    {
+      items.map((item, index) => (
+        <li class="flex items-center gap-1.5">
+          {index > 0 && (
+            <span class="text-gray-400" aria-hidden="true">
+              /
+            </span>
+          )}
+          {item.href ? (
+            <a
+              href={item.href}
+              class="text-gray-500 transition-colors hover:text-primary"
+            >
+              {item.name}
+            </a>
+          ) : (
+            <span class="font-medium text-primary" aria-current="page">
+              {item.name}
+            </span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
+
+{
+  includeSchema && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(breadcrumbSchema)}
+    />
+  )
+}

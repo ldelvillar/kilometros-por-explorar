@@ -3,9 +3,14 @@ import { Image } from 'astro:assets';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
 import CTA from '@/components/Cta.astro';
-import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
-import '@/styles/prose.css';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import {
+  getArticleSchema,
+  getBlogCombinedSchema,
+  type BreadcrumbItem,
+} from '@/config/schemas';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
+import '@/styles/prose.css';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -37,12 +42,32 @@ const title = `${post.data.title} | Kilómetros por Explorar`;
 const description = post.data.description;
 const pathname = Astro.url.pathname;
 
-const pageSchema = getWebPageSchema(title, description, pathname);
-const schema = getCombinedSchema(pageSchema);
+// Breadcrumb items para navegación y schema
+const breadcrumbItems: BreadcrumbItem[] = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Blog', href: '/blog' },
+  { name: post.data.title },
+];
+
+// Schema combinado: Organization + WebSite + Article + Breadcrumb
+const articleSchema = getArticleSchema(
+  post.data.title,
+  description,
+  pathname,
+  post.data.date.toISOString(),
+  undefined, // modifyDate
+  post.data.image
+);
+const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems);
 ---
 
 <Layout title={title} description={description} schema={schema}>
   <main class="bg-white pt-20">
+    <!-- Breadcrumbs -->
+    <div class="mx-auto max-w-5xl py-4">
+      <Breadcrumbs items={breadcrumbItems} includeSchema={false} />
+    </div>
+
     <!-- Hero image -->
     <div class="mx-auto w-full max-w-5xl">
       <Image

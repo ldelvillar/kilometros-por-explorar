@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
 import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 
@@ -20,6 +21,11 @@ const sortedPosts: CollectionEntry<'blog'>[] = posts.sort(
 
 <Layout title={title} description={description} schema={schema}>
   <main class="animate-fade-in-up mx-auto max-w-7xl px-4 pt-24 pb-20">
+    <Breadcrumbs
+      items={[{ name: 'Inicio', href: '/' }, { name: 'Blog' }]}
+      class="mb-6"
+    />
+
     <h1 class="mb-8 text-4xl font-extrabold tracking-tight text-gray-800">
       Nuestro blog
     </h1>

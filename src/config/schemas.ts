@@ -150,8 +150,40 @@ export const getArticleSchema = (
   },
 });
 
+// Tipo para items del breadcrumb
+export interface BreadcrumbItem {
+  name: string;
+  href?: string;
+}
+
+// Schema para breadcrumbs
+export const getBreadcrumbSchema = (items: BreadcrumbItem[]) => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    ...(item.href && { item: getSiteUrl(item.href) }),
+  })),
+});
+
 // Schema combinado para páginas principales
 export const getCombinedSchema = (pageSchema: object) => ({
   '@context': 'https://schema.org',
   '@graph': [getOrganizationSchema(), getWebSiteSchema(), pageSchema],
+});
+
+// Schema combinado para artículos del blog (incluye Article + Breadcrumb)
+export const getBlogCombinedSchema = (
+  articleSchema: object,
+  breadcrumbItems: BreadcrumbItem[]
+) => ({
+  '@context': 'https://schema.org',
+  '@graph': [
+    getOrganizationSchema(),
+    getWebSiteSchema(),
+    articleSchema,
+    getBreadcrumbSchema(breadcrumbItems),
+  ],
 });

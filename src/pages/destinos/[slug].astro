@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 
 import Layout from '@/layouts/Layout.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import RelatedArticles from '@/components/blog/DestinationEntries.astro';
 import DestinationCustomers from '@/components/destinations/DestinationCustomers.astro';
 import Cta from '@/components/Cta.astro';
@@ -35,8 +36,19 @@ const schema = getCombinedSchema(pageSchema);
 
 <Layout title={title} description={description} schema={schema}>
   <main>
+    <!-- Breadcrumbs -->
+    <div class="mx-auto max-w-7xl px-4 pt-24 pb-4">
+      <Breadcrumbs
+        items={[
+          { name: 'Inicio', href: '/' },
+          { name: 'Destinos', href: '/destinos' },
+          { name: destination.data.name },
+        ]}
+      />
+    </div>
+
     <!-- Hero -->
-    <section class="mx-auto max-w-7xl px-4 pt-24">
+    <section class="mx-auto max-w-7xl px-4">
       <h1 class="mb-4 text-3xl font-bold text-gray-800">
         {destination.data.name}
       </h1>
