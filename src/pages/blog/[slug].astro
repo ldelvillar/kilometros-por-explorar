@@ -22,6 +22,17 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 
+const relatedPosts = await getCollection('blog', ({ data }) => {
+  return data.destinations?.some(destination =>
+    post.data.destinations?.includes(destination)
+  );
+});
+const sortedRelatedPosts = relatedPosts
+  .filter(p => p.id !== post.id)
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
+
 const title = `${post.data.title} | Kilómetros por Explorar`;
 const description = post.data.description;
 const pathname = Astro.url.pathname;
@@ -80,6 +91,21 @@ const schema = getCombinedSchema(pageSchema);
       <hr class="my-8 border-t border-gray-300 lg:my-16" />
     </div>
 
+    <!-- Related articles -->
+    {
+      sortedRelatedPosts.length > 0 && (
+        <div class="mx-auto mb-16 max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2 class="mb-6 text-2xl font-bold text-gray-900">
+            Artículos relacionados
+          </h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            {sortedRelatedPosts.map(post => (
+              <BlogCard post={post} loading="lazy" />
+            ))}
+          </div>
+        </div>
+      )
+    }
     <CTA />
   </main>
 </Layout>
