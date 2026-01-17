@@ -1,3 +1,13 @@
+.prose a {
+  text-decoration: none;
+  color: var(--color-primary, #12a3ed);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.prose a:hover {
+  color: var(--color-primary-dark, #0a84c1);
+}
+
 .prose blockquote {
   border: none;
   padding: 0;
@@ -95,6 +105,71 @@
 .prose tbody td strong {
   font-weight: 600;
   color: #1f2937;
+}
+
+/* Alertas con remark-github-blockquote-alert */
+.prose .markdown-alert {
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.prose .markdown-alert-warning {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-left: 4px solid #f59e0b;
+  color: #92400e;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15);
+}
+
+.prose .markdown-alert-warning .markdown-alert-title {
+  color: #78350f;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose .markdown-alert-warning p {
+  margin: 0 0 0.75rem 0;
+}
+
+.prose .markdown-alert-warning p:last-child {
+  margin-bottom: 0;
+}
+
+.prose .markdown-alert-note {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-left: 4px solid #3b82f6;
+  color: #1e40af;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+}
+
+.prose .markdown-alert-note .markdown-alert-title {
+  color: #1e3a8a;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose .markdown-alert-tip {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  border-left: 4px solid #10b981;
+  color: #065f46;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15);
+}
+
+.prose .markdown-alert-tip .markdown-alert-title {
+  color: #064e3b;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px) {
