@@ -17,7 +17,7 @@ import Menu from '@/assets/menu.svg';
       <a href="/sobre-nosotros" class="hover:text-primary">Sobre Nosotros</a>
       <a
         href="/contacto"
-        class="bg-primary hover:bg-primary/90 rounded-xl px-4 py-2 font-bold text-white transition duration-300"
+        class="rounded-xl bg-primary px-4 py-2 font-bold text-white transition duration-300 hover:bg-primary/90"
         >Planifica tu Viaje</a
       >
     </nav>
@@ -25,6 +25,8 @@ import Menu from '@/assets/menu.svg';
     <button
       id="menu-toggle"
       aria-label="Abrir y cerrar menú de navegación"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
       class="focus:outline-none lg:hidden"
     >
       <Menu class="size-6" />
@@ -44,7 +46,7 @@ import Menu from '@/assets/menu.svg';
     >
     <a
       href="/contacto"
-      class="bg-primary hover:bg-primary/90 rounded-xl px-4 py-2 font-bold text-white transition duration-300"
+      class="rounded-xl bg-primary px-4 py-2 font-bold text-white transition duration-300 hover:bg-primary/90"
       >Planifica tu Viaje</a
     >
   </nav>
@@ -52,8 +54,12 @@ import Menu from '@/assets/menu.svg';
 
 <script>
   // Toggle mobile menu
-  document.getElementById('menu-toggle')?.addEventListener('click', () => {
-    const mobileMenu = document.getElementById('mobile-menu');
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle?.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
     mobileMenu?.classList.toggle('hidden');
     mobileMenu?.classList.toggle('block');
   });
