@@ -1,9 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import {
+  getWebPageSchema,
+  getOrganizationSchema,
+  getWebSiteSchema,
+  getBreadcrumbSchema,
+  type BreadcrumbItem,
+} from '@/config/schemas';
 import Layout from '@/layouts/Layout.astro';
 import CustomerTimeline from '@/components/customers/CustomerTimeline.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import Cta from '@/components/Cta.astro';
 import '@/styles/prose.css';
 
@@ -25,9 +32,23 @@ const { Content } = await customer.render();
 const title = `Descubre la Aventura de ${customer.data.name} | Kilómetros por Explorar`;
 const description = customer.data.title;
 
+const breadcrumbItems: BreadcrumbItem[] = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Viajeros', href: '/viajeros' },
+  { name: customer.data.name },
+];
+
 const pathname = Astro.url.pathname;
 const pageSchema = getWebPageSchema(title, description, pathname);
-const schema = getCombinedSchema(pageSchema);
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    getOrganizationSchema(),
+    getWebSiteSchema(),
+    pageSchema,
+    getBreadcrumbSchema(breadcrumbItems),
+  ],
+};
 ---
 
 <Layout title={title} description={description} schema={schema}>
@@ -37,13 +58,7 @@ const schema = getCombinedSchema(pageSchema);
     class="relative z-10 mx-auto max-w-6xl overflow-hidden px-4 pt-24 lg:px-8"
   >
     <!-- Breadcrumb -->
-    <nav class="mb-6 flex items-center gap-2 text-sm text-gray-600">
-      <a href="/viajeros" class="hover:text-primary transition-colors"
-        >Viajeros</a
-      >
-      <span>/</span>
-      <span class="text-primary font-medium">{customer.data.name}</span>
-    </nav>
+    <Breadcrumbs items={breadcrumbItems} class="mb-6" includeSchema={false} />
 
     <!-- Customer flag -->
     <div class="mb-6">
@@ -71,7 +86,7 @@ const schema = getCombinedSchema(pageSchema);
           <div
             class={`flex flex-col items-center justify-center md:p-4 ${index < 3 ? 'md:border-r md:border-gray-100' : ''}`}
           >
-            <span class="font-blimone to-primary mb-2 bg-gradient-to-b from-blue-700 bg-clip-text text-3xl font-bold text-transparent md:text-5xl">
+            <span class="mb-2 bg-gradient-to-b from-blue-700 to-primary bg-clip-text font-blimone text-3xl font-bold text-transparent md:text-5xl">
               {metric.value}
             </span>
             <p class="text-center text-lg text-gray-600">{metric.label}</p>
@@ -108,7 +123,7 @@ const schema = getCombinedSchema(pageSchema);
   <!-- Content Section -->
   <section class="mx-auto max-w-4xl px-4 py-8">
     <hr class="mb-8 border-t border-gray-200 lg:mb-16" />
-    <article class="prose md:prose-lg lg:prose-xl max-w-none text-gray-800">
+    <article class="prose max-w-none text-gray-800 md:prose-lg lg:prose-xl">
       <Content />
     </article>
     <hr class="mt-8 border-t border-gray-200 lg:mt-16" />
