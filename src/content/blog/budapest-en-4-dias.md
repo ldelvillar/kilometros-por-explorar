@@ -5,6 +5,15 @@ date: 2025-09-04
 image: '/images/destinations/budapest.webp'
 author: 'Lucas'
 destinations: ['budapest']
+faqs:
+  - question: '¿Valen la pena los Baños Széchenyi?'
+    answer: 'Sí, es la experiencia más icónica de Budapest, pero es vital ir <strong>antes de las 9:00 AM</strong> para evitar la masificación. La entrada ronda los <strong>30€-40€</strong> (los precios suben en fin de semana). Recuerda llevar tus propias <strong>chanclas y toalla</strong>, ya que el alquiler allí es caro y las colas son largas.'
+  - question: '¿Cómo visitar el Parlamento de Budapest?'
+    answer: 'Para ver el interior, es obligatorio reservar la visita guiada en la web oficial (<i>Jegymester</i>) con al menos <strong>3 semanas de antelación</strong>. No compres en reventas. Si te quedas sin entradas, la mejor vista de la fachada iluminada se obtiene desde un <strong>crucero nocturno por el Danubio</strong> o desde el Bastión de los Pescadores.'
+  - question: '¿Se pueden ver auroras boreales en Budapest?'
+    answer: '<strong>No</strong>, Budapest está demasiado al sur (latitud 47°) para este fenómeno. Si buscas auroras, debes viajar a Escandinavia o Islandia. A cambio, Budapest ofrece la mejor iluminación nocturna de Europa: ver el Parlamento y el Puente de las Cadenas iluminados es una experiencia visual igual de impactante.'
+  - question: '¿Cuál es la mejor zona para alojarse en Budapest?'
+    answer: 'Depende de tu estilo. Elige <strong>Pest (Distrito VII - Barrio Judío)</strong> si buscas vida nocturna, restaurantes y estar cerca de los famosos <i>Ruin Bars</i>. Elige <strong>Buda (Distrito I)</strong> si prefieres tranquilidad, calles empedradas y vistas románticas al Parlamento. El transporte público conecta ambos lados perfectamente.'
 ---
 
 Budapest, la Perla del Danubio, es una ciudad que sorprende y enamora a partes iguales. Formada por la unión de dos ciudades históricas - Buda en la colina oeste y Pest en la llanura este - separadas por el majestuoso río Danubio, la capital húngara combina grandeza imperial con autenticidad local, arquitectura espectacular con precios increíblemente razonables, y una cultura termal única que te permite relajarte en aguas curativas bajo el cielo estrellado. Cuatro días es el tiempo perfecto para descubrir la esencia de esta ciudad fascinante sin prisas.

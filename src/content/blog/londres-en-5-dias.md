@@ -5,6 +5,15 @@ date: 2025-08-10
 image: '/images/destinations/london.webp'
 author: 'Lucas'
 destinations: ['londres']
+faqs:
+  - question: '¿Son realmente gratis los museos de Londres?'
+    answer: 'Sí, la gran mayoría de los museos de clase mundial como el <strong>British Museum</strong>, la <strong>National Gallery</strong>, el <strong>Tate Modern</strong> o el Museo de Historia Natural son <strong>totalmente gratuitos</strong> (aunque se agradece una donación). Solo tendrás que pagar en atracciones turísticas privadas como la <i>Torre de Londres</i> o el <i>London Eye</i>.'
+  - question: '¿Necesito comprar una Oyster Card para el transporte?'
+    answer: 'No es obligatorio. Hoy en día es más cómodo usar tu propia <strong>tarjeta bancaria Contactless</strong> (o el móvil con Apple/Google Pay) directamente en los tornos amarillos. El precio es idéntico al de la Oyster y se aplica el mismo <strong>"Daily Cap"</strong> (límite de gasto máximo diario), por lo que nunca pagarás de más.'
+  - question: '¿Merece la pena ir a Stonehenge desde Londres?'
+    answer: 'Solo si vas a estar en Londres <strong>más de 5 días</strong>. Stonehenge está a unas 2 horas de distancia, por lo que la excursión te consumirá un día entero. Si tienes poco tiempo, es más recomendable visitar el <strong>Castillo de Windsor</strong> o el Palacio de Hampton Court, que están a solo 30-40 minutos en tren.'
+  - question: '¿Cuál es la mejor zona para alojarse en Londres?'
+    answer: 'Para una primera visita, la zona de <strong>King’s Cross / St. Pancras</strong> es estratégica por su conexión inmejorable. Si prefieres estar en el meollo turístico, busca cerca de <strong>Covent Garden</strong> o <strong>Soho</strong>, aunque es caro. Si buscas un barrio elegante, seguro y cerca de los museos, elige <strong>South Kensington</strong>.'
 ---
 
 Londres, la vibrante capital del Reino Unido, es una metrópolis fascinante donde la historia milenaria convive con la innovación más vanguardista. Con más de 2.000 años de historia desde su fundación romana, esta ciudad cosmopolita ofrece una combinación inigualable de palacios reales, museos de clase mundial, teatros legendarios, mercados bulliciosos y una diversidad cultural que la convierte en una de las ciudades más emocionantes del planeta. Cinco días es el tiempo ideal para sumergirte en su esencia sin sentir que corres de un lugar a otro.

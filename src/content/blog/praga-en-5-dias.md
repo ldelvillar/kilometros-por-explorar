@@ -5,6 +5,15 @@ date: 2025-09-12
 image: '/images/destinations/prague.webp'
 author: 'Lucía'
 destinations: ['praga']
+faqs:
+  - question: '¿Merece la pena esperar al Reloj Astronómico?'
+    answer: 'Es un imprescindible, pero ajusta tus expectativas: el "espectáculo" de las figuras cada hora en punto dura segundos y es muy sencillo. Lo verdaderamente recomendable es <strong>subir a la torre del Ayuntamiento</strong> para obtener la mejor vista de la plaza. ¡Cuidado con los carteristas durante las aglomeraciones de las horas en punto!'
+  - question: '¿Hay que pagar para entrar al Castillo de Praga?'
+    answer: 'Depende. Pasear por los patios y jardines del recinto es <strong>totalmente gratuito</strong> y abierto hasta tarde. Solo necesitas comprar entrada (aprox. 18€) para acceder a los interiores como la <strong>Catedral de San Vito</strong>, el Palacio Real y el famoso <strong>Callejón del Oro</strong>. Las vistas de la ciudad desde sus murallas son gratuitas.'
+  - question: '¿Es mejor visitar Praga con tour o por libre?'
+    answer: 'Praga es una ciudad muy compacta, ideal para recorrerla <strong>a pie por libre</strong> (lleva calzado muy cómodo, todo es adoquín). No obstante, dada su densa historia, recomendamos encarecidamente hacer un <strong>Free Tour</strong> en español el primer día para entender qué estás viendo. El transporte público funciona de maravilla.'
+  - question: '¿Cuál es la mejor zona para alojarse en Praga?'
+    answer: 'Para estar en el centro de la acción, elige <strong>Staré Město (Ciudad Vieja)</strong>, aunque es ruidoso y turístico. Si prefieres un ambiente más romántico, tranquilo y "de cuento", cruza el puente hacia <strong>Malá Strana</strong>. Si buscas precios más bajos, buenos cafés y ambiente local, el barrio de <strong>Vinohrady</strong> es la mejor opción.'
 ---
 
 Praga, la Ciudad de las Cien Torres, es uno de los destinos más mágicos y románticos de Europa. Con sus calles empedradas, su arquitectura gótica y barroca, y su atmósfera de cuento de hadas, esta capital checa te transportará a otra época. Cinco días es el tiempo perfecto para descubrir no solo los monumentos imprescindibles, sino también los rincones secretos que hacen de Praga una ciudad verdaderamente especial.

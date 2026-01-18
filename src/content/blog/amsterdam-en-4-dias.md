@@ -5,6 +5,15 @@ date: 2025-07-28
 image: '/images/destinations/amsterdam.webp'
 author: 'Lucas'
 destinations: ['amsterdam']
+faqs:
+  - question: '¿Debo alquilar una bicicleta en Ámsterdam?'
+    answer: 'Sí, es la experiencia más auténtica, pero hazlo solo si te sientes cómodo pedaleando con tráfico. El alquiler cuesta entre <strong>10€ y 15€ al día</strong>. Ámsterdam es plana y segura, pero debes respetar las normas y usar siempre <strong>dos candados</strong> al aparcar para evitar robos.'
+  - question: '¿Cuáles son los museos imprescindibles de Ámsterdam?'
+    answer: 'El "Big Three" en la plaza Museumplein: el <strong>Rijksmuseum</strong> (Rembrandt y Vermeer), el <strong>Museo Van Gogh</strong> y el <strong>Stedelijk</strong> (arte moderno). Es vital reservar las entradas online con antelación o usar la tarjeta <i>I amsterdam City Card</i> para ahorrar.'
+  - question: '¿Cómo conseguir entradas para la Casa de Ana Frank?'
+    answer: 'Debes reservar en su web oficial con <strong>6 semanas de antelación</strong> exacta. Las entradas se liberan cada martes a las 10:00 (hora local) y vuelan. <strong>No hay venta en taquilla</strong>. La visita dura una hora y es una inmersión histórica emocionalmente intensa.'
+  - question: '¿Es peligroso el Barrio Rojo de Ámsterdam?'
+    answer: 'No, Ámsterdam es una de las ciudades más seguras de Europa y el Barrio Rojo (<i>De Wallen</i>) está muy vigilado y lleno de turistas. Simplemente usa el sentido común de noche y <strong>no hagas fotos a los escaparates</strong>, ya que está estrictamente prohibido y puedes tener problemas.'
 ---
 
 Ámsterdam, la capital de los Países Bajos, es una ciudad que encanta con su arquitectura única, sus canales serpenteantes y su atmósfera liberal y acogedora. Con más de 400 años de historia marítima, esta ciudad compacta y perfectamente diseñada para recorrer en bicicleta ofrece una combinación irresistible de arte de clase mundial, historia fascinante y una calidad de vida envidiable. Cuatro días es el tiempo perfecto para explorar sus museos icónicos, perderte por sus barrios históricos y experimentar el estilo de vida holandés.

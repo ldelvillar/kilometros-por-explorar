@@ -5,6 +5,15 @@ date: 2025-10-24
 image: '/images/blog/mejor-epoca-para-visitar-islandia.webp'
 author: 'Lucas'
 destinations: ['islandia']
+faqs:
+  - question: '¿Es mejor viajar a Islandia en invierno o en verano?'
+    answer: 'Depende de tu objetivo. Elige <strong>invierno</strong> (noviembre-marzo) si tu prioridad es ver <strong>auroras boreales</strong> y cuevas de hielo azul. Elige <strong>verano</strong> (junio-agosto) si prefieres el Sol de Medianoche, ver frailecillos y acceder a las Tierras Altas (F-Roads). Son dos viajes completamente diferentes.'
+  - question: '¿Es peligroso conducir en Islandia en invierno?'
+    answer: 'Puede serlo si no tienes experiencia en hielo y viento fuerte. Las condiciones cambian en minutos. Es vital revisar la web oficial <strong>road.is</strong> antes de salir, alquilar un vehículo <strong>4x4 con neumáticos de invierno</strong> y tener un seguro a todo riesgo. Si no te sientes seguro, opta por tours organizados.'
+  - question: '¿Qué ropa llevar a Islandia?'
+    answer: 'La clave es vestir por <strong>capas</strong>: 1) Térmica pegada al cuerpo (lana merino), 2) Forro polar o jersey de lana y 3) Abrigo <strong>impermeable y cortavientos</strong> (Gore-Tex). El viento es el enemigo nº 1. Lleva siempre gorro, guantes y botas de trekking impermeables, incluso en verano.'
+  - question: '¿Con cuánta antelación debo reservar alojamiento?'
+    answer: 'Para viajar en <strong>verano (junio-agosto)</strong>, la antelación recomendada es de <strong>6 a 9 meses</strong>, ya que la oferta hotelera en zonas rurales es escasa y se agota rapidísimo. Para invierno, reservar con 2 o 3 meses suele ser suficiente, aunque los precios suben cuanto más esperas.'
 ---
 
 Islandia es uno de esos destinos que te obsesionan. Después de mi primer viaje en febrero, pasé meses mirando fotos, viendo vídeos, y preguntándome cómo sería la isla en verano. Así que cuando tuve la oportunidad de volver en julio, no lo dudé. Ahora, habiendo experimentado Islandia en sus dos extremos - el frío oscuro del invierno y el sol de medianoche del verano - puedo decir con conocimiento de causa que son viajes completamente diferentes. Tan diferentes que casi parecen dos países distintos.

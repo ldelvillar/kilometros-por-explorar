@@ -5,6 +5,15 @@ date: 2025-09-15
 image: '/images/destinations/vienna.webp'
 author: 'Lucía'
 destinations: ['viena']
+faqs:
+  - question: '¿Merece la pena visitar los palacios Schönbrunn y Hofburg?'
+    answer: 'Son complementarios, no repetitivos. El <strong>Hofburg</strong> (en el centro) era la residencia de invierno e incluye el Museo de Sisi. <strong>Schönbrunn</strong> (a las afueras) era la de verano y destaca por sus inmensos jardines tipo Versalles. Si vas a entrar a ambos, compra el <strong>Sisi Ticket</strong> para ahorrar un 25% y saltar colas.'
+  - question: '¿Es obligatorio ir a un concierto de música clásica?'
+    answer: 'Viena es la capital de la música, así que es muy recomendable. Un truco de experto: en la <strong>Ópera Estatal</strong> venden entradas "de pie" (<i>Stehplatz</i>) por solo <strong>3€ - 10€</strong> unos 80 minutos antes de la función. Evita a los vendedores callejeros disfrazados de Mozart, suelen vender conciertos turísticos de baja calidad.'
+  - question: '¿Debo probar la Tarta Sacher en el Café Sacher?'
+    answer: 'Es el sitio original, pero suele haber colas de una hora. Su eterno rival, la pastelería <strong>Demel</strong>, sirve una versión igual de histórica y deliciosa. Más allá de la tarta, lo vital es vivir la "cultura de café" vienesa: siéntate en el <strong>Café Central</strong> o el <strong>Sperl</strong> y pide un <i>Melange</i> sin prisas.'
+  - question: '¿Cuál es la mejor época para viajar a Viena?'
+    answer: '<strong>Primavera y otoño</strong> ofrecen el mejor clima para pasear. Sin embargo, <strong>diciembre</strong> es temporada alta por sus famosos mercados navideños. Si te interesa el vals, <strong>enero y febrero</strong> son los meses de la Temporada de Bailes. Evita julio y agosto si te molesta el calor, ya que muchos sitios antiguos no tienen aire acondicionado.'
 ---
 
 Viena, la capital imperial de Austria, es una ciudad que parece detenida en la época dorada de los Habsburgo. Con sus palacios barrocos que parecen sacados de un cuento de hadas, sus cafés históricos donde el tiempo transcurre más lentamente, su tradición musical que resuena en cada esquina, y esa elegancia refinada pero nunca pretenciosa que caracteriza a los vieneses, la capital austriaca es posiblemente la ciudad más aristocrática de Europa. Cuatro días es el tiempo perfecto para sumergirte en su grandeza imperial sin prisas, entendiendo por qué fue el centro de uno de los imperios más poderosos de la historia.

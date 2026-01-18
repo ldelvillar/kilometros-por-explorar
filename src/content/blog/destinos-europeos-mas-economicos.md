@@ -5,6 +5,15 @@ date: 2025-10-12
 image: '/images/blog/destinos-europeos-mas-economicos.webp'
 author: 'Lucas & Lucía'
 destinations: ['budapest', 'praga', 'cracovia', 'oporto', 'belgrado']
+faqs:
+  - question: '¿Cuál es el destino más barato de la lista?'
+    answer: 'El ranking de menor a mayor coste es: <strong>1. Belgrado</strong> (30-50€/día), <strong>2. Budapest</strong> (40-60€/día) y <strong>3. Cracovia</strong> (50-70€/día). Oporto y Praga son considerablemente más caros. Si buscas la mejor relación calidad-precio-infraestructura, tu destino es <strong>Budapest</strong>.'
+  - question: '¿Cuál es la mejor ruta para combinar estas ciudades?'
+    answer: 'Lo ideal es hacer el triángulo centroeuropeo en tren o autobús: <strong>Praga ➞ Cracovia ➞ Budapest</strong> (dedicando 10-12 días). Belgrado queda más al sur y conecta bien con Budapest. <strong>Oporto</strong> está en la otra punta de Europa; visítalo en un viaje exclusivo o vuela allí directamente.'
+  - question: '¿Qué moneda se utiliza en cada ciudad?'
+    answer: 'Solo <strong>Oporto usa el Euro (€)</strong>. En el resto necesitarás moneda local: Corona checa (Praga), Złoty (Cracovia), Forinta (Budapest) y Dinar (Belgrado). No cambies dinero en el aeropuerto; lo mejor es pagar todo con tarjetas sin comisiones tipo <strong>Revolut o N26</strong> para obtener el cambio real.'
+  - question: '¿Es necesario gastar mucho en tours y entradas?'
+    answer: 'No, estas ciudades son muy "paseables". Puedes unirte a los famosos <strong>Free Tours</strong> (basados en propinas) para conocer la historia sin coste fijo. Tu único gasto fuerte serán entradas específicas imprescindibles como el <i>Parlamento de Budapest</i>, el <i>Castillo de Praga</i> o el tour de <i>Auschwitz</i> desde Cracovia.'
 ---
 
 Una de las preguntas que más nos hacen es: "¿cómo podéis permitiros viajar tanto?" Y la respuesta es más simple de lo que parece: elegimos destinos inteligentemente. Europa tiene fama de cara, y es verdad si solo te enfocas en Londres, París, Zúrich o Copenhague. Pero el continente es enorme y diverso, y algunos de los lugares más hermosos, auténticos e interesantes son también los más económicos. Después de años viajando por Europa con presupuestos variados (a veces ajustados, a veces más holgados), hemos descubierto cinco destinos donde nuestro dinero rindió tanto que pudimos permitirnos experiencias que en otras capitales europeas serían impensables.

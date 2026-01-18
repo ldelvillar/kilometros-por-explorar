@@ -7,6 +7,7 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import {
   getArticleSchema,
   getBlogCombinedSchema,
+  getFAQSchema,
   type BreadcrumbItem,
 } from '@/config/schemas';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
@@ -32,6 +33,7 @@ const relatedPosts = await getCollection('blog', ({ data }) => {
     post.data.destinations?.includes(destination)
   );
 });
+
 const sortedRelatedPosts = relatedPosts
   .filter(p => p.id !== post.id)
   .sort(
@@ -42,23 +44,28 @@ const title = `${post.data.title} | Kilómetros por Explorar`;
 const description = post.data.description;
 const pathname = Astro.url.pathname;
 
-// Breadcrumb items para navegación y schema
 const breadcrumbItems: BreadcrumbItem[] = [
   { name: 'Inicio', href: '/' },
   { name: 'Blog', href: '/blog' },
   { name: post.data.title },
 ];
 
-// Schema combinado: Organization + WebSite + Article + Breadcrumb
+const mainDestination = post.data.destinations?.[0];
+
 const articleSchema = getArticleSchema(
   post.data.title,
   description,
   pathname,
   post.data.date.toISOString(),
-  undefined, // modifyDate
-  post.data.image
+  undefined,
+  post.data.image,
+  post.data.author,
+  mainDestination
 );
-const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems);
+
+const faqSchema = getFAQSchema(post.data.faqs);
+
+const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
 ---
 
 <Layout title={title} description={description} schema={schema}>

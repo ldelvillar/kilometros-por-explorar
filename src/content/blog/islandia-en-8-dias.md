@@ -5,6 +5,15 @@ date: 2025-08-04
 image: '/images/destinations/iceland.webp'
 author: 'Lucas'
 destinations: ['islandia']
+faqs:
+  - question: '¿Son suficientes 8 días para recorrer Islandia?'
+    answer: 'Es el tiempo <strong>mínimo absoluto</strong> para completar la <i>Ring Road</i> (vuelta a la isla), pero irás con prisa. Lo ideal son <strong>10-12 días</strong> para disfrutar sin estrés. Si solo tienes 8 días, te recomendamos centrarte únicamente en el <strong>Sur y el Oeste (Snæfellsnes)</strong> para no pasar la mitad del viaje conduciendo.'
+  - question: '¿Qué lugares no me puedo perder en Islandia?'
+    answer: 'Los imprescindibles son: 1. El <strong>Círculo Dorado</strong> (Gullfoss y Geysir), 2. Las cascadas del Sur (<i>Seljalandsfoss</i> y <i>Skógafoss</i>), 3. La playa de diamantes y laguna glaciar de <strong>Jökulsárlón</strong>. Si viajas en invierno, cazar <strong>auroras boreales</strong> es la prioridad número uno.'
+  - question: '¿Merece la pena pagar el Blue Lagoon?'
+    answer: 'Es una experiencia icónica pero muy cara (<strong>70€-130€</strong>). Si tu presupuesto es ajustado, sáltatela y ve a la <strong>Secret Lagoon</strong> (aprox. 30€, más auténtica). Si buscas una experiencia termal de lujo más moderna y con vistas al océano, muchos viajeros prefieren ahora el <strong>Sky Lagoon</strong> en Reikiavik.'
+  - question: '¿Es mejor alojarse en camping, camper o hotel?'
+    answer: 'En <strong>verano</strong>, alquilar una camper y usar los campings es la mejor forma de ahorrar (aprox. 15€/noche por persona) y tener libertad total. En <strong>invierno</strong>, por seguridad y clima extremo, recomendamos encarecidamente dormir en <strong>hoteles o guesthouses</strong>. La camper con nieve y viento fuerte puede ser peligrosa e incómoda.'
 ---
 
 Islandia es uno de esos destinos que parece sacado de otro planeta. Con sus paisajes volcánicos, glaciares milenarios, cascadas espectaculares y la posibilidad de ver auroras boreales bailando en el cielo nocturno, este país nórdico ofrece una experiencia que no se parece a ninguna otra. Ocho días es el tiempo ideal para recorrer la Ring Road (carretera circular) y descubrir los principales atractivos de la isla de fuego y hielo.

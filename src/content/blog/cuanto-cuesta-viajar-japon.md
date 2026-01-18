@@ -5,6 +5,15 @@ date: 2025-11-17
 image: '/images/blog/cuanto-cuesta-viajar-japon.webp'
 author: 'Lucas & Lucía'
 destinations: ['japon']
+faqs:
+  - question: '¿Merece la pena comprar el Japan Rail Pass (JR Pass)?'
+    answer: 'Tras la gran subida de precios de 2023, el JR Pass <strong>ya no compensa</strong> para la ruta clásica (Tokio-Kioto-Osaka). Solo sale rentable si planeas hacer grandes desplazamientos diarios (ej: ir hasta Hiroshima, Miyajima o Kanazawa). Calcula siempre tu ruta en una <strong>calculadora online</strong> antes de comprarlo; a menudo los billetes sueltos son más baratos.'
+  - question: '¿Cuál es la época más barata para viajar a Japón?'
+    answer: '<strong>Enero y febrero</strong> son los meses más económicos y con menos turistas, ideales si soportas el frío. <strong>Junio</strong> (temporada de lluvias) también ofrece precios bajos en vuelos. Evita a toda costa la <i>Golden Week</i> (principios de mayo) y el <i>Obon</i> (mediados de agosto), ya que los precios se disparan y los trenes se llenan.'
+  - question: '¿Es necesario alquilar coche en Japón?'
+    answer: '<strong>No</strong>, el sistema de trenes y metro es el más eficiente del mundo y te lleva a casi cualquier lugar. Conducir por la izquierda y el tráfico de Tokio pueden ser estresantes. El coche solo es recomendable si vas a explorar zonas rurales profundas como <strong>Hokkaido, Shikoku o los Alpes Japoneses</strong>.'
+  - question: '¿Es caro comer en Japón?'
+    answer: 'Mito falso: comer en Japón es apto para todos los bolsillos. Puedes comer menús deliciosos de <i>Ramen</i>, <i>Udon</i> o <i>Gyudon</i> por <strong>6€ - 10€</strong>. Los "Konbini" (tiendas 24h como 7-Eleven o FamilyMart) tienen comida preparada de alta calidad por menos de <strong>5€</strong>. Es más barato comer fuera allí que en gran parte de Europa.'
 ---
 
 Después de tres semanas explorando Japón (Tokio, Kioto, Osaka, Hiroshima, Nara y los Alpes Japoneses) y de ayudar a decenas de clientes a planificar sus viajes japoneses, podemos decirte exactamente dónde va cada euro. Japón tiene reputación de ser caro, y aunque los precios son más altos que en el sudeste asiático, el yen debilitado de los últimos años ha hecho el destino mucho más accesible de lo que muchos creen.

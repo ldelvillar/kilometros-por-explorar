@@ -5,6 +5,15 @@ date: 2025-10-18
 image: '/images/blog/como-usar-interrail.webp'
 author: 'Lucas'
 destinations: []
+faqs:
+  - question: '¿Cuál es la diferencia entre Interrail y Eurail?'
+    answer: 'La única diferencia es tu residencia. Compra el <strong>Interrail Pass</strong> si resides oficialmente en un país europeo. Compra el <strong>Eurail Pass</strong> si vives fuera (América, Asia, Oceanía). El precio, los trenes incluidos y las normas de uso son <strong>idénticos</strong> en ambos pases.'
+  - question: '¿Me conviene el Pase Global Flexible o el Continuo?'
+    answer: 'El <strong>Pase Flexible</strong> (ej: 7 días de viaje en 1 mes) es el más rentable para el 90% de viajeros que quieren visitar ciudades y quedarse 2-3 días en ellas. El <strong>Pase Continuo</strong> solo compensa si planeas coger trenes <i>casi a diario</i> para cubrir distancias enormes sin apenas parar.'
+  - question: '¿Merece la pena el Interrail o mejor billetes sueltos?'
+    answer: 'Compensa si planeas hacer trayectos largos en países caros (Francia, Alemania, Suiza, Escandinavia) o quieres flexibilidad total. Si tu ruta es por países económicos (Europa del Este) o ya tienes fechas fijas y compras con 3 meses de antelación, suele ser más barato comprar <strong>billetes sueltos</strong>.'
+  - question: '¿Qué trenes NO incluye el Interrail y suplementos?'
+    answer: 'El pase cubre el viaje, pero no siempre el asiento. Los trenes de alta velocidad (<strong>Eurostar, Thalys, AVE</strong>) y nocturnos exigen pagar un <strong>suplemento de reserva obligatorio</strong> (10€-35€ extra). Además, el transporte público urbano (metro, bus, tranvía) <strong>nunca</strong> está incluido.'
 ---
 
 El Interrail es posiblemente uno de los ritos de iniciación más icónicos para viajeros europeos. La idea de recorrer Europa en tren con un solo billete, saltando de ciudad en ciudad con libertad total, durmiendo en trenes nocturnos, conociendo gente de todo el continente en andenes y vagones... tiene un romanticismo que pocos tipos de viaje pueden igualar. Pero el Interrail también genera muchas dudas: ¿cómo funciona exactamente? ¿Merece realmente la pena o es mejor comprar billetes sueltos? ¿Qué tipo de pase necesito? ¿Cómo funcionan las reservas?

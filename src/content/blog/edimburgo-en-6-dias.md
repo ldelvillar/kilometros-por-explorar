@@ -5,6 +5,15 @@ date: 2025-10-05
 image: '/images/destinations/edinburgh.webp'
 author: 'Lucas'
 destinations: ['edimburgo']
+faqs:
+  - question: '¿Es mejor visitar las Highlands en tour o por libre?'
+    answer: 'Depende de tu tiempo. Si solo tienes 1 o 2 días, el <strong>tour organizado</strong> es vital para evitar el estrés de conducir por la izquierda en carreteras estrechas. Si dispones de 3 o más días, alquilar un <strong>coche</strong> te dará la libertad necesaria para explorar paisajes a tu ritmo.'
+  - question: '¿Merece la pena subir a Arthur’s Seat?'
+    answer: '<strong>Sí, es imprescindible</strong>. Es un volcán extinto que ofrece las mejores vistas panorámicas 360° de la ciudad gratis. La subida dura unos <strong>45 minutos</strong> y es de dificultad media; lleva calzado cómodo y agua. Intenta ir al atardecer para la mejor luz fotográfica.'
+  - question: '¿Vale la pena pagar la entrada al Castillo de Edimburgo?'
+    answer: 'Sí, aunque la entrada es cara (aprox. 20€), es la atracción histórica más importante. Ver las <strong>Joyas de la Corona</strong> escocesa y el disparo del <i>Cañón de la Una</i> (13:00h) justifica el precio. <strong>Reserva online</strong> con antelación para asegurar tu acceso y evitar colas.'
+  - question: '¿Cuál es la mejor zona para alojarse en Edimburgo?'
+    answer: 'Para una primera visita, el <strong>Old Town (Casco Antiguo)</strong> es inmejorable por su atmósfera medieval y cercanía a todo, aunque es más caro y ruidoso. Si buscas algo más auténtico, económico y con buenos restaurantes locales, elige el barrio de <strong>Leith</strong> o la zona universitaria de <strong>Southside</strong>.'
 ---
 
 Edimburgo, la capital de Escocia, es una ciudad que combina historia medieval, paisajes naturales impresionantes y una atmósfera única que cautiva a cualquier viajero. Si tienes seis días para explorarla, estás de suerte: tendrás tiempo suficiente no solo para conocer la ciudad en profundidad, sino también para aventurarte en las legendarias Tierras Altas escocesas y descubrir rincones que muchos visitantes se pierden.

@@ -5,6 +5,15 @@ date: 2025-09-18
 image: '/images/destinations/copenhagen.webp'
 author: 'Lucía'
 destinations: ['copenhague']
+faqs:
+  - question: '¿Merece la pena visitar La Sirenita?'
+    answer: 'Es un icono imprescindible para la foto, pero ajusta tus expectativas: es una estatua **muy pequeña** (1,25m) y suele estar rodeada de autobuses turísticos. La visita te llevará solo 10 minutos. Lo ideal es combinarla con un paseo por la fortaleza de <strong>Kastellet</strong>, que está justo al lado y es un parque precioso.'
+  - question: '¿Cuándo visitar los Jardines de Tivoli?'
+    answer: 'El momento más mágico es <strong>al atardecer</strong>, cuando se encienden miles de luces. Ten en cuenta que no abre todo el año: tiene temporada de verano (abril-septiembre) y aperturas especiales en <strong>Halloween y Navidad</strong>. Evita los fines de semana si no quieres largas colas en las atracciones.'
+  - question: '¿Es peligroso visitar el barrio de Christiania?'
+    answer: 'No, es seguro si respetas sus normas estrictas: está <strong>terminantemente prohibido hacer fotos o vídeos</strong> en la calle principal (conocida como <i>Pusher Street</i>). Es una comunidad autogestionada con un ambiente bohemio único. Simplemente compórtate con respeto, no corras y disfruta de sus cafeterías y zonas verdes.'
+  - question: '¿Cuál es la mejor forma de moverse por Copenhague?'
+    answer: 'Haz como los locales y <strong>alquila una bicicleta</strong> (aprox. 15€/día); la ciudad es plana y tiene los mejores carriles bici del mundo. Si prefieres no pedalear, el Metro funciona 24/7. Para ahorrar, compra la tarjeta <strong>City Pass</strong> (transporte ilimitado), ya que los billetes sencillos son muy caros.'
 ---
 
 Copenhague, la capital de Dinamarca, es una ciudad que redefine el concepto de calidad de vida. Con sus canales pintorescos, su arquitectura que mezcla palacios reales con diseño contemporáneo, sus habitantes circulando en bicicleta por todas partes, y ese concepto de hygge (calidez acogedora) que impregna cada café y rincón, la capital danesa es una de las ciudades más encantadoras y habitables de Europa. Cuatro días es el tiempo perfecto para descubrir su esencia sin prisas, entendiendo por qué los daneses son consistentemente calificados como las personas más felices del mundo.

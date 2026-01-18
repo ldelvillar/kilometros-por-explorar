@@ -4,7 +4,16 @@ description: 'Descubre los mejores lugares de Europa para ver auroras boreales: 
 date: 2025-08-02
 image: '/images/blog/mejor-pais-auroras-boreales.webp'
 author: 'Lucas'
-destinations: ['noruega', 'islandia']
+destinations: ['noruega', 'islandia', 'estocolmo']
+faqs:
+  - question: '¿Cuál es el mejor país para ver auroras boreales?'
+    answer: 'Depende de lo que busques. <strong>Suecia (Abisko)</strong> tiene estadísticamente los cielos más despejados. <strong>Noruega (Tromsø)</strong> ofrece la mejor infraestructura y fiordos dramáticos. <strong>Islandia</strong> brinda paisajes volcánicos épicos, y <strong>Finlandia</strong> es famosa por sus hoteles iglú de cristal. La probabilidad es similar en todos si estás en el Círculo Polar.'
+  - question: '¿Cuál es la mejor época para verlas?'
+    answer: 'La temporada va de <strong>septiembre a abril</strong>. Aunque en diciembre y enero hay más horas de oscuridad, los equinoccios (<strong>septiembre y marzo</strong>) suelen tener mayor actividad solar y un clima menos hostil. Recuerda la fórmula mágica: Oscuridad + Actividad Solar (KP) + <strong>Cielos Despejados</strong> (lo más difícil).'
+  - question: '¿Merece la pena pagar un tour de auroras?'
+    answer: 'Sí, especialmente si no alquilas coche. Los guías expertos son "cazadores": estudian los mapas de nubes y conducen cientos de kilómetros buscando claros. Si vas por libre, necesitas <strong>coche propio</strong> y flexibilidad total. Una buena estrategia es contratar un tour la primera noche para aprender cómo buscarlas.'
+  - question: '¿Qué equipo necesito para fotografiarlas?'
+    answer: 'El accesorio <strong>obligatorio es el trípode</strong>; sin él, la foto saldrá movida. Necesitas una cámara con modo manual (exposición de 10-20 segundos, apertura f/2.8 o menor, ISO 1600+). Hoy en día, los smartphones de gama alta con <strong>"Modo Noche"</strong> también logran resultados sorprendentes si se mantienen estables.'
 ---
 
 Las auroras boreales, ese espectáculo celestial de luces danzantes en tonos verdes, violetas y azules, representan uno de los fenómenos naturales más impresionantes que puedes presenciar. Para los europeos, la buena noticia es que no necesitas viajar hasta Alaska o Canadá para vivir esta experiencia mágica - el norte de Europa ofrece algunas de las mejores condiciones del planeta para cazar auroras. Noruega, Islandia, Suecia y Finlandia compiten como destinos de primer nivel, cada uno con sus propias ventajas únicas.

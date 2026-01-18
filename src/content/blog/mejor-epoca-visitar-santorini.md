@@ -5,6 +5,15 @@ date: 2025-10-21
 image: '/images/blog/mejor-epoca-visitar-santorini.webp'
 author: 'Lucía'
 destinations: ['santorini']
+faqs:
+  - question: '¿Es verdad que agosto es el peor mes para visitar Santorini?'
+    answer: 'Si buscas tranquilidad, <strong>sí</strong>. En agosto se juntan el turismo vacacional y los cruceros diarios, colapsando las estrechas calles de Oia, especialmente al atardecer. Los precios se duplican o triplican. Si solo puedes viajar en agosto, reserva con meses de antelación y madruga mucho para ver la isla antes de las <strong>9:00 AM</strong>.'
+  - question: '¿Qué es mejor: viajar en mayo o en octubre?'
+    answer: 'Ambos son "Temporada Media" (la mejor opción), pero con una diferencia clave: la <strong>temperatura del agua</strong>. Elige <strong>mayo</strong> si prefieres paisajes verdes y días largos. Elige <strong>septiembre u octubre</strong> si tu prioridad es <strong>bañarte en el mar</strong>, ya que el agua conserva el calor del verano. Los precios son similares.'
+  - question: '¿Merece la pena ir a Santorini en invierno?'
+    answer: 'Solo si tu prioridad es el <strong>presupuesto y la fotografía</strong>. En invierno (noviembre-marzo) no hay multitudes y es barato, pero el clima es ventoso y, lo más importante, <strong>muchos hoteles y restaurantes cierran</strong>. Es una experiencia solitaria y visual, muy diferente a la vibrante atmósfera veraniega.'
+  - question: '¿Cuál es la mejor zona: Oia, Fira o Imerovigli?'
+    answer: '<strong>Oia</strong> es la imagen de postal (lujo y atardeceres), pero carísima y llena de gente. <strong>Fira</strong> es el centro neurálgico, ideal para salir de fiesta y conectar con autobuses. Nuestra recomendación secreta es <strong>Imerovigli</strong>: está situada entre ambas, es más tranquila y tiene las vistas más altas y espectaculares a la Caldera.'
 ---
 
 Santorini es posiblemente la isla más icónica de Grecia - esas casitas blancas con cúpulas azules colgando del acantilado, los atardeceres de Oia que rompen Instagram, las playas de arena volcánica negra y roja. Pero aquí va la verdad incómoda que nadie te cuenta: visitar Santorini en temporada alta puede ser una experiencia frustrante, cara y abarrotada que poco se parece a esa postal idílica que imaginas. Después de visitar Santorini tres veces en diferentes épocas del año, hemos aprendido exactamente cuándo ir para disfrutar la isla en su mejor versión - sin multitudes asfixiantes, sin precios estratosféricos, y con ese encanto mágico intacto.

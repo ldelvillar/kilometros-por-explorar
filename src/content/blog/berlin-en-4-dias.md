@@ -5,6 +5,15 @@ date: 2025-08-17
 image: '/images/destinations/berlin.webp'
 author: 'Lucía'
 destinations: ['berlin']
+faqs:
+  - question: '¿Cuál es la mejor forma de ver el Muro de Berlín?'
+    answer: 'La opción más impresionante es la <strong>East Side Gallery</strong>, 1.3km de muro convertidos en arte. Sin embargo, para entender la historia real y ver la "franja de la muerte", te recomendamos encarecidamente el <strong>Memorial del Muro en Bernauer Straße</strong>. <i>Checkpoint Charlie</i> es icónico para la foto, pero muy turístico.'
+  - question: '¿Es necesario reservar para la cúpula del Reichstag?'
+    answer: 'Sí, la subida a la cúpula es <strong>gratuita pero requiere reserva obligatoria</strong> en la web del <i>Bundestag</i>. Hazlo con al menos 3 semanas de antelación. Es imprescindible llevar tu <strong>DNI o Pasaporte original</strong> para pasar el control de seguridad, o te denegarán la entrada.'
+  - question: '¿Cuántos días dedicar a la Isla de los Museos?'
+    answer: 'Reserva al menos <strong>un día entero</strong>. Ten en cuenta que el famoso <strong>Museo de Pérgamo</strong> tiene salas cerradas por renovación a largo plazo (hasta 2027), así que prioriza el <i>Neues Museum</i> (Busto de Nefertiti). Si vas a ver varios, compra la <strong>Berlin WelcomeCard</strong> o el Museum Pass para ahorrar.'
+  - question: '¿Cuál es la mejor zona para alojarse en Berlín?'
+    answer: 'Para una primera visita, <strong>Mitte</strong> es lo más cómodo por cercanía a los monumentos. Si buscas ambiente bohemio, cafeterías y vida nocturna, elige <strong>Kreuzberg</strong> o <strong>Friedrichshain</strong>. Berlín es enorme, así que lo vital es tener una estación de <i>U-Bahn</i> o <i>S-Bahn</i> a menos de 5 minutos del hotel.'
 ---
 
 Berlín es una ciudad que respira historia en cada esquina, donde el pasado y el presente conviven de manera única. Capital de Alemania reunificada, esta metrópolis multicultural combina monumentos históricos con arte urbano vanguardista, museos de clase mundial con mercadillos alternativos, y una vida nocturna legendaria con espacios verdes sorprendentes. Cuatro días es el tiempo perfecto para captar la esencia de esta ciudad fascinante que se reinventa constantemente.

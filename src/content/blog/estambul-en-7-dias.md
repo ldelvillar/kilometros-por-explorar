@@ -5,6 +5,15 @@ date: 2025-07-18
 image: '/images/destinations/istanbul.webp'
 author: 'Lucía'
 destinations: ['estambul']
+faqs:
+  - question: '¿Hay que regatear en el Gran Bazar?'
+    answer: 'Sí, es parte de la cultura y se espera que lo hagas. La regla de oro es ofrecer inicialmente un <strong>50% o 60%</strong> del precio que te piden, para acabar cerrando el trato en un 70-80%. Un truco: las tiendas de las <strong>calles interiores</strong> suelen tener precios más bajos y negociables que las de las puertas principales.'
+  - question: '¿Merece la pena pagar por un tour en Topkapi?'
+    answer: 'No es estrictamente necesario, la <strong>audioguía oficial</strong> es excelente y suficiente. Lo crucial es comprar la entrada online para evitar colas y recordar que el palacio <strong>cierra los martes</strong>. No te vayas sin pagar el suplemento para visitar el <strong>Harem</strong>, es la zona más impresionante.'
+  - question: '¿Vale la pena visitar las Islas Príncipe?'
+    answer: 'Sí, es la mejor escapada para desconectar del caos de Estambul. Los coches están prohibidos (ahora hay <strong>buses eléctricos</strong>, las calesas de caballos se retiraron). Toma el ferry público desde <i>Eminönü</i> o <i>Kabataş</i> (es muy barato, unos <strong>2€-3€</strong>) y evita ir en fin de semana, cuando se llenan de locales.'
+  - question: '¿Debo probar un baño turco (Hammam)?'
+    answer: 'Rotundamente sí. Recomendamos elegir un <strong>Hammam histórico</strong> (como <i>Cemberlitas</i> o <i>Suleymaniye</i>) en lugar de uno de hotel. Pide el tratamiento completo con <strong>"Kese" (exfoliación)</strong> y masaje de espuma. Es una experiencia higiénica, segura y perfecta para relajar los músculos tras caminar por la ciudad.'
 ---
 
 Estambul, la única ciudad del mundo que se extiende sobre dos continentes, es un destino que desafía todas las expectativas. Con su rica historia de más de 2.600 años, su arquitectura impresionante que combina influencias bizantinas y otomanas, y su vibrante cultura contemporánea, esta metrópolis te cautivará desde el primer momento. Siete días es el tiempo ideal para sumergirte en sus múltiples capas sin prisas, descubriendo tanto los monumentos icónicos como los barrios auténticos que muchos visitantes pasan por alto.

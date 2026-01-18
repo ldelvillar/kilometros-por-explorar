@@ -5,6 +5,15 @@ date: 2025-07-30
 image: '/images/destinations/krakow.webp'
 author: 'Lucía'
 destinations: ['cracovia']
+faqs:
+  - question: '¿Es mejor visitar Auschwitz por libre o con guía?'
+    answer: 'Recomendamos encarecidamente la <strong>visita guiada oficial</strong>. La historia del campo es compleja y abrumadora; sin un educador, perderás el contexto vital. Además, la entrada es <strong>gratuita</strong> si vas por libre, pero los horarios son muy limitados (temprano o tarde). Reserva en <i>visit.auschwitz.org</i> con meses de antelación.'
+  - question: '¿Merecen la pena las Minas de Sal de Wieliczka?'
+    answer: 'Sí, es un lugar Patrimonio de la Humanidad único. Lo más impresionante es la <strong>Capilla de Santa Kinga</strong>, una catedral subterránea tallada completamente en sal. Ten en cuenta el esfuerzo físico: hay que bajar unos <strong>800 escalones</strong> a pie (la subida se hace en ascensor). La visita dura unas 2-3 horas.'
+  - question: '¿Cuál es la mejor zona para alojarse en Cracovia?'
+    answer: 'Para una primera visita, lo más cómodo es el <strong>Stare Miasto (Casco Antiguo)</strong>, cerca de la Plaza del Mercado. Si prefieres un ambiente más bohemio, con vida nocturna, cafeterías y <i>food trucks</i>, elige <strong>Kazimierz (el Barrio Judío)</strong>. Ambas zonas son seguras y están conectadas a pie.'
+  - question: '¿Cuántos días se necesitan para ver Cracovia?'
+    answer: 'Lo ideal son <strong>3 o 4 días completos</strong>. Dedica un día entero a la excursión de Auschwitz, medio día a las Minas de Sal, y el resto para explorar el centro, el Castillo de Wawel y la <strong>Fábrica de Oskar Schindler</strong> (imprescindible reservar). Cracovia es una ciudad muy paseable y compacta.'
 ---
 
 Cracovia, la antigua capital de Polonia, es una ciudad que cautiva con su casco medieval perfectamente preservado, su historia conmovedora y su vibrante atmósfera cultural. Con más de 1.000 años de historia, esta joya del sur de Polonia ofrece una combinación única de arquitectura gótica y renacentista, testimonios profundos de la Segunda Guerra Mundial, una escena gastronómica deliciosa y precios que la convierten en uno de los destinos más accesibles de Europa. Cinco días es el tiempo perfecto para explorar tanto la ciudad como las excursiones imprescindibles a Auschwitz-Birkenau y las Minas de Sal de Wieliczka.

@@ -5,6 +5,15 @@ date: 2025-07-18
 image: '/images/destinations/lisbon.webp'
 author: 'Lucas'
 destinations: ['lisboa']
+faqs:
+  - question: '¿Merece la pena subir al famoso Tranvía 28?'
+    answer: 'Es una experiencia icónica, pero a menudo se convierte en una trampa para turistas: colas de 1 hora y muchos carteristas. Nuestro consejo de experto: úsalo solo si madrugas (antes de las <strong>9:00 AM</strong>) o a última hora. Si solo quieres ver el barrio antiguo, el <strong>Tranvía 12E</strong> hace una ruta similar por el castillo con mucha menos gente.'
+  - question: '¿Es necesario ir a Sintra si estoy en Lisboa?'
+    answer: '<strong>Absolutamente imprescindible</strong>. Está a solo 40 min en tren desde la estación de <i>Rossio</i>. Necesitas un día completo para visitar el <strong>Palacio da Pena</strong> y la mística <strong>Quinta da Regaleira</strong>. Reserva las entradas online con antelación o perderás horas en taquilla.'
+  - question: '¿Cuál es la mejor zona para alojarse en Lisboa?'
+    answer: 'Si es tu primera visita, elige <strong>Baixa o Chiado</strong> (céntrico y llano). Si buscas romanticismo, elige <strong>Alfama</strong>, pero recuerda que es un laberinto de cuestas empinadas y los taxis no siempre llegan a la puerta. Evita <strong>Bairro Alto</strong> si quieres dormir tranquilo, ya que es el epicentro de la fiesta nocturna.'
+  - question: '¿Dónde comer los mejores Pasteles de Nata?'
+    answer: 'La parada obligatoria es la <strong>Antiga Confeitaria de Belém</strong> (los originales desde 1837); la cola avanza rápido, así que espera. Cómetelos calientes con canela y azúcar. Para el resto de la ciudad, muchos locales consideran que los de <strong>Manteigaria</strong> o <i>Fábrica da Nata</i> son igual de buenos o mejores.'
 ---
 
 Lisboa, la ciudad de las siete colinas asomada al Tejo, es una de las capitales más encantadoras de Europa. Con sus tranvías amarillos traqueteando por calles empedradas, azulejos decorando fachadas coloridas, miradores con vistas que quitan el aliento, y el sonido melancólico del fado flotando desde las tascas, la capital portuguesa tiene una atmósfera única que atrapa el corazón de cualquier viajero. Cuatro días es el tiempo perfecto para descubrir su esencia sin prisas, saboreando tanto sus monumentos históricos como su autenticidad lisboeta.

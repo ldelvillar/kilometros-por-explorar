@@ -5,6 +5,15 @@ date: 2025-10-08
 image: '/images/blog/mejores-ciudades-europeas.webp'
 author: 'Lucas & Lucía'
 destinations: ['praga', 'amsterdam', 'estocolmo', 'londres', 'budapest']
+faqs:
+  - question: '¿Cuál de estas ciudades es la más barata?'
+    answer: '<strong>Budapest</strong> es la opción más económica, ofreciendo una excelente relación calidad-precio en alojamiento y comida. <strong>Praga</strong> le sigue muy de cerca. En el extremo opuesto, prepárate para pagar precios mucho más altos en <strong>Londres y Estocolmo</strong>, especialmente en alcohol y transporte.'
+  - question: '¿Cuál tiene la mejor vida nocturna?'
+    answer: 'Depende de tu estilo. Si buscas algo único en el mundo, elige <strong>Budapest</strong> por sus famosos <i>Ruin Bars</i> (bares en edificios abandonados). Si prefieres la cultura de club y libertad, <strong>Ámsterdam</strong> es la líder. <strong>Londres</strong> ofrece la mayor variedad, desde pubs tradicionales hasta teatro de clase mundial.'
+  - question: '¿Cuál es la ciudad más fotogénica?'
+    answer: 'Aunque es subjetivo, <strong>Praga</strong> suele llevarse el premio por parecer un escenario de cuento de hadas gótico perfectamente conservado. Sin embargo, <strong>Budapest</strong> ofrece panorámicas más grandiosas gracias al Danubio, y <strong>Ámsterdam</strong> tiene el encanto único de sus canales y arquitectura de ladrillo.'
+  - question: '¿Cuál debo visitar si es mi primera vez en Europa?'
+    answer: '<strong>Londres</strong> es la "puerta de entrada" perfecta: no hay barrera idiomática (si hablas inglés), es cosmopolita y los vuelos son frecuentes. Si prefieres sumergirte directamente en la estética clásica europea con un presupuesto más ajustado y distancias caminables, tu mejor opción es <strong>Praga</strong>.'
 ---
 
 Después de años recorriendo Europa juntos, de perdernos por callejuelas medievales, de contemplar atardeceres desde miradores memorables y de llenar nuestros pasaportes de sellos, nos han preguntado muchas veces: ¿cuáles son vuestras ciudades europeas favoritas? La respuesta nunca es fácil porque cada ciudad tiene su propia magia, pero si tuviéramos que elegir solo cinco, estas serían las que nos robaron el corazón y a las que siempre queremos volver.

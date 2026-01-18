@@ -5,6 +5,15 @@ date: 2025-10-28
 image: '/images/blog/marruecos-en-6-dias.webp'
 author: 'Lucas'
 destinations: ['marrakech']
+faqs:
+  - question: '¿Es seguro viajar a Marruecos para mujeres solas?'
+    answer: 'Sí, es un país seguro, aunque requiere adaptación. El mayor problema suele ser el <strong>acoso verbal</strong> (piropos insistentes) en las medinas, que es molesto pero rara vez peligroso; la clave es ignorarlo. Por respeto cultural y para llamar menos la atención, se recomienda <strong>vestir cubriendo hombros y rodillas</strong>.'
+  - question: '¿Es necesario contratar guía en Marrakech o el desierto?'
+    answer: 'En la Medina de Marrakech, un guía oficial es <strong>muy recomendable</strong> el primer día para no perderse en el laberinto y evitar estafas. Para el desierto (Merzouga o Zagora), es <strong>imprescindible ir en tour organizado</strong> o con conductor 4x4 experto, ya que conducir por las dunas sin experiencia es peligroso.'
+  - question: '¿Cuál es la mejor época para viajar a Marruecos?'
+    answer: 'Sin duda, <strong>primavera (marzo-mayo) y otoño (septiembre-noviembre)</strong>. Evitas el calor insoportable del verano (+40°C) y el frío nocturno del invierno en el Atlas. Consulta siempre cuándo cae el <strong>Ramadán</strong> antes de reservar, ya que los horarios de los monumentos y restaurantes se ven afectados.'
+  - question: '¿Cuánto dinero en efectivo debo llevar?'
+    answer: 'El efectivo es el rey en Marruecos. Aunque hoteles caros aceptan tarjeta, necesitarás <strong>Dirhams</strong> para taxis, zocos y comida callejera. El Dirham es una divisa cerrada (no se puede sacar del país), así que cambia euros en las <strong>casas de cambio del centro</strong> (mejor tasa que el aeropuerto) o saca en cajeros automáticos.'
 ---
 
 Marruecos es uno de esos destinos que te sacude los sentidos desde el primer momento. Los colores vibrantes de los zocos, el olor a especias y menta, el sonido de la llamada a la oración resonando por la medina, el sabor del tagine cocinado lentamente, y ese contraste absoluto entre el caos urbano de Marrakech y el silencio infinito del Sáhara. Seis días es el tiempo perfecto para una primera inmersión en este país fascinante que combina África, mundo árabe, cultura bereber, y una hospitalidad que te desarmará.

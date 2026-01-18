@@ -5,6 +5,15 @@ date: 2025-07-12
 image: '/images/destinations/rome.webp'
 author: 'Lucas'
 destinations: ['roma']
+faqs:
+  - question: '¿Es recomendable visitar Coliseo, Foro y Palatino el mismo día?'
+    answer: 'Sí, de hecho la entrada estándar es <strong>combinada para los tres sitios</strong>. Es una visita intensa de unas 3-4 horas. Nuestro consejo: empieza por el <strong>Foro Romano y el Palatino</strong> a primera hora (8:30-9:00 AM) cuando hay menos gente y deja el <strong>Coliseo</strong> para tu hora de entrada reservada. Lleva calzado muy cómodo.'
+  - question: '¿Es obligatorio visitar el Vaticano?'
+    answer: 'Si aprecias el arte y la historia, sí. Los <strong>Museos Vaticanos</strong> (con la Capilla Sixtina) son impresionantes. Eso sí, las colas son legendarias: es <strong>absolutamente obligatorio reservar online</strong> con semanas de antelación. La entrada a la Basílica de San Pedro es gratuita, pero requiere pasar un control de seguridad que suele tener mucha espera.'
+  - question: '¿Cuál es el mejor barrio para cenar en Roma?'
+    answer: 'El barrio más encantador y animado es el <strong>Trastevere</strong>, lleno de callejones empedrados y trattorias. Si buscas una experiencia más auténtica y menos turística ("donde comen los romanos"), ve al barrio de <strong>Testaccio</strong>. Regla de oro: evita los restaurantes situados justo en las plazas principales (Navona, Panteón), suelen ser trampas para turistas.'
+  - question: '¿Merece la pena contratar visitas guiadas?'
+    answer: 'Para el centro histórico (fuentes y plazas) no es necesario. Sin embargo, para el <strong>Foro Romano</strong> recomendamos encarecidamente una visita guiada o una buena audioguía, ya que son ruinas complejas y sin contexto solo verás "piedras". Para el Vaticano, un guía también ayuda a navegar la inmensidad del museo sin perderte lo importante.'
 ---
 
 Roma, la Ciudad Eterna, es un museo al aire libre donde cada esquina cuenta miles de años de historia. Caminar por sus calles es como hojear un libro de historia del arte: ruinas romanas conviven con iglesias barrocas, fuentes renacentistas se alzan en plazas medievales, y la vida moderna fluye entre monumentos milenarios. Cinco días es el tiempo perfecto para sumergirte en la grandeza de Roma sin prisas, saboreando tanto sus tesoros artísticos como su famosa dolce vita.

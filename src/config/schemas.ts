@@ -105,6 +105,26 @@ export const getTouristDestinationSchema = (
   touristType: 'international visitors',
 });
 
+// Tipo para items del FAQ
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+// Schema para FAQ
+export const getFAQSchema = (faqs: FAQItem[]) => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(faq => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+});
+
 // Schema para artículos/blog posts
 export const getArticleSchema = (
   title: string,
@@ -112,19 +132,21 @@ export const getArticleSchema = (
   pathname: string,
   publishDate: string,
   modifyDate?: string,
-  imageUrl?: string
+  imageUrl?: string,
+  authorName?: string,
+  aboutName?: string
 ) => ({
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: title,
   description: description,
   url: getSiteUrl(pathname),
   datePublished: publishDate,
   dateModified: modifyDate || publishDate,
   author: {
-    '@type': 'Organization',
-    name: SITE_CONFIG.company.name,
-    url: SITE_CONFIG.domain,
+    '@type': 'Person',
+    name: authorName || SITE_CONFIG.company.name,
+    url: getSiteUrl('/sobre-nosotros'),
   },
   publisher: {
     '@type': 'Organization',
@@ -148,6 +170,12 @@ export const getArticleSchema = (
     '@type': 'WebPage',
     '@id': getSiteUrl(pathname),
   },
+  ...(aboutName && {
+    about: {
+      '@type': 'Place',
+      name: aboutName.charAt(0).toUpperCase() + aboutName.slice(1),
+    },
+  }),
 });
 
 // Tipo para items del breadcrumb
@@ -174,10 +202,11 @@ export const getCombinedSchema = (pageSchema: object) => ({
   '@graph': [getOrganizationSchema(), getWebSiteSchema(), pageSchema],
 });
 
-// Schema combinado para artículos del blog (incluye Article + Breadcrumb)
+// Schema combinado para artículos del blog (incluye Article + Breadcrumb + FAQ)
 export const getBlogCombinedSchema = (
   articleSchema: object,
-  breadcrumbItems: BreadcrumbItem[]
+  breadcrumbItems: BreadcrumbItem[],
+  faqSchema: object
 ) => ({
   '@context': 'https://schema.org',
   '@graph': [
@@ -185,5 +214,6 @@ export const getBlogCombinedSchema = (
     getWebSiteSchema(),
     articleSchema,
     getBreadcrumbSchema(breadcrumbItems),
+    faqSchema,
   ],
 });

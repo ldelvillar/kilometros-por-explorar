@@ -5,6 +5,15 @@ date: 2025-07-25
 image: '/images/destinations/paris.webp'
 author: 'Lucas'
 destinations: ['paris']
+faqs:
+  - question: '¿Es obligatorio subir a la Torre Eiffel?'
+    answer: 'Si es tu primera vez, sí, es un icono. Sin embargo, ten en cuenta que las mejores fotos <i>de</i> la Torre se hacen desde el <strong>Trocadéro</strong>, no desde ella. Si decides subir, reserva online con semanas de antelación. Un truco para ahorrar dinero y colas de ascensor es comprar el ticket de <strong>acceso por escaleras</strong> (hasta el 2º piso).'
+  - question: '¿Merece la pena entrar al Louvre?'
+    answer: 'Sí, pero con estrategia. Es el museo más grande del mundo y puede ser agotador. <strong>Reserva entrada online obligatoriamente</strong>. No intentes verlo todo en un día; selecciona una ruta de 3 horas para ver los "highlights" (La Gioconda, la Venus de Milo, etc.). Si no te gusta el arte masificado, el <strong>Museo de Orsay</strong> es una alternativa espectacular y más manejable.'
+  - question: '¿Cuál es la mejor zona para alojarse en París?'
+    answer: 'Para una primera visita, la zona de <strong>Le Marais (Distritos 3 y 4)</strong> es perfecta: céntrica, histórica y llena de tiendas y cafés. El <strong>Barrio Latino</strong> es excelente para un ambiente clásico. <strong>Montmartre</strong> es muy romántico y bohemio, pero ten en cuenta que está alejado del centro y las cuestas pueden ser cansadas.'
+  - question: '¿Es mejor visitar París en primavera o verano?'
+    answer: 'La <strong>primavera (abril-junio)</strong> es la época ideal: los jardines florecen y el clima es suave. En verano puede hacer mucho calor y muchos lugares no tienen aire acondicionado. Intenta <strong>evitar agosto</strong>, ya que los parisinos se van de vacaciones y muchas tiendas y restaurantes auténticos cierran, dejando la ciudad solo para turistas.'
 ---
 
 París, la Ciudad de la Luz, es uno de esos destinos que merece ser saboreado con calma, pero si tienes solo cuatro días, no te preocupes. Con una buena planificación, puedes vivir la esencia parisina y llevarte recuerdos inolvidables. Esta guía te ayudará a aprovechar cada momento, combinando los imprescindibles con experiencias auténticas que harán de tu viaje algo especial.

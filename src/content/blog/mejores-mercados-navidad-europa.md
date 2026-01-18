@@ -14,6 +14,15 @@ destinations:
     'colmar',
     'budapest',
   ]
+faqs:
+  - question: '¿Cuál es el mercado navideño más bonito y grande?'
+    answer: '<strong>Estrasburgo</strong> ostenta el título de "Capital de la Navidad" y es el más antiguo (1570). Sin embargo, muchos viajeros prefieren <strong>Colmar</strong> por ser más íntimo y parecer un pueblo de cuento. <strong>Viena</strong> destaca por su elegancia imperial. No hay uno "mejor", depende de si buscas grandiosidad o encanto medieval.'
+  - question: '¿Cuál es la mejor fecha para visitarlos?'
+    answer: 'La época ideal son las <strong>dos primeras semanas de diciembre</strong>, preferiblemente entre semana para evitar las multitudes masivas. Ten en cuenta que la mayoría de mercados en Alemania y Francia <strong>cierran el 24 o 25 de diciembre</strong>. Solo algunos (como en Praga o ciertos en Viena) se mantienen abiertos hasta Año Nuevo.'
+  - question: '¿Cuánto dinero debo presupuestar?'
+    answer: 'La entrada suele ser libre. Un vino caliente (<i>Glühwein</i>) cuesta unos <strong>4€-6€</strong> (más 2€-3€ de depósito por la taza que te devuelven). La comida callejera ronda los <strong>5€-10€</strong>. Calcula un presupuesto de <strong>30€-50€ por persona/día</strong> si planeas comer allí y comprar algún recuerdo artesanal. Lleva siempre <strong>efectivo</strong>.'
+  - question: '¿Es posible visitar varios mercados en un viaje?'
+    answer: '¡Sí, es muy recomendable! La combinación más fácil es <strong>Alsacia</strong>: trenes frecuentes conectan Estrasburgo, Colmar y pueblos como Eguisheim en 30 minutos. Otra ruta clásica es la <strong>Imperial</strong>: Viena y Praga están a solo 4 horas de tren. Intenta no abarcar demasiado; dedica al menos <strong>2 días</strong> a las ciudades grandes.'
 ---
 
 Los mercados de Navidad europeos son una de esas experiencias que te reconcilian con el frío del invierno. El olor a vino caliente especiado flotando en el aire, las luces centelleantes reflejándose en adoquines helados, el sonido de villancicos mezclándose con risas, las casetas de madera ofreciendo artesanía hecha a mano y dulces tradicionales... hay algo en estos mercados que captura la esencia de la Navidad de una manera que ningún centro comercial moderno puede igualar. Después de años recorriendo Europa en diciembre específicamente para visitar estos mercados, hemos seleccionado los siete que consideramos los mejores - no solo por su belleza, sino por la autenticidad, la atmósfera, y esa magia intangible que solo ciertos lugares tienen.

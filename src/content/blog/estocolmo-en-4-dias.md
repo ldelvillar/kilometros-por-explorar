@@ -5,6 +5,15 @@ date: 2025-09-01
 image: '/images/destinations/stockholm.webp'
 author: 'Lucía'
 destinations: ['estocolmo']
+faqs:
+  - question: '¿Merece la pena visitar el Museo Vasa?'
+    answer: 'Sin duda, es la atracción nº 1 de Estocolmo. Ver el único barco del siglo XVII conservado al <strong>98% original</strong> es impresionante. La entrada ronda los <strong>17€-19€</strong> (gratis hasta 18 años). Te recomendamos ir a primera hora o a última de la tarde para evitar las multitudes de los cruceros.'
+  - question: '¿Cómo visitar el archipiélago de Estocolmo barato?'
+    answer: 'No necesitas un tour caro. Usa los barcos públicos de <strong>Waxholmsbolaget</strong>, que funcionan como autobuses acuáticos. Si tienes poco tiempo, ve a la isla de <strong>Fjäderholmarna</strong> (a solo 20 min). Si buscas un pueblo pintoresco con casas de madera, toma el ferry a <strong>Vaxholm</strong> (1 hora).'
+  - question: '¿Cuál es la mejor zona para alojarse en Estocolmo?'
+    answer: 'Para una primera visita, <strong>Norrmalm</strong> es lo más práctico por su conexión con la estación central. Si buscas encanto medieval, elige <strong>Gamla Stan</strong> (aunque es caro y ruidoso). Si prefieres ambiente <i>hipster</i>, tiendas vintage y las mejores cafeterías, tu barrio es <strong>Södermalm</strong> (especialmente la zona <i>SoFo</i>).'
+  - question: '¿Qué es el Fika y debo probarlo?'
+    answer: 'Es obligatorio. El <i>Fika</i> no es solo tomar café, es un ritual social sagrado para frenar el ritmo del día. Entra en cualquier cafetería acogedora y pide un café filtrado con un <strong>Kanelbulle</strong> (bollo de canela). Es un lujo asequible (unos <strong>5€-8€</strong>) y la experiencia más auténtica de la cultura sueca.'
 ---
 
 Estocolmo, la capital de Suecia construida sobre 14 islas donde el lago Mälaren se encuentra con el mar Báltico, es una de las ciudades más hermosas y sofisticadas de Europa. Con su mezcla perfecta de arquitectura medieval, diseño escandinavo contemporáneo, espacios verdes abundantes y una escena cultural vibrante, esta ciudad nórdica cautiva a cualquier viajero. Cuatro días es el tiempo ideal para captar la esencia de Estocolmo, explorando tanto sus monumentos históricos como su moderna identidad sueca.

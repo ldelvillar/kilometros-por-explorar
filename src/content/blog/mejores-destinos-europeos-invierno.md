@@ -5,6 +5,15 @@ date: 2025-08-25
 image: '/images/blog/mejores-destinos-europeos-invierno.webp'
 author: 'Lucas & Lucía'
 destinations: ['viena', 'islandia', 'praga', 'laponia', 'estrasburgo']
+faqs:
+  - question: '¿Cuál es el mejor destino para ver Auroras Boreales?'
+    answer: 'Entre estas opciones, <strong>Laponia finlandesa</strong> es la ganadora indiscutible por su latitud norte y cielos oscuros. <strong>Islandia</strong> es excelente, pero el clima es más inestable. Importante: en ciudades centroeuropeas como <strong>Viena, Praga o Estrasburgo NO se ven auroras boreales</strong>; si ese es tu objetivo principal, debes ir al Círculo Polar Ártico.'
+  - question: '¿Qué ciudad tiene los mejores mercados navideños?'
+    answer: 'Cada una tiene su esencia. <strong>Estrasburgo</strong> es la "Capital de la Navidad" (mercados tradicionales alsacianos). <strong>Viena</strong> ofrece elegancia imperial y conciertos clásicos. <strong>Praga</strong> parece un cuento medieval, ideal para probar el <i>Trdelník</i> y vino caliente barato. En Laponia, la atracción no son los mercados, sino la <strong>Aldea de Santa Claus</strong>.'
+  - question: '¿Encontraré nieve asegurada en estos destinos?'
+    answer: 'La nieve solo está <strong>100% garantizada en Laponia</strong> y casi siempre en Islandia. En el centro de Europa (Viena, Praga, Estrasburgo), la nieve es una lotería: puedes tener una semana blanca mágica o días de lluvia gris y frío húmedo. Si ver nieve es tu prioridad absoluta, elige el norte de Finlandia.'
+  - question: '¿Cuántos días dedicar a cada destino?'
+    answer: 'Para <strong>Estrasburgo</strong> bastan 2 días (o 3 si visitas pueblos de Alsacia). <strong>Viena y Praga</strong> requieren 3-4 días cada una (son combinables en tren fácilmente). Para <strong>Laponia</strong>, reserva al menos 4-5 días completos. Para <strong>Islandia</strong> en invierno, necesitas un mínimo de 7-8 días debido a las pocas horas de luz.'
 ---
 
 El invierno en Europa tiene una magia especial que no encontrarás en ninguna otra estación. Mientras muchos viajeros huyen del frío buscando playas tropicales, nosotros hemos descubierto que el invierno europeo ofrece experiencias únicas e irrepetibles: mercados navideños con vino caliente humeante bajo luces centelleantes, auroras boreales danzando en cielos oscuros, paisajes transformados por la nieve que parecen sacados de cuentos de hadas, y esa atmósfera acogedora que solo el frío invernal puede crear. Después de varios años explorando Europa en pleno invierno, estos son los cinco destinos que nos conquistaron y a los que siempre queremos volver cuando llega el frío.

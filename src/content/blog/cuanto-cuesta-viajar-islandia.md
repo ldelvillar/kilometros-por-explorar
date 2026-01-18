@@ -5,6 +5,15 @@ date: 2025-11-20
 image: '/images/blog/cuanto-cuesta-viajar-islandia.webp'
 author: 'Lucas & Lucía'
 destinations: ['islandia']
+faqs:
+  - question: '¿Debo alquilar camper o coche en Islandia?'
+    answer: 'El presupuesto total es similar en ambos casos. Elige <strong>camper</strong> si priorizas la libertad de movimiento y quieres ahorrar en dietas cocinando tú mismo. Elige <strong>coche + hotel</strong> si buscas mayor descanso y confort, especialmente en invierno. Recuerda que para las Tierras Altas (F-Roads) el 4x4 es obligatorio.'
+  - question: '¿Es necesario reservar el Blue Lagoon con antelación?'
+    answer: 'Sí, es <strong>imprescindible reservar online</strong> con semanas de antelación, ya que las entradas se agotan y el precio en taquilla es mucho mayor. Cuesta entre 70€ y 130€. Si buscas alternativas más económicas y menos masificadas, te recomendamos el <i>Secret Lagoon</i> o el <i>Sky Lagoon</i>.'
+  - question: '¿Cuál es la época más barata para viajar a Islandia?'
+    answer: '<strong>Mayo y septiembre (temporada media)</strong> ofrecen el mejor equilibrio: precios hasta un 30% más bajos que en verano, carreteras accesibles y suficientes horas de luz. El invierno es la opción más económica, pero el clima extremo puede limitar tu itinerario. Evita julio y agosto si tienes presupuesto ajustado.'
+  - question: '¿Cómo comer barato en Islandia?'
+    answer: 'La clave es comprar en supermercados "low cost" como <strong>Bonus o Krónan</strong> y cocinar tu propia comida (ideal si vas en camper). Comer de restaurante es caro (+35€/plato), pero los famosos perritos calientes (<i>Pylsur</i>) son una opción rápida y barata. Calcula unos <strong>20-25€ diarios</strong> por persona si evitas comer fuera.'
 ---
 
 Después de dos viajes a Islandia (uno en febrero para auroras boreales y otro en julio para el verano blanco), y de ayudar a decenas de clientes a planificar sus viajes islandeses, podemos decirte exactamente dónde va cada euro. Islandia tiene reputación de ser cara, y la verdad es que lo es, pero ese dinero te lleva a lugares que simplemente no existen en ningún otro sitio del mundo.

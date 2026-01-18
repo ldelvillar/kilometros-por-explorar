@@ -5,6 +5,15 @@ date: 2025-10-29
 image: '/images/blog/consejos-visitar-estambul.webp'
 author: 'Lucas & Lucía'
 destinations: ['estambul']
+faqs:
+  - question: '¿Qué es la Istanbulkart y por qué la necesito?'
+    answer: 'Es una tarjeta de transporte recargable obligatoria para ahorrar. Sirve para <strong>metro, tranvía, ferry y autobús</strong>. Usarla reduce el coste del viaje casi un 50% comparado con los billetes sencillos. Se compra en las máquinas amarillas (<i>Biletmatik</i>) y <strong>una sola tarjeta puede ser usada por hasta 5 personas</strong> consecutivas.'
+  - question: '¿Es seguro viajar a Estambul para turistas?'
+    answer: 'Sí, es una ciudad muy segura, pero debes evitar dos estafas comunes en Sultanahmet y Taksim: el <strong>limpiabotas</strong> que deja caer su cepillo "por accidente" para cobrarte luego, y los desconocidos "amigables" que te invitan a un bar donde te llegarán cuentas de cientos de euros. Usa el sentido común y estarás bien.'
+  - question: '¿Cuántos días son necesarios para ver Estambul?'
+    answer: 'Dedica un <strong>mínimo de 4 días</strong> para cubrir lo básico: Santa Sofía, la Mezquita Azul, el Palacio Topkapi y el Gran Bazar. Si quieres cruzar a la parte asiática, explorar barrios de moda como <i>Balat</i> o <i>Karaköy</i> y disfrutar de un baño turco real, lo ideal son <strong>6 o 7 días</strong>.'
+  - question: '¿Merece la pena visitar la parte asiática?'
+    answer: '<strong>Sin duda</strong>. Cruzar el Bósforo en el ferry público al atardecer es la mejor experiencia de la ciudad. El barrio de <strong>Kadıköy</strong> ofrece una atmósfera moderna, precios más locales y una vibrante vida nocturna lejos del turismo masivo. Puedes volver rápido en 4 minutos usando el tren submarino <i>Marmaray</i>.'
 ---
 
 Estambul es una ciudad que nos dejó absolutamente fascinados, pero también es una ciudad que puede resultar abrumadora y donde los turistas despistados pueden caer fácilmente en trampas que arruinan la experiencia y el presupuesto. Después de pasar dos semanas explorando esta megaurbe que abraza dos continentes, hemos acumulado suficiente conocimiento práctico para ayudaros a evitar los errores más comunes y disfrutar de Estambul como se merece - auténtica, vibrante y sin dejaros la mitad del presupuesto en trampas para turistas.
