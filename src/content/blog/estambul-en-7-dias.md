@@ -2,7 +2,7 @@
 title: 'Qué ver en Estambul en siete días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Estambul durante 7 días, descubriendo la ciudad donde Europa y Asia se encuentran.'
 date: 2025-07-18
-image: '/images/destinations/istanbul.webp'
+image: '/images/blog/estambul-en-7-dias/cover.webp'
 author: 'Lucía'
 destinations: ['estambul']
 faqs:

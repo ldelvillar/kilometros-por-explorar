@@ -2,7 +2,7 @@
 title: 'Qué ver en Praga en cinco días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Praga durante 5 días para descubrir la Ciudad de las Cien Torres.'
 date: 2025-09-12
-image: '/images/destinations/prague.webp'
+image: '/images/blog/praga-en-5-dias/cover.webp'
 author: 'Lucía'
 destinations: ['praga']
 faqs:

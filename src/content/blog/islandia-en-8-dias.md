@@ -2,7 +2,7 @@
 title: 'Qué ver en Islandia en 8 días: ruta completa'
 description: 'Guía completa para recorrer Islandia en 8 días: desde el Círculo Dorado hasta la península de Snæfellsnes, pasando por glaciares, cascadas y auroras boreales.'
 date: 2025-08-04
-image: '/images/destinations/iceland.webp'
+image: '/images/blog/islandia-en-8-dias/cover.webp'
 author: 'Lucas'
 destinations: ['islandia']
 faqs:

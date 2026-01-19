@@ -2,7 +2,7 @@
 title: 'Qué ver en Berlín en cuatro días'
 description: 'Guía completa sobre los mejores sitios que visitar en Berlín durante 4 días: historia, cultura, arte urbano y la esencia de la capital alemana.'
 date: 2025-08-17
-image: '/images/destinations/berlin.webp'
+image: '/images/blog/berlin-en-4-dias/cover.webp'
 author: 'Lucía'
 destinations: ['berlin']
 faqs:

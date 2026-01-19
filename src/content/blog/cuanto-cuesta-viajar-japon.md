@@ -2,7 +2,7 @@
 title: '¿Cuánto cuesta viajar a Japón? Presupuesto completo de 14 días'
 description: 'Desglose honesto y detallado del presupuesto para 14 días en Japón: vuelos, alojamiento, JR Pass, comida, actividades y trucos para ahorrar.'
 date: 2025-11-17
-image: '/images/blog/cuanto-cuesta-viajar-japon.webp'
+image: '/images/blog/cuanto-cuesta-viajar-japon/cover.webp'
 author: 'Lucas & Lucía'
 destinations: ['japon']
 faqs:

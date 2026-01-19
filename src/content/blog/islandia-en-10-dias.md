@@ -2,7 +2,7 @@
 title: 'Qué ver en Islandia en 10 días: ruta completa'
 description: 'Descubre Islandia en 10 días con esta guía completa: Ring Road, Península de Snæfellsnes, Highlands y auroras boreales. Itinerario día a día con consejos prácticos.'
 date: 2025-08-06
-image: '/images/blog/islandia-en-10-dias.webp'
+image: '/images/blog/islandia-en-10-dias/cover.webp'
 author: 'Lucas'
 destinations: ['islandia']
 faqs:

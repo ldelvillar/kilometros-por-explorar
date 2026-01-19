@@ -2,7 +2,7 @@
 title: 'Qué ver en Cracovia en cinco días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Cracovia durante 5 días, incluyendo Auschwitz y las Minas de Sal de Wieliczka.'
 date: 2025-07-30
-image: '/images/destinations/krakow.webp'
+image: '/images/blog/cracovia-en-5-dias/cover.webp'
 author: 'Lucía'
 destinations: ['cracovia']
 faqs:

@@ -2,7 +2,7 @@
 title: 'Mejor época para viajar a Islandia: Comparativa 2025 (Verano vs Invierno)'
 description: '¿Auroras boreales o Sol de Medianoche? Análisis honesto tras viajar en ambas estaciones: clima, carreteras peligrosas y qué mes elegir para tu viaje ideal.'
 date: 2025-10-24
-image: '/images/blog/mejor-epoca-para-visitar-islandia.webp'
+image: '/images/blog/mejor-epoca-para-visitar-islandia/cover.webp'
 author: 'Lucas'
 destinations: ['islandia']
 faqs:

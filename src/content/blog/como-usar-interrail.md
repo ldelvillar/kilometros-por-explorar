@@ -2,7 +2,7 @@
 title: 'Cómo usar el Interrail: guía completa 2025'
 description: 'Guía práctica definitiva sobre el Interrail: qué es, tipos de pases, precios, cómo funciona, reservas, consejos y todo lo que necesitas saber para recorrer Europa en tren.'
 date: 2025-10-18
-image: '/images/blog/como-usar-interrail.webp'
+image: '/images/blog/como-usar-interrail/cover.webp'
 author: 'Lucas'
 destinations: []
 faqs:

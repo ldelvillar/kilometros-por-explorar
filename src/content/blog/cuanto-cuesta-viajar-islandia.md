@@ -2,7 +2,7 @@
 title: '¿Cuánto cuesta viajar a Islandia en 2026? Presupuesto completo de 10 días'
 description: 'Desglose honesto y detallado del presupuesto para 10 días en Islandia: alojamiento, transporte, comida, actividades y trucos para ahorrar.'
 date: 2025-11-20
-image: '/images/blog/cuanto-cuesta-viajar-islandia.webp'
+image: '/images/blog/cuanto-cuesta-viajar-islandia/cover.webp'
 author: 'Lucas & Lucía'
 destinations: ['islandia']
 faqs:

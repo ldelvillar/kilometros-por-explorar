@@ -2,7 +2,7 @@
 title: 'Los 7 mejores mercados de Navidad en Europa'
 description: 'Nuestra selección de los mercados navideños más mágicos de Europa: desde Estrasburgo hasta Budapest, descubre dónde vivir la Navidad auténtica.'
 date: 2025-10-10
-image: '/images/blog/mejores-mercados-navidad-europa.webp'
+image: '/images/blog/mejores-mercados-navidad-europa/cover.webp'
 author: 'Lucas & Lucía'
 destinations:
   [

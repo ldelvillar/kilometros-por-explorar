@@ -2,7 +2,7 @@
 title: 'Qué ver en Budapest en cuatro días'
 description: 'Guía completa sobre los mejores sitios que visitar en Budapest durante 4 días: Parlamento, termas Széchenyi, Bastión de los Pescadores y la magia del Danubio.'
 date: 2025-09-04
-image: '/images/destinations/budapest.webp'
+image: '/images/blog/budapest-en-4-dias/cover.webp'
 author: 'Lucas'
 destinations: ['budapest']
 faqs:

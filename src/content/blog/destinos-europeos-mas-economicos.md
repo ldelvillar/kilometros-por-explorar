@@ -2,7 +2,7 @@
 title: 'Los 5 destinos europeos más económicos para viajar'
 description: 'Nuestra selección de los mejores destinos de Europa para viajar con presupuesto ajustado: ciudades increíbles donde tu dinero rinde mucho más.'
 date: 2025-10-12
-image: '/images/blog/destinos-europeos-mas-economicos.webp'
+image: '/images/blog/destinos-europeos-mas-economicos/cover.webp'
 author: 'Lucas & Lucía'
 destinations: ['budapest', 'praga', 'cracovia', 'oporto', 'belgrado']
 faqs:
