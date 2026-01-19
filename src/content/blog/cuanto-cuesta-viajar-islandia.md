@@ -65,12 +65,12 @@ Algunos campings sólo ofrecen el terreno para aparcar la camper, y cuestan entr
 
 **Precio aproximado:** +60€ por noche y persona
 
-Airbnb y Booking funcionan bien en Islandia, hay alojamientos por toda la isla, especialmente en Reykjavík. Un apartamento pequeño para 2 personas cuesta entre 60€ Y 120€ por noche. La ventaja es que tienes cocina completa para preparar comidas, lo que te dará más comodidad.
+Airbnb y Booking funcionan bien en Islandia, hay alojamientos por toda la isla, especialmente en Reykjavík. Un apartamento pequeño para 2 personas cuesta entre 60€ y 120€ por noche. La ventaja es que tienes cocina completa para preparar comidas, lo que te dará más comodidad.
 
 > [!WARNING/Nota importante sobre la disponibilidad]
 > En Islandia, la relación calidad-precio es escasa. Los alojamientos "buenos, bonitos y baratos" (especialmente las cottages privadas con jacuzzi) se agotan con 6 o 7 meses de antelación.
 >
-> Cuando planificamos tu viaje, te damos acceso directo a nuestra lista de "Joyas Ocultas": alojamientos familiares que no siempre salen los primeros en Booking pero que pueden mejorar tu viaje.
+> Cuando planificamos tu viaje, te damos acceso directo a nuestra lista de "Joyas Ocultas", alojamientos familiares que no siempre salen los primeros en Booking, pero que pueden mejorar tu viaje.
 
 ### Hoteles
 

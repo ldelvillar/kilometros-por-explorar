@@ -1,5 +1,4 @@
 .prose a {
-  text-decoration: none;
   color: var(--color-primary, #12a3ed);
   font-weight: 500;
   transition: color 0.2s ease;
@@ -107,7 +106,7 @@
   color: #1f2937;
 }
 
-/* Alertas con remark-github-blockquote-alert */
+/* Alerts with remark-github-blockquote-alert */
 .prose .markdown-alert {
   border-radius: 0.5rem;
   padding: 1rem 1.25rem;
@@ -172,6 +171,7 @@
   margin-bottom: 0.5rem;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
   .prose blockquote p:first-child::before {
     font-size: 2.5rem;
