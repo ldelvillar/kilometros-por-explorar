@@ -62,6 +62,9 @@ import Menu from '@/assets/menu.svg';
     menuToggle.setAttribute('aria-expanded', String(!isExpanded));
     mobileMenu?.classList.toggle('hidden');
     mobileMenu?.classList.toggle('block');
+
+    // Prevent body scroll when mobile menu is open
+    document.body.style.overflow = isExpanded ? '' : 'hidden';
   });
 
   // Add background to header on scroll only on home page
