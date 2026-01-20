@@ -4,7 +4,6 @@ import { getBreadcrumbSchema, type BreadcrumbItem } from '@/config/schemas';
 interface Props {
   items: BreadcrumbItem[];
   class?: string;
-  /** Si es false, no renderiza el schema JSON-LD (útil cuando se pasa en el schema combinado de la página) */
   includeSchema?: boolean;
 }
 
@@ -16,27 +15,42 @@ const breadcrumbSchema = getBreadcrumbSchema(items);
 <nav aria-label="Breadcrumb" class:list={['text-sm', className]}>
   <ol class="flex flex-wrap items-center gap-1.5">
     {
-      items.map((item, index) => (
-        <li class="flex items-center gap-1.5">
-          {index > 0 && (
-            <span class="text-gray-400" aria-hidden="true">
-              /
-            </span>
-          )}
-          {item.href ? (
-            <a
-              href={item.href}
-              class="text-gray-500 transition-colors hover:text-primary"
-            >
-              {item.name}
-            </a>
-          ) : (
-            <span class="font-medium text-primary" aria-current="page">
-              {item.name}
-            </span>
-          )}
-        </li>
-      ))
+      items.map((item, index) => {
+        const isLastItem = index === items.length - 1;
+        const truncatedName =
+          isLastItem && item.name.length > 30
+            ? item.name.substring(0, 30) + '...'
+            : item.name;
+
+        return (
+          <li class="flex items-center gap-1.5">
+            {index > 0 && (
+              <span class="text-gray-400" aria-hidden="true">
+                /
+              </span>
+            )}
+            {item.href ? (
+              <a
+                href={item.href}
+                class="text-gray-500 transition-colors hover:text-primary"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <span
+                class="font-medium text-primary"
+                aria-current="page"
+                title={
+                  isLastItem && item.name.length > 30 ? item.name : undefined
+                }
+              >
+                <span class="hidden md:inline">{item.name}</span>
+                <span class="inline md:hidden">{truncatedName}</span>
+              </span>
+            )}
+          </li>
+        );
+      })
     }
   </ol>
 </nav>

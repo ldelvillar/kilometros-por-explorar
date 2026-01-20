@@ -72,7 +72,11 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
   <main id="main" class="bg-white pt-20">
     <!-- Breadcrumbs -->
     <div class="mx-auto max-w-5xl py-4">
-      <Breadcrumbs items={breadcrumbItems} includeSchema={false} />
+      <Breadcrumbs
+        items={breadcrumbItems}
+        class="px-2 md:px-0"
+        includeSchema={false}
+      />
     </div>
 
     <!-- Hero image -->
