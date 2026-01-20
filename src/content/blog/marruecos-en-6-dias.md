@@ -4,7 +4,7 @@ description: 'Guía completa para recorrer Marruecos en 6 días: desde el caos d
 date: 2025-10-28
 image: '/images/blog/marruecos-en-6-dias/cover.webp'
 author: 'Lucas'
-destinations: ['marrakech']
+destinations: ['marruecos']
 faqs:
   - question: '¿Es seguro viajar a Marruecos para mujeres solas?'
     answer: 'Sí, es un país seguro, aunque requiere adaptación. El mayor problema suele ser el <strong>acoso verbal</strong> (piropos insistentes) en las medinas, que es molesto pero rara vez peligroso; la clave es ignorarlo. Por respeto cultural y para llamar menos la atención, se recomienda <strong>vestir cubriendo hombros y rodillas</strong>.'
