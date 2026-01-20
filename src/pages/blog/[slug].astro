@@ -145,3 +145,30 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
     <CTA />
   </main>
 </Layout>
+
+<script>
+  // Convert images to figures with captions using alt text
+  document.addEventListener('DOMContentLoaded', () => {
+    const article = document.querySelector('.prose');
+    if (!article) return;
+
+    const images = article.querySelectorAll('img');
+    images.forEach(img => {
+      // Skip hero image and images already in figures
+      if (img.closest('figure') || img.closest('header')) return;
+
+      const alt = img.getAttribute('alt');
+      if (!alt) return;
+
+      // Create figure element
+      const figure = document.createElement('figure');
+      const figcaption = document.createElement('figcaption');
+      figcaption.textContent = alt;
+
+      // Replace img with figure
+      img.parentNode?.insertBefore(figure, img);
+      figure.appendChild(img);
+      figure.appendChild(figcaption);
+    });
+  });
+</script>
