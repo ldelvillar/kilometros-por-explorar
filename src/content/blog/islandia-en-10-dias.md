@@ -52,6 +52,8 @@ Aquí empieza lo bueno. El Círculo Dorado recibe ese nombre por algo: 300 kiló
 
 Empieza por el Parque Nacional de Þingvellir. El desfiladero principal, tiene unos senderos fáciles, y si buscas un poco encuentras Öxarárfoss, una cascada que la mayoría se salta, pero que te dejará sin palabras.
 
+![Oxararfoss, cascada escondida en el Parque Nacional Þingvellir](/images/blog/islandia-en-10-dias/oxararfoss.webp)
+
 > [!TIP/Actividad recomendada]
 > Si te gusta bucear, hay un montón de actividades organizadas que te permiten bucear en Silfra, donde se ve la separación entre las placas tectónicas euroasiática y norteamericana, con visibilidad de más de 100 metros.
 
@@ -68,6 +70,8 @@ Si tuviera que elegir un solo día en Islandia, probablemente sería este. La co
 A pocos minutos está Gljúfrabúi, escondida dentro de un cañón estrecho. Si te atreves, puedes caminar por un arroyo y entrar en una cueva natural con la cascada dentro (necesitarás botas impermeables). La luz entra desde arriba y crea un efecto que no he visto en ningún otro sitio. Además, poca gente llega hasta aquí, especialmente en invierno, porque requiere mojarse hasta las rodillas. Si consigues llegar, es probable que estés sólo.
 
 Skógafoss es una cortina de agua de 60 metros de altura y 25 de ancho. El ruido lo sientes en el pecho. Sube los 527 escalones hasta arriba para ver cómo el agua cae hacia el océano en la lejanía. Si hay sol, verás arcoíris dobles por la niebla constante. A unos 10 minutos andando está Kvernufoss, otra cascada por la que podrás caminar por detrás, y la más impresionante de toda Islandia para mi. Además, mucha gente se la salta, nosotros estuvimos sólos durante 15 minutos.
+
+![Kvernufoss, una de las cascadas más impresionantes de Islandia](/images/blog/islandia-en-10-dias/kvernufoss.webp)
 
 Por la tarde, acércate a Sólheimajökull para ver una lengua glaciar de cerca. Las grietas azules brillan con luz propia. Hay tours de trekking sobre hielo de 2-3 horas. Luego, el avión estrellado de Solheimasandur: 40 minutos caminando ida y vuelta (4 km) por terreno plano hasta un DC-3 de 1973 abandonado en mitad de la nada. Cierra el día en Reynisfjara, playa de arena negra con columnas de basalto hexagonales y acantilados donde anidan frailecillos en verano.
 
@@ -89,6 +93,8 @@ Este día es el más largo conduciendo, unas 6 horas en total, pero también uno
 
 Empieza por Fauskasandur, una playa remota, la cual no conoce nadie y descubrimos por casualidad. Nosotros vimos allí un amanecer espectacular, con renos en libertad que pasaban a tan sólo unos metros de nosotros. Estuvimos aproximadamente una hora y aprovechamos para desayunar con el tremendo paisaje.
 
+![Playa de Fauskasandur en los fiordos del este de Islandia](/images/blog/islandia-en-10-dias/fauskasandur.webp)
+
 Después, Hengifoss, una de las cascadas más altas de Islandia: 128 metros. La subida hasta arriba dura 1 hora ida y vuelta y es pronunciada, pero las capas de basalto rojo en las paredes del cañón son únicas. A mitad del camino encuentras Litlanesfoss, rodeada de columnas de basalto perfectas.
 
 La verdadera joya del día es Stuðlagil Canyon. Columnas de basalto perfectas rodeando un río turquesa. Hay dos miradores: el del este (45 minutos caminando, vistas desde arriba) y el del oeste (bajas hasta el nivel del río). En invierno el acceso puede cerrarse por nieve, revisa road.is antes. Nosotros fuimos a ambos miradores porque cada uno muestra el cañón desde un ángulo completamente distinto. Si tienes tiempo, haz los dos.
@@ -102,6 +108,8 @@ Entramos en el norte de Islandia. Región volcánica activa con paisajes lunares
 A pocos minutos está Selfoss, otra cascada del mismo cañón, pero mucho menos visitada. La combinación de Dettifoss + Selfoss en el Cañón Jökulsárgljúfur crea un paisaje de fuerza bruta. Si tienes energía, camina también hasta Hafragilsfoss, la tercera cascada del cañón, con vistas desde los acantilados que te harán sentir pequeño.
 
 Sigue hasta Hverir, un área geotermal con fumarolas, pozas de barro hirviendo y un fuerte olor a azufre. Los colores naranjas, amarillos y rojos del suelo contrastan con el paisaje blanco y negro alrededor. Cerca tienes Krafla, un volcán activo con un cráter lleno de agua turquesa (Víti) donde puedes bañarte gratis. El contraste con los baños de pago de Mývatn es notable.
+
+![Área geotermal de Hverir con fumarolas y pozas de barro hirviendo](/images/blog/islandia-en-10-dias/hverir.webp)
 
 El Lago Mývatn es tu siguiente destino. Formaciones de lava, cráteres de explosión, aves por todos lados. Rodea el lago parando en los pseudocráteres de Skútustaðir (formados por explosiones de vapor cuando la lava cubrió zonas pantanosas) y Dimmuborgir, el "castillo oscuro": pilares de lava negra entre los que caminas como si fueran ruinas de un castillo gótico. Si tienes presupuesto, los baños naturales de Mývatn Nature Baths son una alternativa menos turística y más económica que el Blue Lagoon. Duerme cerca de Mývatn o sigue hacia el oeste.
 
@@ -120,6 +128,8 @@ Después visita Goðafoss, la "cascada de los dioses", con su forma de herradura
 Octavo día dedicado a Snæfellsnes, una península conocida como "Islandia en miniatura" porque concentra casi todos los paisajes del país en un área pequeña. Glaciares, cráteres volcánicos, playas de arena negra, formaciones rocosas imposibles, y pueblos pesqueros que parecen de cuento.
 
 Empieza en la playa de Ytri Tunga, donde viven focas que descansan en las rocas. Con suerte verás docenas tomando el sol o jugando en el agua. Sigue hacia Bjarnarfoss, una impresionante cascada escondida que cae directamente desde un acantilado. El arco rocoso de Gatklettur funciona perfecto para fotos creativas, y las formaciones de lava de Lóndrangar se elevan desde el paisaje volcánico como restos de un castillo antiguo.
+
+![Ytri Tunga, playa de Snæfellsnes famosa por sus focas](/images/blog/islandia-en-10-dias/ytri-tunga.webp)
 
 Djúpalónssandur es la playa de arena negra con las "piedras de prueba de fuerza" (Aflraunasteinar) que los pescadores antiguos usaban para demostrar su valía antes de ser contratados. Pesan 23, 54, 100 y 154 kilos. Levantar la más pesada te clasificaba como "campeón completo". Los restos oxidados del barco británico Epine, naufragado en 1948, yacen dispersos en la playa recordándote la fuerza del océano.
 

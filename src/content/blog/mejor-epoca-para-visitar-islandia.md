@@ -53,20 +53,24 @@ La ventaja obvia del verano es que puedes hacer mucho más en un día. No estás
 
 Este es un punto decisivo para muchos viajeros. Las auroras boreales solo son visibles en oscuridad, así que el verano islandés con su luz perpetua las hace imposibles. En invierno, sin embargo, las auroras son una posibilidad real cada noche despejada.
 
-Durante mi viaje de febrero, vimos auroras boreales en 3 de las 6 noches que pasamos fuera de Reykjavik. Una de esas noches fue espectacular - el cielo entero explotó en cortinas verdes ondulantes que bailaban de horizonte a horizonte, con toques de rosa y púrpura. Estábamos en un campo nevado cerca de Jökulsárlón, a -8°C, completamente solos, y el silencio solo se rompía por nuestras exclamaciones de asombro. Es una experiencia que me marcó profundamente.
+Durante mi viaje en febrero, vimos auroras boreales en 3 de las 6 noches que pasamos fuera de Reykjavik. Una de esas noches fue espectacular, estábamos en un campo nevado cerca de Jökulsárlón, a -4°C, completamente solos, y el silencio solo se rompía por nuestras exclamaciones de asombro. Es una experiencia que me marcó profundamente.
 
-Pero ojo - ver auroras no está garantizado. Necesitas cielo despejado, y el clima islandés es notoriamente impredecible. De las 8 noches totales de mi viaje invernal, solo 3 tuvieron cielo despejado. Las otras estaban nubladas o nevando. Así que aunque el invierno ofrece la posibilidad, no la certeza.
+![Auroras boreales en Islandia](/images/blog/mejor-epoca-para-visitar-islandia/aurora.webp)
+
+Pero ojo, ver auroras no está garantizado. Necesitas cielo despejado, y el clima islandés es notoriamente impredecible. De las 8 noches totales de mi viaje, solo 3 tuvieron cielo despejado. Las otras estaban completamente nubladas. Así que aunque el invierno ofrece la posibilidad, no la certeza.
 
 > [!TIP/Consejo para ver auroras]
-> Ver auroras boreales no siempre es posible, y aunque las haya, es importante saber cómo y dónde verlas. Consulta [nuestra guía sobre los mejores destinos para ver auroras boreales](/blog/mejor-pais-auroras-boreales), donde compartimos consejos para amximizar las probabilidades de ver auroras boreales.
+> Ver auroras boreales no siempre es posible, y aunque las haya, es importante saber cómo y dónde verlas. Consulta [nuestra guía sobre los mejores destinos para ver auroras boreales](/blog/mejor-pais-auroras-boreales), donde compartimos consejos para maximizar las probabilidades de ver auroras boreales.
 
 El sol de medianoche del verano también es un fenómeno natural único, aunque menos impresionante que las auroras. Es surrealista estar despierto a la 1:00 AM con luz de día, hacer una caminata nocturna por cascadas, o ver el paisaje bañado en esa luz dorada especial que nunca termina. Es hermoso de una manera diferente.
 
-**Mi opinión:** Para mí, las auroras boreales son una experiencia más impactante y memorable que el sol de medianoche. Si este es tu primer viaje a Islandia y ver auroras está en tu lista de bucket list, ve en invierno sin dudarlo. El sol de medianoche es genial pero menos dramático.
+Para mí, las auroras boreales son una experiencia más impactante y memorable que el sol de medianoche. Si este es tu primer viaje a Islandia y ver auroras está en tu lista de bucket list, ve en invierno sin dudarlo. El sol de medianoche es genial pero menos dramático.
 
 ## Accesibilidad y carreteras
 
-Este es el argumento más fuerte a favor del verano. En mi viaje de febrero, varias carreteras estaban cerradas por nieve y hielo. Las F-roads (carreteras del interior) estaban completamente inaccesibles. Algunos lugares que quería visitar tuvieron que descartarse porque las condiciones no lo permitían. Necesitábamos consultar road.is y safe.is diariamente para verificar el estado de las carreteras antes de planificar cada día.
+Este es el argumento más fuerte a favor del verano. En mi viaje de febrero, varias carreteras estaban cerradas por nieve y hielo, y las F-roads (carreteras del interior) estaban completamente inaccesibles. Algunos lugares que queríamos visitar tuvieron que descartarse porque las condiciones no lo permitían. Necesitábamos consultar road.is y safe.is diariamente para verificar el estado de las carreteras antes de planificar cada día. Además, tuvimos un pequeño susto con la camper y la nieve.
+
+![Nuestra camper atrapada en la nieve en Islandia](/images/blog/mejor-epoca-para-visitar-islandia/camper.webp)
 
 Nosotros alquilamos una camper en invierno (en mi opinión, mejor que un coche normal, la otra opción hubiera sido un 4x4). Aún así, conducir era estresante - caminos helados, ventiscas súbitas, viento lateral que podía empujar el coche, y esa sensación constante de estar a merced de los elementos. Es parte de la aventura, pero no para todos.
 
@@ -75,7 +79,7 @@ Nosotros alquilamos una camper en invierno (en mi opinión, mejor que un coche n
 >
 > Cuando diseñamos tu viaje, incluimos en la app rutas alternativas y planes de seguridad. Además, te indicamos exactamente qué seguro de coche contratar para que no pagues un dineral por cualquier incidente.
 
-En julio, por el contrario, conducir era pan comido. Carreteras secas y en buen estado, todas las F-roads abiertas (pudimos explorar las Highlands, imposible en invierno), sin estrés por el clima. Incluso alquilamos un coche normal (no 4x4) y no tuvimos ningún problema. La Ring Road estaba en perfectas condiciones. Pudimos llegar a lugares remotos sin preocuparnos por quedarnos atascados en la nieve.
+En julio, por el contrario, conducir era como en cualquier otro lugar. Todas las carreteras secas y en buen estado, las F-roads estaban abiertas (pudimos explorar las Highlands) y no teníamos tanto estrés por el clima. Incluso alquilamos un coche normal (no 4x4) y no tuvimos ningún problema. Pudimos llegar a lugares remotos sin preocuparnos por quedarnos atascados en la nieve.
 
 La accesibilidad del verano significa que puedes ser más espontáneo. No necesitas planificar cada día con tanta precisión. Si el plan A no funciona, simplemente vas al plan B sin preocuparte por si las carreteras estarán abiertas. Hay una libertad en eso que aprecié mucho.
 
