@@ -7,43 +7,71 @@ import Magnifier from '@/assets/magnifier.svg';
   <input
     type="text"
     placeholder="Buscar destinos..."
-    class="focus:outline-primary mb-4 w-full rounded-md bg-gray-100 py-3 pr-4 pl-10"
+    class="mb-4 w-full rounded-md bg-gray-100 py-3 pr-4 pl-10 focus:outline-primary"
   />
 </div>
-<div class="mb-8 border-b border-gray-200">
+
+<!-- Mobile: Dropdown menu -->
+<div class="mb-6 md:hidden">
+  <label for="category-select" class="sr-only">Seleccionar categoría</label>
+  <select
+    id="category-select"
+    class="w-full rounded-lg border-2 border-gray-200 bg-white px-4 py-3 text-sm font-semibold text-gray-900 transition-all duration-200 focus:border-[#12a3ed] focus:ring-2 focus:ring-[#12a3ed]/20 focus:outline-none"
+  >
+    <option value="all-destinations-section" selected>
+      Todos los destinos
+    </option>
+    <option value="cultural-section">Destinos culturales</option>
+    <option value="beach-section">Playa</option>
+    <option value="nature-section">Naturaleza</option>
+    <option value="boat-section">Viajes en barco</option>
+    <option value="city-section">Ciudades europeas</option>
+    <option value="surprise-section">Packs sorpresa</option>
+  </select>
+</div>
+
+<!-- Desktop: Tab navigation -->
+<div class="mb-8 hidden border-b border-gray-200 md:block">
   <nav class="flex flex-wrap gap-8">
     <button
       class="border-b-2 border-gray-900 py-4 text-sm font-bold text-gray-900"
+      data-category="all-destinations-section"
     >
       Todos los destinos
     </button>
     <button
       class="border-b-2 border-transparent py-4 text-sm font-bold text-gray-500 hover:text-gray-700"
+      data-category="cultural-section"
     >
-      Viajes culturales
+      Destinos culturales
     </button>
     <button
       class="border-b-2 border-transparent py-4 text-sm font-bold text-gray-500 hover:text-gray-700"
+      data-category="beach-section"
     >
       Playa
     </button>
     <button
       class="border-b-2 border-transparent py-4 text-sm font-bold text-gray-500 hover:text-gray-700"
+      data-category="nature-section"
     >
       Naturaleza
     </button>
     <button
       class="border-b-2 border-transparent py-4 text-sm font-bold text-gray-500 hover:text-gray-700"
+      data-category="boat-section"
     >
       Viajes en barco
     </button>
     <button
       class="border-b-2 border-transparent py-4 text-sm font-bold text-gray-500 hover:text-gray-700"
+      data-category="city-section"
     >
       Ciudades europeas
     </button>
     <button
       class="border-b-2 border-transparent py-4 text-sm font-bold text-gray-500 hover:text-gray-700"
+      data-category="surprise-section"
     >
       Packs sorpresa
     </button>

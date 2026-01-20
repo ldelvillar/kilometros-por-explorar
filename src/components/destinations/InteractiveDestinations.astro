@@ -49,7 +49,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
   <div id="all-destinations-section" class="destination-section">
     <!-- Featured Destinations -->
     <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Destinos Destacados</h2>
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Destinos destacados</h2>
       <div class="grid gap-6 md:grid-cols-3">
         {
           featuredDestinations.map((destination, index) => (
@@ -64,7 +64,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
 
     <!-- Cultural Destinations -->
     <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Viajes culturales</h2>
+      <h2 class="mb-6 text-2xl font-bold text-gray-900">Destinos culturales</h2>
       <div class="grid gap-6 md:grid-cols-3">
         {
           culturalDestinations.map(destination => (
@@ -218,7 +218,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
   // Category mapping for navigation
   const categoryMapping = {
     'Todos los destinos': 'all-destinations-section',
-    'Viajes culturales': 'cultural-section',
+    'Destinos culturales': 'cultural-section',
     Playa: 'beach-section',
     Naturaleza: 'nature-section',
     'Ciudades europeas': 'city-section',
@@ -229,6 +229,7 @@ const destinationsData = uniqueDestinations.map(destination => ({
   // Initialize functionality when DOM is loaded
   document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('nav button');
+    const categorySelect = document.getElementById('category-select');
     const searchInput = document.querySelector(
       'input[placeholder="Buscar destinos..."]'
     );
@@ -323,13 +324,42 @@ const destinationsData = uniqueDestinations.map(destination => ({
         this.classList.add('border-gray-900', 'text-gray-900');
 
         // Show corresponding section
-        const tabText = this.textContent?.trim() || '';
-        const sectionId = categoryMapping[tabText];
+        const sectionId = this.getAttribute('data-category');
         if (sectionId) {
           showSection(sectionId);
+          // Sync mobile select with desktop tabs
+          if (categorySelect) {
+            categorySelect.value = sectionId;
+          }
         }
       });
     });
+
+    // Mobile select functionality
+    if (categorySelect) {
+      categorySelect.addEventListener('change', function () {
+        if (isSearching && searchInput) {
+          // Clear search when switching categories
+          searchInput.value = '';
+          isSearching = false;
+        }
+
+        const sectionId = this.value;
+        showSection(sectionId);
+
+        // Sync desktop tabs with mobile select
+        tabs.forEach(tab => {
+          const tabSectionId = tab.getAttribute('data-category');
+          if (tabSectionId === sectionId) {
+            tab.classList.remove('border-transparent', 'text-gray-500');
+            tab.classList.add('border-gray-900', 'text-gray-900');
+          } else {
+            tab.classList.remove('border-gray-900', 'text-gray-900');
+            tab.classList.add('border-transparent', 'text-gray-500');
+          }
+        });
+      });
+    }
 
     // Search functionality
     if (searchInput) {

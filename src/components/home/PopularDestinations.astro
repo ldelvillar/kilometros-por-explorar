@@ -1,6 +1,8 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import DestinationCard from '@/components/destinations/DestinationCard.astro';
+import Arrow from '@/assets/arrow.svg';
+import HalfArrow from '@/assets/halfArrow.svg';
 
 const featuredDestinations = await getCollection('destinations', ({ data }) => {
   return data.featured === true;
@@ -13,27 +15,23 @@ const featuredDestinations = await getCollection('destinations', ({ data }) => {
   <div class="grid gap-6 md:grid-cols-3">
     {
       featuredDestinations.map(destination => (
-        <a href={`destinos/${destination.id.replace('.md', '')}`} class="group">
-          <article class="space-y-4">
-            <Image
-              src={destination.data.image}
-              alt={destination.data.name}
-              class="h-48 w-full rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
-              width={400}
-              height={300}
-              loading="lazy"
-            />
-            <div class="space-y-2">
-              <h3 class="text-lg font-medium text-gray-800">
-                {destination.data.name}
-              </h3>
-              <p class="text-sm text-gray-600">
-                {destination.data.shortDescription}
-              </p>
-            </div>
-          </article>
-        </a>
+        <DestinationCard destination={destination} />
       ))
     }
   </div>
+
+  <a
+    href="/destinos"
+    class="group mx-auto mt-12 flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-3 font-semibold text-white transition hover:bg-primary/90"
+  >
+    <span>Ver todos los destinos</span>
+    <div class="relative size-4">
+      <HalfArrow
+        class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
+      />
+      <Arrow
+        class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
+      />
+    </div>
+  </a>
 </section>
