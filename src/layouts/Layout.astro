@@ -2,6 +2,7 @@
 import MetaTags from '@/components/MetaTags.astro';
 import Header from '@/components/Header.astro';
 import Chatbot from '@/components/Chatbot.tsx';
+import CookieBanner from '@/components/CookieBanner.tsx';
 import Footer from '@/components/Footer.astro';
 import '@/styles/global.css';
 
@@ -31,6 +32,7 @@ const { title, description, schema } = Astro.props;
     </a>
     <Header />
     <slot />
+    <CookieBanner client:load />
     <Chatbot client:load />
     <Footer />
   </body>
