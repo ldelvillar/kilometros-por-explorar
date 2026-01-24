@@ -57,6 +57,9 @@ Por la tarde, explora el barrio judío (Scheunenviertel) en Mitte. Camina por la
 
 El tercer día está dedicado a entender uno de los episodios más dramáticos de la historia reciente: la división de Berlín. Comienza la mañana visitando el Reichstag, el edificio del Parlamento alemán con su impresionante cúpula de cristal diseñada por Norman Foster. La visita es GRATUITA pero debes reservar online con varias semanas de antelación en bundestag.de. La cúpula ofrece vistas espectaculares de Berlín y el audioguía explica la arquitectura y el funcionamiento del parlamento alemán.
 
+> [!WARNING/¿No consigues entradas para el Reichstag?]
+> Las entradas se agotan semanas antes, especialmente en verano. Muchas atracciones europeas requieren reserva anticipada y planificación precisa. Si no quieres perder horas coordinando horarios y reservas, nosotros nos encargamos de toda la logística de tu viaje. [Habla con nosotros](/contacto).
+
 Después, pasea por el Tiergarten, el pulmón verde de Berlín. Este parque de 210 hectáreas es perfecto para caminar hasta la Columna de la Victoria (Siegessäule) donde puedes subir sus 285 escalones para más vistas panorámicas. Si el clima no acompaña, dirígete directamente a la Iglesia Memorial Kaiser Wilhelm en Kurfürstendamm, deliberadamente dejada en ruinas tras los bombardeos de la Segunda Guerra Mundial como memorial antibelicista - el contraste con la torre moderna azul adyacente es impactante.
 
 La tarde pertenece al Muro de Berlín. Visita primero Checkpoint Charlie, el paso fronterizo más famoso entre el Berlín Oriental y Occidental. Aunque la caseta actual es una réplica y la zona se ha vuelto muy turística, el Museo del Muro (Mauermuseum) cercano documenta fascinantes historias de intentos de escape - algunos exitosos, otros trágicos.

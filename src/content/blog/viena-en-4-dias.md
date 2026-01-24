@@ -49,6 +49,9 @@ Termina el día en uno de los famosos cafés vieneses para experimentar la cultu
 
 El segundo día dedícalo completamente al Palacio de Schönbrunn, la residencia de verano de los Habsburgo y posiblemente el palacio más hermoso de Europa. Declarado Patrimonio de la Humanidad por la UNESCO, este palacio barroco amarillo de 1,441 habitaciones fue donde creció la Emperatriz Sisi y donde Mozart tocó para la emperatriz María Teresa a los 6 años. Llega cuando abren (a las 8:30 AM en verano, 9:00 en invierno) para evitar las hordas de turistas que llegan con tours de cruceros.
 
+> [!WARNING/Los palacios vieneses requieren reservas anticipadas]
+> Schönbrunn, Hofburg, Belvedere... cada uno con diferentes horarios, tipos de tickets y colas. El Sisi Ticket ahorra dinero pero hay que entender cómo usarlo. Si estás planificando Viena + Budapest o un recorrido por Austria, nosotros optimizamos las reservas y rutas. [Contáctanos aquí](/contacto).
+
 Existen varios tipos de tickets - el Imperial Tour cubre 22 habitaciones (45 minutos), el Grand Tour 40 habitaciones (60 minutos). Te recomendamos el Grand Tour para ver los Apartamentos de Francisco José y Sisi, la Gran Galería donde se celebraban bailes imperiales, y las habitaciones de María Teresa decoradas con un lujo increíble. La audioguía está incluida y es excelente, contando historias fascinantes de la vida cortesana. Reserva entrada online con días de antelación - en temporada alta se agotan.
 
 Los jardines de Schönbrunn son espectaculares y la entrada es GRATUITA. Dedica al menos 2-3 horas a explorarlos: los jardines barrocos formales con fuentes y estatuas, el laberinto y el jardín del laberinto (entrada aparte), el jardín del zoo más antiguo del mundo (1752), y sobre todo, la Glorieta en lo alto de la colina. Sube a la Glorieta (entrada aparte o gratis si solo quieres las vistas desde fuera) para las mejores panorámicas del palacio con Viena de fondo - es la postal clásica de Schönbrunn.

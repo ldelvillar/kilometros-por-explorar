@@ -87,6 +87,9 @@ Los hoteles de 3-4 estrellas cuestan entre 80€ y 150€ por noche. Los ryokans
 
 Los business hotels son oro para Japón. Nosotros dormimos en ellos la mayoría de noches y añadimos una noche en ryokan tradicional en la zona de Kioto. La experiencia del ryokan es cara pero vale la pena al menos una vez.
 
+> [!WARNING/Los mejores ryokans se agotan con meses de antelación]
+> Los ryokans auténticos con onsen privado y kaiseki de calidad se llenan rápido, especialmente en Kioto durante la temporada de cerezos (marzo-abril) y otoño (noviembre). Cuando planificamos tu viaje, te reservamos plazas en ryokans seleccionados que no siempre aparecen en Booking. [Contáctanos aquí](/contacto).
+
 ## Transporte en Japón: el JR Pass y alternativas
 
 El transporte es el gasto más complejo de calcular en Japón. El país tiene una red de trenes eficiente pero cara, y la decisión sobre el JR Pass puede marcar la diferencia en tu presupuesto.
@@ -99,6 +102,9 @@ El JR Pass te da viajes ilimitados en trenes JR, incluyendo la mayoría de líne
 
 - **Ventajas:** Flexibilidad total, cubre también trenes locales JR en ciudades.
 - **Desventajas:** Caro si tu ruta es compacta (solo Tokio-Kioto-Osaka).
+
+> [!TIP/¿No sabes si el JR Pass te conviene?]
+> Calcular si el JR Pass compensa requiere conocer exactamente tu ruta, fechas y trayectos. Nosotros hacemos estos cálculos por ti y optimizamos tu itinerario para que no gastes de más en transporte. [Agenda una videollamada gratuita](/contacto) y te diremos exactamente qué te conviene.
 
 ### Opción 2: Billetes individuales
 

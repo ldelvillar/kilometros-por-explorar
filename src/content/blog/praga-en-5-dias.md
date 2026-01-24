@@ -68,6 +68,9 @@ El cuarto día ofrece un ritmo más relajado explorando Vyšehrad, la segunda fo
 
 Dentro de Vyšehrad encontrarás la Basílica de San Pedro y San Pablo, con su distintiva fachada neogótica, y el cementerio donde descansan muchas de las figuras más importantes de la historia checa, incluyendo compositores como Dvořák y Smetana, escritores como Karel Čapek, y el pintor Alfons Mucha. Los jardines y murallas ofrecen vistas espectaculares del río Moldava y de Praga. El ambiente aquí es contemplativo y romántico, perfecto para un picnic si el tiempo acompaña.
 
+> [!TIP/¿Viaje por Europa Central?]
+> Praga se combina perfectamente con Viena, Budapest o Berlín en itinerarios de 10-15 días. Coordinar trenes, alojamientos y evitar perder días en traslados requiere experiencia. Nosotros diseñamos rutas optimizadas por Europa Central/del Este con todas las reservas sincronizadas. [Háblanos de tu plan aquí](/contacto).
+
 Por la tarde, explora las orillas del Moldava. Puedes hacer un crucero por el río (especialmente bonito al atardecer) que te permite ver la ciudad desde una perspectiva completamente diferente, pasando bajo el Puente de Carlos y otros puentes históricos. Alternativamente, alquila un barco de pedales o un paddleboard para una experiencia más activa y divertida.
 
 Si prefieres quedarte en tierra, pasea por la isla de Kampa, una isla fluvial en Malá Strana que es perfecta para alejarse del bullicio turístico. Aquí encontrarás el Museo Kampa de arte moderno, el famoso Muro de John Lennon cubierto de grafitis inspirados en los Beatles y mensajes de paz, y una réplica de las esculturas "Crawling Babies" de David Černý que trepan por la Torre Žižkov. La atmósfera bohemia de la isla, con sus molinos de agua históricos, galerías de arte y cafés tranquilos, es el contrapunto perfecto a los días más intensos de turismo.

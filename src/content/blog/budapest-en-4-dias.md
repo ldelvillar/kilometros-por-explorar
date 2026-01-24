@@ -53,7 +53,9 @@ Justo al lado está la Iglesia de Matías (Mátyás-templom), una iglesia gótic
 
 Explora el Barrio del Castillo (Várnegyed) paseando por sus calles empedradas medievales llenas de edificios barrocos de colores pastel, museos, galerías, cafés y restaurantes. Visita el Palacio Real (Budavári Palota), reconstruido tras su destrucción en la Segunda Guerra Mundial, que ahora alberga la Galería Nacional Húngara (arte húngaro desde la Edad Media hasta el siglo XX) y el Museo de Historia de Budapest. Los jardines del palacio ofrecen más vistas espectaculares.
 
-No te pierdas el Laberinto del Castillo de Buda (Budavári Labirintus) en las cuevas subterráneas bajo la colina - un sistema de túneles y cuevas que han servido como refugio, prisión, bodega de vinos y búnker durante siglos. Termina el día bajando por las escaleras hasta el barrio de Víziváros (Ciudad del Agua) y cenando en alguno de sus restaurantes tradicionales con vistas al Danubio iluminado.
+> [!TIP/Termas + Monumentos: la combinación perfecta]
+> Budapest es única porque mezcla cultura monumental con experiencias termales. Coordinar horarios de visitas, reservas de baños y optimizar las rutas puede ser complejo. Nosotros diseñamos itinerarios que equilibran turismo cultural con relajación, sin que pierdas tiempo. [Contáctanos aquí](/contacto).
+> No te pierdas el Laberinto del Castillo de Buda (Budavári Labirintus) en las cuevas subterráneas bajo la colina - un sistema de túneles y cuevas que han servido como refugio, prisión, bodega de vinos y búnker durante siglos. Termina el día bajando por las escaleras hasta el barrio de Víziváros (Ciudad del Agua) y cenando en alguno de sus restaurantes tradicionales con vistas al Danubio iluminado.
 
 ## Día 3: Barrio Judío y termas Széchenyi
 
