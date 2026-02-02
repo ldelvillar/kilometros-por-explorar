@@ -3,7 +3,7 @@ title: 'Qué ver en Edimburgo en seis días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Edimburgo durante 6 días, incluyendo excursiones a las Highlands y Glasgow.'
 date: 2025-10-05
 image: '/images/blog/edimburgo-en-6-dias/cover.webp'
-author: 'Lucas'
+author: 'Lucas & Lucía'
 destinations: ['edimburgo']
 faqs:
   - question: '¿Es mejor visitar las Highlands en tour o por libre?'
@@ -16,16 +16,16 @@ faqs:
     answer: 'Para una primera visita, el <strong>Old Town (Casco Antiguo)</strong> es inmejorable por su atmósfera medieval y cercanía a todo, aunque es más caro y ruidoso. Si buscas algo más auténtico, económico y con buenos restaurantes locales, elige el barrio de <strong>Leith</strong> o la zona universitaria de <strong>Southside</strong>.'
 ---
 
-Edimburgo, la capital de Escocia, es una ciudad que combina historia medieval, paisajes naturales impresionantes y una atmósfera única que cautiva a cualquier viajero. Si tienes seis días para explorarla, estás de suerte: tendrás tiempo suficiente no solo para conocer la ciudad en profundidad, sino también para aventurarte en las legendarias Tierras Altas escocesas y descubrir rincones que muchos visitantes se pierden.
+Edimburgo, la capital de Escocia, es una ciudad que combina historia medieval, paisajes naturales impresionantes y una atmósfera única que cautiva a cualquier viajero.
 
-Seis días en Edimburgo te permiten sumergirte en su rica herencia histórica, desde el imponente Castillo hasta las misteriosas catacumbas subterráneas, mientras disfrutas de sus vistas panorámicas desde colinas volcánicas. La ciudad ofrece una combinación perfecta entre lo gótico y lo pintoresco, con calles empedradas que cuentan historias de siglos pasados y jardines victorianos que invitan a la reflexión.
+Seis días en esta ciudad te permitirán recorrerla a fondo, explorando sus calles históricas, sus colinas volcánicas y sus rincones más emblemáticos. La ciudad ofrece una combinación perfecta entre lo gótico y lo pintoresco, con calles empedradas que cuentan historias de siglos pasados y jardines victorianos que invitan a la reflexión.
 
-Hemos diseñado este itinerario basándonos en nuestra propia experiencia recorriendo Edimburgo, equilibrando las visitas imprescindibles con momentos para disfrutar del carácter auténtico de la ciudad. Cada día tiene un enfoque particular, pero con flexibilidad para que adaptes el plan a tu ritmo y preferencias. Lo mejor: incluye tanto experiencias gratuitas como actividades que vale la pena pagar.
+Este es el itinerario que nosotros seguimos en nuestro viaje de seis días a Edimburgo. Cada día tiene un enfoque particular, con flexibilidad para que adaptes el plan a tu ritmo y preferencias. Además, incluye tanto experiencias gratuitas como actividades que vale la pena pagar.
 
 ## Índice
 
 1. [Día 1: Introducción al casco antiguo](#día-1-introducción-al-casco-antiguo)
-2. [Día 2: El Castillo y las alturas de Edimburgo](#día-2-el-castillo-y-las-alturas-de-edimburgo)
+2. [Día 2: El Castillo de Edimburgo](#día-2-el-castillo-de-edimburgo)
 3. [Día 3: Excursión a las Highlands y Lago Ness](#día-3-excursión-a-las-highlands-y-lago-ness)
 4. [Día 4: Explorando los alrededores](#día-4-explorando-los-alrededores)
 5. [Día 5: Ruta por castillos escoceses y Glasgow](#día-5-ruta-por-castillos-escoceses-y-glasgow)
@@ -33,59 +33,94 @@ Hemos diseñado este itinerario basándonos en nuestra propia experiencia recorr
 7. [Consejos prácticos para moverte por Edimburgo](#consejos-prácticos-para-moverte-por-edimburgo)
 8. [Dónde comer: del pub tradicional al restaurante moderno](#dónde-comer-del-pub-tradicional-al-restaurante-moderno)
 9. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-10. [Lo mejor de Edimburgo: experiencias gratuitas](#lo-mejor-de-edimburgo-experiencias-gratuitas)
 
 ## Día 1: Introducción al casco antiguo
 
-Tu primera mañana en Edimburgo debe comenzar explorando el corazón histórico de la ciudad con un free tour. Reserva el que comienza a las 11:00 AM para tener tiempo de desayunar tranquilamente y orientarte. Durante estas dos horas recorrerás la Royal Mile, conocerás la historia de Edimburgo desde sus orígenes medievales y descubrirás anécdotas fascinantes que te ayudarán a contextualizar todo lo que verás los próximos días.
+Nosotros recomendamos empezar a recorrer la ciudad con un free tour. Te ayudará a conocer la historia de Edimburgo desde sus orígenes medievales y descubrirás anécdotas fascinantes que te ayudarán a contextualizar todo lo que verás los próximos días. Durante esas dos horas, recorrerás los principales puntos de interés:
 
-Después del tour, es momento de comer. Nosotros recomendamos The Piper's Seat, un lugar perfecto para probar comida escocesa tradicional en un ambiente acogedor. Con el estómago lleno, dirígete al Cementerio de Greyfriars, famoso por la conmovedora historia de Greyfriars Bobby, el perro que esperó a su amo durante 14 años. El cementerio, además de ser históricamente importante, ofrece una atmósfera única con sus lápidas centenarias y vistas al castillo.
+- La Royal Mile, la calle más famosa que conecta el Castillo de Edimburgo con el Palacio de Holyroodhouse.
+- La Catedral de St Giles, con su impresionante arquitectura gótica y su historia que se remonta al siglo XII.
+- Victoria Street, una calle colorida y pintoresca que inspiró a J.K. Rowling para crear el Callejón Diagon en Harry Potter.
+- The Real Mary King's Close, un laberinto subterráneo que revela la vida cotidiana de los antiguos habitantes de Edimburgo.
+- El Parlamento Escocés, un edificio moderno que contrasta con el entorno histórico.
+- Grayfriars Kirk, una iglesia con siglos de historia y un cementerio lleno de leyendas.
 
-Por la tarde, visita el Walter Scott Monument, una torre gótica victoriana que domina los Princes Street Gardens y rinde homenaje al escritor escocés. Después, adéntrate en las misteriosas Catacumbas de Edimburgo para descubrir la ciudad subterránea, seguido de un paseo por Victoria Street, con sus edificios coloridos que inspiraron el Callejón Diagon de Harry Potter. Termina el día bajando por la escalera secreta de The Vennel para obtener una de las vistas más fotogénicas del Castillo de Edimburgo, y relájate en los Jardines de Princes Street antes de cenar.
+Terminarás el tour muy cerca del museo de Edimburgo, donde puedes entrar gratis para conocer más sobre la historia de la ciudad. A nosotros nos gustó porque tenía algunas salas interesantes. Además, el edificio tiene un mirador gratuito con vistas a toda la ciudad.
 
-## Día 2: El Castillo y las alturas de Edimburgo
+Por la tarde, visita el Walter Scott Monument, una torre gótica que domina los Princes Street Gardens y rinde homenaje al escritor escocés.
 
-El segundo día está dedicado a dos de las experiencias más emblemáticas de Edimburgo. Comienza temprano visitando el Castillo de Edimburgo, la fortaleza que domina la ciudad desde Castle Rock. Es fundamental comprar las entradas online con varios días de antelación para evitar las largas colas y asegurar tu acceso. Dedica al menos 2-3 horas a explorar sus diferentes secciones: las Joyas de la Corona escocesa, la Piedra del Destino, el Salón de Banquetes y el Mons Meg, un cañón medieval gigantesco.
+![Walter Scott Monument en Edimburgo](/images/blog/edimburgo-en-6-dias/walter-scott.webp)
 
-Desde los muros del castillo tendrás vistas panorámicas espectaculares de toda la ciudad, los Jardines de Princes Street y el Firth of Forth a lo lejos. No te pierdas el cañonazo de la una en punto, una tradición que se mantiene desde 1861 para que los barcos del puerto sincronicen sus relojes.
+## Día 2: El Castillo de Edimburgo
 
-Por la tarde, tómate el tiempo necesario para subir a Arthur's Seat, la colina volcánica que se eleva 251 metros sobre el nivel del mar y ofrece las mejores vistas de Edimburgo. La subida dura entre 2-3 horas (ida y vuelta) dependiendo de tu ritmo y de cuánto tiempo dediques a disfrutar de las vistas. El mejor momento es antes del atardecer, cuando la luz dorada baña la ciudad y el paisaje se vuelve mágico. Lleva calzado adecuado, agua y una chaqueta cortavientos, ya que en la cima suele hacer más fresco y viento incluso en verano.
+Empieza el día visitando el Castillo de Edimburgo, la fortaleza que domina la ciudad desde Castle Rock. Es un castillo bastante grande, así que te llevará toda la mañana verlo todo.
+
+> [!WARNING/No te quedes sin entrada]
+> Es fundamental comprar las entradas online con varios días de antelación, ya que puede que no haya de un día para otro. Además, te evitará colas al entrar.
+
+Desde los muros del castillo tendrás vistas panorámicas espectaculares de toda la ciudad, los Jardines de Princes Street y el Firth of Forth a lo lejos. No te pierdas el cañonazo de las 13:00, una tradición que se mantiene desde 1861 para que los barcos del puerto sincronicen sus relojes.
+
+Por la tarde, visita alguna destilería o whisky bar para aprender sobre el "agua de vida" escocesa y probar diferentes variedades en un ambiente acogedor. Nosotros fuimos a The Scotch Whisky Experience, donde hicimos un tour guiado que incluye una cata de varios tipos de whisky.
 
 ## Día 3: Excursión a las Highlands y Lago Ness
 
-El tercer día es perfecto para alejarte de la ciudad y descubrir el paisaje legendario de las Tierras Altas escocesas. Reserva una excursión de día completo que te lleve al Lago Ness, las Highlands y Glencoe. Estas excursiones suelen salir temprano por la mañana (alrededor de las 8:00 AM) y regresan al anochecer, pero cada minuto vale la pena.
+El tercer día es perfecto para alejarte de la ciudad y descubrir el paisaje legendario de las Tierras Altas escocesas. Nosotros reservamos una excursión de día completo al Lago Ness, las Highlands y el valle de Glencoe.
 
-El recorrido te llevará a través de paisajes de montañas dramáticas, lagos de aguas oscuras y valles verdes que parecen sacados de otra época. En el Lago Ness, además de buscar al legendario monstruo Nessie, podrás visitar las ruinas del Castillo de Urquhart, una fortaleza medieval a orillas del lago con una historia fascinante de batallas y traiciones. El guía compartirá historias sobre clanes escoceses, batallas históricas y leyendas locales que dan vida a cada lugar.
+El recorrido atraviesa paisajes de montañas dramáticas, lagos de aguas oscuras y valles verdes que parecen sacados de otra época. Y todo con un guía que comparte historias sobre clanes escoceses, batallas históricas y leyendas locales que dan vida a cada lugar.
 
-Glencoe es probablemente el valle más fotogénico de Escocia, con montañas imponentes que se alzan a ambos lados de la carretera. La belleza melancólica del paisaje es impresionante, especialmente cuando las nubes bajas crean efectos dramáticos entre los picos. Muchas excursiones incluyen paradas en pueblos pintorescos donde puedes probar comida local y estirar las piernas. Lleva una cámara con batería completa, snacks y ropa de abrigo en capas, ya que el clima en las Highlands puede cambiar rápidamente.
+Hasta llegar al lago Ness hay varias paradas en el camino para admirar la belleza natural de las Highlands y hacer fotos. El paisaje es simplemente impresionante, con montañas que se reflejan en lagos tranquilos y castillos en ruinas que evocan épocas pasadas.
+
+![Vacas de las Highlands](/images/blog/edimburgo-en-6-dias/highlands.webp)
+
+Después, llegamos al Lago Ness, donde nos dejaron unas horas libres para visitar la zona. Nosotros cogimos un crucero para adentrarnos en sus misteriosas aguas y mereció mucho la pena. Las vistas desde el barco son increíbles.
+
+![Lago Ness](/images/blog/edimburgo-en-6-dias/lago-ness.webp)
+
+Por último, llegamos al valle de Glencoe, el valle más bonito y fotogénico de Escocia, con montañas imponentes que se alzan a ambos lados de la carretera. El paisaje muy similar al de Islandia, especialmente cuando las nubes bajas crean efectos dramáticos entre los picos.
 
 ## Día 4: Explorando los alrededores
 
-Después del día intenso en las Highlands, el cuarto día ofrece un ritmo más relajado explorando lugares cercanos a Edimburgo. Comienza con una visita al Museo de Edimburgo, un museo gratuito que te ayudará a entender mejor la historia social de la ciudad, desde sus habitantes comunes hasta personajes ilustres. Lo mejor es que el edificio incluye un mirador desde donde obtendrás vistas privilegiadas del casco antiguo sin las multitudes.
+Después del día intenso en las Highlands, el cuarto día ofrece un ritmo más relajado explorando lugares cercanos a Edimburgo. Tómate el tiempo necesario para subir a Arthur's Seat, la colina volcánica que se eleva 251 metros sobre el nivel del mar y ofrece las mejores vistas de Edimburgo.
 
-Por la tarde o al atardecer, únete a un free tour nocturno que te mostrará Edimburgo desde una perspectiva completamente diferente. Estos tours suelen incluir historias de fantasmas, leyendas urbanas y los rincones más misteriosos de la ciudad iluminados por las farolas de gas victorianas. La atmósfera gótica de Edimburgo cobra vida especialmente cuando cae la noche, y las sombras proyectadas por los edificios antiguos crean un ambiente único.
+La subida dura entre 2-3 horas (ida y vuelta) dependiendo de tu ritmo y de cuánto tiempo dediques a disfrutar de las vistas desde la cima. Hay varias rutas para llegar a la cima, y todas ofrecen panorámicas espectaculares de la ciudad y sus alrededores.
 
-Si el tiempo lo permite o prefieres un plan más tranquilo, este es un buen día para explorar tiendas locales, buscar souvenirs de calidad (evita las trampas turísticas de la Royal Mile alta) y disfrutar de un afternoon tea en alguno de los elegantes salones de té de Edimburgo. También puedes visitar alguna destilería o whisky bar para aprender sobre el "agua de vida" escocesa y probar diferentes variedades en un ambiente acogedor.
+![Lago de camino a la cima de Arthur's Seat](/images/blog/edimburgo-en-6-dias/arthurs-seat.webp)
+
+Por la tarde o al atardecer, únete a un free tour nocturno que te mostrará Edimburgo desde una perspectiva completamente diferente. Estos tours suelen incluir historias de fantasmas, leyendas urbanas y los rincones más misteriosos de la ciudad.
+
+Si el tiempo lo permite o prefieres un plan más tranquilo, este es un buen día para explorar tiendas locales, buscar souvenirs de calidad y disfrutar de un afternoon tea en alguno de los elegantes salones de té de Edimburgo.
 
 ## Día 5: Ruta por castillos escoceses y Glasgow
 
-El quinto día es perfecto para una aventura por carretera alquilando un coche y explorando varios sitios históricos alrededor de Edimburgo. Recoge el coche temprano (alrededor de las 9:00 AM) y prepárate para un día completo que termina alrededor de las 10:00 PM. La ruta total suma aproximadamente 3 horas y 21 minutos de conducción, pero con todas las paradas será un día intenso y gratificante.
+El quinto día es perfecto para una aventura por carretera alquilando un coche y explorando varios sitios históricos alrededor de Edimburgo. Recoge el coche temprano y prepárate para un día completo. La ruta total suma aproximadamente 3 horas y media de conducción, pero con bastantes paradas.
 
-Tu primera parada es el Castillo de Blackness, una fortaleza del siglo XV con forma de barco situada a orillas del Firth of Forth. Usado como escenario en la serie Outlander, este castillo ofrece vistas espectaculares y una atmósfera medieval auténtica. Continúa hacia Linlithgow Palace, el lugar de nacimiento de María Estuardo, una ruina magnífica que conserva su grandeza renacentista y permite imaginar la vida de la realeza escocesa del siglo XVI.
+La primera parada es el Castillo de Blackness, una fortaleza del siglo XV con forma de barco situada a orillas del Firth of Forth. Usado como escenario en la serie Outlander, este castillo ofrece vistas espectaculares y una atmósfera medieval auténtica.
 
-El siguiente destino es el Castillo de Stirling, uno de los más importantes de Escocia históricamente. Puedes comprar las entradas online cuando llegues o directamente en taquilla. Dedica al menos 2 horas a explorar este impresionante castillo que fue testigo de batallas cruciales por la independencia escocesa. Después, haz una breve parada en Doune para ver su castillo, también famoso por Outlander y Monty Python.
+Continúa hacia Linlithgow, una pequeña ciudad con un lago precioso con vistas al palacio. Aunque no recomendamos entrar, el palacio es muy bonito por fuera, una ruina magnífica que conserva su grandeza renacentista y permite imaginar la vida de la antigua realeza escocesa.
 
-Termina el día en Glasgow, la ciudad más grande de Escocia, con un carácter completamente distinto al de Edimburgo. Dedica la tarde-noche a recorrer sus lugares imprescindibles: la Catedral de Glasgow, el barrio de Merchant City, el centro comercial Buchanan Street y, si tienes tiempo, el Kelvingrove Art Gallery. Para aparcar, busca parkings en el centro que ofrecen tarifas por tarde-noche, o consulta zonas de aparcamiento gratuito en áreas residenciales cercanas al centro.
+![Lago de Linlithgow con el palacio de fondo](/images/blog/edimburgo-en-6-dias/linlithgow.webp)
+
+El siguiente destino es el Castillo de Stirling, uno de los más importantes de Escocia históricamente. Puedes comprar las entradas online cuando llegues o directamente en taquilla. Dedica al menos 2 horas a explorar este impresionante castillo que fue testigo de batallas cruciales por la independencia escocesa.
+
+Después, hicimos una breve parada en Doune para ver su castillo por fuera, también famoso por aparecer en Outlander y Monty Python. Aún así, lo que más nos gustó de Doune fue el río y el paisaje natural que lo rodea, ideal para dar un paseo si el tiempo te respeta.
+
+![Paisaje de Doune](/images/blog/edimburgo-en-6-dias/doune.webp)
+
+Para terminar, nosotros fuimos a Glasgow, la ciudad más grande de Escocia, y sinceramente no nos gustó nada. Visitamos la catedral y dimos un paseo por el centro, pero no nos pareció una ciudad atractiva comparada con Edimburgo, así que no la recomendamos en este itinerario.
 
 ## Día 6: Rincones secretos y despedida
 
-Tu último día completo en Edimburgo es perfecto para descubrir los rincones más pintorescos y menos turísticos de la ciudad. Comienza la mañana con un paseo hasta Dean Village, un antiguo pueblo de molineros que ahora es uno de los secretos mejor guardados de Edimburgo. Desde el centro de la ciudad son unos 30 minutos caminando, pero el trayecto ya es encantador por sí mismo.
+Tu último día completo en Edimburgo es perfecto para descubrir los rincones más pintorescos y menos turísticos de la ciudad. Comienza la mañana con un paseo hasta Dean Village, un antiguo pueblo de molineros que ahora es uno de los secretos mejor guardados de Edimburgo, a media hora andando desde el centro.
 
-Dean Village parece sacado de un cuento de hadas, con sus edificios de piedra del siglo XIX, puentes arqueados y el río Water of Leith fluyendo tranquilamente. No te pierdas el Dean Bridge, un impresionante viaducto diseñado por Thomas Telford en 1832. Desde aquí, sigue el sendero del Water of Leith Walkway, un paseo fluvial gratuito y precioso que serpentea por zonas verdes, cascadas y rincones tranquilos alejados del bullicio turístico. Es el lugar perfecto para reflexionar sobre tu viaje y disfrutar de la naturaleza en plena ciudad.
+Dean Village parece sacado de un cuento de hadas, con sus edificios de piedra del siglo XIX, puentes arqueados y el río Water of Leith fluyendo tranquilamente. No te pierdas el Dean Bridge, un impresionante viaducto diseñado por Thomas Telford en 1832.
 
-Por la tarde, dirígete a Calton Hill para ver la puesta de sol desde uno de los miradores más emblemáticos de Edimburgo. Está a solo 9 minutos del centro y a unos 30 minutos andando desde Dean Village. En la colina encontrarás varios monumentos icónicos, incluido el National Monument (inspirado en el Partenón) y el Nelson Monument. Las vistas de 360 grados abarcan toda la ciudad, Arthur's Seat, el Castillo, el mar y las colinas circundantes. Es el lugar perfecto para despedirte de Edimburgo mientras el cielo se tiñe de colores naranjas y rosados.
+Desde aquí, sigue el sendero del Water of Leith Walkway, un paseo fluvial precioso que serpentea por zonas verdes, cascadas y rincones tranquilos alejados del bullicio turístico. Es el lugar perfecto para disfrutar de la naturaleza en plena ciudad.
 
-Dedica tu último día también a comprar souvenirs de calidad: busca productos locales como whisky escocés, shortbread casero, tartán auténtico o artesanía hecha en Escocia. Evita las tiendas turísticas genéricas y opta por boutiques locales o mercados donde encontrarás productos únicos que realmente valen la pena.
+![Dean Village en Edimburgo](/images/blog/edimburgo-en-6-dias/dean-village.webp)
+
+Por la tarde, dirígete a Calton Hill para ver la puesta de sol desde uno de los miradores más emblemáticos de Edimburgo. En la colina encontrarás varios monumentos icónicos, incluido el National Monument (inspirado en el Partenón de Atenas) y el Nelson Monument.
+
+Las vistas de 360 grados abarcan toda la ciudad, Arthur's Seat, el Castillo, el mar y las colinas circundantes. Es el lugar perfecto para despedirte de Edimburgo mientras ves el atardecer.
 
 ## Consejos prácticos para moverte por Edimburgo
 
@@ -111,12 +146,6 @@ Para alojamiento, considera zonas como Leith, Stockbridge o New Town que ofrecen
 
 El transporte público es económico comparado con taxis. Un pase de día cuesta £4.50 y el alquiler de coche ronda £40-60 por día. Para comidas, calcula £8-12 por un pub lunch, £15-25 para una cena en restaurante medio, y £3-4 por una pinta de cerveza. Las excursiones organizadas a las Highlands cuestan entre £40-60 por persona dependiendo de la duración y lo que incluyan. Los free tours funcionan con propinas (£5-10 por persona es lo habitual).
 
-## Lo mejor de Edimburgo: experiencias gratuitas
-
-Una de las mejores cosas de Edimburgo es que muchas de sus experiencias más memorables son completamente gratuitas. Subir a Arthur's Seat no cuesta nada y ofrece las mejores vistas de la ciudad. Lo mismo ocurre con Calton Hill, un atardecer impresionante sin pagar un penique. Pasear por los Jardines de Princes Street, con el castillo como telón de fondo, es una experiencia icónica y gratuita.
-
-El Museo Nacional de Escocia es gratuito y podrías pasar fácilmente medio día explorando sus colecciones que abarcan desde historia natural hasta cultura escocesa. La Galería Nacional Escocesa también es gratuita y alberga obras de maestros como Tiziano, El Greco y Monet. El cementerio de Greyfriars es de acceso libre y ofrece historia, arquitectura y la emotiva historia de Greyfriars Bobby.
-
-Los free tours son técnicamente gratuitos (funcionan con propinas) y son una forma excelente de conocer la ciudad con guías apasionados que comparten historias fascinantes. Dean Village y el paseo por el Water of Leith son experiencias naturales preciosas que no cuestan nada. Incluso simplemente caminar por la Royal Mile, explorar los closes históricos y absorber la atmósfera medieval de la Old Town es una experiencia inolvidable sin coste alguno.
+## Conclusión
 
 Edimburgo en seis días te permite no solo conocer lo esencial, sino también profundizar en el carácter auténtico de la capital escocesa. Esta guía te ofrece un equilibrio perfecto entre las atracciones imprescindibles y los rincones secretos, entre la historia medieval y los paisajes naturales, creando recuerdos que perdurarán mucho después de que regreses a casa. Escocia te espera con sus castillos, sus leyendas y su magia única.
