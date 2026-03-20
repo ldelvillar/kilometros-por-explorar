@@ -1,6 +1,6 @@
 ---
 title: 'Qué ver en Edimburgo en seis días'
-description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Edimburgo durante 6 días, incluyendo excursiones a las Highlands y Glasgow.'
+description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Edimburgo durante 6 días, incluyendo excursiones a las Highlands y a castillos escoceses.'
 date: 2025-10-05
 image: '/images/blog/edimburgo-en-6-dias/cover.webp'
 author: 'Lucas & Lucía'
@@ -18,9 +18,9 @@ faqs:
 
 Edimburgo, la capital de Escocia, es una ciudad que combina historia medieval, paisajes naturales impresionantes y una atmósfera única que cautiva a cualquier viajero.
 
-Seis días en esta ciudad te permitirán recorrerla a fondo, explorando sus calles históricas, sus colinas volcánicas y sus rincones más emblemáticos. La ciudad ofrece una combinación perfecta entre lo gótico y lo pintoresco, con calles empedradas que cuentan historias de siglos pasados y jardines victorianos que invitan a la reflexión.
+Seis días en esta ciudad te permitirán recorrerla a fondo, explorando sus calles históricas, sus colinas volcánicas y sus rincones más emblemáticos. La ciudad ofrece una combinación perfecta entre lo gótico y lo pintoresco, con calles empedradas que cuentan historias de siglos pasados.
 
-Este es el itinerario que nosotros seguimos en nuestro viaje de seis días a Edimburgo. Cada día tiene un enfoque particular, con flexibilidad para que adaptes el plan a tu ritmo y preferencias. Además, incluye tanto experiencias gratuitas como actividades que vale la pena pagar.
+Este es el itinerario que nosotros seguimos en nuestro viaje de seis días a Edimburgo. Si no dispones de tantos días, te recomendamos echar un vistazo a nuestra [guía de qué ver en Edimburgo en 3 días](/blog/edimburgo-en-3-dias), donde condensamos lo esencial para una visita más corta.
 
 ## Índice
 
@@ -30,9 +30,7 @@ Este es el itinerario que nosotros seguimos en nuestro viaje de seis días a Edi
 4. [Día 4: Explorando los alrededores](#día-4-explorando-los-alrededores)
 5. [Día 5: Ruta por castillos escoceses y Glasgow](#día-5-ruta-por-castillos-escoceses-y-glasgow)
 6. [Día 6: Rincones secretos y despedida](#día-6-rincones-secretos-y-despedida)
-7. [Consejos prácticos para moverte por Edimburgo](#consejos-prácticos-para-moverte-por-edimburgo)
-8. [Dónde comer: del pub tradicional al restaurante moderno](#dónde-comer-del-pub-tradicional-al-restaurante-moderno)
-9. [Planifica tu presupuesto](#planifica-tu-presupuesto)
+7. [Consejos para tu visita a Edimburgo](#consejos-para-tu-visita-a-edimburgo)
 
 ## Día 1: Introducción al casco antiguo
 
@@ -78,6 +76,9 @@ Después, llegamos al Lago Ness, donde nos dejaron unas horas libres para visita
 
 Por último, llegamos al valle de Glencoe, el valle más bonito y fotogénico de Escocia, con montañas imponentes que se alzan a ambos lados de la carretera. El paisaje muy similar al de Islandia, especialmente cuando las nubes bajas crean efectos dramáticos entre los picos.
 
+> [!Note/Prepárate para un día largo]
+> La excursión dura todo el día, desde las 7:30 de la mañana hasta las 19:30 de la tarde, así que prepárate para un día intenso con varias horas de autobús. Si buscas una excursión más tranquila, échale un vistazo a nuestra guía de [excursiones desde Edimburgo](/blog/excursiones-desde-edimburgo) para ver otras opciones.
+
 ## Día 4: Explorando los alrededores
 
 Después del día intenso en las Highlands, el cuarto día ofrece un ritmo más relajado explorando lugares cercanos a Edimburgo. Tómate el tiempo necesario para subir a Arthur's Seat, la colina volcánica que se eleva 251 metros sobre el nivel del mar y ofrece las mejores vistas de Edimburgo.
@@ -122,30 +123,46 @@ Por la tarde, dirígete a Calton Hill para ver la puesta de sol desde uno de los
 
 Las vistas de 360 grados abarcan toda la ciudad, Arthur's Seat, el Castillo, el mar y las colinas circundantes. Es el lugar perfecto para despedirte de Edimburgo mientras ves el atardecer.
 
-## Consejos prácticos para moverte por Edimburgo
+## Consejos para tu visita a Edimburgo
 
-Edimburgo es una ciudad compacta y muy caminable, especialmente el casco antiguo donde se concentran la mayoría de las atracciones turísticas. Las distancias son cortas y caminar te permite descubrir callejones escondidos, closes (pasajes) históricos y vistas inesperadas. Lleva siempre calzado cómodo e impermeable, ya que el clima escocés es impredecible y las calles empedradas pueden ser resbaladizas cuando llueve.
+### Transporte en Edimburgo y alrededores
 
-El transporte público de Edimburgo es eficiente y cubre toda la ciudad. Los autobuses de Lothian Buses son la opción principal; puedes comprar billetes sencillos al conductor (£2 aproximadamente) o una tarjeta Ridacard que permite viajes ilimitados durante un día (£4.50) o una semana. La app Transport for Edinburgh te ayudará a planificar rutas y ver horarios en tiempo real. Los taxis también son abundantes y relativamente económicos para trayectos cortos.
+Edimburgo es una ciudad muy caminable, especialmente el casco antiguo donde se concentran la mayoría de las atracciones turísticas. Las distancias son cortas y caminar te permite descubrir callejones escondidos, sus famosos closes (pasajes) históricos y vistas inesperadas.
 
-Para excursiones fuera de Edimburgo, como la visita a las Highlands o la ruta por castillos, considera si prefieres tours organizados o alquilar un coche. Los tours tienen la ventaja de incluir guía experto y no preocuparte por la conducción (en Escocia se conduce por la izquierda), mientras que el coche te da total libertad de horarios. Si alquilas coche, reserva con antelación para mejores precios y verifica que tu seguro cubra la conducción en Reino Unido.
+El transporte público de Edimburgo es eficiente y cubre toda la ciudad. Los autobuses de Lothian Buses son la opción principal, puedes comprar billetes sencillos al conductor por unas £2 o una tarjeta Ridacard que permite viajes ilimitados durante un día o una semana.
 
-## Dónde comer: del pub tradicional al restaurante moderno
+Para excursiones fuera de Edimburgo, tienes varias opciones. En nuestro artículo sobre [las mejores excursiones desde Edimburgo](/blog/excursiones-desde-edimburgo) te contamos en detalle las distintas opciones y cuál elegir según a donde vayas.
 
-La gastronomía escocesa va mucho más allá del haggis, aunque definitivamente deberías probarlo al menos una vez. Para desayunos contundentes, busca un "Scottish breakfast" completo en cualquier café local: incluye huevos, bacon, salchichas, tomate, champiñones, black pudding y tattie scones (tortitas de patata). Los porridge (gachas de avena) también son tradicionales y reconfortantes en las frías mañanas escocesas.
+### Dónde comer en Edimburgo
 
-Para comidas auténticas, los pubs son tu mejor opción. The Piper's Seat, mencionado en el itinerario, ofrece buena relación calidad-precio con platos tradicionales. Otros recomendables son The Sheep Heid Inn (el pub más antiguo de Edimburgo), The Devil's Advocate para cervezas artesanales, o The Dome para un ambiente más elegante. Los "pub lunches" suelen incluir platos abundantes por £10-15, perfectos después de una mañana de caminatas.
+Siendo sinceros, la gastronomía escocesa nos es la mejor que hemos probado, ni está cerca de serlo. Sin embargo, tiene algunos platos y postres típicos que merecen la pena probar al menos una vez:
 
-No te vayas de Edimburgo sin probar: fish and chips (el mejor está en The Chippy Doon the Lane), Cullen skink (sopa cremosa de pescado ahumado), cranachan (postre con avena, whisky, frambuesas y nata), y por supuesto, una degustación de whisky en alguna de las muchas whisky bars de la ciudad. Para cenas especiales, el barrio de Leith ofrece restaurantes con estrella Michelin y opciones de cocina internacional a buen precio.
+- **Haggis:** El plato nacional por excelencia, hecho con vísceras de oveja, avena y especias. No es para todos los paladares, pero a nosotros nos gustó bastante.
+- **Cullen Skink:** Una sopa de pescado ahumado, perfecta para entrar en calor después de un día de caminata.
+- **Fish & Chips:** El clásico. El mejor de la ciudad (y el más famoso) está en **Bertie's Proper Fish & Chips** (en Victoria Street) o en **The Fishmarket** si te acercas al puerto de Leith.
+- **Cranachan:** El postre tradicional por excelencia, hecho con avena, whisky, frambuesas y nata.
 
-## Planifica tu presupuesto
+**Nuestros pubs históricos favoritos:**
+Para comidas auténticas, los pubs son la mejor opción. Una comida en estos sitios cuesta entre **20€ y 30€** por persona. Algunos de nuestros favoritos son:
 
-Edimburgo puede ser una ciudad cara, especialmente durante el Festival de Edimburgo en agosto, pero con planificación inteligente puedes disfrutar sin excesos. Las entradas a los principales castillos cuestan entre £15-20 (Castillo de Edimburgo: £19.50, Castillo de Stirling: £16), pero muchos museos nacionales son gratuitos, incluyendo el Museo Nacional de Escocia y la Galería Nacional Escocesa.
+- **The Piper's Rest:** Comida tradicional escocesa con música en directo y ambiente genial.
+- **The Sheep Heid Inn:** Es el pub más antiguo de Edimburgo, tiene una antigua bolera de madera dentro.
+- **The Devil's Advocate:** Escondido en uno de los _closes_, ideal para probar cervezas artesanales y elegir entre cientos de whiskies.
 
-Para alojamiento, considera zonas como Leith, Stockbridge o New Town que ofrecen mejor relación calidad-precio que el casco antiguo. Los hostels rondan £20-30 por noche en dormitorio compartido, hoteles económicos £60-80 por habitación doble, y hoteles boutique desde £100. Reservar con antelación es crucial, especialmente en verano y durante festivales cuando los precios se disparan.
+### Cuánto cuesta viajar a Edimburgo
 
-El transporte público es económico comparado con taxis. Un pase de día cuesta £4.50 y el alquiler de coche ronda £40-60 por día. Para comidas, calcula £8-12 por un pub lunch, £15-25 para una cena en restaurante medio, y £3-4 por una pinta de cerveza. Las excursiones organizadas a las Highlands cuestan entre £40-60 por persona dependiendo de la duración y lo que incluyan. Los free tours funcionan con propinas (£5-10 por persona es lo habitual).
+Edimburgo puede ser una ciudad cara, pero con un poco de planificación puedes disfrutarla sin pasarte de presupuesto.
+
+En nuestro artículo sobre [cuánto cuesta viajar a Edimburgo](/blog/cuanto-cuesta-viajar-edimburgo) te contamos cuánto cuesta cada aspecto del viaje y cómo ahorrar sin renunciar a las experiencias esenciales.
 
 ## Conclusión
 
-Edimburgo en seis días te permite no solo conocer lo esencial, sino también profundizar en el carácter auténtico de la capital escocesa. Esta guía te ofrece un equilibrio perfecto entre las atracciones imprescindibles y los rincones secretos, entre la historia medieval y los paisajes naturales, creando recuerdos que perdurarán mucho después de que regreses a casa. Escocia te espera con sus castillos, sus leyendas y su magia única.
+Edimburgo en seis días te permite no solo conocer lo esencial, sino también profundizar en el carácter auténtico de la capital escocesa.
+
+### ¿Quieres este viaje, pero mejorado?
+
+En **Kilómetros por Explorar**, nos encargamos de que tu viaje a Escocia sea perfecto sin que tengas que preocuparte por los detalles.
+
+Diseñamos tu itinerario, te sugerimos las mejores actividades, los mejores sitios donde comer gastando poco, y te entregamos todo en una app móvil.
+
+[Reserva aquí tu videollamada gratuita](/contacto) para ver juntos cómo podemos ayudarte a planificar tu escapada escocesa perfecta.

@@ -1,7 +1,7 @@
 ---
 title: '¿Cuánto cuesta viajar a Islandia en 2026? Presupuesto completo de 10 días'
 description: 'Desglose honesto y detallado del presupuesto para 10 días en Islandia: alojamiento, transporte, comida, actividades y trucos para ahorrar.'
-date: 2025-11-20
+date: 2026-01-12
 image: '/images/blog/cuanto-cuesta-viajar-islandia/cover.webp'
 author: 'Lucas & Lucía'
 destinations: ['islandia']
@@ -47,7 +47,8 @@ El vuelo es generalmente el gasto más fácil de controlar porque los precios es
 - Sé flexible con fechas si puedes cambiarlas 3-4 días
 - Skyscanner, Kayak y Google Flights te muestran las mejores ofertas automáticamente
 
-**IMPORTANTE:** Los vuelos de las aerolíneas low-cost no incluyen equipaje de mano ni facturado. Ten esto en cuenta porque en invierno necesitarás bastante ropa de abrigo, por lo que recomendamos llevar mínimo una maleta de mano.
+> [!WARNING/Cuidado con los vuelos low-cost]
+> Los vuelos de las aerolíneas low-cost no incluyen equipaje de mano ni facturado. Ten esto en cuenta porque en invierno necesitarás bastante ropa de abrigo, por lo que recomendamos llevar mínimo una maleta de mano.
 
 ## Alojamiento: todos los presupuestos
 
