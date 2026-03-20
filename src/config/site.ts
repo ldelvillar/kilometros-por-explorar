@@ -20,7 +20,7 @@ export const SITE_CONFIG = {
     tiktok: 'https://www.tiktok.com/@kilometrosporexplorar',
   },
 
-  // Configuración SEO por defecto
+  // Default SEO settings
   seo: {
     defaultTitle: 'Kilómetros por Explorar - Viajes únicos por el mundo',
     titleTemplate: '%s | Kilómetros por Explorar',
@@ -31,9 +31,13 @@ export const SITE_CONFIG = {
   },
 } as const;
 
-// Funciones de utilidad
+// Utility function to construct full URLs for the site
 export const getSiteUrl = (path: string = '') => {
-  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  // Ensure the path starts with a slash and does not end with a slash (unless it's just '/')
+  let normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  if (normalizedPath.length > 1 && normalizedPath.endsWith('/')) {
+    normalizedPath = normalizedPath.slice(0, -1);
+  }
   return `${SITE_CONFIG.domain}${normalizedPath}`;
 };
 

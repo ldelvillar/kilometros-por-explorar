@@ -12,6 +12,7 @@ import { remarkAlert } from 'remark-github-blockquote-alert';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.kilometrosporexplorar.es',
+  trailingSlash: 'never',
   redirects: {
     '/clientes': '/viajeros',
     '/clientes/[slug]': '/viajeros/[slug]',
