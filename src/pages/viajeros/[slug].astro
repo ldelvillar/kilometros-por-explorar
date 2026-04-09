@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 import {
   getWebPageSchema,
   getOrganizationSchema,
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 }
 
 const { customer } = Astro.props;
-const { Content } = await customer.render();
+const { Content } = await render(customer);
 
 const title = `Descubre la Aventura de ${customer.data.name} | Kilómetros por Explorar`;
 const description = customer.data.title;

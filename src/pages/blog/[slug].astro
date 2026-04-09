@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
 import CTA from '@/components/Cta.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 
 const relatedPosts = await getCollection('blog', ({ data }) => {
   return data.destinations?.some(destination =>
