@@ -31,7 +31,7 @@ export const getWebPageSchema = (
   url: getSiteUrl(pathname),
   isPartOf: {
     '@type': 'WebSite',
-    name: SITE_CONFIG.name,
+    name: SITE_CONFIG.company.name,
     url: SITE_CONFIG.domain,
   },
   author: {
@@ -44,7 +44,7 @@ export const getWebPageSchema = (
 export const getWebSiteSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: SITE_CONFIG.name,
+  name: SITE_CONFIG.company.name,
   description: SITE_CONFIG.seo.defaultDescription,
   url: SITE_CONFIG.domain,
   publisher: {
