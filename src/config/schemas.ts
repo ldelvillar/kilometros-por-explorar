@@ -1,4 +1,5 @@
-import { SITE_CONFIG, getSiteUrl } from './site';
+import { SITE_CONFIG } from '@/config/site';
+import { getSiteUrl } from '@/utils/getUrls';
 
 // Schema base para la organización
 export const getOrganizationSchema = () => ({
