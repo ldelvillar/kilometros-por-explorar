@@ -30,7 +30,7 @@ const { customer } = Astro.props;
 const { Content } = await render(customer);
 
 const title = `Descubre la Aventura de ${customer.data.name} | Kilómetros por Explorar`;
-const description = customer.data.title;
+const description = customer.data.metaDescription;
 
 const breadcrumbItems: BreadcrumbItem[] = [
   { name: 'Inicio', href: '/' },

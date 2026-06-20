@@ -67,6 +67,7 @@ const customers = defineCollection({
       )
       .length(4),
     description: z.string(),
+    metaDescription: z.string().max(160),
   }),
 });
 

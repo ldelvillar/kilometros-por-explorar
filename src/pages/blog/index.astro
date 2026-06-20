@@ -6,7 +6,7 @@ import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 
 const title = 'Blog | Kilómetros por Explorar';
 const description =
-  'Explora nuestro blog para descubrir consejos de viaje, itinerarios personalizados y experiencias únicas. Kilómetros por Explorar te ayuda a planificar el viaje de tus sueños.';
+  'Consejos de viaje, itinerarios y guías de destinos para planificar tu próxima aventura. Lee el blog de Kilómetros por Explorar y viaja mejor.';
 const pathname = Astro.url.pathname;
 const pageSchema = getWebPageSchema(title, description, pathname);
 const schema = getCombinedSchema(pageSchema);

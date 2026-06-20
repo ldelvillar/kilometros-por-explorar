@@ -13,6 +13,7 @@ metrics:
     { value: '5/5', label: 'Valoración' },
   ]
 description: 'Sofía y Manuel querían celebrar su aniversario con un viaje a París, pero su disponibilidad era bastante limitada, por lo que los precios eran muy elevados. Se pusieron en contacto con nosotros y juntos encontramos un alojamiento ideal a un precio excelente. Aprovecharon su viaje al máximo.'
+metaDescription: 'Sofía y Manuel querían una escapada de aniversario a París pese a su agenda. Encontramos fechas y un alojamiento perfecto a un precio excelente.'
 ---
 
 > ¡Kilómetros por Explorar superó nuestras expectativas! Planificaron nuestra escapada romántica a París y fue absolutamente perfecta.
