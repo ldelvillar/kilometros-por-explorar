@@ -10,4 +10,3 @@ Sitemap: https://www.kilometrosporexplorar.es/sitemap-index.xml
 # Bloquear acceso a directorios privados
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_astro/
