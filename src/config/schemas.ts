@@ -198,9 +198,17 @@ export const getBreadcrumbSchema = (items: BreadcrumbItem[]) => ({
 });
 
 // Schema combinado para páginas principales
-export const getCombinedSchema = (pageSchema: object) => ({
+export const getCombinedSchema = (
+  pageSchema: object,
+  ...extraSchemas: object[]
+) => ({
   '@context': 'https://schema.org',
-  '@graph': [getOrganizationSchema(), getWebSiteSchema(), pageSchema],
+  '@graph': [
+    getOrganizationSchema(),
+    getWebSiteSchema(),
+    pageSchema,
+    ...extraSchemas,
+  ],
 });
 
 // Schema combinado para artículos del blog (incluye Article + Breadcrumb + FAQ)
