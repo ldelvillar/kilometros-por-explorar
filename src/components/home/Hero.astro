@@ -1,9 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '@/assets/images/hero.webp';
+---
+
 <section class="relative h-[100dvh] overflow-hidden">
   <div
     id="hero-bg"
-    class="absolute inset-0 bg-[url(/images/hero.webp)] bg-cover bg-center will-change-transform"
+    class="absolute inset-0 will-change-transform"
     style="transform: translateY(0px);"
   >
+    <Image
+      src={heroImage}
+      alt=""
+      class="h-full w-full object-cover object-center"
+      widths={[640, 1024, 1536, 1920, 2400]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+      decoding="async"
+    />
   </div>
   <div class="absolute inset-0 bg-black/40"></div>
   <div
