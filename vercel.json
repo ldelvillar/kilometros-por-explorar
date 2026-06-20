@@ -1,4 +1,16 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/clientes",
+      "destination": "/viajeros",
+      "permanent": true
+    },
+    {
+      "source": "/clientes/:slug",
+      "destination": "/viajeros/:slug",
+      "permanent": true
+    }
+  ]
 }

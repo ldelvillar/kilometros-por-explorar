@@ -15,10 +15,6 @@ import { remarkAlert } from 'remark-github-blockquote-alert';
 export default defineConfig({
   site: 'https://www.kilometrosporexplorar.es',
   trailingSlash: 'never',
-  redirects: {
-    '/clientes': '/viajeros',
-    '/clientes/[slug]': '/viajeros/[slug]',
-  },
   vite: {
     plugins: [tailwindcss()],
   },
