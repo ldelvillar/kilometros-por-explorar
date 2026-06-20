@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
-import HalfArrow from '@/assets/halfArrow.svg';
-import Arrow from '@/assets/arrow.svg';
+import HalfArrow from '@/assets/icons/halfArrow.svg';
+import Arrow from '@/assets/icons/arrow.svg';
 
 const posts = await getCollection('blog');
 const recentPosts = posts

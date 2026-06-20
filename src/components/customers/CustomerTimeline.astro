@@ -1,7 +1,7 @@
 ---
-import DotCircle from '@/assets/dotCircle.svg';
-import Location from '@/assets/location.svg';
-import Arrow from '@/assets/arrow.svg';
+import DotCircle from '@/assets/icons/dotCircle.svg';
+import Location from '@/assets/icons/location.svg';
+import Arrow from '@/assets/icons/arrow.svg';
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 
 interface Props {
@@ -39,7 +39,7 @@ const timelineItems: TimelineItem[] = [
     timelineItems.map(item => (
       <li class="ms-7 mb-10 lg:ms-12">
         <span class="absolute -start-4 flex size-8 items-center justify-center rounded-full bg-gray-100">
-          <item.icon class="text-primary size-4" aria-hidden="true" />
+          <item.icon class="size-4 text-primary" aria-hidden="true" />
         </span>
         <h3 class="mb-3 text-xl font-semibold text-gray-900">{item.title}</h3>
         {item.title !== 'Destino' ? (

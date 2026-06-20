@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import FeaturedCustomerCard from '@/components/customers/FeaturedCustomerCard.astro';
-import HalfArrow from '@/assets/halfArrow.svg';
-import Arrow from '@/assets/arrow.svg';
+import HalfArrow from '@/assets/icons/halfArrow.svg';
+import Arrow from '@/assets/icons/arrow.svg';
 
 const customers = await getCollection('customers', ({ data }) => data.featured);
 ---
@@ -20,7 +20,7 @@ const customers = await getCollection('customers', ({ data }) => data.featured);
 
   <a
     href="/viajeros"
-    class="group bg-primary hover:bg-primary/90 mx-auto mt-12 flex w-fit items-center gap-2 rounded-lg px-4 py-3 font-semibold text-white transition"
+    class="group mx-auto mt-12 flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-3 font-semibold text-white transition hover:bg-primary/90"
   >
     <span>Ver todas las historias</span>
     <div class="relative size-4">

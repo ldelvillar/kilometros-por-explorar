@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from 'preact/hooks';
 import type { JSX } from 'preact';
-import Bot from '@/assets/Bot.tsx';
-import Cross from '@/assets/Cross.tsx';
-import Send from '@/assets/Send.tsx';
+import Bot from '@/assets/icons/Bot.tsx';
+import Cross from '@/assets/icons/Cross.tsx';
+import Send from '@/assets/icons/Send.tsx';
 
 interface Message {
   id: string;
@@ -161,7 +161,7 @@ export default function Chatbot() {
       {isOpen && (
         <div className="animate-in slide-in-from-bottom-2 absolute right-0 bottom-16 flex h-96 w-80 flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-2xl duration-200">
           {/* Header */}
-          <div className="bg-primary flex items-center justify-between p-4 text-white">
+          <div className="flex items-center justify-between bg-primary p-4 text-white">
             <div className="flex items-center gap-2">
               <Bot className="size-5" />
               <span className="font-semibold">Asistente Virtual</span>
@@ -227,14 +227,14 @@ export default function Chatbot() {
                 }
                 onKeyPress={handleKeyPress}
                 placeholder="Escribe tu mensaje..."
-                className="focus:ring-primary flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-transparent focus:ring-2 focus:outline-none"
+                className="flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none"
                 maxLength={500}
                 disabled={isTyping}
               />
               <button
                 type="submit"
                 disabled={!inputValue.trim() || isTyping}
-                className="bg-primary hover:bg-primary/90 rounded-lg px-4 py-2 text-white transition-colors disabled:cursor-not-allowed disabled:opacity-50"
+                className="rounded-lg bg-primary px-4 py-2 text-white transition-colors hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50"
                 aria-label="Enviar mensaje"
               >
                 <Send className="size-5" />
@@ -247,7 +247,7 @@ export default function Chatbot() {
       {/* Floating Button */}
       <button
         onClick={toggleChat}
-        className="bg-primary hover:bg-primary/90 group flex size-14 items-center justify-center rounded-full text-white shadow-lg transition-all duration-200 hover:shadow-xl"
+        className="group flex size-14 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-all duration-200 hover:bg-primary/90 hover:shadow-xl"
         aria-label={isOpen ? 'Cerrar chat' : 'Abrir chat'}
       >
         <Bot className="size-8 transition-transform group-hover:scale-110" />

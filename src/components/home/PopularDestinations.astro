@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import DestinationCard from '@/components/destinations/DestinationCard.astro';
-import Arrow from '@/assets/arrow.svg';
-import HalfArrow from '@/assets/halfArrow.svg';
+import Arrow from '@/assets/icons/arrow.svg';
+import HalfArrow from '@/assets/icons/halfArrow.svg';
 
 const featuredDestinations = await getCollection('destinations', ({ data }) => {
   return data.featured === true;

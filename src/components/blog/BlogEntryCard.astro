@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import HalfArrow from '@/assets/halfArrow.svg';
-import Arrow from '@/assets/arrow.svg';
+import HalfArrow from '@/assets/icons/halfArrow.svg';
+import Arrow from '@/assets/icons/arrow.svg';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -26,7 +26,7 @@ const { post, loading } = Astro.props;
     </div>
 
     <div class="flex flex-1 flex-col p-6 text-start">
-      <h2 class="text-primary mb-4 text-2xl font-bold">
+      <h2 class="mb-4 text-2xl font-bold text-primary">
         {post.data.title}
       </h2>
       <p class="mb-4 flex-1 text-neutral-800">
@@ -46,7 +46,7 @@ const { post, loading } = Astro.props;
         </span>
         <span class="capitalize">{post.data.author}</span>
       </div>
-      <div class="text-primary flex items-center gap-2 font-semibold">
+      <div class="flex items-center gap-2 font-semibold text-primary">
         <span>Leer más</span>
         <div class="relative size-4">
           <HalfArrow

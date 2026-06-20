@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import Arrow from '@/assets/arrow.svg';
-import HalfArrow from '@/assets/halfArrow.svg';
+import Arrow from '@/assets/icons/arrow.svg';
+import HalfArrow from '@/assets/icons/halfArrow.svg';
 
 interface Props {
   customer: CollectionEntry<'customers'>;
@@ -61,7 +61,7 @@ const { customer, loading } = Astro.props;
         {customer.data.title}
       </p>
 
-      <div class="text-primary mt-auto flex items-center gap-2 font-semibold">
+      <div class="mt-auto flex items-center gap-2 font-semibold text-primary">
         <span class="animated-underline relative">Leer caso completo</span>
         <div class="relative size-4">
           <HalfArrow
