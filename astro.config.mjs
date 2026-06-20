@@ -7,6 +7,8 @@ import sitemap from '@astrojs/sitemap';
 
 import preact from '@astrojs/preact';
 
+import { unified } from '@astrojs/markdown-remark';
+
 import { remarkAlert } from 'remark-github-blockquote-alert';
 
 // https://astro.build/config
@@ -21,7 +23,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   markdown: {
-    remarkPlugins: [[remarkAlert, { legacyTitle: true }]],
+    processor: unified({
+      remarkPlugins: [[remarkAlert, { legacyTitle: true }]],
+    }),
   },
   integrations: [sitemap(), preact()],
 });
