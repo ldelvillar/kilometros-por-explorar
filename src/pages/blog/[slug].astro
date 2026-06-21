@@ -58,7 +58,7 @@ const articleSchema = getArticleSchema(
   pathname,
   post.data.date.toISOString(),
   undefined,
-  post.data.image,
+  post.data.image.src,
   post.data.author,
   mainDestination
 );
@@ -82,11 +82,11 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
     <!-- Hero image -->
     <div class="mx-auto w-full max-w-5xl">
       <Image
-        width="1200"
-        height="600"
         src={post.data.image}
         alt={post.data.title}
         class="h-[240px] w-full object-cover md:h-[420px]"
+        widths={[480, 800, 1200]}
+        sizes="(max-width: 1024px) 100vw, 1024px"
         loading="eager"
       />
     </div>

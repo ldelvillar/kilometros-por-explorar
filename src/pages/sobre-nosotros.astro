@@ -4,6 +4,9 @@ import Layout from '@/layouts/Layout.astro';
 import Timeline from '@/components/Timeline.astro';
 import Cta from '@/components/Cta.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import couple from '@/assets/images/team/couple.webp';
+import lucas from '@/assets/images/team/lucas.webp';
+import lucia from '@/assets/images/team/lucia.webp';
 
 const title = 'Sobre Nosotros | Kilómetros por Explorar';
 const description =
@@ -22,7 +25,7 @@ const schema = getCombinedSchema(pageSchema);
         Sobre Nosotros
       </h1>
       <Image
-        src="/images/team/couple.webp"
+        src={couple}
         alt="Foto de los fundadores de Kilómetros por explorar"
         class="my-6 size-24 justify-self-center rounded-full md:hidden"
         width={100}
@@ -35,7 +38,7 @@ const schema = getCombinedSchema(pageSchema);
       </p>
       <div class="mt-12 flex flex-col items-center gap-4 md:flex-row">
         <Image
-          src="/images/team/couple.webp"
+          src={couple}
           alt="Foto de los fundadores de Kilómetros por explorar"
           class="hidden size-24 rounded-full md:block"
           width={100}
@@ -75,7 +78,7 @@ const schema = getCombinedSchema(pageSchema);
       <div class="mt-4 flex justify-center gap-12">
         <div class="flex flex-col items-center">
           <Image
-            src="/images/team/lucas.webp"
+            src={lucas}
             alt="Foto de Lucas"
             class="size-32 rounded-full md:size-48"
             width={100}
@@ -90,7 +93,7 @@ const schema = getCombinedSchema(pageSchema);
 
         <div class="flex flex-col items-center">
           <Image
-            src="/images/team/lucia.webp"
+            src={lucia}
             alt="Foto de Lucía"
             class="size-32 rounded-full md:size-48"
             width={100}

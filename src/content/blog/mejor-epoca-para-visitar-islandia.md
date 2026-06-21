@@ -2,7 +2,7 @@
 title: 'Mejor época para viajar a Islandia: Comparativa 2025 (Verano vs Invierno)'
 description: '¿Auroras boreales o Sol de Medianoche? Análisis honesto tras viajar en ambas estaciones: clima, carreteras peligrosas y qué mes elegir para tu viaje ideal.'
 date: 2025-10-24
-image: '/images/blog/mejor-epoca-para-visitar-islandia/cover.webp'
+image: '../../assets/images/blog/mejor-epoca-para-visitar-islandia/cover.webp'
 author: 'Lucas'
 destinations: ['islandia']
 faqs:
@@ -55,7 +55,7 @@ Este es un punto decisivo para muchos viajeros. Las auroras boreales solo son vi
 
 Durante mi viaje en febrero, vimos auroras boreales en 3 de las 6 noches que pasamos fuera de Reykjavik. Una de esas noches fue espectacular, estábamos en un campo nevado cerca de Jökulsárlón, a -4°C, completamente solos, y el silencio solo se rompía por nuestras exclamaciones de asombro. Es una experiencia que me marcó profundamente.
 
-![Auroras boreales en Islandia](/images/blog/mejor-epoca-para-visitar-islandia/aurora.webp)
+![Auroras boreales en Islandia](../../assets/images/blog/mejor-epoca-para-visitar-islandia/aurora.webp)
 
 Pero ojo, ver auroras no está garantizado. Necesitas cielo despejado, y el clima islandés es notoriamente impredecible. De las 8 noches totales de mi viaje, solo 3 tuvieron cielo despejado. Las otras estaban completamente nubladas. Así que aunque el invierno ofrece la posibilidad, no la certeza.
 
@@ -70,7 +70,7 @@ Para mí, las auroras boreales son una experiencia más impactante y memorable q
 
 Este es el argumento más fuerte a favor del verano. En mi viaje de febrero, varias carreteras estaban cerradas por nieve y hielo, y las F-roads (carreteras del interior) estaban completamente inaccesibles. Algunos lugares que queríamos visitar tuvieron que descartarse porque las condiciones no lo permitían. Necesitábamos consultar road.is y safe.is diariamente para verificar el estado de las carreteras antes de planificar cada día. Además, tuvimos un pequeño susto con la camper y la nieve.
 
-![Nuestra camper atrapada en la nieve en Islandia](/images/blog/mejor-epoca-para-visitar-islandia/camper.webp)
+![Nuestra camper atrapada en la nieve en Islandia](../../assets/images/blog/mejor-epoca-para-visitar-islandia/camper.webp)
 
 Nosotros alquilamos una camper en invierno (en mi opinión, mejor que un coche normal, la otra opción hubiera sido un 4x4). Aún así, conducir era estresante - caminos helados, ventiscas súbitas, viento lateral que podía empujar el coche, y esa sensación constante de estar a merced de los elementos. Es parte de la aventura, pero no para todos.
 

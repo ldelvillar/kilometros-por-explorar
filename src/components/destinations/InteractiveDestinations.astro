@@ -2,6 +2,7 @@
 import DestinationCard from '@/components/destinations/DestinationCard.astro';
 import DestinationSearch from '@/components/destinations/DestinationSearch.astro';
 import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
 
 const allDestinations = await getCollection('destinations');
 
@@ -32,14 +33,18 @@ const uniqueDestinations = Array.from(
   new Map(allDestinations.map(item => [item.id, item])).values()
 );
 
-// Prepare destinations data for client-side search
-const destinationsData = uniqueDestinations.map(destination => ({
-  name: destination.data.name,
-  shortDescription: destination.data.shortDescription,
-  image: destination.data.image,
-  href: destination.id.replace('.md', ''),
-  category: destination.data.category,
-}));
+// Prepare destinations data for client-side search.
+// Search-result cards are rendered as HTML strings in the browser, so they need
+// a plain URL — generate an optimized thumbnail with getImage().
+const destinationsData = await Promise.all(
+  uniqueDestinations.map(async destination => ({
+    name: destination.data.name,
+    shortDescription: destination.data.shortDescription,
+    image: (await getImage({ src: destination.data.image, width: 600 })).src,
+    href: destination.id.replace('.md', ''),
+    category: destination.data.category,
+  }))
+);
 ---
 
 <section class="mx-auto max-w-7xl px-4 pt-4">

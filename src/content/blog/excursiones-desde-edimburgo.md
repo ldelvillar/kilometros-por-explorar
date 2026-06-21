@@ -2,7 +2,7 @@
 title: 'Las 9 mejores excursiones de un día desde Edimburgo (por libre y en tour)'
 description: 'Guía completa de excursiones desde Edimburgo: Stirling, Loch Ness, Isle of Skye. Consejos prácticos, presupuestos y cómo organizar día a día.'
 date: 2026-02-18
-image: '/images/blog/excursiones-desde-edimburgo/cover.webp'
+image: '../../assets/images/blog/excursiones-desde-edimburgo/cover.webp'
 author: 'Lucas & Lucía'
 destinations: ['edimburgo']
 faqs:
@@ -86,7 +86,7 @@ Si te apasiona la historia escocesa, marca este lugar en tu mapa. El Palacio de 
 
 Hoy son unas ruinas sin techo, pero caminar por sus amplios pasillos y asomarte a su inmenso patio central te transporta completamente de época. Justo al lado hay un lago (Linlithgow Loch) que es perfecto para dar un paseo muy relajado y escapar del bullicio urbano.
 
-![Lago de Linlithgow con el palacio de fondo](/images/blog/edimburgo-en-6-dias/linlithgow.webp)
+![Lago de Linlithgow con el palacio de fondo](../../assets/images/blog/edimburgo-en-6-dias/linlithgow.webp)
 
 El billete de tren desde Edimburgo tarda unos 25 minutos. Te recomendamos combinar la visita al palacio con una comida en alguno de los pubs tradicionales que bordean la calle principal del pueblo.
 
@@ -104,7 +104,7 @@ El punto álgido suele ser el valle de Glencoe. Las dimensiones de las montañas
 
 La ruta culmina en las aguas oscuras y agitadas del Lago Ness. Aunque Nessie no asome la cabeza, las ruinas del Castillo de Urquhart asomadas al acantilado sobre el lago justifican las horas de carretera por sí solas.
 
-![Lago Ness en las Highlands](/images/blog/edimburgo-en-6-dias/lago-ness.webp)
+![Lago Ness en las Highlands](../../assets/images/blog/edimburgo-en-6-dias/lago-ness.webp)
 
 Eso si, prepárate mentalmente para pasar entre 10 y 12 horas viajando. Pasarás mucho tiempo en un autocar. Es paliza, pero si es la única oportunidad que tienes de saborear las Highlands, el esfuerzo merece absolutamente la pena de principio a fin.
 
@@ -143,7 +143,7 @@ Si las murallas del Castillo de Doune te resultan familiares, no te estás volvi
 
 Más allá de su fama en la pantalla, es uno de los castillos con patio interior mejor conservados que hemos visto. Te recomendamos pedir la audioguía, donde el mismísimo Terry Jones narra algunas anécdotas desternillantes del rodaje de su película.
 
-![Río del Castillo de Doune](/images/blog/edimburgo-en-6-dias/doune.webp)
+![Río del Castillo de Doune](../../assets/images/blog/edimburgo-en-6-dias/doune.webp)
 
 Está muy cerca del castillo de Stirling, por lo que combinar ambas visitas en el mismo día (si tienes coche de alquiler) sería la mejor opción.
 

@@ -2,7 +2,7 @@
 title: 'Qué ver en Edimburgo en seis días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Edimburgo durante 6 días, incluyendo excursiones a las Highlands y a castillos escoceses.'
 date: 2025-10-05
-image: '/images/blog/edimburgo-en-6-dias/cover.webp'
+image: '../../assets/images/blog/edimburgo-en-6-dias/cover.webp'
 author: 'Lucas & Lucía'
 destinations: ['edimburgo']
 faqs:
@@ -47,7 +47,7 @@ Terminarás el tour muy cerca del museo de Edimburgo, donde puedes entrar gratis
 
 Por la tarde, visita el Walter Scott Monument, una torre gótica que domina los Princes Street Gardens y rinde homenaje al escritor escocés.
 
-![Walter Scott Monument en Edimburgo](/images/blog/edimburgo-en-6-dias/walter-scott.webp)
+![Walter Scott Monument en Edimburgo](../../assets/images/blog/edimburgo-en-6-dias/walter-scott.webp)
 
 ## Día 2: El Castillo de Edimburgo
 
@@ -68,11 +68,11 @@ El recorrido atraviesa paisajes de montañas dramáticas, lagos de aguas oscuras
 
 Hasta llegar al lago Ness hay varias paradas en el camino para admirar la belleza natural de las Highlands y hacer fotos. El paisaje es simplemente impresionante, con montañas que se reflejan en lagos tranquilos y castillos en ruinas que evocan épocas pasadas.
 
-![Vacas de las Highlands](/images/blog/edimburgo-en-6-dias/highlands.webp)
+![Vacas de las Highlands](../../assets/images/blog/edimburgo-en-6-dias/highlands.webp)
 
 Después, llegamos al Lago Ness, donde nos dejaron unas horas libres para visitar la zona. Nosotros cogimos un crucero para adentrarnos en sus misteriosas aguas y mereció mucho la pena. Las vistas desde el barco son increíbles.
 
-![Lago Ness](/images/blog/edimburgo-en-6-dias/lago-ness.webp)
+![Lago Ness](../../assets/images/blog/edimburgo-en-6-dias/lago-ness.webp)
 
 Por último, llegamos al valle de Glencoe, el valle más bonito y fotogénico de Escocia, con montañas imponentes que se alzan a ambos lados de la carretera. El paisaje muy similar al de Islandia, especialmente cuando las nubes bajas crean efectos dramáticos entre los picos.
 
@@ -85,7 +85,7 @@ Después del día intenso en las Highlands, el cuarto día ofrece un ritmo más 
 
 La subida dura entre 2-3 horas (ida y vuelta) dependiendo de tu ritmo y de cuánto tiempo dediques a disfrutar de las vistas desde la cima. Hay varias rutas para llegar a la cima, y todas ofrecen panorámicas espectaculares de la ciudad y sus alrededores.
 
-![Lago de camino a la cima de Arthur's Seat](/images/blog/edimburgo-en-6-dias/arthurs-seat.webp)
+![Lago de camino a la cima de Arthur's Seat](../../assets/images/blog/edimburgo-en-6-dias/arthurs-seat.webp)
 
 Por la tarde o al atardecer, únete a un free tour nocturno que te mostrará Edimburgo desde una perspectiva completamente diferente. Estos tours suelen incluir historias de fantasmas, leyendas urbanas y los rincones más misteriosos de la ciudad.
 
@@ -99,13 +99,13 @@ La primera parada es el Castillo de Blackness, una fortaleza del siglo XV con fo
 
 Continúa hacia Linlithgow, una pequeña ciudad con un lago precioso con vistas al palacio. Aunque no recomendamos entrar, el palacio es muy bonito por fuera, una ruina magnífica que conserva su grandeza renacentista y permite imaginar la vida de la antigua realeza escocesa.
 
-![Lago de Linlithgow con el palacio de fondo](/images/blog/edimburgo-en-6-dias/linlithgow.webp)
+![Lago de Linlithgow con el palacio de fondo](../../assets/images/blog/edimburgo-en-6-dias/linlithgow.webp)
 
 El siguiente destino es el Castillo de Stirling, uno de los más importantes de Escocia históricamente. Puedes comprar las entradas online cuando llegues o directamente en taquilla. Dedica al menos 2 horas a explorar este impresionante castillo que fue testigo de batallas cruciales por la independencia escocesa.
 
 Después, hicimos una breve parada en Doune para ver su castillo por fuera, también famoso por aparecer en Outlander y Monty Python. Aún así, lo que más nos gustó de Doune fue el río y el paisaje natural que lo rodea, ideal para dar un paseo si el tiempo te respeta.
 
-![Paisaje de Doune](/images/blog/edimburgo-en-6-dias/doune.webp)
+![Paisaje de Doune](../../assets/images/blog/edimburgo-en-6-dias/doune.webp)
 
 Para terminar, nosotros fuimos a Glasgow, la ciudad más grande de Escocia, y sinceramente no nos gustó nada. Visitamos la catedral y dimos un paseo por el centro, pero no nos pareció una ciudad atractiva comparada con Edimburgo, así que no la recomendamos en este itinerario.
 
@@ -117,7 +117,7 @@ Dean Village parece sacado de un cuento de hadas, con sus edificios de piedra de
 
 Desde aquí, sigue el sendero del Water of Leith Walkway, un paseo fluvial precioso que serpentea por zonas verdes, cascadas y rincones tranquilos alejados del bullicio turístico. Es el lugar perfecto para disfrutar de la naturaleza en plena ciudad.
 
-![Dean Village en Edimburgo](/images/blog/edimburgo-en-6-dias/dean-village.webp)
+![Dean Village en Edimburgo](../../assets/images/blog/edimburgo-en-6-dias/dean-village.webp)
 
 Por la tarde, dirígete a Calton Hill para ver la puesta de sol desde uno de los miradores más emblemáticos de Edimburgo. En la colina encontrarás varios monumentos icónicos, incluido el National Monument (inspirado en el Partenón de Atenas) y el Nelson Monument.
 

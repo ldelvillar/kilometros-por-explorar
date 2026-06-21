@@ -2,7 +2,7 @@
 title: 'Qué ver en Marruecos en seis días: Marrakech, Atlas y Desierto'
 description: 'Guía completa para recorrer Marruecos en 6 días: desde el caos de Marrakech hasta la magia del desierto de Merzouga, pasando por las montañas del Atlas.'
 date: 2025-11-05
-image: '/images/blog/marruecos-en-6-dias/cover.webp'
+image: '../../assets/images/blog/marruecos-en-6-dias/cover.webp'
 author: 'Lucas'
 destinations: ['marruecos']
 faqs:

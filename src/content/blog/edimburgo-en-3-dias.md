@@ -2,7 +2,7 @@
 title: 'Qué ver en Edimburgo en tres días'
 description: 'Guía completa para descubrir lo esencial de Edimburgo en 3 días: castillo medieval, Royal Mile, Arthurs Seat y las Highlands.'
 date: 2025-10-15
-image: '/images/blog/edimburgo-en-3-dias/cover.webp'
+image: '../../assets/images/blog/edimburgo-en-3-dias/cover.webp'
 author: 'Lucas'
 destinations: ['edimburgo']
 faqs:
@@ -35,13 +35,13 @@ Empieza tu primera mañana en Edimburgo con un free tour por el casco antiguo. T
 
 El tour suele durar unas dos horas y recorre los puntos más emblemáticos del Old Town. Verás la Royal Mile, la Catedral de St Giles con su arquitectura gótica, y Victoria Street, la calle colorida que inspiró el Callejón Diagon de Harry Potter.
 
-![Victoria Street, inspiración de Harry Potter](/images/blog/edimburgo-en-3-dias/victoria-street.webp)
+![Victoria Street, inspiración de Harry Potter](../../assets/images/blog/edimburgo-en-3-dias/victoria-street.webp)
 
 Durante el tour también pasarás por Grayfriars Kirkyard, el cementerio que alberga la tumba de Greyfriars Bobby. El guía te contará leyendas de fantasmas y te mostrará las tumbas que inspiraron nombres de personajes de Harry Potter. J.K. Rowling pasaba mucho tiempo en Edimburgo mientras escribía la saga.
 
 Después del tour, dedica la tarde completa a visitar el **Castillo de Edimburgo**, la fortaleza que domina la ciudad desde Castle Rock. Es enorme, así que necesitarás al menos 3 horas para explorarlo bien.
 
-![Vistas de Edimburgo desde el Castillo](/images/blog/edimburgo-en-3-dias/castillo.webp)
+![Vistas de Edimburgo desde el Castillo](../../assets/images/blog/edimburgo-en-3-dias/castillo.webp)
 
 Desde los muros tendrás vistas panorámicas espectaculares de toda la ciudad, los jardines y el puerto de Leith a lo lejos. No te pierdas el **cañonazo de la una**, una tradición que se mantiene desde 1861. A las 13:00 en punto disparan un cañón para que los barcos del puerto sincronicen sus relojes.
 
@@ -64,11 +64,11 @@ Una de las primeras paradas suele ser en las cercanías de **Loch Lomond**, el l
 
 Aquí verás las típicas casas de piedra y, con suerte, las famosas **vacas Highland** con su pelaje largo y marrón rojizo y sus cuernos impresionantes.
 
-![Vacas Highland en las Tierras Altas](/images/blog/edimburgo-en-6-dias/highlands.webp)
+![Vacas Highland en las Tierras Altas](../../assets/images/blog/edimburgo-en-6-dias/highlands.webp)
 
 El momento culminante del día es llegar al **Lago Ness**. Nosotros cogimos un crucero opcional de una hora para adentrarnos en sus misteriosas aguas, que cuesta unos 15-20€ extra, pero merece totalmente la pena. Las vistas desde el barco son increíbles.
 
-![El Lago Ness](/images/blog/edimburgo-en-6-dias/lago-ness.webp)
+![El Lago Ness](../../assets/images/blog/edimburgo-en-6-dias/lago-ness.webp)
 
 El regreso pasa por el **valle de Glencoe**, probablemente el valle más fotogénico de toda Escocia. Las montañas a ambos lados de la carretera se alzan de forma dramática, con cascadas bajando por las laderas y nubes bajas que crean efectos cinematográficos.
 
@@ -83,7 +83,7 @@ Hay varias rutas para llegar a la cima. La más popular empieza desde el aparcam
 
 A medio camino encontrarás pequeñas lagunas donde se refleja la montaña, son ideales para descansar un momento. Cuando llegues a la cima, las vistas de 360 grados te dejarán sin palabras.
 
-![Lagunas en Arthur's Seat](/images/blog/edimburgo-en-6-dias/arthurs-seat.webp)
+![Lagunas en Arthur's Seat](../../assets/images/blog/edimburgo-en-6-dias/arthurs-seat.webp)
 
 Después de admirar la ciudad desde las alturas, dedica el resto de la tarde a explorar zonas que te hayan quedado pendientes.
 

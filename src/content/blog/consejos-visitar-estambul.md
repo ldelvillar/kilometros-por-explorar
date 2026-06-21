@@ -2,7 +2,7 @@
 title: 'Consejos prácticos para visitar Estambul: guía para evitar trampas turísticas'
 description: 'Guía práctica con consejos esenciales para visitar Estambul: cómo moverte barato, evitar estafas turísticas, explorar la parte asiática y aprovechar al máximo la ciudad.'
 date: 2025-11-20
-image: '/images/blog/consejos-visitar-estambul/cover.webp'
+image: '../../assets/images/blog/consejos-visitar-estambul/cover.webp'
 author: 'Lucas & Lucía'
 destinations: ['estambul']
 faqs:
@@ -79,7 +79,7 @@ Pero la joya del transporte en Estambul son los **ferries públicos**. Cruzar el
 
 Ver el atardecer desde un ferry con vistas a las mezquitas mientras las gaviotas vuelan alrededor es una de esas experiencias mágicas que define Estambul.
 
-![El atardecer desde el bósforo](/images/blog/estambul-en-6-dias/cover.webp)
+![El atardecer desde el bósforo](../../assets/images/blog/estambul-en-6-dias/cover.webp)
 
 Otra opción para cruzar el bósforo es el Marmaray , un tren que cruza bajo el mar y tarda solo 4 minutos. Es la forma más rápida de cruzar de un lado a otro y funciona con la misma Istanbulkart. Aunque no tiene las vistas del ferry, es útil para ahorrar tiempo.
 

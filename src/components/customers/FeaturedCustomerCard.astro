@@ -38,7 +38,7 @@ const { customer, loading } = Astro.props;
             src={customer.data.destinationFlagImage}
             width={80}
             height={40}
-            alt={`Bandera de ${customer.data.destination}`}
+            alt={`Bandera de ${customer.data.destination.name}`}
             class="h-8 w-auto object-contain"
             loading={loading}
           />
