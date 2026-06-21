@@ -35,7 +35,7 @@ const { customer, loading } = Astro.props;
       <div class="absolute top-4 left-4 z-10">
         <div class="rounded-lg bg-white/90 p-2 shadow-lg backdrop-blur-sm">
           <img
-            src={customer.data.destinationFlagImage}
+            src={customer.data.destinationFlagImage.src}
             width={80}
             height={40}
             alt={`Bandera de ${customer.data.destination.name}`}

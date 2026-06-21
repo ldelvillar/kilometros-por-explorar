@@ -4,7 +4,7 @@ title: 'Un viaje de novios a París, planificado al detalle'
 name: 'Sofía y Manuel'
 image: '../../assets/images/customers/paris.webp'
 destination: { name: 'París', href: '/destinos/paris' }
-destinationFlagImage: '/images/flags/france.svg'
+destinationFlagImage: '../../assets/flags/france.svg'
 metrics:
   [
     { value: '5', label: 'Días en destino' },

@@ -60,7 +60,7 @@ const customers = defineCollection({
         name: z.string(),
         href: z.string(),
       }),
-      destinationFlagImage: z.string(),
+      destinationFlagImage: image(),
       metrics: z
         .array(
           z.object({
