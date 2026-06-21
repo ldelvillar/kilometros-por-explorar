@@ -2,7 +2,7 @@
 featured: true
 title: 'Descubre cómo el viaje soñado de Javier y sus amigos a Japón se hizo realidad con Kilómetros por Explorar'
 name: 'Javier López'
-image: '../../assets/images/customers/kyoto.webp'
+image: '../../assets/images/customers/javier-lopez/cover.webp'
 destination: { name: 'Japón', href: '/destinos/japon' }
 destinationFlagImage: '../../assets/flags/japan.svg'
 metrics:

@@ -2,7 +2,7 @@
 featured: true
 title: 'Conoce el viaje de Olivia y su familia a República Dominicana'
 name: 'Olivia Hayes'
-image: '../../assets/images/customers/republica-dominicana.webp'
+image: '../../assets/images/customers/olivia-hayes/cover.webp'
 destination:
   { name: 'República Dominicana', href: '/destinos/republica-dominicana' }
 destinationFlagImage: '../../assets/flags/dominican-republic.svg'
