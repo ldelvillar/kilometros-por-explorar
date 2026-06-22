@@ -8,7 +8,7 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import RelatedArticles from '@/components/blog/DestinationEntries.astro';
 import DestinationCustomers from '@/components/destinations/DestinationCustomers.astro';
 import Cta from '@/components/Cta.astro';
-import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
+import { getCombinedSchema, getTouristDestinationSchema } from '@/config/schemas';
 
 interface Props {
   destination: CollectionEntry<'destinations'>;
@@ -28,9 +28,13 @@ const { destination } = Astro.props;
 
 const title = `${destination.data.name} | Kilómetros por Explorar`;
 const description = destination.data.shortDescription;
-const pathname = Astro.url.pathname;
 
-const pageSchema = getWebPageSchema(title, description, pathname);
+const pageSchema = getTouristDestinationSchema(
+  destination.data.name,
+  description,
+  destination.data.image.src,
+  destination.data.country
+);
 const schema = getCombinedSchema(pageSchema);
 ---
 

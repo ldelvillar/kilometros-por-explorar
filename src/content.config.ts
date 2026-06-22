@@ -10,6 +10,7 @@ const destinations = defineCollection({
   schema: ({ image }) =>
     z.object({
       name: z.string(),
+      country: z.string().optional(),
       shortDescription: z.string(),
       longDescription: z.string(),
       image: image(),
@@ -23,6 +24,10 @@ const destinations = defineCollection({
         'sorpresa',
       ]),
       featured: z.boolean().default(false),
+    }).refine(data => data.category === 'sorpresa' || Boolean(data.country), {
+      message:
+        "El campo 'country' es obligatorio salvo para los packs de categoría 'sorpresa'.",
+      path: ['country'],
     }),
 });
 
