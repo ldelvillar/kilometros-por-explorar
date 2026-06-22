@@ -88,6 +88,8 @@ const footerLinks: FooterLink[] = [
     ],
   },
 ];
+
+const currentYear = new Date().getFullYear();
 ---
 
 <footer class="border-t border-gray-300 text-gray-900">
@@ -137,6 +139,8 @@ const footerLinks: FooterLink[] = [
         ))
       }
     </div>
-    <div class="mt-4 text-center">&copy 2026 Kilómetros por Explorar</div>
+    <div class="mt-4 text-center">
+      &copy; {currentYear} Kilómetros por Explorar
+    </div>
   </div>
 </footer>
