@@ -6,6 +6,7 @@ import {
   getOrganizationSchema,
   getWebSiteSchema,
   getBreadcrumbSchema,
+  getReviewSchema,
   type BreadcrumbItem,
 } from '@/config/schemas';
 import Layout from '@/layouts/Layout.astro';
@@ -40,6 +41,37 @@ const breadcrumbItems: BreadcrumbItem[] = [
 
 const pathname = Astro.url.pathname;
 const pageSchema = getWebPageSchema(title, description, pathname);
+
+// Extrae la valoración (p. ej. "5/5") de las métricas visibles en la página
+const ratingMetric = customer.data.metrics.find(metric =>
+  metric.label.toLowerCase().includes('valoraci')
+);
+let rating: { ratingValue: number; bestRating: number } | undefined;
+if (ratingMetric) {
+  const [valueStr, bestStr] = ratingMetric.value.split('/');
+  const ratingValue = parseFloat(valueStr);
+  const bestRating = bestStr ? parseFloat(bestStr) : 5;
+  if (!Number.isNaN(ratingValue)) {
+    rating = { ratingValue, bestRating };
+  }
+}
+
+// Usa la cita del testimonio (blockquote del cuerpo) como texto de la reseña
+const quoteText = (customer.body ?? '')
+  .split('\n')
+  .filter(line => line.trim().startsWith('>'))
+  .map(line => line.replace(/^>\s?/, '').trim())
+  .join(' ')
+  .trim();
+
+const reviewSchema = getReviewSchema({
+  reviewBody: quoteText || customer.data.description,
+  authorName: customer.data.name,
+  pathname,
+  name: customer.data.title,
+  rating,
+});
+
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -47,6 +79,7 @@ const schema = {
     getWebSiteSchema(),
     pageSchema,
     getBreadcrumbSchema(breadcrumbItems),
+    reviewSchema,
   ],
 };
 ---

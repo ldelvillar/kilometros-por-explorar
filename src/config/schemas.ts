@@ -179,6 +179,40 @@ export const getArticleSchema = (
   }),
 });
 
+// Schema para reseñas de clientes
+export const getReviewSchema = (review: {
+  reviewBody: string;
+  authorName: string;
+  pathname: string;
+  name?: string;
+  rating?: { ratingValue: number; bestRating?: number };
+  datePublished?: string;
+}) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Review',
+  ...(review.name && { name: review.name }),
+  reviewBody: review.reviewBody,
+  author: {
+    '@type': 'Person',
+    name: review.authorName,
+  },
+  itemReviewed: {
+    '@type': 'TravelAgency',
+    name: SITE_CONFIG.company.name,
+    url: SITE_CONFIG.domain,
+  },
+  url: getSiteUrl(review.pathname),
+  ...(review.datePublished && { datePublished: review.datePublished }),
+  ...(review.rating && {
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: review.rating.ratingValue,
+      bestRating: review.rating.bestRating ?? 5,
+      worstRating: 1,
+    },
+  }),
+});
+
 // Tipo para items del breadcrumb
 export interface BreadcrumbItem {
   name: string;
