@@ -2,7 +2,8 @@
 import Instagram from '@/assets/icons/instagram.svg';
 import TikTok from '@/assets/icons/tiktok.svg';
 import Facebook from '@/assets/icons/facebook.svg';
-import Logo from '@/assets/icons/logo.svg';
+import { Image } from 'astro:assets';
+import logo from '@/assets/images/brand/logo.webp';
 import { SITE_CONFIG } from '@/config/site';
 
 interface Social {
@@ -92,7 +93,14 @@ const footerLinks: FooterLink[] = [
 <footer class="border-t border-gray-300 text-gray-900">
   <div class="mx-auto max-w-5xl px-8 pt-8 pb-4 lg:pt-12">
     <div class="flex flex-row items-center justify-between">
-      <Logo class="h-auto w-16" />
+      <Image
+        src={logo}
+        width={64}
+        height={64}
+        densities={[1, 2, 3]}
+        alt="Kilómetros por Explorar"
+        class="h-auto w-16"
+      />
       <div class="flex flex-row gap-2">
         {
           socials.map(social => (

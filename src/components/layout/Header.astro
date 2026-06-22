@@ -1,5 +1,6 @@
 ---
-import Logo from '@/assets/icons/logo.svg';
+import { Image } from 'astro:assets';
+import logo from '@/assets/images/brand/logo.webp';
 import Menu from '@/assets/icons/menu.svg';
 ---
 
@@ -8,7 +9,14 @@ import Menu from '@/assets/icons/menu.svg';
     class="mx-auto flex items-center justify-between px-3 py-3 md:px-6 lg:px-8"
   >
     <a href="/" class="flex items-center text-lg font-bold">
-      <Logo class="mr-2 size-8" />
+      <Image
+        src={logo}
+        width={32}
+        height={32}
+        densities={[1, 2, 3]}
+        alt=""
+        class="mr-2 size-8"
+      />
       Kilómetros por Explorar
     </a>
 
