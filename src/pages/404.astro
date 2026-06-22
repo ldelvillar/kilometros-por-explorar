@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '@/layouts/Layout.astro';
+import notFoundImage from '@/assets/images/404.webp';
 
 const title = 'Página no encontrada | Kilómetros por Explorar';
 const description =
@@ -11,10 +12,10 @@ const description =
   <main id="main" class="animate-fade-in-up mx-auto max-w-6xl px-4 pt-24 pb-20">
     <div class="h-64 w-full rounded-2xl bg-primary/10">
       <Image
-        src="/images/404.webp"
+        src={notFoundImage}
         alt="Ilustración de página no encontrada"
-        width={800}
-        height={400}
+        widths={[256, 512, 972]}
+        sizes="256px"
         class="pointer-events-none h-full w-full object-contain select-none"
         loading="eager"
       />
