@@ -25,6 +25,7 @@ const { destination, loading = 'lazy' } = Astro.props;
         alt={destination.data.name}
         class="h-full w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
         width={600}
+        densities={[1, 2]}
         loading={loading}
       />
       <!-- Gradient overlay always visible -->

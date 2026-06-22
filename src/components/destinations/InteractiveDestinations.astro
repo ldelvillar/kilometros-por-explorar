@@ -40,7 +40,7 @@ const destinationsData = await Promise.all(
   uniqueDestinations.map(async destination => ({
     name: destination.data.name,
     shortDescription: destination.data.shortDescription,
-    image: (await getImage({ src: destination.data.image, width: 600 })).src,
+    image: (await getImage({ src: destination.data.image, width: 1200 })).src,
     href: destination.id.replace('.md', ''),
     category: destination.data.category,
   }))

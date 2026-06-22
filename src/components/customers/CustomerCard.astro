@@ -17,6 +17,7 @@ const { customer, loading } = Astro.props;
       alt={customer.data.name}
       width={600}
       height={400}
+      densities={[1, 2]}
       class="h-64 w-full rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
       loading={loading}
     />

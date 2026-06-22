@@ -23,6 +23,7 @@ const { customer, loading } = Astro.props;
         src={customer.data.image}
         width={600}
         height={400}
+        densities={[1, 2]}
         alt={`Historia de éxito de ${customer.data.name}`}
         class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
         loading={loading}

@@ -133,8 +133,8 @@ const schema = {
       <Image
         src={customer.data.image}
         alt={`Foto del viaje de ${customer.data.name}`}
-        width={800}
-        height={600}
+        widths={[640, 1024, 1536, 1920]}
+        sizes="(max-width: 1152px) 100vw, 1152px"
         class="max-h-[600px] w-full object-cover"
         loading="eager"
       />
