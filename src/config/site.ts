@@ -14,6 +14,7 @@ export const SITE_CONFIG = {
     instagram: 'https://www.instagram.com/kilometrosporexplorar',
     facebook: 'https://www.facebook.com/kilometrosporexplorar',
     tiktok: 'https://www.tiktok.com/@kilometrosporexplorar',
+    googleBusiness: 'https://share.google/7iKJCDrpp3SrzLxlK',
   },
 
   seo: {

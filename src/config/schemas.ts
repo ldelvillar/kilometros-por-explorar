@@ -11,10 +11,28 @@ export const getOrganizationSchema = () => ({
   description: SITE_CONFIG.seo.defaultDescription,
   email: SITE_CONFIG.company.email,
   telephone: SITE_CONFIG.company.phone,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Madrid',
+    addressCountry: 'ES',
+  },
+  areaServed: {
+    '@type': 'Country',
+    name: 'España',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    telephone: SITE_CONFIG.company.phone,
+    email: SITE_CONFIG.company.email,
+    areaServed: 'ES',
+    availableLanguage: 'Spanish',
+  },
   sameAs: [
     SITE_CONFIG.social.instagram,
     SITE_CONFIG.social.facebook,
     SITE_CONFIG.social.tiktok,
+    SITE_CONFIG.social.googleBusiness,
   ],
 });
 
