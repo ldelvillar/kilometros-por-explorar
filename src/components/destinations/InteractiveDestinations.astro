@@ -389,6 +389,17 @@ const destinationsData = await Promise.all(
         }, 300);
       });
     }
+
+    // Pre-fill and run search from the ?q= URL parameter.
+    // Powers the WebSite schema SearchAction (/destinos?q={search_term_string}).
+    const initialQuery = new URLSearchParams(window.location.search)
+      .get('q')
+      ?.trim();
+    if (searchInput && initialQuery && initialQuery.length >= 2) {
+      searchInput.value = initialQuery;
+      isSearching = true;
+      displaySearchResults(performSearch(initialQuery));
+    }
   });
 </script>
 

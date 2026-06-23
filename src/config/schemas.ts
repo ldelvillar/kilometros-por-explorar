@@ -56,7 +56,7 @@ export const getWebSiteSchema = () => ({
     '@type': 'SearchAction',
     target: {
       '@type': 'EntryPoint',
-      urlTemplate: `${SITE_CONFIG.domain}/buscar?q={search_term_string}`,
+      urlTemplate: `${SITE_CONFIG.domain}/destinos?q={search_term_string}`,
     },
     'query-input': 'required name=search_term_string',
   },
