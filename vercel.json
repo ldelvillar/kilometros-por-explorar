@@ -3,6 +3,12 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "kilometrosporexplorar.es" }],
+      "destination": "https://www.kilometrosporexplorar.es/:path*",
+      "permanent": true
+    },
+    {
       "source": "/clientes",
       "destination": "/viajeros",
       "permanent": true
