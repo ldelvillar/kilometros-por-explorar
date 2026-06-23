@@ -15,7 +15,6 @@ export const getOrganizationSchema = () => ({
     SITE_CONFIG.social.instagram,
     SITE_CONFIG.social.facebook,
     SITE_CONFIG.social.tiktok,
-    SITE_CONFIG.social.twitter,
   ],
 });
 
