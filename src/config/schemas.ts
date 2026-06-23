@@ -29,6 +29,7 @@ export const getWebPageSchema = (
   name: title,
   description: description,
   url: getSiteUrl(pathname),
+  inLanguage: 'es-ES',
   isPartOf: {
     '@type': 'WebSite',
     name: SITE_CONFIG.company.name,
@@ -47,6 +48,7 @@ export const getWebSiteSchema = () => ({
   name: SITE_CONFIG.company.name,
   description: SITE_CONFIG.seo.defaultDescription,
   url: SITE_CONFIG.domain,
+  inLanguage: 'es-ES',
   publisher: {
     '@type': 'Organization',
     name: SITE_CONFIG.company.name,
@@ -141,6 +143,7 @@ export const getArticleSchema = (
   headline: title,
   description: description,
   url: getSiteUrl(pathname),
+  inLanguage: 'es-ES',
   datePublished: publishDate,
   dateModified: modifyDate || publishDate,
   author: {
