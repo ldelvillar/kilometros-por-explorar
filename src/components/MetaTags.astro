@@ -8,6 +8,10 @@ interface Props {
   schema?: object;
   image?: string;
   imageAlt?: string;
+  ogType?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
 }
 
 const {
@@ -16,6 +20,10 @@ const {
   schema,
   image = SITE_CONFIG.seo.defaultImage,
   imageAlt = SITE_CONFIG.seo.defaultImageAlt,
+  ogType = 'website',
+  publishedTime,
+  modifiedTime,
+  author,
 }: Props = Astro.props;
 
 const pathname = Astro.url.pathname;
@@ -33,13 +41,28 @@ const imageUrl = image.startsWith('http')
 <!-- Open Graph tags -->
 <meta property="og:title" content={title} />
 <meta property="og:site_name" content={SITE_CONFIG.company.name} />
-<meta property="og:type" content="website" />
+<meta property="og:type" content={ogType} />
 <meta property="og:url" content={fullUrl} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
 <meta property="og:image:width" content="850" />
 <meta property="og:image:height" content="425" />
 <meta property="og:image:alt" content={imageAlt} />
+
+<!-- Article tags (blog posts) -->
+{
+  ogType === 'article' && (
+    <Fragment>
+      {publishedTime && (
+        <meta property="article:published_time" content={publishedTime} />
+      )}
+      {modifiedTime && (
+        <meta property="article:modified_time" content={modifiedTime} />
+      )}
+      {author && <meta property="article:author" content={author} />}
+    </Fragment>
+  )
+}
 
 <!-- Twitter tags -->
 <meta name="twitter:card" content="summary_large_image" />

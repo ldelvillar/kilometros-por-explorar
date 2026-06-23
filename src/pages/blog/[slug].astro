@@ -68,7 +68,15 @@ const faqSchema = getFAQSchema(post.data.faqs);
 const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
 ---
 
-<Layout title={title} description={description} schema={schema}>
+<Layout
+  title={title}
+  description={description}
+  schema={schema}
+  ogType="article"
+  publishedTime={post.data.date.toISOString()}
+  modifiedTime={post.data.date.toISOString()}
+  author={post.data.author}
+>
   <main id="main" class="bg-white pt-20">
     <!-- Breadcrumbs -->
     <div class="mx-auto max-w-5xl py-4">

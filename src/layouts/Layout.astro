@@ -10,9 +10,14 @@ interface Props {
   title: string;
   description: string;
   schema?: object;
+  ogType?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
 }
 
-const { title, description, schema } = Astro.props;
+const { title, description, schema, ogType, publishedTime, modifiedTime, author } =
+  Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +26,15 @@ const { title, description, schema } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/images/brand/logo.png" />
-    <MetaTags title={title} description={description} schema={schema} />
+    <MetaTags
+      title={title}
+      description={description}
+      schema={schema}
+      ogType={ogType}
+      publishedTime={publishedTime}
+      modifiedTime={modifiedTime}
+      author={author}
+    />
   </head>
   <body class="font-display">
     <a
