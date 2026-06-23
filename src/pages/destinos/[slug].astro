@@ -8,7 +8,10 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import RelatedArticles from '@/components/blog/DestinationEntries.astro';
 import DestinationCustomers from '@/components/destinations/DestinationCustomers.astro';
 import Cta from '@/components/Cta.astro';
-import { getCombinedSchema, getTouristDestinationSchema } from '@/config/schemas';
+import {
+  getCombinedSchema,
+  getTouristDestinationSchema,
+} from '@/config/schemas';
 
 interface Props {
   destination: CollectionEntry<'destinations'>;

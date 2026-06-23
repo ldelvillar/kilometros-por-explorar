@@ -8,27 +8,29 @@ const destinations = defineCollection({
     base: './src/content/destinations',
   }),
   schema: ({ image }) =>
-    z.object({
-      name: z.string(),
-      country: z.string().optional(),
-      shortDescription: z.string(),
-      longDescription: z.string(),
-      image: image(),
-      category: z.enum([
-        'cultural',
-        'playa',
-        'naturaleza',
-        'ciudad',
-        'destacados',
-        'barco',
-        'sorpresa',
-      ]),
-      featured: z.boolean().default(false),
-    }).refine(data => data.category === 'sorpresa' || Boolean(data.country), {
-      message:
-        "El campo 'country' es obligatorio salvo para los packs de categoría 'sorpresa'.",
-      path: ['country'],
-    }),
+    z
+      .object({
+        name: z.string(),
+        country: z.string().optional(),
+        shortDescription: z.string(),
+        longDescription: z.string(),
+        image: image(),
+        category: z.enum([
+          'cultural',
+          'playa',
+          'naturaleza',
+          'ciudad',
+          'destacados',
+          'barco',
+          'sorpresa',
+        ]),
+        featured: z.boolean().default(false),
+      })
+      .refine(data => data.category === 'sorpresa' || Boolean(data.country), {
+        message:
+          "El campo 'country' es obligatorio salvo para los packs de categoría 'sorpresa'.",
+        path: ['country'],
+      }),
 });
 
 const blog = defineCollection({
