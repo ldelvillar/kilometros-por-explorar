@@ -14,7 +14,12 @@ interface Social {
 
 interface FooterLink {
   title: string;
-  sublinks?: { title: string; url?: string }[];
+  url?: string;
+}
+
+interface FooterColumn {
+  title: string;
+  links: FooterLink[];
 }
 
 const socials: Social[] = [
@@ -35,112 +40,168 @@ const socials: Social[] = [
   },
 ];
 
-const footerLinks: FooterLink[] = [
+const columns: FooterColumn[] = [
   {
-    title: 'Destinos Populares',
-    sublinks: [
-      {
-        title: 'Japón',
-        url: '/destinos/japon',
-      },
-      {
-        title: 'Islandia',
-        url: '/destinos/islandia',
-      },
-      {
-        title: 'Estambul',
-        url: '/destinos/estambul',
-      },
+    title: 'Destinos',
+    links: [
+      { title: 'Japón', url: '/destinos/japon' },
+      { title: 'Islandia', url: '/destinos/islandia' },
+      { title: 'Estambul', url: '/destinos/estambul' },
+      { title: 'Ver todos los destinos', url: '/destinos' },
     ],
   },
   {
-    title: 'Contacto',
-    sublinks: [
-      {
-        title: SITE_CONFIG.company.email,
-        url: `mailto:${SITE_CONFIG.company.email}`,
-      },
-      {
-        title: SITE_CONFIG.company.phone,
-        url: `tel:${SITE_CONFIG.company.phone}`,
-      },
-      {
-        title: SITE_CONFIG.company.phone2,
-        url: `tel:${SITE_CONFIG.company.phone2}`,
-      },
+    title: 'Servicios',
+    links: [
+      { title: 'Selección de Destinos' },
+      { title: 'Diseño de Itinerarios' },
+      { title: 'Gestión de Presupuesto' },
+      { title: 'Viaje sorpresa' },
     ],
   },
   {
-    title: 'Otros',
-    sublinks: [
-      {
-        title: 'Aviso Legal',
-        url: '/aviso-legal',
-      },
-      {
-        title: 'Términos y Condiciones',
-        url: '/terminos-y-condiciones',
-      },
-      {
-        title: 'Política de Privacidad',
-        url: '/politica-de-privacidad-y-cookies',
-      },
+    title: 'Empresa',
+    links: [
+      { title: 'Sobre nosotros', url: '/sobre-nosotros' },
+      { title: 'Viajeros', url: '/viajeros' },
+      { title: 'Blog', url: '/blog' },
+      { title: 'Preguntas frecuentes', url: '/#faq' },
     ],
   },
+];
+
+const contactLinks: FooterLink[] = [
+  {
+    title: SITE_CONFIG.company.email,
+    url: `mailto:${SITE_CONFIG.company.email}`,
+  },
+  {
+    title: SITE_CONFIG.company.phone,
+    url: `tel:${SITE_CONFIG.company.phone.replace(/\s/g, '')}`,
+  },
+  {
+    title: SITE_CONFIG.company.phone2,
+    url: `tel:${SITE_CONFIG.company.phone2.replace(/\s/g, '')}`,
+  },
+  {
+    title: SITE_CONFIG.company.address,
+    url: SITE_CONFIG.social.googleBusiness,
+  },
+];
+
+const legalLinks = [
+  { title: 'Aviso Legal', url: '/aviso-legal' },
+  { title: 'Términos y Condiciones', url: '/terminos-y-condiciones' },
+  { title: 'Política de Privacidad', url: '/politica-de-privacidad-y-cookies' },
 ];
 
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="border-t border-gray-300 text-gray-900">
-  <div class="mx-auto max-w-5xl px-8 pt-8 pb-4 lg:pt-12">
-    <div class="flex flex-row items-center justify-between">
-      <Image
-        src={logo}
-        width={64}
-        height={64}
-        densities={[1, 2, 3]}
-        alt="Kilómetros por Explorar"
-        class="h-auto w-16"
-      />
-      <div class="flex flex-row gap-2">
+<footer class="border-t border-gray-300 bg-white">
+  <div class="mx-auto max-w-7xl px-4 pt-16 pb-12">
+    <div
+      class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-5 lg:gap-12"
+    >
+      <!-- Brand column -->
+      <div class="flex flex-col gap-4 lg:col-span-1">
+        <Image
+          src={logo}
+          width={64}
+          height={64}
+          densities={[1, 2, 3]}
+          alt="Kilómetros por Explorar"
+          class="h-auto w-16"
+        />
+        <p class="text-lg font-bold text-gray-900">Kilómetros por Explorar</p>
+        <p class="max-w-xs leading-relaxed text-gray-600">
+          Planificadores de viajes personalizados. Diseñamos tu itinerario a
+          medida.
+        </p>
+        <div class="mt-2 flex gap-3">
+          {
+            socials.map(social => (
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 text-gray-600 transition-all duration-200 hover:border-primary hover:bg-primary/10 hover:text-primary"
+              >
+                <social.icon class="h-5 w-5" />
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Link columns -->
+      {
+        columns.map(column => (
+          <div class="flex flex-col gap-3">
+            <p class="text-sm font-bold tracking-widest text-gray-900 uppercase">
+              {column.title}
+            </p>
+            {column.links.map(link =>
+              link.url ? (
+                <a
+                  href={link.url}
+                  class="w-fit text-gray-600 transition-colors duration-200 hover:text-primary"
+                >
+                  {link.title}
+                </a>
+              ) : (
+                <span class="w-fit text-gray-600">{link.title}</span>
+              )
+            )}
+          </div>
+        ))
+      }
+
+      <!-- Contact column -->
+      <div class="flex flex-col gap-3">
+        <p class="text-sm font-bold tracking-widest text-gray-900 uppercase">
+          Contacto
+        </p>
         {
-          socials.map(social => (
+          contactLinks.map(link => (
             <a
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={social.name}
-              class="transition-transform duration-200 hover:scale-110"
+              href={link.url}
+              target={
+                link.url?.startsWith('mailto:') || link.url?.startsWith('tel:')
+                  ? '_self'
+                  : '_blank'
+              }
+              class="w-fit text-gray-600 transition-colors duration-200 hover:text-primary"
             >
-              <social.icon />
+              {link.title}
             </a>
           ))
         }
       </div>
     </div>
-    <div class="mt-6 flex flex-wrap justify-between text-gray-900 lg:gap-12">
-      {
-        footerLinks.map(link => (
-          <div class="my-4 flex flex-col lg:my-0">
-            <p class="text-xl font-semibold">{link.title}</p>
-            {link.sublinks && (
-              <div>
-                {link.sublinks.map(sublink => (
-                  <div>
-                    <a href={sublink.url} class="text-lg hover:text-primary">
-                      {sublink.title}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        ))
-      }
-    </div>
-    <div class="mt-4 text-center">
-      &copy; {currentYear} Kilómetros por Explorar
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="border-t border-gray-100">
+    <div
+      class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-6"
+    >
+      <p class="text-sm text-gray-500">
+        &copy; {currentYear} Kilómetros por Explorar · Hecho a tu medida.
+      </p>
+      <div class="flex flex-wrap gap-6">
+        {
+          legalLinks.map(link => (
+            <a
+              href={link.url}
+              class="text-sm text-gray-500 transition-colors duration-200 hover:text-primary"
+            >
+              {link.title}
+            </a>
+          ))
+        }
+      </div>
     </div>
   </div>
 </footer>
