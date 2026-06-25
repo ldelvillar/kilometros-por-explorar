@@ -1,4 +1,5 @@
 ---
+import type { ImageMetadata } from 'astro';
 import MetaTags from '@/components/MetaTags.astro';
 import Header from '@/components/layout/Header.astro';
 import Chatbot from '@/components/layout/Chatbot.tsx';
@@ -10,6 +11,8 @@ interface Props {
   title: string;
   description: string;
   schema?: object;
+  image?: string | ImageMetadata;
+  imageAlt?: string;
   ogType?: 'website' | 'article';
   publishedTime?: string;
   modifiedTime?: string;
@@ -20,6 +23,8 @@ const {
   title,
   description,
   schema,
+  image,
+  imageAlt,
   ogType,
   publishedTime,
   modifiedTime,
@@ -37,6 +42,8 @@ const {
       title={title}
       description={description}
       schema={schema}
+      image={image}
+      imageAlt={imageAlt}
       ogType={ogType}
       publishedTime={publishedTime}
       modifiedTime={modifiedTime}

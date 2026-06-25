@@ -21,7 +21,7 @@ export const SITE_CONFIG = {
     defaultTitle: 'Kilómetros por Explorar - Viajes únicos por el mundo',
     defaultDescription:
       'Descubre los destinos más increíbles del mundo con nuestras experiencias de viaje únicas. Aventuras personalizadas para exploradores como tú.',
-    defaultImage: '/images/brand/logo.png',
-    defaultImageAlt: 'Logo de Kilómetros por Explorar',
+    defaultImageAlt:
+      'Kilómetros por Explorar, planificación de viajes personalizados',
   },
 } as const;

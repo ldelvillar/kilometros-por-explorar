@@ -1,12 +1,15 @@
 ---
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import { SITE_CONFIG } from '@/config/site';
 import { getCanonicalUrl } from '@/utils/getUrls';
+import defaultOgImage from '@/assets/images/hero.webp';
 
 interface Props {
   title: string;
   description: string;
   schema?: object;
-  image?: string;
+  image?: string | ImageMetadata;
   imageAlt?: string;
   ogType?: 'website' | 'article';
   publishedTime?: string;
@@ -18,7 +21,7 @@ const {
   title,
   description,
   schema,
-  image = SITE_CONFIG.seo.defaultImage,
+  image = defaultOgImage,
   imageAlt = SITE_CONFIG.seo.defaultImageAlt,
   ogType = 'website',
   publishedTime,
@@ -28,9 +31,26 @@ const {
 
 const pathname = Astro.url.pathname;
 const fullUrl = getCanonicalUrl(pathname);
-const imageUrl = image.startsWith('http')
-  ? image
-  : `${SITE_CONFIG.domain}${image}`;
+
+// Social previews use a 1200x630 JPEG card. WebP is avoided on purpose.
+// Local images (ImageMetadata) are cropped to a social card; an external URL is used as-is
+const OG_WIDTH = 1200;
+const OG_HEIGHT = 630;
+const isLocalImage = typeof image !== 'string';
+let imageUrl: string;
+if (typeof image === 'string') {
+  imageUrl = image.startsWith('http') ? image : `${SITE_CONFIG.domain}${image}`;
+} else {
+  const ogImage = await getImage({
+    src: image,
+    width: OG_WIDTH,
+    height: OG_HEIGHT,
+    fit: 'cover',
+    format: 'jpeg',
+    quality: 80,
+  });
+  imageUrl = `${SITE_CONFIG.domain}${ogImage.src}`;
+}
 ---
 
 <link rel="sitemap" href={`${SITE_CONFIG.domain}/sitemap-index.xml`} />
@@ -45,9 +65,10 @@ const imageUrl = image.startsWith('http')
 <meta property="og:url" content={fullUrl} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={imageUrl} />
-<meta property="og:image:width" content="850" />
-<meta property="og:image:height" content="425" />
+<meta property="og:image:width" content={`${OG_WIDTH}`} />
+<meta property="og:image:height" content={`${OG_HEIGHT}`} />
 <meta property="og:image:alt" content={imageAlt} />
+{isLocalImage && <meta property="og:image:type" content="image/jpeg" />}
 
 <!-- Article tags (blog posts) -->
 {

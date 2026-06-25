@@ -84,7 +84,13 @@ const schema = {
 };
 ---
 
-<Layout title={title} description={description} schema={schema}>
+<Layout
+  title={title}
+  description={description}
+  schema={schema}
+  image={customer.data.image}
+  imageAlt={`El viaje de ${customer.data.name} con Kilómetros por Explorar`}
+>
   <!-- Hero Section -->
   <section
     id="hero"

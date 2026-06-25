@@ -41,7 +41,13 @@ const pageSchema = getTouristDestinationSchema(
 const schema = getCombinedSchema(pageSchema);
 ---
 
-<Layout title={title} description={description} schema={schema}>
+<Layout
+  title={title}
+  description={description}
+  schema={schema}
+  image={destination.data.image}
+  imageAlt={`Viajar a ${destination.data.name} con Kilómetros por Explorar`}
+>
   <main id="main">
     <!-- Breadcrumbs -->
     <div class="mx-auto max-w-7xl px-4 pt-24 pb-4">
