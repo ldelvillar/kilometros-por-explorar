@@ -11,7 +11,19 @@ import Cta from '@/components/Cta.astro';
 import {
   getCombinedSchema,
   getTouristDestinationSchema,
+  getTouristTripSchema,
 } from '@/config/schemas';
+
+// Etiqueta de tipo de turismo para el schema TouristTrip, según la categoría
+const TOURIST_TYPE_BY_CATEGORY: Record<string, string | undefined> = {
+  cultural: 'Turismo cultural',
+  playa: 'Turismo de playa',
+  naturaleza: 'Turismo de naturaleza',
+  ciudad: 'Escapada urbana',
+  barco: 'Viaje en barco',
+  sorpresa: 'Viaje sorpresa',
+  destacados: undefined,
+};
 
 interface Props {
   destination: CollectionEntry<'destinations'>;
@@ -31,14 +43,29 @@ const { destination } = Astro.props;
 
 const title = `Viajar a ${destination.data.name} a tu Medida | Kilómetros por Explorar`;
 const description = destination.data.shortDescription;
+const pathname = Astro.url.pathname;
 
-const pageSchema = getTouristDestinationSchema(
+const isSurprise = destination.data.category === 'sorpresa';
+const tripName = isSurprise
+  ? destination.data.name
+  : `Viaje a ${destination.data.name} a tu medida`;
+
+const destinationSchema = getTouristDestinationSchema(
   destination.data.name,
   description,
   destination.data.image.src,
-  destination.data.country
+  destination.data.country,
+  pathname
 );
-const schema = getCombinedSchema(pageSchema);
+const tripSchema = getTouristTripSchema(
+  tripName,
+  destination.data.longDescription,
+  pathname,
+  destination.data.image.src,
+  destination.data.country,
+  TOURIST_TYPE_BY_CATEGORY[destination.data.category]
+);
+const schema = getCombinedSchema(destinationSchema, tripSchema);
 ---
 
 <Layout

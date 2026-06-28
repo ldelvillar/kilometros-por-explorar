@@ -1,19 +1,26 @@
 import { SITE_CONFIG } from '@/config/site';
 import { getSiteUrl } from '@/utils/getUrls';
 
-// Schema base para la organización
+// IDs estables para enlazar nodos dentro del @graph (evita entidades duplicadas)
+export const ORGANIZATION_ID = `${SITE_CONFIG.domain}/#organization`;
+export const WEBSITE_ID = `${SITE_CONFIG.domain}/#website`;
+
+// Schema base para la organización (TravelAgency es un subtipo de LocalBusiness)
 export const getOrganizationSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'TravelAgency',
+  '@id': ORGANIZATION_ID,
   name: SITE_CONFIG.company.name,
   url: SITE_CONFIG.domain,
   logo: getSiteUrl('/images/brand/logo.png'),
+  image: getSiteUrl('/images/brand/logo.png'),
   description: SITE_CONFIG.seo.defaultDescription,
   email: SITE_CONFIG.company.email,
   telephone: SITE_CONFIG.company.phone,
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Madrid',
+    addressRegion: 'Madrid',
     addressCountry: 'ES',
   },
   areaServed: {
@@ -63,15 +70,12 @@ export const getWebPageSchema = (
 export const getWebSiteSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': WEBSITE_ID,
   name: SITE_CONFIG.company.name,
   description: SITE_CONFIG.seo.defaultDescription,
   url: SITE_CONFIG.domain,
   inLanguage: 'es-ES',
-  publisher: {
-    '@type': 'Organization',
-    name: SITE_CONFIG.company.name,
-    logo: getSiteUrl('/images/brand/logo.png'),
-  },
+  publisher: { '@id': ORGANIZATION_ID },
   potentialAction: {
     '@type': 'SearchAction',
     target: {
@@ -112,17 +116,55 @@ export const getTouristDestinationSchema = (
   destinationName: string,
   description: string,
   imageUrl?: string,
-  country?: string
+  country?: string,
+  pathname?: string
 ) => ({
   '@context': 'https://schema.org',
   '@type': 'TouristDestination',
+  ...(pathname && { '@id': `${getSiteUrl(pathname)}#destination` }),
   name: destinationName,
   description: description,
+  ...(pathname && { url: getSiteUrl(pathname) }),
   ...(imageUrl && {
     image: imageUrl.startsWith('http') ? imageUrl : getSiteUrl(imageUrl),
   }),
   ...(country && { containedInPlace: { '@type': 'Country', name: country } }),
   touristType: 'international visitors',
+});
+
+// Schema para un viaje turístico personalizado (TouristTrip) hacia un destino.
+// Representa "un viaje a medida que planificamos", enlazando el destino y la agencia.
+export const getTouristTripSchema = (
+  tripName: string,
+  description: string,
+  pathname: string,
+  imageUrl?: string,
+  country?: string,
+  touristType?: string
+) => ({
+  '@context': 'https://schema.org',
+  '@type': 'TouristTrip',
+  '@id': `${getSiteUrl(pathname)}#trip`,
+  name: tripName,
+  description: description,
+  url: getSiteUrl(pathname),
+  ...(imageUrl && {
+    image: imageUrl.startsWith('http') ? imageUrl : getSiteUrl(imageUrl),
+  }),
+  ...(touristType && { touristType }),
+  itinerary: {
+    '@type': 'ItemList',
+    numberOfItems: 1,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: { '@id': `${getSiteUrl(pathname)}#destination` },
+      },
+    ],
+  },
+  ...(country && { arrivalLocation: { '@type': 'Country', name: country } }),
+  provider: { '@id': ORGANIZATION_ID },
 });
 
 // Tipo para items del FAQ
