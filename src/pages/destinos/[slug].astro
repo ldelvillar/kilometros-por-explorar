@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 
 const { destination } = Astro.props;
 
-const title = `${destination.data.name} | Kilómetros por Explorar`;
+const title = `Viajar a ${destination.data.name} a tu Medida | Kilómetros por Explorar`;
 const description = destination.data.shortDescription;
 
 const pageSchema = getTouristDestinationSchema(
