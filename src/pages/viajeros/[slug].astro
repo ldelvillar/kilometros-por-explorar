@@ -91,82 +91,84 @@ const schema = {
   image={customer.data.image}
   imageAlt={`El viaje de ${customer.data.name} con Kilómetros por Explorar`}
 >
-  <!-- Hero Section -->
-  <section
-    id="hero"
-    class="relative z-10 mx-auto max-w-6xl overflow-hidden px-4 pt-24 lg:px-8"
-  >
-    <!-- Breadcrumb -->
-    <Breadcrumbs items={breadcrumbItems} class="mb-6" includeSchema={false} />
-
-    <!-- Customer flag -->
-    <div class="mb-6">
-      <img
-        src={customer.data.destinationFlagImage.src}
-        alt={`Bandera de ${customer.data.destination.name}`}
-        width={300}
-        height={150}
-        class="h-12 w-auto object-contain"
-        loading="eager"
-      />
-    </div>
-
-    <!-- Hero Title -->
-    <h1
-      class="mb-10 text-3xl font-bold text-gray-900 md:text-[42px] md:leading-14 lg:mb-18 lg:text-5xl"
+  <main id="main">
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative z-10 mx-auto max-w-6xl overflow-hidden px-4 pt-24 lg:px-8"
     >
-      {customer.data.title}
-    </h1>
+      <!-- Breadcrumb -->
+      <Breadcrumbs items={breadcrumbItems} class="mb-6" includeSchema={false} />
 
-    <!-- Key Metrics -->
-    <div class="mb-8 grid grid-cols-2 gap-6 md:grid-cols-4">
-      {
-        customer.data.metrics.map((metric, index) => (
-          <div
-            class={`flex flex-col items-center justify-center md:p-4 ${index < 3 ? 'md:border-r md:border-gray-100' : ''}`}
-          >
-            <span class="mb-2 bg-gradient-to-b from-blue-700 to-primary bg-clip-text font-blimone text-3xl font-bold text-transparent md:text-5xl">
-              {metric.value}
-            </span>
-            <p class="text-center text-lg text-gray-600">{metric.label}</p>
-          </div>
-        ))
-      }
-    </div>
-
-    <!-- Image -->
-    <div class="relative mt-18 overflow-hidden shadow-lg lg:mx-3">
-      <Image
-        src={customer.data.image}
-        alt={`Foto del viaje de ${customer.data.name}`}
-        widths={[640, 1024, 1536, 1920]}
-        sizes="(max-width: 1152px) 100vw, 1152px"
-        class="max-h-[600px] w-full object-cover"
-        loading="eager"
-      />
-    </div>
-  </section>
-
-  <!-- Timeline Section-->
-  <section class="mx-auto max-w-7xl px-4 pt-12 md:pt-16 lg:px-8">
-    <div class="mx-auto flex max-w-4xl flex-col gap-12 lg:flex-row-reverse">
-      <div class="px-4">
-        <CustomerTimeline
-          description={customer.data.description}
-          destination={customer.data.destination}
+      <!-- Customer flag -->
+      <div class="mb-6">
+        <img
+          src={customer.data.destinationFlagImage.src}
+          alt={`Bandera de ${customer.data.destination.name}`}
+          width={300}
+          height={150}
+          class="h-12 w-auto object-contain"
+          loading="eager"
         />
       </div>
-    </div>
-  </section>
 
-  <!-- Content Section -->
-  <section class="mx-auto max-w-4xl px-4 py-8">
-    <hr class="mb-8 border-t border-gray-200 lg:mb-16" />
-    <article class="prose max-w-none text-gray-800 md:prose-lg lg:prose-xl">
-      <Content />
-    </article>
-    <hr class="mt-8 border-t border-gray-200 lg:mt-16" />
-  </section>
+      <!-- Hero Title -->
+      <h1
+        class="mb-10 text-3xl font-bold text-gray-900 md:text-[42px] md:leading-14 lg:mb-18 lg:text-5xl"
+      >
+        {customer.data.title}
+      </h1>
+
+      <!-- Key Metrics -->
+      <div class="mb-8 grid grid-cols-2 gap-6 md:grid-cols-4">
+        {
+          customer.data.metrics.map((metric, index) => (
+            <div
+              class={`flex flex-col items-center justify-center md:p-4 ${index < 3 ? 'md:border-r md:border-gray-100' : ''}`}
+            >
+              <span class="mb-2 bg-gradient-to-b from-blue-700 to-primary bg-clip-text font-blimone text-3xl font-bold text-transparent md:text-5xl">
+                {metric.value}
+              </span>
+              <p class="text-center text-lg text-gray-600">{metric.label}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- Image -->
+      <div class="relative mt-18 overflow-hidden shadow-lg lg:mx-3">
+        <Image
+          src={customer.data.image}
+          alt={`Foto del viaje de ${customer.data.name}`}
+          widths={[640, 1024, 1536, 1920]}
+          sizes="(max-width: 1152px) 100vw, 1152px"
+          class="max-h-[600px] w-full object-cover"
+          loading="eager"
+        />
+      </div>
+    </section>
+
+    <!-- Timeline Section-->
+    <section class="mx-auto max-w-7xl px-4 pt-12 md:pt-16 lg:px-8">
+      <div class="mx-auto flex max-w-4xl flex-col gap-12 lg:flex-row-reverse">
+        <div class="px-4">
+          <CustomerTimeline
+            description={customer.data.description}
+            destination={customer.data.destination}
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="mx-auto max-w-4xl px-4 py-8">
+      <hr class="mb-8 border-t border-gray-200 lg:mb-16" />
+      <article class="prose max-w-none text-gray-800 md:prose-lg lg:prose-xl">
+        <Content />
+      </article>
+      <hr class="mt-8 border-t border-gray-200 lg:mt-16" />
+    </section>
+  </main>
 
   <Cta />
 </Layout>
