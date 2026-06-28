@@ -15,6 +15,7 @@ const destinations = defineCollection({
         shortDescription: z.string(),
         longDescription: z.string(),
         image: image(),
+        imageAlt: z.string(),
         category: z.enum([
           'cultural',
           'playa',

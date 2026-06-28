@@ -73,7 +73,7 @@ const schema = getCombinedSchema(destinationSchema, tripSchema);
   description={description}
   schema={schema}
   image={destination.data.image}
-  imageAlt={`Viajar a ${destination.data.name} con Kilómetros por Explorar`}
+  imageAlt={destination.data.imageAlt}
 >
   <main id="main">
     <!-- Breadcrumbs -->
@@ -95,7 +95,7 @@ const schema = getCombinedSchema(destinationSchema, tripSchema);
       <p class="mb-8 text-gray-600">{destination.data.longDescription}</p>
       <Image
         src={destination.data.image}
-        alt={`Imagen de ${destination.data.name}`}
+        alt={destination.data.imageAlt}
         class="h-[400px] w-full rounded-2xl object-cover md:h-[600px]"
         widths={[640, 1280, 1920]}
         sizes="(max-width: 1280px) 100vw, 1280px"
