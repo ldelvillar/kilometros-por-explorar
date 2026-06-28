@@ -2,8 +2,10 @@
 import Layout from '@/layouts/Layout.astro';
 import InteractiveDestinations from '@/components/destinations/InteractiveDestinations.astro';
 import Cta from '@/components/Cta.astro';
+import Magnifier from '@/assets/icons/magnifier.svg';
 
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import { getCollection } from 'astro:content';
 
 const title = 'Destinos de Viaje | Kilómetros por Explorar';
 const description =
@@ -12,22 +14,121 @@ const pathname = Astro.url.pathname;
 
 const pageSchema = getWebPageSchema(title, description, pathname);
 const schema = getCombinedSchema(pageSchema);
+
+const allDestinations = await getCollection('destinations');
+
+const categories = [
+  {
+    id: 'all-destinations-section',
+    label: 'Todos',
+    count: allDestinations.length,
+  },
+  {
+    id: 'cultural-section',
+    label: 'Culturales',
+    count: allDestinations.filter(d => d.data.category === 'cultural').length,
+  },
+  {
+    id: 'beach-section',
+    label: 'Playa',
+    count: allDestinations.filter(d => d.data.category === 'playa').length,
+  },
+  {
+    id: 'nature-section',
+    label: 'Naturaleza',
+    count: allDestinations.filter(d => d.data.category === 'naturaleza').length,
+  },
+  {
+    id: 'boat-section',
+    label: 'Barco',
+    count: allDestinations.filter(d => d.data.category === 'barco').length,
+  },
+  {
+    id: 'city-section',
+    label: 'Ciudades',
+    count: allDestinations.filter(d => d.data.category === 'ciudad').length,
+  },
+  {
+    id: 'surprise-section',
+    label: 'Sorpresa',
+    count: allDestinations.filter(d => d.data.category === 'sorpresa').length,
+  },
+];
 ---
 
 <Layout title={title} description={description} schema={schema}>
   <main id="main" class="animate-fade-in-up">
-    <section class="mx-auto max-w-7xl px-4 pt-24 pb-4">
-      <h1 class="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-        Explora nuestros destinos
-      </h1>
-      <p class="text-lg leading-relaxed text-gray-600">
-        Descubre un mundo de posibilidades con nuestros destinos de viaje
-        cuidadosamente seleccionados. Ya sea que busques relajación, aventura o
-        inmersión cultural, tenemos la escapada perfecta para ti.
-      </p>
+    <section class="mx-auto max-w-7xl px-4 pt-32 pb-8">
+      <div class="mx-auto max-w-[760px] text-center">
+        <h1
+          class="mb-3 text-[13px] font-extrabold uppercase tracking-[0.14em] text-primary"
+        >
+          Explora nuestros destinos
+        </h1>
+        <p
+          class="mb-7 text-[clamp(34px,5vw,46px)] font-extrabold leading-[1.05] tracking-[-0.03em] text-gray-900"
+        >
+          ¿A dónde quieres ir?
+        </p>
+
+        <div class="relative mb-6">
+          <Magnifier
+            class="pointer-events-none absolute left-5 top-1/2 size-[22px] -translate-y-1/2 text-gray-400"
+          />
+          <input
+            id="hero-search"
+            type="text"
+            placeholder="Busca un país, ciudad o experiencia..."
+            class="hero-search-input w-full rounded-full border border-gray-200 bg-white py-[18px] pr-[140px] pl-[54px] font-display text-[17px] text-gray-800 shadow-[0_8px_24px_-16px_rgba(15,23,42,0.3)] outline-none transition-all duration-200 placeholder:text-gray-400 focus:border-primary focus:shadow-[0_0_0_3px_rgba(18,163,237,0.2)]"
+          />
+          <button
+            type="button"
+            id="hero-search-btn"
+            class="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-primary px-6 py-[11px] text-[15px] font-bold text-white transition-colors duration-200 hover:bg-primary/90"
+          >
+            Buscar
+          </button>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2.5">
+          {
+            categories.map(cat => (
+              <button
+                type="button"
+                class="hero-chip inline-flex cursor-pointer items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-[9px] text-sm font-bold text-gray-800 transition-all duration-150 hover:border-primary hover:text-primary"
+                data-section={cat.id}
+                data-active={
+                  cat.id === 'all-destinations-section' ? 'true' : 'false'
+                }
+              >
+                {cat.label}
+                <span class="text-xs font-extrabold text-gray-400">
+                  {cat.count}
+                </span>
+              </button>
+            ))
+          }
+        </div>
+      </div>
     </section>
 
     <InteractiveDestinations />
     <Cta />
   </main>
 </Layout>
+
+<style>
+  .hero-chip[data-active='true'] {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+  }
+
+  .hero-chip[data-active='true']:hover {
+    color: white;
+  }
+
+  .hero-chip[data-active='true'] span {
+    color: rgba(255, 255, 255, 0.85);
+  }
+</style>

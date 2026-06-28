@@ -1,6 +1,5 @@
 ---
 import DestinationCard from '@/components/destinations/DestinationCard.astro';
-import DestinationSearch from '@/components/destinations/DestinationSearch.astro';
 import { getCollection } from 'astro:content';
 import { getImage } from 'astro:assets';
 
@@ -33,9 +32,7 @@ const uniqueDestinations = Array.from(
   new Map(allDestinations.map(item => [item.id, item])).values()
 );
 
-// Prepare destinations data for client-side search.
-// Search-result cards are rendered as HTML strings in the browser, so they need
-// a plain URL — generate an optimized thumbnail with getImage().
+// Prepare destinations data for client-side search
 const destinationsData = await Promise.all(
   uniqueDestinations.map(async destination => ({
     name: destination.data.name,
@@ -48,8 +45,6 @@ const destinationsData = await Promise.all(
 ---
 
 <section class="mx-auto max-w-7xl px-4 pt-4">
-  <DestinationSearch />
-
   <!-- All Destinations - Always visible initially (organized by categories) -->
   <div id="all-destinations-section" class="destination-section">
     <!-- Featured Destinations -->
@@ -141,7 +136,7 @@ const destinationsData = await Promise.all(
   </div>
 
   <!-- Cultural Destinations -->
-  <div id="cultural-section" class="destination-section hidden">
+  <div id="cultural-section" class="destination-section mb-12 hidden">
     <div class="grid gap-6 md:grid-cols-3">
       {
         culturalDestinations.map(destination => (
@@ -152,7 +147,7 @@ const destinationsData = await Promise.all(
   </div>
 
   <!-- Beach Destinations -->
-  <div id="beach-section" class="destination-section hidden">
+  <div id="beach-section" class="destination-section mb-12 hidden">
     <div class="grid gap-6 md:grid-cols-3">
       {
         beachDestinations.map(destination => (
@@ -163,7 +158,7 @@ const destinationsData = await Promise.all(
   </div>
 
   <!-- Nature Destinations -->
-  <div id="nature-section" class="destination-section hidden">
+  <div id="nature-section" class="destination-section mb-12 hidden">
     <div class="grid gap-6 md:grid-cols-3">
       {
         natureDestinations.map(destination => (
@@ -174,7 +169,7 @@ const destinationsData = await Promise.all(
   </div>
 
   <!-- Boat Destinations -->
-  <div id="boat-section" class="destination-section hidden">
+  <div id="boat-section" class="destination-section mb-12 hidden">
     <div class="grid gap-6 md:grid-cols-3">
       {
         boatDestinations.map(destination => (
@@ -185,7 +180,7 @@ const destinationsData = await Promise.all(
   </div>
 
   <!-- City Destinations -->
-  <div id="city-section" class="destination-section hidden">
+  <div id="city-section" class="destination-section mb-12 hidden">
     <div class="grid gap-6 md:grid-cols-3">
       {
         cityDestinations.map(destination => (
@@ -196,7 +191,7 @@ const destinationsData = await Promise.all(
   </div>
 
   <!-- Surprise Pack Destinations -->
-  <div id="surprise-section" class="destination-section hidden">
+  <div id="surprise-section" class="destination-section mb-12 hidden">
     <div class="grid gap-6 md:grid-cols-3">
       {
         surprisePackDestinations.map(destination => (
@@ -207,7 +202,7 @@ const destinationsData = await Promise.all(
   </div>
 
   <!-- Search Results (initially hidden) -->
-  <div id="search-results" class="destination-section hidden">
+  <div id="search-results" class="destination-section mb-12 hidden">
     <div id="search-results-grid" class="grid gap-6 md:grid-cols-3">
       <!-- Results will be populated by JavaScript -->
     </div>
@@ -220,24 +215,10 @@ const destinationsData = await Promise.all(
 </section>
 
 <script define:vars={{ destinationsData }}>
-  // Category mapping for navigation
-  const categoryMapping = {
-    'Todos los destinos': 'all-destinations-section',
-    'Destinos culturales': 'cultural-section',
-    Playa: 'beach-section',
-    Naturaleza: 'nature-section',
-    'Ciudades europeas': 'city-section',
-    'Viajes en barco': 'boat-section',
-    'Packs sorpresa': 'surprise-section',
-  };
-
   // Initialize functionality when DOM is loaded
   document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('nav button');
-    const categorySelect = document.getElementById('category-select');
-    const searchInput = document.querySelector(
-      'input[placeholder="Buscar destinos..."]'
-    );
+    const chips = document.querySelectorAll('.hero-chip');
+    const searchInput = document.getElementById('hero-search');
     const sections = document.querySelectorAll('.destination-section');
 
     let currentSection = 'all-destinations-section';
@@ -309,62 +290,30 @@ const destinationsData = await Promise.all(
       showSection('search-results');
     }
 
-    // Tab navigation functionality
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function () {
-        if (isSearching && searchInput) {
-          // Clear search when switching tabs
-          searchInput.value = '';
-          isSearching = false;
-        }
-
-        // Remove active state from all tabs
-        tabs.forEach(t => {
-          t.classList.remove('border-gray-900', 'text-gray-900');
-          t.classList.add('border-transparent', 'text-gray-500');
-        });
-
-        // Add active state to clicked tab
-        this.classList.remove('border-transparent', 'text-gray-500');
-        this.classList.add('border-gray-900', 'text-gray-900');
-
-        // Show corresponding section
-        const sectionId = this.getAttribute('data-category');
-        if (sectionId) {
-          showSection(sectionId);
-          // Sync mobile select with desktop tabs
-          if (categorySelect) {
-            categorySelect.value = sectionId;
-          }
-        }
+    // Highlight the pill that matches the active section.
+    function setActiveChip(sectionId) {
+      chips.forEach(chip => {
+        const active = chip.getAttribute('data-section') === sectionId;
+        chip.setAttribute('data-active', active ? 'true' : 'false');
       });
-    });
+    }
 
-    // Mobile select functionality
-    if (categorySelect) {
-      categorySelect.addEventListener('change', function () {
+    // Category pill navigation.
+    chips.forEach(chip => {
+      chip.addEventListener('click', function () {
         if (isSearching && searchInput) {
           // Clear search when switching categories
           searchInput.value = '';
           isSearching = false;
         }
 
-        const sectionId = this.value;
-        showSection(sectionId);
-
-        // Sync desktop tabs with mobile select
-        tabs.forEach(tab => {
-          const tabSectionId = tab.getAttribute('data-category');
-          if (tabSectionId === sectionId) {
-            tab.classList.remove('border-transparent', 'text-gray-500');
-            tab.classList.add('border-gray-900', 'text-gray-900');
-          } else {
-            tab.classList.remove('border-gray-900', 'text-gray-900');
-            tab.classList.add('border-transparent', 'text-gray-500');
-          }
-        });
+        const sectionId = this.getAttribute('data-section');
+        if (sectionId) {
+          setActiveChip(sectionId);
+          showSection(sectionId);
+        }
       });
-    }
+    });
 
     // Search functionality
     if (searchInput) {
@@ -379,10 +328,13 @@ const destinationsData = await Promise.all(
           if (query.length === 0) {
             // Return to previous section when search is cleared
             isSearching = false;
+            setActiveChip(currentSection);
             showSection(currentSection);
           } else if (query.length >= 2) {
             // Perform search with minimum 2 characters
             isSearching = true;
+            // No category is active while searching
+            chips.forEach(chip => chip.setAttribute('data-active', 'false'));
             const results = performSearch(query);
             displaySearchResults(results);
           }
@@ -398,6 +350,7 @@ const destinationsData = await Promise.all(
     if (searchInput && initialQuery && initialQuery.length >= 2) {
       searchInput.value = initialQuery;
       isSearching = true;
+      chips.forEach(chip => chip.setAttribute('data-active', 'false'));
       displaySearchResults(performSearch(initialQuery));
     }
   });
