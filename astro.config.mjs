@@ -23,5 +23,5 @@ export default defineConfig({
       remarkPlugins: [[remarkAlert, { legacyTitle: true }]],
     }),
   },
-  integrations: [sitemap(), preact()],
+  integrations: [sitemap({ lastmod: new Date() }), preact()],
 });
