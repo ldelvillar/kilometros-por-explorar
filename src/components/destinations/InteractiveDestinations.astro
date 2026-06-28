@@ -1,9 +1,19 @@
 ---
 import DestinationCard from '@/components/destinations/DestinationCard.astro';
+import Magnifier from '@/assets/icons/magnifier.svg';
 import { getCollection } from 'astro:content';
-import { getImage } from 'astro:assets';
 
 const allDestinations = await getCollection('destinations');
+
+const categoryKeywords: Record<string, string> = {
+  cultural: 'cultural culturales cultura',
+  playa: 'playa playas costa',
+  naturaleza: 'naturaleza natural montana',
+  ciudad: 'ciudad ciudades urbano',
+  barco: 'barco barcos crucero navegar',
+  sorpresa: 'sorpresa pack packs',
+  destacados: 'destacado destacados',
+};
 
 const featuredDestinations = allDestinations.filter(
   destination => destination.data.featured === true
@@ -30,17 +40,6 @@ const surprisePackDestinations = allDestinations.filter(
 // Remove duplicates based on id
 const uniqueDestinations = Array.from(
   new Map(allDestinations.map(item => [item.id, item])).values()
-);
-
-// Prepare destinations data for client-side search
-const destinationsData = await Promise.all(
-  uniqueDestinations.map(async destination => ({
-    name: destination.data.name,
-    shortDescription: destination.data.shortDescription,
-    image: (await getImage({ src: destination.data.image, width: 1200 })).src,
-    href: destination.id.replace('.md', ''),
-    category: destination.data.category,
-  }))
 );
 ---
 
@@ -203,23 +202,68 @@ const destinationsData = await Promise.all(
 
   <!-- Search Results (initially hidden) -->
   <div id="search-results" class="destination-section mb-12 hidden">
+    <h2
+      id="search-results-count"
+      class="mb-6 text-2xl font-bold text-gray-900"
+      hidden
+    >
+    </h2>
     <div id="search-results-grid" class="grid gap-6 md:grid-cols-3">
-      <!-- Results will be populated by JavaScript -->
+      {
+        uniqueDestinations.map(destination => (
+          <div
+            class="search-card"
+            data-name={destination.data.name}
+            data-search={[
+              destination.data.name,
+              destination.data.country ?? '',
+              categoryKeywords[destination.data.category] ?? '',
+              destination.data.shortDescription,
+            ].join(' ')}
+            hidden
+          >
+            <DestinationCard destination={destination} />
+          </div>
+        ))
+      }
     </div>
-    <div id="no-results" class="hidden py-8 text-center">
-      <p class="text-gray-500">
-        No se encontraron destinos que coincidan con tu búsqueda.
+    <div
+      id="no-results"
+      class="mx-auto hidden max-w-[520px] px-4 pt-16 pb-12 text-center"
+    >
+      <div
+        class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
+      >
+        <Magnifier class="size-8 text-primary" />
+      </div>
+      <h2 class="mb-2 text-2xl font-bold text-gray-900">
+        Sin resultados para «<span id="no-results-query"></span>»
+      </h2>
+      <p class="leading-relaxed text-gray-500">
+        No hemos encontrado destinos que coincidan con tu búsqueda. Prueba con
+        otro término o explora todos nuestros destinos.
       </p>
     </div>
   </div>
 </section>
 
-<script define:vars={{ destinationsData }}>
+<script>
   // Initialize functionality when DOM is loaded
   document.addEventListener('DOMContentLoaded', function () {
     const chips = document.querySelectorAll('.hero-chip');
     const searchInput = document.getElementById('hero-search');
     const sections = document.querySelectorAll('.destination-section');
+    const resultsGrid = document.getElementById('search-results-grid');
+    const resultsCount = document.getElementById('search-results-count');
+    const noResults = document.getElementById('no-results');
+    const noResultsQuery = document.getElementById('no-results-query');
+
+    // Notify the page (index.astro) so it can hide the CTA on the empty state.
+    function setEmptyState(isEmpty: boolean) {
+      document.dispatchEvent(
+        new CustomEvent('destinos:emptychange', { detail: { empty: isEmpty } })
+      );
+    }
 
     let currentSection = 'all-destinations-section';
     let isSearching = false;
@@ -234,58 +278,80 @@ const destinationsData = await Promise.all(
           section.classList.add('hidden');
         }
       });
-      currentSection = sectionId;
+      // Only remember category sections — the search-results view is transient,
+      // so clearing the search returns to the last category, not the results.
+      if (sectionId !== 'search-results') currentSection = sectionId;
     }
 
-    // Function to create destination card HTML
-    function createDestinationCard(destination) {
-      return `
-        <a href="/destinos/${destination.href}" class="group destination-card" data-category="${destination.category}">
-          <article class="space-y-4">
-            <img
-              src="${destination.image}"
-              alt="${destination.name}"
-              class="w-full h-48 object-cover rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
-            />
-            <div class="space-y-2">
-              <h3 class="text-lg font-medium text-gray-800 destination-name">
-                ${destination.name}
-              </h3>
-              <p class="text-gray-600 text-sm destination-description">
-                ${destination.shortDescription}
-              </p>
-            </div>
-          </article>
-        </a>
-      `;
+    // Lowercase + strip accents so "japon" matches "Japón", "peru" -> "Perú", etc.
+    function normalize(str) {
+      return str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '');
     }
 
-    // Function to perform client-side search
+    // Index the pre-rendered cards once: each entry points at its real DOM
+    // node (a DestinationCard) plus its normalized name and searchable text.
+    const searchIndex = Array.from(
+      resultsGrid ? resultsGrid.querySelectorAll('.search-card') : []
+    ).map(node => ({
+      node,
+      name: normalize(node.dataset.name || ''),
+      haystack: normalize(node.dataset.search || ''),
+    }));
+
+    // Tokenize the query (every word must match) and rank name hits highest.
     function performSearch(query) {
-      const lowerQuery = query.toLowerCase();
-      const results = destinationsData.filter(destination => {
-        const name = destination.name.toLowerCase();
-        const description = destination.shortDescription.toLowerCase();
-        return name.includes(lowerQuery) || description.includes(lowerQuery);
-      });
-      return results;
+      const tokens = normalize(query).split(/\s+/).filter(Boolean);
+      if (tokens.length === 0) return [];
+
+      const scored = [];
+      for (const entry of searchIndex) {
+        // Require every token to appear somewhere in the searchable text.
+        if (!tokens.every(token => entry.haystack.includes(token))) continue;
+
+        // Score: name matches weigh most, with a bonus for prefix matches.
+        let score = 0;
+        for (const token of tokens) {
+          if (entry.name.includes(token)) score += 10;
+          if (entry.name.startsWith(token)) score += 5;
+        }
+        scored.push({ entry, score });
+      }
+
+      scored.sort(
+        (a, b) => b.score - a.score || a.entry.name.localeCompare(b.entry.name)
+      );
+      return scored.map(item => item.entry);
     }
 
-    // Function to display search results
-    function displaySearchResults(results) {
-      const resultsGrid = document.getElementById('search-results-grid');
-      const noResults = document.getElementById('no-results');
-
+    // Show the matching pre-rendered cards (hide the rest) in ranked order.
+    function displaySearchResults(results, query) {
       if (!resultsGrid || !noResults) return;
 
-      if (results.length === 0) {
-        resultsGrid.innerHTML = '';
-        noResults.classList.remove('hidden');
-      } else {
-        noResults.classList.add('hidden');
-        resultsGrid.innerHTML = results.map(createDestinationCard).join('');
+      const matched = new Set(results.map(entry => entry.node));
+      searchIndex.forEach(entry => {
+        entry.node.hidden = !matched.has(entry.node);
+      });
+      // Reorder so the highest-ranked matches come first.
+      results.forEach(entry => resultsGrid.appendChild(entry.node));
+
+      const count = results.length;
+
+      // Heading with the result count (hidden when there are no matches).
+      if (resultsCount) {
+        resultsCount.textContent =
+          count === 1
+            ? '1 destino encontrado'
+            : `${count} destinos encontrados`;
+        resultsCount.hidden = count === 0;
       }
+
+      // Empty state shows the searched term and hides the page CTA.
+      if (noResultsQuery) noResultsQuery.textContent = query;
+      noResults.classList.toggle('hidden', count > 0);
+      setEmptyState(count === 0);
 
       showSection('search-results');
     }
@@ -305,6 +371,8 @@ const destinationsData = await Promise.all(
           // Clear search when switching categories
           searchInput.value = '';
           isSearching = false;
+          syncUrl(null);
+          setEmptyState(false);
         }
 
         const sectionId = this.getAttribute('data-section');
@@ -315,43 +383,69 @@ const destinationsData = await Promise.all(
       });
     });
 
+    // Reflect the active query in the URL (?q=) without adding history
+    // entries, so searches are shareable and survive a reload.
+    function syncUrl(query) {
+      const url = new URL(window.location.href);
+      if (query) url.searchParams.set('q', query);
+      else url.searchParams.delete('q');
+      window.history.replaceState({}, '', url);
+    }
+
+    // Run a search and show the results (no category is active while searching).
+    function runSearch(query) {
+      isSearching = true;
+      chips.forEach(chip => chip.setAttribute('data-active', 'false'));
+      displaySearchResults(performSearch(query), query);
+      syncUrl(query);
+    }
+
+    // Restore the last selected category when the search is emptied.
+    function clearSearch() {
+      isSearching = false;
+      setActiveChip(currentSection);
+      showSection(currentSection);
+      syncUrl(null);
+      setEmptyState(false);
+    }
+
     // Search functionality
     if (searchInput) {
+      // Debounced live search as the user types.
       searchInput.addEventListener('input', function () {
         const query = this.value.trim();
-
-        // Clear previous timeout
         clearTimeout(searchTimeout);
-
-        // Delay search to avoid too many operations
         searchTimeout = setTimeout(() => {
-          if (query.length === 0) {
-            // Return to previous section when search is cleared
-            isSearching = false;
-            setActiveChip(currentSection);
-            showSection(currentSection);
-          } else if (query.length >= 2) {
-            // Perform search with minimum 2 characters
-            isSearching = true;
-            // No category is active while searching
-            chips.forEach(chip => chip.setAttribute('data-active', 'false'));
-            const results = performSearch(query);
-            displaySearchResults(results);
-          }
+          if (query.length >= 2) runSearch(query);
+          else clearSearch();
         }, 300);
+      });
+
+      // "Buscar" button + Enter run the search immediately (skip the debounce).
+      const searchButton = document.getElementById('hero-search-btn');
+      const submitSearch = () => {
+        const query = searchInput.value.trim();
+        clearTimeout(searchTimeout);
+        if (query.length >= 2) runSearch(query);
+        else clearSearch();
+        searchInput.focus();
+      };
+      if (searchButton) searchButton.addEventListener('click', submitSearch);
+      searchInput.addEventListener('keydown', event => {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          submitSearch();
+        }
       });
     }
 
-    // Pre-fill and run search from the ?q= URL parameter.
-    // Powers the WebSite schema SearchAction (/destinos?q={search_term_string}).
+    // Pre-fill and run search from the ?q= URL parameter
     const initialQuery = new URLSearchParams(window.location.search)
       .get('q')
       ?.trim();
     if (searchInput && initialQuery && initialQuery.length >= 2) {
       searchInput.value = initialQuery;
-      isSearching = true;
-      chips.forEach(chip => chip.setAttribute('data-active', 'false'));
-      displaySearchResults(performSearch(initialQuery));
+      runSearch(initialQuery);
     }
   });
 </script>
@@ -362,6 +456,14 @@ const destinationsData = await Promise.all(
   }
 
   .destination-section.hidden {
+    display: none;
+  }
+
+  .search-card {
+    display: contents;
+  }
+
+  .search-card[hidden] {
     display: none;
   }
 </style>

@@ -57,7 +57,7 @@ const categories = [
 ---
 
 <Layout title={title} description={description} schema={schema}>
-  <main id="main" class="animate-fade-in-up">
+  <main id="main" class="min-h-screen animate-fade-in-up">
     <section class="mx-auto max-w-7xl px-4 pt-32 pb-8">
       <div class="mx-auto max-w-[760px] text-center">
         <h1
@@ -113,7 +113,9 @@ const categories = [
     </section>
 
     <InteractiveDestinations />
-    <Cta />
+    <div id="destinos-cta">
+      <Cta />
+    </div>
   </main>
 </Layout>
 
@@ -132,3 +134,11 @@ const categories = [
     color: rgba(255, 255, 255, 0.85);
   }
 </style>
+
+<script>
+  // Hide the CTA while the search shows its empty state (mirrors the design).
+  document.addEventListener('destinos:emptychange', event => {
+    const cta = document.getElementById('destinos-cta');
+    if (cta) cta.hidden = (event as CustomEvent<{ empty: boolean }>).detail.empty;
+  });
+</script>
