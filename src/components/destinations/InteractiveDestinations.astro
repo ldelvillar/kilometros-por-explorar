@@ -55,6 +55,7 @@ const uniqueDestinations = Array.from(
             <DestinationCard
               destination={destination}
               loading={index < 3 ? 'eager' : 'lazy'}
+              priority={index === 0}
             />
           ))
         }

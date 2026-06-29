@@ -27,7 +27,11 @@ const sortedPosts: CollectionEntry<'blog'>[] = posts.sort(
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {
         sortedPosts.map((post, index) => (
-          <BlogCard post={post} loading={index < 3 ? 'eager' : 'lazy'} />
+          <BlogCard
+            post={post}
+            loading={index < 3 ? 'eager' : 'lazy'}
+            priority={index === 0}
+          />
         ))
       }
     </div>

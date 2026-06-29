@@ -6,9 +6,10 @@ import HalfArrow from '@/assets/icons/halfArrow.svg';
 interface Props {
   destination: CollectionEntry<'destinations'>;
   loading?: 'eager' | 'lazy';
+  priority?: boolean;
 }
 
-const { destination, loading = 'lazy' } = Astro.props;
+const { destination, loading = 'lazy', priority = false } = Astro.props;
 ---
 
 <a
@@ -27,6 +28,7 @@ const { destination, loading = 'lazy' } = Astro.props;
         width={600}
         densities={[1, 2]}
         loading={loading}
+        fetchpriority={priority ? 'high' : undefined}
       />
       <!-- Gradient overlay always visible -->
       <div

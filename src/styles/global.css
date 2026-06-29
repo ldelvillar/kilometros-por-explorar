@@ -55,13 +55,15 @@ a:hover .animated-underline::after {
   width: 100%;
 }
 
+/* Entrance animation — intentionally transform-only (no opacity:0).
+   An element starting at opacity 0 isn't counted as "painted", which delays
+   Largest Contentful Paint for above-the-fold content. translateY is composited,
+   so it neither defers LCP nor causes layout shift (CLS). */
 @keyframes fadeInUp {
   from {
-    opacity: 0;
     transform: translateY(30px);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }

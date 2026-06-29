@@ -7,9 +7,10 @@ import Arrow from '@/assets/icons/arrow.svg';
 interface Props {
   post: CollectionEntry<'blog'>;
   loading: 'eager' | 'lazy';
+  priority?: boolean;
 }
 
-const { post, loading } = Astro.props;
+const { post, loading, priority = false } = Astro.props;
 ---
 
 <article class="group h-full overflow-hidden rounded-2xl bg-white shadow-lg">
@@ -23,6 +24,7 @@ const { post, loading } = Astro.props;
         alt={post.data.title}
         class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
         loading={loading}
+        fetchpriority={priority ? 'high' : undefined}
       />
     </div>
 
