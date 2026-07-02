@@ -13,7 +13,7 @@ const timelineItems: TimelineItem[] = [
     title: 'Comenzamos Nuestro Viaje',
     date: 'Enero 2024',
     description:
-      'En enero de 2024 nos conocimos y desde entonces no hemos dejado de coleccionar experiencias increíbles. Con más de 12 países en nuestro mapa personal, cada viaje nos ha demostrado que las mejores aventuras se viven en compañía.',
+      'En enero de 2024 nos conocimos y desde entonces no hemos dejado de coleccionar experiencias increíbles. Con 28 países en nuestro mapa personal, cada viaje nos ha demostrado que las mejores aventuras se viven en compañía.',
   },
   {
     title: 'Lanzamiento del Blog',
@@ -31,36 +31,263 @@ const timelineItems: TimelineItem[] = [
 ];
 ---
 
-<ol class="relative mt-6 ml-1 border-s border-gray-200">
-  {
-    timelineItems.map((item, index) => (
-      <li
-        class={`${index === timelineItems.length - 1 ? '' : 'mb-20 md:mb-24'} ms-6`}
-      >
-        <div class="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-primary" />
-        <div class="flex flex-col md:flex-row">
-          <div class="md:w-[40%]">
-            <h3 class="text-xl font-bold text-primary">{item.title}</h3>
-            <time class="text-sm leading-none font-normal text-gray-700">
+<div class="mx-auto max-w-7xl">
+  <div class="mx-auto mb-14 max-w-xl text-center">
+    <span
+      class="mb-2 block text-sm font-bold tracking-wide text-primary uppercase"
+    >
+      Nuestro Viaje
+    </span>
+    <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
+      Cómo llegamos hasta aquí
+    </h2>
+  </div>
+
+  <ol class="tl" data-timeline>
+    <span class="tl-rail" data-rail aria-hidden="true"></span>
+    <span class="tl-fill" data-fill aria-hidden="true"></span>
+    {
+      timelineItems.map((item, index) => {
+        const onRight = index % 2 === 0;
+        const isLast = index === timelineItems.length - 1;
+        return (
+          <li class:list={['tl-item', { 'tl-item--last': isLast }]}>
+            <span class="tl-node" data-node aria-hidden="true" />
+            <span
+              class:list={[
+                'tl-date',
+                onRight ? 'tl-date--pillLeft' : 'tl-date--pillRight',
+              ]}
+              data-date
+            >
               {item.date}
-            </time>
-          </div>
-          <div class="md:ml-8 md:w-[60%]">
-            <p class="mt-8 max-w-lg text-gray-700 md:mt-0">
-              {item.description}
-            </p>
-            {item.link && (
-              <a
-                href={item.link}
-                class="mt-6 inline-flex text-sm font-medium text-primary hover:underline focus:text-primary"
-              >
-                Ver más
-                <HalfArrow class="size-5" />
-              </a>
-            )}
-          </div>
-        </div>
-      </li>
-    ))
+            </span>
+            <div class="tl-col tl-col--left">
+              {!onRight && (
+                <div class="tl-card">
+                  <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    {item.title}
+                  </h3>
+                  <p class="leading-relaxed text-gray-600">
+                    {item.description}
+                  </p>
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline focus:underline"
+                    >
+                      Ver más
+                      <HalfArrow class="size-5" />
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+            <div class="tl-col tl-col--mid" aria-hidden="true" />
+            <div class="tl-col tl-col--right">
+              {onRight && (
+                <div class="tl-card">
+                  <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    {item.title}
+                  </h3>
+                  <p class="leading-relaxed text-gray-600">
+                    {item.description}
+                  </p>
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline focus:underline"
+                    >
+                      Ver más
+                      <HalfArrow class="size-5" />
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+          </li>
+        );
+      })
+    }
+  </ol>
+</div>
+
+<style>
+  .tl {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
-</ol>
+
+  /* Continuous base rail — spans first node to last node (set via JS) */
+  .tl-rail {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: #e5e7eb;
+  }
+
+  /* Scroll-driven fill */
+  .tl-fill {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    transition: height 0.12s linear;
+  }
+
+  .tl-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 72px 1fr;
+    align-items: start;
+    padding-bottom: 72px;
+  }
+  .tl-item--last {
+    padding-bottom: 0;
+  }
+
+  /* Node — turns primary as the scroll fill reaches it */
+  .tl-node {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    transform: translateX(-50%) scale(1);
+    width: 16px;
+    height: 16px;
+    border-radius: 9999px;
+    border: 3px solid #fff;
+    background: #d1d5db;
+    box-shadow: 0 0 0 1px #e5e7eb;
+    transition:
+      background 0.3s,
+      box-shadow 0.3s,
+      transform 0.3s;
+    z-index: 1;
+  }
+  .tl-node.is-active {
+    background: var(--color-primary);
+    box-shadow: 0 0 0 5px rgba(18, 163, 237, 0.1);
+    transform: translateX(-50%) scale(1.2);
+  }
+
+  /* Date pill — hugs the circle, vertically centered on the node */
+  .tl-date {
+    position: absolute;
+    top: 12px;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    background: #f3f4f6;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    white-space: nowrap;
+    transition:
+      background 0.3s,
+      color 0.3s;
+  }
+  .tl-date.is-active {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .tl-date--pillLeft {
+    right: calc(50% + 22px);
+  }
+  .tl-date--pillRight {
+    left: calc(50% + 22px);
+  }
+
+  .tl-col--left {
+    padding-right: 40px;
+  }
+  .tl-col--right {
+    padding-left: 40px;
+  }
+
+  .tl-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 28px 32px;
+    transition:
+      box-shadow 0.3s,
+      border-color 0.3s,
+      transform 0.3s;
+  }
+  .tl-item:hover .tl-card {
+    box-shadow:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
+  }
+
+  /* ≤1024px: rail pinned left, card fills the rest of the width */
+  @media (max-width: 1024px) {
+    .tl-item {
+      display: block;
+      padding-left: 40px;
+      padding-top: 44px;
+    }
+    .tl-rail,
+    .tl-fill {
+      left: 7px;
+    }
+    .tl-node {
+      left: 7px;
+    }
+    .tl-date {
+      left: 30px;
+      right: auto;
+      top: 0;
+      transform: none;
+    }
+    .tl-col {
+      padding: 0;
+    }
+  }
+</style>
+
+<script>
+  function initTimeline() {
+    const ol = document.querySelector<HTMLElement>('[data-timeline]');
+    if (!ol) return;
+    const rail = ol.querySelector<HTMLElement>('[data-rail]');
+    const fill = ol.querySelector<HTMLElement>('[data-fill]');
+    const nodes = Array.from(ol.querySelectorAll<HTMLElement>('[data-node]'));
+    const dates = Array.from(ol.querySelectorAll<HTMLElement>('[data-date]'));
+    if (!rail || !fill || nodes.length === 0) return;
+
+    const update = () => {
+      const r = ol.getBoundingClientRect();
+      const first = nodes[0];
+      const last = nodes[nodes.length - 1];
+      const railStart = first.getBoundingClientRect().top - r.top + 8;
+      const railEnd = last.getBoundingClientRect().top - r.top + 8;
+      rail.style.top = railStart + 'px';
+      rail.style.height = railEnd - railStart + 'px';
+      fill.style.top = railStart + 'px';
+      // fill follows the scroll: progress measured ~55% down the viewport
+      const trigger = window.innerHeight * 0.55;
+      const h = Math.max(0, Math.min(trigger - r.top, railEnd));
+      fill.style.height = Math.max(0, h - railStart) + 'px';
+      nodes.forEach((n, i) => {
+        const nodeTop = n.getBoundingClientRect().top - r.top + 8;
+        const active = nodeTop <= h;
+        n.classList.toggle('is-active', active);
+        if (dates[i]) dates[i].classList.toggle('is-active', active);
+      });
+    };
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+  }
+
+  initTimeline();
+</script>
