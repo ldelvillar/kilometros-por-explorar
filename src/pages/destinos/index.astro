@@ -57,34 +57,34 @@ const categories = [
 ---
 
 <Layout title={title} description={description} schema={schema}>
-  <main id="main" class="min-h-screen animate-fade-in-up">
+  <main id="main" class="animate-fade-in-up min-h-screen">
     <section class="mx-auto max-w-7xl px-4 pt-32 pb-8">
       <div class="mx-auto max-w-[760px] text-center">
         <h1
-          class="mb-3 text-[13px] font-extrabold uppercase tracking-[0.14em] text-primary"
+          class="mb-3 text-[13px] font-extrabold tracking-[0.14em] text-primary uppercase"
         >
           Explora nuestros destinos
         </h1>
         <p
-          class="mb-7 text-[clamp(34px,5vw,46px)] font-extrabold leading-[1.05] tracking-[-0.03em] text-gray-900"
+          class="mb-7 text-[clamp(34px,5vw,46px)] leading-[1.05] font-extrabold tracking-[-0.03em] text-gray-900"
         >
           ¿A dónde quieres ir?
         </p>
 
         <div class="relative mb-6">
           <Magnifier
-            class="pointer-events-none absolute left-5 top-1/2 size-[22px] -translate-y-1/2 text-gray-400"
+            class="pointer-events-none absolute top-1/2 left-5 size-[22px] -translate-y-1/2 text-gray-400"
           />
           <input
             id="hero-search"
             type="text"
             placeholder="Busca un país, ciudad o experiencia..."
-            class="hero-search-input w-full rounded-full border border-gray-200 bg-white py-[18px] pr-[140px] pl-[54px] font-display text-[17px] text-gray-800 shadow-[0_8px_24px_-16px_rgba(15,23,42,0.3)] outline-none transition-all duration-200 placeholder:text-gray-400 focus:border-primary focus:shadow-[0_0_0_3px_rgba(18,163,237,0.2)]"
+            class="hero-search-input w-full rounded-full border border-gray-200 bg-white py-[18px] pr-[140px] pl-[54px] font-display text-[17px] text-gray-800 shadow-[0_8px_24px_-16px_rgba(15,23,42,0.3)] transition-all duration-200 outline-none placeholder:text-gray-400 focus:border-primary focus:shadow-[0_0_0_3px_rgba(18,163,237,0.2)]"
           />
           <button
             type="button"
             id="hero-search-btn"
-            class="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-primary px-6 py-[11px] text-[15px] font-bold text-white transition-colors duration-200 hover:bg-primary/90"
+            class="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full bg-primary px-6 py-[11px] text-[15px] font-bold text-white transition-colors duration-200 hover:bg-primary/90"
           >
             Buscar
           </button>
@@ -139,6 +139,7 @@ const categories = [
   // Hide the CTA while the search shows its empty state (mirrors the design).
   document.addEventListener('destinos:emptychange', event => {
     const cta = document.getElementById('destinos-cta');
-    if (cta) cta.hidden = (event as CustomEvent<{ empty: boolean }>).detail.empty;
+    if (cta)
+      cta.hidden = (event as CustomEvent<{ empty: boolean }>).detail.empty;
   });
 </script>
