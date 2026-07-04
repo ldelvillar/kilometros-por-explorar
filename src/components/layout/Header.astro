@@ -49,36 +49,123 @@ import Menu from '@/assets/icons/menu.svg';
   <!-- Mobile menu -->
   <nav
     id="mobile-menu"
+    role="dialog"
+    aria-modal="true"
     aria-label="Navegación móvil"
-    class="hidden h-screen space-y-4 px-3 py-4 backdrop-blur-lg md:px-6 lg:hidden"
+    tabindex="-1"
+    class="hidden fixed inset-0 z-50 flex-col items-center space-y-6 overflow-y-auto bg-white/95 px-3 py-4 text-center backdrop-blur-lg md:px-6 lg:hidden"
   >
-    <a href="/destinos" class="block hover:text-gray-900">Destinos</a>
-    <a href="/blog" class="block hover:text-gray-900">Blog</a>
-    <a href="/viajeros" class="block hover:text-gray-900">Viajeros</a>
-    <a href="/sobre-nosotros" class="block hover:text-gray-900"
+    <div class="flex w-full items-center justify-between">
+      <span class="text-lg font-bold text-gray-800">Menú</span>
+      <button
+        id="menu-close"
+        aria-label="Cerrar menú de navegación"
+        class="rounded-lg p-2 text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="size-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <a
+      href="/destinos"
+      class="block py-3 text-xl text-gray-800 hover:text-primary">Destinos</a
+    >
+    <a
+      href="/blog"
+      class="block py-3 text-xl text-gray-800 hover:text-primary">Blog</a
+    >
+    <a
+      href="/viajeros"
+      class="block py-3 text-xl text-gray-800 hover:text-primary">Viajeros</a
+    >
+    <a
+      href="/sobre-nosotros"
+      class="block py-3 text-xl text-gray-800 hover:text-primary"
       >Sobre Nosotros</a
     >
     <a
       href="/contacto"
-      class="rounded-xl bg-primary px-4 py-2 font-bold text-white transition duration-300 hover:bg-primary/90"
+      class="rounded-xl bg-primary px-6 py-3 text-xl font-bold text-white transition duration-300 hover:bg-primary/90"
       >Planifica tu Viaje</a
     >
   </nav>
 </header>
 
 <script>
-  // Toggle mobile menu
+  // Mobile menu elements
   const menuToggle = document.getElementById('menu-toggle');
+  const menuClose = document.getElementById('menu-close');
   const mobileMenu = document.getElementById('mobile-menu');
+
+  function getFocusableElements() {
+    if (!mobileMenu) return [];
+    return Array.from(
+      mobileMenu.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )
+    );
+  }
+
+  function openMenu() {
+    menuToggle?.setAttribute('aria-expanded', 'true');
+    mobileMenu?.classList.remove('hidden');
+    mobileMenu?.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+    menuClose?.focus();
+  }
+
+  function closeMenu() {
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    mobileMenu?.classList.add('hidden');
+    mobileMenu?.classList.remove('flex');
+    document.body.style.overflow = '';
+    menuToggle?.focus();
+  }
 
   menuToggle?.addEventListener('click', () => {
     const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
-    mobileMenu?.classList.toggle('hidden');
-    mobileMenu?.classList.toggle('block');
+    isExpanded ? closeMenu() : openMenu();
+  });
 
-    // Prevent body scroll when mobile menu is open
-    document.body.style.overflow = isExpanded ? '' : 'hidden';
+  menuClose?.addEventListener('click', closeMenu);
+
+  // Close on Escape and trap focus within menu
+  mobileMenu?.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+      return;
+    }
+
+    if (e.key === 'Tab') {
+      const focusable = getFocusableElements();
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
   });
 
   // Add background to header on scroll only on home page
