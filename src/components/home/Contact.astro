@@ -2,11 +2,12 @@
 import ContactForm from '@/components/ContactForm.astro';
 import Location from '@/assets/icons/location.svg';
 import { SITE_CONFIG } from '@/config/site';
+import SectionHeading from '@/components/SectionHeading.astro';
 ---
 
 <section class="mx-auto flex max-w-7xl flex-col gap-12 px-4 py-16 md:flex-row">
   <div class="md:w-1/2">
-    <h2 class="mb-8 text-3xl font-bold text-gray-800">Contáctanos</h2>
+    <SectionHeading title="Contáctanos" class="mb-8" />
     <p class="mb-8 leading-relaxed text-gray-600">
       Estamos aquí para ayudarte a planificar tu viaje ideal. Completa el
       formulario a continuación o escríbenos a <a

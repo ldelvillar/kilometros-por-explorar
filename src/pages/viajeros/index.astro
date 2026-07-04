@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
 import FeaturedCustomerCard from '@/components/customers/FeaturedCustomerCard.astro';
 import CustomerCard from '@/components/customers/CustomerCard.astro';
+import PageTitle from '@/components/PageTitle.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 
 const title = 'Historias de Viajeros Satisfechos | Kilómetros por Explorar';
@@ -19,18 +21,13 @@ const featuredCustomers = customers.filter(customer => customer.data.featured);
 <Layout title={title} description={description} schema={schema}>
   <main id="main" class="animate-fade-in-up">
     <section class="mx-auto max-w-7xl px-4 pt-24 pb-6 lg:px-8">
-      <h1
-        class="mb-3 text-center text-[13px] font-extrabold tracking-[0.14em] text-primary uppercase"
-      >
-        Historias reales
-      </h1>
+      <PageTitle
+        eyebrow="Historias reales"
+        title="Viajeros satisfechos"
+        class="mb-5"
+      />
       <p
-        class="mb-7 text-center text-[clamp(34px,5vw,46px)] leading-[1.05] font-extrabold tracking-[-0.03em] text-gray-900"
-      >
-        Viajeros Satisfechos
-      </p>
-      <p
-        class="mx-auto mb-8 max-w-xl text-center text-lg leading-relaxed text-gray-600"
+        class="mx-auto mb-8 max-w-[640px] text-center text-lg leading-relaxed text-gray-600"
       >
         Conoce historias de viajeros que han encontrado su destino ideal gracias
         a Kilómetros por Explorar.
@@ -50,9 +47,9 @@ const featuredCustomers = customers.filter(customer => customer.data.featured);
     </section>
 
     <section class="mx-auto max-w-7xl px-4 pt-16 pb-6 lg:px-8">
-      <h2 class="mb-6 text-4xl font-extrabold tracking-tight text-gray-800">
-        Todas las historias
-      </h2>
+      <div class="mb-6">
+        <SectionHeading title="Todas las historias" class="mb-3.5" />
+      </div>
       <div
         class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-14 lg:grid-cols-3"
       >

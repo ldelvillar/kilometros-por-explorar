@@ -4,6 +4,8 @@ import Layout from '@/layouts/Layout.astro';
 import Timeline from '@/components/Timeline.astro';
 import Cta from '@/components/Cta.astro';
 import InfoCard from '@/components/InfoCard.astro';
+import PageTitle from '@/components/PageTitle.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { SITE_CONFIG } from '@/config/site';
 import couple from '@/assets/images/team/couple.webp';
@@ -78,17 +80,12 @@ const socials = [
     <section
       class="mx-auto max-w-3xl px-4 pt-28 pb-16 text-center md:pt-36 md:pb-20"
     >
-      <span
-        class="mb-5 block text-sm font-bold tracking-wide text-primary uppercase"
-      >
-        Hecho a tu medida
-      </span>
-      <h1
-        class="mb-5 text-5xl font-extrabold tracking-tight text-gray-900 md:text-6xl"
-      >
-        Sobre Nosotros
-      </h1>
-      <p class="mx-auto max-w-xl text-lg text-gray-600">
+      <PageTitle
+        eyebrow="Hecho a tu medida"
+        title="Sobre Nosotros"
+        class="mb-[22px]"
+      />
+      <p class="mx-auto max-w-[600px] text-lg text-gray-600">
         Una pareja apasionada por crear experiencias de viaje inolvidables — y
         el equipo detrás de cada itinerario hecho a medida.
       </p>
@@ -107,17 +104,12 @@ const socials = [
           loading="eager"
         />
         <div>
-          <h2
-            class="mb-2 block text-sm font-bold tracking-wide text-primary uppercase"
-          >
-            Nuestra Historia
-          </h2>
-          <span
-            class="mb-4 text-3xl font-extrabold tracking-tight text-balance text-gray-900 md:text-4xl"
-          >
-            De dos mochileros a planificadores de viajes
-          </span>
-          <p class="max-w-xl text-lg leading-relaxed text-gray-600">
+          <SectionHeading
+            eyebrow="Nuestra Historia"
+            title="De dos mochileros a planificadores de viajes"
+            class="mb-4"
+          />
+          <p class="max-w-[540px] text-lg leading-relaxed text-gray-600">
             Somos una pareja de viajeros que decidió convertir su pasión por
             explorar el mundo en un estilo de vida. Desde nuestras primeras
             aventuras juntos, supimos que queríamos compartir nuestras
@@ -146,17 +138,11 @@ const socials = [
     </section>
 
     <section class="mx-auto max-w-7xl px-4 py-16 md:py-24">
-      <div class="mb-10 max-w-xl md:mb-12">
-        <h2
-          class="mb-2 block text-sm font-bold tracking-wide text-primary uppercase"
-        >
-          Nuestra Filosofía
-        </h2>
-        <span
-          class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl"
-        >
-          Cercano, experto y transparente
-        </span>
+      <div class="mb-10 max-w-[620px] md:mb-12">
+        <SectionHeading
+          eyebrow="Nuestra Filosofía"
+          title="Cercano, experto y transparente"
+        />
       </div>
       <div class="grid gap-6 md:grid-cols-3">
         {
@@ -172,21 +158,22 @@ const socials = [
     </section>
 
     <section class="bg-gray-50 px-4 py-16 md:py-24">
+      <SectionHeading
+        align="center"
+        eyebrow="Nuestro viaje"
+        title="Cómo llegamos hasta aquí"
+        class="mb-14"
+      />
       <Timeline />
     </section>
 
     <section class="mx-auto max-w-4xl px-4 py-16 md:py-24">
-      <div class="mx-auto mb-10 max-w-xl text-center md:mb-12">
-        <h2
-          class="mb-2 block text-sm font-bold tracking-wide text-primary uppercase"
-        >
-          Conoce al equipo
-        </h2>
-        <span
-          class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl"
-        >
-          Las personas detrás de tu viaje
-        </span>
+      <div class="mx-auto mb-10 max-w-[620px] text-center md:mb-12">
+        <SectionHeading
+          align="center"
+          eyebrow="Conoce al equipo"
+          title="Las personas detrás de tu viaje"
+        />
       </div>
       <div class="grid gap-6 sm:grid-cols-2">
         {

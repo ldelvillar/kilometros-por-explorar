@@ -3,6 +3,7 @@ import Location from '@/assets/icons/location.svg';
 import Calendar from '@/assets/icons/calendar.svg';
 import Dollar from '@/assets/icons/dollar.svg';
 import InfoCard from '@/components/InfoCard.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
 
 interface Service {
   title: string;
@@ -33,12 +34,14 @@ const services: Service[] = [
 ---
 
 <section class="mx-auto max-w-7xl px-4 py-16">
-  <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-800">
-    Planificación integral de viajes
-  </h2>
-  <p class="mb-12 text-lg text-gray-600">
-    Ofrecemos servicios de planificación integral de viajes para asegurar que tu
-    viaje sea inolvidable sin que tengas que preocuparte por los detalles.
+  <SectionHeading
+    eyebrow="Qué hacemos"
+    title="Planificación integral de viajes"
+    class="mb-4"
+  />
+  <p class="mb-12 max-w-[640px] text-lg text-gray-600">
+    Ofrecemos servicios de planificación integral para que tu viaje sea
+    inolvidable sin que tengas que preocuparte por los detalles.
   </p>
 
   <div class="grid gap-6 md:grid-cols-3">

@@ -3,12 +3,17 @@ import { getCollection } from 'astro:content';
 import FeaturedCustomerCard from '@/components/customers/FeaturedCustomerCard.astro';
 import HalfArrow from '@/assets/icons/halfArrow.svg';
 import Arrow from '@/assets/icons/arrow.svg';
+import SectionHeading from '@/components/SectionHeading.astro';
 
 const customers = await getCollection('customers', ({ data }) => data.featured);
 ---
 
 <section class="mx-auto max-w-7xl px-4 py-16">
-  <h2 class="mb-8 text-3xl font-bold text-gray-800">Viajeros satisfechos</h2>
+  <SectionHeading
+    eyebrow="Historias reales"
+    title="Viajeros satisfechos"
+    class="mb-8"
+  />
 
   <div class="grid gap-8 md:grid-cols-3">
     {

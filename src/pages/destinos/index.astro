@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import InteractiveDestinations from '@/components/destinations/InteractiveDestinations.astro';
 import Cta from '@/components/Cta.astro';
+import PageTitle from '@/components/PageTitle.astro';
 import Magnifier from '@/assets/icons/magnifier.svg';
 
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
@@ -60,16 +61,12 @@ const categories = [
   <main id="main" class="animate-fade-in-up min-h-screen">
     <section class="mx-auto max-w-7xl px-4 pt-32 pb-8">
       <div class="mx-auto max-w-[760px] text-center">
-        <h1
-          class="mb-3 text-[13px] font-extrabold tracking-[0.14em] text-primary uppercase"
-        >
-          Explora nuestros destinos
-        </h1>
-        <p
-          class="mb-7 text-[clamp(34px,5vw,46px)] leading-[1.05] font-extrabold tracking-[-0.03em] text-gray-900"
-        >
-          ¿A dónde quieres ir?
-        </p>
+        <PageTitle
+          as="h1"
+          eyebrow="Explora nuestros destinos"
+          title="¿A dónde quieres ir?"
+          class="mb-7"
+        />
 
         <div class="relative mb-6">
           <Magnifier
