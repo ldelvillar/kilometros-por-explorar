@@ -21,9 +21,8 @@ const { customer, loading } = Astro.props;
     <div class="relative h-[420px] overflow-hidden rounded-lg md:h-[475px]">
       <Image
         src={customer.data.image}
-        width={600}
-        height={400}
-        densities={[1, 2]}
+        widths={[600, 800, 1024]}
+        sizes="640px"
         alt={`Historia de éxito de ${customer.data.name}`}
         class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
         loading={loading}
