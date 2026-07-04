@@ -2,6 +2,7 @@
 import Location from '@/assets/icons/location.svg';
 import Calendar from '@/assets/icons/calendar.svg';
 import Dollar from '@/assets/icons/dollar.svg';
+import InfoCard from '@/components/InfoCard.astro';
 
 interface Service {
   title: string;
@@ -43,13 +44,11 @@ const services: Service[] = [
   <div class="grid gap-6 md:grid-cols-3">
     {
       services.map(service => (
-        <div class="space-y-4 rounded-xl border border-gray-200 bg-gray-50 p-6">
-          <service.icon class="size-6 text-gray-800" />
-          <div class="space-y-2">
-            <h3 class="text-xl font-bold text-gray-800">{service.title}</h3>
-            <p class="text-sm text-gray-600">{service.description}</p>
-          </div>
-        </div>
+        <InfoCard
+          icon={service.icon}
+          title={service.title}
+          description={service.description}
+        />
       ))
     }
   </div>

@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '@/layouts/Layout.astro';
 import Timeline from '@/components/Timeline.astro';
 import Cta from '@/components/Cta.astro';
+import InfoCard from '@/components/InfoCard.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { SITE_CONFIG } from '@/config/site';
 import couple from '@/assets/images/team/couple.webp';
@@ -160,19 +161,11 @@ const socials = [
       <div class="grid gap-6 md:grid-cols-3">
         {
           values.map(value => (
-            <div class="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-7 transition duration-300 hover:-translate-y-1.5 hover:border-primary hover:shadow-lg">
-              <span class="flex size-13 items-center justify-center rounded-xl bg-primary/10 text-primary transition duration-300 group-hover:bg-primary group-hover:text-white">
-                <value.icon class="size-6" />
-              </span>
-              <div>
-                <h3 class="mb-2 text-xl font-bold text-gray-800">
-                  {value.title}
-                </h3>
-                <p class="text-sm leading-relaxed text-gray-600">
-                  {value.description}
-                </p>
-              </div>
-            </div>
+            <InfoCard
+              icon={value.icon}
+              title={value.title}
+              description={value.description}
+            />
           ))
         }
       </div>
