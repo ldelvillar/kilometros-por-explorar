@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
+import PageTitle from '@/components/PageTitle.astro';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
 import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 
@@ -20,9 +21,11 @@ const sortedPosts: CollectionEntry<'blog'>[] = posts.sort(
 
 <Layout title={title} description={description} schema={schema}>
   <main id="main" class="animate-fade-in-up mx-auto max-w-7xl px-4 pt-24 pb-20">
-    <h1 class="mb-8 text-4xl font-extrabold tracking-tight text-gray-800">
-      Nuestro blog
-    </h1>
+    <PageTitle
+      eyebrow="Nuestro blog"
+      title="Consejos, guías e itinerarios para tu próximo viaje"
+      class="mb-8 lg:mb-12"
+    />
 
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {
