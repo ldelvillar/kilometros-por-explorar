@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import ContactForm from '@/components/ContactForm.astro';
+import PageTitle from '@/components/PageTitle.astro';
 import Envelope from '@/assets/icons/envelope.svg';
 import Phone from '@/assets/icons/phone.svg';
 import Location from '@/assets/icons/location.svg';
@@ -17,170 +18,127 @@ const pathname = '/contact';
 // Schema configuration
 const pageSchema = getWebPageSchema(title, description, pathname);
 const schema = getCombinedSchema(pageSchema);
+
+const { company, social } = SITE_CONFIG;
+const chipClass =
+  'flex size-11 shrink-0 items-center justify-center rounded-lg bg-white/20';
+const labelClass = 'mb-0.5 text-sm tracking-[0.08em] text-white/75 uppercase';
 ---
 
 <Layout title={title} description={description} schema={schema}>
   <main id="main" class="animate-fade-in-up">
-    <section class="px-4 pt-24 pb-12 md:pb-16">
-      <div class="mx-auto max-w-6xl">
-        <div class="grid grid-cols-1 gap-16 lg:grid-cols-2">
-          <!-- Contact Information -->
+    <!-- Title band -->
+    <section
+      class="border-b border-gray-300 bg-gray-50 px-4 pt-28 pb-16 text-center md:pt-36"
+    >
+      <PageTitle eyebrow="Contacto" title="Empecemos a planificar" />
+      <p
+        class="mx-auto mt-4 max-w-[540px] text-lg leading-relaxed text-gray-600"
+      >
+        Estamos aquí para ayudarte a planificar tu viaje ideal. Completa el
+        formulario a continuación o contáctanos a través de los métodos
+        indicados y nos pondremos en contacto contigo lo antes posible.
+      </p>
+    </section>
+
+    <!-- Panel + form -->
+    <section class="px-4 pt-16 pb-24">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 items-stretch gap-8 lg:grid-cols-[3fr_2fr]"
+      >
+        <!-- Contact Form -->
+        <div
+          class="rounded-2xl border border-gray-300 bg-white p-6 shadow-md sm:p-12"
+        >
+          <h2 class="mb-6 text-2xl font-bold text-gray-900">
+            Solicitud de información
+          </h2>
+          <ContactForm />
+        </div>
+
+        <!-- Contact Information -->
+        <div
+          class="flex flex-col gap-8 rounded-2xl bg-primary p-6 text-white sm:p-10"
+        >
           <div>
-            <h1 class="mb-6 text-3xl font-bold text-gray-900">
-              Contacta con nosotros
-            </h1>
-            <p class="mb-6 text-lg leading-[1.4] text-gray-700">
-              Estamos aquí para ayudarte a planificar tu viaje ideal. Completa
-              el formulario a continuación o contáctanos a través de los métodos
-              indicados y nos pondremos en contacto contigo lo antes posible.
+            <h2 class="mb-2 text-2xl font-bold">Información de contacto</h2>
+            <p class="leading-relaxed text-white/85">
+              Sin comisiones, sin intermediarios. Somos nosotros quienes te
+              respondemos.
             </p>
+          </div>
 
-            <div class="space-y-4 text-lg text-gray-700">
-              <div class="flex items-center space-x-4">
-                <Envelope class="size-6 text-primary" />
-                <a
-                  href={`mailto:${SITE_CONFIG.company.email}`}
-                  class="hover:text-primary">{SITE_CONFIG.company.email}</a
-                >
+          <div class="flex flex-col gap-6">
+            <div class="flex items-start gap-4">
+              <div class={chipClass}>
+                <Envelope class="size-5" />
               </div>
+              <div class="min-w-0">
+                <p class={labelClass}>Email</p>
+                <a
+                  href={'mailto:' + company.email}
+                  class="text-base leading-relaxed hover:underline"
+                >
+                  {company.email}
+                </a>
+              </div>
+            </div>
 
-              <div class="flex items-center space-x-4">
-                <Phone class="size-6 text-primary" />
-                <span>
+            <div class="flex items-start gap-4">
+              <div class={chipClass}>
+                <Phone class="size-5" />
+              </div>
+              <div class="min-w-0">
+                <p class={labelClass}>Teléfonos</p>
+                <p class="text-base leading-relaxed">
                   <a
-                    href={`tel:${SITE_CONFIG.company.phone}`}
-                    class="hover:text-primary">{SITE_CONFIG.company.phone}</a
-                  >, <a
-                    href={`tel:${SITE_CONFIG.company.phone2}`}
-                    class="hover:text-primary">{SITE_CONFIG.company.phone2}</a
+                    href={'tel:' + company.phone.replace(/\s/g, '')}
+                    class="hover:underline">{company.phone}</a
+                  ><br />
+                  <a
+                    href={'tel:' + company.phone2.replace(/\s/g, '')}
+                    class="hover:underline">{company.phone2}</a
                   >
-                </span>
+                </p>
               </div>
+            </div>
 
-              <div class="flex items-center space-x-4">
-                <Instagram class="size-6 text-primary" />
+            <div class="flex items-start gap-4">
+              <div class={chipClass}>
+                <Instagram class="size-5" />
+              </div>
+              <div class="min-w-0">
+                <p class={labelClass}>Instagram</p>
                 <a
-                  href={SITE_CONFIG.social.instagram}
-                  class="hover:text-primary">@kilometrosporexplorar</a
+                  href={social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-base leading-relaxed hover:underline"
                 >
-              </div>
-
-              <div class="flex items-center space-x-4">
-                <Location class="size-6 text-primary" />
-                <p class="">Madrid, España</p>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <Clock class="size-6 text-primary" />
-                <div>
-                  <p>Lunes - Viernes: 9:00 - 18:00</p>
-                  <p>Sábados: 10:00 - 14:00</p>
-                  <p>Domingos: Cerrado</p>
-                </div>
+                  @kilometrosporexplorar
+                </a>
               </div>
             </div>
-          </div>
 
-          <!-- Contact Form -->
-          <div>
-            <h2 class="mb-8 text-3xl font-bold text-gray-900">
-              Solicitud de información
-            </h2>
-
-            <ContactForm />
-          </div>
-        </div>
-
-        <!-- Google Maps Embed -->
-        <div class="relative mt-16 h-96 overflow-hidden rounded-xl shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-3.9244243!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1696234567890!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style="border:0;"
-            allowfullscreen=""
-            loading="eager"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Nuestra ubicación en Madrid, España"
-            class="absolute inset-0"></iframe>
-        </div>
-
-        <!-- Additional Info -->
-        <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div class="rounded-xl bg-gray-50 p-6 text-center">
-            <div
-              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10"
-            >
-              <svg
-                class="h-6 w-6 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
+            <div class="flex items-start gap-4">
+              <div class={chipClass}>
+                <Clock class="size-5" />
+              </div>
+              <div class="min-w-0">
+                <p class={labelClass}>Horario</p>
+                <p class="text-base leading-relaxed">
+                  Lun–Vie 9:00–18:00<br />
+                  Sáb 10:00–14:00 · Dom cerrado
+                </p>
+              </div>
             </div>
-            <h3 class="mb-2 text-xl font-semibold text-gray-900">
-              Respuesta Rápida
-            </h3>
-            <p class="text-gray-600">
-              Respondemos todas las consultas en menos de 24 horas
-            </p>
           </div>
 
-          <div class="rounded-xl bg-gray-50 p-6 text-center">
-            <div
-              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10"
-            >
-              <svg
-                class="h-6 w-6 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-semibold text-gray-900">
-              Asesoramiento Gratuito
-            </h3>
-            <p class="text-gray-600">
-              Primera consulta y planificación inicial sin coste
-            </p>
-          </div>
-
-          <div class="rounded-xl bg-gray-50 p-6 text-center">
-            <div
-              class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10"
-            >
-              <svg
-                class="h-6 w-6 text-primary"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="mb-2 text-xl font-semibold text-gray-900">
-              Experiencia Personal
-            </h3>
-            <p class="text-gray-600">
-              Todos nuestros destinos los hemos visitado personalmente
-            </p>
+          <div
+            class="mt-auto flex items-center gap-3 border-t border-white/25 pt-6 text-white/95"
+          >
+            <Location class="size-5" />
+            <span>{company.address}</span>
           </div>
         </div>
       </div>
