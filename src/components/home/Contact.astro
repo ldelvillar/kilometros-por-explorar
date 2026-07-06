@@ -1,66 +1,83 @@
 ---
 import ContactForm from '@/components/ContactForm.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import Envelope from '@/assets/icons/envelope.svg';
+import Phone from '@/assets/icons/phone.svg';
 import Location from '@/assets/icons/location.svg';
 import { SITE_CONFIG } from '@/config/site';
-import SectionHeading from '@/components/SectionHeading.astro';
+
+const { company } = SITE_CONFIG;
+const chipClass =
+  'flex size-11 shrink-0 items-center justify-center rounded-lg bg-white/20';
+const labelClass = 'mb-0.5 text-sm tracking-[0.08em] text-white/75 uppercase';
 ---
 
-<section class="mx-auto flex max-w-7xl flex-col gap-12 px-4 py-16 md:flex-row">
-  <div class="md:w-1/2">
-    <SectionHeading title="Contáctanos" class="mb-8" />
-    <p class="mb-8 leading-relaxed text-gray-600">
-      Estamos aquí para ayudarte a planificar tu viaje ideal. Completa el
-      formulario a continuación o escríbenos a <a
-        href={'mailto:' + SITE_CONFIG.company.email}
-        class="text-primary hover:underline">{SITE_CONFIG.company.email}</a
-      > y nos pondremos en contacto contigo lo antes posible.
-    </p>
+<section id="contacto" class="bg-primary">
+  <div
+    class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-16 lg:grid-cols-2 lg:gap-16 lg:py-[72px]"
+  >
+    <div class="text-white">
+      <SectionHeading
+        eyebrow="Hablemos"
+        title="Empecemos a planificar"
+        light
+        class="mb-6"
+      />
+      <p class="mb-8 max-w-[420px] leading-relaxed text-white/85">
+        Estamos aquí para ayudarte a planificar tu viaje ideal. Completa el
+        formulario a continuación o contáctanos a través de los métodos
+        indicados y nos pondremos en contacto contigo lo antes posible.
+      </p>
 
-    <div class="mb-8">
-      <h3 class="mb-4 text-xl font-semibold text-gray-800">
-        Nuestra Ubicación
-      </h3>
-      <div class="overflow-hidden rounded-xl bg-gray-100 shadow-md">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280747604!2d-3.818313074683268!3d40.437574334217685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2ses!4v1695486987654!5m2!1sen!2ses"
-          width="100%"
-          height="300"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Ubicación de Kilómetros por Explorar en Madrid"></iframe>
-      </div>
-      <div class="mt-4 text-sm text-gray-600">
-        <p class="flex items-center gap-2">
-          <Location class="size-4" />
-          Madrid, España
-        </p>
-        <a
-          href="https://share.google/IjblH3ETBOS4XjIp9"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="mt-2 inline-flex items-center gap-1 text-primary transition-colors duration-200 hover:text-primary/80"
-        >
-          <svg
-            class="h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            ></path>
-          </svg>
-          Ver en Google Maps
-        </a>
+      <div class="flex flex-col gap-6">
+        <div class="flex items-start gap-4">
+          <div class={chipClass}>
+            <Envelope class="size-5" />
+          </div>
+          <div class="min-w-0">
+            <p class={labelClass}>Email</p>
+            <a
+              href={'mailto:' + company.email}
+              class="text-base leading-relaxed hover:underline"
+            >
+              {company.email}
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class={chipClass}>
+            <Phone class="size-5" />
+          </div>
+          <div class="min-w-0">
+            <p class={labelClass}>Teléfonos</p>
+            <p class="text-base leading-relaxed">
+              <a
+                href={'tel:' + company.phone.replace(/\s/g, '')}
+                class="hover:underline">{company.phone}</a
+              ><br />
+              <a
+                href={'tel:' + company.phone2.replace(/\s/g, '')}
+                class="hover:underline">{company.phone2}</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class={chipClass}>
+            <Location class="size-5" />
+          </div>
+          <div class="min-w-0">
+            <p class={labelClass}>Dónde estamos</p>
+            <p class="text-base leading-relaxed">{company.address}</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="mt-8 md:w-1/2">
-    <ContactForm />
+
+    <div class="rounded-2xl bg-white p-6 shadow-lg sm:p-10">
+      <ContactForm />
+    </div>
   </div>
 </section>
