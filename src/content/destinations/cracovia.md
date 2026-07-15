@@ -7,4 +7,9 @@ image: '../../assets/images/destinations/krakow.webp'
 imageAlt: 'Vista aérea del Castillo de Wawel y el casco antiguo de Cracovia al atardecer'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '4 - 5 días'
+budget: 550
+clasicRouteElements:
+  ['Cracovia', 'Auschwitz-Birkenau', 'Minas de Sal de Wieliczka', 'Kazimierz']
 ---

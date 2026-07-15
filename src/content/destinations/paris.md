@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/paris.webp'
 imageAlt: 'Pirámide de cristal del Museo del Louvre iluminada de noche junto al estanque, París'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '5 - 6 días'
+budget: 950
+clasicRouteElements: ['París', 'Torre Eiffel', 'Louvre', 'Disneyland Paris']
 ---

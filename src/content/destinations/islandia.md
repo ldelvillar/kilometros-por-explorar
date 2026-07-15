@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/iceland.webp'
 imageAlt: 'Auroras boreales verdes sobre el mar y rocas nevadas en una noche estrellada en Islandia'
 category: 'naturaleza'
 featured: true
+bestSeason: 'Verano o invierno'
+idealDuration: '8 - 10 días'
+budget: 2200
+clasicRouteElements: ['Ring Road', 'Costa Sur', 'Círculo Dorado', 'Húsavík']
 ---

@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/budapest.webp'
 imageAlt: 'El Parlamento de Hungría a orillas del Danubio al atardecer en Budapest'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '3 - 4 días'
+budget: 500
+clasicRouteElements: ['Budapest', 'Parlamento', 'Baños de Széchenyi']
 ---

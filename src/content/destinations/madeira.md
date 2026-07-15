@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/madeira.webp'
 imageAlt: 'Jardín tropical de Monte Palace con estanques y vegetación exuberante en Madeira'
 category: 'naturaleza'
 featured: false
+bestSeason: 'Todo el año (clima suave)'
+idealDuration: '5 - 7 días'
+budget: 750
+clasicRouteElements: ['Funchal', 'Levadas', 'Pico do Arieiro']
 ---

@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/dominican-republic.webp'
 imageAlt: 'Playa caribeña con palmeras, arena blanca y aguas turquesa en República Dominicana'
 category: 'playa'
 featured: false
+bestSeason: 'Diciembre a abril'
+idealDuration: '7 - 9 días'
+budget: 1600
+clasicRouteElements: ['Punta Cana', 'Samaná', 'Santo Domingo']
 ---

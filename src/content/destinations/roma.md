@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/rome.webp'
 imageAlt: 'La basílica de San Pedro y un puente sobre el río Tíber al atardecer en Roma'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '4 - 5 días'
+budget: 650
+clasicRouteElements: ['Coliseo', 'Vaticano', 'Trastevere']
 ---

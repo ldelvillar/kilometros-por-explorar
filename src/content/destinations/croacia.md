@@ -7,4 +7,9 @@ image: '../../assets/images/destinations/croatia.webp'
 imageAlt: 'El monasterio de Visovac sobre una isla en el Parque Nacional de Krka, Croacia'
 category: 'naturaleza'
 featured: false
+bestSeason: 'Mayo a septiembre'
+idealDuration: '8 - 10 días'
+budget: 1300
+clasicRouteElements:
+  ['Parque Nacional de Plitvice', 'Split', 'Hvar', 'Dubrovnik']
 ---

@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/machu-picchu.webp'
 imageAlt: 'Las ruinas incas de Machu Picchu con el pico Huayna Picchu al fondo, Perú'
 category: 'cultural'
 featured: false
+bestSeason: 'Mayo a septiembre (temporada seca)'
+idealDuration: '9 - 11 días'
+budget: 1900
+clasicRouteElements: ['Lima', 'Cusco', 'Valle Sagrado', 'Machu Picchu']
 ---

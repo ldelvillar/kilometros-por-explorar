@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/japan.webp'
 imageAlt: 'Calle tradicional de Higashiyama con la pagoda Yasaka y dos mujeres en kimono al atardecer, Kioto'
 category: 'cultural'
 featured: true
+bestSeason: 'Primavera y otoño'
+idealDuration: '12 - 14 días'
+budget: 2250
+clasicRouteElements: ['Tokio', 'Kioto', 'Osaka']
 ---

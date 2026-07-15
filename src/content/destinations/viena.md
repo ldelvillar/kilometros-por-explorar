@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/vienna.webp'
 imageAlt: 'El Palacio Belvedere y sus jardines con fuentes y flores en Viena'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '3 - 4 días'
+budget: 550
+clasicRouteElements: ['Viena', 'Palacio de Schönbrunn', 'Ópera de Viena']
 ---

@@ -7,4 +7,9 @@ image: '../../assets/images/destinations/norway.webp'
 imageAlt: 'Cascada de Steinsdalsfossen junto a una casa roja y un puente de piedra en un pueblo de Noruega'
 category: 'naturaleza'
 featured: false
+bestSeason: 'Junio a agosto, o invierno para auroras boreales'
+idealDuration: '8 - 10 días'
+budget: 2100
+clasicRouteElements:
+  ['Geirangerfjord', 'Trollstigen', 'Islas Lofoten', 'Preikestolen']
 ---

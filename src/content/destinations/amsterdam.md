@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/amsterdam.webp'
 imageAlt: 'Casas tradicionales junto al canal con bicicletas aparcadas en un puente en Ámsterdam'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera (abril a mayo)'
+idealDuration: '3 - 4 días'
+budget: 650
+clasicRouteElements: ['Ámsterdam', 'Canales de Jordaan', 'Rijksmuseum']
 ---

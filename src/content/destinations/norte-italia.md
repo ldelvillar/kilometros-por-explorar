@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/northern-italy.webp'
 imageAlt: 'Villa del Balbianello sobre el lago de Como rodeada de montañas, norte de Italia'
 category: 'naturaleza'
 featured: false
+bestSeason: 'Primavera y verano'
+idealDuration: '7 - 8 días'
+budget: 1200
+clasicRouteElements: ['Lago de Como', 'Dolomitas', 'Venecia']
 ---

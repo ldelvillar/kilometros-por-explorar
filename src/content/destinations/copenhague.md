@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/copenhagen.webp'
 imageAlt: 'Casas de colores y barcos en el muelle de Nyhavn decorado para Navidad en Copenhague'
 category: 'ciudad'
 featured: false
+bestSeason: 'Mayo a septiembre'
+idealDuration: '3 - 4 días'
+budget: 750
+clasicRouteElements: ['Copenhague', 'Nyhavn', 'Tivoli']
 ---

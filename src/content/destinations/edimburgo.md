@@ -7,4 +7,9 @@ image: '../../assets/images/destinations/edinburgh.webp'
 imageAlt: 'El Castillo de Edimburgo sobre su peñasco rocoso bajo un cielo azul, Escocia'
 category: 'ciudad'
 featured: false
+bestSeason: 'Mayo a septiembre'
+idealDuration: '6 - 8 días'
+budget: 1300
+clasicRouteElements:
+  ['Edimburgo', 'Tierras Altas', 'Isla de Skye', 'Eilean Donan']
 ---

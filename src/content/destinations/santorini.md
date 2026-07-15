@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/santorini.webp'
 imageAlt: 'Casas blancas de Oia escalonadas sobre el acantilado frente al mar Egeo, Santorini'
 category: 'playa'
 featured: false
+bestSeason: 'Mayo a septiembre'
+idealDuration: '7 - 9 días'
+budget: 1500
+clasicRouteElements: ['Santorini', 'Mykonos', 'Paros']
 ---

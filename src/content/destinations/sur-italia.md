@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/sardinia.webp'
 imageAlt: 'Aguas turquesa y barcos entre los islotes del archipiélago de La Maddalena, Cerdeña'
 category: 'playa'
 featured: false
+bestSeason: 'Mayo a septiembre'
+idealDuration: '8 - 9 días'
+budget: 1350
+clasicRouteElements: ['Sicilia', 'Calabria', 'Apulia', 'Alberobello']
 ---

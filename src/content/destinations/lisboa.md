@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/lisbon.webp'
 imageAlt: 'Tranvía amarillo histórico circulando por una calle del centro de Lisboa'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y verano'
+idealDuration: '4 - 5 días'
+budget: 550
+clasicRouteElements: ['Lisboa', 'Alfama', 'Torre de Belém', 'Bairro Alto']
 ---

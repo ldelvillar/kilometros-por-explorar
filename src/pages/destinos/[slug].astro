@@ -13,6 +13,10 @@ import {
   getTouristDestinationSchema,
   getTouristTripSchema,
 } from '@/config/schemas';
+import Calendar from '@/assets/icons/calendar.svg';
+import Clock from '@/assets/icons/clock.svg';
+import Dollar from '@/assets/icons/dollar.svg';
+import Location from '@/assets/icons/location.svg';
 
 // Etiqueta de tipo de turismo para el schema TouristTrip, según la categoría
 const TOURIST_TYPE_BY_CATEGORY: Record<string, string | undefined> = {
@@ -66,6 +70,26 @@ const tripSchema = getTouristTripSchema(
   TOURIST_TYPE_BY_CATEGORY[destination.data.category]
 );
 const schema = getCombinedSchema(destinationSchema, tripSchema);
+
+const budgetLabel = `Desde ${new Intl.NumberFormat('es-ES').format(destination.data.budget)} €`;
+const quickFacts = [
+  {
+    icon: Calendar,
+    label: 'Mejor época',
+    value: destination.data.bestSeason,
+  },
+  {
+    icon: Clock,
+    label: 'Duración ideal',
+    value: destination.data.idealDuration,
+  },
+  { icon: Dollar, label: 'Presupuesto', value: budgetLabel },
+  {
+    icon: Location,
+    label: 'Ruta clásica',
+    value: destination.data.clasicRouteElements.join(' · '),
+  },
+];
 ---
 
 <Layout
@@ -103,8 +127,38 @@ const schema = getCombinedSchema(destinationSchema, tripSchema);
       />
     </section>
 
+    <!-- Quick facts -->
+    <section class="mx-auto max-w-7xl px-4 pt-8">
+      <div
+        class="flex flex-wrap overflow-hidden rounded-xl border border-gray-200 bg-white"
+      >
+        {
+          quickFacts.map((fact, index) => (
+            <div
+              class:list={[
+                'flex flex-1 basis-[220px] items-center gap-4 p-6',
+                index > 0 && 'border-l border-gray-200',
+              ]}
+            >
+              <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <fact.icon class="size-5.5" />
+              </span>
+              <div>
+                <div class="mb-1 text-xs font-extrabold tracking-[0.08em] text-gray-500 uppercase">
+                  {fact.label}
+                </div>
+                <div class="text-lg font-bold text-gray-900">{fact.value}</div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
     <RelatedArticles destination={destination} />
     <DestinationCustomers destination={destination} />
   </main>
-  <Cta />
+  <div class="mt-12">
+    <Cta />
+  </div>
 </Layout>

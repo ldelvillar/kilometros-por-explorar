@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/stockholm.webp'
 imageAlt: 'El casco antiguo de Gamla Stan reflejado en el agua, Estocolmo'
 category: 'ciudad'
 featured: false
+bestSeason: 'Verano (mayo a agosto)'
+idealDuration: '3 - 4 días'
+budget: 800
+clasicRouteElements: ['Estocolmo', 'Gamla Stan', 'Museo Vasa', 'Archipiélago']
 ---

@@ -7,4 +7,9 @@ image: '../../assets/images/destinations/berlin.webp'
 imageAlt: 'Vista nocturna del horizonte de Berlín con la Torre de Televisión y el río Spree iluminados'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y verano'
+idealDuration: '4 - 5 días'
+budget: 650
+clasicRouteElements:
+  ['Berlín', 'East Side Gallery', 'Isla de los Museos', 'Kreuzberg']
 ---

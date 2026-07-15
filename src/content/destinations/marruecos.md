@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/morocco.webp'
 imageAlt: 'La plaza Jemaa el-Fna de Marrakech llena de puestos y gente al atardecer, Marruecos'
 category: 'cultural'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '7 - 9 días'
+budget: 950
+clasicRouteElements: ['Marrakech', 'Desierto del Sahara', 'Montes del Atlas']
 ---

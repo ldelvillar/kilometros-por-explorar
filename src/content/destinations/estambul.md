@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/istanbul.webp'
 imageAlt: 'Vista de Estambul desde el mar con sus mezquitas, minaretes y un ferry en el Cuerno de Oro'
 category: 'cultural'
 featured: true
+bestSeason: 'Primavera y otoño'
+idealDuration: '4 - 5 días'
+budget: 650
+clasicRouteElements: ['Santa Sofía', 'Mezquita Azul', 'Gran Bazar', 'Bósforo']
 ---

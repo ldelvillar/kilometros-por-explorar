@@ -6,4 +6,8 @@ image: '../../assets/images/destinations/viaje-sorpresa-pareja.webp'
 imageAlt: 'Pareja en silueta contemplando juntos la puesta de sol dorada'
 category: 'sorpresa'
 featured: false
+bestSeason: 'Todo el año'
+idealDuration: 'A tu elección'
+budget: 600
+clasicRouteElements: ['Destino sorpresa']
 ---

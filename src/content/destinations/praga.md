@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/prague.webp'
 imageAlt: 'El Puente de Carlos sobre el río Moldava con la Torre de la Ciudad Vieja al atardecer en Praga'
 category: 'ciudad'
 featured: true
+bestSeason: 'Primavera y otoño'
+idealDuration: '4 - 5 días'
+budget: 550
+clasicRouteElements: ['Praga', 'Puente de Carlos', 'Castillo de Praga']
 ---

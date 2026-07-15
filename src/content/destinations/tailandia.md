@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/thailand.webp'
 imageAlt: 'Lagunas turquesa entre acantilados de roca caliza con barcas tradicionales en las islas Phi Phi, Tailandia'
 category: 'cultural'
 featured: false
+bestSeason: 'Noviembre a marzo (temporada seca)'
+idealDuration: '12 - 14 días'
+budget: 1900
+clasicRouteElements: ['Bangkok', 'Chiang Mai', 'Phuket']
 ---

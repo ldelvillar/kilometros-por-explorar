@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/porto.webp'
 imageAlt: 'Casas de colores del barrio de la Ribeira y barcos rabelo en el río Duero, Oporto'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '3 - 4 días'
+budget: 500
+clasicRouteElements: ['Oporto', 'Ribeira', 'Vila Nova de Gaia']
 ---

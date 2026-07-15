@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/kenya.webp'
 imageAlt: 'El Kilimanjaro nevado sobre la sabana con acacias en Kenia'
 category: 'cultural'
 featured: true
+bestSeason: 'Julio a octubre (Gran Migración)'
+idealDuration: '8 - 10 días'
+budget: 2800
+clasicRouteElements: ['Nairobi', 'Masai Mara', 'Poblados masái']
 ---

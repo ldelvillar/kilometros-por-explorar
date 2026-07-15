@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/london.webp'
 imageAlt: 'El Big Ben y las Casas del Parlamento junto al puente de Westminster en Londres'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y verano'
+idealDuration: '4 - 5 días'
+budget: 800
+clasicRouteElements: ['Londres', 'Westminster', 'Camden', 'Notting Hill']
 ---

@@ -6,4 +6,8 @@ image: '../../assets/images/destinations/viaje-sorpresa-amigos.webp'
 imageAlt: 'Grupo de amigos en silueta celebrando con los brazos en alto ante un atardecer dorado'
 category: 'sorpresa'
 featured: false
+bestSeason: 'Todo el año'
+idealDuration: 'A tu elección'
+budget: 500
+clasicRouteElements: ['Destino sorpresa']
 ---

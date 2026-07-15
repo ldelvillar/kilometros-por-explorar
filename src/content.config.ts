@@ -26,6 +26,10 @@ const destinations = defineCollection({
           'sorpresa',
         ]),
         featured: z.boolean().default(false),
+        bestSeason: z.string(),
+        idealDuration: z.string(),
+        budget: z.number().min(0),
+        clasicRouteElements: z.array(z.string()),
       })
       .refine(data => data.category === 'sorpresa' || Boolean(data.country), {
         message:

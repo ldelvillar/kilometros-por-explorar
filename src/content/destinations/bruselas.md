@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/brussels.webp'
 imageAlt: 'Los jardines del Mont des Arts con vistas a la torre del Ayuntamiento en Bruselas'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y verano'
+idealDuration: '2 - 3 días'
+budget: 450
+clasicRouteElements: ['Bruselas', 'Grand Place', 'Atomium']
 ---

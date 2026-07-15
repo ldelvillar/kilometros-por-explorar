@@ -7,4 +7,9 @@ image: '../../assets/images/destinations/baja-california.webp'
 imageAlt: 'Vista aérea de la bahía de Balandra con aguas turquesa y montañas desérticas, Baja California'
 category: 'barco'
 featured: true
+bestSeason: 'Enero a abril (temporada de ballenas)'
+idealDuration: '7 - 8 días'
+budget: 2400
+clasicRouteElements:
+  ['La Paz', 'Bahía de Balandra', 'Islas del Golfo de California']
 ---

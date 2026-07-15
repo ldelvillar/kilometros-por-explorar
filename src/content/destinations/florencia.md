@@ -7,4 +7,8 @@ image: '../../assets/images/destinations/florence.webp'
 imageAlt: 'El Duomo de Florencia con su cúpula y campanario sobre los tejados de la ciudad'
 category: 'ciudad'
 featured: false
+bestSeason: 'Primavera y otoño'
+idealDuration: '3 - 4 días'
+budget: 600
+clasicRouteElements: ['Florencia', 'Galería Uffizi', 'Ponte Vecchio']
 ---
