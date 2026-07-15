@@ -11,4 +11,13 @@ bestSeason: 'Primavera y otoño'
 idealDuration: '3 - 4 días'
 budget: 600
 clasicRouteElements: ['Florencia', 'Galería Uffizi', 'Ponte Vecchio']
+faqs:
+  - question: '¿Cuántos días necesito para Florencia?'
+    answer: 'El centro histórico es compacto y se ve bien en <strong>3 días</strong>. Un cuarto día te permite una escapada a la Toscana (Siena, San Gimignano o el Chianti), que combina de maravilla.'
+  - question: '¿Hay que reservar la Galería Uffizi y la Accademia?'
+    answer: 'Imprescindible. Para ver los <strong>Uffizi y el David de la Accademia</strong> reserva entrada con hora online; las colas sin reserva pueden ser de horas, sobre todo en temporada alta.'
+  - question: '¿Se puede subir a la cúpula del Duomo?'
+    answer: 'Sí, pero la <strong>subida a la cúpula de Brunelleschi requiere reserva con franja horaria</strong> y son 463 escalones. Es una de las mejores vistas de la ciudad, así que planifícala con antelación.'
+  - question: '¿Es Florencia una buena base para ver la Toscana?'
+    answer: 'Perfecta. Está muy bien conectada por tren y carretera, y desde ahí organizamos <strong>excursiones de un día</strong> a Pisa, Siena o los viñedos del Chianti según tus gustos.'
 ---

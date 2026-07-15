@@ -11,4 +11,13 @@ bestSeason: 'Primavera y otoño'
 idealDuration: '7 - 9 días'
 budget: 950
 clasicRouteElements: ['Marrakech', 'Desierto del Sahara', 'Montes del Atlas']
+faqs:
+  - question: '¿Necesito visado para Marruecos?'
+    answer: 'Los ciudadanos españoles <strong>no necesitan visado</strong> para estancias turísticas de hasta 90 días; solo el pasaporte en vigor.'
+  - question: '¿Es seguro viajar a Marruecos?'
+    answer: 'Sí, es un destino turístico consolidado. Conviene ir con <strong>sentido común en los zocos</strong> (regatear con calma, acordar precios antes) y, para el desierto y el Atlas, apoyarse en guías locales, como hacemos al diseñar la ruta.'
+  - question: '¿Cuántos días necesito para ver lo esencial?'
+    answer: 'Con <strong>7 a 9 días</strong> combinas Marrakech con una excursión de dos días al <strong>desierto del Sahara</strong> (noche en campamento) y los pueblos del Atlas, que es la experiencia estrella.'
+  - question: '¿Cómo funcionan el regateo y las propinas?'
+    answer: 'El <strong>regateo es habitual</strong> en zocos y taxis: pregunta el precio antes y negocia con amabilidad. Las propinas (pequeñas) están muy extendidas por servicios como aparcar, guiar o ayudar con el equipaje.'
 ---

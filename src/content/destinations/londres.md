@@ -11,4 +11,13 @@ bestSeason: 'Primavera y verano'
 idealDuration: '4 - 5 días'
 budget: 800
 clasicRouteElements: ['Londres', 'Westminster', 'Camden', 'Notting Hill']
+faqs:
+  - question: '¿Necesito algún documento especial tras el Brexit?'
+    answer: 'Para turismo, los españoles entran con <strong>pasaporte en vigor</strong> (ya no vale el DNI) y sin visado para estancias cortas. Conviene revisar la vigencia del pasaporte antes de volar.'
+  - question: '¿Cuántos días necesito para Londres?'
+    answer: 'Londres da para mucho; con <strong>4 o 5 días</strong> combinas los grandes iconos (Westminster, Torre de Londres), museos y algún barrio como Camden o Notting Hill sin ir corriendo.'
+  - question: '¿Cómo me muevo por la ciudad?'
+    answer: 'El <strong>metro (Tube)</strong> es la mejor opción; paga con tarjeta contactless o el móvil directamente en los tornos y aprovecha el límite diario automático. Evita comprar billetes sueltos, que son caros.'
+  - question: '¿Es verdad que muchos museos son gratis?'
+    answer: 'Sí. Los grandes museos como el <strong>British Museum, la National Gallery o la Tate Modern</strong> tienen entrada gratuita a la colección permanente, lo que ayuda mucho a cuadrar el presupuesto.'
 ---

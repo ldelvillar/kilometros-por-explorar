@@ -12,4 +12,13 @@ idealDuration: '7 - 8 días'
 budget: 2400
 clasicRouteElements:
   ['La Paz', 'Bahía de Balandra', 'Islas del Golfo de California']
+faqs:
+  - question: '¿Cómo son las expediciones en barco de Baja California?'
+    answer: 'Son salidas de <strong>varios días en barco con pensión completa</strong> por el Mar de Cortés, con noches a bordo y jornadas dedicadas a avistar fauna, hacer snorkel y explorar islas vírgenes.'
+  - question: '¿Cuál es la mejor época para ver ballenas?'
+    answer: 'De <strong>enero a abril</strong> es la temporada de ballenas, cuando la ballena gris llega a las lagunas y también es posible avistar otras especies. Es el mejor momento para esta experiencia náutica.'
+  - question: '¿Qué fauna se puede ver?'
+    answer: 'El Mar de Cortés, llamado "el acuario del mundo", permite ver <strong>ballenas, lobos marinos, delfines, tortugas y arrecifes de coral</strong>, además de una enorme variedad de aves marinas.'
+  - question: '¿Necesito experiencia náutica o saber bucear?'
+    answer: 'No. Las expediciones están pensadas para <strong>todos los niveles</strong>: el snorkel es sencillo y siempre hay tripulación y guías. Solo necesitas ganas de mar y naturaleza.'
 ---

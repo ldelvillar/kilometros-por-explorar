@@ -11,4 +11,13 @@ bestSeason: 'Primavera (abril a mayo)'
 idealDuration: '3 - 4 días'
 budget: 650
 clasicRouteElements: ['Ámsterdam', 'Canales de Jordaan', 'Rijksmuseum']
+faqs:
+  - question: '¿Cuántos días recomendáis para Ámsterdam?'
+    answer: 'Con <strong>3 o 4 días</strong> disfrutas de los canales, el Rijksmuseum, la Casa de Ana Frank y algún barrio como el Jordaan, con margen para una excursión a los molinos de Zaanse Schans o a Keukenhof en primavera.'
+  - question: '¿Hay que reservar los museos con antelación?'
+    answer: 'Sí, es <strong>imprescindible</strong>. La Casa de Ana Frank y el Museo Van Gogh venden entradas con franja horaria que se agotan con semanas de antelación. Te avisamos de cuáles reservar primero.'
+  - question: '¿Cuándo florecen los tulipanes?'
+    answer: 'Los campos de tulipanes y el parque de Keukenhof están en su esplendor de <strong>mediados de marzo a mediados de mayo</strong>, con el pico habitual a mediados de abril. Es la mejor época si vienes por las flores.'
+  - question: '¿Merece la pena moverse en bici?'
+    answer: 'Ámsterdam es una de las ciudades más ciclistas del mundo, pero el tráfico de bicis es intenso. El centro es <strong>perfectamente caminable</strong> y, para distancias mayores, el tranvía es muy cómodo.'
 ---

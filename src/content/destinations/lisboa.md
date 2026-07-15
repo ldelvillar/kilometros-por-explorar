@@ -11,4 +11,13 @@ bestSeason: 'Primavera y verano'
 idealDuration: '4 - 5 días'
 budget: 550
 clasicRouteElements: ['Lisboa', 'Alfama', 'Torre de Belém', 'Bairro Alto']
+faqs:
+  - question: '¿Cuántos días recomendáis para Lisboa?'
+    answer: 'Con <strong>4 o 5 días</strong> ves Alfama, Belém, el Bairro Alto y tienes tiempo para una excursión a <strong>Sintra</strong>, con sus palacios de cuento, que es casi obligada.'
+  - question: '¿Merece la pena ir a Sintra desde Lisboa?'
+    answer: 'Sí, es una de las mejores excursiones. Con palacios como la Pena y la Quinta da Regaleira da para un día entero; conviene <strong>reservar entradas y madrugar</strong> porque se llena mucho.'
+  - question: '¿Es cómodo moverse por Lisboa con tanta cuesta?'
+    answer: 'La ciudad tiene muchas colinas, pero cuenta con <strong>tranvías, funiculares y ascensores</strong> históricos que ayudan. El mítico tranvía 28 recorre los barrios más bonitos.'
+  - question: '¿Dónde se prueban los mejores pasteles de nata?'
+    answer: 'Los originales son los <strong>Pastéis de Belém</strong>, junto al monasterio, aunque hay pastelerías excelentes por toda la ciudad. Es una parada dulce imprescindible.'
 ---

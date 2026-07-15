@@ -11,4 +11,13 @@ bestSeason: 'Primavera y otoño'
 idealDuration: '12 - 14 días'
 budget: 2250
 clasicRouteElements: ['Tokio', 'Kioto', 'Osaka']
+faqs:
+  - question: '¿Necesito visado para viajar a Japón?'
+    answer: 'Los ciudadanos españoles <strong>no necesitan visado</strong> para estancias turísticas de hasta 90 días. Solo hace falta el pasaporte en vigor.'
+  - question: '¿Merece la pena el Japan Rail Pass?'
+    answer: 'Depende de tu ruta. Si haces varios trayectos largos en tren bala (por ejemplo Tokio-Kioto-Hiroshima), el <strong>JR Pass</strong> puede salir a cuenta; si te mueves poco, quizá no. Lo calculamos en tu itinerario.'
+  - question: '¿Cuál es la mejor época para ver los cerezos o el otoño?'
+    answer: 'Los <strong>cerezos en flor</strong> suelen abrirse a finales de marzo y principios de abril, y el <strong>follaje otoñal</strong> en noviembre. Son las dos épocas más bonitas y también las más concurridas.'
+  - question: '¿Es difícil viajar por Japón sin saber japonés?'
+    answer: 'No tanto como parece. El transporte está muy señalizado y la gente es muy servicial, aunque en zonas rurales el inglés escasea. Te dejamos la ruta y la app con todo <strong>marcado y organizado</strong> para moverte con seguridad.'
 ---

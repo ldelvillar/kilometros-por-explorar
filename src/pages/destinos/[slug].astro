@@ -10,6 +10,7 @@ import DestinationCustomers from '@/components/destinations/DestinationCustomers
 import Cta from '@/components/Cta.astro';
 import {
   getCombinedSchema,
+  getFAQSchema,
   getTouristDestinationSchema,
   getTouristTripSchema,
 } from '@/config/schemas';
@@ -69,7 +70,11 @@ const tripSchema = getTouristTripSchema(
   destination.data.country,
   TOURIST_TYPE_BY_CATEGORY[destination.data.category]
 );
-const schema = getCombinedSchema(destinationSchema, tripSchema);
+const schema = getCombinedSchema(
+  destinationSchema,
+  tripSchema,
+  getFAQSchema(destination.data.faqs)
+);
 
 const budgetLabel = `Desde ${new Intl.NumberFormat('es-ES').format(destination.data.budget)} €`;
 const quickFacts = [

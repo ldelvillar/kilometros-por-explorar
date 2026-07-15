@@ -30,6 +30,15 @@ const destinations = defineCollection({
         idealDuration: z.string(),
         budget: z.number().min(0),
         clasicRouteElements: z.array(z.string()),
+        faqs: z
+          .array(
+            z.object({
+              question: z.string(),
+              answer: z.string(),
+            })
+          )
+          .min(4)
+          .max(5),
       })
       .refine(data => data.category === 'sorpresa' || Boolean(data.country), {
         message:
