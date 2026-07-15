@@ -7,6 +7,8 @@ import Layout from '@/layouts/Layout.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import RelatedArticles from '@/components/blog/DestinationEntries.astro';
 import DestinationCustomers from '@/components/destinations/DestinationCustomers.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import FaqAccordion from '@/components/FaqAccordion.astro';
 import Cta from '@/components/Cta.astro';
 import {
   getCombinedSchema,
@@ -162,8 +164,17 @@ const quickFacts = [
 
     <RelatedArticles destination={destination} />
     <DestinationCustomers destination={destination} />
+
+    <!-- FAQs -->
+    <section class="mx-auto max-w-7xl px-4 pt-4 pb-24">
+      <SectionHeading
+        eyebrow="Antes de viajar"
+        title={`Preguntas frecuentes sobre ${destination.data.name}`}
+        class="mt-12 mb-4"
+      />
+      <FaqAccordion faqs={destination.data.faqs} class="max-w-[820px]" />
+    </section>
   </main>
-  <div class="mt-12">
-    <Cta />
-  </div>
+
+  <Cta />
 </Layout>

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -18,9 +19,11 @@ const sortedPosts = posts.sort(
 ---
 
 <section class="mx-auto max-w-7xl px-4 pt-4">
-  <h2 class="mt-12 mb-4 text-2xl font-bold text-gray-800">
-    Artículos Relacionados
-  </h2>
+  <SectionHeading
+    eyebrow="Del blog"
+    title="Artículos relacionados"
+    class="mt-12 mb-4"
+  />
 
   {
     sortedPosts.length > 0 ? (
