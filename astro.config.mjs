@@ -1,19 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
 import tailwindcss from '@tailwindcss/vite';
-
 import sitemap from '@astrojs/sitemap';
-
 import preact from '@astrojs/preact';
-
 import { unified } from '@astrojs/markdown-remark';
-
 import { remarkAlert } from 'remark-github-blockquote-alert';
+
+import { SITE_CONFIG } from './src/config/site.ts';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.kilometrosporexplorar.es',
+  site: SITE_CONFIG.domain,
   trailingSlash: 'never',
   vite: {
     plugins: [tailwindcss()],
