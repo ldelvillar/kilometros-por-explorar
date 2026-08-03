@@ -4,7 +4,7 @@ description: 'Nuestra selección de los mejores destinos de Europa para viajar c
 date: 2025-10-12
 image: '../../assets/images/blog/destinos-europeos-mas-economicos/cover.webp'
 author: 'Lucas & Lucía'
-destinations: ['budapest', 'praga', 'cracovia', 'oporto', 'belgrado']
+destinations: ['budapest', 'praga', 'cracovia', 'oporto']
 faqs:
   - question: '¿Cuál es el destino más barato de la lista?'
     answer: 'El ranking de menor a mayor coste es: <strong>1. Belgrado</strong> (30-50€/día), <strong>2. Budapest</strong> (40-60€/día) y <strong>3. Cracovia</strong> (50-70€/día). Oporto y Praga son considerablemente más caros. Si buscas la mejor relación calidad-precio-infraestructura, tu destino es <strong>Budapest</strong>.'

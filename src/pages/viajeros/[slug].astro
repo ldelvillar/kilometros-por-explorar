@@ -1,6 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection, render, type CollectionEntry } from 'astro:content';
+import {
+  getCollection,
+  getEntry,
+  render,
+  type CollectionEntry,
+} from 'astro:content';
 import {
   getWebPageSchema,
   getOrganizationSchema,
@@ -29,6 +34,17 @@ export async function getStaticPaths() {
 
 const { customer } = Astro.props;
 const { Content } = await render(customer);
+
+const destinationEntry = await getEntry(customer.data.destination);
+if (!destinationEntry) {
+  throw new Error(
+    `El viajero "${customer.id}" referencia el destino inexistente "${customer.data.destination.id}".`
+  );
+}
+const destination = {
+  name: destinationEntry.data.name,
+  href: `/destinos/${destinationEntry.id}`,
+};
 
 const title = `Descubre la Aventura de ${customer.data.name} | Kilómetros por Explorar`;
 const description = customer.data.metaDescription;
@@ -104,7 +120,7 @@ const schema = {
       <div class="mb-6">
         <img
           src={customer.data.destinationFlagImage.src}
-          alt={`Bandera de ${customer.data.destination.name}`}
+          alt={`Bandera de ${destination.name}`}
           width={300}
           height={150}
           class="h-12 w-auto object-contain"
@@ -154,7 +170,7 @@ const schema = {
         <div class="px-4">
           <CustomerTimeline
             description={customer.data.description}
-            destination={customer.data.destination}
+            destination={destination}
           />
         </div>
       </div>

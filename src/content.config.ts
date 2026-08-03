@@ -1,4 +1,4 @@
-import { defineCollection } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
@@ -56,7 +56,7 @@ const blog = defineCollection({
       date: z.date(),
       image: image(),
       author: z.string(),
-      destinations: z.array(z.string()),
+      destinations: z.array(reference('destinations')),
       faqs: z.array(
         z.object({
           question: z.string(),
@@ -77,10 +77,7 @@ const customers = defineCollection({
       title: z.string(),
       name: z.string(),
       image: image(),
-      destination: z.object({
-        name: z.string(),
-        href: z.string(),
-      }),
+      destination: reference('destinations'),
       destinationFlagImage: image(),
       metrics: z
         .array(

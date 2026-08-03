@@ -1,6 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection, render, type CollectionEntry } from 'astro:content';
+import {
+  getCollection,
+  getEntry,
+  render,
+  type CollectionEntry,
+} from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
 import CTA from '@/components/Cta.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
@@ -19,6 +24,18 @@ interface Props {
 
 export async function getStaticPaths() {
   const posts: CollectionEntry<'blog'>[] = await getCollection('blog');
+
+  // Comprobamos aquí todos los destinos: un id mal escrito debe romper el build
+  for (const post of posts) {
+    for (const ref of post.data.destinations) {
+      if (!(await getEntry(ref))) {
+        throw new Error(
+          `El artículo "${post.id}" referencia el destino inexistente "${ref.id}".`
+        );
+      }
+    }
+  }
+
   return posts.map(post => ({
     params: { slug: post.id.replace('.md', '') },
     props: { post },
@@ -28,10 +45,9 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
+const destinationIds = new Set(post.data.destinations.map(({ id }) => id));
 const relatedPosts = await getCollection('blog', ({ data }) => {
-  return data.destinations?.some(destination =>
-    post.data.destinations?.includes(destination)
-  );
+  return data.destinations.some(({ id }) => destinationIds.has(id));
 });
 
 const sortedRelatedPosts = relatedPosts
@@ -50,7 +66,10 @@ const breadcrumbItems: BreadcrumbItem[] = [
   { name: post.data.title },
 ];
 
-const mainDestination = post.data.destinations?.[0];
+const mainDestinationRef = post.data.destinations[0];
+const mainDestination = mainDestinationRef
+  ? (await getEntry(mainDestinationRef))?.data.name
+  : undefined;
 
 const articleSchema = getArticleSchema(
   post.data.title,

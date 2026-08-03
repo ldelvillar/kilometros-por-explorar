@@ -4,7 +4,7 @@ description: 'Nuestra selección de los mejores destinos de Europa para visitar 
 date: 2025-08-25
 image: '../../assets/images/blog/mejores-destinos-europeos-invierno/cover.webp'
 author: 'Lucas & Lucía'
-destinations: ['viena', 'islandia', 'praga', 'laponia', 'estrasburgo']
+destinations: ['viena', 'islandia', 'praga']
 faqs:
   - question: '¿Cuál es el mejor destino para ver Auroras Boreales?'
     answer: 'Entre estas opciones, <strong>Laponia finlandesa</strong> es la ganadora indiscutible por su latitud norte y cielos oscuros. <strong>Islandia</strong> es excelente, pero el clima es más inestable. Importante: en ciudades centroeuropeas como <strong>Viena, Praga o Estrasburgo NO se ven auroras boreales</strong>; si ese es tu objetivo principal, debes ir al Círculo Polar Ártico.'

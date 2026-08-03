@@ -10,10 +10,7 @@ interface Props {
 const { destination } = Astro.props;
 
 const relatedCustomers = await getCollection('customers', ({ data }) => {
-  return (
-    data.destination.href.replace('/destinos/', '') ===
-    destination.id.replace('.md', '')
-  );
+  return data.destination.id === destination.id;
 });
 ---
 

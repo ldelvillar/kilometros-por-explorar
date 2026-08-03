@@ -4,16 +4,7 @@ description: 'Nuestra selección de los mercados navideños más mágicos de Eur
 date: 2025-10-10
 image: '../../assets/images/blog/mejores-mercados-navidad-europa/cover.webp'
 author: 'Lucas & Lucía'
-destinations:
-  [
-    'estrasburgo',
-    'viena',
-    'praga',
-    'budapest',
-    'nuremberg',
-    'colmar',
-    'budapest',
-  ]
+destinations: ['viena', 'praga', 'budapest']
 faqs:
   - question: '¿Cuál es el mercado navideño más bonito y grande?'
     answer: '<strong>Estrasburgo</strong> ostenta el título de "Capital de la Navidad" y es el más antiguo (1570). Sin embargo, muchos viajeros prefieren <strong>Colmar</strong> por ser más íntimo y parecer un pueblo de cuento. <strong>Viena</strong> destaca por su elegancia imperial. No hay uno "mejor", depende de si buscas grandiosidad o encanto medieval.'
