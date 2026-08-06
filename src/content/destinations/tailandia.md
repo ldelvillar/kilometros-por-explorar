@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Noviembre a marzo (temporada seca)'
 idealDuration: '12 - 14 días'
 budget: 1900
-clasicRouteElements: ['Bangkok', 'Chiang Mai', 'Phuket']
+classicRouteElements: ['Bangkok', 'Chiang Mai', 'Phuket']
 faqs:
   - question: '¿Necesito visado para Tailandia?'
     answer: 'Los españoles <strong>no necesitan visado</strong> para estancias turísticas de hasta 30 días por vía aérea. Solo hace falta el pasaporte con vigencia mínima de seis meses.'

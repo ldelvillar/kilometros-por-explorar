@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera (abril a mayo)'
 idealDuration: '3 - 4 días'
 budget: 650
-clasicRouteElements: ['Ámsterdam', 'Canales de Jordaan', 'Rijksmuseum']
+classicRouteElements: ['Ámsterdam', 'Canales de Jordaan', 'Rijksmuseum']
 faqs:
   - question: '¿Cuántos días recomendáis para Ámsterdam?'
     answer: 'Con <strong>3 o 4 días</strong> disfrutas de los canales, el Rijksmuseum, la Casa de Ana Frank y algún barrio como el Jordaan, con margen para una excursión a los molinos de Zaanse Schans o a Keukenhof en primavera.'

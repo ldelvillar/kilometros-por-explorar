@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Mayo a septiembre (temporada seca)'
 idealDuration: '9 - 11 días'
 budget: 1900
-clasicRouteElements: ['Lima', 'Cusco', 'Valle Sagrado', 'Machu Picchu']
+classicRouteElements: ['Lima', 'Cusco', 'Valle Sagrado', 'Machu Picchu']
 faqs:
   - question: '¿Cómo se visita Machu Picchu, hay que reservar?'
     answer: 'Sí, es <strong>imprescindible reservar entrada con franja horaria</strong> (y el tren o el Camino Inca) con antelación, porque el aforo es limitado y se agota, sobre todo en temporada alta.'

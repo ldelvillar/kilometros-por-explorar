@@ -10,7 +10,7 @@ featured: true
 bestSeason: 'Verano o invierno'
 idealDuration: '8 - 10 días'
 budget: 2200
-clasicRouteElements: ['Ring Road', 'Costa Sur', 'Círculo Dorado', 'Húsavík']
+classicRouteElements: ['Ring Road', 'Costa Sur', 'Círculo Dorado', 'Húsavík']
 faqs:
   - question: '¿Cuándo es mejor ir a Islandia, en verano o en invierno?'
     answer: 'Depende de lo que busques: el <strong>verano</strong> ofrece sol de medianoche, todas las carreteras abiertas y la Ring Road completa; el <strong>invierno</strong> es la temporada de auroras boreales y cuevas de hielo, pero con menos horas de luz.'

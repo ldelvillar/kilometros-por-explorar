@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Mayo a septiembre'
 idealDuration: '6 - 8 días'
 budget: 1300
-clasicRouteElements:
+classicRouteElements:
   ['Edimburgo', 'Tierras Altas', 'Isla de Skye', 'Eilean Donan']
 faqs:
   - question: '¿Cuántos días necesito para Edimburgo y las Tierras Altas?'

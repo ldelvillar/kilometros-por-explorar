@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Mayo a septiembre'
 idealDuration: '8 - 9 días'
 budget: 1350
-clasicRouteElements: ['Sicilia', 'Calabria', 'Apulia', 'Alberobello']
+classicRouteElements: ['Sicilia', 'Calabria', 'Apulia', 'Alberobello']
 faqs:
   - question: '¿Qué zonas incluye una ruta por el Sur de Italia?'
     answer: 'Combinamos <strong>Sicilia, Calabria y Apulia</strong>, con los trulli de Alberobello, las playas de Tropea y pueblos costeros, para vivir el sur más auténtico y gastronómico.'

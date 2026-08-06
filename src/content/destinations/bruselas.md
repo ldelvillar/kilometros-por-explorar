@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y verano'
 idealDuration: '2 - 3 días'
 budget: 450
-clasicRouteElements: ['Bruselas', 'Grand Place', 'Atomium']
+classicRouteElements: ['Bruselas', 'Grand Place', 'Atomium']
 faqs:
   - question: '¿Cuántos días necesito para Bruselas?'
     answer: 'El centro se ve bien en <strong>2 días</strong>. Con un tercero puedes hacer una escapada en tren a Brujas o Gante, que están a menos de una hora y merecen mucho la pena.'

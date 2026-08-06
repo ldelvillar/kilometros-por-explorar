@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Diciembre a abril'
 idealDuration: '7 - 9 días'
 budget: 1600
-clasicRouteElements: ['Punta Cana', 'Samaná', 'Santo Domingo']
+classicRouteElements: ['Punta Cana', 'Samaná', 'Santo Domingo']
 faqs:
   - question: '¿Necesito visado para República Dominicana?'
     answer: 'Los españoles <strong>no necesitan visado</strong> para turismo. Se entra con pasaporte en vigor y la tarjeta de turista suele ir ya incluida en el billete de avión.'

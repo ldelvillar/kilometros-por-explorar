@@ -21,7 +21,6 @@ const destinations = defineCollection({
           'playa',
           'naturaleza',
           'ciudad',
-          'destacados',
           'barco',
           'sorpresa',
         ]),
@@ -29,7 +28,7 @@ const destinations = defineCollection({
         bestSeason: z.string(),
         idealDuration: z.string(),
         budget: z.number().min(0),
-        clasicRouteElements: z.array(z.string()),
+        classicRouteElements: z.array(z.string()),
         faqs: z
           .array(
             z.object({
@@ -57,12 +56,14 @@ const blog = defineCollection({
       image: image(),
       author: z.string(),
       destinations: z.array(reference('destinations')),
-      faqs: z.array(
-        z.object({
-          question: z.string(),
-          answer: z.string(),
-        })
-      ),
+      faqs: z
+        .array(
+          z.object({
+            question: z.string(),
+            answer: z.string(),
+          })
+        )
+        .min(1),
     }),
 });
 

@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Verano (mayo a agosto)'
 idealDuration: '3 - 4 días'
 budget: 800
-clasicRouteElements: ['Estocolmo', 'Gamla Stan', 'Museo Vasa', 'Archipiélago']
+classicRouteElements: ['Estocolmo', 'Gamla Stan', 'Museo Vasa', 'Archipiélago']
 faqs:
   - question: '¿Cuántos días recomendáis para Estocolmo?'
     answer: 'Con <strong>3 o 4 días</strong> disfrutas de Gamla Stan, el Museo Vasa, el metro-galería de arte y una excursión en barco por el archipiélago, que es una de las mejores experiencias de la ciudad.'

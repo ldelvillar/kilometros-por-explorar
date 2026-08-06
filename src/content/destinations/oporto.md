@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '3 - 4 días'
 budget: 500
-clasicRouteElements: ['Oporto', 'Ribeira', 'Vila Nova de Gaia']
+classicRouteElements: ['Oporto', 'Ribeira', 'Vila Nova de Gaia']
 faqs:
   - question: '¿Cuántos días necesito para Oporto?'
     answer: 'Con <strong>3 días</strong> ves la Ribeira, cruzas el Puente de Luis I y visitas las bodegas de vino de Oporto. Un cuarto día permite una escapada al <strong>Valle del Duero</strong> y sus viñedos.'

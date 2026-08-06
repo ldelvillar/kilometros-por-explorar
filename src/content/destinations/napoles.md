@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '5 - 6 días'
 budget: 750
-clasicRouteElements: ['Nápoles', 'Positano', 'Amalfi', 'Capri']
+classicRouteElements: ['Nápoles', 'Positano', 'Amalfi', 'Capri']
 faqs:
   - question: '¿Cuántos días necesito para Nápoles y la Costa Amalfitana?'
     answer: 'Con <strong>5 o 6 días</strong> combinas Nápoles, Pompeya, la costa (Positano, Amalfi) y la isla de Capri, con tiempo para disfrutar del ritmo mediterráneo sin agobios.'

@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '5 - 6 días'
 budget: 950
-clasicRouteElements: ['París', 'Torre Eiffel', 'Louvre', 'Disneyland Paris']
+classicRouteElements: ['París', 'Torre Eiffel', 'Louvre', 'Disneyland Paris']
 faqs:
   - question: '¿Cuántos días necesito para París?'
     answer: 'Con <strong>4 días</strong> ves lo esencial de la ciudad; si quieres añadir <strong>Disneyland Paris</strong>, cuenta 5 o 6 días para no ir con prisas, como planteamos en nuestra propuesta familiar.'

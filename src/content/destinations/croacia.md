@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Mayo a septiembre'
 idealDuration: '8 - 10 días'
 budget: 1300
-clasicRouteElements:
+classicRouteElements:
   ['Parque Nacional de Plitvice', 'Split', 'Hvar', 'Dubrovnik']
 faqs:
   - question: '¿Cuántos días necesito para recorrer Croacia?'

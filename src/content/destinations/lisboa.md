@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y verano'
 idealDuration: '4 - 5 días'
 budget: 550
-clasicRouteElements: ['Lisboa', 'Alfama', 'Torre de Belém', 'Bairro Alto']
+classicRouteElements: ['Lisboa', 'Alfama', 'Torre de Belém', 'Bairro Alto']
 faqs:
   - question: '¿Cuántos días recomendáis para Lisboa?'
     answer: 'Con <strong>4 o 5 días</strong> ves Alfama, Belém, el Bairro Alto y tienes tiempo para una excursión a <strong>Sintra</strong>, con sus palacios de cuento, que es casi obligada.'

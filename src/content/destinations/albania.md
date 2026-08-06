@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Verano (junio a septiembre)'
 idealDuration: '7 - 9 días'
 budget: 900
-clasicRouteElements: ['Tirana', 'Riviera Albanesa', 'Ksamil', 'Berat']
+classicRouteElements: ['Tirana', 'Riviera Albanesa', 'Ksamil', 'Berat']
 faqs:
   - question: '¿Necesito visado para viajar a Albania?'
     answer: 'Los ciudadanos españoles y de la UE <strong>no necesitan visado</strong> y pueden permanecer hasta 90 días. Basta con el pasaporte o el DNI en vigor.'

@@ -10,7 +10,7 @@ featured: true
 bestSeason: 'Julio a octubre (Gran Migración)'
 idealDuration: '8 - 10 días'
 budget: 2800
-clasicRouteElements: ['Nairobi', 'Masai Mara', 'Poblados masái']
+classicRouteElements: ['Nairobi', 'Masai Mara', 'Poblados masái']
 faqs:
   - question: '¿Cuándo es la mejor época para el safari en Kenia?'
     answer: 'De <strong>julio a octubre</strong> para ver la Gran Migración en el Masai Mara y por ser temporada seca, cuando los animales se concentran en torno al agua y es más fácil avistarlos.'

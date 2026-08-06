@@ -29,7 +29,6 @@ const TOURIST_TYPE_BY_CATEGORY: Record<string, string | undefined> = {
   ciudad: 'Escapada urbana',
   barco: 'Viaje en barco',
   sorpresa: 'Viaje sorpresa',
-  destacados: undefined,
 };
 
 interface Props {
@@ -94,7 +93,7 @@ const quickFacts = [
   {
     icon: Location,
     label: 'Ruta clásica',
-    value: destination.data.clasicRouteElements.join(' · '),
+    value: destination.data.classicRouteElements.join(' · '),
   },
 ];
 ---

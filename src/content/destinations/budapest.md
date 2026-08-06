@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '3 - 4 días'
 budget: 500
-clasicRouteElements: ['Budapest', 'Parlamento', 'Baños de Széchenyi']
+classicRouteElements: ['Budapest', 'Parlamento', 'Baños de Széchenyi']
 faqs:
   - question: '¿Cuántos días recomendáis para Budapest?'
     answer: 'Con <strong>3 o 4 días</strong> ves las dos orillas (Buda y Pest), el Parlamento, el barrio judío y tienes tiempo para relajarte una tarde en los baños termales sin prisas.'

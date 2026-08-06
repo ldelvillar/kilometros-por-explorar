@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '3 - 4 días'
 budget: 600
-clasicRouteElements: ['Florencia', 'Galería Uffizi', 'Ponte Vecchio']
+classicRouteElements: ['Florencia', 'Galería Uffizi', 'Ponte Vecchio']
 faqs:
   - question: '¿Cuántos días necesito para Florencia?'
     answer: 'El centro histórico es compacto y se ve bien en <strong>3 días</strong>. Un cuarto día te permite una escapada a la Toscana (Siena, San Gimignano o el Chianti), que combina de maravilla.'

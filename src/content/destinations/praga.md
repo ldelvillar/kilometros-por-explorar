@@ -10,7 +10,7 @@ featured: true
 bestSeason: 'Primavera y otoño'
 idealDuration: '4 - 5 días'
 budget: 550
-clasicRouteElements: ['Praga', 'Puente de Carlos', 'Castillo de Praga']
+classicRouteElements: ['Praga', 'Puente de Carlos', 'Castillo de Praga']
 faqs:
   - question: '¿Cuántos días necesito para Praga?'
     answer: 'Con <strong>3 o 4 días</strong> disfrutas del casco antiguo, el Puente de Carlos y el Castillo sin prisas. Un día más permite una excursión a <strong>Český Krumlov</strong> o a Kutná Hora.'

@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y verano'
 idealDuration: '4 - 5 días'
 budget: 800
-clasicRouteElements: ['Londres', 'Westminster', 'Camden', 'Notting Hill']
+classicRouteElements: ['Londres', 'Westminster', 'Camden', 'Notting Hill']
 faqs:
   - question: '¿Necesito algún documento especial tras el Brexit?'
     answer: 'Para turismo, los españoles entran con <strong>pasaporte en vigor</strong> (ya no vale el DNI) y sin visado para estancias cortas. Conviene revisar la vigencia del pasaporte antes de volar.'

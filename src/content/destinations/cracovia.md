@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '4 - 5 días'
 budget: 550
-clasicRouteElements:
+classicRouteElements:
   ['Cracovia', 'Auschwitz-Birkenau', 'Minas de Sal de Wieliczka', 'Kazimierz']
 faqs:
   - question: '¿Cuántos días necesito para Cracovia?'

@@ -10,7 +10,7 @@ featured: true
 bestSeason: 'Enero a abril (temporada de ballenas)'
 idealDuration: '7 - 8 días'
 budget: 2400
-clasicRouteElements:
+classicRouteElements:
   ['La Paz', 'Bahía de Balandra', 'Islas del Golfo de California']
 faqs:
   - question: '¿Cómo son las expediciones en barco de Baja California?'

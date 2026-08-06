@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '3 - 4 días'
 budget: 550
-clasicRouteElements: ['Acrópolis', 'Plaka', 'Museo de la Acrópolis']
+classicRouteElements: ['Acrópolis', 'Plaka', 'Museo de la Acrópolis']
 faqs:
   - question: '¿Cuántos días necesito para ver Atenas?'
     answer: 'Con <strong>3 o 4 días</strong> tienes tiempo de sobra para la Acrópolis, el casco histórico de Plaka y los principales museos, e incluso una excursión de un día a Cabo Sunio o a una isla cercana como Egina.'

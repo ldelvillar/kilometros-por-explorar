@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '7 - 9 días'
 budget: 950
-clasicRouteElements: ['Marrakech', 'Desierto del Sahara', 'Montes del Atlas']
+classicRouteElements: ['Marrakech', 'Desierto del Sahara', 'Montes del Atlas']
 faqs:
   - question: '¿Necesito visado para Marruecos?'
     answer: 'Los ciudadanos españoles <strong>no necesitan visado</strong> para estancias turísticas de hasta 90 días; solo el pasaporte en vigor.'

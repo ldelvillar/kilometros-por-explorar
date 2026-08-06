@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Junio a agosto, o invierno para auroras boreales'
 idealDuration: '8 - 10 días'
 budget: 2100
-clasicRouteElements:
+classicRouteElements:
   ['Geirangerfjord', 'Trollstigen', 'Islas Lofoten', 'Preikestolen']
 faqs:
   - question: '¿Cuándo es mejor viajar a Noruega?'

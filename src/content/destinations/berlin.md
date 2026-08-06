@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y verano'
 idealDuration: '4 - 5 días'
 budget: 650
-clasicRouteElements:
+classicRouteElements:
   ['Berlín', 'East Side Gallery', 'Isla de los Museos', 'Kreuzberg']
 faqs:
   - question: '¿Cuántos días hacen falta para ver Berlín?'

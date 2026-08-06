@@ -10,7 +10,7 @@ featured: true
 bestSeason: 'Primavera y otoño'
 idealDuration: '4 - 5 días'
 budget: 650
-clasicRouteElements: ['Santa Sofía', 'Mezquita Azul', 'Gran Bazar', 'Bósforo']
+classicRouteElements: ['Santa Sofía', 'Mezquita Azul', 'Gran Bazar', 'Bósforo']
 faqs:
   - question: '¿Necesito visado para Turquía?'
     answer: 'Los ciudadanos españoles <strong>no necesitan visado</strong> para estancias turísticas de hasta 90 días; basta con el pasaporte en vigor. Conviene revisar la vigencia mínima requerida antes de viajar.'
