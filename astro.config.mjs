@@ -7,6 +7,7 @@ import { unified } from '@astrojs/markdown-remark';
 import { remarkAlert } from 'remark-github-blockquote-alert';
 
 import { SITE_CONFIG } from './src/config/site.ts';
+import { rehypeImageFigures } from './src/utils/rehypeImageFigures.ts';
 
 // https://astro.build/config
 export default defineConfig({
@@ -18,6 +19,7 @@ export default defineConfig({
   markdown: {
     processor: unified({
       remarkPlugins: [[remarkAlert, { legacyTitle: true }]],
+      rehypePlugins: [rehypeImageFigures],
     }),
   },
   integrations: [sitemap({ lastmod: new Date() }), preact()],
