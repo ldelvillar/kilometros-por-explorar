@@ -1,7 +1,8 @@
 ---
+import { getCollection, type CollectionEntry } from 'astro:content';
+
 import DestinationCard from '@/components/destinations/DestinationCard.astro';
 import Magnifier from '@/assets/icons/magnifier.svg';
-import { getCollection } from 'astro:content';
 
 const allDestinations = await getCollection('destinations');
 
@@ -14,236 +15,100 @@ const categoryKeywords: Record<string, string> = {
   sorpresa: 'sorpresa pack packs',
 };
 
-const featuredDestinations = allDestinations.filter(
-  destination => destination.data.featured === true
-);
-const culturalDestinations = allDestinations.filter(
-  ({ data }) => data.category === 'cultural'
-);
-const beachDestinations = allDestinations.filter(
-  ({ data }) => data.category === 'playa'
-);
-const natureDestinations = allDestinations.filter(
-  ({ data }) => data.category === 'naturaleza'
-);
-const cityDestinations = allDestinations.filter(
-  ({ data }) => data.category === 'ciudad'
-);
-const boatDestinations = allDestinations.filter(
-  ({ data }) => data.category === 'barco'
-);
-const surprisePackDestinations = allDestinations.filter(
-  ({ data }) => data.category === 'sorpresa'
-);
+const categoryTitles: { category: string; title: string }[] = [
+  { category: 'cultural', title: 'Destinos culturales' },
+  { category: 'playa', title: 'Playa' },
+  { category: 'naturaleza', title: 'Naturaleza' },
+  { category: 'barco', title: 'Viajes en barco' },
+  { category: 'ciudad', title: 'Ciudades europeas' },
+  { category: 'sorpresa', title: 'Packs sorpresa' },
+];
 
-// Remove duplicates based on id
-const uniqueDestinations = Array.from(
-  new Map(allDestinations.map(item => [item.id, item])).values()
-);
+const groups: {
+  title: string;
+  duplicate: boolean;
+  destinations: CollectionEntry<'destinations'>[];
+}[] = [
+  {
+    title: 'Destinos destacados',
+    duplicate: true,
+    destinations: allDestinations.filter(({ data }) => data.featured),
+  },
+  ...categoryTitles.map(({ category, title }) => ({
+    title,
+    duplicate: false,
+    destinations: allDestinations.filter(
+      ({ data }) => data.category === category
+    ),
+  })),
+];
+
+function getSearchText(destination: CollectionEntry<'destinations'>) {
+  return [
+    destination.data.name,
+    destination.data.country ?? '',
+    categoryKeywords[destination.data.category] ?? '',
+    destination.data.shortDescription,
+  ].join(' ');
+}
 ---
 
-<section class="mx-auto max-w-7xl px-4 pt-4">
-  <!-- All Destinations - Always visible initially (organized by categories) -->
-  <div id="all-destinations-section" class="destination-section">
-    <!-- Featured Destinations -->
-    <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Destinos destacados</h2>
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          featuredDestinations.map((destination, index) => (
-            <DestinationCard
-              destination={destination}
-              loading={index < 3 ? 'eager' : 'lazy'}
-              priority={index === 0}
-            />
-          ))
-        }
-      </div>
-    </div>
+<section class="mx-auto max-w-7xl px-4 pt-4 pb-12">
+  <h2
+    id="search-results-count"
+    class="mb-6 text-2xl font-bold text-gray-900"
+    hidden
+  >
+  </h2>
 
-    <!-- Cultural Destinations -->
-    <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Destinos culturales</h2>
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          culturalDestinations.map(destination => (
-            <DestinationCard destination={destination} />
-          ))
-        }
-      </div>
-    </div>
-
-    <!-- Beach Destinations -->
-    <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Playa</h2>
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          beachDestinations.map(destination => (
-            <DestinationCard destination={destination} />
-          ))
-        }
-      </div>
-    </div>
-
-    <!-- Nature Destinations -->
-    <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Naturaleza</h2>
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          natureDestinations.map(destination => (
-            <DestinationCard destination={destination} />
-          ))
-        }
-      </div>
-    </div>
-
-    <!-- Boat Destinations -->
-    <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Viajes en barco</h2>
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          boatDestinations.map(destination => (
-            <DestinationCard destination={destination} />
-          ))
-        }
-      </div>
-    </div>
-
-    <!-- City Destinations -->
-    <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Ciudades europeas</h2>
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          cityDestinations.map(destination => (
-            <DestinationCard destination={destination} />
-          ))
-        }
-      </div>
-    </div>
-
-    <!-- Surprise Pack Destinations -->
-    <div class="mb-12">
-      <h2 class="mb-6 text-2xl font-bold text-gray-900">Packs sorpresa</h2>
-      <div class="grid gap-6 md:grid-cols-3">
-        {
-          surprisePackDestinations.map(destination => (
-            <DestinationCard destination={destination} />
-          ))
-        }
-      </div>
-    </div>
-  </div>
-
-  <!-- Cultural Destinations -->
-  <div id="cultural-section" class="destination-section mb-12 hidden">
-    <div class="grid gap-6 md:grid-cols-3">
-      {
-        culturalDestinations.map(destination => (
-          <DestinationCard destination={destination} />
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- Beach Destinations -->
-  <div id="beach-section" class="destination-section mb-12 hidden">
-    <div class="grid gap-6 md:grid-cols-3">
-      {
-        beachDestinations.map(destination => (
-          <DestinationCard destination={destination} />
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- Nature Destinations -->
-  <div id="nature-section" class="destination-section mb-12 hidden">
-    <div class="grid gap-6 md:grid-cols-3">
-      {
-        natureDestinations.map(destination => (
-          <DestinationCard destination={destination} />
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- Boat Destinations -->
-  <div id="boat-section" class="destination-section mb-12 hidden">
-    <div class="grid gap-6 md:grid-cols-3">
-      {
-        boatDestinations.map(destination => (
-          <DestinationCard destination={destination} />
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- City Destinations -->
-  <div id="city-section" class="destination-section mb-12 hidden">
-    <div class="grid gap-6 md:grid-cols-3">
-      {
-        cityDestinations.map(destination => (
-          <DestinationCard destination={destination} />
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- Surprise Pack Destinations -->
-  <div id="surprise-section" class="destination-section mb-12 hidden">
-    <div class="grid gap-6 md:grid-cols-3">
-      {
-        surprisePackDestinations.map(destination => (
-          <DestinationCard destination={destination} />
-        ))
-      }
-    </div>
-  </div>
-
-  <!-- Search Results (initially hidden) -->
-  <div id="search-results" class="destination-section mb-12 hidden">
-    <h2
-      id="search-results-count"
-      class="mb-6 text-2xl font-bold text-gray-900"
-      hidden
-    >
-    </h2>
-    <div id="search-results-grid" class="grid gap-6 md:grid-cols-3">
-      {
-        uniqueDestinations.map(destination => (
-          <div
-            class="search-card"
-            data-name={destination.data.name}
-            data-search={[
-              destination.data.name,
-              destination.data.country ?? '',
-              categoryKeywords[destination.data.category] ?? '',
-              destination.data.shortDescription,
-            ].join(' ')}
-            hidden
+  <div id="destinations-grid" class="grid gap-6 md:grid-cols-3">
+    {
+      groups.map((group, groupIndex) => (
+        <Fragment>
+          <h2
+            class:list={[
+              'destination-heading col-span-full text-2xl font-bold text-gray-900',
+              groupIndex > 0 && 'mt-6',
+            ]}
           >
-            <DestinationCard destination={destination} />
-          </div>
-        ))
-      }
-    </div>
+            {group.title}
+          </h2>
+          {group.destinations.map((destination, index) => (
+            <div
+              class="destination-item"
+              data-category={destination.data.category}
+              data-duplicate={group.duplicate ? '' : undefined}
+              data-name={destination.data.name}
+              data-search={getSearchText(destination)}
+            >
+              <DestinationCard
+                destination={destination}
+                loading={groupIndex === 0 && index < 3 ? 'eager' : 'lazy'}
+                priority={groupIndex === 0 && index === 0}
+              />
+            </div>
+          ))}
+        </Fragment>
+      ))
+    }
+  </div>
+
+  <div
+    id="no-results"
+    class="mx-auto hidden max-w-[520px] px-4 pt-16 pb-12 text-center"
+  >
     <div
-      id="no-results"
-      class="mx-auto hidden max-w-[520px] px-4 pt-16 pb-12 text-center"
+      class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
     >
-      <div
-        class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
-      >
-        <Magnifier class="size-8 text-primary" />
-      </div>
-      <h2 class="mb-2 text-2xl font-bold text-gray-900">
-        Sin resultados para «<span id="no-results-query"></span>»
-      </h2>
-      <p class="leading-relaxed text-gray-500">
-        No hemos encontrado destinos que coincidan con tu búsqueda. Prueba con
-        otro término o explora todos nuestros destinos.
-      </p>
+      <Magnifier class="size-8 text-primary" />
     </div>
+    <h2 class="mb-2 text-2xl font-bold text-gray-900">
+      Sin resultados para «<span id="no-results-query"></span>»
+    </h2>
+    <p class="leading-relaxed text-gray-500">
+      No hemos encontrado destinos que coincidan con tu búsqueda. Prueba con
+      otro término o explora todos nuestros destinos.
+    </p>
   </div>
 </section>
 
@@ -251,12 +116,22 @@ const uniqueDestinations = Array.from(
   // Initialize functionality when DOM is loaded
   document.addEventListener('DOMContentLoaded', function () {
     const chips = document.querySelectorAll('.hero-chip');
-    const searchInput = document.getElementById('hero-search');
-    const sections = document.querySelectorAll('.destination-section');
-    const resultsGrid = document.getElementById('search-results-grid');
+    const searchInput = document.getElementById(
+      'hero-search'
+    ) as HTMLInputElement | null;
+    const headings = Array.from(
+      document.querySelectorAll<HTMLElement>('.destination-heading')
+    );
+    const items = Array.from(
+      document.querySelectorAll<HTMLElement>('.destination-item')
+    );
+    const grid = document.getElementById('destinations-grid');
     const resultsCount = document.getElementById('search-results-count');
     const noResults = document.getElementById('no-results');
     const noResultsQuery = document.getElementById('no-results-query');
+
+    // Search ranking reorders the grid, so keep the authored order to restore.
+    const authoredOrder = grid ? Array.from(grid.children) : [];
 
     // Notify the page (index.astro) so it can hide the CTA on the empty state.
     function setEmptyState(isEmpty: boolean) {
@@ -265,44 +140,29 @@ const uniqueDestinations = Array.from(
       );
     }
 
-    let currentSection = 'all-destinations-section';
+    let currentCategory = 'all';
     let isSearching = false;
-    let searchTimeout;
+    let searchTimeout: ReturnType<typeof setTimeout>;
 
-    // Function to show specific section
-    function showSection(sectionId) {
-      sections.forEach(section => {
-        if (section.id === sectionId) {
-          section.classList.remove('hidden');
-        } else {
-          section.classList.add('hidden');
-        }
-      });
-      // Only remember category sections — the search-results view is transient,
-      // so clearing the search returns to the last category, not the results.
-      if (sectionId !== 'search-results') currentSection = sectionId;
-    }
-
-    // Lowercase + strip accents so "japon" matches "Japón", "peru" -> "Perú", etc.
-    function normalize(str) {
+    // Lowercase + strip accents.
+    function normalize(str: string) {
       return str
         .toLowerCase()
         .normalize('NFD')
         .replace(/\p{Diacritic}/gu, '');
     }
 
-    // Index the pre-rendered cards once: each entry points at its real DOM
-    // node (a DestinationCard) plus its normalized name and searchable text.
-    const searchIndex = Array.from(
-      resultsGrid ? resultsGrid.querySelectorAll('.search-card') : []
-    ).map(node => ({
-      node,
-      name: normalize(node.dataset.name || ''),
-      haystack: normalize(node.dataset.search || ''),
-    }));
+    // Index the cards once, skipping the featured duplicates.
+    const searchIndex = items
+      .filter(node => !node.hasAttribute('data-duplicate'))
+      .map(node => ({
+        node,
+        name: normalize(node.dataset.name || ''),
+        haystack: normalize(node.dataset.search || ''),
+      }));
 
     // Tokenize the query (every word must match) and rank name hits highest.
-    function performSearch(query) {
+    function performSearch(query: string) {
       const tokens = normalize(query).split(/\s+/).filter(Boolean);
       if (tokens.length === 0) return [];
 
@@ -326,16 +186,37 @@ const uniqueDestinations = Array.from(
       return scored.map(item => item.entry);
     }
 
-    // Show the matching pre-rendered cards (hide the rest) in ranked order.
-    function displaySearchResults(results, query) {
-      if (!resultsGrid || !noResults) return;
+    // Category view.
+    function showCategory(category: string) {
+      currentCategory = category;
+      const showAll = category === 'all';
+
+      if (grid) authoredOrder.forEach(child => grid.appendChild(child));
+      headings.forEach(heading => (heading.hidden = !showAll));
+      items.forEach(node => {
+        node.hidden = showAll
+          ? false
+          : node.dataset.category !== category ||
+            node.hasAttribute('data-duplicate');
+      });
+
+      if (resultsCount) resultsCount.hidden = true;
+      if (noResults) noResults.classList.add('hidden');
+    }
+
+    // Show the matching cards (hide the rest) in ranked order.
+    function displaySearchResults(
+      results: { node: HTMLElement }[],
+      query: string
+    ) {
+      headings.forEach(heading => (heading.hidden = true));
 
       const matched = new Set(results.map(entry => entry.node));
-      searchIndex.forEach(entry => {
-        entry.node.hidden = !matched.has(entry.node);
+      items.forEach(node => {
+        node.hidden = !matched.has(node);
       });
       // Reorder so the highest-ranked matches come first.
-      results.forEach(entry => resultsGrid.appendChild(entry.node));
+      if (grid) results.forEach(entry => grid.appendChild(entry.node));
 
       const count = results.length;
 
@@ -350,23 +231,21 @@ const uniqueDestinations = Array.from(
 
       // Empty state shows the searched term and hides the page CTA.
       if (noResultsQuery) noResultsQuery.textContent = query;
-      noResults.classList.toggle('hidden', count > 0);
+      if (noResults) noResults.classList.toggle('hidden', count > 0);
       setEmptyState(count === 0);
-
-      showSection('search-results');
     }
 
-    // Highlight the pill that matches the active section.
-    function setActiveChip(sectionId) {
+    // Highlight the pill that matches the active category.
+    function setActiveChip(category: string) {
       chips.forEach(chip => {
-        const active = chip.getAttribute('data-section') === sectionId;
+        const active = chip.getAttribute('data-category') === category;
         chip.setAttribute('data-active', active ? 'true' : 'false');
       });
     }
 
     // Category pill navigation.
     chips.forEach(chip => {
-      chip.addEventListener('click', function () {
+      chip.addEventListener('click', function (this: HTMLElement) {
         if (isSearching && searchInput) {
           // Clear search when switching categories
           searchInput.value = '';
@@ -375,17 +254,17 @@ const uniqueDestinations = Array.from(
           setEmptyState(false);
         }
 
-        const sectionId = this.getAttribute('data-section');
-        if (sectionId) {
-          setActiveChip(sectionId);
-          showSection(sectionId);
+        const category = this.getAttribute('data-category');
+        if (category) {
+          setActiveChip(category);
+          showCategory(category);
         }
       });
     });
 
     // Reflect the active query in the URL (?q=) without adding history
     // entries, so searches are shareable and survive a reload.
-    function syncUrl(query) {
+    function syncUrl(query: string | null) {
       const url = new URL(window.location.href);
       if (query) url.searchParams.set('q', query);
       else url.searchParams.delete('q');
@@ -393,7 +272,7 @@ const uniqueDestinations = Array.from(
     }
 
     // Run a search and show the results (no category is active while searching).
-    function runSearch(query) {
+    function runSearch(query: string) {
       isSearching = true;
       chips.forEach(chip => chip.setAttribute('data-active', 'false'));
       displaySearchResults(performSearch(query), query);
@@ -403,8 +282,8 @@ const uniqueDestinations = Array.from(
     // Restore the last selected category when the search is emptied.
     function clearSearch() {
       isSearching = false;
-      setActiveChip(currentSection);
-      showSection(currentSection);
+      setActiveChip(currentCategory);
+      showCategory(currentCategory);
       syncUrl(null);
       setEmptyState(false);
     }
@@ -451,19 +330,11 @@ const uniqueDestinations = Array.from(
 </script>
 
 <style>
-  .destination-section {
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .destination-section.hidden {
-    display: none;
-  }
-
-  .search-card {
+  .destination-item {
     display: contents;
   }
 
-  .search-card[hidden] {
+  .destination-item[hidden] {
     display: none;
   }
 </style>

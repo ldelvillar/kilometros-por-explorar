@@ -20,37 +20,37 @@ const allDestinations = await getCollection('destinations');
 
 const categories = [
   {
-    id: 'all-destinations-section',
+    id: 'all',
     label: 'Todos',
     count: allDestinations.length,
   },
   {
-    id: 'cultural-section',
+    id: 'cultural',
     label: 'Culturales',
     count: allDestinations.filter(d => d.data.category === 'cultural').length,
   },
   {
-    id: 'beach-section',
+    id: 'playa',
     label: 'Playa',
     count: allDestinations.filter(d => d.data.category === 'playa').length,
   },
   {
-    id: 'nature-section',
+    id: 'naturaleza',
     label: 'Naturaleza',
     count: allDestinations.filter(d => d.data.category === 'naturaleza').length,
   },
   {
-    id: 'boat-section',
+    id: 'barco',
     label: 'Barco',
     count: allDestinations.filter(d => d.data.category === 'barco').length,
   },
   {
-    id: 'city-section',
+    id: 'ciudad',
     label: 'Ciudades',
     count: allDestinations.filter(d => d.data.category === 'ciudad').length,
   },
   {
-    id: 'surprise-section',
+    id: 'sorpresa',
     label: 'Sorpresa',
     count: allDestinations.filter(d => d.data.category === 'sorpresa').length,
   },
@@ -93,10 +93,8 @@ const categories = [
               <button
                 type="button"
                 class="hero-chip inline-flex cursor-pointer items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-[9px] text-sm font-bold text-gray-800 transition-all duration-150 hover:border-primary hover:text-primary"
-                data-section={cat.id}
-                data-active={
-                  cat.id === 'all-destinations-section' ? 'true' : 'false'
-                }
+                data-category={cat.id}
+                data-active={cat.id === 'all' ? 'true' : 'false'}
               >
                 {cat.label}
                 <span class="text-xs font-extrabold text-gray-400">
