@@ -28,7 +28,7 @@ const destinations = defineCollection({
         bestSeason: z.string(),
         idealDuration: z.string(),
         budget: z.number().min(0),
-        classicRouteElements: z.array(z.string()),
+        classicRouteElements: z.array(z.string()).length(4),
         faqs: z
           .array(
             z.object({

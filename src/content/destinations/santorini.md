@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Mayo a septiembre'
 idealDuration: '7 - 9 días'
 budget: 1500
-classicRouteElements: ['Santorini', 'Mykonos', 'Paros']
+classicRouteElements: ['Santorini', 'Mykonos', 'Paros', 'Naxos']
 faqs:
   - question: '¿Este viaje es solo Santorini o incluye más islas?'
     answer: 'Es una ruta por las <strong>islas griegas</strong>: combina Santorini con Mykonos y Paros saltando en ferry, para vivir tanto los atardeceres de Oia como pueblos más auténticos.'

@@ -11,7 +11,12 @@ bestSeason: 'Enero a abril (temporada de ballenas)'
 idealDuration: '7 - 8 días'
 budget: 2400
 classicRouteElements:
-  ['La Paz', 'Bahía de Balandra', 'Islas del Golfo de California']
+  [
+    'La Paz',
+    'Bahía de Balandra',
+    'Islas del Golfo de California',
+    'Mar de Cortés',
+  ]
 faqs:
   - question: '¿Cómo son las expediciones en barco de Baja California?'
     answer: 'Son salidas de <strong>varios días en barco con pensión completa</strong> por el Mar de Cortés, con noches a bordo y jornadas dedicadas a avistar fauna, hacer snorkel y explorar islas vírgenes.'

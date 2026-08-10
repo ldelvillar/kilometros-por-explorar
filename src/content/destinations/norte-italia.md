@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y verano'
 idealDuration: '7 - 8 días'
 budget: 1200
-classicRouteElements: ['Lago de Como', 'Dolomitas', 'Venecia']
+classicRouteElements: ['Lago de Como', 'Dolomitas', 'Venecia', 'Verona']
 faqs:
   - question: '¿Qué incluye una ruta por el Norte de Italia?'
     answer: 'Nuestra propuesta combina el <strong>Lago de Como, las Dolomitas y Venecia</strong>, mezclando villas junto al lago, montaña alpina y los canales venecianos en un mismo viaje.'

@@ -10,7 +10,13 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '3 - 4 días'
 budget: 550
-classicRouteElements: ['Viena', 'Palacio de Schönbrunn', 'Ópera de Viena']
+classicRouteElements:
+  [
+    'Viena',
+    'Palacio de Schönbrunn',
+    'Ópera de Viena',
+    'Catedral de San Esteban',
+  ]
 faqs:
   - question: '¿Cuántos días necesito para Viena?'
     answer: 'Con <strong>3 o 4 días</strong> ves Schönbrunn, el centro histórico, los grandes museos y disfrutas de un café vienés o de un concierto sin prisas.'

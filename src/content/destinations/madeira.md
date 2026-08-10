@@ -10,7 +10,8 @@ featured: false
 bestSeason: 'Todo el año (clima suave)'
 idealDuration: '5 - 7 días'
 budget: 750
-classicRouteElements: ['Funchal', 'Levadas', 'Pico do Arieiro']
+classicRouteElements:
+  ['Funchal', 'Levadas', 'Pico do Arieiro', 'Bosque de Laurisilva']
 faqs:
   - question: '¿Cuál es la mejor época para viajar a Madeira?'
     answer: 'Se puede visitar <strong>todo el año</strong> gracias a su clima suave de eterna primavera. La fin de año es famosa por sus fuegos artificiales y la primavera por la Fiesta de la Flor.'

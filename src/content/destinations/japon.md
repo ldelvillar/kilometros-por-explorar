@@ -10,7 +10,7 @@ featured: true
 bestSeason: 'Primavera y otoño'
 idealDuration: '12 - 14 días'
 budget: 2250
-classicRouteElements: ['Tokio', 'Kioto', 'Osaka']
+classicRouteElements: ['Tokio', 'Kioto', 'Osaka', 'Monte Fuji']
 faqs:
   - question: '¿Necesito visado para viajar a Japón?'
     answer: 'Los ciudadanos españoles <strong>no necesitan visado</strong> para estancias turísticas de hasta 90 días. Solo hace falta el pasaporte en vigor.'

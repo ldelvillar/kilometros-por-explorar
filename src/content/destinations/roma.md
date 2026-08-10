@@ -10,7 +10,7 @@ featured: false
 bestSeason: 'Primavera y otoño'
 idealDuration: '4 - 5 días'
 budget: 650
-classicRouteElements: ['Coliseo', 'Vaticano', 'Trastevere']
+classicRouteElements: ['Coliseo', 'Vaticano', 'Trastevere', 'Fontana di Trevi']
 faqs:
   - question: '¿Cuántos días necesito para Roma?'
     answer: 'Con <strong>4 o 5 días</strong> ves la Roma imperial (Coliseo, Foro), el Vaticano, las plazas del centro y el Trastevere sin agobios, e incluso una escapada a Ostia Antica o Tívoli.'

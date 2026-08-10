@@ -9,7 +9,13 @@ featured: false
 bestSeason: 'Todo el año'
 idealDuration: 'A tu elección'
 budget: 500
-classicRouteElements: ['Destino sorpresa']
+classicRouteElements:
+  [
+    'Destino sorpresa',
+    'Itinerario a medida',
+    'Pistas antes de volar',
+    'Revelación en el aeropuerto',
+  ]
 faqs:
   - question: '¿Cómo funciona un viaje sorpresa con amigos?'
     answer: 'Nos contáis <strong>presupuesto, fechas y preferencias</strong> del grupo, y nosotros diseñamos el viaje sin revelar el destino hasta poco antes de salir. Vosotros solo tenéis que hacer la maleta e ir a por la aventura.'

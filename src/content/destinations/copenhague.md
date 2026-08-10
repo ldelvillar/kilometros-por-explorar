@@ -10,7 +10,8 @@ featured: false
 bestSeason: 'Mayo a septiembre'
 idealDuration: '3 - 4 días'
 budget: 750
-classicRouteElements: ['Copenhague', 'Nyhavn', 'Tivoli']
+classicRouteElements:
+  ['Copenhague', 'Nyhavn', 'Tivoli', 'Palacio de Christiansborg']
 faqs:
   - question: '¿Cuántos días necesito para Copenhague?'
     answer: 'Con <strong>3 o 4 días</strong> recorres Nyhavn, los palacios, Tivoli y el ambiente de barrios como Nørrebro, con opción de cruzar a Malmö (Suecia) en tren en apenas 40 minutos.'

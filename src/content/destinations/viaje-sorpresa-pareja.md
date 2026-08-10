@@ -9,7 +9,13 @@ featured: false
 bestSeason: 'Todo el año'
 idealDuration: 'A tu elección'
 budget: 600
-classicRouteElements: ['Destino sorpresa']
+classicRouteElements:
+  [
+    'Destino sorpresa',
+    'Itinerario a medida',
+    'Pistas antes de volar',
+    'Revelación en el aeropuerto',
+  ]
 faqs:
   - question: '¿Cómo funciona un viaje sorpresa en pareja?'
     answer: 'Nos contáis <strong>presupuesto, fechas y gustos</strong>, y diseñamos una escapada romántica sin desvelar el destino hasta el último momento. Solo tenéis que dejaros sorprender.'
