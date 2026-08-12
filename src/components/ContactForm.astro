@@ -1,4 +1,6 @@
 ---
+import { SITE_CONFIG } from '@/config/site';
+
 interface InputsData {
   question: string;
   type: 'text' | 'email' | 'tel' | 'textarea';
@@ -39,9 +41,11 @@ const INPUTS: InputsData[] = [
     required: false,
   },
 ];
+
+const { company } = SITE_CONFIG;
 ---
 
-<form class="space-y-6" autocomplete="on">
+<form class="space-y-6" autocomplete="on" data-contact-form>
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
     {
       INPUTS.map(input => (
@@ -96,6 +100,22 @@ const INPUTS: InputsData[] = [
     </label>
   </div>
 
+  <div
+    data-form-status
+    role="status"
+    aria-live="polite"
+    hidden
+    class="rounded-xl border px-4 py-3 text-sm leading-relaxed"
+  >
+    <span data-form-status-message></span>
+    <span data-form-status-fallback hidden>
+      También puedes escribirnos a <a
+        href={`mailto:${company.email}`}
+        class="font-semibold underline">{company.email}</a
+      >.
+    </span>
+  </div>
+
   <button
     type="submit"
     class="w-full rounded-xl bg-primary px-4 py-3 font-bold text-white transition duration-300 hover:bg-primary/90"
@@ -104,55 +124,98 @@ const INPUTS: InputsData[] = [
   </button>
 </form>
 
+<style>
+  [data-form-status][data-state='success'] {
+    border-color: #bbf7d0;
+    background-color: #f0fdf4;
+    color: #15803d;
+  }
+
+  [data-form-status][data-state='error'] {
+    border-color: #fecaca;
+    background-color: #fef2f2;
+    color: #b91c1c;
+  }
+</style>
+
 <script>
-  const form = document.querySelector('form');
   const CONTACT_ENDPOINT = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT;
 
-  form?.addEventListener('submit', async event => {
-    event.preventDefault();
+  const SUCCESS_MESSAGE =
+    '¡Mensaje enviado! Gracias por escribirnos, te responderemos lo antes posible. Echa un vistazo también a tu carpeta de spam.';
+  const SERVER_ERROR_MESSAGE =
+    'No hemos podido enviar tu mensaje. Inténtalo de nuevo en unos minutos.';
+  const NETWORK_ERROR_MESSAGE =
+    'Parece que no hay conexión. Compruébala e inténtalo de nuevo.';
 
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
-
-    // Deshabilitar botón para evitar envíos múltiples
-    const submitButton: HTMLButtonElement | null = form.querySelector(
-      'button[type="submit"]'
-    );
-    const originalText = submitButton?.textContent || 'Enviar Consulta';
-
-    if (submitButton) {
-      submitButton.disabled = true;
-      submitButton.textContent = 'Enviando...';
-    }
-
-    try {
-      const response = await fetch(CONTACT_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        alert('Mensaje enviado con éxito. Revisa tu email.');
-        form.reset();
-      } else {
-        const errorData = await response.json().catch(() => ({}));
-        console.error('Error del servidor:', errorData);
-        alert(
-          'Ha ocurrido un error al enviar el formulario. Por favor, inténtalo de nuevo o contáctanos por teléfono.'
-        );
-      }
-    } catch (error) {
-      console.error('Error de red:', error);
-      alert(
-        'Error de conexión. Por favor, verifica tu conexión a internet e inténtalo de nuevo.'
+  document
+    .querySelectorAll<HTMLFormElement>('form[data-contact-form]')
+    .forEach(form => {
+      const status = form.querySelector<HTMLElement>('[data-form-status]');
+      const message = form.querySelector<HTMLElement>(
+        '[data-form-status-message]'
       );
-    } finally {
-      // Rehabilitar botón
-      if (submitButton) {
-        submitButton.disabled = false;
-        submitButton.textContent = originalText;
+      const fallback = form.querySelector<HTMLElement>(
+        '[data-form-status-fallback]'
+      );
+      const submitButton = form.querySelector<HTMLButtonElement>(
+        'button[type="submit"]'
+      );
+
+      function showStatus(state: 'success' | 'error', text: string) {
+        if (!status || !message) return;
+        message.textContent = text;
+        status.dataset.state = state;
+        status.hidden = false;
+        // El email de respaldo solo tiene sentido cuando el envío ha fallado
+        if (fallback) fallback.hidden = state !== 'error';
       }
-    }
-  });
+
+      function hideStatus() {
+        if (!status) return;
+        status.hidden = true;
+        delete status.dataset.state;
+      }
+
+      form.addEventListener('submit', async event => {
+        event.preventDefault();
+        hideStatus();
+
+        const data = Object.fromEntries(new FormData(form));
+        const originalText = submitButton?.textContent || 'Enviar Consulta';
+
+        // Deshabilitar botón para evitar envíos múltiples
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Enviando...';
+        }
+
+        try {
+          const response = await fetch(CONTACT_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            // Solo vaciamos el formulario si se ha enviado: si falla, se conserva para reintentar.
+            form.reset();
+            showStatus('success', SUCCESS_MESSAGE);
+          } else {
+            const errorData = await response.json().catch(() => ({}));
+            console.error('Error del servidor:', errorData);
+            showStatus('error', SERVER_ERROR_MESSAGE);
+          }
+        } catch (error) {
+          console.error('Error de red:', error);
+          showStatus('error', NETWORK_ERROR_MESSAGE);
+        } finally {
+          // Rehabilitar botón
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = originalText;
+          }
+        }
+      });
+    });
 </script>
