@@ -30,7 +30,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: '¡Hola! 👋 Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?',
+      text: '¡Hola! 👋 Soy el asistente de Kilómetros por Explorar. ¿En qué puedo ayudarte hoy?',
       sender: 'bot',
       timestamp: new Date(),
     },
