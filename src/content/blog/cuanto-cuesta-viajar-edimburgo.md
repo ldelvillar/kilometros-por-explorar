@@ -20,7 +20,7 @@ Edimburgo no es un destino barato. De hecho, es una de las capitales más caras 
 
 En esta guía te mostramos los **precios reales de un viaje a Edimburgo**, basados en nuestra experiencia y en los viajes que hemos organizado para nuestros viajeros. Quédate con nosotros para saber lo que puede costar de verdad un viaje a Edimburgo.
 
-Si aún no tienes claro qué ver en Edimburgo, te recomendamos echar un vistazo a nuestro artículo sobre [qué ver en Edimburgo en 3 días](/blog/que-ver-en-edimburgo-en-3-dias), donde te contamos los imprescindibles de la ciudad y cómo organizar tu visita para aprovechar al máximo el tiempo.
+Si aún no tienes claro qué ver en Edimburgo, te recomendamos echar un vistazo a nuestro artículo sobre [qué ver en Edimburgo en 3 días](/blog/edimburgo-en-3-dias), donde te contamos los imprescindibles de la ciudad y cómo organizar tu visita para aprovechar al máximo el tiempo.
 
 ## Índice
 

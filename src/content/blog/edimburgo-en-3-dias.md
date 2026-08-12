@@ -18,7 +18,7 @@ faqs:
 
 Edimburgo es una ciudad que atrapa desde el primer momento. Su silueta de castillo medieval dominando la ciudad, las calles empedradas del casco antiguo y esa mezcla perfecta entre historia y modernidad la convierten en uno de los destinos más fascinantes del Reino Unido.
 
-Tres días en Edimburgo es el tiempo justo para explorar sus imprescindibles. Si dispones de más tiempo, nosotros recomendamos pasar 5 o 6 días en esta ciudad para disfrutarla al máximo, siguiendo nuestro [itinerario de Edimburgo en 6 días](/blog/edimburgo-en-seis-dias).
+Tres días en Edimburgo es el tiempo justo para explorar sus imprescindibles. Si dispones de más tiempo, nosotros recomendamos pasar 5 o 6 días en esta ciudad para disfrutarla al máximo, siguiendo nuestro [itinerario de Edimburgo en 6 días](/blog/edimburgo-en-6-dias).
 
 Este itinerario equilibra las atracciones principales con tiempo suficiente para pasear sin prisas, y con flexibilidad para que adaptes el plan a tu ritmo.
 
