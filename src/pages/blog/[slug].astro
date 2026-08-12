@@ -16,6 +16,7 @@ import {
   type BreadcrumbItem,
 } from '@/config/schemas';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
+import { getReadingTime } from '@/utils/getReadingTime';
 import '@/styles/prose.css';
 
 interface Props {
@@ -44,6 +45,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const readingTime = getReadingTime(post.body);
 
 const destinationIds = new Set(post.data.destinations.map(({ id }) => id));
 const relatedPosts = await getCollection('blog', ({ data }) => {
@@ -79,7 +81,8 @@ const articleSchema = getArticleSchema(
   undefined,
   post.data.image.src,
   post.data.author,
-  mainDestination
+  mainDestination,
+  readingTime
 );
 
 const faqSchema = getFAQSchema(post.data.faqs);
@@ -140,6 +143,8 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
               })
             }
           </time>
+          <span> | </span>
+          <span>{readingTime} min de lectura</span>
         </div>
         <h1 class="text-3xl font-bold text-gray-900 md:text-4xl">
           {post.data.title}

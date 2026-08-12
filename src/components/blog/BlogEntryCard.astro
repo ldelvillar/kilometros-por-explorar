@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import HalfArrow from '@/assets/icons/halfArrow.svg';
 import Arrow from '@/assets/icons/arrow.svg';
+import { getReadingTime } from '@/utils/getReadingTime';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const { post, loading, priority = false } = Astro.props;
+const readingTime = getReadingTime(post.body);
 ---
 
 <article class="group h-full overflow-hidden rounded-2xl bg-white shadow-lg">
@@ -36,7 +38,7 @@ const { post, loading, priority = false } = Astro.props;
         {post.data.description}
       </p>
       <div
-        class="mb-2 flex items-center justify-between text-sm text-neutral-500"
+        class="mb-2 flex flex-wrap items-center justify-between gap-x-2 text-sm text-neutral-500"
       >
         <span>
           {
@@ -45,7 +47,7 @@ const { post, loading, priority = false } = Astro.props;
               month: 'short',
               year: 'numeric',
             })
-          }
+          } · {readingTime} min
         </span>
         <span class="capitalize">{post.data.author}</span>
       </div>

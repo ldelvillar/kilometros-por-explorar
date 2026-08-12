@@ -196,7 +196,8 @@ export const getArticleSchema = (
   modifyDate?: string,
   imageUrl?: string,
   authorName?: string,
-  aboutName?: string
+  aboutName?: string,
+  readingTimeMinutes?: number
 ) => ({
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
@@ -239,6 +240,7 @@ export const getArticleSchema = (
       name: aboutName.charAt(0).toUpperCase() + aboutName.slice(1),
     },
   }),
+  ...(readingTimeMinutes && { timeRequired: `PT${readingTimeMinutes}M` }),
 });
 
 // Schema para reseñas de clientes
