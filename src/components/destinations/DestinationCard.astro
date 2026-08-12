@@ -18,7 +18,7 @@ const { destination, loading = 'lazy', priority = false } = Astro.props;
   data-category={destination.data.category}
 >
   <article
-    class="relative h-full overflow-hidden rounded-3xl border border-gray-100 bg-white transition-all duration-300 hover:border-[#12a3ed]/30 hover:shadow-xl"
+    class="relative h-full overflow-hidden rounded-3xl border border-gray-100 bg-white transition-all duration-300 hover:border-primary/30 hover:shadow-xl"
   >
     <div class="relative h-64 overflow-hidden">
       <Image
@@ -51,7 +51,7 @@ const { destination, loading = 'lazy', priority = false } = Astro.props;
         {destination.data.shortDescription}
       </p>
       <div
-        class="flex items-center justify-between border-t border-gray-100 pt-4 text-sm font-semibold tracking-wide text-[#12a3ed] uppercase transition-colors duration-300 group-hover:text-[#0d7ab8]"
+        class="flex items-center justify-between border-t border-gray-100 pt-4 text-sm font-semibold tracking-wide text-primary uppercase transition-colors duration-300 group-hover:text-[#0d7ab8]"
       >
         <span class="text-xs">Ver destino</span>
         <HalfArrow

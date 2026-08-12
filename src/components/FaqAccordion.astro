@@ -13,17 +13,17 @@ const { faqs, class: className } = Astro.props;
   {
     faqs.map((faq, index) => (
       <details
-        class="group cursor-pointer rounded-xl border-2 border-gray-200 bg-white p-6 transition-all duration-300 hover:border-[#12a3ed] hover:shadow-lg"
+        class="group cursor-pointer rounded-xl border-2 border-gray-200 bg-white p-6 transition-all duration-300 hover:border-primary hover:shadow-lg"
         open={index === 0}
       >
         <summary class="flex items-center justify-between select-none">
-          <h3 class="text-lg font-semibold text-gray-900 transition-colors duration-300 group-open:text-[#12a3ed]">
+          <h3 class="text-lg font-semibold text-gray-900 transition-colors duration-300 group-open:text-primary">
             {faq.question}
           </h3>
-          <span class="mt-1 ml-4 flex-shrink-0 text-2xl font-bold text-[#12a3ed] transition-all duration-300 group-open:hidden">
+          <span class="mt-1 ml-4 flex-shrink-0 text-2xl font-bold text-primary transition-all duration-300 group-open:hidden">
             +
           </span>
-          <span class="mt-1 ml-4 hidden flex-shrink-0 text-2xl font-bold text-[#12a3ed] transition-all duration-300 group-open:block">
+          <span class="mt-1 ml-4 hidden flex-shrink-0 text-2xl font-bold text-primary transition-all duration-300 group-open:block">
             −
           </span>
         </summary>
