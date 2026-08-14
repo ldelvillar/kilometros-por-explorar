@@ -16,6 +16,7 @@ import {
   type BreadcrumbItem,
 } from '@/config/schemas';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
+import ArticleDestinations from '@/components/blog/ArticleDestinations.astro';
 import { getReadingTime } from '@/utils/getReadingTime';
 import '@/styles/prose.css';
 
@@ -149,6 +150,7 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
         <h1 class="text-3xl font-bold text-gray-900 md:text-4xl">
           {post.data.title}
         </h1>
+        <ArticleDestinations post={post} class="mt-6" />
       </header>
 
       <hr class="my-8 border-t border-gray-300 lg:my-16" />

@@ -1,0 +1,34 @@
+---
+import { getEntry, type CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  class?: string;
+}
+
+const { post, class: className } = Astro.props;
+
+// getStaticPaths ya rompe el build si un artículo referencia un destino que no
+// existe, así que aquí solo filtramos para satisfacer al tipado.
+const destinations = (
+  await Promise.all(post.data.destinations.map(ref => getEntry(ref)))
+).filter(destination => destination !== undefined);
+---
+
+{
+  destinations.length > 0 && (
+    <nav
+      aria-label="Destinos de este artículo"
+      class:list={['flex flex-wrap justify-center gap-2.5', className]}
+    >
+      {destinations.map(destination => (
+        <a
+          href={`/destinos/${destination.id}`}
+          class="inline-flex items-center rounded-full border border-gray-200 bg-white px-4 py-[9px] text-sm font-bold text-gray-800 transition-all duration-150 hover:border-primary hover:text-primary"
+        >
+          {destination.data.name}
+        </a>
+      ))}
+    </nav>
+  )
+}
