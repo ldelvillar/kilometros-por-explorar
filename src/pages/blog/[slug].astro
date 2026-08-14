@@ -17,6 +17,8 @@ import {
 } from '@/config/schemas';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
 import ArticleDestinations from '@/components/blog/ArticleDestinations.astro';
+import Calendar from '@/assets/icons/calendar.svg';
+import Clock from '@/assets/icons/clock.svg';
 import { getReadingTime } from '@/utils/getReadingTime';
 import '@/styles/prose.css';
 
@@ -133,19 +135,22 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
         <div
           class="mb-4 flex flex-wrap items-center justify-center gap-4 text-neutral-600"
         >
-          <span class="capitalize">{post.data.author}</span>
-          <span> | </span>
-          <time datetime={post.data.date.toISOString()}>
-            {
-              post.data.date.toLocaleDateString('es-ES', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })
-            }
-          </time>
-          <span> | </span>
-          <span>{readingTime} min de lectura</span>
+          <span class="inline-flex items-center gap-1.5">
+            <Calendar class="size-4.5 text-primary" />
+            <time datetime={post.data.date.toISOString()}>
+              {
+                post.data.date.toLocaleDateString('es-ES', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })
+              }
+            </time>
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <Clock class="size-4.5 text-primary" />
+            <span>{readingTime} min de lectura</span>
+          </span>
         </div>
         <h1 class="text-3xl font-bold text-gray-900 md:text-4xl">
           {post.data.title}
