@@ -2,9 +2,18 @@
 import { Image } from 'astro:assets';
 import logo from '@/assets/images/brand/logo.webp';
 import Menu from '@/assets/icons/menu.svg';
+
+const isHome = Astro.url.pathname === '/';
 ---
 
-<header class="fixed top-0 z-40 w-full text-white">
+<header
+  class:list={[
+    'fixed top-0 z-40 w-full',
+    isHome
+      ? 'text-white'
+      : 'border-b border-gray-300 bg-white text-gray-800 shadow-md',
+  ]}
+>
   <div
     class="mx-auto flex items-center justify-between px-3 py-3 md:px-6 lg:px-8"
   >
@@ -168,11 +177,11 @@ import Menu from '@/assets/icons/menu.svg';
     }
   });
 
-  // Add background to header on scroll only on home page
-  const header = document.querySelector('header');
-
+  // Add background to header on scroll only on home page.
   if (window.location.pathname === '/') {
-    document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    function syncHeader() {
       if (window.scrollY > 0) {
         header?.classList.add(
           'bg-white',
@@ -192,15 +201,9 @@ import Menu from '@/assets/icons/menu.svg';
         );
         header?.classList.add('text-white');
       }
-    });
-  } else {
-    header?.classList.remove('text-white');
-    header?.classList.add(
-      'bg-white',
-      'text-gray-800',
-      'border-b',
-      'border-gray-300',
-      'shadow-md'
-    );
+    }
+
+    syncHeader();
+    document.addEventListener('scroll', syncHeader);
   }
 </script>
