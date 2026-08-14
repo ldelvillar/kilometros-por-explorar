@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import { getEntry, type CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -24,8 +25,16 @@ const destinations = (
       {destinations.map(destination => (
         <a
           href={`/destinos/${destination.id}`}
-          class="inline-flex items-center rounded-full border border-gray-200 bg-white px-4 py-[9px] text-sm font-bold text-gray-800 transition-all duration-150 hover:border-primary hover:text-primary"
+          class="inline-flex items-center gap-2.5 rounded-full border border-gray-200 bg-white py-[5px] pr-4 pl-[5px] text-sm font-bold text-gray-800 transition-all duration-150 hover:border-primary hover:text-primary hover:shadow-[0_2px_10px_rgba(18,163,237,0.14)]"
         >
+          <Image
+            src={destination.data.image}
+            alt=""
+            width={60}
+            height={60}
+            loading="lazy"
+            class="h-[30px] w-[30px] shrink-0 rounded-full object-cover"
+          />
           {destination.data.name}
         </a>
       ))}
