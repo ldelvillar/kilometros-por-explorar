@@ -3,6 +3,8 @@ import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import HalfArrow from '@/assets/icons/halfArrow.svg';
 import Arrow from '@/assets/icons/arrow.svg';
+import Calendar from '@/assets/icons/calendar.svg';
+import Clock from '@/assets/icons/clock.svg';
 import { getReadingTime } from '@/utils/getReadingTime';
 
 interface Props {
@@ -40,16 +42,20 @@ const readingTime = getReadingTime(post.body);
       <div
         class="mb-2 flex flex-wrap items-center justify-between gap-x-2 text-sm text-neutral-500"
       >
-        <span>
+        <span class="inline-flex items-center gap-1.5">
+          <Calendar class="size-4.5 text-primary" />
           {
             new Date(post.data.date).toLocaleDateString('es-ES', {
               day: '2-digit',
               month: 'short',
               year: 'numeric',
             })
-          } · {readingTime} min
+          }
         </span>
-        <span class="capitalize">{post.data.author}</span>
+        <span class="inline-flex items-center gap-1.5">
+          <Clock class="size-4.5 text-primary" />
+          {readingTime} min
+        </span>
       </div>
       <div class="flex items-center gap-2 font-semibold text-primary">
         <span>Leer más</span>
