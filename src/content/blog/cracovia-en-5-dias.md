@@ -21,18 +21,6 @@ Cinco días en Cracovia te permiten pasear por la plaza medieval más grande de 
 
 Hemos diseñado este itinerario equilibrando las visitas imprescindibles con tiempo para reflexionar sobre las experiencias más intensas como Auschwitz. Cada día tiene un propósito específico, desde explorar el casco histórico hasta excursiones de día completo, siempre con flexibilidad para adaptarse a tu ritmo emocional y físico. Lo mejor: Cracovia ofrece una relación calidad-precio excepcional, permitiéndote disfrutar de experiencias culturales de primer nivel, excelente gastronomía y alojamiento cómodo a precios muy razonables comparados con otras capitales europeas.
 
-## Índice
-
-1. [Día 1: El corazón medieval de Cracovia](#día-1-el-corazón-medieval-de-cracovia)
-2. [Día 2: Auschwitz-Birkenau, memoria y reflexión](#día-2-auschwitz-birkenau-memoria-y-reflexión)
-3. [Día 3: Las Minas de Sal de Wieliczka](#día-3-las-minas-de-sal-de-wieliczka)
-4. [Día 4: Kazimierz y la herencia judía](#día-4-kazimierz-y-la-herencia-judía)
-5. [Día 5: El Castillo de Wawel y despedida](#día-5-el-castillo-de-wawel-y-despedida)
-6. [Consejos prácticos para moverte por Cracovia](#consejos-prácticos-para-moverte-por-cracovia)
-7. [Dónde comer: de los pierogi al zapiekanka](#dónde-comer-de-los-pierogi-al-zapiekanka)
-8. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-9. [Consejos para visitar Auschwitz con respeto](#consejos-para-visitar-auschwitz-con-respeto)
-
 ## Día 1: El corazón medieval de Cracovia
 
 Tu primera mañana en Cracovia debe comenzar en la Rynek Główny, la Plaza del Mercado Principal, la plaza medieval más grande de Europa con 40.000 metros cuadrados. Llega temprano (alrededor de las 8:00 AM) para admirar la plaza sin las multitudes, cuando la luz de la mañana ilumina las fachadas de colores pastel y los palomos revolotean alrededor de la estatua de Adam Mickiewicz. El epicentro de la plaza es la Lonja de los Paños (Sukiennice), un edificio renacentista del siglo XVI que originalmente albergaba el mercado de textiles y ahora está lleno de puestos vendiendo artesanía polaca, ámbar báltico, muñecas tradicionales y souvenirs.

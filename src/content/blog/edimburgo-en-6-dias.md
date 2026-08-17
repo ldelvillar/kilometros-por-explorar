@@ -21,16 +21,6 @@ Seis días en esta ciudad te permitirán recorrerla a fondo, explorando sus call
 
 Este es el itinerario que nosotros seguimos en nuestro viaje de seis días a Edimburgo. Si no dispones de tantos días, te recomendamos echar un vistazo a nuestra [guía de qué ver en Edimburgo en 3 días](/blog/edimburgo-en-3-dias), donde condensamos lo esencial para una visita más corta.
 
-## Índice
-
-1. [Día 1: Introducción al casco antiguo](#día-1-introducción-al-casco-antiguo)
-2. [Día 2: El Castillo de Edimburgo](#día-2-el-castillo-de-edimburgo)
-3. [Día 3: Excursión a las Highlands y Lago Ness](#día-3-excursión-a-las-highlands-y-lago-ness)
-4. [Día 4: Explorando los alrededores](#día-4-explorando-los-alrededores)
-5. [Día 5: Ruta por castillos escoceses y Glasgow](#día-5-ruta-por-castillos-escoceses-y-glasgow)
-6. [Día 6: Rincones secretos y despedida](#día-6-rincones-secretos-y-despedida)
-7. [Consejos para tu visita a Edimburgo](#consejos-para-tu-visita-a-edimburgo)
-
 ## Día 1: Introducción al casco antiguo
 
 Nosotros recomendamos empezar a recorrer la ciudad con un free tour. Te ayudará a conocer la historia de Edimburgo desde sus orígenes medievales y descubrirás anécdotas fascinantes que te ayudarán a contextualizar todo lo que verás los próximos días. Durante esas dos horas, recorrerás los principales puntos de interés:

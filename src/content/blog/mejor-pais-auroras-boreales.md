@@ -21,19 +21,6 @@ Estos cuatro países nórdicos se encuentran dentro o cerca del óvalo auroral (
 
 En este artículo exploraremos los mejores lugares específicos en cada país para maximizar tus probabilidades de avistamiento, cuándo ir, qué esperar, y todos los consejos prácticos que necesitas para convertir el sueño de ver auroras en una realidad memorable. Desde Tromsø en Noruega hasta Reikiavik en Islandia, pasando por Abisko en Suecia y Rovaniemi en Finlandia, te guiaremos por los secretos para presenciar uno de los espectáculos más extraordinarios de la naturaleza.
 
-## Índice
-
-1. [Los mejores países para ver auroras en Europa](#los-mejores-países-para-ver-auroras-en-europa)
-2. [Noruega: fiordos dramáticos y máxima accesibilidad](#noruega-fiordos-dramáticos-y-máxima-accesibilidad)
-3. [Islandia: paisajes volcánicos y auroras sobre glaciares](#islandia-paisajes-volcánicos-y-auroras-sobre-glaciares)
-4. [Suecia: el agujero azul de Abisko](#suecia-el-agujero-azul-de-abisko)
-5. [Finlandia: Laponia y la magia invernal](#finlandia-laponia-y-la-magia-invernal)
-6. [Cuándo ir: la temporada de auroras boreales](#cuándo-ir-la-temporada-de-auroras-boreales)
-7. [Qué esperar: desmitificando las auroras boreales](#qué-esperar-desmitificando-las-auroras-boreales)
-8. [Cómo fotografiar las auroras boreales](#cómo-fotografiar-las-auroras-boreales)
-9. [Tours de auroras vs búsqueda independiente](#tours-de-auroras-vs-búsqueda-independiente)
-10. [Consejos prácticos y qué llevar](#consejos-prácticos-y-qué-llevar)
-
 ## Los mejores países para ver auroras en Europa
 
 Cuatro países nórdicos dominan el mapa europeo de auroras boreales, cada uno ofreciendo experiencias distintas que los hacen atractivos según tus prioridades. **Noruega** destaca por la combinación de fiordos dramáticos, infraestructura turística excelente, y temperaturas moderadas gracias a la Corriente del Golfo. Sus ciudades como Tromsø ofrecen vida urbana animada a minutos de naturaleza salvaje. **Islandia** es extremadamente accesible con vuelos baratos desde Europa y Norteamérica, combina auroras con géiseres, glaciares y aguas termales, aunque el clima es más impredecible. **Suecia** brilla por Abisko, legendario entre fotógrafos por su microclima con cielos despejados estadísticamente superiores. **Finlandia** ofrece el clima más seco y estable del Ártico, temperaturas más frías pero cielos más claros, y experiencias únicas como igloos de cristal.

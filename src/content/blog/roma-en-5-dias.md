@@ -19,17 +19,6 @@ faqs:
 
 Plantearlo con algo más de tiempo cambia las reglas del juego. Te permite detenerte frente a la arquitectura antigua sin mirar el reloj cada segundo y dedicar energía a zonas donde se puede tomar un café sin sentir la presión de las prisas. Te aseguramos que Roma es una de las [mejores ciudades europeas](/blog/mejores-ciudades-europeas) para explorar caminando.
 
-## Índice de contenidos
-
-- [Qué ver en Roma en 5 días: Itinerario y ruta diaria](#qué-ver-en-roma-en-5-días-itinerario-y-ruta-diaria)
-- [Día 1: La Roma Imperial y el origen de la ciudad](#día-1-la-roma-imperial-y-el-origen-de-la-ciudad)
-- [Día 2: El centro histórico y las plazas más famosas de Roma](#día-2-el-centro-histórico-y-las-plazas-más-famosas-de-roma)
-- [Día 3: El Vaticano y el ambiente del Trastevere](#día-3-el-vaticano-y-el-ambiente-del-trastevere)
-- [Día 4: Arte, miradores y la Villa Borghese](#día-4-arte-miradores-y-la-villa-borghese)
-- [Día 5: El barrio judío, las catacumbas y la Vía Apia](#día-5-el-barrio-judío-las-catacumbas-y-la-vía-apia)
-- [La mejor época para viajar a Roma](#la-mejor-época-para-viajar-a-roma)
-- [¿Cómo moverse por Roma para cumplir este itinerario?](#cómo-moverse-por-roma-para-cumplir-este-itinerario)
-
 ## Qué ver en Roma en 5 días: Itinerario y ruta diaria
 
 1. **Día 1:** La Roma Imperial (**Coliseo**, **Foro Romano**, **Monte Palatino**) y barrio de **Monti**.

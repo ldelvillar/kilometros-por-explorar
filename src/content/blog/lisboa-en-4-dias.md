@@ -21,17 +21,6 @@ Cuatro días en Lisboa te permiten explorar desde los barrios históricos de Alf
 
 Hemos diseñado este itinerario para equilibrar las visitas a los monumentos imprescindibles con tiempo para vivir Lisboa al ritmo relajado de los portugueses: tomando un pastel de nata en una pastelería centenaria, subiendo en el tranvía 28, contemplando el atardecer desde un mirador con una cerveja fresca en mano, y dejándote llevar por las calles donde cada esquina es una postal. Cada día tiene su propio carácter, pero siempre con flexibilidad para improvisar y descubrir esos rincones secretos que hacen de Lisboa una ciudad tan especial.
 
-## Índice
-
-1. [Día 1: Alfama y el corazón histórico](#día-1-alfama-y-el-corazón-histórico)
-2. [Día 2: Belém y los descubrimientos portugueses](#día-2-belém-y-los-descubrimientos-portugueses)
-3. [Día 3: Excursión a Sintra](#día-3-excursión-a-sintra)
-4. [Día 4: Bairro Alto, Chiado y miradores](#día-4-bairro-alto-chiado-y-miradores)
-5. [Consejos prácticos para moverte por Lisboa](#consejos-prácticos-para-moverte-por-lisboa)
-6. [Dónde comer: de los pasteis de nata al bacalao](#dónde-comer-de-los-pasteis-de-nata-al-bacalao)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [El tranvía 28: guía completa](#el-tranvía-28-guía-completa)
-
 ## Día 1: Alfama y el corazón histórico
 
 Tu primera mañana en Lisboa debe comenzar explorando Alfama, el barrio más antiguo y auténtico de la ciudad que sobrevivió al terremoto de 1755. Este laberinto de callejuelas empinadas, escaleras estrechas, casas con fachadas azulejadas y ropa tendida entre balcones es el alma de Lisboa. La mejor forma de llegar es subiendo al famoso Tranvía 28 desde Martim Moniz temprano (antes de las 9:00 AM para evitar colas eternas) y bajando en el Panteón Nacional o las Portas do Sol.

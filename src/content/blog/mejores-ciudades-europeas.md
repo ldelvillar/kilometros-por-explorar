@@ -19,15 +19,6 @@ Después de años recorriendo Europa juntos, de perdernos por callejuelas mediev
 
 Esta lista es profundamente personal y subjetiva - refleja nuestras experiencias, nuestros gustos y esos momentos especiales que vivimos en cada ciudad. No encontraréis aquí París o Roma, no porque no sean increíbles (lo son), sino porque estas cinco ciudades nos tocaron de una manera especial que queremos compartir con vosotros. Algunas nos sorprendieron superando nuestras expectativas, otras nos enamoraron a primera vista, y todas nos dejaron recuerdos que atesoramos.
 
-## Índice
-
-1. [1. Praga - La ciudad de cuento de hadas](#1-praga---la-ciudad-de-cuento-de-hadas)
-2. [2. Ámsterdam - Canales, bicicletas y libertad](#2-ámsterdam---canales-bicicletas-y-libertad)
-3. [3. Estocolmo - Elegancia escandinava](#3-estocolmo---elegancia-escandinava)
-4. [4. Londres - Energía cosmopolita](#4-londres---energía-cosmopolita)
-5. [5. Budapest - La perla del Danubio](#5-budapest---la-perla-del-danubio)
-6. [Conclusión: ¿Por qué estas cinco?](#conclusión-por-qué-estas-cinco)
-
 ## 1. Praga - La ciudad de cuento de hadas
 
 Praga ocupa el primer lugar en nuestra lista y no es casualidad. Esta ciudad nos dejó sin palabras desde el primer momento que cruzamos el Puente de Carlos al amanecer, con la niebla aún cubriendo el río Moldava y las torres góticas emergiendo como fantasmas dorados. Hay algo en Praga que parece detenido en el tiempo - sus callejuelas empedradas, sus edificios barrocos con fachadas de colores pastel, sus torres que le dieron el sobrenombre de "Ciudad de las Cien Torres".

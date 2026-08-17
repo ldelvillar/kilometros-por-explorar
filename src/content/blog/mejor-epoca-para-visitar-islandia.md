@@ -27,17 +27,6 @@ La pregunta que más nos hacen es: "¿Cuándo es mejor ir a Islandia, en verano 
 
 Voy a ser honesto desde el principio: si tuviera que elegir solo una, me quedaría con el invierno. Pero la diferencia es mínima, y hay argumentos sólidos para ambas opciones. El invierno islandés me cautivó de una manera que no esperaba, pero el verano tiene un encanto completamente diferente que también vale absolutamente la pena. Déjame explicarte por qué.
 
-## Índice
-
-1. [Luz y oscuridad: el factor más importante](#luz-y-oscuridad-el-factor-más-importante)
-2. [Auroras boreales vs sol de medianoche](#auroras-boreales-vs-sol-de-medianoche)
-3. [Accesibilidad y carreteras](#accesibilidad-y-carreteras)
-4. [Actividades exclusivas de cada estación](#actividades-exclusivas-de-cada-estación)
-5. [Temperatura y clima](#temperatura-y-clima)
-6. [Multitudes y precios](#multitudes-y-precios)
-7. [Paisajes y colores](#paisajes-y-colores)
-8. [Mi veredicto personal](#mi-veredicto-personal)
-
 ## Luz y oscuridad: el factor más importante
 
 Este es probablemente el factor más importante a considerar y el que más impacta tu experiencia. En mi viaje de invierno en febrero, teníamos unas 8-9 horas de luz al día. El sol salía alrededor de las 10:00 AM y se ponía sobre las 6:00 PM. Suena limitante, ¿verdad? Y lo es, pero de una manera que terminé amando. Esas horas de luz son preciosas, con esa luz baja, dorada, dramática.

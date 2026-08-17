@@ -21,17 +21,6 @@ Cuatro días en Viena te permiten explorar desde los opulentos palacios de Schö
 
 Hemos diseñado este itinerario para equilibrar las visitas a los monumentos imprescindibles con tiempo para vivir Viena al ritmo local: tomando café y tarta en un Kaffeehaus histórico mientras lees el periódico, asistiendo a un concierto de música clásica, paseando por parques imperiales, y descubriendo que la verdadera Viena no está solo en sus palacios sino también en esa atmósfera de refinamiento tranquilo que impregna cada rincón. Cada día tiene su propio carácter, permitiéndote descubrir las múltiples capas de esta ciudad fascinante.
 
-## Índice
-
-1. [Día 1: El centro histórico y el Hofburg](#día-1-el-centro-histórico-y-el-hofburg)
-2. [Día 2: Schönbrunn - el Versalles austriaco](#día-2-schönbrunn---el-versalles-austriaco)
-3. [Día 3: Museos de arte y el Prater](#día-3-museos-de-arte-y-el-prater)
-4. [Día 4: Palacio Belvedere y barrios alternativos](#día-4-palacio-belvedere-y-barrios-alternativos)
-5. [Consejos prácticos para moverte por Viena](#consejos-prácticos-para-moverte-por-viena)
-6. [Dónde comer: del Wiener Schnitzel al Sachertorte](#dónde-comer-del-wiener-schnitzel-al-sachertorte)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [Los cafés vieneses: guía completa](#los-cafés-vieneses-guía-completa)
-
 ## Día 1: El centro histórico y el Hofburg
 
 Tu primera mañana en Viena debe comenzar en el corazón imperial de la ciudad: el Palacio de Hofburg, residencia oficial de los Habsburgo durante más de 600 años hasta 1918. Este vasto complejo palaciego que ocupa 240,000 metros cuadrados fue creciendo con cada emperador añadiendo nuevas alas. Hoy alberga varios museos fascinantes: los Apartamentos Imperiales donde vivieron el Emperador Francisco José y la Emperatriz Sisi, el Museo de Sisi dedicado a esta emperatriz trágica y romántica, y el Museo de la Platería con vajillas imperiales de plata maciza y porcelana que dejará con la boca abierta.

@@ -21,17 +21,6 @@ Cuatro días en Budapest te permiten explorar desde el imponente Parlamento ilum
 
 Hemos diseñado este itinerario para equilibrar las visitas a los monumentos imprescindibles con tiempo para experimentar Budapest como los locales: relajándote en las termas, tomando pálinka (aguardiente de frutas húngaro) en un ruin bar, paseando por la Avenida Andrássy, y disfrutando de esas vistas del Danubio que hacen de Budapest una de las ciudades más fotogénicas de Europa. Cada día tiene su propio carácter, permitiéndote descubrir las múltiples facetas de esta capital que muchos consideran la más hermosa de Europa Central.
 
-## Índice
-
-1. [Día 1: El lado Pest y el Parlamento](#día-1-el-lado-pest-y-el-parlamento)
-2. [Día 2: La Colina del Castillo en Buda](#día-2-la-colina-del-castillo-en-buda)
-3. [Día 3: Barrio Judío y termas Széchenyi](#día-3-barrio-judío-y-termas-széchenyi)
-4. [Día 4: Avenida Andrássy y Isla Margarita](#día-4-avenida-andrássy-y-isla-margarita)
-5. [Consejos prácticos para moverte por Budapest](#consejos-prácticos-para-moverte-por-budapest)
-6. [Dónde comer: del goulash al lángos](#dónde-comer-del-goulash-al-lángos)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [Las termas de Budapest: guía completa](#las-termas-de-budapest-guía-completa)
-
 ## Día 1: El lado Pest y el Parlamento
 
 Tu primera mañana en Budapest debe comenzar admirando el edificio más icónico de la ciudad: el Parlamento Húngaro. Este palacio neogótico a orillas del Danubio es el tercer parlamento más grande del mundo, construido con 40 millones de ladrillos, 500,000 piedras preciosas y 40 kilos de oro. La única forma de visitar su interior es con tour guiado (reserva online con semanas de antelación) - verás la impresionante escalera principal, la Sala de la Cúpula donde se guarda la Corona de San Esteban (símbolo de la nación húngara), y la Antigua Cámara Alta decorada con frescos y pan de oro.

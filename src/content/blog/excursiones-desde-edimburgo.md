@@ -25,16 +25,6 @@ En esta guía compartimos las 9 excursiones que más nos han impactado. Algunas 
 
 Si estás organizando tu viaje a Edimburgo y quieres aprovecharlo al máximo, te recomendamos echarle un vistazo a nuestra [ruta por Edimburgo en 3 días](/blog/edimburgo-en-3-dias).
 
-## Índice
-
-1. [¿Es mejor hacer las excursiones por libre o en tour organizado?](#es-mejor-hacer-las-excursiones-por-libre-o-en-tour-organizado)
-2. [Excursiones cerca de Edimburgo](#excursiones-cerca-de-edimburgo)
-3. [Excursiones a las Highlands (Tierras Altas) desde Edimburgo](#excursiones-a-las-highlands-tierras-altas-desde-edimburgo)
-4. [Castillos, historia y pueblos con encanto](#castillos-historia-y-pueblos-con-encanto)
-5. [Ciudades alternativas a un paso de Edimburgo](#ciudades-alternativas-a-un-paso-de-edimburgo)
-6. [Mapa de las excursiones desde Edimburgo](#mapa-de-las-excursiones-desde-edimburgo)
-7. [Nuestra recomendación: ¿Qué excursión elegir según tus días?](#nuestra-recomendación-qué-excursión-elegir-según-tus-días)
-
 ## ¿Es mejor hacer las excursiones por libre o en tour organizado?
 
 Depende del destino. Para ciudades cercanas como Glasgow o Stirling, el tren es la mejor opción por libre. Sin embargo, para visitar el Lago Ness, Glencoe o las Highlands en un solo día, un tour organizado o coche de alquiler es obligatorio debido a las grandes distancias.

@@ -21,17 +21,6 @@ Cuatro días en París te permiten sumergirte en su rica historia, disfrutar de 
 
 Hemos diseñado este itinerario pensando en maximizar tu tiempo sin crear una carrera contra el reloj. Cada día tiene un tema central, pero con suficiente flexibilidad para adaptarse a tus intereses. Y lo más importante: incluye consejos prácticos para evitar las multitudes y vivir París como los propios parisinos.
 
-## Índice
-
-1. [Día 1: El corazón histórico de París](#día-1-el-corazón-histórico-de-parís)
-2. [Día 2: Arte y cultura en el Louvre y alrededores](#día-2-arte-y-cultura-en-el-louvre-y-alrededores)
-3. [Día 3: Montmartre y la bohemia parisina](#día-3-montmartre-y-la-bohemia-parisina)
-4. [Día 4: Elegancia y vistas panorámicas](#día-4-elegancia-y-vistas-panorámicas)
-5. [Consejos prácticos para moverte por París](#consejos-prácticos-para-moverte-por-parís)
-6. [Dónde comer: del bistró al mercado local](#dónde-comer-del-bistró-al-mercado-local)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [Consejos para evitar las multitudes](#consejos-para-evitar-las-multitudes)
-
 ## Día 1: El corazón histórico de París
 
 Tu primera mañana en París debe comenzar temprano en la Île de la Cité, el corazón histórico de la ciudad. Llega a Notre-Dame alrededor de las 8:30 AM para evitar las multitudes y admirar la fachada de esta obra maestra gótica mientras planifican su restauración. Aunque no puedes entrar, el exterior sigue siendo impresionante y las vistas desde los jardines laterales son perfectas para fotos.

@@ -21,13 +21,6 @@ Tres días en Edimburgo es el tiempo justo para explorar sus imprescindibles. Si
 
 Este itinerario equilibra las atracciones principales con tiempo suficiente para pasear sin prisas, y con flexibilidad para que adaptes el plan a tu ritmo.
 
-## Índice
-
-1. [Día 1: El Castillo y el casco antiguo](#día-1-el-castillo-y-el-casco-antiguo)
-2. [Día 2: Excursión a las Highlands y Lago Ness](#día-2-excursión-a-las-highlands-y-lago-ness)
-3. [Día 3: Arthur's Seat y despedida](#día-3-arthurs-seat-y-despedida)
-4. [Consejos para tu visita a Edimburgo](#consejos-para-tu-visita-a-edimburgo)
-
 ## Día 1: El Castillo y el casco antiguo
 
 Empieza tu primera mañana en Edimburgo con un free tour por el casco antiguo. Te ayudará a entender la historia medieval de la ciudad y descubrirás anécdotas fascinantes sobre los personajes que dieron forma a Escocia.

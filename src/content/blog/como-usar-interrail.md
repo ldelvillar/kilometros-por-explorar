@@ -21,19 +21,6 @@ Después de hacer dos Interrails (uno a los 22 años recorriendo Europa del Este
 
 Esta guía está actualizada para 2025 con los precios, tipos de pases y regulaciones más recientes. Es larga porque quiero que sea verdaderamente completa - puedes leerla entera si estás en fase de planificación inicial, o usar el índice para saltar directamente a las secciones que más te interesen. Al final de esta guía, tendrás toda la información necesaria para decidir si el Interrail es para ti y cómo aprovecharlo al máximo.
 
-## Índice
-
-1. [¿Qué es el Interrail y quién puede usarlo?](#qué-es-el-interrail-y-quién-puede-usarlo)
-2. [Tipos de pases Interrail](#tipos-de-pases-interrail)
-3. [Precios actualizados 2025](#precios-actualizados-2025)
-4. [Cómo funciona el pase: activación y uso](#cómo-funciona-el-pase-activación-y-uso)
-5. [La app Rail Planner: tu mejor amiga](#la-app-rail-planner-tu-mejor-amiga)
-6. [Reservas de asiento: el tema más confuso](#reservas-de-asiento-el-tema-más-confuso)
-7. [Países y trenes incluidos](#países-y-trenes-incluidos)
-8. [¿Merece la pena el Interrail? Análisis honesto](#merece-la-pena-el-interrail-análisis-honesto)
-9. [Consejos prácticos de alguien que lo ha hecho](#consejos-prácticos-de-alguien-que-lo-ha-hecho)
-10. [Errores comunes a evitar](#errores-comunes-a-evitar)
-
 ## ¿Qué es el Interrail y quién puede usarlo?
 
 El Interrail es un pase de tren que te permite viajar por hasta 33 países europeos con un solo billete. No es un billete convencional - es más bien un "pase todo incluido" que te da acceso a la red ferroviaria de prácticamente toda Europa. La idea es simple: compras el pase, eliges tu ruta, y te subes a los trenes que necesites dentro del período de validez de tu pase.

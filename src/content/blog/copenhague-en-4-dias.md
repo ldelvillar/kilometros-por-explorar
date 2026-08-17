@@ -21,17 +21,6 @@ Cuatro días en Copenhague te permiten explorar desde el icónico canal de Nyhav
 
 Hemos diseñado este itinerario para equilibrar las visitas a los monumentos imprescindibles con tiempo para vivir Copenhague al ritmo danés: tomando café y kanelsnegle (rollos de canela) en panaderías acogedoras, pedaleando por carriles bici perfectamente diseñados, disfrutando de un picnic en parques verdes, y entendiendo ese equilibrio perfecto entre tradición monárquica y modernidad progresista que define a Dinamarca. Cada día tiene su propio carácter, permitiéndote descubrir las múltiples facetas de esta capital escandinava fascinante.
 
-## Índice
-
-1. [Día 1: Centro histórico y el icónico Nyhavn](#día-1-centro-histórico-y-el-icónico-nyhavn)
-2. [Día 2: Palacios reales y La Sirenita](#día-2-palacios-reales-y-la-sirenita)
-3. [Día 3: Christiania y barrios alternativos](#día-3-christiania-y-barrios-alternativos)
-4. [Día 4: Jardines de Tivoli y diseño danés](#día-4-jardines-de-tivoli-y-diseño-danés)
-5. [Consejos prácticos para moverte por Copenhague](#consejos-prácticos-para-moverte-por-copenhague)
-6. [Dónde comer: del smørrebrød a la nueva cocina nórdica](#dónde-comer-del-smørrebrød-a-la-nueva-cocina-nórdica)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [La mejor época para visitar Copenhague](#la-mejor-época-para-visitar-copenhague)
-
 ## Día 1: Centro histórico y el icónico Nyhavn
 
 Tu primera mañana en Copenhague debe comenzar en el corazón de la ciudad: la Plaza del Ayuntamiento (Rådhuspladsen), punto de encuentro de locales y turistas. El Ayuntamiento, un imponente edificio de ladrillo rojo de 1905 con su torre de 105 metros, domina la plaza. Si tienes energía, sube a la torre para vistas panorámicas de toda la ciudad - las escaleras son 300 pero las vistas compensan. Justo enfrente encontrarás la fuente del Dragón y el inicio de Strøget, una de las calles peatonales más largas de Europa.

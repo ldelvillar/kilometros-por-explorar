@@ -21,19 +21,6 @@ Este itinerario está diseñado para maximizar tu experiencia en Marruecos sin m
 
 He diseñado esta ruta basándome en mi propia experiencia visitando Marruecos, y en las rutas que planificamos para nuestros clientes que buscan una introducción completa al país sin extenderse a dos semanas. Seis días te da suficiente tiempo para cada experiencia sin sentir que vas corriendo constantemente. Y créeme, querrás tiempo para procesar Marrakech antes de lanzarte al desierto, y querrás días de recuperación después del desierto antes de volar de vuelta a casa.
 
-## Índice
-
-1. [Día 1: Llegada a Marrakech y primera inmersión](#día-1-llegada-a-marrakech-y-primera-inmersión)
-2. [Día 2: Marrakech profunda - palacios y jardines](#día-2-marrakech-profunda---palacios-y-jardines)
-3. [Día 3: Excursión al Atlas y valles bereberes](#día-3-excursión-al-atlas-y-valles-bereberes)
-4. [Día 4: Ruta al desierto - Ait Benhaddou y Gargantas](#día-4-ruta-al-desierto---ait-benhaddou-y-gargantas)
-5. [Día 5: Desierto de Merzouga - dunas y campamento](#día-5-desierto-de-merzouga---dunas-y-campamento)
-6. [Día 6: Amanecer en el desierto y regreso a Marrakech](#día-6-amanecer-en-el-desierto-y-regreso-a-marrakech)
-7. [Consejos prácticos para Marruecos](#consejos-prácticos-para-marruecos)
-8. [Qué llevar en tu maleta](#qué-llevar-en-tu-maleta)
-9. [Presupuesto aproximado](#presupuesto-aproximado)
-10. [Mejor época para visitar](#mejor-época-para-visitar)
-
 ## Día 1: Llegada a Marrakech y primera inmersión
 
 Tu aventura marroquí comienza en Marrakech, probablemente la ciudad más fascinante y caótica del país. La mayoría de vuelos desde España llegan por la tarde-noche, lo cual es perfecto porque te da tiempo de asentarte sin presión. El aeropuerto está a solo 15 minutos del centro - puedes tomar un taxi oficial (fija precio antes de subir, unos 100-150 dirhams / 10-15€) o mejor aún, que tu riad/hotel organice el transfer (más seguro para primera vez).

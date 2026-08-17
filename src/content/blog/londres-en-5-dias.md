@@ -21,18 +21,6 @@ Cinco días en Londres te permiten explorar sus barrios icónicos desde Westmins
 
 Hemos diseñado este itinerario equilibrando los monumentos imprescindibles con tiempo para descubrir la Londres auténtica que muchos turistas se pierden. Cada día tiene un tema central pero con flexibilidad suficiente para adaptarse a tus intereses, desde mercados vintage hasta galerías de arte contemporáneo, pasando por cruceros por el Támesis y sesiones de afternoon tea. Lo mejor: la mayoría de los museos principales son gratuitos, lo que hace que Londres sea más accesible de lo que imaginas.
 
-## Índice
-
-1. [Día 1: Londres monumental y Westminster](#día-1-londres-monumental-y-westminster)
-2. [Día 2: La Torre de Londres y el Támesis](#día-2-la-torre-de-londres-y-el-támesis)
-3. [Día 3: Museos de clase mundial y barrios elegantes](#día-3-museos-de-clase-mundial-y-barrios-elegantes)
-4. [Día 4: Barrios alternativos y mercados](#día-4-barrios-alternativos-y-mercados)
-5. [Día 5: Palacios reales y despedida](#día-5-palacios-reales-y-despedida)
-6. [Consejos prácticos para moverte por Londres](#consejos-prácticos-para-moverte-por-londres)
-7. [Dónde comer: del fish and chips al curry de Brick Lane](#dónde-comer-del-fish-and-chips-al-curry-de-brick-lane)
-8. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-9. [Experiencias gratuitas imprescindibles](#experiencias-gratuitas-imprescindibles)
-
 ## Día 1: Londres monumental y Westminster
 
 Tu primera mañana en Londres debe comenzar en el corazón político y ceremonial de la nación: Westminster. Llega temprano (alrededor de las 8:30 AM) a la Abadía de Westminster, la iglesia gótica donde se han coronado todos los monarcas británicos desde 1066. Compra tu entrada online con antelación (£27 para adultos) para evitar colas y dedica al menos 90 minutos a explorar este tesoro arquitectónico. Admira la Coronation Chair, las tumbas de reyes y reinas, el Rincón de los Poetas donde están enterrados Chaucer, Dickens y Tennyson, y la espectacular bóveda de abanico de la Capilla de Enrique VII.

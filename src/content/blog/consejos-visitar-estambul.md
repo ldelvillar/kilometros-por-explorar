@@ -21,17 +21,6 @@ Después de 10 días explorando esta ciudad, hemos hecho esta guía para ayudaro
 
 Si aún no sabes qué ver en Estambul o cómo organizar tu viaje, te recomendamos consultar nuestra guía sobre [qué ver en Estambul en 6 días](/blog/estambul-en-6-dias).
 
-## Índice
-
-1. [Traslado desde el aeropuerto](#traslado-desde-el-aeropuerto)
-2. [Mejores zonas para alojarse](#mejores-zonas-para-alojarse)
-3. [Cambio de moneda](#cambio-de-moneda)
-4. [Cómo moverse por la ciudad](#cómo-moverse-por-la-ciudad)
-5. [El Gran Bazar](#el-gran-bazar)
-6. [Dónde comer sin que te timen](#dónde-comer-sin-que-te-timen)
-7. [Mejor época para visitar Estambul](#mejor-época-para-visitar-estambul)
-8. [Consejos culturales que debes conocer](#consejos-culturales-que-debes-conocer)
-
 ## Traslado desde el aeropuerto
 
 Estambul tiene dos aeropuertos principales: el Aeropuerto Internacional de Estambul (IST) en el lado europeo, y el Aeropuerto Sabiha Gökçen (SAW) en el lado asiático. Ambos están bastante alejados del centro de la ciudad, en torno a una hora en coche.

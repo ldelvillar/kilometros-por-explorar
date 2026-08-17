@@ -21,17 +21,6 @@ Cuatro días en Berlín te permiten sumergirte en su compleja historia del siglo
 
 Hemos diseñado este itinerario para equilibrar los imprescindibles históricos con la Berlín alternativa y contemporánea, porque esta ciudad es tanto el Reichstag como los grafitis de Kreuzberg, tanto la Isla de los Museos como los mercadillos de Mauerpark. Cada día tiene su propio tema, pero siempre con tiempo para perderte por barrios, sentarte en un café y absorber la atmósfera única de una ciudad que nunca deja de sorprender.
 
-## Índice
-
-1. [Día 1: El Berlín histórico y monumental](#día-1-el-berlín-histórico-y-monumental)
-2. [Día 2: Isla de los Museos y barrio judío](#día-2-isla-de-los-museos-y-barrio-judío)
-3. [Día 3: El Muro de Berlín y la Guerra Fría](#día-3-el-muro-de-berlín-y-la-guerra-fría)
-4. [Día 4: Barrios alternativos y Sachsenhausen](#día-4-barrios-alternativos-y-sachsenhausen)
-5. [Consejos prácticos para moverte por Berlín](#consejos-prácticos-para-moverte-por-berlín)
-6. [Dónde comer: del currywurst al döner kebab](#dónde-comer-del-currywurst-al-döner-kebab)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [La mejor época para visitar Berlín](#la-mejor-época-para-visitar-berlín)
-
 ## Día 1: El Berlín histórico y monumental
 
 Tu primera mañana en Berlín debe comenzar en el corazón simbólico de la ciudad: la Puerta de Brandeburgo. Llega temprano (antes de las 9:00 AM) para contemplar este icono neoclásico sin las multitudes que llegarán más tarde. Esta antigua puerta de entrada a Berlín ha sido testigo de momentos cruciales de la historia alemana: desfiles nazis, división durante la Guerra Fría, y la celebración de la reunificación en 1990. Los adoquines que la rodean marcan el trazado del Muro de Berlín, un recordatorio constante del pasado reciente.

@@ -21,17 +21,6 @@ En esta guía te mostramos los **precios reales de un viaje a Edimburgo**, basad
 
 Si aún no tienes claro qué ver en Edimburgo, te recomendamos echar un vistazo a nuestro artículo sobre [qué ver en Edimburgo en 3 días](/blog/edimburgo-en-3-dias), donde te contamos los imprescindibles de la ciudad y cómo organizar tu visita para aprovechar al máximo el tiempo.
 
-## Índice
-
-- [Vuelos a Edimburgo](#vuelos-a-edimburgo)
-- [Alojamiento en Edimburgo](#alojamiento-en-edimburgo)
-- [Transporte público](#transporte-público)
-- [Comida y bebida](#comida-y-bebida)
-- [Atracciones y actividades](#atracciones-y-actividades)
-- [Presupuesto total por día](#presupuesto-total-por-día)
-
----
-
 ## Vuelos a Edimburgo
 
 El precio de los vuelos a la capital escocesa ha subido en los últimos años, pero todavía hay margen para encontrar buenas ofertas si planificas bien las fechas.

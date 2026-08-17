@@ -21,19 +21,6 @@ Esta lista es profundamente personal y refleja nuestras experiencias visitando m
 
 Hemos ordenado esta lista no por ranking estricto (todos son excepcionales) sino siguiendo una ruta geográfica lógica que podrías hacer si quisieras visitar varios en un mismo viaje. Algunos de estos mercados los visitamos juntos, otros por separado, pero todos tienen un lugar especial en nuestros recuerdos navideños. Y lo mejor: ninguno nos decepcionó, lo cual no siempre es el caso con sitios tan hypeados.
 
-## Índice
-
-1. [1. Estrasburgo - La capital indiscutible de la Navidad](#1-estrasburgo---la-capital-indiscutible-de-la-navidad)
-2. [2. Colmar - El pueblo de cuento alsaciano](#2-colmar---el-pueblo-de-cuento-alsaciano)
-3. [3. Núremberg - Tradición alemana en estado puro](#3-núremberg---tradición-alemana-en-estado-puro)
-4. [4. Praga - Magia bohemia bajo la nieve](#4-praga---magia-bohemia-bajo-la-nieve)
-5. [5. Viena - Elegancia imperial navideña](#5-viena---elegancia-imperial-navideña)
-6. [6. Budapest - El secreto del Danubio](#6-budapest---el-secreto-del-danubio)
-7. [7. Salzburgo - Donde nació "Noche de Paz"](#7-salzburgo---donde-nació-noche-de-paz)
-8. [Consejos prácticos para mercados navideños](#consejos-prácticos-para-mercados-navideños)
-9. [Qué comer y beber en los mercados](#qué-comer-y-beber-en-los-mercados)
-10. [Conclusión: La magia está en los detalles](#conclusión-la-magia-está-en-los-detalles)
-
 ## 1. Estrasburgo - La capital indiscutible de la Navidad
 
 Estrasburgo se autodenomina "Capital de la Navidad" (Capitale de Noël) y después de visitarla, entendemos por qué nadie le disputa ese título. Este no es simplemente un mercado navideño - son más de 10 mercados diferentes repartidos por toda la ciudad histórica, con más de 300 casetas, creando una experiencia navideña inmersiva que transforma completamente Estrasburgo durante casi un mes.

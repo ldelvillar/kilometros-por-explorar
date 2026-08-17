@@ -21,17 +21,6 @@ Cuatro días en Estocolmo te permiten sumergirte en su rica herencia vikinga y m
 
 Hemos diseñado este itinerario para equilibrar la historia y cultura con la experiencia de vivir Estocolmo como los locales: tomando fika (pausa para café y pastel) en cafés acogedores, caminando por muelles junto al agua, visitando mercados locales y disfrutando de esa luz nórdica especial que baña la ciudad. Cada día tiene su propio carácter, pero siempre con tiempo para absorber la atmósfera relajada y elegante que define a la capital sueca.
 
-## Índice
-
-1. [Día 1: Gamla Stan y el Palacio Real](#día-1-gamla-stan-y-el-palacio-real)
-2. [Día 2: Djurgården - la isla de los museos](#día-2-djurgården---la-isla-de-los-museos)
-3. [Día 3: Södermalm y museos alternativos](#día-3-södermalm-y-museos-alternativos)
-4. [Día 4: Archipiélago de Estocolmo o más exploración urbana](#día-4-archipiélago-de-estocolmo-o-más-exploración-urbana)
-5. [Consejos prácticos para moverte por Estocolmo](#consejos-prácticos-para-moverte-por-estocolmo)
-6. [Dónde comer: de las albóndigas al smörgåsbord](#dónde-comer-de-las-albóndigas-al-smörgåsbord)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [La mejor época para visitar Estocolmo](#la-mejor-época-para-visitar-estocolmo)
-
 ## Día 1: Gamla Stan y el Palacio Real
 
 Tu primera mañana en Estocolmo debe comenzar en el corazón histórico de la ciudad: Gamla Stan (Ciudad Vieja), una de las ciudades medievales mejor conservadas de Europa. Llega temprano para recorrer sus callejuelas empedradas antes de que lleguen las multitudes de cruceros. La plaza Stortorget, con sus edificios de colores pastel y fachadas gremiales del siglo XVII, es el alma del barrio. Esta plaza fue escenario del "Baño de Sangre de Estocolmo" en 1520, aunque hoy su atmósfera es todo menos tétrica.

@@ -21,19 +21,6 @@ La diferencia entre visitar Santorini en agosto (temporada alta absoluta) versus
 
 Esta guía es el resultado de nuestras tres visitas a Santorini (junio 2019, agosto 2021, y octubre 2023) más investigación exhaustiva de patrones climáticos, calendarios turísticos y precios hoteleros. Os vamos a contar mes a mes cómo es Santorini, qué esperar en cada temporada, y cuál es realmente la mejor época según vuestras prioridades - ya sea clima perfecto, precios bajos, o experiencia auténtica sin turistas. Spoiler: agosto es probablemente el PEOR mes para visitar Santorini, a pesar de ser el más popular.
 
-## Índice
-
-1. [Resumen ejecutivo: la mejor época según tus prioridades](#resumen-ejecutivo-la-mejor-época-según-tus-prioridades)
-2. [Primavera (abril-mayo): nuestra recomendación #1](#primavera-abril-mayo-nuestra-recomendación-1)
-3. [Verano (junio-agosto): multitudes y calor extremo](#verano-junio-agosto-multitudes-y-calor-extremo)
-4. [Otoño (septiembre-octubre): el secreto mejor guardado](#otoño-septiembre-octubre-el-secreto-mejor-guardado)
-5. [Invierno (noviembre-marzo): Santorini para puristas](#invierno-noviembre-marzo-santorini-para-puristas)
-6. [Análisis mes a mes: clima, precios y turismo](#análisis-mes-a-mes-clima-precios-y-turismo)
-7. [Eventos y festividades a considerar](#eventos-y-festividades-a-considerar)
-8. [Consejos para evitar multitudes en cualquier época](#consejos-para-evitar-multitudes-en-cualquier-época)
-9. [Presupuesto según temporada](#presupuesto-según-temporada)
-10. [Nuestra experiencia en diferentes épocas](#nuestra-experiencia-en-diferentes-épocas)
-
 ## Resumen ejecutivo: la mejor época según tus prioridades
 
 Antes de entrar en detalles mes a mes, aquí va el resumen rápido para que podáis decidir según vuestras prioridades:

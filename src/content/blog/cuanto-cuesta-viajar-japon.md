@@ -19,15 +19,6 @@ Después de tres semanas explorando Japón (Tokio, Kioto, Osaka, Hiroshima, Nara
 
 Esta guía te mostrará cómo aprovechar tu presupuesto al máximo para 14 días, desde las opciones más económicas hasta las experiencias premium. Lo que verás en este artículo es un desglose realista y honesto: precios reales que hemos pagado, alternativas que descubrimos en el camino, y dónde puedes ahorrar sin sacrificar la experiencia.
 
-## Índice
-
-1. [Vuelos: cómo encontrar los mejores precios](#vuelos-cómo-encontrar-los-mejores-precios)
-2. [Alojamiento: todos los presupuestos](#alojamiento-todos-los-presupuestos)
-3. [Transporte en Japón: el JR Pass y alternativas](#transporte-en-japón-el-jr-pass-y-alternativas)
-4. [Comida: la clave para ahorrar](#comida-la-clave-para-ahorrar)
-5. [Actividades: coste de atracciones principales](#actividades-coste-de-atracciones-principales)
-6. [Presupuesto día a día: ejemplos reales](#presupuesto-día-a-día-ejemplos-reales)
-
 ## Vuelos: cómo encontrar los mejores precios
 
 El vuelo es generalmente el gasto más fácil de controlar porque los precios están públicos y comparables. Desde España, la mayoría de vuelos a Japón parten de Madrid o Barcelona hacia Tokio (Narita o Haneda) u Osaka (Kansai), con al menos una escala.

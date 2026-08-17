@@ -1,3 +1,5 @@
+import GithubSlugger from 'github-slugger';
+
 // Forma mínima de un nodo hast.
 type HastNode = {
   type: string;
@@ -13,48 +15,27 @@ function getText(node: HastNode): string {
 }
 
 export function rehypeToc() {
-  return function transform(node: HastNode) {
-    if (!node.children) return;
+  return function transform(tree: HastNode) {
+    const root = tree.children;
+    if (!root) return;
 
-    for (let i = 0; i < node.children.length; i++) {
-      const heading = node.children[i];
+    const slugger = new GithubSlugger();
+    const items: { href: string; text: string }[] = [];
+    let firstH2Index = -1;
 
-      const isIndiceHeading =
-        heading.type === 'element' &&
-        heading.tagName === 'h2' &&
-        getText(heading).trim() === 'Índice';
+    root.forEach((node, i) => {
+      if (node.type !== 'element' || node.tagName !== 'h2') return;
 
-      let listIndex = i + 1;
-      while (
-        listIndex < node.children.length &&
-        node.children[listIndex].type === 'text' &&
-        !(node.children[listIndex].value ?? '').trim()
-      ) {
-        listIndex++;
-      }
-      const list = node.children[listIndex];
-      const isLinkList =
-        list?.type === 'element' &&
-        (list.tagName === 'ol' || list.tagName === 'ul');
+      if (firstH2Index === -1) firstH2Index = i;
 
-      if (isIndiceHeading && isLinkList) {
-        const items = (list.children ?? [])
-          .filter(li => li.type === 'element' && li.tagName === 'li')
-          .map(li => {
-            const link = (li.children ?? []).find(
-              c => c.type === 'element' && c.tagName === 'a'
-            );
-            return {
-              href: (link?.properties?.href as string | undefined) ?? '#',
-              text: getText(li).trim(),
-            };
-          });
+      const text = getText(node).trim();
+      const id = slugger.slug(text);
+      node.properties = { ...(node.properties ?? {}), id };
+      items.push({ href: `#${id}`, text });
+    });
 
-        node.children.splice(i, listIndex - i + 1, buildToc(items));
-        continue;
-      }
-
-      transform(heading);
+    if (firstH2Index !== -1 && items.length > 0) {
+      root.splice(firstH2Index, 0, buildToc(items));
     }
   };
 }

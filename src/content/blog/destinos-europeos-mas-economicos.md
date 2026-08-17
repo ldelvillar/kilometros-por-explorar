@@ -21,15 +21,6 @@ Esta lista es profundamente personal y refleja nuestra experiencia real de cuán
 
 Lo mejor de estos destinos económicos es que el bajo coste no significa baja calidad - todo lo contrario. En todos estos lugares nos alojamos en hoteles bonitos, comimos en restaurantes excelentes, visitamos todas las atracciones que queríamos, y aún así gastamos menos que lo que habríamos gastado solo en alojamiento básico en ciudades más caras. Esa sensación de poder vivir bien sin preocuparte constantemente por el presupuesto es liberadora y te permite disfrutar el viaje de verdad.
 
-## Índice
-
-1. [1. Budapest - Grandeza imperial a precios de risa](#1-budapest---grandeza-imperial-a-precios-de-risa)
-2. [2. Praga - Belleza de cuento sin arruinarte](#2-praga---belleza-de-cuento-sin-arruinarte)
-3. [3. Cracovia - Joya polaca infravalorada](#3-cracovia---joya-polaca-infravalorada)
-4. [4. Oporto - Encanto portugués accesible](#4-oporto---encanto-portugués-accesible)
-5. [5. Belgrado - El secreto mejor guardado de Europa](#5-belgrado---el-secreto-mejor-guardado-de-europa)
-6. [Conclusión: Viajar bien no tiene que ser caro](#conclusión-viajar-bien-no-tiene-que-ser-caro)
-
 ## 1. Budapest - Grandeza imperial a precios de risa
 
 Budapest ocupa el primer lugar en nuestra lista no solo por ser económica, sino porque ofrece una experiencia de lujo a precios que parecen de otra época. Cuando visitamos Budapest por primera vez no podíamos creer lo que estábamos viendo: un parlamento que rivaliza en belleza con cualquier edificio europeo, termas centenarias donde relajarte bajo el cielo estrellado, palacios barrocos, puentes impresionantes sobre el Danubio... y todo accesible con un presupuesto que en París te daría para un par de noches en hostel y poco más.

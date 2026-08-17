@@ -21,18 +21,6 @@ Cinco días en Praga te permiten sumergirte en su rica historia medieval, disfru
 
 Hemos diseñado este itinerario para que aproveches cada día al máximo, equilibrando las visitas obligatorias con tiempo para pasear sin rumbo fijo por sus callejuelas, descubrir cafés con encanto y observar cómo el sol ilumina las torres doradas que dan nombre a la ciudad. Cada día tiene su propio carácter, pero siempre con flexibilidad para adaptar el plan a tus intereses y al ritmo que prefieras.
 
-## Índice
-
-1. [Día 1: El corazón de la Ciudad Vieja](#día-1-el-corazón-de-la-ciudad-vieja)
-2. [Día 2: El Castillo de Praga y Malá Strana](#día-2-el-castillo-de-praga-y-malá-strana)
-3. [Día 3: Barrio Judío y Ciudad Nueva](#día-3-barrio-judío-y-ciudad-nueva)
-4. [Día 4: Vyšehrad y orillas del Moldava](#día-4-vyšehrad-y-orillas-del-moldava)
-5. [Día 5: Tesoros ocultos y despedida](#día-5-tesoros-ocultos-y-despedida)
-6. [Consejos prácticos para moverte por Praga](#consejos-prácticos-para-moverte-por-praga)
-7. [Dónde comer: del hospůdka al restaurante gourmet](#dónde-comer-del-hospůdka-al-restaurante-gourmet)
-8. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-9. [La mejor época para visitar Praga](#la-mejor-época-para-visitar-praga)
-
 ## Día 1: El corazón de la Ciudad Vieja
 
 Tu primera mañana en Praga debe comenzar en la Plaza de la Ciudad Vieja, el epicentro histórico y social de la capital checa. Llega antes de las 9:00 AM para admirar la plaza sin las multitudes y contemplar la impresionante mezcla de estilos arquitectónicos: gótico, barroco, renacentista y art nouveau conviviendo en perfecta armonía. El momento más especial es cuando el Reloj Astronómico marca las horas en punto (desde las 9:00 hasta las 23:00) y las figuras mecánicas cobran vida en un espectáculo que lleva funcionando desde 1410.

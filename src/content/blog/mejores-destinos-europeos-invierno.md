@@ -21,15 +21,6 @@ Esta lista es profundamente personal y refleja nuestras experiencias invernales 
 
 Algunos de estos destinos los visitamos buscando experiencias específicas del invierno - auroras boreales, mercados navideños, paisajes nevados. Otros nos sorprendieron siendo incluso mejores en invierno que en verano, con menos turistas, precios más bajos, y una autenticidad que en temporada alta se diluye entre las multitudes. Todos tienen en común una cosa: nos hicieron enamorarnos del invierno europeo de una manera que nunca imaginamos.
 
-## Índice
-
-1. [1. Viena - La capital imperial de los mercados navideños](#1-viena---la-capital-imperial-de-los-mercados-navideños)
-2. [2. Islandia - Auroras boreales y paisajes de otro planeta](#2-islandia---auroras-boreales-y-paisajes-de-otro-planeta)
-3. [3. Praga - Cuento de hadas bajo la nieve](#3-praga---cuento-de-hadas-bajo-la-nieve)
-4. [4. Laponia finlandesa - La magia navideña auténtica](#4-laponia-finlandesa---la-magia-navideña-auténtica)
-5. [5. Estrasburgo - La capital de la Navidad europea](#5-estrasburgo---la-capital-de-la-navidad-europea)
-6. [Conclusión: Por qué viajar en invierno](#conclusión-por-qué-viajar-en-invierno)
-
 ## 1. Viena - La capital imperial de los mercados navideños
 
 Viena en invierno es pura magia navideña con clase. Si hay una ciudad europea que entiende cómo hacer el invierno elegante, refinado y absolutamente encantador, esa es la capital austriaca. Visitamos Viena por primera vez en diciembre y nos enamoramos inmediatamente - la ciudad imperial cubierta de decoraciones navideñas, con más de 20 mercados navideños diferentes, cada uno con su propio carácter, es una experiencia que supera cualquier expectativa.

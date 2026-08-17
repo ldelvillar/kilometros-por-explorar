@@ -21,22 +21,6 @@ Si te preocupa el presupuesto, nuestra [guía de cuánto cuesta viajar a Islandi
 
 Nosotros hemos recorrido Islandia dos veces, una en febrero y otra en julio, por lo que hemos tenido la oportunidad de disfrutar de esta increíble tierra en sus dos aspectos. Este itinerario refleja ese aprendizaje: qué días necesitan más tiempo, dónde acelerar el ritmo, y cómo aprovechar todos los días al máximo.
 
-## Índice
-
-1. [Día 1: Llegada y península de Reykjanes](#día-1-llegada-y-península-de-reykjanes)
-2. [Día 2: El Círculo Dorado](#día-2-el-círculo-dorado)
-3. [Día 3: Costa sur - el día de las cascadas](#día-3-costa-sur---el-día-de-las-cascadas)
-4. [Día 4: Glaciares y lagunas del sureste](#día-4-glaciares-y-lagunas-del-sureste)
-5. [Día 5: Fiordos del este](#día-5-fiordos-del-este)
-6. [Día 6: Norte volcánico](#día-6-norte-volcánico)
-7. [Día 7: Norte profundo - Ásbyrgi y Húsavík](#día-7-norte-profundo---ásbyrgi-y-húsavík)
-8. [Día 8: La mágica península de Snæfellsnes](#día-8-la-mágica-península-de-snæfellsnes)
-9. [Día 9: Highlands o más Snæfellsnes](#día-9-highlands-o-más-snæfellsnes)
-10. [Día 10: Reykjavík](#día-10-reykjavík)
-11. [Consejos para conducir en Islandia](#consejos-para-conducir-en-islandia)
-12. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-13. [Auroras boreales](#auroras-boreales)
-
 ## Día 1: Llegada y península de Reykjanes
 
 Aterrizas en Keflavík, a 50 kilómetros de Reikiavik, probablemente por la tarde si vuelas desde Europa. Las oficinas de alquiler de campers están a unos 15-20 minutos en coche del aeropuerto, aunque en muchos casos la empresa te lleva sin coste hasta su oficina (un taxi te costará unos 50€). Si has alquilado un coche, la mayoría de oficinas están en el mismo aeropuerto.

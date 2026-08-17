@@ -21,17 +21,6 @@ Cuatro días en Ámsterdam te permiten sumergirte en su rica herencia artística
 
 Hemos diseñado este itinerario equilibrando las atracciones imprescindibles con tiempo para experimentar la vida cotidiana de Ámsterdam. Cada día tiene un tema central pero con suficiente flexibilidad para adaptarse a tus intereses, desde mercados de flores hasta cafés bruin (pubs tradicionales marrones), pasando por paseos en bicicleta y cruceros por los canales. Lo mejor: incluye consejos prácticos para moverte como un local y evitar las multitudes turísticas que se concentran en las zonas más conocidas.
 
-## Índice
-
-1. [Día 1: El corazón histórico de Ámsterdam](#día-1-el-corazón-histórico-de-ámsterdam)
-2. [Día 2: Museos de clase mundial](#día-2-museos-de-clase-mundial)
-3. [Día 3: Barrios auténticos y cultura local](#día-3-barrios-auténticos-y-cultura-local)
-4. [Día 4: Excursiones y despedida](#día-4-excursiones-y-despedida)
-5. [Consejos prácticos para moverte por Ámsterdam](#consejos-prácticos-para-moverte-por-ámsterdam)
-6. [Dónde comer: del kroket al restaurante indonesio](#dónde-comer-del-kroket-al-restaurante-indonesio)
-7. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-8. [Cómo alquilar y usar una bicicleta](#cómo-alquilar-y-usar-una-bicicleta)
-
 ## Día 1: El corazón histórico de Ámsterdam
 
 Tu primera mañana en Ámsterdam debe comenzar en la Plaza Dam, el corazón geográfico e histórico de la ciudad. Llega temprano (alrededor de las 9:00 AM) para admirar el Palacio Real (Koninklijk Paleis), originalmente el ayuntamiento del siglo XVII y ahora residencia oficial de la familia real holandesa. Si está abierto al público (verifica el calendario, ya que cierra durante eventos oficiales), la visita vale la pena por sus salones de mármol, el impresionante Salón del Burgemeester y la arquitectura del Siglo de Oro holandés. La entrada cuesta aproximadamente €12.50.

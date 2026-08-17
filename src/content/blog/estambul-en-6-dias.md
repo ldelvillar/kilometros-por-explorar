@@ -21,18 +21,6 @@ Seis días en Estambul te permiten explorar a fondo sus distritos históricos y 
 
 Hemos diseñado este itinerario equilibrando las visitas imprescindibles con tiempo suficiente para simplemente absorber la atmósfera única de Estambul. Si quieres aprovechar al máximo tu viaje, te recomendamos consultar nuestra guía sobre [consejos prácticos para visitar Estambul](/blog/consejos-visitar-estambul).
 
-## Índice
-
-1. [Día 1: Introducción a Sultanahmet](#día-1-introducción-a-sultanahmet)
-2. [Día 2: Tesoros bizantinos y otomanos](#día-2-tesoros-bizantinos-y-otomanos)
-3. [Día 3: Bazares y la Estambul auténtica](#día-3-bazares-y-la-estambul-auténtica)
-4. [Día 4: Cruzando el Bósforo hacia Asia](#día-4-cruzando-el-bósforo-hacia-asia)
-5. [Día 5: Palacios imperiales y barrios bohemios](#día-5-palacios-imperiales-y-barrios-bohemios)
-6. [Día 6: Islas Príncipe y relajación](#día-6-islas-príncipe-y-relajación)
-7. [Consejos prácticos para moverte por Estambul](#consejos-prácticos-para-moverte-por-estambul)
-8. [Dónde comer: de los meyhanes a los restaurantes con estrella](#dónde-comer-de-los-meyhanes-a-los-restaurantes-con-estrella)
-9. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-
 ## Día 1: Introducción a Sultanahmet
 
 Tu primera mañana en Estambul debe comenzar en el corazón histórico de la ciudad: Sultanahmet, el distrito donde se concentran algunos de los monumentos más emblemáticos. Llega temprano (alrededor de las 9:00 AM) a la Mezquita Azul (Sultanahmet Camii), una obra maestra de la arquitectura otomana del siglo XVII famosa por sus seis minaretes y más de 20.000 azulejos de cerámica azul de Iznik que adornan su interior. La entrada es gratuita, pero debes vestir apropiadamente: las mujeres deben cubrirse el cabello con un pañuelo (proporcionan si no tienes) y tanto hombres como mujeres deben llevar hombros y piernas cubiertas.

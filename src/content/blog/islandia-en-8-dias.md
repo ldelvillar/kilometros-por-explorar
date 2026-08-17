@@ -21,20 +21,6 @@ Ocho días en Islandia te permiten hacer una ruta completa por la costa sur, est
 
 Hemos diseñado este itinerario basándonos en nuestra propia experiencia recorriendo Islandia en febrero, la época perfecta para ver auroras boreales sin las multitudes del verano. La ruta está pensada para hacerse en camper o coche de alquiler, durmiendo en campings que ofrecen las comodidades necesarias después de días intensos de exploración. Cada jornada equilibra conducción, caminatas y tiempo para maravillarte ante paisajes que parecen imposibles.
 
-## Índice
-
-1. [Día 1: Llegada a Reykjavík y primera noche](#día-1-llegada-a-reykjavík-y-primera-noche)
-2. [Día 2: El Círculo Dorado](#día-2-el-círculo-dorado)
-3. [Día 3: Costa sur - el día de las cascadas](#día-3-costa-sur---el-día-de-las-cascadas)
-4. [Día 4: Glaciares y lagunas del sureste](#día-4-glaciares-y-lagunas-del-sureste)
-5. [Día 5: Explorando los fiordos del este](#día-5-explorando-los-fiordos-del-este)
-6. [Día 6: Ruta por el norte volcánico](#día-6-ruta-por-el-norte-volcánico)
-7. [Día 7: La mágica península de Snæfellsnes](#día-7-la-mágica-península-de-snæfellsnes)
-8. [Día 8: Reykjavík y Blue Lagoon](#día-8-reykjavík-y-blue-lagoon)
-9. [Consejos para conducir en Islandia](#consejos-para-conducir-en-islandia)
-10. [Planifica tu presupuesto](#planifica-tu-presupuesto)
-11. [Auroras boreales](#auroras-boreales)
-
 ## Día 1: Llegada a Reykjavík y primera noche
 
 Tu aventura islandesa comienza en el Aeropuerto Internacional de Keflavík, ubicado a unos 50 kilómetros de Reykjavík. Si llegas por la tarde como la mayoría de vuelos desde Europa, recoge tu vehículo de alquiler (camper o coche) directamente en el aeropuerto donde todas las principales compañías tienen oficinas. Dedica tiempo a familiarizarte con el vehículo, especialmente si es una camper: ubicación de depósitos de agua, calefacción, cocina y sistemas eléctricos.
