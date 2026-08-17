@@ -195,7 +195,6 @@ export const getArticleSchema = (
   publishDate: string,
   modifyDate?: string,
   imageUrl?: string,
-  authorName?: string,
   aboutName?: string,
   readingTimeMinutes?: number
 ) => ({
@@ -208,8 +207,8 @@ export const getArticleSchema = (
   datePublished: publishDate,
   dateModified: modifyDate || publishDate,
   author: {
-    '@type': 'Person',
-    name: authorName || SITE_CONFIG.company.name,
+    '@type': 'Organization',
+    name: SITE_CONFIG.company.name,
     url: getSiteUrl('/sobre-nosotros'),
   },
   publisher: {

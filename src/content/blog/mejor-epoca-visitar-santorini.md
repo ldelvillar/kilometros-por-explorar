@@ -3,7 +3,6 @@ title: 'Mejor época para visitar Santorini: evita las multitudes'
 description: 'Descubre cuál es la mejor época para visitar Santorini según clima, precios y turismo. Guía mes a mes para evitar multitudes y disfrutar la isla griega al máximo.'
 date: 2025-10-21
 image: '../../assets/images/blog/mejor-epoca-visitar-santorini/cover.webp'
-author: 'Lucía'
 destinations: ['santorini']
 faqs:
   - question: '¿Es verdad que agosto es el peor mes para visitar Santorini?'

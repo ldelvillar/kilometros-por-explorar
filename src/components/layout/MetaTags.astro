@@ -14,7 +14,6 @@ interface Props {
   ogType?: 'website' | 'article';
   publishedTime?: string;
   modifiedTime?: string;
-  author?: string;
 }
 
 const {
@@ -26,7 +25,6 @@ const {
   ogType = 'website',
   publishedTime,
   modifiedTime,
-  author,
 }: Props = Astro.props;
 
 const pathname = Astro.url.pathname;
@@ -80,7 +78,7 @@ if (typeof image === 'string') {
       {modifiedTime && (
         <meta property="article:modified_time" content={modifiedTime} />
       )}
-      {author && <meta property="article:author" content={author} />}
+      <meta property="article:author" content={SITE_CONFIG.company.name} />
     </Fragment>
   )
 }

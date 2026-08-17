@@ -54,7 +54,6 @@ const blog = defineCollection({
       description: z.string(),
       date: z.date(),
       image: image(),
-      author: z.string(),
       destinations: z.array(reference('destinations')),
       faqs: z
         .array(

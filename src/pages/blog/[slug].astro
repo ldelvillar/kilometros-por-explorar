@@ -83,7 +83,6 @@ const articleSchema = getArticleSchema(
   post.data.date.toISOString(),
   undefined,
   post.data.image.src,
-  post.data.author,
   mainDestination,
   readingTime
 );
@@ -102,7 +101,6 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
   ogType="article"
   publishedTime={post.data.date.toISOString()}
   modifiedTime={post.data.date.toISOString()}
-  author={post.data.author}
 >
   <main id="main" class="bg-white pt-20">
     <!-- Breadcrumbs -->

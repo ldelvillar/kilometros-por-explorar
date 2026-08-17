@@ -3,7 +3,6 @@ title: 'Qué ver en Londres en cinco días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Londres durante 5 días para descubrir la capital británica.'
 date: 2025-08-10
 image: '../../assets/images/blog/londres-en-5-dias/cover.webp'
-author: 'Lucas'
 destinations: ['londres']
 faqs:
   - question: '¿Son realmente gratis los museos de Londres?'

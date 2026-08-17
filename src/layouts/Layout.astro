@@ -16,7 +16,6 @@ interface Props {
   ogType?: 'website' | 'article';
   publishedTime?: string;
   modifiedTime?: string;
-  author?: string;
 }
 
 const {
@@ -28,7 +27,6 @@ const {
   ogType,
   publishedTime,
   modifiedTime,
-  author,
 } = Astro.props;
 ---
 
@@ -51,7 +49,6 @@ const {
       ogType={ogType}
       publishedTime={publishedTime}
       modifiedTime={modifiedTime}
-      author={author}
     />
   </head>
   <body class="font-display">
