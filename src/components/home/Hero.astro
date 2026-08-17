@@ -26,7 +26,9 @@ import heroImage from '@/assets/images/hero.webp';
     class="absolute inset-0 flex flex-col items-center justify-center px-8 text-center text-white will-change-transform"
   >
     <div class="max-w-2xl space-y-4">
-      <h1 class="text-5xl leading-tight font-extrabold tracking-tight">
+      <h1
+        class="text-3xl leading-tight font-extrabold tracking-tight sm:text-4xl md:text-5xl"
+      >
         Tu viaje de ensueño, planificado al milímetro
       </h1>
       <p class="max-w-3xl text-lg leading-relaxed">
@@ -34,12 +36,20 @@ import heroImage from '@/assets/images/hero.webp';
         y presupuesto.
       </p>
     </div>
-    <a
-      href="/contacto"
-      class="mt-8 rounded-xl bg-primary px-6 py-3 font-bold text-white transition duration-300 hover:bg-primary/90"
-    >
-      Planifica tu Viaje
-    </a>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+      <a
+        href="/contacto"
+        class="rounded-xl bg-primary px-6 py-3 font-bold text-white transition duration-300 hover:bg-primary/90"
+      >
+        Planifica tu Viaje
+      </a>
+      <a
+        href="/destinos"
+        class="rounded-xl border border-white/70 px-6 py-3 font-bold text-white transition duration-300 hover:bg-white/15"
+      >
+        Ver destinos
+      </a>
+    </div>
   </div>
 </section>
 
@@ -76,8 +86,10 @@ import heroImage from '@/assets/images/hero.webp';
     }
   }
 
-  // Add scroll event listener
-  window.addEventListener('scroll', requestTick, { passive: true });
+  // Add scroll event listener, unless the visitor asked for less motion
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    window.addEventListener('scroll', requestTick, { passive: true });
+  }
 
   // Clean up on page unload
   document.addEventListener('astro:before-swap', () => {
