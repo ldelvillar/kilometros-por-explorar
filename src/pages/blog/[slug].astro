@@ -158,6 +158,14 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
 
       <hr class="my-8 border-t border-gray-300 lg:my-16" />
 
+      <!-- Rail lateral pegajoso del índice (>=1440px) -->
+      <nav class="toc-rail" aria-label="Índice del artículo" aria-hidden="true">
+        <p class="toc-rail-eyebrow">En este artículo</p>
+        <div class="toc-rail-track">
+          <span class="toc-rail-fill"></span>
+        </div>
+      </nav>
+
       <!-- Article -->
       <article class="mx-auto prose mb-12 max-w-[800px] lg:prose-lg">
         <Content />
@@ -183,4 +191,57 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
     }
     <CTA />
   </main>
+
+  <script>
+    const toc = document.querySelector<HTMLElement>('.toc');
+    const article = document.querySelector<HTMLElement>('article.prose');
+    const rail = document.querySelector<HTMLElement>('.toc-rail');
+    const track = rail?.querySelector<HTMLElement>('.toc-rail-track');
+    const fill = rail?.querySelector<HTMLElement>('.toc-rail-fill');
+
+    if (toc && article && rail && track && fill) {
+      const items = Array.from(
+        toc.querySelectorAll<HTMLAnchorElement>('.toc-row')
+      ).map(row => {
+        const item = document.createElement('a');
+        item.className = 'toc-rail-item';
+        item.href = row.getAttribute('href') ?? '#';
+        item.textContent = row.lastChild?.textContent?.trim() ?? '';
+        track.appendChild(item);
+        return item;
+      });
+
+      const update = () => {
+        const visible =
+          toc.getBoundingClientRect().bottom < 72 &&
+          article.getBoundingClientRect().bottom > 200;
+        rail.classList.toggle('on', visible);
+        rail.setAttribute('aria-hidden', String(!visible));
+
+        let current = items[0];
+        for (const item of items) {
+          const target = document.getElementById(
+            (item.getAttribute('href') ?? '').slice(1)
+          );
+          if (target && target.getBoundingClientRect().top <= 140)
+            current = item;
+        }
+
+        for (const item of items) {
+          const isActive = item === current;
+          item.classList.toggle('on', isActive);
+          item.tabIndex = visible ? 0 : -1;
+        }
+
+        if (current) {
+          fill.style.top = `${current.offsetTop + 6}px`;
+          fill.style.height = `${current.offsetHeight - 12}px`;
+        }
+      };
+
+      update();
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+    }
+  </script>
 </Layout>
