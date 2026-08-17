@@ -1,74 +1,64 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Project
 
 **Kilómetros por Explorar** — a Spanish-language static marketing/content site for a personalized travel-itinerary service (run by Lucas & Lucía). It does not sell packages; it guides independent travelers and publishes SEO travel guides. All UI copy and content is in Spanish.
 
 ## Commands
 
-Package manager is **pnpm** (see `pnpm-lock.yaml` / `node_modules/.pnpm`).
-
-```sh
-pnpm dev           # Dev server at http://localhost:4321 (Astro default)
-pnpm build         # Static build to dist/ — also runs content-collection + TS type checking
-pnpm preview       # Serve the production build locally
-pnpm format        # Prettier write across the repo
-pnpm format:check  # Prettier check (CI-safe)
-```
+Package manager is **pnpm**: `pnpm dev` / `build` / `preview` / `format`.
 
 There is **no test runner and no linter** beyond Prettier. `pnpm build` is the de-facto correctness gate: it fails on Zod content-schema violations, broken `image()` references, and TypeScript errors. Run it before considering a change done.
 
+Env vars live in an uncommitted `.env` with no `.env.example`:
+`PUBLIC_CONTACT_FORM_ENDPOINT`, `PUBLIC_CHATBOT_WEBHOOK_ENDPOINT` (both `PUBLIC_`).
+
 ## Tech Stack
 
-- **Astro 6.x** (static output — all pages prerendered, no SSR, no API routes)
-- **Preact** for the few interactive islands (`.tsx`), wired via `@astrojs/preact`
-- **Tailwind CSS 4** via `@tailwindcss/vite` — **there is no `tailwind.config`**; the theme (fonts Onest/Blimone, primary `#12a3ed`) lives as CSS variables in `src/styles/global.css`. `@tailwindcss/typography` powers blog article styling (`src/styles/prose.css`).
-- `@astrojs/sitemap` for sitemap generation
-- `remark-github-blockquote-alert` for GitHub-style alert blockquotes in Markdown (configured in `astro.config.mjs`)
+- **Tailwind CSS 4** — **there is no `tailwind.config`**; the theme (fonts Onest/Blimone, primary `#12a3ed`) lives as CSS variables in `src/styles/global.css`. `@tailwindcss/typography` powers article styling (`src/styles/prose.css`, imported by `blog/[slug]` and `viajeros/[slug]`).
 
-TypeScript is `astro/tsconfigs/strict`; path alias `@/*` → `src/*`; JSX is `react-jsx` with `jsxImportSource: preact`.
+### Markdown pipeline
+
+`astro.config.mjs` sets `markdown.processor` to an explicit `unified()` instance, so adding a plugin means editing that call — the `remarkPlugins` key inside it belongs to `unified()`, not to Astro's `markdown.remarkPlugins`.
+
+`rehypeToc` emits the `.toc-row` anchors that `blog/[slug].astro` reads at runtime to build the sticky side rail — renaming that class silently breaks the rail.
 
 ## Architecture
 
 ### Content Collections (the core of the site)
 
-Schemas are defined in **`src/content.config.ts`** (note: project root `src/`, not `src/content/config.ts`). Three Zod-validated collections, all using the `glob` loader over `src/content/<collection>/`:
+Three Zod-validated collections, all using the `glob` loader over `src/content/<collection>/`: **`blog`** (travel guides — the main search-traffic surface), **`destinations`** (destination pages, plus the `sorpresa` packs, which are products rather than real places), and **`customers`** (traveller testimonials).
 
-- **`blog`** (`src/content/blog/*.md`) — travel guides/articles. Fields: `title`, `description`, `date` (Date), `image`, `author` (string), `destinations` (array of `reference('destinations')` — plain destination ids in frontmatter, validated at build; used for matching related articles), `faqs` (array of `{question, answer}` — **required**, rendered into FAQ schema).
-- **`destinations`** (`src/content/destinations/*.md`) — destination overview pages. Fields: `name`, `country` (**required unless `category === 'sorpresa'`**, enforced by a `.refine`), `shortDescription`, `longDescription`, `image`, `category` (enum: `cultural | playa | naturaleza | ciudad | barco | sorpresa`), `featured`.
-- **`customers`** (`src/content/customers/*.md`) — testimonials. Fields: `featured`, `title`, `name`, `image`, `destination` (`reference('destinations')` — a destination id; name and URL are derived from that entry), `destinationFlagImage`, `metrics` (array of `{label, value}` — **exactly 4**), `description`, `metaDescription` (≤160 chars).
+**`src/content.config.ts` is the source of truth for every field — read it before writing or changing frontmatter.** Note the unusual location: project root `src/`, not `src/content/config.ts`.
+
+Two things that file won't tell you:
+
+- Several fields carry **exact counts** (`metrics`, `classicRouteElements`, `faqs`). Adding a required field, or tightening one, means updating **every existing entry in the same change** or the build fails.
+- A `customers` body must contain a `>` blockquote: `viajeros/[slug].astro` uses it as the `Review` schema's `reviewBody`, and parses any metric whose label contains "valoraci" into `reviewRating`.
 
 **Images are managed assets, not public files.** Every `image:` / `destinationFlagImage:` field uses Astro's `image()` schema helper, so frontmatter references **relative paths into `src/assets/`** (e.g. `image: '../../assets/images/blog/<slug>/cover.webp'`), and inline article images use the same relative form. Astro optimizes them at build. Do **not** point these at `/public`. (`public/` is reserved for a few raw assets like the brand logo referenced by absolute `/images/brand/...` URLs in schema/meta.)
 
-### Routing
-
-Pages live in `src/pages/`. Dynamic routes generate one static page per collection entry via `getStaticPaths()`:
-
-- `blog/[slug].astro` → `/blog/<id-without-.md>`; also computes related articles (shared `destinations`), injects breadcrumb + Article + FAQ schema, and a client-side script that wraps article `<img>` in `<figure>` using alt text as caption.
-- `destinos/[slug].astro` → `/destinos/<id>`
-- `viajeros/[slug].astro` → `/viajeros/<id>` (customer testimonial pages)
-
-The rest are static pages (`index`, `contacto`, `sobre-nosotros`, legal pages, `404`). `src/pages/llms.txt.ts` is an endpoint that emits `/llms.txt`.
+`src/pages/llms.txt.ts` emits `/llms.txt` from all three collections, so it stays current automatically — no manual step when publishing.
 
 ### Layout & SEO pipeline
 
-`src/layouts/Layout.astro` is the single shell: `<head>` via `MetaTags.astro`, then `Header`, page `<slot/>`, `CookieBanner` + `Chatbot` (both `client:idle`), `Footer`.
+SEO/structured data is centralized in **`src/config/schemas.ts`** — typed builders for every Schema.org type the site emits. **Never hand-roll JSON-LD in a page; check there for a builder first.** Pages combine builders into one `@graph` with `getCombinedSchema(pageSchema, ...extras)`, or `getBlogCombinedSchema(article, breadcrumbs, faq)` for blog posts.
 
-SEO/structured data is centralized in **`src/config/schemas.ts`** — typed builders returning Schema.org JSON-LD (`TravelAgency` org, `WebSite`, `WebPage`, `BlogPosting`/Article, `FAQPage`, `TouristDestination`, `Review`, `BreadcrumbList`). Pages combine them into a single `@graph`:
+`Breadcrumbs.astro` emits its own `BreadcrumbList` by default — pass `includeSchema={false}` when the page already includes breadcrumbs in its `@graph` (as `blog/[slug]` and `viajeros/[slug]` do) to avoid duplicate nodes.
 
-- `getCombinedSchema(pageSchema, ...extras)` for normal pages
-- `getBlogCombinedSchema(article, breadcrumbs, faq)` for blog posts
-
-Shared constants (domain, company contact, social links, default SEO copy) live in **`src/config/site.ts`**; URL helpers in `src/utils/getUrls.ts`. `astro.config.mjs` sets `site` and `trailingSlash: 'never'`.
+Shared constants (domain, company contact, social links, default SEO copy) live in **`src/config/site.ts`**; URL helpers in `src/utils/getUrls.ts`; reading time in `src/utils/getReadingTime.ts`. The home-page FAQ lives in **`src/config/faqs.ts`** (`HOME_FAQS`) as the single source feeding both the `Faq` component and the `FAQPage` schema.
 
 ### Astro vs Preact components
 
-`.astro` components are static-rendered (layouts, cards, sections — the bulk of `src/components/`). Reserve Preact `.tsx` islands for genuine interactivity (`Chatbot.tsx`, `CookieBanner.tsx`) and hydrate them with the lightest directive that works (`client:idle`/`client:load`). The chatbot reads its webhook from `import.meta.env.PUBLIC_CHATBOT_WEBHOOK_ENDPOINT`.
+`.astro` components are static-rendered (layouts, cards, sections — the bulk of `src/components/`). Reserve Preact `.tsx` islands for genuine interactivity (`Chatbot.tsx`, `CookieBanner.tsx`) and hydrate them with the lightest directive that works (`client:idle`/`client:load`).
+
+Plenty of interactivity here is plain inline `<script>` in an `.astro` file rather than an island — the destination search/filter (`InteractiveDestinations.astro`), the mobile menu (`Header.astro`), the contact form submit, the article ToC rail. Follow that pattern for anything that only needs DOM wiring; don't reach for Preact.
+
+`CookieBanner.tsx` is the consent gate for **Google Analytics** — it injects `gtag` only after the user accepts, storing the choice in `localStorage.cookieConsent`. The GA measurement id is hardcoded in that component, not in `site.ts`.
 
 ## Conventions
 
-- **Prettier** (`.prettierrc`): single quotes, semicolons, `trailingComma: es5`, 80-col, `arrowParens: avoid`, `.astro` files use the astro parser. `prettier-plugin-tailwindcss` auto-sorts class lists — don't hand-order them.
+- **Prettier**: see `.prettierrc` for prettier conventions, `.astro` files use the astro parser. `prettier-plugin-tailwindcss` auto-sorts class lists (resolving the theme from `tailwindStylesheet: ./src/styles/global.css`) — don't hand-order them.
 - **Internal links** in Markdown use root-relative paths: `/blog/<slug>`, `/destinos/<slug>`.
 - Use `<Image>` from `astro:assets` for images (responsive `widths`/`sizes`, WebP).
+- **All user-facing copy is in Spanish.** Code identifiers, commit messages and comments are English.
