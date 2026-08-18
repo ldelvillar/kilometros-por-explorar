@@ -84,6 +84,20 @@ const { company } = SITE_CONFIG;
     </div>
   </div>
 
+  <!-- Honeypot: invisible para una persona, los bots lo rellenan.
+       El nombre del campo queda fuera de los esquemas de autocompletado
+       (navegador y gestores de contraseñas) para no descartar envíos reales. -->
+  <div class="honeypot" aria-hidden="true">
+    <label for="subject">No rellenes este campo</label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      tabindex="-1"
+      autocomplete="off"
+    />
+  </div>
+
   <div class="flex items-center gap-2">
     <input
       id="privacy"
@@ -125,6 +139,16 @@ const { company } = SITE_CONFIG;
 </form>
 
 <style>
+  /* Fuera de pantalla en lugar de display:none: los bots que ignoran el CSS
+     siguen viendo el campo en el DOM y lo rellenan. */
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
   [data-form-status][data-state='success'] {
     border-color: #bbf7d0;
     background-color: #f0fdf4;
@@ -141,12 +165,18 @@ const { company } = SITE_CONFIG;
 <script>
   const CONTACT_ENDPOINT = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT;
 
+  // Rellenar nombre, email, mensaje y aceptar la política lleva mucho más de
+  // esto; por debajo del umbral el envío es automatizado.
+  const MIN_FILL_MS = 2000;
+
   const SUCCESS_MESSAGE =
     '¡Mensaje enviado! Gracias por escribirnos, te responderemos lo antes posible. Echa un vistazo también a tu carpeta de spam.';
   const SERVER_ERROR_MESSAGE =
     'No hemos podido enviar tu mensaje. Inténtalo de nuevo en unos minutos.';
   const NETWORK_ERROR_MESSAGE =
     'Parece que no hay conexión. Compruébala e inténtalo de nuevo.';
+  const REJECTED_MESSAGE =
+    'No hemos podido verificar el envío. Vuelve a intentarlo o escríbenos directamente.';
 
   document
     .querySelectorAll<HTMLFormElement>('form[data-contact-form]')
@@ -161,6 +191,10 @@ const { company } = SITE_CONFIG;
       const submitButton = form.querySelector<HTMLButtonElement>(
         'button[type="submit"]'
       );
+      const honeypot = form.querySelector<HTMLInputElement>(
+        'input[name="subject"]'
+      );
+      const renderedAt = Date.now();
 
       function showStatus(state: 'success' | 'error', text: string) {
         if (!status || !message) return;
@@ -181,7 +215,19 @@ const { company } = SITE_CONFIG;
         event.preventDefault();
         hideStatus();
 
+        // Descarta el envío sin llegar al webhook: honeypot relleno o
+        // formulario enviado demasiado rápido para ser humano.
+        if (honeypot?.value || Date.now() - renderedAt < MIN_FILL_MS) {
+          // Se vacía para que un reintento funcione: si un gestor de
+          // contraseñas rellenó el honeypot, la persona no pierde el mensaje.
+          if (honeypot) honeypot.value = '';
+          showStatus('error', REJECTED_MESSAGE);
+          return;
+        }
+
         const data = Object.fromEntries(new FormData(form));
+        // El honeypot no forma parte de la consulta.
+        delete data.subject;
         const originalText = submitButton?.textContent || 'Enviar Consulta';
 
         // Deshabilitar botón para evitar envíos múltiples
