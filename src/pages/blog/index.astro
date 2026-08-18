@@ -4,6 +4,7 @@ import Layout from '@/layouts/Layout.astro';
 import PageTitle from '@/components/PageTitle.astro';
 import SearchBar from '@/components/SearchBar.astro';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
+import Cta from '@/components/Cta.astro';
 import Magnifier from '@/assets/icons/magnifier.svg';
 import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 
@@ -38,62 +39,65 @@ function getSearchText(post: CollectionEntry<'blog'>) {
 ---
 
 <Layout title={title} description={description} schema={schema}>
-  <main
-    id="main"
-    class="animate-fade-in-up mx-auto max-w-7xl px-4 pt-28 pb-20 md:pt-36"
-  >
-    <div class="mx-auto mb-8 max-w-[760px] text-center lg:mb-12">
-      <PageTitle
-        eyebrow="Nuestro blog"
-        title="Consejos, guías e itinerarios para tu próximo viaje"
-        class="mb-7"
-      />
+  <main id="main" class="animate-fade-in-up">
+    <section class="mx-auto max-w-7xl px-4 pt-28 pb-12 md:pt-36">
+      <div class="mx-auto mb-8 max-w-[760px] text-center lg:mb-12">
+        <PageTitle
+          eyebrow="Nuestro blog"
+          title="Consejos, guías e itinerarios para tu próximo viaje"
+          class="mb-7"
+        />
 
-      <SearchBar
-        id="blog-search"
-        buttonId="blog-search-btn"
-        placeholder="Busca un destino, guía o consejo..."
-        label="Buscar artículos del blog"
-      />
-    </div>
-
-    <h2
-      id="blog-results-count"
-      class="mb-6 text-2xl font-bold text-gray-900"
-      hidden
-    >
-    </h2>
-
-    <div id="blog-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {
-        sortedPosts.map((post, index) => (
-          <div class="blog-item" data-search={getSearchText(post)}>
-            <BlogCard
-              post={post}
-              loading={index < 3 ? 'eager' : 'lazy'}
-              priority={index === 0}
-            />
-          </div>
-        ))
-      }
-    </div>
-
-    <div
-      id="blog-no-results"
-      class="mx-auto hidden max-w-[520px] px-4 pt-16 pb-12 text-center"
-    >
-      <div
-        class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
-      >
-        <Magnifier class="size-8 text-primary" />
+        <SearchBar
+          id="blog-search"
+          buttonId="blog-search-btn"
+          placeholder="Busca un destino, guía o consejo..."
+          label="Buscar artículos del blog"
+        />
       </div>
-      <h2 class="mb-2 text-2xl font-bold text-gray-900">
-        Sin resultados para «<span id="blog-no-results-query"></span>»
+
+      <h2
+        id="blog-results-count"
+        class="mb-6 text-2xl font-bold text-gray-900"
+        hidden
+      >
       </h2>
-      <p class="leading-relaxed text-gray-500">
-        No hemos encontrado artículos que coincidan con tu búsqueda. Prueba con
-        otro término o explora todo el blog.
-      </p>
+
+      <div id="blog-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {
+          sortedPosts.map((post, index) => (
+            <div class="blog-item" data-search={getSearchText(post)}>
+              <BlogCard
+                post={post}
+                loading={index < 3 ? 'eager' : 'lazy'}
+                priority={index === 0}
+              />
+            </div>
+          ))
+        }
+      </div>
+
+      <div
+        id="blog-no-results"
+        class="mx-auto hidden max-w-[520px] px-4 pt-16 pb-12 text-center"
+      >
+        <div
+          class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
+        >
+          <Magnifier class="size-8 text-primary" />
+        </div>
+        <h2 class="mb-2 text-2xl font-bold text-gray-900">
+          Sin resultados para «<span id="blog-no-results-query"></span>»
+        </h2>
+        <p class="leading-relaxed text-gray-500">
+          No hemos encontrado artículos que coincidan con tu búsqueda. Prueba
+          con otro término o explora todo el blog.
+        </p>
+      </div>
+    </section>
+
+    <div id="blog-cta">
+      <Cta />
     </div>
   </main>
 </Layout>
@@ -120,6 +124,7 @@ function getSearchText(post: CollectionEntry<'blog'>) {
     const resultsCount = document.getElementById('blog-results-count');
     const noResults = document.getElementById('blog-no-results');
     const noResultsQuery = document.getElementById('blog-no-results-query');
+    const cta = document.getElementById('blog-cta');
 
     if (!searchInput) return;
 
@@ -175,9 +180,10 @@ function getSearchText(post: CollectionEntry<'blog'>) {
         resultsCount.hidden = count === 0;
       }
 
-      // Empty state shows the searched term.
+      // Empty state shows the searched term and hides the page CTA.
       if (noResultsQuery) noResultsQuery.textContent = query;
       if (noResults) noResults.classList.toggle('hidden', count > 0);
+      if (cta) cta.hidden = count === 0;
 
       syncUrl(query);
     }
@@ -187,6 +193,7 @@ function getSearchText(post: CollectionEntry<'blog'>) {
       items.forEach(node => (node.hidden = false));
       if (resultsCount) resultsCount.hidden = true;
       if (noResults) noResults.classList.add('hidden');
+      if (cta) cta.hidden = false;
       syncUrl(null);
     }
 
