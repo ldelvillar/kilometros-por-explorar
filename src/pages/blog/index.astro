@@ -2,7 +2,9 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
 import PageTitle from '@/components/PageTitle.astro';
+import SearchBar from '@/components/SearchBar.astro';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
+import Magnifier from '@/assets/icons/magnifier.svg';
 import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 
 const title = 'Blog | Kilómetros por Explorar';
@@ -17,6 +19,22 @@ const sortedPosts: CollectionEntry<'blog'>[] = posts.sort(
   (a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) =>
     new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 );
+
+const destinationEntries = await getCollection('destinations');
+const destinationText = new Map(
+  destinationEntries.map(destination => [
+    destination.id,
+    `${destination.data.name} ${destination.data.country ?? ''}`,
+  ])
+);
+
+function getSearchText(post: CollectionEntry<'blog'>) {
+  return [
+    post.data.title,
+    post.data.description,
+    ...post.data.destinations.map(ref => destinationText.get(ref.id) ?? ''),
+  ].join(' ');
+}
 ---
 
 <Layout title={title} description={description} schema={schema}>
@@ -24,22 +42,187 @@ const sortedPosts: CollectionEntry<'blog'>[] = posts.sort(
     id="main"
     class="animate-fade-in-up mx-auto max-w-7xl px-4 pt-28 pb-20 md:pt-36"
   >
-    <PageTitle
-      eyebrow="Nuestro blog"
-      title="Consejos, guías e itinerarios para tu próximo viaje"
-      class="mb-8 lg:mb-12"
-    />
+    <div class="mx-auto mb-8 max-w-[760px] text-center lg:mb-12">
+      <PageTitle
+        eyebrow="Nuestro blog"
+        title="Consejos, guías e itinerarios para tu próximo viaje"
+        class="mb-7"
+      />
 
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <SearchBar
+        id="blog-search"
+        buttonId="blog-search-btn"
+        placeholder="Busca un destino, guía o consejo..."
+        label="Buscar artículos del blog"
+      />
+    </div>
+
+    <h2
+      id="blog-results-count"
+      class="mb-6 text-2xl font-bold text-gray-900"
+      hidden
+    >
+    </h2>
+
+    <div id="blog-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {
         sortedPosts.map((post, index) => (
-          <BlogCard
-            post={post}
-            loading={index < 3 ? 'eager' : 'lazy'}
-            priority={index === 0}
-          />
+          <div class="blog-item" data-search={getSearchText(post)}>
+            <BlogCard
+              post={post}
+              loading={index < 3 ? 'eager' : 'lazy'}
+              priority={index === 0}
+            />
+          </div>
         ))
       }
     </div>
+
+    <div
+      id="blog-no-results"
+      class="mx-auto hidden max-w-[520px] px-4 pt-16 pb-12 text-center"
+    >
+      <div
+        class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
+      >
+        <Magnifier class="size-8 text-primary" />
+      </div>
+      <h2 class="mb-2 text-2xl font-bold text-gray-900">
+        Sin resultados para «<span id="blog-no-results-query"></span>»
+      </h2>
+      <p class="leading-relaxed text-gray-500">
+        No hemos encontrado artículos que coincidan con tu búsqueda. Prueba con
+        otro término o explora todo el blog.
+      </p>
+    </div>
   </main>
 </Layout>
+
+<style>
+  .blog-item {
+    display: contents;
+  }
+
+  .blog-item[hidden] {
+    display: none;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById(
+      'blog-search'
+    ) as HTMLInputElement | null;
+    const searchButton = document.getElementById('blog-search-btn');
+    const items = Array.from(
+      document.querySelectorAll<HTMLElement>('.blog-item')
+    );
+    const resultsCount = document.getElementById('blog-results-count');
+    const noResults = document.getElementById('blog-no-results');
+    const noResultsQuery = document.getElementById('blog-no-results-query');
+
+    if (!searchInput) return;
+
+    let searchTimeout: ReturnType<typeof setTimeout>;
+
+    // Lowercase + strip accents.
+    function normalize(str: string) {
+      return str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '');
+    }
+
+    // Index the cards once: título, descripción y destinos referenciados.
+    const searchIndex = items.map(node => ({
+      node,
+      haystack: normalize(node.dataset.search || ''),
+    }));
+
+    // Reflect the active query in the URL (?q=) without adding history
+    // entries, so searches are shareable and survive a reload.
+    function syncUrl(query: string | null) {
+      const url = new URL(window.location.href);
+      if (query) url.searchParams.set('q', query);
+      else url.searchParams.delete('q');
+      window.history.replaceState({}, '', url);
+    }
+
+    // Filtra sin reordenar: la lista es cronológica y conviene que lo siga
+    // siendo dentro de los resultados.
+    function runSearch(query: string) {
+      const tokens = normalize(query).split(/\s+/).filter(Boolean);
+      const matched = new Set(
+        searchIndex
+          .filter(entry =>
+            tokens.every(token => entry.haystack.includes(token))
+          )
+          .map(entry => entry.node)
+      );
+
+      items.forEach(node => {
+        node.hidden = !matched.has(node);
+      });
+
+      const count = matched.size;
+
+      // Heading with the result count (hidden when there are no matches).
+      if (resultsCount) {
+        resultsCount.textContent =
+          count === 1
+            ? '1 artículo encontrado'
+            : `${count} artículos encontrados`;
+        resultsCount.hidden = count === 0;
+      }
+
+      // Empty state shows the searched term.
+      if (noResultsQuery) noResultsQuery.textContent = query;
+      if (noResults) noResults.classList.toggle('hidden', count > 0);
+
+      syncUrl(query);
+    }
+
+    // Restore the full list when the search is emptied.
+    function clearSearch() {
+      items.forEach(node => (node.hidden = false));
+      if (resultsCount) resultsCount.hidden = true;
+      if (noResults) noResults.classList.add('hidden');
+      syncUrl(null);
+    }
+
+    // Debounced live search as the user types.
+    searchInput.addEventListener('input', function () {
+      const query = this.value.trim();
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        if (query.length >= 2) runSearch(query);
+        else clearSearch();
+      }, 300);
+    });
+
+    // "Buscar" button + Enter run the search immediately (skip the debounce).
+    const submitSearch = () => {
+      const query = searchInput.value.trim();
+      clearTimeout(searchTimeout);
+      if (query.length >= 2) runSearch(query);
+      else clearSearch();
+      searchInput.focus();
+    };
+    if (searchButton) searchButton.addEventListener('click', submitSearch);
+    searchInput.addEventListener('keydown', event => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        submitSearch();
+      }
+    });
+
+    // Pre-fill and run search from the ?q= URL parameter
+    const initialQuery = new URLSearchParams(window.location.search)
+      .get('q')
+      ?.trim();
+    if (initialQuery && initialQuery.length >= 2) {
+      searchInput.value = initialQuery;
+      runSearch(initialQuery);
+    }
+  });
+</script>

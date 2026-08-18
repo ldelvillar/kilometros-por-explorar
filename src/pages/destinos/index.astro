@@ -3,7 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import InteractiveDestinations from '@/components/destinations/InteractiveDestinations.astro';
 import Cta from '@/components/Cta.astro';
 import PageTitle from '@/components/PageTitle.astro';
-import Magnifier from '@/assets/icons/magnifier.svg';
+import SearchBar from '@/components/SearchBar.astro';
 
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { getCollection } from 'astro:content';
@@ -68,24 +68,13 @@ const categories = [
           class="mb-7"
         />
 
-        <div class="relative mb-6">
-          <Magnifier
-            class="pointer-events-none absolute top-1/2 left-5 size-[22px] -translate-y-1/2 text-gray-400"
-          />
-          <input
-            id="hero-search"
-            type="text"
-            placeholder="Busca un país, ciudad o experiencia..."
-            class="hero-search-input w-full rounded-full border border-gray-200 bg-white py-[18px] pr-[140px] pl-[54px] font-display text-[17px] text-gray-800 shadow-[0_8px_24px_-16px_rgba(15,23,42,0.3)] transition-all duration-200 outline-none placeholder:text-gray-400 focus:border-primary focus:shadow-[0_0_0_3px_rgba(18,163,237,0.2)]"
-          />
-          <button
-            type="button"
-            id="hero-search-btn"
-            class="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full bg-primary px-6 py-[11px] text-[15px] font-bold text-white transition-colors duration-200 hover:bg-primary/90"
-          >
-            Buscar
-          </button>
-        </div>
+        <SearchBar
+          id="hero-search"
+          buttonId="hero-search-btn"
+          placeholder="Busca un país, ciudad o experiencia..."
+          label="Buscar destinos"
+          class="mb-6"
+        />
 
         <div class="flex flex-wrap justify-center gap-2.5">
           {
