@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 title: 'Un viaje de novios a París, planificado al detalle'
 name: 'Sofía y Manuel'
 image: '../../assets/images/customers/sofia-y-manuel/cover.webp'

@@ -1,5 +1,5 @@
 ---
-featured: true
+featured: false
 title: 'Conoce el viaje de Olivia y su familia a República Dominicana'
 name: 'Olivia Hayes'
 image: '../../assets/images/customers/olivia-hayes/cover.webp'
