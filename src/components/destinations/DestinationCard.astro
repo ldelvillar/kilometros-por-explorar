@@ -13,7 +13,7 @@ const { destination, loading = 'lazy', priority = false } = Astro.props;
 ---
 
 <a
-  href={`/destinos/${destination.id.replace('.md', '')}`}
+  href={`/destinos/${destination.id}`}
   class="group destination-card block"
   data-category={destination.data.category}
 >

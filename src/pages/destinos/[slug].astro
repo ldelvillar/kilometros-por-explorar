@@ -38,7 +38,7 @@ interface Props {
 export async function getStaticPaths() {
   const destinations = await getCollection('destinations');
   return destinations.map(destination => ({
-    params: { slug: destination.id.replace('.md', '') },
+    params: { slug: destination.id },
     props: {
       destination,
     },

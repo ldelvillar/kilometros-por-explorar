@@ -18,7 +18,7 @@ const readingTime = getReadingTime(post.body);
 ---
 
 <article class="group h-full overflow-hidden rounded-2xl bg-white shadow-lg">
-  <a href={`/blog/${post.id.replace('.md', '')}`} class="flex h-full flex-col">
+  <a href={`/blog/${post.id}`} class="flex h-full flex-col">
     <div class="h-52 overflow-hidden">
       <Image
         src={post.data.image}
