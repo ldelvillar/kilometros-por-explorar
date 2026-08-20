@@ -1,6 +1,6 @@
 ---
 title: 'Qué ver en Lisboa en cuatro días'
-description: 'Guía completa sobre los mejores sitios que visitar en Lisboa durante 4 días: desde Alfama y Belém hasta Sintra, pasando por el tranvía 28 y los miradores más bonitos.'
+description: 'Guía completa sobre los mejores sitios que visitar en Lisboa durante 4 días: desde Alfama y Belém hasta Sintra, con el tranvía 28 y los mejores miradores.'
 date: 2025-07-18
 image: '../../assets/images/blog/lisboa-en-4-dias/cover.webp'
 destinations: ['lisboa']

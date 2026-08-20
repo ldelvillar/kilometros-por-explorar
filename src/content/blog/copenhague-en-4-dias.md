@@ -1,6 +1,6 @@
 ---
 title: 'Qué ver en Copenhague en cuatro días'
-description: 'Guía completa sobre los mejores sitios que visitar en Copenhague durante 4 días: desde Nyhavn y Tivoli hasta Christiania, pasando por palacios reales y diseño danés.'
+description: 'Guía completa sobre los mejores sitios que visitar en Copenhague durante 4 días: desde Nyhavn y Tivoli hasta Christiania, con palacios reales y diseño danés.'
 date: 2025-09-18
 image: '../../assets/images/blog/copenhague-en-4-dias/cover.webp'
 destinations: ['copenhague']

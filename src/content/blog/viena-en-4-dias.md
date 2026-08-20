@@ -1,6 +1,6 @@
 ---
 title: 'Qué ver en Viena en cuatro días'
-description: 'Guía completa sobre los mejores sitios que visitar en Viena durante 4 días: palacios imperiales, cafés históricos, Ópera Estatal y la elegancia de la capital austriaca.'
+description: 'Guía completa sobre los mejores sitios que visitar en Viena durante 4 días: palacios imperiales, cafés históricos, Ópera Estatal y elegancia austriaca.'
 date: 2025-09-15
 image: '../../assets/images/blog/viena-en-4-dias/cover.webp'
 destinations: ['viena']

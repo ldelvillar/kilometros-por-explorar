@@ -1,6 +1,6 @@
 ---
 title: 'Dónde ver auroras boreales en Europa: guía completa de los mejores destinos'
-description: 'Descubre los mejores lugares de Europa para ver auroras boreales: Noruega, Islandia, Suecia y Finlandia. Consejos prácticos para maximizar tus posibilidades de éxito.'
+description: 'Descubre los mejores lugares de Europa para ver auroras boreales: Noruega, Islandia, Suecia y Finlandia. Consejos prácticos para maximizar tus posibilidades.'
 date: 2025-08-02
 image: '../../assets/images/blog/mejor-pais-auroras-boreales/cover.webp'
 destinations: ['noruega', 'islandia', 'estocolmo']

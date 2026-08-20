@@ -1,6 +1,6 @@
 ---
 title: 'Consejos prácticos para visitar Estambul: guía para evitar trampas turísticas'
-description: 'Guía práctica con consejos esenciales para visitar Estambul: cómo moverte barato, evitar estafas turísticas, explorar la parte asiática y aprovechar al máximo la ciudad.'
+description: 'Consejos esenciales para visitar Estambul: cómo moverte barato, evitar estafas turísticas, explorar la parte asiática y aprovechar al máximo la ciudad.'
 date: 2025-11-20
 image: '../../assets/images/blog/consejos-visitar-estambul/cover.webp'
 destinations: ['estambul']

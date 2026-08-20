@@ -12,7 +12,7 @@ const destinations = defineCollection({
       .object({
         name: z.string(),
         country: z.string().optional(),
-        shortDescription: z.string(),
+        shortDescription: z.string().max(160),
         longDescription: z.string(),
         image: image(),
         imageAlt: z.string(),
@@ -51,7 +51,7 @@ const blog = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      description: z.string(),
+      description: z.string().max(160),
       date: z.date(),
       image: image(),
       destinations: z.array(reference('destinations')),

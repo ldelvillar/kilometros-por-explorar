@@ -1,6 +1,6 @@
 ---
 title: 'Qué ver en Roma en cinco días'
-description: 'Guía completa sobre los mejores sitios que visitar en Roma durante 5 días: desde el Coliseo y el Vaticano hasta el encanto del Trastevere y la dolce vita romana.'
+description: 'Guía completa sobre los mejores sitios que visitar en Roma durante 5 días: desde el Coliseo y el Vaticano hasta el Trastevere y la dolce vita romana.'
 date: 2025-07-12
 image: '../../assets/images/blog/roma-en-5-dias/cover.webp'
 destinations: ['roma']
