@@ -15,9 +15,8 @@ const { customer, loading } = Astro.props;
     <Image
       src={customer.data.image}
       alt={customer.data.name}
-      width={600}
-      height={400}
-      densities={[1, 2]}
+      widths={[400, 600, 800, 1200]}
+      sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
       class="h-64 w-full rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
       loading={loading}
     />

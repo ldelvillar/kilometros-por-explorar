@@ -22,9 +22,8 @@ const readingTime = getReadingTime(post.body);
     <div class="h-52 overflow-hidden">
       <Image
         src={post.data.image}
-        width="600"
-        height="600"
-        densities={[1, 2]}
+        widths={[400, 600, 800, 1200]}
+        sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
         alt={post.data.title}
         class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
         loading={loading}

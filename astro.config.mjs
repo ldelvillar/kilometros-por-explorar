@@ -17,6 +17,11 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  image: {
+    layout: 'constrained',
+    responsiveStyles: false,
+    breakpoints: [640, 828, 1080, 1440, 1920],
+  },
   markdown: {
     processor: unified({
       remarkPlugins: [[remarkAlert, { legacyTitle: true }]],

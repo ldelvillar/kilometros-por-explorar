@@ -25,8 +25,8 @@ const { destination, loading = 'lazy', priority = false } = Astro.props;
         src={destination.data.image}
         alt={destination.data.name}
         class="h-full w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
-        width={600}
-        densities={[1, 2]}
+        widths={[400, 600, 800, 1200]}
+        sizes="(min-width: 1280px) 400px, (min-width: 768px) 33vw, 100vw"
         loading={loading}
         fetchpriority={priority ? 'high' : undefined}
       />
