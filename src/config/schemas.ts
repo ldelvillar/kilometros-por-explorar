@@ -140,7 +140,9 @@ export const getTouristTripSchema = (
   pathname: string,
   imageUrl?: string,
   country?: string,
-  touristType?: string
+  touristType?: string,
+  // Los packs sorpresa no declaran TouristDestination
+  linkDestination = true
 ) => ({
   '@context': 'https://schema.org',
   '@type': 'TouristTrip',
@@ -152,17 +154,19 @@ export const getTouristTripSchema = (
     image: imageUrl.startsWith('http') ? imageUrl : getSiteUrl(imageUrl),
   }),
   ...(touristType && { touristType }),
-  itinerary: {
-    '@type': 'ItemList',
-    numberOfItems: 1,
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        item: { '@id': `${getSiteUrl(pathname)}#destination` },
-      },
-    ],
-  },
+  ...(linkDestination && {
+    itinerary: {
+      '@type': 'ItemList',
+      numberOfItems: 1,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: { '@id': `${getSiteUrl(pathname)}#destination` },
+        },
+      ],
+    },
+  }),
   ...(country && { arrivalLocation: { '@type': 'Country', name: country } }),
   provider: { '@id': ORGANIZATION_ID },
 });

@@ -56,26 +56,29 @@ const tripName = isSurprise
   ? destination.data.name
   : `Viaje a ${destination.data.name} a tu medida`;
 
-const destinationSchema = getTouristDestinationSchema(
-  destination.data.name,
-  description,
-  destination.data.image.src,
-  destination.data.country,
-  pathname
-);
+// Un pack sorpresa no es un lugar.
+const destinationSchema = isSurprise
+  ? null
+  : getTouristDestinationSchema(
+      destination.data.name,
+      description,
+      destination.data.image.src,
+      destination.data.country,
+      pathname
+    );
 const tripSchema = getTouristTripSchema(
   tripName,
   destination.data.longDescription,
   pathname,
   destination.data.image.src,
   destination.data.country,
-  TOURIST_TYPE_BY_CATEGORY[destination.data.category]
+  TOURIST_TYPE_BY_CATEGORY[destination.data.category],
+  !isSurprise
 );
-const schema = getCombinedSchema(
-  destinationSchema,
-  tripSchema,
-  getFAQSchema(destination.data.faqs)
-);
+const faqSchema = getFAQSchema(destination.data.faqs);
+const schema = destinationSchema
+  ? getCombinedSchema(destinationSchema, tripSchema, faqSchema)
+  : getCombinedSchema(tripSchema, faqSchema);
 
 const budgetLabel = `Desde ${new Intl.NumberFormat('es-ES').format(destination.data.budget)} €`;
 const quickFacts = [
