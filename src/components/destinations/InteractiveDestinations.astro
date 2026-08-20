@@ -113,12 +113,22 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
 </section>
 
 <script>
+  import {
+    buildSearchIndex,
+    initSearchInput,
+    searchEntries,
+    syncSearchParam,
+    tokenize,
+    type SearchEntry,
+  } from '@/utils/search';
+
   // Initialize functionality when DOM is loaded
   document.addEventListener('DOMContentLoaded', function () {
     const chips = document.querySelectorAll('.hero-chip');
     const searchInput = document.getElementById(
       'hero-search'
     ) as HTMLInputElement | null;
+    const searchButton = document.getElementById('hero-search-btn');
     const headings = Array.from(
       document.querySelectorAll<HTMLElement>('.destination-heading')
     );
@@ -142,48 +152,30 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
 
     let currentCategory = 'all';
     let isSearching = false;
-    let searchTimeout: ReturnType<typeof setTimeout>;
-
-    // Lowercase + strip accents.
-    function normalize(str: string) {
-      return str
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/\p{Diacritic}/gu, '');
-    }
 
     // Index the cards once, skipping the featured duplicates.
-    const searchIndex = items
-      .filter(node => !node.hasAttribute('data-duplicate'))
-      .map(node => ({
-        node,
-        name: normalize(node.dataset.name || ''),
-        haystack: normalize(node.dataset.search || ''),
-      }));
+    const searchIndex = buildSearchIndex(
+      items.filter(node => !node.hasAttribute('data-duplicate'))
+    );
 
-    // Tokenize the query (every word must match) and rank name hits highest.
-    function performSearch(query: string) {
-      const tokens = normalize(query).split(/\s+/).filter(Boolean);
-      if (tokens.length === 0) return [];
+    // Rank the matches: name hits weigh most, with a bonus for prefix matches.
+    function rankByName(entries: SearchEntry[], query: string) {
+      const tokens = tokenize(query);
 
-      const scored = [];
-      for (const entry of searchIndex) {
-        // Require every token to appear somewhere in the searchable text.
-        if (!tokens.every(token => entry.haystack.includes(token))) continue;
-
-        // Score: name matches weigh most, with a bonus for prefix matches.
-        let score = 0;
-        for (const token of tokens) {
-          if (entry.name.includes(token)) score += 10;
-          if (entry.name.startsWith(token)) score += 5;
-        }
-        scored.push({ entry, score });
-      }
-
-      scored.sort(
-        (a, b) => b.score - a.score || a.entry.name.localeCompare(b.entry.name)
-      );
-      return scored.map(item => item.entry);
+      return entries
+        .map(entry => {
+          let score = 0;
+          for (const token of tokens) {
+            if (entry.name.includes(token)) score += 10;
+            if (entry.name.startsWith(token)) score += 5;
+          }
+          return { entry, score };
+        })
+        .sort(
+          (a, b) =>
+            b.score - a.score || a.entry.name.localeCompare(b.entry.name)
+        )
+        .map(item => item.entry);
     }
 
     // Category view.
@@ -205,10 +197,7 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
     }
 
     // Show the matching cards (hide the rest) in ranked order.
-    function displaySearchResults(
-      results: { node: HTMLElement }[],
-      query: string
-    ) {
+    function displaySearchResults(results: SearchEntry[], query: string) {
       headings.forEach(heading => (heading.hidden = true));
 
       const matched = new Set(results.map(entry => entry.node));
@@ -250,7 +239,7 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
           // Clear search when switching categories
           searchInput.value = '';
           isSearching = false;
-          syncUrl(null);
+          syncSearchParam(null);
           setEmptyState(false);
         }
 
@@ -262,21 +251,12 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
       });
     });
 
-    // Reflect the active query in the URL (?q=) without adding history
-    // entries, so searches are shareable and survive a reload.
-    function syncUrl(query: string | null) {
-      const url = new URL(window.location.href);
-      if (query) url.searchParams.set('q', query);
-      else url.searchParams.delete('q');
-      window.history.replaceState({}, '', url);
-    }
-
     // Run a search and show the results (no category is active while searching).
     function runSearch(query: string) {
       isSearching = true;
       chips.forEach(chip => chip.setAttribute('data-active', 'false'));
-      displaySearchResults(performSearch(query), query);
-      syncUrl(query);
+      const matches = searchEntries(searchIndex, query);
+      displaySearchResults(rankByName(matches, query), query);
     }
 
     // Restore the last selected category when the search is emptied.
@@ -284,47 +264,14 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
       isSearching = false;
       setActiveChip(currentCategory);
       showCategory(currentCategory);
-      syncUrl(null);
       setEmptyState(false);
     }
 
-    // Search functionality
     if (searchInput) {
-      // Debounced live search as the user types.
-      searchInput.addEventListener('input', function () {
-        const query = this.value.trim();
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-          if (query.length >= 2) runSearch(query);
-          else clearSearch();
-        }, 300);
+      initSearchInput(searchInput, searchButton, {
+        onSearch: runSearch,
+        onClear: clearSearch,
       });
-
-      // "Buscar" button + Enter run the search immediately (skip the debounce).
-      const searchButton = document.getElementById('hero-search-btn');
-      const submitSearch = () => {
-        const query = searchInput.value.trim();
-        clearTimeout(searchTimeout);
-        if (query.length >= 2) runSearch(query);
-        else clearSearch();
-        searchInput.focus();
-      };
-      if (searchButton) searchButton.addEventListener('click', submitSearch);
-      searchInput.addEventListener('keydown', event => {
-        if (event.key === 'Enter') {
-          event.preventDefault();
-          submitSearch();
-        }
-      });
-    }
-
-    // Pre-fill and run search from the ?q= URL parameter
-    const initialQuery = new URLSearchParams(window.location.search)
-      .get('q')
-      ?.trim();
-    if (searchInput && initialQuery && initialQuery.length >= 2) {
-      searchInput.value = initialQuery;
-      runSearch(initialQuery);
     }
   });
 </script>

@@ -113,6 +113,12 @@ function getSearchText(post: CollectionEntry<'blog'>) {
 </style>
 
 <script>
+  import {
+    buildSearchIndex,
+    initSearchInput,
+    searchEntries,
+  } from '@/utils/search';
+
   document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById(
       'blog-search'
@@ -128,41 +134,14 @@ function getSearchText(post: CollectionEntry<'blog'>) {
 
     if (!searchInput) return;
 
-    let searchTimeout: ReturnType<typeof setTimeout>;
-
-    // Lowercase + strip accents.
-    function normalize(str: string) {
-      return str
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/\p{Diacritic}/gu, '');
-    }
-
     // Index the cards once: título, descripción y destinos referenciados.
-    const searchIndex = items.map(node => ({
-      node,
-      haystack: normalize(node.dataset.search || ''),
-    }));
-
-    // Reflect the active query in the URL (?q=) without adding history
-    // entries, so searches are shareable and survive a reload.
-    function syncUrl(query: string | null) {
-      const url = new URL(window.location.href);
-      if (query) url.searchParams.set('q', query);
-      else url.searchParams.delete('q');
-      window.history.replaceState({}, '', url);
-    }
+    const searchIndex = buildSearchIndex(items);
 
     // Filtra sin reordenar: la lista es cronológica y conviene que lo siga
     // siendo dentro de los resultados.
     function runSearch(query: string) {
-      const tokens = normalize(query).split(/\s+/).filter(Boolean);
       const matched = new Set(
-        searchIndex
-          .filter(entry =>
-            tokens.every(token => entry.haystack.includes(token))
-          )
-          .map(entry => entry.node)
+        searchEntries(searchIndex, query).map(entry => entry.node)
       );
 
       items.forEach(node => {
@@ -184,8 +163,6 @@ function getSearchText(post: CollectionEntry<'blog'>) {
       if (noResultsQuery) noResultsQuery.textContent = query;
       if (noResults) noResults.classList.toggle('hidden', count > 0);
       if (cta) cta.hidden = count === 0;
-
-      syncUrl(query);
     }
 
     // Restore the full list when the search is emptied.
@@ -194,42 +171,11 @@ function getSearchText(post: CollectionEntry<'blog'>) {
       if (resultsCount) resultsCount.hidden = true;
       if (noResults) noResults.classList.add('hidden');
       if (cta) cta.hidden = false;
-      syncUrl(null);
     }
 
-    // Debounced live search as the user types.
-    searchInput.addEventListener('input', function () {
-      const query = this.value.trim();
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => {
-        if (query.length >= 2) runSearch(query);
-        else clearSearch();
-      }, 300);
+    initSearchInput(searchInput, searchButton, {
+      onSearch: runSearch,
+      onClear: clearSearch,
     });
-
-    // "Buscar" button + Enter run the search immediately (skip the debounce).
-    const submitSearch = () => {
-      const query = searchInput.value.trim();
-      clearTimeout(searchTimeout);
-      if (query.length >= 2) runSearch(query);
-      else clearSearch();
-      searchInput.focus();
-    };
-    if (searchButton) searchButton.addEventListener('click', submitSearch);
-    searchInput.addEventListener('keydown', event => {
-      if (event.key === 'Enter') {
-        event.preventDefault();
-        submitSearch();
-      }
-    });
-
-    // Pre-fill and run search from the ?q= URL parameter
-    const initialQuery = new URLSearchParams(window.location.search)
-      .get('q')
-      ?.trim();
-    if (initialQuery && initialQuery.length >= 2) {
-      searchInput.value = initialQuery;
-      runSearch(initialQuery);
-    }
   });
 </script>
