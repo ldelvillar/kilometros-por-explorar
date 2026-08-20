@@ -17,6 +17,8 @@ import {
 } from '@/config/schemas';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
 import ArticleDestinations from '@/components/blog/ArticleDestinations.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import FaqAccordion from '@/components/FaqAccordion.astro';
 import Calendar from '@/assets/icons/calendar.svg';
 import Clock from '@/assets/icons/clock.svg';
 import { getReadingTime } from '@/utils/getReadingTime';
@@ -172,6 +174,16 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
       </article>
 
       <hr class="my-8 border-t border-gray-300 lg:my-16" />
+
+      <!-- FAQs -->
+      <section class="mx-auto mb-16 max-w-[800px]">
+        <SectionHeading
+          eyebrow="Resolvemos tus dudas"
+          title="Preguntas frecuentes"
+          class="mb-8"
+        />
+        <FaqAccordion faqs={post.data.faqs} />
+      </section>
     </div>
 
     <!-- Related articles -->
