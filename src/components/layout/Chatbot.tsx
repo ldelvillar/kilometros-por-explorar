@@ -16,7 +16,7 @@ const CHATBOT_ENDPOINT = import.meta.env.PUBLIC_CHATBOT_WEBHOOK_ENDPOINT;
 const getSessionId = () => {
   let id = localStorage.getItem('chatSessionId');
   if (!id) {
-    id = `session_${Math.random().toString(36).substr(2, 9)}`;
+    id = `session_${Math.random().toString(36).slice(2, 11)}`;
     localStorage.setItem('chatSessionId', id);
   }
   return id;
