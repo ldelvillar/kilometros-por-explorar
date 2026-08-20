@@ -1,15 +1,12 @@
 ---
-import { getBreadcrumbSchema, type BreadcrumbItem } from '@/config/schemas';
+import type { BreadcrumbItem } from '@/config/schemas';
 
 interface Props {
   items: BreadcrumbItem[];
   class?: string;
-  includeSchema?: boolean;
 }
 
-const { items, class: className, includeSchema = true } = Astro.props;
-
-const breadcrumbSchema = getBreadcrumbSchema(items);
+const { items, class: className } = Astro.props;
 ---
 
 <nav aria-label="Breadcrumb" class:list={['text-sm', className]}>
@@ -54,12 +51,3 @@ const breadcrumbSchema = getBreadcrumbSchema(items);
     }
   </ol>
 </nav>
-
-{
-  includeSchema && (
-    <script
-      type="application/ld+json"
-      set:html={JSON.stringify(breadcrumbSchema)}
-    />
-  )
-}

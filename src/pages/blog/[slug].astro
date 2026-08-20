@@ -11,8 +11,10 @@ import CTA from '@/components/Cta.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import {
   getArticleSchema,
-  getBlogCombinedSchema,
+  getBreadcrumbSchema,
+  getCombinedSchema,
   getFAQSchema,
+  getWebPageSchema,
   type BreadcrumbItem,
 } from '@/config/schemas';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
@@ -79,6 +81,7 @@ const mainDestination = mainDestinationRef
   ? (await getEntry(mainDestinationRef))?.data.name
   : undefined;
 
+const pageSchema = getWebPageSchema(title, description, pathname, true);
 const articleSchema = getArticleSchema(
   post.data.title,
   description,
@@ -90,9 +93,14 @@ const articleSchema = getArticleSchema(
   readingTime
 );
 
-const faqSchema = getFAQSchema(post.data.faqs);
+const faqSchema = getFAQSchema(post.data.faqs, pathname);
 
-const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
+const schema = getCombinedSchema(
+  pageSchema,
+  articleSchema,
+  getBreadcrumbSchema(breadcrumbItems, pathname),
+  faqSchema
+);
 ---
 
 <Layout
@@ -108,11 +116,7 @@ const schema = getBlogCombinedSchema(articleSchema, breadcrumbItems, faqSchema);
   <main id="main" class="bg-white pt-20">
     <!-- Breadcrumbs -->
     <div class="mx-auto max-w-5xl py-4">
-      <Breadcrumbs
-        items={breadcrumbItems}
-        class="px-2 md:px-0"
-        includeSchema={false}
-      />
+      <Breadcrumbs items={breadcrumbItems} class="px-2 md:px-0" />
     </div>
 
     <!-- Hero image -->

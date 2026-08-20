@@ -46,9 +46,13 @@ Two things that file won't tell you:
 
 ### Layout & SEO pipeline
 
-SEO/structured data is centralized in **`src/config/schemas.ts`** — typed builders for every Schema.org type the site emits. **Never hand-roll JSON-LD in a page; check there for a builder first.** Pages combine builders into one `@graph` with `getCombinedSchema(pageSchema, ...extras)`, or `getBlogCombinedSchema(article, breadcrumbs, faq)` for blog posts.
+SEO/structured data is centralized in **`src/config/schemas.ts`** — typed builders for every Schema.org type the site emits. **Never hand-roll JSON-LD in a page; check there for a builder first.** Every page builds one `@graph` with `getCombinedSchema(pageSchema, ...extras)`, where `pageSchema` is always the `getWebPageSchema()` node.
 
-`Breadcrumbs.astro` emits its own `BreadcrumbList` by default — pass `includeSchema={false}` when the page already includes breadcrumbs in its `@graph` (as `blog/[slug]` and `viajeros/[slug]` do) to avoid duplicate nodes.
+Nodes are linked by stable `@id`, never by inlining a second copy of an entity: `ORGANIZATION_ID` / `WEBSITE_ID` for the site-wide nodes, and `getWebPageId(pathname)` (`<url>#webpage`) for the page itself, with the per-page entities at `#article` / `#faq` / `#review` / `#breadcrumb` / `#trip` / `#destination`. **A builder that needs to name the organization or the page emits `{ '@id': ORGANIZATION_ID }`, not an inline `Organization` object** — an unidentified duplicate dilutes the entity it was supposed to reinforce. `getWebPageSchema()` takes a final `hasBreadcrumb` flag so it only links `#breadcrumb` on pages that actually publish one.
+
+`Review.itemReviewed` points at the `TouristTrip` of the destination the traveller visited, **never at our own business** — a self-serving review violates Google's structured-data policy. `getTripName()` is shared with `destinos/[slug]` so both pages name that trip identically and Google reconciles them as one entity.
+
+`Breadcrumbs.astro` is presentational only: the page that renders it also owns the `BreadcrumbList` node in its own `@graph` (`blog/[slug]`, `destinos/[slug]` and `viajeros/[slug]` all do). Keep it that way — every page emits exactly one `<script type="application/ld+json">`, and a `#breadcrumb` node outside it is one the `WebPage` cannot reference.
 
 Shared constants (domain, company contact, social links, default SEO copy) live in **`src/config/site.ts`**; URL helpers in `src/utils/getUrls.ts`; reading time in `src/utils/getReadingTime.ts`. The home-page FAQ lives in **`src/config/faqs.ts`** (`HOME_FAQS`) as the single source feeding both the `Faq` component and the `FAQPage` schema.
 

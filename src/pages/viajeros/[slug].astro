@@ -8,10 +8,10 @@ import {
 } from 'astro:content';
 import {
   getWebPageSchema,
-  getOrganizationSchema,
-  getWebSiteSchema,
+  getCombinedSchema,
   getBreadcrumbSchema,
   getReviewSchema,
+  getTripName,
   type BreadcrumbItem,
 } from '@/config/schemas';
 import Layout from '@/layouts/Layout.astro';
@@ -57,7 +57,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
 ];
 
 const pathname = Astro.url.pathname;
-const pageSchema = getWebPageSchema(title, description, pathname);
+const pageSchema = getWebPageSchema(title, description, pathname, true);
 
 // Extrae la valoración (p. ej. "5/5") de las métricas visibles en la página
 const ratingMetric = customer.data.metrics.find(metric =>
@@ -87,18 +87,20 @@ const reviewSchema = getReviewSchema({
   pathname,
   name: customer.data.title,
   rating,
+  trip: {
+    name: getTripName(
+      destinationEntry.data.name,
+      destinationEntry.data.category === 'sorpresa'
+    ),
+    pathname: destination.href,
+  },
 });
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    getOrganizationSchema(),
-    getWebSiteSchema(),
-    pageSchema,
-    getBreadcrumbSchema(breadcrumbItems),
-    reviewSchema,
-  ],
-};
+const schema = getCombinedSchema(
+  pageSchema,
+  getBreadcrumbSchema(breadcrumbItems, pathname),
+  reviewSchema
+);
 ---
 
 <Layout
@@ -115,7 +117,7 @@ const schema = {
       class="relative z-10 mx-auto max-w-6xl overflow-hidden px-4 pt-24 lg:px-8"
     >
       <!-- Breadcrumb -->
-      <Breadcrumbs items={breadcrumbItems} class="mb-6" includeSchema={false} />
+      <Breadcrumbs items={breadcrumbItems} class="mb-6" />
 
       <!-- Customer flag -->
       <div class="mb-6">

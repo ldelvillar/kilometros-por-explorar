@@ -22,7 +22,7 @@ const description =
 const pathname = Astro.url.pathname;
 
 const pageSchema = getWebPageSchema(title, description, pathname);
-const faqSchema = getFAQSchema(HOME_FAQS);
+const faqSchema = getFAQSchema(HOME_FAQS, pathname);
 const schema = getCombinedSchema(pageSchema, faqSchema);
 ---
 

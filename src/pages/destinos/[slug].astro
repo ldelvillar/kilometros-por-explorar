@@ -11,10 +11,14 @@ import SectionHeading from '@/components/SectionHeading.astro';
 import FaqAccordion from '@/components/FaqAccordion.astro';
 import Cta from '@/components/Cta.astro';
 import {
+  getBreadcrumbSchema,
   getCombinedSchema,
   getFAQSchema,
   getTouristDestinationSchema,
   getTouristTripSchema,
+  getTripName,
+  getWebPageSchema,
+  type BreadcrumbItem,
 } from '@/config/schemas';
 import Calendar from '@/assets/icons/calendar.svg';
 import Clock from '@/assets/icons/clock.svg';
@@ -52,10 +56,14 @@ const title = getPageTitle(`Viajar a ${destination.data.name} a tu Medida`);
 const description = destination.data.shortDescription;
 const pathname = Astro.url.pathname;
 
+const breadcrumbItems: BreadcrumbItem[] = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Destinos', href: '/destinos' },
+  { name: destination.data.name },
+];
+
 const isSurprise = destination.data.category === 'sorpresa';
-const tripName = isSurprise
-  ? destination.data.name
-  : `Viaje a ${destination.data.name} a tu medida`;
+const tripName = getTripName(destination.data.name, isSurprise);
 
 // Un pack sorpresa no es un lugar.
 const destinationSchema = isSurprise
@@ -76,10 +84,18 @@ const tripSchema = getTouristTripSchema(
   TOURIST_TYPE_BY_CATEGORY[destination.data.category],
   !isSurprise
 );
-const faqSchema = getFAQSchema(destination.data.faqs);
+const faqSchema = getFAQSchema(destination.data.faqs, pathname);
+const pageSchema = getWebPageSchema(title, description, pathname, true);
+const breadcrumbSchema = getBreadcrumbSchema(breadcrumbItems, pathname);
 const schema = destinationSchema
-  ? getCombinedSchema(destinationSchema, tripSchema, faqSchema)
-  : getCombinedSchema(tripSchema, faqSchema);
+  ? getCombinedSchema(
+      pageSchema,
+      destinationSchema,
+      tripSchema,
+      breadcrumbSchema,
+      faqSchema
+    )
+  : getCombinedSchema(pageSchema, tripSchema, breadcrumbSchema, faqSchema);
 
 const budgetLabel = `Desde ${new Intl.NumberFormat('es-ES').format(destination.data.budget)} €`;
 const quickFacts = [
@@ -112,13 +128,7 @@ const quickFacts = [
   <main id="main">
     <!-- Breadcrumbs -->
     <div class="mx-auto max-w-7xl px-4 pt-24 pb-4">
-      <Breadcrumbs
-        items={[
-          { name: 'Inicio', href: '/' },
-          { name: 'Destinos', href: '/destinos' },
-          { name: destination.data.name },
-        ]}
-      />
+      <Breadcrumbs items={breadcrumbItems} />
     </div>
 
     <!-- Hero -->

@@ -5,6 +5,14 @@ import { getSiteUrl } from '@/utils/getUrls';
 export const ORGANIZATION_ID = `${SITE_CONFIG.domain}/#organization`;
 export const WEBSITE_ID = `${SITE_CONFIG.domain}/#website`;
 
+// Cada página es un nodo WebPage del que cuelgan el resto de entidades
+export const getWebPageId = (pathname: string) =>
+  `${getSiteUrl(pathname)}#webpage`;
+
+// El nombre del viaje debe coincidir en /destinos y en las reseñas que lo enlazan
+export const getTripName = (destinationName: string, isSurprise: boolean) =>
+  isSurprise ? destinationName : `Viaje a ${destinationName} a tu medida`;
+
 // Schema base para la organización (TravelAgency es un subtipo de LocalBusiness)
 export const getOrganizationSchema = () => ({
   '@context': 'https://schema.org',
@@ -47,23 +55,22 @@ export const getOrganizationSchema = () => ({
 export const getWebPageSchema = (
   title: string,
   description: string,
-  pathname: string
+  pathname: string,
+  // Solo enlaza el breadcrumb en las páginas que lo publican
+  hasBreadcrumb = false
 ) => ({
   '@context': 'https://schema.org',
   '@type': 'WebPage',
+  '@id': getWebPageId(pathname),
   name: title,
   description: description,
   url: getSiteUrl(pathname),
   inLanguage: 'es-ES',
-  isPartOf: {
-    '@type': 'WebSite',
-    name: SITE_CONFIG.company.name,
-    url: SITE_CONFIG.domain,
-  },
-  author: {
-    '@type': 'Organization',
-    name: SITE_CONFIG.company.name,
-  },
+  isPartOf: { '@id': WEBSITE_ID },
+  author: { '@id': ORGANIZATION_ID },
+  ...(hasBreadcrumb && {
+    breadcrumb: { '@id': `${getSiteUrl(pathname)}#breadcrumb` },
+  }),
 });
 
 // Schema para sitio web
@@ -153,9 +160,11 @@ export interface FAQItem {
 }
 
 // Schema para FAQ
-export const getFAQSchema = (faqs: FAQItem[]) => ({
+export const getFAQSchema = (faqs: FAQItem[], pathname: string) => ({
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
+  '@id': `${getSiteUrl(pathname)}#faq`,
+  isPartOf: { '@id': getWebPageId(pathname) },
   mainEntity: faqs.map(faq => ({
     '@type': 'Question',
     name: faq.question,
@@ -179,27 +188,15 @@ export const getArticleSchema = (
 ) => ({
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
+  '@id': `${getSiteUrl(pathname)}#article`,
   headline: title,
   description: description,
   url: getSiteUrl(pathname),
   inLanguage: 'es-ES',
   datePublished: publishDate,
   dateModified: modifyDate || publishDate,
-  author: {
-    '@type': 'Organization',
-    name: SITE_CONFIG.company.name,
-    url: getSiteUrl('/sobre-nosotros'),
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: SITE_CONFIG.company.name,
-    logo: {
-      '@type': 'ImageObject',
-      url: getSiteUrl('/images/brand/logo.png'),
-      width: 850,
-      height: 425,
-    },
-  },
+  author: { '@id': ORGANIZATION_ID },
+  publisher: { '@id': ORGANIZATION_ID },
   ...(imageUrl && {
     image: {
       '@type': 'ImageObject',
@@ -208,10 +205,7 @@ export const getArticleSchema = (
       height: 630,
     },
   }),
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': getSiteUrl(pathname),
-  },
+  mainEntityOfPage: { '@id': getWebPageId(pathname) },
   ...(aboutName && {
     about: {
       '@type': 'Place',
@@ -226,12 +220,15 @@ export const getReviewSchema = (review: {
   reviewBody: string;
   authorName: string;
   pathname: string;
+  // Reseñar el propio negocio es una reseña interesada: se reseña el viaje
+  trip: { name: string; pathname: string };
   name?: string;
   rating?: { ratingValue: number; bestRating?: number };
   datePublished?: string;
 }) => ({
   '@context': 'https://schema.org',
   '@type': 'Review',
+  '@id': `${getSiteUrl(review.pathname)}#review`,
   ...(review.name && { name: review.name }),
   reviewBody: review.reviewBody,
   author: {
@@ -239,10 +236,13 @@ export const getReviewSchema = (review: {
     name: review.authorName,
   },
   itemReviewed: {
-    '@type': 'TravelAgency',
-    name: SITE_CONFIG.company.name,
-    url: SITE_CONFIG.domain,
+    '@type': 'TouristTrip',
+    '@id': `${getSiteUrl(review.trip.pathname)}#trip`,
+    name: review.trip.name,
+    url: getSiteUrl(review.trip.pathname),
+    provider: { '@id': ORGANIZATION_ID },
   },
+  isPartOf: { '@id': getWebPageId(review.pathname) },
   url: getSiteUrl(review.pathname),
   ...(review.datePublished && { datePublished: review.datePublished }),
   ...(review.rating && {
@@ -262,9 +262,13 @@ export interface BreadcrumbItem {
 }
 
 // Schema para breadcrumbs
-export const getBreadcrumbSchema = (items: BreadcrumbItem[]) => ({
+export const getBreadcrumbSchema = (
+  items: BreadcrumbItem[],
+  pathname: string
+) => ({
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
+  '@id': `${getSiteUrl(pathname)}#breadcrumb`,
   itemListElement: items.map((item, index) => ({
     '@type': 'ListItem',
     position: index + 1,
@@ -284,21 +288,5 @@ export const getCombinedSchema = (
     getWebSiteSchema(),
     pageSchema,
     ...extraSchemas,
-  ],
-});
-
-// Schema combinado para artículos del blog (incluye Article + Breadcrumb + FAQ)
-export const getBlogCombinedSchema = (
-  articleSchema: object,
-  breadcrumbItems: BreadcrumbItem[],
-  faqSchema: object
-) => ({
-  '@context': 'https://schema.org',
-  '@graph': [
-    getOrganizationSchema(),
-    getWebSiteSchema(),
-    articleSchema,
-    getBreadcrumbSchema(breadcrumbItems),
-    faqSchema,
   ],
 });
