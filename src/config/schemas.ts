@@ -86,31 +86,6 @@ export const getWebSiteSchema = () => ({
   },
 });
 
-// Schema para servicios de viaje
-export const getTravelServiceSchema = (
-  serviceName: string,
-  description: string,
-  price?: number
-) => ({
-  '@context': 'https://schema.org',
-  '@type': 'TravelService',
-  name: serviceName,
-  description: description,
-  provider: {
-    '@type': 'TravelAgency',
-    name: SITE_CONFIG.company.name,
-    url: SITE_CONFIG.domain,
-  },
-  ...(price && {
-    offers: {
-      '@type': 'Offer',
-      price: price,
-      priceCurrency: 'EUR',
-      availability: 'https://schema.org/InStock',
-    },
-  }),
-});
-
 // Schema para destinos turísticos
 export const getTouristDestinationSchema = (
   destinationName: string,

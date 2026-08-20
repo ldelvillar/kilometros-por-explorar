@@ -9,7 +9,3 @@ export const getSiteUrl = (path: string = '') => {
   }
   return `${SITE_CONFIG.domain}${normalizedPath}`;
 };
-
-export const getCanonicalUrl = (pathname: string) => {
-  return getSiteUrl(pathname);
-};

@@ -2,7 +2,7 @@
 import { getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import { SITE_CONFIG } from '@/config/site';
-import { getCanonicalUrl } from '@/utils/getUrls';
+import { getSiteUrl } from '@/utils/getUrls';
 import defaultOgImage from '@/assets/images/hero.webp';
 
 interface Props {
@@ -28,7 +28,7 @@ const {
 }: Props = Astro.props;
 
 const pathname = Astro.url.pathname;
-const fullUrl = getCanonicalUrl(pathname);
+const fullUrl = getSiteUrl(pathname);
 
 // Social previews use a 1200x630 JPEG card. WebP is avoided on purpose.
 // Local images (ImageMetadata) are cropped to a social card; an external URL is used as-is

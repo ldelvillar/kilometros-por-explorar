@@ -12,7 +12,6 @@ export const GET: APIRoute = async () => {
     getCollection('customers'),
   ]);
 
-  const slug = (id: string) => id.replace(/\.md$/, '');
   const item = (title: string, path: string, description: string) =>
     `- [${title}](${getSiteUrl(path)}): ${description}`;
 
@@ -58,20 +57,18 @@ export const GET: APIRoute = async () => {
     '',
     '## Guías de viaje',
     '',
-    ...guides.map(p =>
-      item(p.data.title, `/blog/${slug(p.id)}`, p.data.description)
-    ),
+    ...guides.map(p => item(p.data.title, `/blog/${p.id}`, p.data.description)),
     '',
     '## Destinos',
     '',
     ...sortedDestinations.map(d =>
-      item(d.data.name, `/destinos/${slug(d.id)}`, d.data.shortDescription)
+      item(d.data.name, `/destinos/${d.id}`, d.data.shortDescription)
     ),
     '',
     '## Historias de viajeros',
     '',
     ...customers.map(c =>
-      item(c.data.name, `/viajeros/${slug(c.id)}`, c.data.metaDescription)
+      item(c.data.name, `/viajeros/${c.id}`, c.data.metaDescription)
     ),
     '',
   ];
