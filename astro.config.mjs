@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, envField } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import preact from '@astrojs/preact';
@@ -14,6 +14,18 @@ import { rehypeToc } from './src/utils/rehypeToc.ts';
 export default defineConfig({
   site: SITE_CONFIG.domain,
   trailingSlash: 'never',
+  env: {
+    schema: {
+      PUBLIC_CONTACT_FORM_ENDPOINT: envField.string({
+        context: 'client',
+        access: 'public',
+      }),
+      PUBLIC_CHATBOT_WEBHOOK_ENDPOINT: envField.string({
+        context: 'client',
+        access: 'public',
+      }),
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },

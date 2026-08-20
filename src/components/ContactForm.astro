@@ -163,7 +163,9 @@ const { company } = SITE_CONFIG;
 </style>
 
 <script>
-  const CONTACT_ENDPOINT = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT;
+  import { PUBLIC_CONTACT_FORM_ENDPOINT } from 'astro:env/client';
+
+  const CONTACT_ENDPOINT = PUBLIC_CONTACT_FORM_ENDPOINT;
 
   // Rellenar nombre, email, mensaje y aceptar la política lleva mucho más de
   // esto; por debajo del umbral el envío es automatizado.

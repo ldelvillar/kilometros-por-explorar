@@ -3,6 +3,7 @@ import type { JSX } from 'preact';
 import Bot from '@/assets/icons/Bot.tsx';
 import Cross from '@/assets/icons/Cross.tsx';
 import Send from '@/assets/icons/Send.tsx';
+import { PUBLIC_CHATBOT_WEBHOOK_ENDPOINT } from 'astro:env/client';
 
 interface Message {
   id: string;
@@ -11,7 +12,7 @@ interface Message {
   timestamp: Date;
 }
 
-const CHATBOT_ENDPOINT = import.meta.env.PUBLIC_CHATBOT_WEBHOOK_ENDPOINT;
+const CHATBOT_ENDPOINT = PUBLIC_CHATBOT_WEBHOOK_ENDPOINT;
 
 const getSessionId = () => {
   let id = localStorage.getItem('chatSessionId');

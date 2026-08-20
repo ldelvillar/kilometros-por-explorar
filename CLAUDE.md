@@ -10,8 +10,12 @@ Package manager is **pnpm**: `pnpm dev` / `build` / `preview` / `format`.
 
 There is **no test runner and no linter** beyond Prettier. `pnpm build` is the de-facto correctness gate: it fails on Zod content-schema violations, broken `image()` references, and TypeScript errors. Run it before considering a change done.
 
-Env vars live in an uncommitted `.env` with no `.env.example`:
+Env vars live in an uncommitted `.env` — copy `.env.example` to create it:
 `PUBLIC_CONTACT_FORM_ENDPOINT`, `PUBLIC_CHATBOT_WEBHOOK_ENDPOINT` (both `PUBLIC_`).
+Both are declared in the `env.schema` of `astro.config.mjs` and read through
+`astro:env/client`, **not** `import.meta.env` — so a missing one fails the build
+instead of silently posting to `undefined`. Adding a var means editing that
+schema, `.env.example` and `.env` together.
 
 ## Tech Stack
 
