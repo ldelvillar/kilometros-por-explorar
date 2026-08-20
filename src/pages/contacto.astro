@@ -9,8 +9,9 @@ import Clock from '@/assets/icons/clock.svg';
 import Instagram from '@/assets/icons/instagram.svg';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { SITE_CONFIG } from '@/config/site';
+import { getPageTitle } from '@/utils/getPageTitle';
 
-const title = 'Contacto | Kilómetros por Explorar';
+const title = getPageTitle('Contacto');
 const description =
   'Ponte en contacto con nosotros para planificar tu próximo viaje. Estamos aquí para ayudarte a hacer realidad tu aventura soñada.';
 const pathname = '/contacto';

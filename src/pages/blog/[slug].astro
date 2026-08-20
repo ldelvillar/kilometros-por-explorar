@@ -22,6 +22,7 @@ import FaqAccordion from '@/components/FaqAccordion.astro';
 import Calendar from '@/assets/icons/calendar.svg';
 import Clock from '@/assets/icons/clock.svg';
 import { getReadingTime } from '@/utils/getReadingTime';
+import { getPageTitle } from '@/utils/getPageTitle';
 import '@/styles/prose.css';
 
 interface Props {
@@ -63,7 +64,7 @@ const sortedRelatedPosts = relatedPosts
     (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
   );
 
-const title = `${post.data.title} | Kilómetros por Explorar`;
+const title = getPageTitle(post.data.title);
 const description = post.data.description;
 const pathname = Astro.url.pathname;
 

@@ -52,6 +52,8 @@ SEO/structured data is centralized in **`src/config/schemas.ts`** — typed buil
 
 Shared constants (domain, company contact, social links, default SEO copy) live in **`src/config/site.ts`**; URL helpers in `src/utils/getUrls.ts`; reading time in `src/utils/getReadingTime.ts`. The home-page FAQ lives in **`src/config/faqs.ts`** (`HOME_FAQS`) as the single source feeding both the `Faq` component and the `FAQPage` schema.
 
+Every page `<title>` is built by `getPageTitle()` in **`src/utils/getPageTitle.ts`**, which appends the brand name from `site.ts`. Pass only the page-specific part — `getPageTitle('Blog')`, `getPageTitle(post.data.title)`, ``getPageTitle(`Viajar a ${name} a tu medida`)`` — and **never hardcode the `| Kilómetros por Explorar` suffix in a page**.
+
 ### Astro vs Preact components
 
 `.astro` components are static-rendered (layouts, cards, sections — the bulk of `src/components/`). Reserve Preact `.tsx` islands for genuine interactivity (`Chatbot.tsx`, `CookieBanner.tsx`) and hydrate them with the lightest directive that works (`client:idle`/`client:load`).

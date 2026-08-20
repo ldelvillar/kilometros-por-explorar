@@ -18,6 +18,7 @@ import Layout from '@/layouts/Layout.astro';
 import CustomerTimeline from '@/components/customers/CustomerTimeline.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import Cta from '@/components/Cta.astro';
+import { getPageTitle } from '@/utils/getPageTitle';
 import '@/styles/prose.css';
 
 interface Props {
@@ -46,7 +47,7 @@ const destination = {
   href: `/destinos/${destinationEntry.id}`,
 };
 
-const title = `Descubre la Aventura de ${customer.data.name} | Kilómetros por Explorar`;
+const title = getPageTitle(`Descubre la Aventura de ${customer.data.name}`);
 const description = customer.data.metaDescription;
 
 const breadcrumbItems: BreadcrumbItem[] = [

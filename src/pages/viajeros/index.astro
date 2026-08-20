@@ -6,8 +6,9 @@ import CustomerCard from '@/components/customers/CustomerCard.astro';
 import PageTitle from '@/components/PageTitle.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import { getPageTitle } from '@/utils/getPageTitle';
 
-const title = 'Historias de Viajeros Satisfechos | Kilómetros por Explorar';
+const title = getPageTitle('Historias de Viajeros Satisfechos');
 const description =
   'Experiencias reales de viajeros que planificaron su viaje con nosotros. Descubre sus historias y déjate inspirar para tu próxima aventura.';
 const pathname = Astro.url.pathname;

@@ -7,8 +7,9 @@ import BlogCard from '@/components/blog/BlogEntryCard.astro';
 import Cta from '@/components/Cta.astro';
 import Magnifier from '@/assets/icons/magnifier.svg';
 import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
+import { getPageTitle } from '@/utils/getPageTitle';
 
-const title = 'Blog | Kilómetros por Explorar';
+const title = getPageTitle('Blog');
 const description =
   'Consejos de viaje, itinerarios y guías de destinos para planificar tu próxima aventura. Lee el blog de Kilómetros por Explorar y viaja mejor.';
 const pathname = Astro.url.pathname;

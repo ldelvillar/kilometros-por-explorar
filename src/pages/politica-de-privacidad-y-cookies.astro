@@ -2,8 +2,9 @@
 import Layout from '@/layouts/Layout.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { SITE_CONFIG } from '@/config/site';
+import { getPageTitle } from '@/utils/getPageTitle';
 
-const title = 'Política de Privacidad y Cookies | Kilómetros por Explorar';
+const title = getPageTitle('Política de Privacidad y Cookies');
 const description =
   'Consulta nuestra política de privacidad para conocer cómo protegemos y tratamos tus datos personales en Kilómetros por Explorar.';
 const pathname = Astro.url.pathname;

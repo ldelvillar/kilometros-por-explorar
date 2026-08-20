@@ -14,8 +14,9 @@ import {
   getFAQSchema,
 } from '@/config/schemas';
 import { HOME_FAQS } from '@/config/faqs';
+import { getPageTitle } from '@/utils/getPageTitle';
 
-const title = 'Planificación Profesional de Viajes | Kilómetros por Explorar';
+const title = getPageTitle('Planificación Profesional de Viajes');
 const description =
   'Planificamos tu viaje de forma profesional y económica. Descubre destinos, itinerarios personalizados a medida y consejos de viaje con nosotros.';
 const pathname = Astro.url.pathname;

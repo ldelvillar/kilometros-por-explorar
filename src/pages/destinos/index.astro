@@ -7,8 +7,9 @@ import SearchBar from '@/components/SearchBar.astro';
 
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { getCollection } from 'astro:content';
+import { getPageTitle } from '@/utils/getPageTitle';
 
-const title = 'Destinos de Viaje | Kilómetros por Explorar';
+const title = getPageTitle('Destinos de Viaje');
 const description =
   'Descubre nuestros destinos cuidadosamente seleccionados. Desde playas paradisíacas hasta aventuras culturales, encuentra tu próxima experiencia de viaje perfecta.';
 const pathname = Astro.url.pathname;

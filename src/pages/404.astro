@@ -2,8 +2,9 @@
 import { Image } from 'astro:assets';
 import Layout from '@/layouts/Layout.astro';
 import notFoundImage from '@/assets/images/404.webp';
+import { getPageTitle } from '@/utils/getPageTitle';
 
-const title = 'Página no encontrada | Kilómetros por Explorar';
+const title = getPageTitle('Página no encontrada');
 const description =
   'Lo sentimos, la página que buscas no existe. Te ayudamos a encontrar tu camino de vuelta.';
 ---

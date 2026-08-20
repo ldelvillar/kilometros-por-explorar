@@ -20,6 +20,7 @@ import Calendar from '@/assets/icons/calendar.svg';
 import Clock from '@/assets/icons/clock.svg';
 import Dollar from '@/assets/icons/dollar.svg';
 import Location from '@/assets/icons/location.svg';
+import { getPageTitle } from '@/utils/getPageTitle';
 
 // Etiqueta de tipo de turismo para el schema TouristTrip, según la categoría
 const TOURIST_TYPE_BY_CATEGORY: Record<string, string | undefined> = {
@@ -47,7 +48,7 @@ export async function getStaticPaths() {
 
 const { destination } = Astro.props;
 
-const title = `Viajar a ${destination.data.name} a tu Medida | Kilómetros por Explorar`;
+const title = getPageTitle(`Viajar a ${destination.data.name} a tu Medida`);
 const description = destination.data.shortDescription;
 const pathname = Astro.url.pathname;
 
