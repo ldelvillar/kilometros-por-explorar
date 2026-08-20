@@ -11,10 +11,7 @@ interface Message {
   timestamp: Date;
 }
 
-interface ChatbotConfig {
-  webhookUrl: string;
-  sessionId: string;
-}
+const CHATBOT_ENDPOINT = import.meta.env.PUBLIC_CHATBOT_WEBHOOK_ENDPOINT;
 
 const getSessionId = () => {
   let id = localStorage.getItem('chatSessionId');
@@ -37,14 +34,6 @@ export default function Chatbot() {
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
-  const [config, setConfig] = useState<ChatbotConfig | null>(null);
-
-  useEffect(() => {
-    setConfig({
-      webhookUrl: import.meta.env.PUBLIC_CHATBOT_WEBHOOK_ENDPOINT,
-      sessionId: getSessionId(),
-    });
-  }, []);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -109,13 +98,14 @@ export default function Chatbot() {
   const sendToBackend = async (message: string) => {
     const payload = {
       message,
-      sessionId: config?.sessionId,
+      // localStorage is browser-only, so read it on send rather than on mount.
+      sessionId: getSessionId(),
       timestamp: new Date().toISOString(),
       userAgent: navigator.userAgent,
       url: window.location.href,
     };
 
-    const response = await fetch(config.webhookUrl, {
+    const response = await fetch(CHATBOT_ENDPOINT, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -152,8 +142,6 @@ export default function Chatbot() {
   const toggleChat = () => {
     setIsOpen(!isOpen);
   };
-
-  if (!config) return null;
 
   return (
     <div className="fixed right-6 bottom-6 z-50">
