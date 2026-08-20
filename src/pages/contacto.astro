@@ -1,14 +1,9 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import ContactForm from '@/components/ContactForm.astro';
+import ContactDetails from '@/components/ContactDetails.astro';
 import PageTitle from '@/components/PageTitle.astro';
-import Envelope from '@/assets/icons/envelope.svg';
-import Phone from '@/assets/icons/phone.svg';
-import Location from '@/assets/icons/location.svg';
-import Clock from '@/assets/icons/clock.svg';
-import Instagram from '@/assets/icons/instagram.svg';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
-import { SITE_CONFIG } from '@/config/site';
 import { getPageTitle } from '@/utils/getPageTitle';
 
 const title = getPageTitle('Contacto');
@@ -19,11 +14,6 @@ const pathname = '/contacto';
 // Schema configuration
 const pageSchema = getWebPageSchema(title, description, pathname);
 const schema = getCombinedSchema(pageSchema);
-
-const { company, social } = SITE_CONFIG;
-const chipClass =
-  'flex size-11 shrink-0 items-center justify-center rounded-lg bg-white/20';
-const labelClass = 'mb-0.5 text-sm tracking-[0.08em] text-white/75 uppercase';
 ---
 
 <Layout title={title} description={description} schema={schema}>
@@ -69,78 +59,7 @@ const labelClass = 'mb-0.5 text-sm tracking-[0.08em] text-white/75 uppercase';
             </p>
           </div>
 
-          <div class="flex flex-col gap-6">
-            <div class="flex items-start gap-4">
-              <div class={chipClass}>
-                <Envelope class="size-5" />
-              </div>
-              <div class="min-w-0">
-                <p class={labelClass}>Email</p>
-                <a
-                  href={'mailto:' + company.email}
-                  class="text-base leading-relaxed hover:underline"
-                >
-                  {company.email}
-                </a>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class={chipClass}>
-                <Phone class="size-5" />
-              </div>
-              <div class="min-w-0">
-                <p class={labelClass}>Teléfonos</p>
-                <p class="text-base leading-relaxed">
-                  <a
-                    href={'tel:' + company.phone.replace(/\s/g, '')}
-                    class="hover:underline">{company.phone}</a
-                  ><br />
-                  <a
-                    href={'tel:' + company.phone2.replace(/\s/g, '')}
-                    class="hover:underline">{company.phone2}</a
-                  >
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class={chipClass}>
-                <Instagram class="size-5" />
-              </div>
-              <div class="min-w-0">
-                <p class={labelClass}>Instagram</p>
-                <a
-                  href={social.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-base leading-relaxed hover:underline"
-                >
-                  @kilometrosporexplorar
-                </a>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class={chipClass}>
-                <Clock class="size-5" />
-              </div>
-              <div class="min-w-0">
-                <p class={labelClass}>Horario</p>
-                <p class="text-base leading-relaxed">
-                  Lun–Vie 9:00–18:00<br />
-                  Sáb 10:00–14:00 · Dom cerrado
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="mt-auto flex items-center gap-3 border-t border-white/25 pt-6 text-white/95"
-          >
-            <Location class="size-5" />
-            <span>{company.address}</span>
-          </div>
+          <ContactDetails />
         </div>
       </div>
     </section>

@@ -1,15 +1,7 @@
 ---
 import ContactForm from '@/components/ContactForm.astro';
+import ContactDetails from '@/components/ContactDetails.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
-import Envelope from '@/assets/icons/envelope.svg';
-import Phone from '@/assets/icons/phone.svg';
-import Location from '@/assets/icons/location.svg';
-import { SITE_CONFIG } from '@/config/site';
-
-const { company } = SITE_CONFIG;
-const chipClass =
-  'flex size-11 shrink-0 items-center justify-center rounded-lg bg-white/20';
-const labelClass = 'mb-0.5 text-sm tracking-[0.08em] text-white/75 uppercase';
 ---
 
 <section id="contacto" class="bg-primary">
@@ -29,50 +21,8 @@ const labelClass = 'mb-0.5 text-sm tracking-[0.08em] text-white/75 uppercase';
         indicados y nos pondremos en contacto contigo lo antes posible.
       </p>
 
-      <div class="flex flex-col gap-6">
-        <div class="flex items-start gap-4">
-          <div class={chipClass}>
-            <Envelope class="size-5" />
-          </div>
-          <div class="min-w-0">
-            <p class={labelClass}>Email</p>
-            <a
-              href={'mailto:' + company.email}
-              class="text-base leading-relaxed hover:underline"
-            >
-              {company.email}
-            </a>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-4">
-          <div class={chipClass}>
-            <Phone class="size-5" />
-          </div>
-          <div class="min-w-0">
-            <p class={labelClass}>Teléfonos</p>
-            <p class="text-base leading-relaxed">
-              <a
-                href={'tel:' + company.phone.replace(/\s/g, '')}
-                class="hover:underline">{company.phone}</a
-              ><br />
-              <a
-                href={'tel:' + company.phone2.replace(/\s/g, '')}
-                class="hover:underline">{company.phone2}</a
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-4">
-          <div class={chipClass}>
-            <Location class="size-5" />
-          </div>
-          <div class="min-w-0">
-            <p class={labelClass}>Dónde estamos</p>
-            <p class="text-base leading-relaxed">{company.address}</p>
-          </div>
-        </div>
+      <div class="flex flex-col gap-8">
+        <ContactDetails />
       </div>
     </div>
 
