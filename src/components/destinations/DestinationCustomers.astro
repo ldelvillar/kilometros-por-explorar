@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import CustomerCard from '@/components/customers/CustomerCard.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -17,9 +18,11 @@ const relatedCustomers = await getCollection('customers', ({ data }) => {
 {
   relatedCustomers.length === 0 ? null : (
     <section class="mx-auto max-w-7xl px-4 pt-4">
-      <h2 class="mt-12 mb-4 text-2xl font-bold text-gray-800">
-        Viajeros que realizaron este viaje
-      </h2>
+      <SectionHeading
+        eyebrow="Viajeros"
+        title="Viajeros que realizaron este viaje"
+        class="mt-12 mb-4"
+      />
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {relatedCustomers.map(customer => (
           <CustomerCard customer={customer} loading="lazy" />
