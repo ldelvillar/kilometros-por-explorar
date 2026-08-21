@@ -9,6 +9,9 @@ import { remarkAlert } from 'remark-github-blockquote-alert';
 import { SITE_CONFIG } from './src/config/site.ts';
 import { rehypeImageFigures } from './src/utils/rehypeImageFigures.ts';
 import { rehypeToc } from './src/utils/rehypeToc.ts';
+import { getBlogLastmods } from './src/utils/getBlogLastmods.ts';
+
+const blogLastmods = getBlogLastmods();
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,5 +43,22 @@ export default defineConfig({
       rehypePlugins: [rehypeToc, rehypeImageFigures],
     }),
   },
-  integrations: [sitemap({ lastmod: new Date() }), preact()],
+  integrations: [
+    sitemap({
+      // Only the blog tracks when an entry actually changed. Every other page ships without lastmod
+      serialize(item) {
+        const pathname = new URL(item.url).pathname.replace(/\/$/, '') || '/';
+
+        if (pathname.startsWith('/blog/') && !blogLastmods.has(pathname)) {
+          throw new Error(
+            `La URL "${pathname}" no coincide con ningún artículo de src/content/blog, así que se quedaría sin lastmod en el sitemap.`
+          );
+        }
+
+        const lastmod = blogLastmods.get(pathname);
+        return lastmod ? { ...item, lastmod } : item;
+      },
+    }),
+    preact(),
+  ],
 });
