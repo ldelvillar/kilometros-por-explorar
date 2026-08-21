@@ -1,3 +1,4 @@
+import type { ImageMetadata } from 'astro';
 import { SITE_CONFIG } from '@/config/site';
 import { getSiteUrl } from '@/utils/getUrls';
 
@@ -182,7 +183,7 @@ export const getArticleSchema = (
   pathname: string,
   publishDate: string,
   modifyDate?: string,
-  imageUrl?: string,
+  image?: ImageMetadata,
   aboutName?: string,
   readingTimeMinutes?: number
 ) => ({
@@ -197,12 +198,12 @@ export const getArticleSchema = (
   dateModified: modifyDate || publishDate,
   author: { '@id': ORGANIZATION_ID },
   publisher: { '@id': ORGANIZATION_ID },
-  ...(imageUrl && {
+  ...(image && {
     image: {
       '@type': 'ImageObject',
-      url: imageUrl.startsWith('http') ? imageUrl : getSiteUrl(imageUrl),
-      width: 1200,
-      height: 630,
+      url: getSiteUrl(image.src),
+      width: image.width,
+      height: image.height,
     },
   }),
   mainEntityOfPage: { '@id': getWebPageId(pathname) },
