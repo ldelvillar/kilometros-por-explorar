@@ -17,6 +17,7 @@ const schema = getCombinedSchema(pageSchema);
 
 const customers = await getCollection('customers');
 const featuredCustomers = customers.filter(customer => customer.data.featured);
+const otherCustomers = customers.filter(customer => !customer.data.featured);
 ---
 
 <Layout title={title} description={description} schema={schema}>
@@ -47,19 +48,23 @@ const featuredCustomers = customers.filter(customer => customer.data.featured);
       </div>
     </section>
 
-    <section class="mx-auto max-w-7xl px-4 pt-16 pb-6 lg:px-8">
-      <div class="mb-6">
-        <SectionHeading title="Todas las historias" class="mb-3.5" />
-      </div>
-      <div
-        class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-14 lg:grid-cols-3"
-      >
-        {
-          customers.map(customer => (
-            <CustomerCard customer={customer} loading="lazy" />
-          ))
-        }
-      </div>
-    </section>
+    {
+      otherCustomers.length > 0 && (
+        <section class="mx-auto max-w-7xl px-4 pt-16 pb-6 lg:px-8">
+          <div class="mb-6">
+            <SectionHeading
+              eyebrow="Otros viajeros"
+              title="Más historias"
+              class="mb-3.5"
+            />
+          </div>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-14 lg:grid-cols-3">
+            {otherCustomers.map(customer => (
+              <CustomerCard customer={customer} loading="lazy" />
+            ))}
+          </div>
+        </section>
+      )
+    }
   </main>
 </Layout>
