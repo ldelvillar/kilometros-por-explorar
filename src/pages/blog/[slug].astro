@@ -87,7 +87,7 @@ const articleSchema = getArticleSchema(
   description,
   pathname,
   post.data.date.toISOString(),
-  undefined,
+  post.data.updatedDate?.toISOString(),
   post.data.image.src,
   mainDestination,
   readingTime
@@ -111,7 +111,7 @@ const schema = getCombinedSchema(
   imageAlt={post.data.title}
   ogType="article"
   publishedTime={post.data.date.toISOString()}
-  modifiedTime={post.data.date.toISOString()}
+  modifiedTime={(post.data.updatedDate ?? post.data.date).toISOString()}
 >
   <main id="main" class="bg-white pt-20">
     <!-- Breadcrumbs -->
@@ -156,6 +156,24 @@ const schema = getCombinedSchema(
             <Clock class="size-4.5 text-primary" />
             <span>{readingTime} min de lectura</span>
           </span>
+          {
+            post.data.updatedDate && (
+              <span class="inline-flex items-center gap-2 rounded-full bg-[#00a055]/9 px-3.5 py-[5px] text-sm font-bold text-[#00733d]">
+                <span
+                  class="size-[5px] shrink-0 rounded-full bg-[#00a055]"
+                  aria-hidden="true"
+                />
+                Actualizado
+                <time datetime={post.data.updatedDate.toISOString()}>
+                  {post.data.updatedDate.toLocaleDateString('es-ES', {
+                    day: '2-digit',
+                    month: 'short',
+                    year: 'numeric',
+                  })}
+                </time>
+              </span>
+            )
+          }
         </div>
         <h1 class="text-3xl font-bold text-gray-900 md:text-4xl">
           {post.data.title}

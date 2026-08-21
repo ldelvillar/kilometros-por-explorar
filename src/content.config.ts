@@ -49,21 +49,27 @@ const destinations = defineCollection({
 const blog = defineCollection({
   loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
   schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      description: z.string().max(160),
-      date: z.date(),
-      image: image(),
-      destinations: z.array(reference('destinations')),
-      faqs: z
-        .array(
-          z.object({
-            question: z.string(),
-            answer: z.string(),
-          })
-        )
-        .min(1),
-    }),
+    z
+      .object({
+        title: z.string(),
+        description: z.string().max(160),
+        date: z.date(),
+        updatedDate: z.date().optional(),
+        image: image(),
+        destinations: z.array(reference('destinations')),
+        faqs: z
+          .array(
+            z.object({
+              question: z.string(),
+              answer: z.string(),
+            })
+          )
+          .min(1),
+      })
+      .refine(data => !data.updatedDate || data.updatedDate >= data.date, {
+        message: "El campo 'updatedDate' no puede ser anterior a 'date'.",
+        path: ['updatedDate'],
+      }),
 });
 
 const customers = defineCollection({
