@@ -35,8 +35,8 @@ const schema = getCombinedSchema(pageSchema);
       <li>
         <b>Correo electrónico:</b>
         <a
-          href="mailto:contacto@kilometrosporexplorar.es"
-          class="text-primary underline">contacto@kilometrosporexplorar.es</a
+          href={`mailto:${SITE_CONFIG.company.email}`}
+          class="text-primary underline">{SITE_CONFIG.company.email}</a
         >
       </li>
       <li>
@@ -55,9 +55,8 @@ const schema = getCombinedSchema(pageSchema);
       </li>
       <li>
         <b>Sitio Web:</b>
-        <a
-          href="https://www.kilometrosporexplorar.es"
-          class="text-primary underline">https://www.kilometrosporexplorar.es</a
+        <a href={SITE_CONFIG.domain} class="text-primary underline"
+          >{SITE_CONFIG.domain}</a
         >
       </li>
     </ul>
@@ -250,8 +249,8 @@ const schema = getCombinedSchema(pageSchema);
     <p class="mb-4 text-gray-700">
       Para cualquier consulta relacionada con este Aviso Legal, puedes
       contactarnos en <a
-        href="mailto:contacto@kilometrosporexplorar.es"
-        class="text-primary underline">contacto@kilometrosporexplorar.es</a
+        href={`mailto:${SITE_CONFIG.company.email}`}
+        class="text-primary underline">{SITE_CONFIG.company.email}</a
       >.
     </p>
   </main>
