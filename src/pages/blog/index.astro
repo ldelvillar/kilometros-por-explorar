@@ -8,6 +8,7 @@ import Cta from '@/components/Cta.astro';
 import Magnifier from '@/assets/icons/magnifier.svg';
 import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
 import { getPageTitle } from '@/utils/getPageTitle';
+import { getSortedPosts } from '@/utils/getSortedPosts';
 
 const title = getPageTitle('Blog');
 const description =
@@ -16,11 +17,7 @@ const pathname = Astro.url.pathname;
 const pageSchema = getWebPageSchema(title, description, pathname);
 const schema = getCombinedSchema(pageSchema);
 
-const posts: CollectionEntry<'blog'>[] = await getCollection('blog');
-const sortedPosts: CollectionEntry<'blog'>[] = posts.sort(
-  (a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) =>
-    new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-);
+const sortedPosts = getSortedPosts(await getCollection('blog'));
 
 const destinationEntries = await getCollection('destinations');
 const destinationText = new Map(

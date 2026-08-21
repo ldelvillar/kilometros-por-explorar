@@ -2,6 +2,7 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { SITE_CONFIG } from '@/config/site';
 import { getSiteUrl } from '@/utils/getUrls';
+import { getSortedPosts } from '@/utils/getSortedPosts';
 
 // Genera /llms.txt (https://llmstxt.org) a partir de las colecciones de contenido, de forma que
 // se mantenga al día automáticamente al publicar nuevas guías, destinos o historias de viajeros.
@@ -16,9 +17,7 @@ export const GET: APIRoute = async () => {
     `- [${title}](${getSiteUrl(path)}): ${description}`;
 
   // Guías: más recientes primero
-  const guides = [...posts].sort(
-    (a, b) => b.data.date.getTime() - a.data.date.getTime()
-  );
+  const guides = getSortedPosts(posts);
 
   // Destinos: destacados primero y luego por orden alfabético
   const sortedDestinations = [...destinations].sort((a, b) => {

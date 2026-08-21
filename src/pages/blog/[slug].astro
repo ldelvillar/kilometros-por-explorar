@@ -25,6 +25,7 @@ import Calendar from '@/assets/icons/calendar.svg';
 import Clock from '@/assets/icons/clock.svg';
 import { getReadingTime } from '@/utils/getReadingTime';
 import { getPageTitle } from '@/utils/getPageTitle';
+import { getSortedPosts } from '@/utils/getSortedPosts';
 import '@/styles/prose.css';
 
 interface Props {
@@ -60,11 +61,9 @@ const relatedPosts = await getCollection('blog', ({ data }) => {
   return data.destinations.some(({ id }) => destinationIds.has(id));
 });
 
-const sortedRelatedPosts = relatedPosts
-  .filter(p => p.id !== post.id)
-  .sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
-  );
+const sortedRelatedPosts = getSortedPosts(
+  relatedPosts.filter(p => p.id !== post.id)
+);
 
 const title = getPageTitle(post.data.title);
 const description = post.data.description;
