@@ -13,7 +13,7 @@ BEFORE YOU START:
 
 - Read `CLAUDE.md` (repo root), then explore the actual files in each area before judging it — read the key modules, don't assume. There is no README.
 - Treat the conventions documented in `CLAUDE.md` as ground truth. For each relevant one, assess whether the code adheres or has drifted, and call out drift explicitly.
-- Do NOT recommend changes that contradict an intentional, documented convention (static output with no SSR, no `tailwind.config` — theme as CSS variables in `src/styles/global.css`, images as managed `src/assets/` references via the `image()` helper, centralized JSON-LD builders in `src/config/schemas.ts`, `.astro` by default with Preact reserved for real islands) unless you can show the convention itself causes a concrete problem.
+- Do NOT recommend changes that contradict an intentional, documented convention (static output with no SSR, no `tailwind.config` — theme as CSS variables in `frontend/src/styles/global.css`, images as managed `frontend/src/assets/` references via the `image()` helper, centralized JSON-LD builders in `frontend/src/config/schemas.ts`, `.astro` by default with Preact reserved for real islands) unless you can show the convention itself causes a concrete problem.
 
 RULES:
 
@@ -25,40 +25,40 @@ RULES:
 
 PROJECT SHAPE:
 
-- `src/content/{blog,destinations,customers}` → Markdown entries, Zod-validated by `src/content.config.ts`
-- `src/pages` → static pages + `[slug].astro` dynamic routes via `getStaticPaths()`
-- `src/components` → `.astro` components; `src/components/layout/{Chatbot,CookieBanner}.tsx` are the only Preact islands
-- `src/config` → `site.ts` (constants), `schemas.ts` (JSON-LD builders), `faqs.ts`
-- `src/layouts/Layout.astro` → the single shell; `MetaTags.astro` drives `<head>`
-- Deployed static to Vercel (`vercel.json`), `trailingSlash: 'never'`
+- `frontend/src/content/{blog,destinations,customers}` → Markdown entries, Zod-validated by `frontend/src/content.config.ts`
+- `frontend/src/pages` → static pages + `[slug].astro` dynamic routes via `getStaticPaths()`
+- `frontend/src/components` → `.astro` components; `frontend/src/components/layout/{Chatbot,CookieBanner}.tsx` are the only Preact islands
+- `frontend/src/config` → `site.ts` (constants), `schemas.ts` (JSON-LD builders), `faqs.ts`
+- `frontend/src/layouts/Layout.astro` → the single shell; `MetaTags.astro` drives `<head>`
+- Deployed static to Vercel (`frontend/vercel.json`), `trailingSlash: 'never'`
 
 ---
 
 ## 1. STRUCTURE
 
-Scope: folder boundaries, where shared constants/helpers live (`src/config/`, `src/utils/getUrls.ts`), env/config management (`astro.config.mjs`, `PUBLIC_*` vars), duplication between config modules and content.
+Scope: folder boundaries, where shared constants/helpers live (`frontend/src/config/`, `frontend/src/utils/getUrls.ts`), env/config management (`frontend/astro.config.mjs`, `PUBLIC_*` vars), duplication between config modules and content.
 Red flags: constants duplicated instead of imported from `site.ts`, URL construction bypassing `getUrls.ts`, secrets in `PUBLIC_`-prefixed vars (these ship in the client bundle — flag anything sensitive there), structure that breaks down as the content set grows.
 
-## 2. CONTENT MODEL — `src/content.config.ts` + `src/content/`
+## 2. CONTENT MODEL — `frontend/src/content.config.ts` + `frontend/src/content/`
 
 Scope: collection schema design, required vs optional fields, cross-collection references (`destinations: string[]` on blog entries pointing at destination ids), the `.refine` rules, whether the schema actually encodes the site's invariants.
 Red flags: cross-collection references that aren't validated and can silently dangle, fields that are required but shouldn't be (or vice versa), schema drift between entries, data that lives in frontmatter but should be config (or vice versa), constraints enforced by convention in templates rather than by Zod.
 
 ## 3. RENDERING & COMPONENTS
 
-Scope: the `.astro` vs Preact island split, hydration directives (`client:idle` / `client:load`), component boundaries and reuse across `src/components/`, `getStaticPaths()` work in the dynamic routes, the client-side script in `blog/[slug].astro` that wraps `<img>` in `<figure>`.
+Scope: the `.astro` vs Preact island split, hydration directives (`client:idle` / `client:load`), component boundaries and reuse across `frontend/src/components/`, `getStaticPaths()` work in the dynamic routes, the client-side script in `blog/[slug].astro` that wraps `<img>` in `<figure>`.
 Red flags: a Preact island where a static component would do (or an island hydrated more eagerly than needed), duplicated markup that should be a shared component, per-page logic that belongs in the layout, expensive work repeated per page in `getStaticPaths()`.
 
 ## 4. SEO & STRUCTURED DATA
 
-Scope: `src/config/schemas.ts` builders and the `@graph` composition (`getCombinedSchema` / `getBlogCombinedSchema`), `MetaTags.astro`, canonicals, breadcrumbs, sitemap config, `llms.txt.ts`.
+Scope: `frontend/src/config/schemas.ts` builders and the `@graph` composition (`getCombinedSchema` / `getBlogCombinedSchema`), `MetaTags.astro`, canonicals, breadcrumbs, sitemap config, `llms.txt.ts`.
 Red flags: schema types or required properties that are wrong or missing per Schema.org, JSON-LD hand-built in a page instead of via a builder, canonical/OG URLs inconsistent with `trailingSlash: 'never'`, structured data that contradicts the visible page content, FAQ markup that doesn't match rendered FAQs.
 This is a content/SEO business — weight findings here accordingly.
 
 ## 5. ASSETS & PERFORMANCE
 
-Scope: image strategy (`<Image>` from `astro:assets`, `widths`/`sizes`, WebP), the `src/assets/` vs `public/` boundary, font loading, CSS strategy (`global.css`, `prose.css`), island JS cost.
-Red flags: raw `<img>` where `<Image>` belongs, images in `public/` that should be managed assets, missing `widths`/`sizes` causing oversized downloads, layout shift, render-blocking or unused CSS/JS.
+Scope: image strategy (`<Image>` from `astro:assets`, `widths`/`sizes`, WebP), the `frontend/src/assets/` vs `frontend/public/` boundary, font loading, CSS strategy (`global.css`, `prose.css`), island JS cost.
+Red flags: raw `<img>` where `<Image>` belongs, images in `frontend/public/` that should be managed assets, missing `widths`/`sizes` causing oversized downloads, layout shift, render-blocking or unused CSS/JS.
 Classify each finding as: current problem, future risk, or premature optimization.
 
 ## 6. MAINTAINABILITY

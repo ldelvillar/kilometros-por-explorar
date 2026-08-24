@@ -6,3 +6,7 @@ onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - esbuild
   - sharp
+
+packages:
+  - frontend
+  - backend

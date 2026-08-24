@@ -21,13 +21,13 @@ audit and plan toward it. Otherwise cover all three.
 ## PHASE 1 — Audit & propose (do this first, no code changes)
 
 1. Explore the real site, don't assume:
-   - Pages: walk `src/pages` — `index`, `/blog` and `blog/[slug]`, `/destinos`
+   - Pages: walk `frontend/src/pages` — `index`, `/blog` and `blog/[slug]`, `/destinos`
      and `destinos/[slug]`, `/viajeros` and `viajeros/[slug]`, `contacto`,
      `sobre-nosotros`, the legal pages, and `404`.
-   - Components: the home sections (`src/components/home/`), the card components
+   - Components: the home sections (`frontend/src/components/home/`), the card components
      per collection, `Layout.astro` / `Header` / `Footer` / `MetaTags`, and the
      two islands (`Chatbot.tsx`, `CookieBanner.tsx`).
-   - Content: the three collections and their schemas in `src/content.config.ts`.
+   - Content: the three collections and their schemas in `frontend/src/content.config.ts`.
      Note what data already exists in frontmatter but isn't surfaced anywhere.
 
 2. Evaluate it as a product, from a first-time visitor's eyes:
@@ -62,13 +62,13 @@ For each approved item:
 - Default to a static `.astro` component. Only reach for a Preact island if it
   needs real interactivity, and hydrate with the lightest directive that works.
 - Use `<Image>` from `astro:assets` with responsive `widths`/`sizes`. New images
-  are managed assets under `src/assets/` referenced relatively from frontmatter —
+  are managed assets under `frontend/src/assets/` referenced relatively from frontmatter —
   never `/public`.
-- Reuse the existing pieces: constants from `src/config/site.ts`, URLs via
-  `src/utils/getUrls.ts`, JSON-LD via the builders in `src/config/schemas.ts`
+- Reuse the existing pieces: constants from `frontend/src/config/site.ts`, URLs via
+  `frontend/src/utils/getUrls.ts`, JSON-LD via the builders in `frontend/src/config/schemas.ts`
   (never hand-roll structured data in a page).
 - If a change needs a new content field, add it to the Zod schema in
-  `src/content.config.ts` and update every existing entry — a missing required
+  `frontend/src/content.config.ts` and update every existing entry — a missing required
   field fails the build.
 - Don't hand-order Tailwind classes; `prettier-plugin-tailwindcss` sorts them.
 - Keep it responsive and accessible (labels, focus, contrast, semantics).

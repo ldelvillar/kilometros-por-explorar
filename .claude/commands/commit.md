@@ -44,7 +44,7 @@ title-only commit.
 - `fix` — bug fix
 - `perf` — performance improvement with no behaviour change
 - `refactor` — restructuring with no behaviour change
-- `build` — build system or external dependencies (`pnpm-lock.yaml`, `astro.config.mjs`)
+- `build` — build system or external dependencies (`pnpm-lock.yaml`, `frontend/astro.config.mjs`)
 - `chore` — tooling or maintenance that doesn't fit another type
 - `style` — formatting only (Prettier)
 - `docs` — documentation only
@@ -52,14 +52,16 @@ title-only commit.
 
 **Scopes for this project** (these are the scopes already in use — prefer them over inventing new ones):
 
-- `seo` — `MetaTags.astro`, the JSON-LD builders in `src/config/schemas.ts`, sitemap, `llms.txt`, robots, redirects
-- `ui` — components under `src/components/`, layout, Tailwind styling
-- `blog` — blog articles (`src/content/blog/`) and the `/blog` routes
-- `destinations` — destination entries (`src/content/destinations/`) and the `/destinos` routes
-- `viajeros` — customer testimonials (`src/content/customers/`) and the `/viajeros` routes
+- `seo` — `MetaTags.astro`, the JSON-LD builders in `frontend/src/config/schemas.ts`, sitemap, `llms.txt`, robots, redirects
+- `ui` — components under `frontend/src/components/`, layout, Tailwind styling
+- `blog` — blog articles (`frontend/src/content/blog/`) and the `/blog` routes
+- `destinations` — destination entries (`frontend/src/content/destinations/`) and the `/destinos` routes
+- `viajeros` — customer testimonials (`frontend/src/content/customers/`) and the `/viajeros` routes
+- `chatbot` — the assistant end to end: its prompt and context (`backend/src/utils/prompts.ts`, `backend/src/data/context.md`), its route and service (`backend/src/routes/chatbot.ts`, `backend/src/services/chatbot.ts`) and the `Chatbot.tsx` island
 - `a11y` — accessibility fixes (labels, focus, contrast, semantics)
-- `images` — assets under `src/assets/`, `<Image>` usage, format/size optimization
-- `config` — `astro.config.mjs`, `tsconfig.json`, `.prettierrc`, `vercel.json`
+- `images` — assets under `frontend/src/assets/`, `<Image>` usage, format/size optimization
+- `backend` — the rest of the Express service under `backend/`: server setup, CORS, env config, validators
+- `config` — `frontend/astro.config.mjs`, `frontend/tsconfig.json`, `backend/tsconfig.json`, `.prettierrc`, `frontend/vercel.json`
 - `deps` — dependency bumps
 
 ## Rules
@@ -69,6 +71,7 @@ title-only commit.
 - Do not mention file names in the title unless the file name _is_ the feature.
 - Do not include the scope if the change is truly cross-cutting.
 - Content is Spanish — commit messages stay in English, but don't "correct" Spanish copy in the diff.
-- If the diff touches `src/content.config.ts` (the Zod collection schemas), existing entries may no longer validate. Run `pnpm build` before committing and warn the user if it fails.
-- If the diff adds an `image:` / `destinationFlagImage:` frontmatter reference, it must point into `src/assets/` via a relative path — never `/public`. Warn if you see otherwise.
+- If the diff touches `frontend/src/content.config.ts` (the Zod collection schemas), existing entries may no longer validate. Run `pnpm build` before committing and warn the user if it fails.
+- If the diff touches `backend/src/`, run `pnpm --filter ./backend typecheck` before committing and warn the user if it fails — `pnpm build` only covers the frontend, so nothing else catches a backend type error.
+- If the diff adds an `image:` / `destinationFlagImage:` frontmatter reference, it must point into `frontend/src/assets/` via a relative path — never `/public`. Warn if you see otherwise.
 - Never commit anything in `.env` — if staged, warn the user immediately and do not proceed.
