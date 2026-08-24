@@ -9,6 +9,8 @@ app.use(corsMiddleware());
 
 app.disable('x-powered-by');
 
+app.set('trust proxy', 1);
+
 app.use('/chatbot', chatbotRouter);
 
 app.listen(CONFIG.PORT, () => {

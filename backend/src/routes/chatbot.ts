@@ -1,9 +1,10 @@
 import { Router } from 'express';
 import { sendMessage } from '../services/chatbot.ts';
+import { chatbotRateLimit } from '../middlewares/rateLimit.ts';
 
 export const chatbotRouter = Router();
 
-chatbotRouter.post('/', async (req, res) => {
+chatbotRouter.post('/', chatbotRateLimit, async (req, res) => {
   try {
     const { message } = req.body;
 
