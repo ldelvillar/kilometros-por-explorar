@@ -10,6 +10,7 @@ import { SITE_CONFIG } from './src/config/site.ts';
 import { rehypeImageFigures } from './src/utils/rehypeImageFigures.ts';
 import { rehypeToc } from './src/utils/rehypeToc.ts';
 import { getBlogLastmods } from './src/utils/getBlogLastmods.ts';
+import { assertCspAllowsEndpoints } from './src/utils/assertCspAllowsEndpoints.ts';
 
 const blogLastmods = getBlogLastmods();
 
@@ -44,6 +45,12 @@ export default defineConfig({
     }),
   },
   integrations: [
+    // Solo en build: la CSP vive en vercel.json y `astro dev` no la aplica,
+    // así que en local se puede apuntar a un backend distinto sin romper nada.
+    {
+      name: 'csp-endpoints-check',
+      hooks: { 'astro:build:start': assertCspAllowsEndpoints },
+    },
     sitemap({
       // Only the blog tracks when an entry actually changed. Every other page ships without lastmod
       serialize(item) {
