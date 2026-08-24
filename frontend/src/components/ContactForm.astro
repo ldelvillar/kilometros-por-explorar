@@ -3,7 +3,7 @@ import { SITE_CONFIG } from '@/config/site';
 
 interface InputsData {
   question: string;
-  type: 'text' | 'email' | 'tel' | 'textarea';
+  type: 'text' | 'email' | 'tel';
   id: string;
   placeholder: string;
   pattern?: string;
@@ -52,9 +52,7 @@ const { company } = SITE_CONFIG;
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
     {
       INPUTS.map(input => (
-        <div
-          class={`text-gray-900 ${input.type === 'textarea' ? 'col-span-full' : ''}`}
-        >
+        <div class="text-gray-900">
           <label
             for={input.id}
             class="mb-2 block text-xl font-bold text-primary"

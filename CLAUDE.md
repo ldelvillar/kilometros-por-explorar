@@ -12,6 +12,8 @@ Run `pnpm dev` / `build` / `preview` / `format` **from the repo root** — those
 
 There is **no test runner and no linter** beyond Prettier. `pnpm build` is the de-facto correctness gate: it fails on Zod content-schema violations, broken `image()` references, and TypeScript errors. Run it before considering a change done. It only covers `frontend/`, though — the backend's gate is `pnpm --filter ./backend typecheck`.
 
+The TypeScript half of that gate is `astro check`, which `build` runs before `astro build` (`pnpm --filter frontend typecheck` runs it on its own). It needs **TypeScript 6.x** — the native 7.x compiler drops the API it relies on — so `frontend` pins `typescript@^6` while `backend` stays on 7 with plain `tsc`. Bumping the frontend to 7 breaks the check, not the build output.
+
 Env vars live in an uncommitted `frontend/.env` — copy `frontend/.env.example` to create it:
 `PUBLIC_CONTACT_FORM_ENDPOINT`, `PUBLIC_CHATBOT_WEBHOOK_ENDPOINT` (both `PUBLIC_`).
 Both are declared in the `env.schema` of `frontend/astro.config.mjs` and read through

@@ -18,6 +18,7 @@ const isHome = Astro.url.pathname === '/';
     class="mx-auto flex items-center justify-between px-3 py-3 md:px-6 lg:px-8"
   >
     <a href="/" class="flex items-center text-lg font-bold">
+      {/* @ts-expect-error */}
       <Image
         src={logo}
         width={32}
