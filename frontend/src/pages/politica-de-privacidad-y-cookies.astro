@@ -321,8 +321,20 @@ const schema = getCombinedSchema(pageSchema);
     </ul>
     <p class="mb-4 text-gray-700">
       Tu elección se guarda en tu navegador y se respeta en futuras visitas.
-      Puedes cambiarla en cualquier momento borrando los datos del sitio desde
-      la configuración de tu navegador.
+      Puedes retirarla cuando quieras desde este mismo botón: dejaremos de
+      cargar Google Analytics y volverás a ver el banner para elegir de nuevo.
+    </p>
+    <button
+      id="reset-cookie-consent"
+      type="button"
+      hidden
+      class="mb-4 cursor-pointer rounded-xl bg-primary px-4 py-3 font-bold text-white transition duration-300 hover:bg-primary/90"
+    >
+      Retirar el consentimiento de cookies
+    </button>
+    <p class="mb-4 text-gray-700">
+      Si además quieres borrar las cookies que ya estén en tu dispositivo,
+      puedes hacerlo desde la configuración de tu navegador.
     </p>
 
     <h3 class="mt-6 mb-2 text-xl font-semibold text-gray-900">
@@ -433,3 +445,19 @@ const schema = getCombinedSchema(pageSchema);
     </p>
   </main>
 </Layout>
+
+<script>
+  const resetButton = document.getElementById('reset-cookie-consent');
+
+  // Sin JS no hay banner ni consentimiento que retirar, así que el botón solo
+  // aparece cuando de verdad puede hacer algo.
+  if (resetButton) {
+    resetButton.hidden = false;
+
+    resetButton.addEventListener('click', () => {
+      localStorage.removeItem('cookieConsent');
+      // El banner lee el consentimiento al montarse: recargar lo hace volver.
+      location.reload();
+    });
+  }
+</script>
