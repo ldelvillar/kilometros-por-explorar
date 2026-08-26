@@ -1,8 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
-import HalfArrow from '@/assets/icons/halfArrow.svg';
-import Arrow from '@/assets/icons/arrow.svg';
+import ArrowLink from '@/components/ArrowLink.astro';
 import Calendar from '@/assets/icons/calendar.svg';
 import Clock from '@/assets/icons/clock.svg';
 import { getReadingTime } from '@/utils/getReadingTime';
@@ -56,17 +55,9 @@ const readingTime = getReadingTime(post.body);
           {readingTime} min
         </span>
       </div>
-      <div class="flex items-center gap-2 font-semibold text-primary">
+      <ArrowLink>
         <span>Leer más</span>
-        <div class="relative size-4">
-          <HalfArrow
-            class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
-          />
-          <Arrow
-            class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
-          />
-        </div>
-      </div>
+      </ArrowLink>
     </div>
   </a>
 </article>

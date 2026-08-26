@@ -1,0 +1,35 @@
+---
+import HalfArrow from '@/assets/icons/halfArrow.svg';
+import Arrow from '@/assets/icons/arrow.svg';
+
+interface Props {
+  href?: string;
+  variant?: 'button' | 'inline';
+  class?: string;
+}
+
+const { href, variant = 'inline', class: className } = Astro.props;
+
+const Tag = variant === 'button' ? 'a' : 'div';
+---
+
+<Tag
+  href={variant === 'button' ? href : undefined}
+  class:list={[
+    'flex items-center gap-2 font-semibold',
+    variant === 'button'
+      ? 'group w-fit rounded-lg bg-primary px-4 py-3 text-white transition hover:bg-primary/90'
+      : 'text-primary',
+    className,
+  ]}
+>
+  <slot />
+  <div class="relative size-4">
+    <HalfArrow
+      class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
+    />
+    <Arrow
+      class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
+    />
+  </div>
+</Tag>

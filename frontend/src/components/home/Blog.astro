@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
-import HalfArrow from '@/assets/icons/halfArrow.svg';
-import Arrow from '@/assets/icons/arrow.svg';
+import ArrowLink from '@/components/ArrowLink.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 import { getSortedPosts } from '@/utils/getSortedPosts';
 
@@ -20,18 +19,7 @@ const recentPosts = getSortedPosts(await getCollection('blog')).slice(0, 3);
     {recentPosts.map(post => <BlogCard post={post} loading="lazy" />)}
   </div>
 
-  <a
-    href="/blog"
-    class="group mx-auto mt-12 flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-3 font-semibold text-white transition hover:bg-primary/90"
-  >
+  <ArrowLink href="/blog" variant="button" class="mx-auto mt-12">
     <span>Ver todos los artículos</span>
-    <div class="relative size-4">
-      <HalfArrow
-        class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
-      />
-      <Arrow
-        class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
-      />
-    </div>
-  </a>
+  </ArrowLink>
 </section>

@@ -1,8 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { getEntry, type CollectionEntry } from 'astro:content';
-import Arrow from '@/assets/icons/arrow.svg';
-import HalfArrow from '@/assets/icons/halfArrow.svg';
+import ArrowLink from '@/components/ArrowLink.astro';
 
 interface Props {
   customer: CollectionEntry<'customers'>;
@@ -63,17 +62,9 @@ const destination = await getEntry(customer.data.destination);
         {customer.data.title}
       </p>
 
-      <div class="mt-auto flex items-center gap-2 font-semibold text-primary">
+      <ArrowLink class="mt-auto">
         <span class="animated-underline relative">Ver historia completa</span>
-        <div class="relative size-4">
-          <HalfArrow
-            class="absolute inset-0 size-4 transition-opacity duration-300 group-hover:opacity-0"
-          />
-          <Arrow
-            class="absolute inset-0 size-4 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
-          />
-        </div>
-      </div>
+      </ArrowLink>
     </div>
   </a>
 </article>
