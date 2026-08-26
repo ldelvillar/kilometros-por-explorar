@@ -275,9 +275,26 @@ const schema = getCombinedSchema(
         }
       };
 
-      update();
-      window.addEventListener('scroll', update, { passive: true });
-      window.addEventListener('resize', update);
+      const mql = window.matchMedia('(min-width: 1440px)');
+      let listening = false;
+
+      const sync = () => {
+        if (mql.matches && !listening) {
+          listening = true;
+          update();
+          window.addEventListener('scroll', update, { passive: true });
+          window.addEventListener('resize', update);
+        } else if (!mql.matches && listening) {
+          listening = false;
+          window.removeEventListener('scroll', update);
+          window.removeEventListener('resize', update);
+          rail.classList.remove('on');
+          rail.setAttribute('aria-hidden', 'true');
+        }
+      };
+
+      mql.addEventListener('change', sync);
+      sync();
     }
   </script>
 </Layout>
