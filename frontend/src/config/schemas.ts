@@ -58,10 +58,12 @@ export const getWebPageSchema = (
   description: string,
   pathname: string,
   // Solo enlaza el breadcrumb en las páginas que lo publican
-  hasBreadcrumb = false
+  hasBreadcrumb = false,
+  // Subtipo de WebPage para páginas con una semántica más específica (p. ej. ContactPage)
+  type: string = 'WebPage'
 ) => ({
   '@context': 'https://schema.org',
-  '@type': 'WebPage',
+  '@type': type,
   '@id': getWebPageId(pathname),
   name: title,
   description: description,

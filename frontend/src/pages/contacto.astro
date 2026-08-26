@@ -12,7 +12,13 @@ const description =
 const pathname = '/contacto';
 
 // Schema configuration
-const pageSchema = getWebPageSchema(title, description, pathname);
+const pageSchema = getWebPageSchema(
+  title,
+  description,
+  pathname,
+  false,
+  'ContactPage'
+);
 const schema = getCombinedSchema(pageSchema);
 ---
 
