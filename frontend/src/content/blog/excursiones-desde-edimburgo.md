@@ -5,16 +5,14 @@ date: 2026-02-18
 image: '../../assets/images/blog/excursiones-desde-edimburgo/cover.webp'
 destinations: ['edimburgo']
 faqs:
-  - question: '¿Cuál es la mejor excursión si solo tengo 1 día desde Edimburgo?'
-    answer: 'Si tienes solo un día, recomendamos <strong>Stirling Castle</strong> (1 hora en coche) o el <strong>Forth Bridge</strong> (30 minutos). Ambas son cortas pero muy auténticas. Si prefieres naturaleza, <strong>Pentland Hills</strong> está a solo 20 minutos y ofrece vistas espectaculares de Edimburgo.'
-  - question: '¿Necesito coche para estas excursiones?'
-    answer: 'Depende. <strong>Stirling y Loch Lomond</strong> son accesibles en tren (ScotRail) o tours organizados. <strong>Isle of Skye, Glencoe y las Highlands</strong> requieren coche propio o tour de 12-14 horas. <strong>Recomendación:</strong> Renta coche si quieres flexibilidad; tour organizado si prefieren comodidad.'
-  - question: '¿Cuánto presupuesto necesito para una excursión?'
-    answer: 'Excursiones cercanas (Stirling, Lomond): £20-50/persona (gasolina o transporte + entrada). Excursiones lejanas (Skye, Glencoe): £60-120/persona en tour, o £80-150 en coche propio (gasolina + peaje). Incluir comida aparte.'
-  - question: '¿Cuál es la mejor época para estas excursiones?'
-    answer: '<strong>Primavera/Verano (mayo-septiembre):</strong> Mejor clima, carreteras despejadas, paisajes verdes. <strong>Otoño (septiembre-octubre):</strong> Menos turistas, colores impresionantes. <strong>Invierno:</strong> Carreteras fáciles a las Highlands si hay nieve; evita si no tienes experiencia.'
-  - question: '¿Qué excursión es mejor si no me gusta caminar?'
-    answer: 'Buen pregunta. <strong>Stirling Castle</strong> es una caminata suave. <strong>Loch Lomond</strong> (paseos cortos). <strong>Falkland Village</strong> es para pasear tranquilo. <strong>Isle of Skye</strong> requiere caminatas. Si quieres ver paisajes sin caminar: <strong>tour en autocar</strong> es tu opción.'
+  - question: '¿Cuál es la mejor excursión desde Edimburgo si sólo tengo 1 día?'
+    answer: 'Si tienes sólo un día, lo mejor es una excursión de un día completo a las <strong>Higlands</strong>. Verás el Lago Ness, el Valle de Glencoe y los paisajes más icónicos de Escocia.'
+  - question: '¿Es recomendable alquilar un coche en Edimburgo?'
+    answer: 'Para moverse por Edimburgo, no es necesario. Lo ideal es <strong>caminar</strong> o moverse en <strong>transporte público</strong>, las distancias son cortas. Para hacer excursiones a las Highlands o a castillos, sí se necesita un <strong>coche</strong> o un <strong>tour organizado</strong>. '
+  - question: '¿Cuántocuesta hacer una excursión desde Edimburgo?'
+    answer: 'Las excursiones a castillos cercanos (Stirling, Doune) cuestan unos <strong>20-50€</strong> por persona (gasolina o transporte + entrada). Las excursiones más lejanas (Skye, Glencoe, Highlands) no requieren entradas de ningún tipo, por lo que el gasto principal es el transporte.'
+  - question: '¿Cuál es la mejor época para hacer excursiones desde Edimburgo?'
+    answer: 'La mejor época para visitar Edimburgo y realizar excursiones es de <strong>mayo a septiembre</strong>. Las carreteras están despejadas y el clima es ideal para disfrutar de los paisajes verdes.'
 ---
 
 Edimburgo es una de esas ciudades que te enamorada desde el primer momento: el castillo dominando la ciudad, las calles empedradas del casco antiguo, el ambiente de la Royal Mile. Pero aquí está el secreto que nos enseñó a viajar por Escocia: lo mejor de Edimburgo está fuera de Edimburgo.
