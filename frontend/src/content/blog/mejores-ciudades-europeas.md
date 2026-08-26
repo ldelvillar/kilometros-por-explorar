@@ -3,6 +3,7 @@ title: 'Las 5 mejores ciudades europeas para visitar'
 description: 'Nuestra selección personal de las 5 mejores ciudades de Europa que hemos visitado. Descubre por qué nos conquistaron.'
 date: 2025-10-08
 image: '../../assets/images/blog/mejores-ciudades-europeas/cover.webp'
+imageAlt: 'Globo terráqueo antiguo enfocado en el mapa de Europa'
 destinations: ['praga', 'amsterdam', 'estocolmo', 'londres', 'budapest']
 faqs:
   - question: '¿Cuál de estas ciudades es la más barata?'

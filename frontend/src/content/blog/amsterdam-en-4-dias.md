@@ -3,6 +3,7 @@ title: 'Qué ver en Ámsterdam en cuatro días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Ámsterdam durante 4 días, descubriendo la Venecia del Norte.'
 date: 2025-07-28
 image: '../../assets/images/blog/amsterdam-en-4-dias/cover.webp'
+imageAlt: 'Canal de Ámsterdam flanqueado por casas tradicionales y bicicletas aparcadas, con barcazas amarradas y una torre al fondo'
 destinations: ['amsterdam']
 faqs:
   - question: '¿Debo alquilar una bicicleta en Ámsterdam?'

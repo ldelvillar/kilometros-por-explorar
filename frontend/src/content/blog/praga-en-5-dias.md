@@ -3,6 +3,7 @@ title: 'Qué ver en Praga en cinco días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Praga durante 5 días para descubrir la Ciudad de las Cien Torres.'
 date: 2025-09-12
 image: '../../assets/images/blog/praga-en-5-dias/cover.webp'
+imageAlt: 'Castillo de Praga visto desde el río Moldava, con un puente y cisnes nadando en primer plano'
 destinations: ['praga']
 faqs:
   - question: '¿Merece la pena esperar al Reloj Astronómico?'

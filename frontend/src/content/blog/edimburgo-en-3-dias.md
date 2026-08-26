@@ -3,6 +3,7 @@ title: 'Qué ver en Edimburgo en tres días'
 description: 'Guía completa para descubrir lo esencial de Edimburgo en 3 días: castillo medieval, Royal Mile, Arthurs Seat y las Highlands.'
 date: 2025-10-15
 image: '../../assets/images/blog/edimburgo-en-3-dias/cover.webp'
+imageAlt: 'Casas históricas de piedra junto al río en Dean Village, Edimburgo'
 destinations: ['edimburgo']
 faqs:
   - question: '¿Merece la pena subir a Arthurs Seat?'

@@ -3,6 +3,7 @@ title: 'Qué ver en Estocolmo en cuatro días'
 description: 'Guía completa sobre los mejores sitios que visitar en Estocolmo durante 4 días: desde Gamla Stan hasta el museo Vasa, con palacios reales y el archipiélago.'
 date: 2025-09-01
 image: '../../assets/images/blog/estocolmo-en-4-dias/cover.webp'
+imageAlt: 'Estación de metro de Estocolmo decorada con un arcoíris pintado sobre roca viva, con un tren azul en el andén'
 destinations: ['estocolmo']
 faqs:
   - question: '¿Merece la pena visitar el Museo Vasa?'

@@ -3,6 +3,7 @@ title: '¿Cuánto cuesta viajar a Edimburgo en 2026? Presupuesto detallado'
 description: 'Desglose real de precios en Edimburgo: vuelos, alojamiento, comida, atracciones y transporte. Descubre cuánto necesitas para tu viaje a la capital escocesa.'
 date: 2026-03-18
 image: '../../assets/images/blog/cuanto-cuesta-viajar-edimburgo/cover.webp'
+imageAlt: 'Fachadas de piedra en el Grassmarket de Edimburgo, con el pub The Last Drop y el restaurante Alba Bistro'
 destinations: ['edimburgo']
 faqs:
   - question: '¿Es caro comer en Edimburgo?'

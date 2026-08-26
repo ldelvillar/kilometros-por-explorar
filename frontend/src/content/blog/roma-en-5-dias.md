@@ -4,6 +4,7 @@ description: 'Guía completa sobre los mejores sitios que visitar en Roma durant
 date: 2025-07-12
 updatedDate: 2026-08-21
 image: '../../assets/images/blog/roma-en-5-dias/cover.webp'
+imageAlt: 'Fontana di Trevi en Roma con sus esculturas de mármol y el agua cayendo entre las rocas'
 destinations: ['roma']
 faqs:
   - question: '¿Es recomendable visitar Coliseo, Foro y Palatino el mismo día?'

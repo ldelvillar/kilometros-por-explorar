@@ -4,6 +4,7 @@ description: 'Desglose honesto y detallado del presupuesto para 10 días en Isla
 date: 2026-01-12
 updatedDate: 2026-08-26
 image: '../../assets/images/blog/cuanto-cuesta-viajar-islandia/cover.webp'
+imageAlt: 'Cascada de Skógafoss iluminada de azul bajo un cielo estrellado, con una persona junto a la base, Islandia'
 destinations: ['islandia']
 faqs:
   - question: '¿Es mejor alquilar camper o coche en Islandia?'

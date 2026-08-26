@@ -3,6 +3,7 @@ title: 'Consejos prácticos para visitar Estambul: guía para evitar trampas tur
 description: 'Consejos esenciales para visitar Estambul: cómo moverte barato, evitar estafas turísticas, explorar la parte asiática y aprovechar al máximo la ciudad.'
 date: 2025-11-20
 image: '../../assets/images/blog/consejos-visitar-estambul/cover.webp'
+imageAlt: 'Barcas tradicionales turcas amarradas en el Cuerno de Oro con la Mezquita de Solimán al fondo, Estambul'
 destinations: ['estambul']
 faqs:
   - question: '¿Qué es la Istanbulkart y por qué la necesito?'

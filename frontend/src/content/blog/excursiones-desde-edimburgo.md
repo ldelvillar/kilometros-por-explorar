@@ -3,6 +3,7 @@ title: 'Las 9 mejores excursiones de un día desde Edimburgo (por libre y en tou
 description: 'Guía completa de excursiones desde Edimburgo: Stirling, Loch Ness, Isle of Skye. Consejos prácticos, presupuestos y cómo organizar día a día.'
 date: 2026-02-18
 image: '../../assets/images/blog/excursiones-desde-edimburgo/cover.webp'
+imageAlt: 'Castillo de Linlithgow junto a un lago con cisnes y patos nadando en primer plano, Escocia'
 destinations: ['edimburgo']
 faqs:
   - question: '¿Cuál es la mejor excursión desde Edimburgo si sólo tengo 1 día?'

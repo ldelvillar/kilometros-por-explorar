@@ -3,6 +3,7 @@ title: 'Cómo usar el Interrail: guía completa 2025'
 description: 'Guía práctica del Interrail: qué es, tipos de pases, precios, cómo funciona, reservas y todos los consejos que necesitas para recorrer Europa en tren.'
 date: 2025-10-18
 image: '../../assets/images/blog/como-usar-interrail/cover.webp'
+imageAlt: 'Tren rojo del Bernina Express circulando junto a un lago alpino turquesa, con montañas al fondo'
 destinations: []
 faqs:
   - question: '¿Cuál es la diferencia entre Interrail y Eurail?'

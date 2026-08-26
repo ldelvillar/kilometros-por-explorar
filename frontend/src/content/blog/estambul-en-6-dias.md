@@ -3,6 +3,7 @@ title: 'Qué ver en Estambul en seis días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Estambul durante 6 días, descubriendo la ciudad donde Europa y Asia se encuentran.'
 date: 2025-07-18
 image: '../../assets/images/blog/estambul-en-6-dias/cover.webp'
+imageAlt: 'Barco navegando por el Bósforo al atardecer con la Mezquita de Solimán iluminada al fondo, Estambul'
 destinations: ['estambul']
 faqs:
   - question: '¿Hay que regatear en el Gran Bazar?'

@@ -3,6 +3,7 @@ title: 'Qué ver en París en cuatro días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en París durante 4 días para que no te pierdas nada.'
 date: 2025-07-25
 image: '../../assets/images/blog/paris-en-4-dias/cover.webp'
+imageAlt: 'Torre Eiffel junto al Sena al atardecer, con barcos turísticos navegando por el río, París'
 destinations: ['paris']
 faqs:
   - question: '¿Es obligatorio subir a la Torre Eiffel?'

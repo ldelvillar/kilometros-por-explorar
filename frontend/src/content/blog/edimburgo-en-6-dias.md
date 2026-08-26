@@ -3,6 +3,7 @@ title: 'Qué ver en Edimburgo en seis días'
 description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Edimburgo durante 6 días, incluyendo excursiones a las Highlands y a castillos escoceses.'
 date: 2025-10-05
 image: '../../assets/images/blog/edimburgo-en-6-dias/cover.webp'
+imageAlt: 'Loch Lomond rodeado de colinas verdes en las Tierras Altas de Escocia'
 destinations: ['edimburgo']
 faqs:
   - question: '¿Es mejor visitar las Highlands en tour o por libre?'

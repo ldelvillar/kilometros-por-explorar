@@ -3,6 +3,7 @@ title: 'Qué ver en las Dolomitas en 6 días: ruta completa'
 description: 'Ruta por las Dolomitas en 6 días: lago de Garda, Molveno, Seceda, Val di Funes, Braies, Tre Cime y Sorapis. Itinerario día a día y consejos.'
 date: 2026-08-20
 image: '../../assets/images/blog/dolomitas-en-6-dias/cover.webp'
+imageAlt: 'Pueblo alpino con iglesia de campanario ante las cumbres rocosas de las Dolomitas, Italia'
 destinations: ['norte-italia']
 faqs:
   - question: '¿Son suficientes 6 días para ver las Dolomitas?'

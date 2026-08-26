@@ -3,6 +3,7 @@ title: 'Los 5 mejores destinos europeos para viajar en invierno'
 description: 'Nuestra selección de los mejores destinos de Europa para visitar en invierno: mercados navideños, auroras boreales, paisajes nevados y experiencias mágicas.'
 date: 2025-08-25
 image: '../../assets/images/blog/mejores-destinos-europeos-invierno/cover.webp'
+imageAlt: 'Mercadillo navideño frente al Ayuntamiento de Viena, con un carrusel iluminado y el árbol de Navidad de fondo'
 destinations: ['viena', 'islandia', 'praga']
 faqs:
   - question: '¿Cuál es el mejor destino para ver Auroras Boreales?'

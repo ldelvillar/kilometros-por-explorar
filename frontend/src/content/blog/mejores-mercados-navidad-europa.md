@@ -3,6 +3,7 @@ title: 'Los 7 mejores mercados de Navidad en Europa'
 description: 'Nuestra selección de los mercados navideños más mágicos de Europa: desde Estrasburgo hasta Budapest, descubre dónde vivir la Navidad auténtica.'
 date: 2025-10-10
 image: '../../assets/images/blog/mejores-mercados-navidad-europa/cover.webp'
+imageAlt: 'Casas de entramado de madera iluminadas de morado y azul en el mercado navideño de Colmar, Francia'
 destinations: ['viena', 'praga', 'budapest']
 faqs:
   - question: '¿Cuál es el mercado navideño más bonito y grande?'
