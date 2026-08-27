@@ -5,6 +5,7 @@ import Facebook from '@/assets/icons/facebook.svg';
 import { Image } from 'astro:assets';
 import logo from '@/assets/images/brand/logo.webp';
 import { SITE_CONFIG } from '@/config/site';
+import { getTelHref } from '@/utils/getUrls';
 
 interface Social {
   name: 'Instagram' | 'TikTok' | 'Facebook';
@@ -77,11 +78,11 @@ const contactLinks: FooterLink[] = [
   },
   {
     title: SITE_CONFIG.company.phone,
-    url: `tel:${SITE_CONFIG.company.phone.replace(/\s/g, '')}`,
+    url: getTelHref(SITE_CONFIG.company.phone),
   },
   {
     title: SITE_CONFIG.company.phone2,
-    url: `tel:${SITE_CONFIG.company.phone2.replace(/\s/g, '')}`,
+    url: getTelHref(SITE_CONFIG.company.phone2),
   },
   {
     title: SITE_CONFIG.company.address,

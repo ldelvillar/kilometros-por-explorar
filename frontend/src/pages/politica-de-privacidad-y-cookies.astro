@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
 import { SITE_CONFIG } from '@/config/site';
 import { getPageTitle } from '@/utils/getPageTitle';
+import { getTelHref } from '@/utils/getUrls';
 
 const title = getPageTitle('Política de Privacidad y Cookies');
 const description =
@@ -43,10 +44,10 @@ const schema = getCombinedSchema(pageSchema);
       </li>
       <li>
         Teléfonos: <a
-          href={`tel:${SITE_CONFIG.company.phone}`}
+          href={getTelHref(SITE_CONFIG.company.phone)}
           class="text-primary underline">{SITE_CONFIG.company.phone}</a
         >, <a
-          href={`tel:${SITE_CONFIG.company.phone2}`}
+          href={getTelHref(SITE_CONFIG.company.phone2)}
           class="text-primary underline">{SITE_CONFIG.company.phone2}</a
         >
       </li>
@@ -243,10 +244,10 @@ const schema = getCombinedSchema(pageSchema);
       </li>
       <li>
         Teléfonos: <a
-          href={`tel:${SITE_CONFIG.company.phone}`}
+          href={getTelHref(SITE_CONFIG.company.phone)}
           class="text-primary underline">{SITE_CONFIG.company.phone}</a
         >, <a
-          href={`tel:${SITE_CONFIG.company.phone2}`}
+          href={getTelHref(SITE_CONFIG.company.phone2)}
           class="text-primary underline">{SITE_CONFIG.company.phone2}</a
         >
       </li>

@@ -5,6 +5,7 @@ import Instagram from '@/assets/icons/instagram.svg';
 import Clock from '@/assets/icons/clock.svg';
 import Location from '@/assets/icons/location.svg';
 import { SITE_CONFIG } from '@/config/site';
+import { getTelHref } from '@/utils/getUrls';
 
 const { company, social } = SITE_CONFIG;
 const chipClass =
@@ -35,13 +36,11 @@ const labelClass = 'mb-0.5 text-sm tracking-[0.08em] text-white/75 uppercase';
     <div class="min-w-0">
       <p class={labelClass}>Teléfonos</p>
       <p class="text-base leading-relaxed">
-        <a
-          href={'tel:' + company.phone.replace(/\s/g, '')}
-          class="hover:underline">{company.phone}</a
+        <a href={getTelHref(company.phone)} class="hover:underline"
+          >{company.phone}</a
         ><br />
-        <a
-          href={'tel:' + company.phone2.replace(/\s/g, '')}
-          class="hover:underline">{company.phone2}</a
+        <a href={getTelHref(company.phone2)} class="hover:underline"
+          >{company.phone2}</a
         >
       </p>
     </div>
