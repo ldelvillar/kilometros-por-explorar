@@ -4,7 +4,7 @@ description: 'Guía práctica del Interrail: qué es, tipos de pases, precios, c
 date: 2025-10-18
 image: '../../assets/images/blog/como-usar-interrail/cover.webp'
 imageAlt: 'Tren rojo del Bernina Express circulando junto a un lago alpino turquesa, con montañas al fondo'
-destinations: []
+destinations: ['roma', 'bruselas', 'praga']
 faqs:
   - question: '¿Cuál es la diferencia entre Interrail y Eurail?'
     answer: 'La única diferencia es tu residencia. Compra el <strong>Interrail Pass</strong> si resides oficialmente en un país europeo. Compra el <strong>Eurail Pass</strong> si vives fuera (América, Asia, Oceanía). El precio, los trenes incluidos y las normas de uso son <strong>idénticos</strong> en ambos pases.'

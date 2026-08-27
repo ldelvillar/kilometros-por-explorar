@@ -57,7 +57,7 @@ const blog = defineCollection({
         updatedDate: z.date().optional(),
         image: image(),
         imageAlt: z.string(),
-        destinations: z.array(reference('destinations')),
+        destinations: z.array(reference('destinations')).min(1),
         faqs: z
           .array(
             z.object({
