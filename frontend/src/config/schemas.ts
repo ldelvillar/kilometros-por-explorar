@@ -280,6 +280,27 @@ export const getBreadcrumbSchema = (
   })),
 });
 
+// Tipo para items de un listado
+export interface ListItem {
+  name: string;
+  href: string;
+}
+
+// Schema para el listado de una página hub (/blog, /destinos, /viajeros)
+export const getItemListSchema = (items: ListItem[], pathname: string) => ({
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  '@id': `${getSiteUrl(pathname)}#itemlist`,
+  mainEntityOfPage: { '@id': getWebPageId(pathname) },
+  numberOfItems: items.length,
+  itemListElement: items.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    url: getSiteUrl(item.href),
+  })),
+});
+
 // Schema combinado para páginas principales
 export const getCombinedSchema = (
   pageSchema: object,

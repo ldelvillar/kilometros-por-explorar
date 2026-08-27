@@ -4,8 +4,15 @@ import InteractiveDestinations from '@/components/destinations/InteractiveDestin
 import Cta from '@/components/Cta.astro';
 import PageTitle from '@/components/PageTitle.astro';
 import SearchBar from '@/components/SearchBar.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
 
-import { getWebPageSchema, getCombinedSchema } from '@/config/schemas';
+import {
+  getWebPageSchema,
+  getCombinedSchema,
+  getBreadcrumbSchema,
+  getItemListSchema,
+  type BreadcrumbItem,
+} from '@/config/schemas';
 import { getCollection } from 'astro:content';
 import { getPageTitle } from '@/utils/getPageTitle';
 
@@ -14,10 +21,31 @@ const description =
   'Descubre nuestros destinos cuidadosamente seleccionados. Desde playas paradisíacas hasta aventuras culturales, encuentra tu próxima experiencia de viaje.';
 const pathname = Astro.url.pathname;
 
-const pageSchema = getWebPageSchema(title, description, pathname);
-const schema = getCombinedSchema(pageSchema);
-
 const allDestinations = await getCollection('destinations');
+
+const breadcrumbItems: BreadcrumbItem[] = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Destinos' },
+];
+
+const pageSchema = getWebPageSchema(
+  title,
+  description,
+  pathname,
+  true,
+  'CollectionPage'
+);
+const schema = getCombinedSchema(
+  pageSchema,
+  getBreadcrumbSchema(breadcrumbItems, pathname),
+  getItemListSchema(
+    allDestinations.map(destination => ({
+      name: destination.data.name,
+      href: `/destinos/${destination.id}`,
+    })),
+    pathname
+  )
+);
 
 const categories = [
   {
@@ -61,6 +89,8 @@ const categories = [
 <Layout title={title} description={description} schema={schema}>
   <main id="main" class="animate-fade-in-up min-h-screen">
     <section class="mx-auto max-w-7xl px-4 pt-32 pb-8">
+      <Breadcrumbs items={breadcrumbItems} class="mb-6" />
+
       <div class="mx-auto max-w-[760px] text-center">
         <PageTitle
           as="h1"

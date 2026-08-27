@@ -6,7 +6,14 @@ import SearchBar from '@/components/SearchBar.astro';
 import BlogCard from '@/components/blog/BlogEntryCard.astro';
 import Cta from '@/components/Cta.astro';
 import Magnifier from '@/assets/icons/magnifier.svg';
-import { getCombinedSchema, getWebPageSchema } from '@/config/schemas';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import {
+  getBreadcrumbSchema,
+  getCombinedSchema,
+  getItemListSchema,
+  getWebPageSchema,
+  type BreadcrumbItem,
+} from '@/config/schemas';
 import { getPageTitle } from '@/utils/getPageTitle';
 import { getSortedPosts } from '@/utils/getSortedPosts';
 
@@ -14,10 +21,32 @@ const title = getPageTitle('Blog');
 const description =
   'Consejos de viaje, itinerarios y guías de destinos para planificar tu próxima aventura. Lee el blog de Kilómetros por Explorar y viaja mejor.';
 const pathname = Astro.url.pathname;
-const pageSchema = getWebPageSchema(title, description, pathname);
-const schema = getCombinedSchema(pageSchema);
 
 const sortedPosts = getSortedPosts(await getCollection('blog'));
+
+const breadcrumbItems: BreadcrumbItem[] = [
+  { name: 'Inicio', href: '/' },
+  { name: 'Blog' },
+];
+
+const pageSchema = getWebPageSchema(
+  title,
+  description,
+  pathname,
+  true,
+  'CollectionPage'
+);
+const schema = getCombinedSchema(
+  pageSchema,
+  getBreadcrumbSchema(breadcrumbItems, pathname),
+  getItemListSchema(
+    sortedPosts.map(post => ({
+      name: post.data.title,
+      href: `/blog/${post.id}`,
+    })),
+    pathname
+  )
+);
 
 const destinationEntries = await getCollection('destinations');
 const destinationText = new Map(
@@ -39,6 +68,8 @@ function getSearchText(post: CollectionEntry<'blog'>) {
 <Layout title={title} description={description} schema={schema}>
   <main id="main" class="animate-fade-in-up">
     <section class="mx-auto max-w-7xl px-4 pt-28 pb-12 md:pt-36">
+      <Breadcrumbs items={breadcrumbItems} class="mb-6" />
+
       <div class="mx-auto mb-8 max-w-[760px] text-center lg:mb-12">
         <PageTitle
           eyebrow="Nuestro blog"
