@@ -1,89 +1,147 @@
 ---
-title: 'Qué ver en París en cuatro días'
-description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en París durante 4 días para que no te pierdas nada.'
+title: 'Qué ver en París en 4 días: itinerario completo'
+description: 'Itinerario por París en 4 días: Louvre, Notre-Dame, Disneyland, Versalles, la Torre Eiffel y Montmartre. Qué ver cada día y qué reservar antes de ir.'
 date: 2025-07-25
+updatedDate: 2026-08-30
 image: '../../assets/images/blog/paris-en-4-dias/cover.webp'
 imageAlt: 'Torre Eiffel junto al Sena al atardecer, con barcos turísticos navegando por el río, París'
 destinations: ['paris']
 faqs:
-  - question: '¿Es obligatorio subir a la Torre Eiffel?'
-    answer: 'Si es tu primera vez, sí, es un icono. Sin embargo, ten en cuenta que las mejores fotos <i>de</i> la Torre se hacen desde el <strong>Trocadéro</strong>, no desde ella. Si decides subir, reserva online con semanas de antelación. Un truco para ahorrar dinero y colas de ascensor es comprar el ticket de <strong>acceso por escaleras</strong> (hasta el 2º piso).'
-  - question: '¿Merece la pena entrar al Louvre?'
-    answer: 'Sí, pero con estrategia. Es el museo más grande del mundo y puede ser agotador. <strong>Reserva entrada online obligatoriamente</strong>. No intentes verlo todo en un día; selecciona una ruta de 3 horas para ver los "highlights" (La Gioconda, la Venus de Milo, etc.). Si no te gusta el arte masificado, el <strong>Museo de Orsay</strong> es una alternativa espectacular y más manejable.'
-  - question: '¿Cuál es la mejor zona para alojarse en París?'
-    answer: 'Para una primera visita, la zona de <strong>Le Marais (Distritos 3 y 4)</strong> es perfecta: céntrica, histórica y llena de tiendas y cafés. El <strong>Barrio Latino</strong> es excelente para un ambiente clásico. <strong>Montmartre</strong> es muy romántico y bohemio, pero ten en cuenta que está alejado del centro y las cuestas pueden ser cansadas.'
-  - question: '¿Es mejor visitar París en primavera o verano?'
-    answer: 'La <strong>primavera (abril-junio)</strong> es la época ideal: los jardines florecen y el clima es suave. En verano puede hacer mucho calor y muchos lugares no tienen aire acondicionado. Intenta <strong>evitar agosto</strong>, ya que los parisinos se van de vacaciones y muchas tiendas y restaurantes auténticos cierran, dejando la ciudad solo para turistas.'
+  - question: '¿Son suficientes 4 días para ver París?'
+    answer: 'Sí, y además dan para <strong>Disneyland y Versalles</strong>, que es lo que hicimos nosotros. Eso sí, hay que asumirlo desde el principio: con esos dos días fuera, el centro de París se ve en dos jornadas bien organizadas. Si quieres la ciudad con calma y las dos excursiones, cuenta cinco o seis días.'
+  - question: '¿Merece la pena subir a la Torre Eiffel?'
+    answer: 'Si es tu primera vez, sí. Ten en cuenta que las mejores fotos <i>de</i> la torre se hacen desde el <strong>Trocadéro</strong>, no desde ella. Si decides subir, reserva online con semanas de antelación, y si quieres ahorrar dinero y colas, compra el ticket de <strong>acceso por escaleras</strong> hasta el segundo piso.'
+  - question: '¿Hay que reservar las entradas con antelación?'
+    answer: 'El <strong>Louvre</strong> y <strong>Disneyland</strong> sí, con franja horaria o fecha cerrada. El Panteón, Versalles, el Arco del Triunfo y la Torre Eiffel se pueden comprar en taquilla (nosotros lo hicimos así), pero <strong>en temporada alta te juegas una hora larga de cola</strong>, así que nuestra recomendación es reservarlos igualmente.'
+  - question: '¿Cuál es la mejor época para visitar París?'
+    answer: 'De <strong>abril a junio y de septiembre a octubre</strong>. Hay buena temperatura para caminar todo el día y los jardines están en su mejor momento. Intenta <strong>evitar agosto</strong>: hace calor, muchos sitios no tienen aire acondicionado y buena parte de los bistrós de barrio cierran por vacaciones.'
 ---
 
-París, la Ciudad de la Luz, es uno de esos destinos que merece ser saboreado con calma, pero si tienes solo cuatro días, no te preocupes. Con una buena planificación, puedes vivir la esencia parisina y llevarte recuerdos inolvidables. Esta guía te ayudará a aprovechar cada momento, combinando los imprescindibles con experiencias auténticas que harán de tu viaje algo especial.
+París es de esas ciudades que parecen fáciles de organizar hasta que te pones. Todo está bien comunicado, todo se puede ver y todo tiene entrada, y precisamente por eso se acaba montando un itinerario imposible. Con cuatro días se ve lo importante de sobra, siempre que aceptes una cosa desde el principio: aquí no se trata de encajar más sitios, sino de encajarlos en el orden correcto.
 
-Cuatro días en París te permiten sumergirte en su rica historia, disfrutar de su gastronomía excepcional, admirar arte de clase mundial y sentir el romanticism que caracteriza a esta ciudad única. La clave está en equilibrar los monumentos icónicos con paseos sin prisas por sus barrios, mezclando cultura con momentos para simplemente observar la vida parisina desde una terraza de café.
+Este es el itinerario que hicimos nosotros, con los consejos prácticos que nos habría gustado tener antes de ir. Y conviene decirlo ya: dos de los cuatro días salen de la ciudad, uno a Disneyland y otro a Versalles. Eso deja el centro de París en dos jornadas, que dan para los imprescindibles, pero no para pasear sin rumbo. Si prefieres lo segundo, quita Disneyland y respira.
 
-Hemos diseñado este itinerario pensando en maximizar tu tiempo sin crear una carrera contra el reloj. Cada día tiene un tema central, pero con suficiente flexibilidad para adaptarse a tus intereses. Y lo más importante: incluye consejos prácticos para evitar las multitudes y vivir París como los propios parisinos.
+Porque en París el problema no es qué ver, es a qué hora y con qué reserva: los sitios más famosos venden entrada con franja horaria y se agotan con semanas de antelación, y descubrirlo delante de la taquilla es la forma más rápida de perder una mañana entera.
 
-## Día 1: El corazón histórico de París
+## Día 1: el Louvre, Notre-Dame y el Barrio Latino
 
-Tu primera mañana en París debe comenzar temprano en la Île de la Cité, el corazón histórico de la ciudad. Llega a Notre-Dame alrededor de las 8:30 AM para evitar las multitudes y admirar la fachada de esta obra maestra gótica mientras planifican su restauración. Aunque no puedes entrar, el exterior sigue siendo impresionante y las vistas desde los jardines laterales son perfectas para fotos.
+El primer día empieza temprano en el Louvre. Es el museo más grande del mundo y el error clásico es intentar verlo entero: nosotros recomendamos entrar con una idea clara de tres horas, el ala Denon como columna vertebral y las antigüedades egipcias si sobra tiempo.
 
-Camina hasta la Sainte-Chapelle, una joya arquitectónica del siglo XIII famosa por sus vidrieras espectaculares. La luz de la mañana hace que los colores cobren vida de manera mágica. Reserva tu entrada con antelación para evitar colas y dedica al menos 45 minutos a contemplar estos tesoros medievales.
+![Cola de entrada bajo la pirámide de cristal del Louvre, con el Pabellón Denon al fondo](../../assets/images/blog/paris-en-4-dias/louvre.webp)
 
-Después, cruza el Pont Neuf (paradójicamente el puente más antiguo de París) y dirígete al Barrio Latino. Piérdete por sus callejuelas medievales, visita la librería Shakespeare and Company si eres amante de los libros, y toma un café en alguna de las terrazas de la Place Saint-Michel. Termina el día subiendo al Panteón al atardecer para unas vistas espectaculares de París iluminándose.
+Dentro, la Gioconda tiene su propia cola dentro de la sala y se ve tres minutos entre móviles. Merece la pena verla una vez y no volver a pensar en ella: la Victoria de Samotracia en lo alto de la escalera, la Venus de Milo y las salas de pintura francesa dan mucho más por el tiempo invertido.
 
-## Día 2: Arte y cultura en el Louvre y alrededores
+> [!WARNING/El Louvre es la única entrada que no puedes dejar para el día de antes]
+> Es entrada con **franja horaria obligatoria** y las mejores horas vuelan. Reserva la primera de la mañana en la web oficial, y entra por el **Carrousel du Louvre**, el acceso subterráneo desde la Rue de Rivoli: es la misma entrada y te ahorra la cola de la pirámide de la foto. Ojo, el museo **cierra los martes**.
 
-Dedica tu segundo día al arte y la cultura parisina, comenzando temprano en el Louvre. Reserva tu entrada online y llega cuando abren (9 AM) para evitar las multitudes del mediodía. No intentes ver todo - es imposible y agotador. En su lugar, concéntrate en las obras maestras: la Mona Lisa, la Venus de Milo, y la Victoria de Samotracia. Dedica también tiempo a las antigüedades egipcias y las pinturas francesas del siglo XIX.
+Al salir, cruza el Sena por el Pont des Arts y sigue por la Île de la Cité hasta Notre-Dame, reabierta en diciembre de 2024 tras el incendio. La entrada es gratuita, pero se sacan reservas de acceso en la web oficial con pocos días de antelación, y eso es lo que separa entrar en diez minutos de esperar una hora larga en la plaza. La piedra limpia del interior no se parece nada a las fotos de antes del incendio, y ese contraste es medio motivo de la visita.
 
-Después de unas 3 horas en el Louvre, sal a los Jardines de las Tullerías para relajarte y tomar aire fresco. Es el lugar perfecto para un picnic con productos comprados en alguna boulangerie cercana. Los jardines conectan el Louvre con la Place de la Concorde, donde puedes admirar el Obelisco de Luxor y las fuentes ornamentadas.
+Desde ahí se sube andando al Barrio Latino, que es donde se pasa el resto del día. De camino queda la librería Shakespeare and Company, justo enfrente de la catedral al otro lado del río, y las callejuelas de alrededor de Saint-Séverin.
 
-Por la tarde, pasea por la Rue de Rivoli para un poco de shopping o dirígete al Palais Royal, un oasis de tranquilidad con sus galerías cubiertas y jardines. Termina el día cruzando el Pont Alexandre III al atardecer - considerado el puente más bello de París - para llegar a los Invalides, donde está la tumba de Napoleón.
+La parada larga de la tarde es el Jardín de Luxemburgo. Es el parque más bonito de París y funciona como el salón del barrio, con sillas verdes de metal que puedes mover donde quieras, el palacio del Senado al fondo, el estanque con los barquitos de vela y gente echando la tarde.
 
-## Día 3: Montmartre y la bohemia parisina
+A cinco minutos está el Panteón, que cierra el día. Por dentro está el péndulo de Foucault y, en la cripta, las tumbas de Victor Hugo, Marie Curie o Alexandre Dumas. La entrada se compra allí mismo sin problema, y de abril a octubre incluye la subida a la columnata de la cúpula, para nosotros uno de los mejores miradores de la ciudad y de los menos conocidos.
 
-El tercer día está dedicado a Montmartre, el barrio bohemio que ha inspirado a artistas durante siglos. Comienza subiendo en funicular hasta el Sacré-Cœur temprano por la mañana (8 AM) para evitar las multitudes y disfrutar de las vistas panorámicas de París desde las escalinatas. La basílica, con su arquitectura neobizantina, es impresionante tanto por fuera como por dentro.
+## Día 2: Disneyland Paris
 
-Dedica la mañana a perderte por las callejuelas empedradas de Montmartre. Visita la Place du Tertre, donde aún trabajan artistas callejeros, explora las tiendas de antigüedades y para en el café Les Deux Moulins, famoso por la película "Amélie". No te pierdas el Moulin Rouge (aunque sea solo desde fuera) y el barrio rojo de Pigalle, que durante el día tiene un encanto muy diferente.
+El segundo día sale de la ciudad entero. Si viajas con niños, es probablemente el que más recuerden del viaje; si viajas sin ellos, es un día que se disfruta igual, pero conviene saber que no vas a pisar París hasta la noche.
 
-Por la tarde, baja caminando hacia los Grandes Bulevares. Visita las Galerías Lafayette y las Printemps, no solo para comprar sino para admirar sus impresionantes cúpulas Art Nouveau. Si el tiempo lo permite, acércate a la Ópera Garnier - su interior es tan espectacular como su fachada. Termina el día en algún bistró tradicional en el barrio de Opéra, disfrutando de la auténtica gastronomía francesa.
+Se llega en el RER A hasta Marne-la-Vallée–Chessy, unos 40 minutos desde Châtelet, y la estación deja justo en la entrada. Son dos parques: el Disneyland Park, el de la calle principal y el castillo, y el segundo, dedicado al cine y en plena remodelación desde hace un par de años. Con un solo día, nuestra recomendación es quedarse en el primero y no intentar los dos.
 
-## Día 4: Elegancia y vistas panorámicas
+![Entrada de Disneyland Paris en un día de lluvia, con el Disneyland Hotel y la fuente de la plaza](../../assets/images/blog/paris-en-4-dias/disneyland.webp)
 
-Tu último día debe ser memorable, así que comienza con el símbolo más icónico de París: la Torre Eiffel. Llega temprano (las taquillas abren a las 9:30 AM) y sube hasta el segundo piso para las mejores vistas de la ciudad. Si el tiempo está claro, considera subir hasta la cima, pero el segundo piso suele ofrecer perspectivas más nítidas y menos multitudes.
+Compra la entrada online y con fecha cerrada, que es bastante más barata que en taquilla, y llega media hora antes de la apertura. Los primeros noventa minutos valen por toda la tarde: las atracciones grandes se hacen casi sin cola mientras la mayoría de la gente sigue haciéndose fotos en Main Street. Deja esas fotos para el final del día.
 
-Después de la Torre Eiffel, camina por los Campos de Marte hacia el Trocadéro para esa foto clásica con la torre de fondo. Luego dirígete al elegante distrito del 7º arrondissement para explorar el Musée Rodin y sus jardines de esculturas - un remanso de paz en el corazón de París donde puedes admirar "El Pensador" y "Los Burgueses de Calais" al aire libre.
+Nosotros fuimos con lluvia, y aunque no era el plan, acabó siendo el mejor día posible para ir: se vacían las colas, los desfiles siguen saliendo y el parque se queda a media capacidad. Si el pronóstico da agua, lleva chubasquero en lugar de cambiar de planes.
 
-La tarde es perfecta para un crucero por el Sena (1 hora aproximadamente) que te permitirá ver París desde una perspectiva completamente diferente, pasando por Notre-Dame, el Louvre, y bajo los puentes históricos. Termina tu estancia en París con una cena en el barrio de Saint-Germain-des-Prés, paseando por sus calles llenas de cafés literarios y boutiques elegantes, donde puedes despedirte de la ciudad con el auténtico arte de vivre francés.
+Quédate al espectáculo nocturno sobre el castillo, que es el mejor momento del día, y luego coge el RER de vuelta justo cuando termine o espera veinte minutos a que pase la avalancha. Ten en cuenta que el tren es de cercanías y a esas horas va lleno de gente que vuelve del parque, así que calcula una hora larga de puerta a puerta.
 
-## Consejos prácticos para moverte por París
+## Día 3: Versalles, el Arco del Triunfo y la Torre Eiffel
 
-El metro parisino es tu mejor aliado para moverte eficientemente por la ciudad. Compra un pase Navigo Easy o una tarjeta de 10 viajes (carnet) que es más económica que comprar billetes individuales. Las líneas 1 y 14 son automáticas y especialmente rápidas, mientras que la línea 6 ofrece vistas espectaculares del Sena y la Torre Eiffel entre las estaciones Bir-Hakeim y Trocadéro.
+Este es el día grande del viaje, y también el más largo. Empieza en Versalles, que está a unos 40 minutos en el RER C desde el centro, bajando en la estación Château de Versailles Rive Gauche, y desde ahí son diez minutos andando hasta la verja dorada.
 
-Caminar es otra excelente opción en el centro de París - las distancias son más cortas de lo que parecen en el mapa. El centro histórico (del 1º al 4º arrondissement) se puede recorrer perfectamente a pie, y descubrirás rincones encantadores que te perderías en transporte público. Lleva calzado cómodo, especialmente para los adoquines de Montmartre.
+Ve a primera hora. El palacio funciona como un embudo: entre las 11:00 y las 14:00 la Galería de los Espejos se recorre en fila india y no se disfruta de nada. Entrando a la apertura, las salas de Estado y la galería se ven casi sin gente, y para cuando llegan los autobuses tú ya estás en los jardines.
 
-Para ahorrar tiempo y dinero, evita los taxis durante las horas punta (7:30-9:30 AM y 6:00-8:00 PM). En su lugar, usa la app Citymapper para planificar rutas multimodales que combinen metro, autobús y caminatas. Los autobuses, aunque más lentos, ofrecen vistas turísticas gratuitas - especialmente las líneas 24, 63 y 72.
+Y los jardines son la mitad buena de la visita. Son 800 hectáreas de perspectivas, bosquetes, fuentes y parterres diseñados por Le Nôtre, con el Gran Canal cruzando el eje central. Bajo la terraza sur está el parterre de la Orangerie, con sus naranjos en maceta alineados alrededor del estanque, y al fondo del parque el Trianón y el Hameau de la Reine, la aldea de casitas donde María Antonieta se escapaba de la corte.
 
-## Dónde comer: del bistró al mercado local
+![Parterre de la Orangerie de Versalles, con los naranjos en maceta alrededor del estanque circular](../../assets/images/blog/paris-en-4-dias/jardines-versalles.webp)
 
-La gastronomía es parte fundamental de la experiencia parisina. Para el desayuno, nada mejor que un croissant recién horneado en Du Pain et des Idées (4º arrondissement) o Pierre Hermé para macarons que son obras de arte. Los mercados locales como el Marché Saint-Germain o el Marché des Enfants Rouges ofrecen productos frescos y la oportunidad de interactuar con vendedores locales.
+Hasta el Trianón hay unos dos kilómetros desde el palacio, así que con este itinerario ajustado nosotros recomendamos dejarlo fuera y quedarte con el palacio y los jardines de la parte central. Dos avisos: **Versalles cierra los lunes**, y los fines de semana de abril a octubre hay espectáculo de fuentes musicales, que está muy bien pero convierte el acceso a los jardines en entrada de pago.
 
-Para comidas auténticas sin arruinar el presupuesto, busca bistrós de barrio lejos de las zonas turísticas. Le Comptoir du Relais (6º) y L'Ami Jean (7º) ofrecen cocina francesa tradicional a precios razonables. Los "plats du jour" (plato del día) suelen ser la mejor opción calidad-precio, y muchos restaurantes ofrecen menús de mediodía significativamente más baratos que la cena.
+> [!WARNING/Este día solo funciona si sales de Versalles a mediodía]
+> Es un día encadenado, y el cuello de botella está aquí. Si a las **14:00** no has cogido el RER de vuelta, llegas tarde a todo lo demás y te quedas sin crucero. Nosotros entramos a la apertura, vimos palacio y jardines sin pausa y comimos ya de vuelta en París.
 
-No te pierdas la cultura del café francés: un café au lait en una terraza mientras observas el mundo pasar es una experiencia esencial. Café de Flore y Les Deux Magots son históricos pero turísticos; prueba Café Lomi en el 18º para un café de especialidad más auténtico. Recuerda que en Francia el café se toma rápido en el bar o se saborea sentado - cada opción tiene su precio y su ritmo.
+De regreso, baja en Champ de Mars o Invalides y coge el metro hasta Charles de Gaulle-Étoile, porque la segunda mitad del día se hace entera andando. La primera parada es el Arco del Triunfo, con su terraza y la vista de la estrella de doce avenidas desde arriba, que es la mejor forma de entender por qué esta ciudad se recorre en diagonal. La entrada se compra en la taquilla de abajo, aunque a última hora de la tarde suele haber cola.
 
-## Planifica tu presupuesto
+Y no intentes cruzar la rotonda: es de las más caóticas de Europa y no tiene paso de peatones. Al arco se llega por un paso subterráneo señalizado que sale desde la acera de los Campos Elíseos, junto a la salida del metro.
 
-París puede ser costosa, pero con planificación inteligente puedes disfrutar de la ciudad sin vaciar tu cuenta bancaria. Las entradas a monumentos principales cuestan entre 15-25€, pero muchos museos nacionales son gratuitos el primer domingo del mes (excepto julio y agosto). El Museum Pass (78€ por 4 días) puede ser rentable si planeas visitar varios sitios, además de saltarte las colas.
+Desde ahí, la Avenida Kléber baja recta hasta el Trocadéro en un cuarto de hora. En la explanada del Palacio de Chaillot es donde está la foto de París que tienes en la cabeza, con la torre enfrente y sin nada en medio. Es también el mejor sitio para esperar a que caiga la luz.
 
-Para alojamiento, considera quedarte en los arrondissements 9º, 10º u 11º que están bien conectados pero son más económicos que el centro histórico. Los hoteles boutique en estos barrios ofrecen mejor valor que las grandes cadenas en zonas turísticas. Airbnb puede ser una opción económica, especialmente si viajas en grupo o necesitas cocinar algunas comidas.
+Cruza el Sena y sube a la Torre Eiffel. El recinto está vallado y hay control de bolsos, así que calcula un rato de cola incluso llevando la entrada. Hay tres niveles: el primero con suelo de cristal, el segundo con las mejores vistas de detalle y la cima, a 276 metros, desde la que se entiende de golpe cómo está trazada la ciudad.
 
-El transporte público es muy razonable: 14.90€ por una tarjeta semanal Navigo que incluye metro, autobús y RER en las zonas 1-2. Para comidas, calcula 15-25€ por un menú de mediodía en un bistró, 35-50€ para una cena de tres platos, y 3-5€ para un café. Los supermercados Monoprix y Franprix están por toda la ciudad para compras básicas a precios locales.
+![Vistas de París desde lo alto de la Torre Eiffel, con el Trocadéro y los jardines del Palacio de Chaillot abajo](../../assets/images/blog/paris-en-4-dias/vistas-torre-eiffel.webp)
 
-## Consejos para evitar las multitudes
+Nosotros compramos la entrada allí mismo y salió bien, pero no es lo que recomendamos: en temporada alta la subida en ascensor a la cima se agota y la cola de taquilla es de las peores de la ciudad. Si no reservas, el plan B bueno es el ticket de escaleras hasta el segundo piso, que es más barato, tiene mucha menos cola y son 674 escalones que se hacen mejor de lo que suenan.
 
-El timing es clave para disfrutar de París sin agobios. Los monumentos principales están menos concurridos a primera hora de la mañana (antes de las 10 AM) o al final de la tarde (después de las 4 PM). Los martes suelen ser los días más tranquilos en museos, mientras que los fines de semana son ideales para explorar barrios residenciales cuando los turistas se concentran en las atracciones principales.
+El día se cierra en el Sena. Los cruceros de una hora salen del embarcadero del pie de la torre y del Pont de l'Alma, y el que hay que coger es el último de la noche: ves Notre-Dame, el Louvre y los puentes iluminados, y sobre todo ves la torre desde el agua cuando destella, cinco minutos en punto de cada hora. Es el mejor momento del viaje y no hace falta reservar con antelación, se compra en el propio embarcadero.
 
-Reserva entradas online para evitar colas interminables, especialmente en el Louvre, Torre Eiffel y Sainte-Chapelle. Muchos sitios ofrecen entradas de "acceso rápido" que valen la pena por el tiempo ahorrado. Para restaurantes populares, reserva con al menos un día de antelación, especialmente para la cena.
+![Barco turístico navegando por el Sena al atardecer con la Torre Eiffel al fondo](../../assets/images/blog/paris-en-4-dias/cover.webp)
 
-Los meses de noviembre a marzo (excepto las vacaciones de Navidad) ofrecen una experiencia más auténtica con menos turistas y precios más bajos. Si viajas en temporada alta, considera explorar alternativas menos conocidas: en lugar del atestado Marché aux Puces, visita el Marché aux Puces de Vanves; en lugar de Montmartre, explora Belleville o Ménilmontant para una perspectiva más local de París.
+## Día 4: Montmartre, los grandes bulevares y el Orsay
 
-París en cuatro días es una introducción perfecta a una ciudad que merece múltiples visitas. Esta guía te ayudará a experimentar lo esencial sin prisa, creando recuerdos duraderos y, probablemente, el deseo de volver pronto para descubrir los secretos que cada barrio parisino guarda celosamente.
+El último día se hace entero andando, de norte a sur, y es el que más se parece a pasear por París sin plan. Empieza arriba, en Montmartre. El funicular de la Rue Foyatier cuesta lo que un billete de metro y te ahorra la escalinata, aunque subir andando por las calles laterales del barrio es bastante más bonito.
+
+El Sacré-Cœur es de entrada gratuita y no suele tener cola a primera hora. Su cúpula se sube por 300 escalones estrechos y da la panorámica más alta de París después de la torre, con la ventaja de que aquí sí ves la propia torre en el encuadre. Después, el barrio se recorre sin mapa: la Place du Tertre con los retratistas, el viñedo del Clos Montmartre, La Maison Rose y el Mur des Je t'aime.
+
+> [!WARNING/La estafa de las pulseras en el Sacré-Cœur]
+> En las escaleras que suben a la basílica hay gente que te agarra la muñeca "de regalo", te ata una pulsera de hilo y después te reclama veinte o treinta euros con bastante insistencia. **No pares y no des la mano.** Es el timo más habitual de la ciudad, junto con el del anillo de oro en los muelles del Sena.
+
+Baja hacia los grandes bulevares y para en las Galerías Lafayette. Aunque no vayas a comprar nada, la cúpula de vidrieras de 1912 sobre el atrio central merece los diez minutos, y sobre todo la terraza de la última planta: es de acceso gratuito y tiene la Ópera Garnier justo debajo, con la torre al fondo. Es uno de los miradores gratis mejores de París y mucha gente pasa por debajo sin saberlo.
+
+Sigue bajando hasta el jardín del Palacio Real, que es el contraste perfecto con la calle de la que vienes. Es un patio ajardinado cerrado por arcadas, con hileras de tilos, dos fuentes y un silencio que no parece del centro de París. En la parte de delante están las Columnas de Buren, el campo de columnas de rayas blancas y negras por el que se pasea todo el mundo.
+
+De ahí a la Plaza de la Concordia hay un paseo corto por las Tullerías. Es la plaza más grande de la ciudad, con el obelisco de Luxor de 3.000 años en el centro y las dos fuentes monumentales, y sobre todo con la mejor perspectiva del eje: los Campos Elíseos subiendo hasta el Arco del Triunfo por un lado, el Louvre por el otro.
+
+Baja al río y cruza el Puente Alejandro III, el más recargado de París, con sus farolas art nouveau y las cuatro columnas doradas. Está alineado con la cúpula de Los Inválidos y es el sitio donde más gente se para a hacer fotos con razón. Desde ahí, la orilla te lleva en quince minutos al Museo de Orsay.
+
+El Orsay es una antigua estación de tren de 1900 convertida en museo, y tiene la mejor colección de impresionistas del mundo: Monet, Renoir, Degas, Van Gogh. Es bastante más manejable que el Louvre, se ve bien en dos horas y la planta de arriba, la de los relojes de la antigua estación, es lo que hay que ver aunque solo te dé tiempo a eso.
+
+Además tiene una particularidad que conviene conocer: es gratuito para los menores de 26 años residentes en la UE y el primer domingo de cada mes para todo el mundo. En esos casos se entra sin reserva, por la fila de gratuidades y enseñando el DNI. Nosotros entramos así. Cierra los lunes y abre hasta la noche los jueves.
+
+## Cómo moverse por París
+
+El metro es la respuesta a casi todo. Son catorce líneas, pasa cada pocos minutos y no hay nada de este itinerario que quede lejos de una parada. Lo único que conviene entender es que dentro de la ciudad te mueves en metro, y para salir de ella (Versalles, Disneyland, los aeropuertos) se usa el RER, que es la red de cercanías y funciona por zonas.
+
+Lo práctico es cargar una tarjeta Navigo Easy con billetes sueltos si vas a hacer pocos trayectos, o un pase diario si vas a encadenar muchos. Nosotros cogimos un pase de 3 días y nos salió a cuenta, aunque solo lo usamos para el día de Versalles y el de Disneyland.
+
+Dicho esto, París se camina mucho mejor de lo que parece en el mapa. El día 3 y el día 4 son prácticamente andando, y entre parada y parada de metro suele haber cinco minutos a pie.
+
+Por último, la opción del coche no la recomendamos para nada, ya que la ciudad está llena de zonas peatonales y alquilar un coche ralentizaría bastante el itinerario.
+
+## Qué reservar antes de salir de casa
+
+En París la planificación no va de rutas, va de entradas con hora. Estas son las que nosotros sacaríamos desde casa, todas en las webs oficiales:
+
+- **Louvre**: franja horaria obligatoria.
+- **Disneyland Paris**: entrada con fecha concreta, bastante más barata online que en taquilla.
+- **Torre Eiffel**: la subida a la cima es la primera que se agota. Se puede comprar allí, pero puede que se agote.
+- **Versalles**: entrada con hora para entrar a la apertura sin cola.
+- **Notre-Dame**: gratuita, pero con reserva de acceso si no quieres esperar en la plaza.
+
+Y ordena los días mirando los cierres, porque son la única restricción rígida del viaje. El **Louvre cierra los martes**, y **Versalles y el Orsay cierran los lunes**. Con este itinerario eso significa que el día 1 no puede caer en martes, ni el día 3 o el día 4 en lunes.
+
+## Cuándo visitar París
+
+La mejor época es la primavera, de abril a junio, y el principio del otoño, de septiembre a octubre. Hay temperatura para caminar todo el día, los jardines de Luxemburgo y de Versalles están en su mejor momento y las colas son más llevaderas que en pleno verano. La columnata del Panteón, además, solo abre de abril a octubre.
+
+Julio y agosto son otra cosa: calor, colas en todo y precios de alojamiento altos. Y agosto tiene una particularidad muy parisina: la ciudad se va de vacaciones, y muchos bistrós de barrio, panaderías y tiendas pequeñas cierran semanas enteras, así que te queda abierta la parte turística y poco más.
+
+El invierno funciona sorprendentemente bien si no te importa el frío. Los museos se disfrutan de verdad, Disneyland está mucho más vacío y los precios bajan, aunque anochece a las cinco y hay que reorganizar el día alrededor de eso.
+
+## Conclusión
+
+Cuatro días en París dan para los imprescindibles de la ciudad y para dos excursiones grandes, Disneyland y Versalles, que es exactamente lo que hicimos nosotros. Sale, pero con jornadas largas y sin mucho margen para improvisar, así que si viajas con niños pequeños o te gusta ir despacio, quita una de las dos y ganas un día entero de París.
+
+Si quieres alargarlo, con un día más entran la Sainte-Chapelle, el Marais y el cementerio de Père-Lachaise; con dos, una excursión a Giverny, a Reims o a los castillos del Loira.
+
+Si te apetece hacer esta ruta pero no quieres pelearte con entradas, franjas horarias y días de cierre, **estamos aquí para ayudarte**. [Escríbenos](/contacto) y organizamos juntos tu viaje a París a tu medida.
