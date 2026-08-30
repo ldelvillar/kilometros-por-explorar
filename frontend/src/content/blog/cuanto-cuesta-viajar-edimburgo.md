@@ -2,12 +2,13 @@
 title: '¿Cuánto cuesta viajar a Edimburgo en 2026? Presupuesto detallado'
 description: 'Desglose real de precios en Edimburgo: vuelos, alojamiento, comida, atracciones y transporte. Descubre cuánto necesitas para tu viaje a la capital escocesa.'
 date: 2026-03-18
+updatedDate: 2026-08-30
 image: '../../assets/images/blog/cuanto-cuesta-viajar-edimburgo/cover.webp'
 imageAlt: 'Fachadas de piedra en el Grassmarket de Edimburgo, con el pub The Last Drop y el restaurante Alba Bistro'
 destinations: ['edimburgo']
 faqs:
   - question: '¿Es caro comer en Edimburgo?'
-    answer: 'Depende de dónde vayas. Un menú en un supermercado (Tesco o Sainsbury’s) cuesta unas <b>£4-5</b>, mientras que cenar en un pub tradicional con una pinta ronda las <b>£18-25</b> por persona.'
+    answer: 'Depende de dónde vayas. Un menú en un supermercado (Tesco o Sainsbury’s) cuesta unas <b>£4-5</b>, mientras que cenar en un pub tradicional ronda las <b>£18-25</b> por persona.'
   - question: '¿Merece la pena comprar algún pase turístico en Edimburgo?'
     answer: 'Para la mayoría de los viajeros, <b>no</b>. Muchos de los mejores museos (National Museum of Scotland, National Galleries) son gratuitos. Solo sale a cuenta si planeas entrar a muchas atracciones de pago cada día.'
   - question: '¿Cuál es la mejor zona para alojarse barato en Edimburgo?'
