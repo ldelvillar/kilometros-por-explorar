@@ -18,10 +18,9 @@ export const SITE_CONFIG = {
   },
 
   seo: {
-    defaultTitle: 'Kilómetros por Explorar - Viajes únicos por el mundo',
     defaultDescription:
-      'Descubre los destinos más increíbles del mundo con nuestras experiencias de viaje únicas. Aventuras personalizadas para exploradores como tú.',
+      'Planificamos tu viaje a medida de forma profesional. Descubre destinos, itinerarios personalizados y consejos de viaje con nosotros.',
     defaultImageAlt:
-      'Kilómetros por Explorar, planificación de viajes personalizados',
+      'Kilómetros por Explorar, planificación profesional de viajes a medida.',
   },
 } as const;
