@@ -10,3 +10,6 @@ out/
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+
+# vendored third-party skill
+.claude/skills/clarity/

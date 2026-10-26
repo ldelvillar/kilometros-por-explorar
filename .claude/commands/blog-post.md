@@ -12,7 +12,7 @@ The audience is independent travellers who want deep, practical, honest guides b
 ## Workflow
 
 1. **Plan, then stop.** Present the SEO plan and outline (below) and wait for approval before writing. This is the checkpoint where the user corrects the angle and adds anecdotes.
-2. **Write** the article to `frontend/src/content/blog/<slug>.md` in one pass, following every rule in this file.
+2. **Write** the article to `frontend/src/content/blog/<slug>.md` in one pass, following every rule in this file. Use the `clarity` skill for the prose, with two of the existing posts as the voice sample; where it conflicts with this file, this file wins. Where a sentence needs something only Lucas or Lucía know, leave `[TK: pregunta concreta]` instead of a vaguer sentence.
 3. **Verify** (see the last section) and report anything that needs the user: a missing cover image, facts you could not confirm, sections that need a personal anecdote.
 
 ## 1. SEO plan
@@ -33,7 +33,7 @@ Heading rules:
 
 Write as Lucas and/or Lucía: first person singular or plural, close, like talking to a travelling friend, honest and practical. Passion without tourist hype; say the uncomfortable truth about safety, money and tourist traps, including your own mistakes ("Nosotros caímos en la trampa de...").
 
-- **Personal anecdotes come only from the notes the user gave you.** Never invent a trip, a meal, a mishap or an opinion attributed to Lucas or Lucía. If a section needs one and there is none, leave it impersonal and flag it.
+- **Personal anecdotes come only from the notes the user gave you.** Never invent a trip, a meal, a mishap or an opinion attributed to Lucas or Lucía. If a section needs one and there is none, leave a `[TK]` marker for it.
 - **Personal tics are scarce.** Expressions like "En mi experiencia", "Admito que", "Truco pro", "La verdad es que" are used sparingly, and **no single one more than once** per article.
 - **Opening hook**: never start by summarising the article. Open with a provocative question, a figure, a contrast ("A primera vista parece... pero...") or a confession.
 - **No emojis** in the body. Dense in value, not in words.
@@ -106,6 +106,7 @@ The article ends with this structure, with no "Para terminar" style summary:
 ## Verify before reporting
 
 1. Grep the new file (case-insensitive) for every banned word in section 3 and fix any hit.
-2. Re-check the countable rules: paragraph length, internal links ≥ 3 and resolving, alerts 1-2, the warning block present if there are prices/times/transport, closing ends with the exact CTA link.
-3. Run `pnpm build`. If it fails only because the cover image is missing, say so; any other failure must be fixed.
-4. Hand the article path and the user's notes to the `blog-reviewer` agent. Fix every finding it reports, except ones you disagree with — list those for the user with your reason. Run it once only; do not loop.
+2. List every remaining `[TK: ...]` for the user. The build does not catch them, so the post must not be published until each one is resolved.
+3. Re-check the countable rules: paragraph length, internal links ≥ 3 and resolving, alerts 1-2, the warning block present if there are prices/times/transport, closing ends with the exact CTA link.
+4. Run `pnpm build`. If it fails only because the cover image is missing, say so; any other failure must be fixed.
+5. Hand the article path and the user's notes to the `blog-reviewer` agent. Fix every finding it reports, except ones you disagree with — list those for the user with your reason. Run it once only; do not loop.
