@@ -8,8 +8,6 @@
 
 Package manager is **pnpm**, and the repo is a workspace with two packages: `frontend/` (this Astro site) and `backend/` (an Express service backing the chatbot). Every path in this file is relative to the repo root, so the site itself lives under `frontend/`.
 
-Run `pnpm dev` / `build` / `preview` / `format` **from the repo root** — those scripts delegate to `frontend/`, except `format`, which covers both packages from the single root `.prettierrc`. Target one package directly with `pnpm --filter ./frontend <script>` or `pnpm --filter ./backend <script>`.
-
 There is **no test runner and no linter** beyond Prettier. `pnpm build` is the de-facto correctness gate: it fails on Zod content-schema violations, broken `image()` references, and TypeScript errors. Run it before considering a change done. It only covers `frontend/`, though — the backend's gate is `pnpm --filter ./backend typecheck`.
 
 The TypeScript half of that gate is `astro check`, which `build` runs before `astro build` (`pnpm --filter frontend typecheck` runs it on its own). It needs **TypeScript 6.x** — the native 7.x compiler drops the API it relies on — so `frontend` pins `typescript@^6` while `backend` stays on 7 with plain `tsc`. Bumping the frontend to 7 breaks the check, not the build output.
@@ -23,7 +21,7 @@ schema, `frontend/.env.example` and `frontend/.env` together.
 
 ## Tech Stack
 
-- **Tailwind CSS 4** — **there is no `tailwind.config`**; the theme (fonts Onest/Blimone, primary `#12a3ed`) lives as CSS variables in `frontend/src/styles/global.css`. `@tailwindcss/typography` powers article styling (`frontend/src/styles/prose.css`, imported by `blog/[slug]` and `viajeros/[slug]`).
+- **Tailwind CSS 4** — **there is no `tailwind.config`**; the theme (fonts Onest/Blimone, primary `#12a3ed`) lives as CSS variables in `frontend/src/styles/global.css`.
 
 ### Markdown pipeline
 
@@ -58,13 +56,13 @@ Nodes are linked by stable `@id`, never by inlining a second copy of an entity: 
 
 `Breadcrumbs.astro` is presentational only: the page that renders it also owns the `BreadcrumbList` node in its own `@graph` (`blog/[slug]`, `destinos/[slug]` and `viajeros/[slug]` all do). Keep it that way — every page emits exactly one `<script type="application/ld+json">`, and a `#breadcrumb` node outside it is one the `WebPage` cannot reference.
 
-Shared constants (domain, company contact, social links, default SEO copy) live in **`frontend/src/config/site.ts`**; URL helpers in `frontend/src/utils/getUrls.ts`; reading time in `frontend/src/utils/getReadingTime.ts`. The home-page FAQ lives in **`frontend/src/config/faqs.ts`** (`HOME_FAQS`) as the single source feeding both the `Faq` component and the `FAQPage` schema.
+Shared constants (domain, company contact, social links, default SEO copy) live in **`frontend/src/config/site.ts`**. The home-page FAQ lives in **`frontend/src/config/faqs.ts`** (`HOME_FAQS`) as the single source feeding both the `Faq` component and the `FAQPage` schema.
 
 Every page `<title>` is built by `getPageTitle()` in **`frontend/src/utils/getPageTitle.ts`**, which appends the brand name from `site.ts`. Pass only the page-specific part — `getPageTitle('Blog')`, `getPageTitle(post.data.title)`, ``getPageTitle(`Viajar a ${name} a tu medida`)`` — and **never hardcode the `| Kilómetros por Explorar` suffix in a page**.
 
 ### Astro vs Preact components
 
-`.astro` components are static-rendered (layouts, cards, sections — the bulk of `frontend/src/components/`). Reserve Preact `.tsx` islands for genuine interactivity (`Chatbot.tsx`, `CookieBanner.tsx`) and hydrate them with the lightest directive that works (`client:idle`/`client:load`).
+Reserve Preact `.tsx` islands for genuine interactivity (`Chatbot.tsx`, `CookieBanner.tsx`) and hydrate them with the lightest directive that works (`client:idle`/`client:load`).
 
 Plenty of interactivity here is plain inline `<script>` in an `.astro` file rather than an island — the destination search/filter (`InteractiveDestinations.astro`), the mobile menu (`Header.astro`), the contact form submit, the article ToC rail. Follow that pattern for anything that only needs DOM wiring; don't reach for Preact.
 
@@ -72,7 +70,6 @@ Plenty of interactivity here is plain inline `<script>` in an `.astro` file rath
 
 ## Conventions
 
-- **Prettier**: see `.prettierrc` for prettier conventions, `.astro` files use the astro parser. `prettier-plugin-tailwindcss` auto-sorts class lists (resolving the theme from `tailwindStylesheet: ./frontend/src/styles/global.css`) — don't hand-order them.
 - **Internal links** in Markdown use root-relative paths: `/blog/<slug>`, `/destinos/<slug>`.
 - Use `<Image>` from `astro:assets` for images (responsive `widths`/`sizes`, WebP).
 - **All user-facing copy is in Spanish.** Code identifiers, commit messages and comments are English.
