@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
+import HalfArrow from '@/assets/icons/halfArrow.svg';
 
 interface Props {
   customer: CollectionEntry<'customers'>;
@@ -10,21 +11,43 @@ interface Props {
 const { customer, loading } = Astro.props;
 ---
 
-<a href={`/viajeros/${customer.id}`} class="group">
-  <article class="space-y-4">
-    <Image
-      src={customer.data.image}
-      alt={customer.data.name}
-      widths={[400, 600, 800, 1200]}
-      sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
-      class="h-64 w-full rounded-xl object-cover shadow-md transition-transform duration-300 group-hover:scale-105"
-      loading={loading}
-    />
-    <div class="space-y-2">
-      <h3 class="text-lg font-medium text-gray-800">
-        {customer.data.name}
-      </h3>
-      <p class="text-sm text-gray-600">{customer.data.title}</p>
+<a href={`/viajeros/${customer.id}`} class="group block">
+  <article
+    class="relative h-full overflow-hidden rounded-3xl border border-gray-100 bg-white transition-all duration-300 hover:border-primary/30 hover:shadow-xl"
+  >
+    <div class="relative h-64 overflow-hidden">
+      <Image
+        src={customer.data.image}
+        alt={customer.data.name}
+        widths={[400, 600, 800, 1200]}
+        sizes="(min-width: 1024px) 400px, (min-width: 768px) 50vw, 100vw"
+        class="h-full w-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-110"
+        loading={loading}
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+      >
+      </div>
+      <div class="absolute right-0 bottom-0 left-0 p-6">
+        <h3
+          class="text-2xl font-bold text-white drop-shadow-lg transition-transform duration-300 group-hover:translate-y-[-4px]"
+        >
+          {customer.data.name}
+        </h3>
+      </div>
+    </div>
+    <div class="flex h-44 flex-col justify-between p-6">
+      <p class="line-clamp-3 text-sm leading-relaxed text-gray-700">
+        {customer.data.title}
+      </p>
+      <div
+        class="flex items-center justify-between border-t border-gray-100 pt-4 text-sm font-semibold tracking-wide text-primary uppercase transition-colors duration-300 group-hover:text-[#0d7ab8]"
+      >
+        <span class="text-xs">Ver historia completa</span>
+        <HalfArrow
+          class="h-5 w-5 transition-transform duration-300 group-hover:translate-x-2"
+        />
+      </div>
     </div>
   </article>
 </a>
