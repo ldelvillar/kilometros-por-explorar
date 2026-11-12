@@ -100,7 +100,7 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
     <div
       class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
     >
-      <Magnifier class="size-8 text-primary" />
+      <Magnifier aria-hidden="true" class="size-8 text-primary" />
     </div>
     <h2 class="mb-2 text-2xl font-bold text-gray-900">
       Sin resultados para «<span id="no-results-query"></span>»
@@ -139,6 +139,7 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
     const resultsCount = document.getElementById('search-results-count');
     const noResults = document.getElementById('no-results');
     const noResultsQuery = document.getElementById('no-results-query');
+    const status = document.getElementById('hero-search-status');
 
     // Search ranking reorders the grid, so keep the authored order to restore.
     const authoredOrder = grid ? Array.from(grid.children) : [];
@@ -194,6 +195,7 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
 
       if (resultsCount) resultsCount.hidden = true;
       if (noResults) noResults.classList.add('hidden');
+      if (status) status.textContent = '';
     }
 
     // Show the matching cards (hide the rest) in ranked order.
@@ -208,14 +210,17 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
       if (grid) results.forEach(entry => grid.appendChild(entry.node));
 
       const count = results.length;
+      const countText =
+        count === 1 ? '1 destino encontrado' : `${count} destinos encontrados`;
 
       // Heading with the result count (hidden when there are no matches).
       if (resultsCount) {
-        resultsCount.textContent =
-          count === 1
-            ? '1 destino encontrado'
-            : `${count} destinos encontrados`;
+        resultsCount.textContent = countText;
         resultsCount.hidden = count === 0;
+      }
+      if (status) {
+        status.textContent =
+          count === 0 ? `Sin resultados para «${query}»` : countText;
       }
 
       // Empty state shows the searched term and hides the page CTA.
@@ -229,6 +234,7 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
       chips.forEach(chip => {
         const active = chip.getAttribute('data-category') === category;
         chip.setAttribute('data-active', active ? 'true' : 'false');
+        chip.setAttribute('aria-pressed', active ? 'true' : 'false');
       });
     }
 
@@ -254,7 +260,7 @@ function getSearchText(destination: CollectionEntry<'destinations'>) {
     // Run a search and show the results (no category is active while searching).
     function runSearch(query: string) {
       isSearching = true;
-      chips.forEach(chip => chip.setAttribute('data-active', 'false'));
+      setActiveChip('');
       const matches = searchEntries(searchIndex, query);
       displaySearchResults(rankByName(matches, query), query);
     }

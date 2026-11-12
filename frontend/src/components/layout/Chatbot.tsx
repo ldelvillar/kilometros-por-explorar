@@ -52,6 +52,7 @@ export default function Chatbot() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const launcherRef = useRef<HTMLButtonElement>(null);
 
   const markSeen = () => {
     setSeen(true);
@@ -81,7 +82,11 @@ export default function Chatbot() {
       if (e.key === 'Escape') setIsOpen(false);
     };
     window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      // Closing unmounts the focused control: hand focus back to the launcher.
+      launcherRef.current?.focus();
+    };
   }, [isOpen]);
 
   // Grow the textarea with its content, up to its max-height.
@@ -233,6 +238,7 @@ export default function Chatbot() {
           {/* Messages Area */}
           <div
             ref={scrollRef}
+            role="log"
             aria-live="polite"
             className="flex flex-1 flex-col gap-1 overflow-y-auto bg-gray-50 p-4"
           >
@@ -263,12 +269,15 @@ export default function Chatbot() {
                           : 'rounded-[16px_16px_16px_4px] border border-gray-200 bg-white text-gray-700'
                       }`}
                     >
+                      <span className="sr-only">
+                        {isUser ? 'Tú: ' : 'Asistente: '}
+                      </span>
                       {message.text}
                     </p>
                   </div>
                   {endOfGroup && (
                     <span
-                      className={`mt-0.5 mb-2.5 text-xs text-gray-400 ${
+                      className={`mt-0.5 mb-2.5 text-xs text-gray-500 ${
                         isUser ? 'text-right' : 'pl-9'
                       }`}
                     >
@@ -281,14 +290,15 @@ export default function Chatbot() {
 
             {/* Typing Indicator */}
             {isTyping && (
-              <div
-                className="flex animate-chat-msg items-end gap-2"
-                aria-label="El asistente está escribiendo"
-              >
+              <div className="flex animate-chat-msg items-end gap-2">
+                <span className="sr-only">El asistente está escribiendo</span>
                 <div className="flex size-7 flex-none items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Bot className="size-3.75" />
                 </div>
-                <div className="flex gap-1 rounded-[16px_16px_16px_4px] border border-gray-200 bg-white p-3.5">
+                <div
+                  aria-hidden="true"
+                  className="flex gap-1 rounded-[16px_16px_16px_4px] border border-gray-200 bg-white p-3.5"
+                >
                   <span className="size-1.5 animate-chat-dot rounded-full bg-gray-400"></span>
                   <span className="size-1.5 animate-chat-dot rounded-full bg-gray-400 [animation-delay:.2s]"></span>
                   <span className="size-1.5 animate-chat-dot rounded-full bg-gray-400 [animation-delay:.4s]"></span>
@@ -337,7 +347,7 @@ export default function Chatbot() {
                 <Send className="size-4.5" />
               </button>
             </form>
-            <p className="mt-2 flex justify-between gap-2 text-xs text-gray-400">
+            <p className="mt-2 flex justify-between gap-2 text-xs text-gray-500">
               <span>Respuestas automáticas</span>
               <a
                 href={CONTACT_HREF}
@@ -352,18 +362,19 @@ export default function Chatbot() {
 
       {/* Teaser */}
       {!isOpen && showTeaser && (
-        <div
-          onClick={toggleChat}
-          className="absolute right-0 bottom-18 w-65 animate-chat-in cursor-pointer rounded-[16px_16px_4px_16px] border border-gray-200 bg-white py-3 pr-9 pl-3.5 text-sm/normal text-gray-700 shadow-lg"
-        >
-          ¿Tienes un viaje en mente? Cuéntanos y te ayudamos a planificarlo.
+        <div className="absolute right-0 bottom-18 w-65 animate-chat-in rounded-[16px_16px_4px_16px] border border-gray-200 bg-white text-sm/normal text-gray-700 shadow-lg">
           <button
-            onClick={e => {
-              e.stopPropagation();
-              markSeen();
-            }}
-            className={`absolute top-1 right-1 rounded-lg p-1 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 ${focusRing}`}
-            aria-label="Descartar"
+            type="button"
+            onClick={toggleChat}
+            className={`w-full cursor-pointer rounded-[inherit] py-3 pr-9 pl-3.5 text-left ${focusRing}`}
+          >
+            ¿Tienes un viaje en mente? Cuéntanos y te ayudamos a planificarlo.
+          </button>
+          <button
+            type="button"
+            onClick={markSeen}
+            className={`absolute top-1 right-1 rounded-lg p-1.5 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-900 ${focusRing}`}
+            aria-label="Descartar mensaje"
           >
             <Cross className="size-3.5" />
           </button>
@@ -372,6 +383,7 @@ export default function Chatbot() {
 
       {/* Floating Button */}
       <button
+        ref={launcherRef}
         onClick={toggleChat}
         className={`relative flex size-15 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-all duration-200 hover:bg-primary/90 hover:shadow-xl ${focusRing}`}
         aria-label={isOpen ? 'Cerrar chat' : 'Abrir chat'}

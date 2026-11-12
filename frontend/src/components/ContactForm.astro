@@ -6,6 +6,7 @@ interface InputsData {
   type: 'text' | 'email' | 'tel';
   id: string;
   placeholder: string;
+  autocomplete: string;
   pattern?: string;
   title?: string;
   required: boolean;
@@ -17,6 +18,7 @@ const INPUTS: InputsData[] = [
     type: 'text',
     id: 'name',
     placeholder: 'Introduce tu nombre',
+    autocomplete: 'given-name',
     required: true,
   },
   {
@@ -24,6 +26,7 @@ const INPUTS: InputsData[] = [
     type: 'text',
     id: 'surname',
     placeholder: 'Introduce tu apellido',
+    autocomplete: 'family-name',
     required: false,
   },
   {
@@ -31,6 +34,7 @@ const INPUTS: InputsData[] = [
     type: 'email',
     id: 'email',
     placeholder: 'Introduce tu email',
+    autocomplete: 'email',
     required: true,
   },
   {
@@ -38,6 +42,7 @@ const INPUTS: InputsData[] = [
     type: 'tel',
     id: 'phone',
     placeholder: 'Introduce tu teléfono',
+    autocomplete: 'tel',
     pattern: String.raw`^(\+?\d{1,3}\s*)?(\s*\d\s*){9}$`,
     title:
       '9 dígitos, con prefijo internacional opcional. Ej.: +34 604 11 26 28',
@@ -49,6 +54,9 @@ const { company } = SITE_CONFIG;
 ---
 
 <form class="space-y-6" autocomplete="on" data-contact-form>
+  <p class="text-sm text-gray-600">
+    Los campos marcados con * son obligatorios.
+  </p>
   <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
     {
       INPUTS.map(input => (
@@ -66,7 +74,8 @@ const { company } = SITE_CONFIG;
             name={input.id}
             placeholder={input.placeholder}
             required={input.required}
-            class="w-full border-b border-gray-300 pt-4 pb-2 placeholder:font-semibold focus:border-primary/70 focus:outline-none"
+            autocomplete={input.autocomplete}
+            class="w-full border-b border-gray-300 pt-4 pb-2 placeholder:font-semibold focus:border-primary focus:shadow-[0_1px_0_0_var(--color-primary)] focus:outline-none"
             pattern={input.pattern ? input.pattern : undefined}
             title={input.title}
           />
@@ -81,7 +90,7 @@ const { company } = SITE_CONFIG;
         id="message"
         name="message"
         placeholder="Cuéntanos más sobre tu viaje ideal..."
-        class="field-sizing-content min-h-32 w-full border-b border-gray-300 pt-4 pb-2 placeholder:font-semibold focus:border-primary/70 focus:outline-none"
+        class="field-sizing-content min-h-32 w-full border-b border-gray-300 pt-4 pb-2 placeholder:font-semibold focus:border-primary focus:shadow-[0_1px_0_0_var(--color-primary)] focus:outline-none"
         required></textarea>
     </div>
   </div>
@@ -105,13 +114,13 @@ const { company } = SITE_CONFIG;
       id="privacy"
       name="privacy"
       type="checkbox"
-      class="size-4 accent-primary"
+      class="size-4 shrink-0 accent-primary"
       required
     />
     <label for="privacy" class="block text-sm text-gray-600">
       Acepto la <a
         href="/politica-de-privacidad-y-cookies"
-        class="text-primary hover:underline">política de privacidad</a
+        class="text-primary underline">política de privacidad</a
       > y el tratamiento de mis datos
     </label>
   </div>
@@ -120,6 +129,7 @@ const { company } = SITE_CONFIG;
     data-form-status
     role="status"
     aria-live="polite"
+    tabindex="-1"
     hidden
     class="rounded-xl border px-4 py-3 text-sm leading-relaxed"
   >
@@ -134,7 +144,7 @@ const { company } = SITE_CONFIG;
 
   <button
     type="submit"
-    class="w-full rounded-xl bg-primary px-4 py-3 font-bold text-white transition duration-300 hover:bg-primary/90"
+    class="w-full rounded-xl bg-primary px-4 py-3 font-bold text-white transition duration-300 hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-60"
   >
     Enviar Consulta
   </button>
@@ -207,6 +217,9 @@ const { company } = SITE_CONFIG;
         status.hidden = false;
         // El email de respaldo solo tiene sentido cuando el envío ha fallado
         if (fallback) fallback.hidden = state !== 'error';
+        // Moving focus gets the outcome read aloud and scrolled into view;
+        // a live region revealed from `hidden` is not announced reliably.
+        status.focus();
       }
 
       function hideStatus() {

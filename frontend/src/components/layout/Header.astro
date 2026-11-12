@@ -3,7 +3,19 @@ import { Image } from 'astro:assets';
 import logo from '@/assets/images/brand/logo.webp';
 import Menu from '@/assets/icons/menu.svg';
 
-const isHome = Astro.url.pathname === '/';
+const pathname = Astro.url.pathname;
+const isHome = pathname === '/';
+
+const links = [
+  { href: '/destinos', label: 'Destinos' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/viajeros', label: 'Viajeros' },
+  { href: '/sobre-nosotros', label: 'Sobre Nosotros' },
+];
+
+// A section link stays current on its detail pages (/blog/<slug> → Blog).
+const getAriaCurrent = (href: string) =>
+  pathname === href || pathname.startsWith(`${href}/`) ? 'page' : undefined;
 ---
 
 <header
@@ -36,10 +48,17 @@ const isHome = Astro.url.pathname === '/';
       aria-label="Navegación principal"
       class="hidden space-x-8 text-base lg:flex lg:items-center"
     >
-      <a href="/destinos" class="hover:text-primary">Destinos</a>
-      <a href="/blog" class="hover:text-primary">Blog</a>
-      <a href="/viajeros" class="hover:text-primary">Viajeros</a>
-      <a href="/sobre-nosotros" class="hover:text-primary">Sobre Nosotros</a>
+      {
+        links.map(link => (
+          <a
+            href={link.href}
+            aria-current={getAriaCurrent(link.href)}
+            class="hover:text-primary aria-[current=page]:font-bold aria-[current=page]:text-primary"
+          >
+            {link.label}
+          </a>
+        ))
+      }
       <a
         href="/contacto"
         class="rounded-xl bg-primary px-4 py-2 font-bold text-white transition duration-300 hover:bg-primary/90"
@@ -49,21 +68,22 @@ const isHome = Astro.url.pathname === '/';
 
     <button
       id="menu-toggle"
-      aria-label="Abrir y cerrar menú de navegación"
+      type="button"
+      aria-label="Abrir menú de navegación"
       aria-expanded="false"
       aria-controls="mobile-menu"
-      class="focus:outline-none lg:hidden"
+      class="-m-2 rounded-lg p-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current lg:hidden"
     >
       <Menu class="size-6" />
     </button>
   </div>
 
   <!-- Mobile menu -->
-  <nav
+  <div
     id="mobile-menu"
     role="dialog"
     aria-modal="true"
-    aria-label="Navegación móvil"
+    aria-label="Menú de navegación"
     tabindex="-1"
     class="fixed inset-0 z-50 hidden flex-col items-center space-y-6 overflow-y-auto bg-white/95 px-3 py-4 text-center backdrop-blur-lg md:px-6 lg:hidden"
   >
@@ -71,11 +91,13 @@ const isHome = Astro.url.pathname === '/';
       <span class="text-lg font-bold text-gray-800">Menú</span>
       <button
         id="menu-close"
+        type="button"
         aria-label="Cerrar menú de navegación"
         class="rounded-lg p-2 text-gray-600 hover:bg-gray-100 focus:ring-2 focus:ring-primary focus:outline-none"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
           class="size-6"
           fill="none"
           viewBox="0 0 24 24"
@@ -89,28 +111,28 @@ const isHome = Astro.url.pathname === '/';
         </svg>
       </button>
     </div>
-    <a
-      href="/destinos"
-      class="block py-3 text-xl text-gray-800 hover:text-primary">Destinos</a
+    <nav
+      aria-label="Navegación móvil"
+      class="flex flex-col items-center space-y-6"
     >
-    <a href="/blog" class="block py-3 text-xl text-gray-800 hover:text-primary"
-      >Blog</a
-    >
-    <a
-      href="/viajeros"
-      class="block py-3 text-xl text-gray-800 hover:text-primary">Viajeros</a
-    >
-    <a
-      href="/sobre-nosotros"
-      class="block py-3 text-xl text-gray-800 hover:text-primary"
-      >Sobre Nosotros</a
-    >
-    <a
-      href="/contacto"
-      class="rounded-xl bg-primary px-6 py-3 text-xl font-bold text-white transition duration-300 hover:bg-primary/90"
-      >Planifica tu Viaje</a
-    >
-  </nav>
+      {
+        links.map(link => (
+          <a
+            href={link.href}
+            aria-current={getAriaCurrent(link.href)}
+            class="block py-3 text-xl text-gray-800 hover:text-primary aria-[current=page]:font-bold aria-[current=page]:text-primary"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+      <a
+        href="/contacto"
+        class="rounded-xl bg-primary px-6 py-3 text-xl font-bold text-white transition duration-300 hover:bg-primary/90"
+        >Planifica tu Viaje</a
+      >
+    </nav>
+  </div>
 </header>
 
 <script>
@@ -130,6 +152,7 @@ const isHome = Astro.url.pathname === '/';
 
   function openMenu() {
     menuToggle?.setAttribute('aria-expanded', 'true');
+    menuToggle?.setAttribute('aria-label', 'Cerrar menú de navegación');
     mobileMenu?.classList.remove('hidden');
     mobileMenu?.classList.add('flex');
     document.body.style.overflow = 'hidden';
@@ -138,6 +161,7 @@ const isHome = Astro.url.pathname === '/';
 
   function closeMenu() {
     menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.setAttribute('aria-label', 'Abrir menú de navegación');
     mobileMenu?.classList.add('hidden');
     mobileMenu?.classList.remove('flex');
     document.body.style.overflow = '';
@@ -150,6 +174,14 @@ const isHome = Astro.url.pathname === '/';
   });
 
   menuClose?.addEventListener('click', closeMenu);
+
+  // The menu only exists below lg: crossing the breakpoint while it is open
+  // (e.g. rotating a tablet) would otherwise leave the page scroll-locked.
+  window.matchMedia('(min-width: 1024px)').addEventListener('change', e => {
+    if (e.matches && menuToggle?.getAttribute('aria-expanded') === 'true') {
+      closeMenu();
+    }
+  });
 
   // Close on Escape and trap focus within menu
   mobileMenu?.addEventListener('keydown', e => {

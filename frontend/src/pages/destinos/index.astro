@@ -107,7 +107,11 @@ const categories = [
           class="mb-6"
         />
 
-        <div class="flex flex-wrap justify-center gap-2.5">
+        <div
+          role="group"
+          aria-label="Filtrar por categoría"
+          class="flex flex-wrap justify-center gap-2.5"
+        >
           {
             categories.map(cat => (
               <button
@@ -115,9 +119,10 @@ const categories = [
                 class="hero-chip inline-flex cursor-pointer items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-[9px] text-sm font-bold text-gray-800 transition-all duration-150 hover:border-primary hover:text-primary"
                 data-category={cat.id}
                 data-active={cat.id === 'all' ? 'true' : 'false'}
+                aria-pressed={cat.id === 'all' ? 'true' : 'false'}
               >
                 {cat.label}
-                <span class="text-xs font-extrabold text-gray-400">
+                <span class="text-xs font-extrabold text-gray-500">
                   {cat.count}
                 </span>
               </button>

@@ -32,81 +32,82 @@ const timelineItems: TimelineItem[] = [
 ---
 
 <div class="mx-auto max-w-7xl">
-  <ol class="tl" data-timeline>
+  <div class="tl" data-timeline>
     <span class="tl-rail" data-rail aria-hidden="true"></span>
     <span class="tl-fill" data-fill aria-hidden="true"></span>
-    {
-      timelineItems.map((item, index) => {
-        const onRight = index % 2 === 0;
-        const isLast = index === timelineItems.length - 1;
-        return (
-          <li class:list={['tl-item', { 'tl-item--last': isLast }]}>
-            <span class="tl-node" data-node aria-hidden="true" />
-            <span
-              class:list={[
-                'tl-date',
-                onRight ? 'tl-date--pillLeft' : 'tl-date--pillRight',
-              ]}
-              data-date
-            >
-              {item.date}
-            </span>
-            <div class="tl-col tl-col--left">
-              {!onRight && (
-                <div class="tl-card">
-                  <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                    {item.title}
-                  </h3>
-                  <p class="leading-relaxed text-gray-600">
-                    {item.description}
-                  </p>
-                  {item.link && (
-                    <a
-                      href={item.link}
-                      class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline focus:underline"
-                    >
-                      Ver más
-                      <HalfArrow class="size-5" />
-                    </a>
-                  )}
-                </div>
-              )}
-            </div>
-            <div class="tl-col tl-col--mid" aria-hidden="true" />
-            <div class="tl-col tl-col--right">
-              {onRight && (
-                <div class="tl-card">
-                  <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                    {item.title}
-                  </h3>
-                  <p class="leading-relaxed text-gray-600">
-                    {item.description}
-                  </p>
-                  {item.link && (
-                    <a
-                      href={item.link}
-                      class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline focus:underline"
-                    >
-                      Ver más
-                      <HalfArrow class="size-5" />
-                    </a>
-                  )}
-                </div>
-              )}
-            </div>
-          </li>
-        );
-      })
-    }
-  </ol>
+    <ol>
+      {
+        timelineItems.map((item, index) => {
+          const onRight = index % 2 === 0;
+          const isLast = index === timelineItems.length - 1;
+          return (
+            <li class:list={['tl-item', { 'tl-item--last': isLast }]}>
+              <span class="tl-node" data-node aria-hidden="true" />
+              <span
+                class:list={[
+                  'tl-date',
+                  onRight ? 'tl-date--pillLeft' : 'tl-date--pillRight',
+                ]}
+                data-date
+              >
+                {item.date}
+              </span>
+              <div class="tl-col tl-col--left">
+                {!onRight && (
+                  <div class="tl-card">
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                      {item.title}
+                    </h3>
+                    <p class="leading-relaxed text-gray-600">
+                      {item.description}
+                    </p>
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline focus:underline"
+                      >
+                        Ver más
+                        <span class="sr-only">sobre {item.title}</span>
+                        <HalfArrow aria-hidden="true" class="size-5" />
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+              <div class="tl-col tl-col--mid" aria-hidden="true" />
+              <div class="tl-col tl-col--right">
+                {onRight && (
+                  <div class="tl-card">
+                    <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                      {item.title}
+                    </h3>
+                    <p class="leading-relaxed text-gray-600">
+                      {item.description}
+                    </p>
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline focus:underline"
+                      >
+                        Ver más
+                        <span class="sr-only">sobre {item.title}</span>
+                        <HalfArrow aria-hidden="true" class="size-5" />
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </li>
+          );
+        })
+      }
+    </ol>
+  </div>
 </div>
 
 <style>
   .tl {
     position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
 
   /* Continuous base rail — spans first node to last node (set via JS) */

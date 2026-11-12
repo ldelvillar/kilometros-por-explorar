@@ -48,17 +48,16 @@ export default function CookieBanner() {
 
   return (
     <div
-      class="fixed right-0 bottom-0 left-0 z-50 border-t-2 border-primary bg-white shadow-2xl"
-      role="dialog"
-      aria-live="polite"
+      class="fixed right-0 bottom-0 left-0 z-60 border-t-2 border-primary bg-white shadow-2xl"
+      role="region"
       aria-label="Consentimiento de cookies"
     >
       <div class="container mx-auto max-w-6xl px-4 py-6">
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div class="flex-1">
-            <h3 class="mb-2 text-lg font-bold text-gray-900">
-              🍪 Usamos cookies
-            </h3>
+            <p class="mb-2 text-lg font-bold text-gray-900">
+              <span aria-hidden="true">🍪 </span>Usamos cookies
+            </p>
             <p class="text-sm text-gray-600">
               Este sitio utiliza cookies analíticas (Google Analytics) para
               mejorar tu experiencia. Puedes aceptarlas o rechazarlas.{' '}

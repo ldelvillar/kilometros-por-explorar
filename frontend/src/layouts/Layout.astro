@@ -71,9 +71,10 @@ const {
     >
       Saltar al contenido
     </a>
+    {/* First in the DOM so keyboard users reach it before the page content */}
+    <CookieBanner client:idle />
     <Header />
     <slot />
-    <CookieBanner client:idle />
     <Chatbot client:idle />
     <Footer />
   </body>

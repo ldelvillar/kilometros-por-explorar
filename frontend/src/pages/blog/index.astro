@@ -98,6 +98,7 @@ function getSearchText(post: CollectionEntry<'blog'>) {
             <div class="blog-item" data-search={getSearchText(post)}>
               <BlogCard
                 post={post}
+                headingLevel="h2"
                 loading={index < 3 ? 'eager' : 'lazy'}
                 priority={index === 0}
               />
@@ -113,7 +114,7 @@ function getSearchText(post: CollectionEntry<'blog'>) {
         <div
           class="mx-auto mb-6 flex size-18 items-center justify-center rounded-full bg-primary/10"
         >
-          <Magnifier class="size-8 text-primary" />
+          <Magnifier aria-hidden="true" class="size-8 text-primary" />
         </div>
         <h2 class="mb-2 text-2xl font-bold text-gray-900">
           Sin resultados para «<span id="blog-no-results-query"></span>»
@@ -160,6 +161,7 @@ function getSearchText(post: CollectionEntry<'blog'>) {
     const noResults = document.getElementById('blog-no-results');
     const noResultsQuery = document.getElementById('blog-no-results-query');
     const cta = document.getElementById('blog-cta');
+    const status = document.getElementById('blog-search-status');
 
     if (!searchInput) return;
 
@@ -178,14 +180,19 @@ function getSearchText(post: CollectionEntry<'blog'>) {
       });
 
       const count = matched.size;
+      const countText =
+        count === 1
+          ? '1 artículo encontrado'
+          : `${count} artículos encontrados`;
 
       // Heading with the result count (hidden when there are no matches).
       if (resultsCount) {
-        resultsCount.textContent =
-          count === 1
-            ? '1 artículo encontrado'
-            : `${count} artículos encontrados`;
+        resultsCount.textContent = countText;
         resultsCount.hidden = count === 0;
+      }
+      if (status) {
+        status.textContent =
+          count === 0 ? `Sin resultados para «${query}»` : countText;
       }
 
       // Empty state shows the searched term and hides the page CTA.
@@ -200,6 +207,7 @@ function getSearchText(post: CollectionEntry<'blog'>) {
       if (resultsCount) resultsCount.hidden = true;
       if (noResults) noResults.classList.add('hidden');
       if (cta) cta.hidden = false;
+      if (status) status.textContent = '';
     }
 
     initSearchInput(searchInput, searchButton, {

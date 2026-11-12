@@ -10,9 +10,15 @@ interface Props {
   post: CollectionEntry<'blog'>;
   loading: 'eager' | 'lazy';
   priority?: boolean;
+  headingLevel?: 'h2' | 'h3';
 }
 
-const { post, loading, priority = false } = Astro.props;
+const {
+  post,
+  loading,
+  priority = false,
+  headingLevel: Heading = 'h3',
+} = Astro.props;
 const readingTime = getReadingTime(post.body);
 ---
 
@@ -31,9 +37,9 @@ const readingTime = getReadingTime(post.body);
     </div>
 
     <div class="flex flex-1 flex-col p-6 text-start">
-      <h2 class="mb-4 text-2xl font-bold text-primary">
+      <Heading class="mb-4 text-2xl font-bold text-primary">
         {post.data.title}
-      </h2>
+      </Heading>
       <p class="mb-4 flex-1 text-neutral-800">
         {post.data.description}
       </p>
@@ -41,7 +47,7 @@ const readingTime = getReadingTime(post.body);
         class="mb-2 flex flex-wrap items-center justify-between gap-x-2 text-sm text-neutral-500"
       >
         <span class="inline-flex items-center gap-1.5">
-          <Calendar class="size-4.5 text-primary" />
+          <Calendar aria-hidden="true" class="size-4.5 text-primary" />
           {
             new Date(post.data.date).toLocaleDateString('es-ES', {
               day: '2-digit',
@@ -51,8 +57,8 @@ const readingTime = getReadingTime(post.body);
           }
         </span>
         <span class="inline-flex items-center gap-1.5">
-          <Clock class="size-4.5 text-primary" />
-          {readingTime} min
+          <Clock aria-hidden="true" class="size-4.5 text-primary" />
+          {readingTime} min<span class="sr-only"> de lectura</span>
         </span>
       </div>
       <ArrowLink>
