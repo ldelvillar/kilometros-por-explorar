@@ -1,4 +1,3 @@
-// Forma mínima de un nodo hast: @types/hast no es dependencia del proyecto.
 type HastNode = {
   type: string;
   tagName?: string;
@@ -7,17 +6,18 @@ type HastNode = {
   children?: HastNode[];
 };
 
-/**
- * Envuelve las imágenes de Markdown en un <figure> con su alt como pie de foto.
- * Se ejecuta antes que el plugin de imágenes de Astro, así que el alt todavía
- * está disponible en las propiedades del nodo.
- */
+const PROSE_IMAGE_SIZES = '(min-width: 896px) 864px, calc(100vw - 2rem)';
+
 export function rehypeImageFigures() {
   return function transform(node: HastNode) {
     if (!node.children) return;
 
     node.children = node.children.map(child => {
       transform(child);
+
+      if (child.tagName === 'img') {
+        child.properties = { ...child.properties, sizes: PROSE_IMAGE_SIZES };
+      }
 
       if (child.type !== 'element' || child.tagName !== 'p') return child;
 

@@ -18,6 +18,7 @@ const blogLastmods = getBlogLastmods();
 export default defineConfig({
   site: SITE_CONFIG.domain,
   trailingSlash: 'never',
+  prefetch: { prefetchAll: true },
   env: {
     schema: {
       PUBLIC_CONTACT_FORM_ENDPOINT: envField.string({
@@ -45,14 +46,11 @@ export default defineConfig({
     }),
   },
   integrations: [
-    // Solo en build: la CSP vive en vercel.json y `astro dev` no la aplica,
-    // así que en local se puede apuntar a un backend distinto sin romper nada.
     {
       name: 'csp-endpoints-check',
       hooks: { 'astro:build:start': assertCspAllowsEndpoints },
     },
     sitemap({
-      // Only the blog tracks when an entry actually changed. Every other page ships without lastmod
       serialize(item) {
         const pathname = new URL(item.url).pathname.replace(/\/$/, '') || '/';
 
