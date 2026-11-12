@@ -155,6 +155,9 @@ const getAriaCurrent = (href: string) =>
     menuToggle?.setAttribute('aria-label', 'Cerrar menú de navegación');
     mobileMenu?.classList.remove('hidden');
     mobileMenu?.classList.add('flex');
+    // The menu lives in the header's stacking context: lift it above the chat
+    // launcher (z-50) while open, still below the cookie banner (z-60).
+    mobileMenu?.closest('header')?.classList.replace('z-40', 'z-55');
     document.body.style.overflow = 'hidden';
     menuClose?.focus();
   }
@@ -164,6 +167,7 @@ const getAriaCurrent = (href: string) =>
     menuToggle?.setAttribute('aria-label', 'Abrir menú de navegación');
     mobileMenu?.classList.add('hidden');
     mobileMenu?.classList.remove('flex');
+    mobileMenu?.closest('header')?.classList.replace('z-55', 'z-40');
     document.body.style.overflow = '';
     menuToggle?.focus();
   }
