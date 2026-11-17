@@ -1,7 +1,8 @@
 ---
 title: 'Qué ver en Londres en cinco días'
-description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Londres durante 5 días para descubrir la capital británica.'
+description: 'Itinerario de Londres en 5 días: Westminster, Torre de Londres, museos gratuitos, Camden, Notting Hill y Hampton Court, con precios, transporte y presupuesto.'
 date: 2025-08-10
+updatedDate: 2026-11-17
 image: '../../assets/images/blog/londres-en-5-dias/cover.webp'
 imageAlt: 'Calle de Londres decorada con luces navideñas en forma de ángel, con un autobús rojo de dos pisos'
 destinations: ['londres']
@@ -14,109 +15,251 @@ faqs:
     answer: 'Solo si vas a estar en Londres <strong>más de 5 días</strong>. Stonehenge está a unas 2 horas de distancia, por lo que la excursión te consumirá un día entero. Si tienes poco tiempo, es más recomendable visitar el <strong>Castillo de Windsor</strong> o el Palacio de Hampton Court, que están a solo 30-40 minutos en tren.'
   - question: '¿Cuál es la mejor zona para alojarse en Londres?'
     answer: 'Para una primera visita, la zona de <strong>King’s Cross / St. Pancras</strong> es estratégica por su conexión inmejorable. Si prefieres estar en el meollo turístico, busca cerca de <strong>Covent Garden</strong> o <strong>Soho</strong>, aunque es caro. Si buscas un barrio elegante, seguro y cerca de los museos, elige <strong>South Kensington</strong>.'
+  - question: '¿Necesito algún permiso para viajar a Londres desde España?'
+    answer: 'Sí. Además del <strong>pasaporte en vigor</strong>, los españoles necesitan una <strong>ETA</strong> (autorización electrónica de viaje), que se tramita online en la web oficial del Gobierno británico. Cuesta 20£ (unos 23€), y conviene pedirla con antelación antes de volar.'
 ---
 
-Londres, la vibrante capital del Reino Unido, es una metrópolis fascinante donde la historia milenaria convive con la innovación más vanguardista. Con más de 2.000 años de historia desde su fundación romana, esta ciudad cosmopolita ofrece una combinación inigualable de palacios reales, museos de clase mundial, teatros legendarios, mercados bulliciosos y una diversidad cultural que la convierte en una de las ciudades más emocionantes del planeta. Cinco días es el tiempo ideal para sumergirte en su esencia sin sentir que corres de un lugar a otro.
+Londres cobra unas 35-40£ (unos 40-46€) por entrar a la Torre de Londres y, aun así, buena parte de lo mejor de la ciudad no cuesta nada. Cinco días dan para recorrer Westminster, los grandes museos, los mercados y los barrios más distintos sin sentir que corres de un lugar a otro.
 
-Cinco días en Londres te permiten explorar sus barrios icónicos desde Westminster hasta Camden, admirar las Joyas de la Corona en la Torre de Londres, contemplar obras maestras en la National Gallery, pasear por los parques reales, cruzar el mítico Tower Bridge, disfrutar de musicales en el West End y experimentar la auténtica cultura británica en sus tradicionales pubs. La ciudad ofrece una experiencia única donde la tradición de la monarquía se mezcla con el arte callejero de Banksy, donde puedes tomar el té de la tarde en salones elegantes o disfrutar de curry en Brick Lane, y donde cada barrio tiene su propia personalidad distintiva.
+Este itinerario combina los monumentos clásicos con tiempo para la Londres que muchos turistas se pierden. Cada día tiene un tema central y suficiente margen para adaptarlo a tus intereses, desde mercados vintage hasta galerías de arte contemporáneo, pasando por cruceros por el Támesis y sesiones de afternoon tea.
 
-Hemos diseñado este itinerario equilibrando los monumentos imprescindibles con tiempo para descubrir la Londres auténtica que muchos turistas se pierden. Cada día tiene un tema central pero con flexibilidad suficiente para adaptarse a tus intereses, desde mercados vintage hasta galerías de arte contemporáneo, pasando por cruceros por el Támesis y sesiones de afternoon tea. Lo mejor: la mayoría de los museos principales son gratuitos, lo que hace que Londres sea más accesible de lo que imaginas.
+Si es tu primera vez en la ciudad, consulta también nuestra página de [viajar a Londres a tu medida](/destinos/londres).
 
 ## Día 1: Londres monumental y Westminster
 
-Tu primera mañana en Londres debe comenzar en el corazón político y ceremonial de la nación: Westminster. Llega temprano (alrededor de las 8:30 AM) a la Abadía de Westminster, la iglesia gótica donde se han coronado todos los monarcas británicos desde 1066. Compra tu entrada online con antelación (£27 para adultos) para evitar colas y dedica al menos 90 minutos a explorar este tesoro arquitectónico. Admira la Coronation Chair, las tumbas de reyes y reinas, el Rincón de los Poetas donde están enterrados Chaucer, Dickens y Tennyson, y la espectacular bóveda de abanico de la Capilla de Enrique VII.
+Tu primera mañana debe empezar en el corazón político y ceremonial del país. Llega a la Abadía de Westminster a primera hora, la iglesia gótica donde se han coronado los monarcas británicos desde 1066. Compra la entrada online con antelación (32£, unos 37€) y reserva al menos 90 minutos para recorrerla.
 
-Sal de la Abadía y camina hasta el Palacio de Westminster y el icónico Big Ben (oficialmente Elizabeth Tower). Aunque el interior del Parlamento solo se puede visitar en tours guiados específicos, el exterior es impresionante y perfecto para fotos. Cruza Westminster Bridge para obtener la vista clásica del Parlamento con el Big Ben, luego regresa y camina por Parliament Square para ver las estatuas de Churchill, Mandela y Gandhi.
+Dentro, fíjate en:
 
-> [!TIP/Londres es complejo de organizar sin ayuda]
-> Entre reservar la Abadía, la Torre de Londres, Palacio de Buckingham (solo verano), coordinar horarios para evitar colas, decidir si comprar London Pass... son horas de planificación. Si estás combinando Londres con otras ciudades europeas, nosotros sincronizamos todo el itinerario multi-país. [Agenda tu consulta gratuita](/contacto).
+- **Coronation Chair**, el trono de las coronaciones.
+- **Rincón de los Poetas**, donde están enterrados Chaucer, Dickens y Tennyson.
+- **Capilla de Enrique VII**, con su bóveda de abanico.
 
-Continúa hacia Downing Street para ver la famosa puerta del número 10 (solo desde las rejas), y sigue hasta Horse Guards Parade para presenciar el cambio de guardia de la Household Cavalry a las 11:00 AM de lunes a sábado, o 10:00 AM los domingos. Camina por The Mall, el bulevar ceremonial bordeado de banderas, hasta llegar al Palacio de Buckingham. Si es entre julio y septiembre, puedes visitar las State Rooms (£30-33); el resto del año, admira el exterior y las rejas doradas, y intenta llegar a las 11:00 AM para el cambio de guardia (lunes, miércoles, viernes y domingos, verifica horarios que cambian según temporada).
+Sal de la Abadía y camina hasta el Palacio de Westminster y el Big Ben (oficialmente Elizabeth Tower). El interior del Parlamento solo se visita en tours guiados específicos, pero el exterior merece la foto. Cruza **Westminster Bridge** para la vista clásica del Parlamento y regresa por **Parliament Square**, con las estatuas de Churchill, Mandela y Gandhi.
 
-Por la tarde, pasea por St James's Park, el parque real más antiguo de Londres con vistas perfectas del Palacio de Buckingham desde el puente sobre el lago. Continúa hacia Trafalgar Square, el epicentro de Londres con la imponente Columna de Nelson y las fuentes. Visita la National Gallery que rodea la plaza - uno de los museos de arte más importantes del mundo con obras de Van Gogh, Da Vinci, Velázquez, Rembrandt y Turner. La entrada es GRATUITA (aunque aceptan donaciones). Termina tu primer día cenando en Covent Garden, explorando sus calles empedradas, artistas callejeros, tiendas boutique y el histórico mercado cubierto antes de disfrutar de un musical en el West End si te apetece.
+Continúa hacia **Downing Street** para ver la puerta del número 10 (solo desde las rejas) y sigue hasta **Horse Guards Parade**, donde se celebra el cambio de guardia de la Household Cavalry. Consulta el calendario oficial, porque los días y las horas cambian según la temporada.
+
+Camina por **The Mall**, el bulevar ceremonial bordeado de banderas, hasta el Palacio de Buckingham. En verano abren las State Rooms (unas 30-40£, unos 35-46€; confirma las fechas de cada temporada). El resto del año, admira el exterior y las rejas doradas.
+
+Por la tarde, pasea por **St James's Park**, el parque real más antiguo de Londres, con buenas vistas del palacio desde el puente sobre el lago. Después llega a **Trafalgar Square**, con la Columna de Nelson y las fuentes.
+
+Visita la **National Gallery**, que rodea la plaza: Van Gogh, Da Vinci, Velázquez, Rembrandt y Turner. La entrada es gratuita, aunque aceptan donaciones.
+
+Termina el día cenando en **Covent Garden**, entre calles empedradas, artistas callejeros y el mercado cubierto. Si te apetece, cierra con un musical en el West End.
+
+> [!TIP/Londres da trabajo de organizar]
+> Entre reservar la Abadía y la Torre de Londres, ajustar horarios para evitar colas y decidir si compensa un pase de atracciones, el primer día ya se lleva horas de planificación. Y quedan cuatro más.
+>
+> Nosotros diseñamos tu ruta desde cero y nos encargamos de reservar cada entrada, para que llegues a Londres con todo resuelto. [Agenda tu consulta gratuita](/contacto).
 
 ## Día 2: La Torre de Londres y el Támesis
 
-El segundo día comienza con uno de los monumentos más emblemáticos: la Torre de Londres. Llega cuando abren (9:00 AM en invierno, 9:00 AM los martes-sábados y 10:00 AM domingos-lunes en verano) para evitar las multitudes. Compra las entradas online con antelación (£34.80 para adultos) y dedica al menos 3 horas a explorar esta fortaleza normanda de 1.000 años que ha servido como palacio real, prisión, arsenal y ahora alberga las Joyas de la Corona. No te pierdas el tour guiado gratuito con los Beefeaters (Yeoman Warders) que comienza cada 30 minutos - son guardias ceremoniales con uniformes Tudor que cuentan historias fascinantes con humor británico.
+El segundo día arranca con uno de los monumentos más emblemáticos. Llega a la Torre de Londres cuando abren, para evitar las multitudes, y compra la entrada online (unas 35-40£, unos 40-46€). Dedica al menos 3 horas a esta fortaleza normanda de unos 1.000 años, que fue palacio real, prisión y arsenal y hoy guarda las Joyas de la Corona.
 
-Explora la White Tower (la torre central normanda), las exposiciones de armaduras reales, los graffiti de prisioneros históricos en las torres, y por supuesto, la cámara acorazada con las Joyas de la Corona incluyendo la Corona Imperial del Estado con 2.868 diamantes, 273 perlas, 17 zafiros, 11 esmeraldas y 5 rubíes. Visita también el Memorial a las Ejecuciones en Tower Green donde fueron decapitadas Ana Bolena, Catalina Howard y Lady Jane Grey. No olvides saludar a los cuervos de la Torre - la leyenda dice que si se van, la monarquía caerá.
+No te pierdas el tour guiado gratuito con los **Beefeaters** (Yeoman Warders), guardias ceremoniales con uniforme Tudor que cuentan historias con humor británico. Los tours salen a lo largo del día, así que pregunta la hora de la siguiente al entrar.
 
-Después de la Torre, camina hasta el icónico Tower Bridge (5 minutos a pie). Puedes cruzarlo gratis o pagar £12.30 para acceder al pasaje de cristal en la parte superior con vistas hacia abajo del Támesis y a la sala de máquinas victoriana. Continúa por la orilla sur del Támesis en la Queen's Walk, un paseo peatonal que ofrece vistas espectaculares de la City de Londres. Pasa por el moderno ayuntamiento (The Scoop), el HMS Belfast (un crucero de guerra museo), y llega hasta Borough Market, uno de los mercados de comida más antiguos y famosos de Londres (abierto de lunes a sábado, mejor de jueves a sábado).
+Lo más destacado de la visita:
 
-Almuerza en Borough Market probando comida de todo el mundo - desde ostras frescas hasta raclette suizo, paella española o brownies artesanales. Continúa por la orilla hasta Shakespeare's Globe Theatre, una reconstrucción del teatro original donde se representaban las obras de Shakespeare. Puedes hacer un tour guiado (£17) o mejor aún, ver una obra (algunas entradas de pie cuestan solo £5). Más adelante está la Tate Modern, el museo de arte contemporáneo en una antigua central eléctrica - entrada GRATUITA. Termina el día cruzando el Millennium Bridge (el puente peatonal que aparece en Harry Potter) hacia St Paul's Cathedral, cuya cúpula domina el skyline. Si tienes energía, visita la catedral (£21, última entrada a las 4:15 PM) y sube los 528 escalones hasta la Golden Gallery para vistas panorámicas de 360 grados de Londres.
+- **White Tower**, la torre central normanda, con las exposiciones de armaduras reales.
+- **Joyas de la Corona**, con la Corona Imperial del Estado: 2.868 diamantes, 273 perlas, 17 zafiros, 11 esmeraldas y 5 rubíes.
+- **Tower Green**, donde fueron decapitadas Ana Bolena, Catalina Howard y Lady Jane Grey.
+- **Los cuervos**: la leyenda dice que si se van, la monarquía caerá.
+
+Después camina cinco minutos hasta **Tower Bridge**. Puedes cruzarlo gratis o pagar 18£ (unos 21€) por la pasarela de cristal y la sala de máquinas victoriana. Continúa por la orilla sur del Támesis, en la Queen's Walk, con vistas de la City.
+
+Por el camino pasarás junto al ayuntamiento (The Scoop) y el HMS Belfast, un crucero de guerra convertido en museo. Llegarás a **Borough Market**, uno de los mercados de comida más antiguos de Londres, que cierra los lunes. [Ver ubicación en el mapa](https://www.google.com/maps/search/?api=1&query=Borough+Market+London).
+
+Almuerza allí, con comida de todo el mundo: ostras frescas, raclette suizo, paella española o brownies artesanales. Sigue por la orilla hasta **Shakespeare's Globe Theatre**, reconstrucción del teatro original. Puedes hacer el tour guiado (unas 31£, unos 36€) o, mejor aún, ver una obra: las entradas de pie cuestan desde unas 5-10£ (unos 6-12€).
+
+Más adelante está la **Tate Modern**, museo de arte contemporáneo en una antigua central eléctrica, con entrada gratuita. Cruza después el **Millennium Bridge**, el puente peatonal que aparece en Harry Potter, hacia la catedral de San Pablo.
+
+Si tienes energía, visita **St Paul's Cathedral** (27£, unos 31€). La última entrada suele ser a las 16:00, y los 528 escalones hasta la Golden Gallery dan vistas de 360 grados de Londres.
 
 ## Día 3: Museos de clase mundial y barrios elegantes
 
-El tercer día está dedicado al arte, la cultura y la elegancia londinense. Comienza temprano en South Kensington, el barrio de los museos. El Museo de Historia Natural es tu primera parada - un edificio victoriano espectacular que alberga desde el esqueleto de un Diplodocus (ahora reemplazado por una ballena azul colgante) hasta la colección de dinosaurios, gemas preciosas y especímenes de todo el planeta. La entrada es GRATUITA. Dedica 2-3 horas explorando las galerías, especialmente la sección de dinosaurios que fascina a visitantes de todas las edades.
+El tercer día está dedicado al arte, la cultura y la elegancia londinense. Empieza temprano en **South Kensington**, el barrio de los museos, por el Museo de Historia Natural. Es un edificio victoriano con dinosaurios, gemas y especímenes de todo el planeta, y en su vestíbulo cuelga una ballena azul. La entrada es gratuita. Dedica 2-3 horas.
 
-Justo al lado está el Museo de Ciencias, también GRATUITO, con exposiciones interactivas sobre aviación, exploración espacial, revolución industrial y tecnología. Si viajas con niños o te interesan la ciencia y la tecnología, vale la pena dedicarle tiempo. El tercer museo del complejo es el Victoria & Albert Museum (V&A), el museo de artes decorativas más grande del mundo con colecciones de moda, joyería, cerámica, muebles, fotografía y diseño que abarcan 5.000 años. También GRATUITO. Elige uno o dos museos según tus intereses - intentar los tres en un día es agotador.
+Justo al lado tienes dos museos más, también gratuitos:
 
-Después de los museos, pasea por las elegantes calles de Knightsbridge hacia Harrods, los grandes almacenes más famosos de Londres. Incluso si no compras nada, vale la pena entrar para admirar los interiores opulentos, especialmente el Egyptian Hall decorado con jeroglíficos y el Food Hall con techos art nouveau. Cruza Hyde Park, uno de los Parques Reales más grandes de Londres, hasta llegar a Kensington Palace, residencia de la familia real (el Príncipe William y Kate vivieron aquí). Puedes visitar las State Rooms y exhibiciones sobre Victoria, Diana y otros miembros de la realeza (£17.50).
+- **Museo de Ciencias**: aviación, exploración espacial, revolución industrial y tecnología. Vale la pena si viajas con niños.
+- **Victoria & Albert Museum (V&A)**: uno de los mayores museos de artes decorativas y diseño, con moda, joyería, cerámica, muebles y fotografía de 5.000 años.
 
-Por la tarde, dirígete al barrio de Notting Hill, famoso por la película del mismo nombre. Pasea por las calles con casas victorianas de colores pastel, especialmente Lancaster Road y Portobello Road. Si es sábado, el Mercado de Portobello Road está en pleno apogeo con antigüedades, vintage, comida callejera y artesanías. Aprovecha para tomar un afternoon tea en alguno de los cafés encantadores del barrio. Termina el día explorando las boutiques independientes, librerías como Notting Hill Bookshop (la de la película) y tiendas vintage que dan al barrio su carácter bohemio-chic. Cena en uno de los gastropubs del área o reserva con antelación en algún restaurante de moda en Westbourne Grove.
+Elige uno o dos según tus intereses: intentar los tres en un día agota.
+
+Después pasea por las calles de **Knightsbridge** hacia **Harrods**. Aunque no compres nada, vale la pena entrar para ver el Egyptian Hall, decorado con jeroglíficos, y el Food Hall con techos art nouveau.
+
+Cruza **Hyde Park**, uno de los Parques Reales más grandes de Londres, hasta **Kensington Palace**, residencia de la familia real. Puedes visitar las State Rooms y las exposiciones sobre Victoria, Diana y otros miembros de la realeza. La entrada varía según la fecha, entre unas 13 y 20£ (unos 15-23€).
+
+Por la tarde, dirígete a **Notting Hill**, famoso por la película del mismo nombre. Pasea entre casas victorianas de colores pastel, sobre todo en Lancaster Road y Portobello Road. Si es sábado, el mercado de Portobello Road está en pleno apogeo con antigüedades, vintage, comida callejera y artesanías.
+
+Aprovecha para tomar un afternoon tea en alguno de los cafés del barrio. Termina explorando las boutiques independientes y librerías como Notting Hill Bookshop (la de la película), que dan al barrio su carácter bohemio-chic.
+
+Cena en uno de los gastropubs de la zona o reserva con antelación en algún restaurante de moda de Westbourne Grove.
 
 ## Día 4: Barrios alternativos y mercados
 
-El cuarto día te lleva a descubrir la Londres más alternativa, multicultural y vibrante. Comienza en Camden Town, el epicentro de la cultura underground londinense. El Camden Market (realmente varios mercados conectados) es un laberinto fascinante de puestos vendiendo ropa vintage, artesanía, antigüedades, vinilos, arte callejero y comida internacional. Los mercados principales son Camden Lock Market (junto al canal), Stables Market (el más grande, en antiguos establos victorianos), Buck Street Market y Camden Lock Village. Dedica la mañana a explorar, buscar tesoros vintage y probar comida de todo el mundo.
+El cuarto día te lleva a la Londres más alternativa y multicultural. Empieza en **Camden Town**, epicentro de la cultura underground londinense. Camden Market son en realidad varios mercados conectados: vintage, artesanía, antigüedades, vinilos, arte callejero y comida internacional.
 
-Camina por Regent's Canal, el pintoresco canal que atraviesa Camden con sus narrowboats (barcas tradicionales) convertidos en cafés y hogares. Puedes caminar por el camino de sirga hasta Little Venice (aproximadamente 45 minutos) pasando por Regent's Park, o tomar una de las barcas que hacen el recorrido. Alternativamente, visita Regent's Park mismo, especialmente hermoso con los rosales de Queen Mary's Gardens en verano, y sube a Primrose Hill para vistas panorámicas espectaculares del skyline londinense - uno de los mejores miradores de la ciudad y completamente gratuito.
+Los principales son:
 
-Por la tarde, toma el metro (Northern Line) hasta Shoreditch, el barrio más hipster de Londres y centro del arte callejero. Comienza en Brick Lane, famosa por sus restaurantes de curry bangladesí (hay más de 50), tiendas vintage, galerías de arte y el mercado dominical Old Truman Brewery con comida, moda vintage y artesanía. Los domingos, el área completa se transforma en un enorme mercado callejero. Busca los murales de Banksy y otros artistas callejeros internacionales - hay varios tours de street art gratuitos o autoguiados.
+- **Camden Lock Market**, junto al canal.
+- **Stables Market**, el más grande, en antiguos establos victorianos.
+- **Camden Lock Village**.
 
-Explora las calles laterales llenas de cafés de especialidad, bares clandestinos escondidos, estudios de artistas y tiendas independientes. Visita Boxpark Shoreditch, un centro comercial hecho de contenedores de envío con marcas emergentes y comida callejera. Por la tarde-noche, dirígete a Spitalfields Market (abierto todos los días pero mejor los jueves-domingos) con comida artesanal, antigüedades y diseñadores independientes. La zona alrededor de Old Spitalfields también tiene algunos de los mejores restaurantes, cocktail bars y vida nocturna de Londres. Cena en uno de los excelentes restaurantes de la zona - desde auténtico curry bangladesí en Brick Lane hasta gastropubs modernos, cocina vietnamita o restaurantes con estrella Michelin escondidos en calles laterales.
+Dedica la mañana a buscar tesoros y probar comida de todo el mundo.
+
+Camina por **Regent's Canal**, el pintoresco canal con sus narrowboats (barcas tradicionales) convertidos en cafés y hogares. Puedes seguir el camino de sirga hasta **Little Venice**, pasando por Regent's Park, en unos 45-60 minutos, o tomar una de las barcas que hacen el recorrido.
+
+Otra opción es quedarte en Regent's Park, muy bonito en verano por los rosales de Queen Mary's Gardens. Sube a **Primrose Hill** para ver el skyline de Londres: es uno de los mejores miradores de la ciudad y es gratuito.
+
+Por la tarde, toma la Northern Line hasta Old Street y camina hasta **Shoreditch**, el barrio más hipster de Londres y centro del arte callejero. Empieza en **Brick Lane**, famosa por sus restaurantes de curry bangladesí (decenas), sus tiendas vintage y sus galerías de arte.
+
+Los domingos, el mercado de Old Truman Brewery y las calles de alrededor se transforman en un enorme mercado callejero. Busca los murales de Banksy y de otros artistas internacionales: hay varios tours de street art gratuitos o autoguiados.
+
+Explora las calles laterales, con cafés de especialidad, bares escondidos, estudios de artistas y tiendas independientes. Al caer la tarde, acércate a **Spitalfields Market**, con comida artesanal, antigüedades y diseñadores independientes (mejor de jueves a domingo).
+
+Cena en la zona: desde curry bangladesí en Brick Lane hasta gastropubs modernos, cocina vietnamita o algún restaurante con estrella Michelin en una calle lateral.
 
 ## Día 5: Palacios reales y despedida
 
-Tu último día en Londres ofrece la oportunidad de alejarte del centro para explorar palacios reales y áreas históricas. Comienza temprano tomando el tren desde London Waterloo hasta Hampton Court Palace (35 minutos), el espectacular palacio Tudor de Enrique VIII. Este es uno de los palacios más impresionantes y menos masificados que Buckingham. Compra tu entrada online (£27.50) y dedica la mañana a explorar las magníficas State Rooms, las cocinas Tudor (las más grandes de Europa en su época), los jardines formales de 60 acres y el famoso laberinto de setos plantado en 1690 - uno de los más antiguos del mundo.
+Tu último día en Londres te aleja del centro para explorar palacios reales y zonas históricas. Toma el tren desde London Waterloo hasta **Hampton Court Palace** (unos 35 minutos), el palacio Tudor de Enrique VIII. Es uno de los palacios más impresionantes y menos masificados que Buckingham.
 
-Las audioguías están incluidas y son excelentes, con personajes históricos contando historias de intrigas, romances y traiciones de la corte Tudor. No te pierdas la Great Hall con su espectacular techo de martillo, la Chapel Royal con su techo de bóveda azul y dorado, y los Tudor Kitchens donde se preparaban banquetes para 600 personas. Los jardines son extensos con fuentes, el Real Tennis Court (tenis de interior del siglo XVI), el jardín de rosas Privy Garden y el laberinto donde puedes perderte literalmente.
+Compra la entrada online (entre unas 30 y 36£, unos 35-41€, según el día) y dedica la mañana a recorrer:
 
-Regresa a Londres central al mediodía y dirígete a Greenwich, declarado Patrimonio de la Humanidad. Puedes llegar en barco desde Westminster Pier (aproximadamente 1 hora, muy pintoresco) o en el DLR (Docklands Light Railway) que es más rápido. En Greenwich, visita el Royal Observatory donde pasa el Meridiano de Greenwich - puedes pararte con un pie en cada hemisferio. El observatorio ofrece vistas espectaculares de Londres desde lo alto de la colina en Greenwich Park. La entrada al Meridian Courtyard es gratuita, el museo del observatorio cuesta £16.
+- **State Rooms**, con la Great Hall y su techo de martillo.
+- **Cocinas Tudor**, de las mayores de su época.
+- **Jardines formales** de unos 60 acres.
+- **El laberinto de setos**, plantado en 1690 y uno de los más antiguos del mundo.
 
-Explora el Old Royal Naval College, un conjunto arquitectónico barroco impresionante diseñado por Christopher Wren. La visita a la Painted Hall (apodada la "Capilla Sixtina británica") y la Chapel es GRATUITA y absolutamente espectacular. Baja hasta Greenwich Market para comida artesanal, antigüedades y artesanía. Visita también el Cutty Sark, el histórico clipper de té del siglo XIX ahora museo (£17.50), o simplemente admíralo desde fuera mientras paseas por la orilla del Támesis.
+Las audioguías están incluidas, con personajes históricos que cuentan intrigas, romances y traiciones de la corte Tudor. No te pierdas la Chapel Royal, con su techo de bóveda azul y dorado, ni el Real Tennis Court, la pista de tenis de interior del siglo XVI.
 
-Regresa al centro de Londres para tus últimas horas. Si te queda energía, sube al Sky Garden (20 Fenchurch Street) - un jardín en el piso 35 con vistas panorámicas de 360 grados y entrada GRATUITA (pero debes reservar online con antelación). Alternativamente, pasea por Leicester Square y Piccadilly Circus para absorber la energía de Londres, haz algunas compras de última hora en Oxford Street o Regent Street, o simplemente relájate en un pub tradicional con una pinta de ale británica. Para tu cena de despedida, considera reservar en un restaurante especial o disfruta de un último fish and chips de calidad mientras recuerdas los momentos vividos en esta ciudad extraordinaria que combina tradición real con innovación vanguardista como ninguna otra capital europea.
+Regresa a Londres central al mediodía y dirígete a **Greenwich**, Patrimonio de la Humanidad. Puedes llegar en barco desde Westminster Pier (aproximadamente 1 hora, muy pintoresco) o en el DLR (Docklands Light Railway), que es más rápido.
+
+El Royal Observatory, por donde pasa el Meridiano de Greenwich, está cerrado temporalmente por obras de renovación según Royal Museums Greenwich. Verifica su estado antes de ir. Aun así, Greenwich Park ofrece buenas vistas de Londres desde lo alto de la colina.
+
+Explora el **Old Royal Naval College**, un conjunto barroco diseñado por Christopher Wren. La Chapel es gratuita y la **Painted Hall** (apodada la "Capilla Sixtina británica") cuesta 19£ (unos 22€). Baja después hasta **Greenwich Market** para comida artesanal, antigüedades y artesanía.
+
+Visita también el **Cutty Sark**, el clipper de té del siglo XIX convertido en museo (22£, unos 25€), o admíralo desde fuera mientras paseas por la orilla del Támesis.
+
+Regresa al centro para tus últimas horas. Si te queda energía, sube al **Sky Garden** (20 Fenchurch Street), un jardín en las últimas plantas de un rascacielos con vistas panorámicas. La entrada es gratuita, pero debes reservar online con antelación.
+
+Otras opciones son pasear por Leicester Square y Piccadilly Circus, hacer compras de última hora en Oxford Street o Regent Street, o relajarte en un pub tradicional con una pinta de ale. Para la cena de despedida, reserva un restaurante especial o toma un último fish and chips de calidad.
 
 ## Consejos prácticos para moverte por Londres
 
-Londres tiene uno de los sistemas de transporte público más extensos del mundo. El Underground (el Tube o metro) es la forma más rápida de moverte con 11 líneas que conectan toda la ciudad. Los autobuses rojos de dos pisos son icónicos y útiles, especialmente las rutas 11, 15 y 24 que pasan por muchas atracciones turísticas. Los Overground trains, DLR, y Elizabeth Line complementan el sistema. Los barcos Thames Clippers operan en el río Támesis como transporte público.
+Londres tiene uno de los sistemas de transporte público más extensos del mundo. El Underground (el Tube o metro) es la forma más rápida de moverte, con 11 líneas que conectan toda la ciudad. Los autobuses rojos de dos pisos son icónicos y útiles para cruzar el centro.
 
-La Oyster Card o el pago contactless con tarjeta bancaria/teléfono son IMPRESCINDIBLES - no uses billetes de papel que son mucho más caros. Una Oyster Card cuesta £7 (reembolsable) y la recargas con el saldo que necesites. Alternativamente, usa directamente tu tarjeta bancaria contactless o Apple/Google Pay - el sistema calcula automáticamente la tarifa más económica y aplica el price cap diario (máximo que pagarás en un día). El cap para zonas 1-2 es £8.10 en días laborables, £8.10 fines de semana.
+Los Overground trains, el DLR y la Elizabeth Line completan el sistema, y los barcos de Thames Clippers funcionan como transporte público en el río.
 
-SIEMPRE toca tu tarjeta al entrar Y al salir en estaciones de metro/tren, pero solo al entrar en autobuses. Si olvidas tocar a la salida, te cobrarán la tarifa máxima. Los autobuses nocturnos (con N antes del número) funcionan cuando el metro cierra. La mayoría del Tube funciona hasta medianoche aproximadamente (más tarde viernes y sábados en algunas líneas con Night Tube). Descarga la app Citymapper o TfL Go para planificar rutas - son excelentes y funcionan offline.
+Para pagar, lo mejor es el **contactless** con tarjeta bancaria o móvil, o una Oyster Card. Evita los billetes de papel, que salen mucho más caros. El sistema calcula la tarifa más económica y aplica el **price cap diario**, el máximo que pagarás en un día: 8,90£ (unos 10€) en las zonas 1-2.
 
-Caminar es también una forma fantástica de descubrir Londres - muchas atracciones están más cerca de lo que parecen en el mapa del Tube. La distancia de Westminster a Trafalgar Square, por ejemplo, es solo 15 minutos a pie. Los taxis negros (black cabs) son icónicos pero caros - solo úsalos para trayectos cortos o situaciones especiales. Uber y Bolt son más económicos. Evita conducir en Londres - la congestión es terrible, el estacionamiento carísimo, y la Congestion Charge (£15 por día para entrar al centro de lunes a viernes 7AM-6PM) lo hace innecesariamente caro cuando el transporte público es excelente.
+Tres reglas para no pagar de más:
+
+- **Toca la tarjeta al entrar y al salir** en metro y tren, pero solo al entrar en autobuses.
+- **Si olvidas tocar a la salida**, te cobrarán la tarifa máxima.
+- **Usa los autobuses nocturnos** (con una N antes del número) cuando el metro cierra.
+
+La mayor parte del Tube funciona hasta aproximadamente medianoche, y más tarde los viernes y sábados en algunas líneas con Night Tube. Descarga la app Citymapper o TfL Go para planificar rutas.
+
+Caminar también es una forma excelente de descubrir Londres: muchas atracciones están más cerca de lo que parece en el mapa del Tube. De Westminster a Trafalgar Square, por ejemplo, hay solo 15 minutos a pie.
+
+Los taxis negros (black cabs) son icónicos pero caros, así que úsalos para trayectos cortos o situaciones especiales. Uber y Bolt son más económicos.
+
+Evita conducir en Londres: la congestión es fuerte, el estacionamiento carísimo y la Congestion Charge cuesta 18£ por día (unos 21€) en el centro, de lunes a viernes de 07:00 a 18:00 y fines de semana de 12:00 a 18:00.
+
+> [!WARNING/Nota importante]
+> Los precios, horarios y normativas pueden cambiar. Verifica siempre en webs oficiales antes de tu viaje.
 
 ## Dónde comer: del fish and chips al curry de Brick Lane
 
-La gastronomía británica ha evolucionado enormemente y Londres es ahora una de las capitales gastronómicas del mundo con más de 70 restaurantes con estrellas Michelin. Sin embargo, no te vayas sin probar los platos tradicionales británicos. El fish and chips es imprescindible - busca chip shops tradicionales como Poppies en Spitalfields o The Golden Hind en Marylebone para la versión auténtica: bacalao o eglefino rebozado en cerveza, crujiente por fuera y jugoso por dentro, con patatas gruesas cortadas a mano, mushy peas (puré de guisantes) y salsa tártara.
+La gastronomía británica ha evolucionado mucho, y Londres tiene hoy decenas de restaurantes con estrella Michelin. Aun así, prueba los platos tradicionales. Para un buen **fish and chips**, busca chip shops clásicos como The Golden Hind en Marylebone: bacalao o eglefino rebozado en cerveza, patatas gruesas, mushy peas (puré de guisantes) y salsa tártara.
 
-Otros platos británicos clásicos incluyen: el Full English Breakfast (huevos, bacon, salchichas, alubias, champiñones, tomate, black pudding y tostadas), Sunday Roast (carne asada con Yorkshire pudding, verduras asadas y gravy), Shepherd's Pie o Cottage Pie, Bangers and Mash (salchichas con puré), Cornish pasty, Scotch eggs y por supuesto, el afternoon tea con finger sandwiches, scones con clotted cream y mermelada, y pasteles delicados.
+Otros platos británicos clásicos:
 
-Para afternoon tea tradicional, las opciones van desde el lujo de The Ritz, Claridge's o The Savoy (£65-85, reserva con meses de antelación) hasta opciones más accesibles como Fortnum & Mason, Sketch, o salones de té en grandes almacenes como Harrods o Liberty (£35-55). Los pubs son instituciones británicas donde DEBES ir - no solo sirven bebidas sino excelente pub grub (comida de pub). Prueba pubs históricos como The Churchill Arms en Notting Hill (cubierto de flores), Ye Olde Cheshire Cheese (1538), The George Inn (el último pub de galería de Londres), o The Mayflower con vistas al Támesis.
+- **Full English Breakfast**: huevos, bacon, salchichas, alubias, champiñones, tomate, black pudding y tostadas.
+- **Sunday Roast**: carne asada con Yorkshire pudding, verduras asadas y gravy.
+- **Shepherd's Pie** o Cottage Pie, y **Bangers and Mash** (salchichas con puré).
+- **Cornish pasty** y **Scotch eggs**.
+- **Afternoon tea**, con finger sandwiches, scones con clotted cream y mermelada, y pasteles.
 
-Londres es increíblemente multicultural y ofrece cocina de todo el mundo. Brick Lane es famosa por curry bangladesí - hay más de 50 restaurantes compitiendo, muchos ofrecen descuentos para atraer clientes. Chinatown cerca de Leicester Square ofrece auténtica comida china, dim sum y bubble tea. Para mercados de comida, además de Borough Market, prueba Maltby Street Market (sábados), Broadway Market (sábados), o Leather Lane Market (lunes a viernes). Los restaurantes de moda están en Shoreditch, Soho, Notting Hill y Mayfair. Para presupuestos ajustados, las cadenas como Pret A Manger, Wasabi, Leon o Itsu ofrecen comida decente y relativamente económica para llevar.
+Para el afternoon tea, las opciones van de los hoteles de lujo (The Ritz, Claridge's o The Savoy), donde conviene reservar con meses de antelación, a salones más accesibles como Fortnum & Mason, Sketch, Harrods o Liberty. Como orientación, calcula entre 35 y 85£ por persona (unos 40-100€) según el sitio.
+
+Los pubs son instituciones británicas y sirven buen pub grub (comida de pub). Prueba pubs históricos como **The Churchill Arms** en Notting Hill (cubierto de flores), **Ye Olde Cheshire Cheese** (con origen en el siglo XVI), **The George Inn** (el último pub de galería de Londres) o **The Mayflower**, con vistas al Támesis.
+
+Londres es multicultural y ofrece cocina de todo el mundo. Brick Lane es famosa por el curry bangladesí, con decenas de restaurantes que compiten por clientes. Chinatown, cerca de Leicester Square, ofrece comida china, dim sum y bubble tea.
+
+Para mercados de comida, además de Borough Market, prueba **Maltby Street Market** (sábados), **Broadway Market** (sábados) o **Leather Lane Market** (lunes a viernes). Los restaurantes de moda están en Shoreditch, Soho, Notting Hill y Mayfair.
+
+Con presupuesto ajustado, cadenas como Pret A Manger, Wasabi, Leon o Itsu ofrecen comida decente y relativamente económica para llevar.
 
 ## Planifica tu presupuesto
 
-Londres es cara, no hay forma de suavizarlo, pero con planificación inteligente puedes disfrutarla sin arruinarte. El Reino Unido usa la libra esterlina (£), y aunque muchas tarjetas son aceptadas, algunos mercados y puestos pequeños solo aceptan efectivo. El tipo de cambio fluctúa, verifica las tasas actuales (aproximadamente £1 = €1.17).
+Londres es cara, no hay forma de suavizarlo, pero con planificación puedes disfrutarla sin arruinarte. El Reino Unido usa la libra esterlina (£). Muchas tarjetas se aceptan, aunque algunos mercados y puestos pequeños solo cobran en efectivo. El cambio fluctúa: calcula aproximadamente 1£ = 1,15€ y verifica la tasa actual.
 
-Las atracciones principales cuestan: Torre de Londres £34.80, Abadía de Westminster £27, St Paul's Cathedral £21, London Eye £32-42, Madame Tussauds £36-40. Sin embargo, MUCHOS museos principales son GRATUITOS: British Museum, National Gallery, Tate Modern, Tate Britain, Natural History Museum, Science Museum, V&A Museum, National Portrait Gallery. Esto es una enorme ventaja de Londres - puedes llenar días enteros con cultura de clase mundial sin gastar un penique en entradas.
+Entradas de las atracciones de pago principales:
 
-El London Pass (desde £104 por 1 día, £139 por 2 días, hasta £214 por 6 días) incluye más de 90 atracciones y puede ahorrar dinero si planeas visitar muchos sitios pagos, pero calcula cuidadosamente si vale la pena para tu itinerario. A menudo es mejor pagar entradas individuales para las 2-3 atracciones principales que realmente quieres ver profundamente, y llenar el resto del tiempo con experiencias gratuitas.
+- **Abadía de Westminster**: 32£ (unos 37€).
+- **Torre de Londres**: unas 35-40£ (unos 40-46€).
+- **St Paul's Cathedral**: 27£ (unos 31€).
+- **London Eye**: desde 29£ online (unos 33€) y 39£ en taquilla (unos 45€).
 
-Para alojamiento, el centro es carísimo. Considera quedarte en zonas bien conectadas pero más económicas como King's Cross, Shoreditch, Bethnal Green, Brixton, o incluso fuera de Londres en ciudades del Home Counties con buenos trenes. Los hostels cuestan desde £25-45 por noche en dormitorio, hoteles económicos £80-150 por habitación doble (muy básicos a ese precio), hoteles decentes desde £150-250. Reserva con meses de antelación para mejores precios, especialmente evitando eventos grandes como Navidad, Notting Hill Carnival (agosto), o eventos deportivos importantes.
+En cambio, muchos museos principales son gratuitos: British Museum, National Gallery, Tate Modern, Tate Britain, Museo de Historia Natural, Museo de Ciencias, V&A y National Portrait Gallery. Es una gran ventaja: puedes llenar días enteros con cultura de clase mundial sin gastar en entradas.
 
-El transporte público con Oyster/contactless es razonable - £8.10 el cap diario para zonas 1-2. Para comidas, calcula £5-10 para comida rápida/mercados, £15-25 para pub lunch o cadenas, £40-70 para cena en restaurante medio con bebidas. Los supermercados Tesco Metro, Sainsbury's Local o M&S Simply Food están por toda la ciudad para compras económicas. Una pinta de cerveza cuesta £6-8 en pubs centrales, £4-5 en supermercados. El water tap (agua del grifo) en restaurantes es GRATUITA por ley - siempre pídela para ahorrar. Las propinas no son obligatorias pero 10-12.5% es estándar para buen servicio en restaurantes (muchos ya incluyen service charge, verifica la cuenta).
+Los pases de atracciones, como el London Pass, incluyen decenas de sitios y pueden ahorrar dinero si planeas visitar muchos lugares de pago. Calcula con cuidado si compensa en tu itinerario. A menudo sale mejor comprar entradas sueltas para las 2-3 atracciones que de verdad quieres ver y llenar el resto con planes gratuitos.
 
-## Experiencias gratuitas imprescindibles
+Para alojarte, el centro es carísimo. Considera zonas bien conectadas pero más económicas como King's Cross, Shoreditch, Bethnal Green o Brixton. Como orientación, estos son los precios por noche:
 
-Una de las mejores cosas de Londres es la cantidad de experiencias increíbles que son completamente gratuitas. Además de los museos mencionados (British Museum, National Gallery, Tate Modern, V&A, Natural History Museum, Science Museum), hay muchas otras actividades sin coste:
+- **Hostels** (dormitorio): unas 25-45£ (unos 29-52€).
+- **Hoteles económicos** (habitación doble, muy básicos): unas 80-150£ (unos 92-173€).
+- **Hoteles decentes**: desde unas 150-250£ (unos 175-290€).
 
-El cambio de guardia en Buckingham Palace, Horse Guards Parade y Windsor Castle son ceremonias coloridas y completamente gratuitas (llega temprano para buen lugar). Caminar por los Parques Reales - Hyde Park, Regent's Park, St James's Park, Green Park, Richmond Park (con ciervos salvajes) - es gratis y hermoso en cualquier época del año. Visitar mercados como Borough Market, Portobello Road (sábados), Columbia Road Flower Market (domingos mañana), Brick Lane Market (domingos) es gratuito y fascinante incluso si no compras nada.
+Reserva con meses de antelación, sobre todo si coincides con Navidad, el Carnaval de Notting Hill (agosto) o grandes eventos deportivos.
 
-Explorar barrios como Notting Hill, Shoreditch, Camden, Greenwich, Covent Garden te permite absorber la atmósfera local sin gastar. Ver el arte callejero de Banksy y otros artistas en Shoreditch es gratis y cambia constantemente. Cruzar el Tower Bridge, Millennium Bridge, Westminster Bridge es gratis (pagar es solo para subir a la pasarela de cristal del Tower Bridge). Admirar vistas desde Primrose Hill, Greenwich Park, Parliament Hill en Hampstead Heath, o el Sky Garden (reserva gratuita online requerida) cuesta cero.
+El transporte con Oyster o contactless es razonable: el cap diario es de 8,90£ (unos 10€) en las zonas 1-2. Para comer, orienta tu presupuesto así:
 
-Asistir a servicios religiosos en St Paul's Cathedral, Westminster Abbey o Southwark Cathedral es gratuito (aunque las visitas turísticas sí cobran). Ver Evensong (vísperas cantadas) en St Paul's o Westminster Abbey es una experiencia musical hermosa y gratuita. Muchas iglesias como St Martin-in-the-Fields ofrecen conciertos gratuitos o por donación. Explorar Neal's Yard en Covent Garden con sus edificios de colores vibrantes, visitar Leadenhall Market (el mercado victoriano cubierto que inspiró el Callejón Diagon), o simplemente pasear por South Bank disfrutando de artistas callejeros y vistas del Támesis son experiencias memorables que no cuestan nada.
+- **Comida rápida o mercados**: unas 5-10£ (unos 6-12€).
+- **Pub lunch o cadenas**: unas 15-25£ (unos 17-29€).
+- **Cena en restaurante medio con bebidas**: unas 40-70£ (unos 46-81€).
+- **Una pinta de cerveza**: unas 6-8£ en pubs céntricos (unos 7-9€) y 4-5£ en supermercados (unos 5-6€).
 
-Londres en cinco días te ofrece una introducción completa a una ciudad que es simultáneamente un museo viviente de historia británica y una metrópolis vibrante del siglo XXI. Esta guía te ayudará a descubrir tanto los íconos que definen Londres - el Big Ben, Tower Bridge, Buckingham Palace - como los rincones secretos que los locales atesoran: pubs escondidos en callejones medievales, mercados bulliciosos con comida de cincuenta países, galerías de arte en antiguos almacenes, y parques donde puedes olvidar que estás en una de las ciudades más grandes del mundo. Londres tiene esa capacidad única de hacer que te sientas pequeño frente a su grandeza histórica y monumentos imperiales, mientras simultáneamente te acoge con su diversidad, humor británico autocrítico, y esa energía especial que solo las verdaderas capitales mundiales poseen. Mind the gap, y disfruta cada momento.
+Los supermercados Tesco Metro, Sainsbury's Local o M&S Simply Food están por toda la ciudad. En los restaurantes, el agua del grifo es gratuita por ley, así que pídela para ahorrar. Las propinas no son obligatorias, pero el 10-12,5% es lo habitual en restaurantes con buen servicio (muchos ya incluyen el service charge, verifica la cuenta).
+
+## Experiencias gratuitas en Londres
+
+Una de las mejores cosas de Londres es la cantidad de planes que no cuestan nada. Además de los museos mencionados, hay muchas otras actividades sin coste.
+
+**Ceremonias y parques:**
+
+- El cambio de guardia en Buckingham Palace, Horse Guards Parade y Windsor Castle es gratuito (llega temprano para coger sitio).
+- Los Parques Reales (Hyde Park, Regent's Park, St James's Park, Green Park y Richmond Park, con ciervos salvajes) son gratuitos y bonitos en cualquier época del año.
+
+**Mercados y barrios:**
+
+- Borough Market, Portobello Road (sábados), Columbia Road Flower Market (domingos por la mañana) y Brick Lane Market (domingos) se visitan gratis, aunque no compres nada.
+- Notting Hill, Shoreditch, Camden, Greenwich y Covent Garden te dejan absorber la atmósfera local sin gastar.
+- El arte callejero de Banksy y otros artistas en Shoreditch cambia constantemente.
+
+**Puentes y vistas:**
+
+- Cruzar Tower Bridge, Millennium Bridge o Westminster Bridge es gratis: solo se paga para subir a la pasarela de cristal del Tower Bridge.
+- Las vistas desde Primrose Hill, Greenwich Park, Parliament Hill en Hampstead Heath o el Sky Garden (con reserva gratuita online) no cuestan nada.
+
+Asistir a servicios religiosos en St Paul's Cathedral, Westminster Abbey o Southwark Cathedral es gratuito, aunque las visitas turísticas sí cobran. Escuchar el Evensong (vísperas cantadas) es una experiencia musical gratuita. Muchas iglesias, como St Martin-in-the-Fields, ofrecen conciertos gratuitos o por donación.
+
+Explora también Neal's Yard en Covent Garden, con sus edificios de colores vivos, y Leadenhall Market, el mercado victoriano cubierto que inspiró el Callejón Diagon. Para terminar, pasea por South Bank entre artistas callejeros y vistas del Támesis.
+
+Si quieres seguir viajando por Europa, nuestra guía de [París en cuatro días](/blog/paris-en-4-dias) y la selección de las [mejores ciudades europeas](/blog/mejores-ciudades-europeas) te darán ideas.
+
+## Londres, entre la historia y el siglo XXI
+
+Londres en cinco días es una introducción completa a una ciudad que es a la vez un museo viviente de historia británica y una metrópolis del siglo XXI.
+
+Reúne los íconos, como el Big Ben, el Tower Bridge o Buckingham Palace, y rincones que los locales atesoran: pubs en callejones medievales, mercados con comida de decenas de países y parques donde olvidas que estás en una de las ciudades más grandes del mundo.
+
+Londres te hace sentir pequeño frente a su historia y sus monumentos imperiales, y a la vez te acoge con su diversidad y su humor británico autocrítico. Mind the gap, y disfruta cada momento.
+
+### ¿Quieres este viaje, pero mejorado?
+
+Diseñamos tu ruta por Londres desde cero y nos encargamos de reservar cada detalle: vuelos, alojamiento, transporte y actividades. Además, te damos recomendaciones a tu medida y una app móvil para llevar todo el viaje en el bolsillo.
+
+[Reserva aquí tu videollamada gratuita de diagnóstico](/contacto)
