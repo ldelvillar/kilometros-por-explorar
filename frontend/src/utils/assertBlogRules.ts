@@ -61,14 +61,16 @@ const slugsIn = (dir: string) =>
       .map(file => file.replace(/\.mdx?$/, ''))
   );
 
-// Single-line, single-quoted YAML values, which is how Prettier leaves them.
+// Single-line YAML values. Prettier single-quotes them, switching to double
+// quotes when the value contains an apostrophe.
 const readField = (frontmatter: string, field: string) =>
   [...frontmatter.matchAll(new RegExp(`^\\s*-?\\s*${field}: (.*)$`, 'gm'))].map(
-    ([, value]) =>
-      value
-        .trim()
-        .replace(/^'(.*)'$/, '$1')
-        .replace(/''/g, "'")
+    ([, raw]) => {
+      const value = raw.trim();
+      if (/^'.*'$/.test(value)) return value.slice(1, -1).replace(/''/g, "'");
+      if (/^".*"$/.test(value)) return value.slice(1, -1).replace(/\\"/g, '"');
+      return value;
+    }
   );
 
 // Splits the body into blank-line separated blocks, keeping the file line of
