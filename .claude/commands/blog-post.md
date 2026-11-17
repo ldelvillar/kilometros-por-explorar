@@ -71,7 +71,7 @@ Readers plan real trips with this. Prefer being vaguer to being wrong.
 - **No paragraph over 60 words.** Split it or turn it into a list.
 - **Break the text** at least every ~300 words and in every H2 section: a list, a Google Maps link (`[Ver ubicación en el mapa](url)`) or bolded key terms.
 - **Bold** only place names, dishes and key concepts — never whole sentences.
-- **Prices** without a space before the symbol: "22,50€", "100-200€". **Outside the eurozone, give both currencies**: the local one first and the euro equivalent in parentheses, rounded and hedged with "unos" — "23-26£ (unos 27-30€)", "2,40£ (unos 2,80€)". The same applies in FAQ answers. **Times** in 24h: "09:00", "18:00".
+- **Prices** without a space before the symbol: "22,50€", "100-200€". **Outside the eurozone, give both currencies**: the local one first and the euro equivalent in parentheses, rounded and hedged with "unos" — "23-26£ (unos 27-30€)", "2,40£ (unos 2,80€)". The same applies in FAQ answers. Exceptions that stay in euros only: flights paid from Spain, costs the travellers report having paid, and a summary table whose intro says its figures are converted to euros. **Times** in 24h: "09:00", "18:00".
 - **At least 3 internal links**, spread through the body, using root-relative paths (`/blog/<slug>`, `/destinos/<slug>`). Every target must exist in `frontend/src/content/blog/` or `frontend/src/content/destinations/`.
 - **No manual table of contents** — the side rail is generated from the headings.
 
