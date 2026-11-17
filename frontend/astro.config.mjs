@@ -11,6 +11,7 @@ import { rehypeImageFigures } from './src/utils/rehypeImageFigures.ts';
 import { rehypeToc } from './src/utils/rehypeToc.ts';
 import { getBlogLastmods } from './src/utils/getBlogLastmods.ts';
 import { assertCspAllowsEndpoints } from './src/utils/assertCspAllowsEndpoints.ts';
+import { assertBlogRules } from './src/utils/assertBlogRules.ts';
 
 const blogLastmods = getBlogLastmods();
 
@@ -49,6 +50,10 @@ export default defineConfig({
     {
       name: 'csp-endpoints-check',
       hooks: { 'astro:build:start': assertCspAllowsEndpoints },
+    },
+    {
+      name: 'blog-rules-check',
+      hooks: { 'astro:build:start': assertBlogRules },
     },
     sitemap({
       serialize(item) {
