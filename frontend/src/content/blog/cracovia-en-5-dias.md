@@ -1,127 +1,328 @@
 ---
 title: 'Qué ver en Cracovia en cinco días'
-description: 'Guía completa sobre los mejores sitios que visitar si vas a estar en Cracovia durante 5 días, incluyendo Auschwitz y las Minas de Sal de Wieliczka.'
+description: 'Qué ver en Cracovia en cinco días: casco medieval, Auschwitz-Birkenau, Minas de Sal de Wieliczka, Kazimierz y Wawel, con precios y consejos prácticos.'
 date: 2025-07-30
+updatedDate: 2026-11-17
 image: '../../assets/images/blog/cracovia-en-5-dias/cover.webp'
 imageAlt: 'Castillo de Wawel en Cracovia visto desde la orilla del río Vístula al atardecer'
 destinations: ['cracovia']
 faqs:
   - question: '¿Es mejor visitar Auschwitz por libre o con guía?'
-    answer: 'Recomendamos encarecidamente la <strong>visita guiada oficial</strong>. La historia del campo es compleja y abrumadora; sin un educador, perderás el contexto vital. Además, la entrada es <strong>gratuita</strong> si vas por libre, pero los horarios son muy limitados (temprano o tarde). Reserva en <i>visit.auschwitz.org</i> con meses de antelación.'
+    answer: 'Recomendamos encarecidamente la <strong>visita guiada oficial</strong>. La historia del campo es compleja y abrumadora; sin un educador, perderás el contexto vital. Además, la entrada es <strong>gratuita</strong> si vas por libre, pero necesitas un pase nominal reservado online y las plazas son limitadas. Reserva en <i>visit.auschwitz.org</i> con la máxima antelación.'
   - question: '¿Merecen la pena las Minas de Sal de Wieliczka?'
-    answer: 'Sí, es un lugar Patrimonio de la Humanidad único. Lo más impresionante es la <strong>Capilla de Santa Kinga</strong>, una catedral subterránea tallada completamente en sal. Ten en cuenta el esfuerzo físico: hay que bajar unos <strong>800 escalones</strong> a pie (la subida se hace en ascensor). La visita dura unas 2-3 horas.'
+    answer: 'Sí, es un lugar Patrimonio de la Humanidad muy especial. Lo más impresionante es la <strong>Capilla de Santa Kinga</strong>, una catedral subterránea tallada completamente en sal. Ten en cuenta el esfuerzo físico: son unos <strong>380 escalones</strong> de bajada y unos 800 en todo el recorrido (la salida se hace en ascensor). La visita dura entre 2 y 3 horas.'
   - question: '¿Cuál es la mejor zona para alojarse en Cracovia?'
     answer: 'Para una primera visita, lo más cómodo es el <strong>Stare Miasto (Casco Antiguo)</strong>, cerca de la Plaza del Mercado. Si prefieres un ambiente más bohemio, con vida nocturna, cafeterías y <i>food trucks</i>, elige <strong>Kazimierz (el Barrio Judío)</strong>. Ambas zonas son seguras y están conectadas a pie.'
   - question: '¿Cuántos días se necesitan para ver Cracovia?'
-    answer: 'Lo ideal son <strong>3 o 4 días completos</strong>. Dedica un día entero a la excursión de Auschwitz, medio día a las Minas de Sal, y el resto para explorar el centro, el Castillo de Wawel y la <strong>Fábrica de Oskar Schindler</strong> (imprescindible reservar). Cracovia es una ciudad muy paseable y compacta.'
+    answer: 'Lo ideal son <strong>3 o 4 días completos</strong>. Dedica un día entero a la excursión de Auschwitz, medio día a las Minas de Sal, y el resto para explorar el centro, el Castillo de Wawel y la <strong>Fábrica de Oskar Schindler</strong> (conviene reservar). Cracovia es una ciudad muy paseable y compacta.'
+  - question: '¿Cómo moverse por Cracovia sin coche?'
+    answer: 'Casi todo el centro se recorre a pie. Para Kazimierz, Podgórze o Nowa Huta, usa los <strong>tranvías y autobuses de MPK Kraków</strong>: el billete de 60 minutos cuesta <strong>8 PLN</strong> (unos 1,80€). Valídalo siempre al subir para evitar multas.'
 ---
 
-Cracovia, la antigua capital de Polonia, es una ciudad que cautiva con su casco medieval perfectamente preservado, su historia conmovedora y su vibrante atmósfera cultural. Con más de 1.000 años de historia, esta joya del sur de Polonia ofrece una combinación única de arquitectura gótica y renacentista, testimonios profundos de la Segunda Guerra Mundial, una escena gastronómica deliciosa y precios que la convierten en uno de los destinos más accesibles de Europa. Cinco días es el tiempo perfecto para explorar tanto la ciudad como las excursiones imprescindibles a Auschwitz-Birkenau y las Minas de Sal de Wieliczka.
+¿Cómo se reparten cinco días entre la plaza medieval más grande de Europa y el mayor campo de exterminio nazi? Cracovia, la antigua capital de Polonia, mezcla un casco medieval muy bien conservado, una historia conmovedora y una escena cultural vibrante, con precios entre los más accesibles de Europa.
 
-Cinco días en Cracovia te permiten pasear por la plaza medieval más grande de Europa, descubrir el castillo real en Wawel Hill, explorar el conmovedor antiguo Barrio Judío de Kazimierz, enfrentarte a la historia más oscura de la humanidad en Auschwitz, maravillarte ante las capillas subterráneas de las Minas de Sal, y disfrutar de la auténtica cocina polaca en restaurantes tradicionales. La ciudad ofrece una experiencia profundamente emotiva donde la belleza arquitectónica contrasta con memoriales del Holocausto, donde la tradición se mezcla con una vibrante vida estudiantil, y donde cada rincón cuenta historias de reyes, artistas, ocupaciones y resistencia.
+Con más de 1.000 años de historia, la ciudad combina arquitectura gótica y renacentista, testimonios profundos de la Segunda Guerra Mundial y una escena gastronómica deliciosa. Cinco días bastan para recorrerla y para hacer las excursiones clave a **Auschwitz-Birkenau** y a las **Minas de Sal de Wieliczka**.
 
-Hemos diseñado este itinerario equilibrando las visitas imprescindibles con tiempo para reflexionar sobre las experiencias más intensas como Auschwitz. Cada día tiene un propósito específico, desde explorar el casco histórico hasta excursiones de día completo, siempre con flexibilidad para adaptarse a tu ritmo emocional y físico. Lo mejor: Cracovia ofrece una relación calidad-precio excepcional, permitiéndote disfrutar de experiencias culturales de primer nivel, excelente gastronomía y alojamiento cómodo a precios muy razonables comparados con otras capitales europeas.
+En cinco días puedes:
+
+- Pasear por la plaza medieval más grande de Europa.
+- Descubrir el castillo real en la colina de Wawel.
+- Explorar el conmovedor antiguo Barrio Judío de **Kazimierz**.
+- Enfrentarte a la historia más oscura de la humanidad en Auschwitz.
+- Maravillarte ante las capillas subterráneas de las Minas de Sal.
+- Disfrutar de la cocina polaca en restaurantes tradicionales.
+
+La belleza arquitectónica contrasta con los memoriales del Holocausto, la tradición se mezcla con una vibrante vida estudiantil y cada rincón cuenta historias de reyes, artistas, ocupaciones y resistencia.
+
+Hemos diseñado este itinerario equilibrando las visitas principales con tiempo para reflexionar sobre experiencias intensas como Auschwitz. Cada día tiene un propósito, desde explorar el casco histórico hasta las excursiones de día completo, con flexibilidad para tu ritmo emocional y físico.
+
+Cracovia ofrece además una relación calidad-precio muy buena frente a otras capitales europeas. Si quieres comparar, repasa nuestra guía de las [mejores ciudades europeas](/blog/mejores-ciudades-europeas).
 
 ## Día 1: El corazón medieval de Cracovia
 
-Tu primera mañana en Cracovia debe comenzar en la Rynek Główny, la Plaza del Mercado Principal, la plaza medieval más grande de Europa con 40.000 metros cuadrados. Llega temprano (alrededor de las 8:00 AM) para admirar la plaza sin las multitudes, cuando la luz de la mañana ilumina las fachadas de colores pastel y los palomos revolotean alrededor de la estatua de Adam Mickiewicz. El epicentro de la plaza es la Lonja de los Paños (Sukiennice), un edificio renacentista del siglo XVI que originalmente albergaba el mercado de textiles y ahora está lleno de puestos vendiendo artesanía polaca, ámbar báltico, muñecas tradicionales y souvenirs.
+Tu primera mañana debe empezar en la **Rynek Główny**, la Plaza del Mercado Principal y la plaza medieval más grande de Europa, con 40.000 metros cuadrados. Llega alrededor de las 08:00 para verla sin multitudes, con la luz de la mañana sobre las fachadas de colores pastel y los palomos alrededor de la estatua de Adam Mickiewicz.
 
-El edificio más emblemático de la plaza es la Basílica de Santa María (Kościół Mariacki), una iglesia gótica de ladrillo rojo del siglo XIV con sus dos torres asimétricas características. La entrada a la basílica cuesta 15 PLN y vale absolutamente la pena por el espectacular retablo de madera tallada de Veit Stoss, considerado una obra maestra del gótico tardío. Cada hora en punto, un trompetista toca el hejnał mariacki (llamada de trompeta) desde la torre más alta - la melodía se interrumpe abruptamente en memoria del trompetista que fue alcanzado por una flecha tártara en el siglo XIII mientras advertía a la ciudad del ataque.
+El epicentro de la plaza es la **Lonja de los Paños (Sukiennice)**, un edificio renacentista del siglo XVI que albergaba el mercado de textiles. Hoy está lleno de puestos de artesanía polaca, ámbar báltico, muñecas tradicionales y souvenirs.
 
-Dedica la mañana a explorar las calles empedradas alrededor de la Plaza del Mercado. Visita la pequeña Iglesia de San Adalberto en la esquina de la plaza (una de las más antiguas de Polonia, del siglo X), sube a la Torre del Ayuntamiento para vistas panorámicas de la plaza (18 PLN), y pasea por la Ulica Floriańska hasta la Barbacana, una impresionante fortificación gótica de ladrillo del siglo XV que formaba parte de las murallas medievales de la ciudad. Los fragmentos conservados de las murallas y la Puerta de San Florián te transportan a la época medieval.
+El edificio más emblemático es la **Basílica de Santa María (Kościół Mariacki)**, una iglesia gótica de ladrillo rojo del siglo XIV con dos torres asimétricas. La entrada es de pago (consulta la tarifa vigente en la web de la basílica) y vale la pena por el retablo de madera tallada de **Veit Stoss**, considerado una obra maestra del gótico tardío.
 
-Por la tarde, camina por la Planty, el cinturón verde de parques que rodea el casco antiguo siguiendo el trazado de las antiguas murallas. Explora las calles laterales llenas de cafés, librerías, galerías de arte y tiendas de antigüedades. Visita la Universidad Jagellónica, una de las universidades más antiguas de Europa (fundada en 1364) donde estudió Copérnico. El Collegium Maius, el edificio más antiguo de la universidad, tiene un museo fascinante (tours guiados obligatorios, 24 PLN). Termina tu primer día cenando en uno de los restaurantes tradicionales polacos alrededor de la Plaza del Mercado, probando pierogi (empanadillas polacas), żurek (sopa agria de centeno) o bigos (estofado de col y carne), acompañado de una cerveza Tyskie o vodka polaco.
+Cada hora en punto, un trompetista toca el **hejnał mariacki** desde la torre más alta. La melodía se interrumpe de golpe en memoria del trompetista que, según la leyenda, recibió una flecha tártara en el siglo XIII mientras avisaba a la ciudad del ataque.
+
+Dedica el resto de la mañana a las calles empedradas alrededor de la plaza:
+
+- **Iglesia de San Adalberto**, pequeña y en una esquina de la plaza, una de las más antiguas de la ciudad.
+- **Torre del Ayuntamiento**, con vistas panorámicas de la plaza (22 PLN, unos 5€).
+- **Ulica Floriańska**, hasta la **Barbacana**, una fortificación gótica de ladrillo del siglo XV que formaba parte de las murallas medievales, junto a la **Puerta de San Florián**.
+
+Los fragmentos conservados de las murallas te transportan a la época medieval.
+
+Por la tarde, camina por la **Planty**, el cinturón verde de parques que rodea el casco antiguo siguiendo el trazado de las antiguas murallas. Explora las calles laterales llenas de cafés, librerías, galerías de arte y tiendas de antigüedades.
+
+Visita la **Universidad Jagellónica**, una de las más antiguas de Europa (fundada en 1364), donde estudió Copérnico. El **Collegium Maius**, uno de sus edificios más antiguos, tiene un museo fascinante que suele visitarse con guía; la entrada es de pago, así que consulta la tarifa en la web del museo.
+
+Termina tu primer día cenando en un restaurante tradicional polaco alrededor de la plaza. Prueba **pierogi** (empanadillas polacas), **żurek** (sopa agria de centeno) o **bigos** (estofado de col y carne), con una cerveza Tyskie o un vodka polaco.
 
 ## Día 2: Auschwitz-Birkenau, memoria y reflexión
 
-El segundo día está dedicado íntegramente a la visita más importante y emotiva de tu estancia en Cracovia: el Memorial y Museo Auschwitz-Birkenau, el mayor campo de concentración y exterminio nazi donde perdieron la vida más de 1.1 millones de personas, principalmente judíos, durante el Holocausto. Esta no es una visita turística convencional - es un peregrinaje histórico que requiere respeto, sensibilidad y preparación emocional. Se recomienda encarecidamente reservar un tour guiado oficial que incluya transporte desde Cracovia (aproximadamente 70-90 PLN, 6-7 horas en total).
+El segundo día está dedicado por completo a la visita más importante y emotiva de tu estancia: el **Memorial y Museo Auschwitz-Birkenau**, el mayor campo de concentración y exterminio nazi, donde perdieron la vida aproximadamente 1,1 millones de personas, principalmente judíos, durante el Holocausto.
 
-El complejo está ubicado en Oświęcim, a 70 km de Cracovia (aproximadamente 1.5 horas en coche/autobús). La mayoría de tours salen temprano por la mañana (7:00-8:00 AM) y visitan primero Auschwitz I (el campo original) y luego Auschwitz II-Birkenau (el campo de exterminio masivo). La visita guiada dura aproximadamente 3.5 horas y es fundamental para comprender el contexto histórico, la escala de la tragedia y los detalles que dan significado a lo que estás viendo. Los guías oficiales son historiadores capacitados que transmiten la información con profundo respeto.
+No es una visita turística convencional: es un peregrinaje histórico que requiere respeto, sensibilidad y preparación emocional. Se recomienda encarecidamente reservar una visita guiada, con un educador del museo o con un tour organizado que incluya el transporte desde Cracovia (6-7 horas en total).
 
-En Auschwitz I verás el infame letrero "Arbeit Macht Frei" (el trabajo os hace libres), los barracones de ladrillo convertidos en exposiciones con montañas de pertenencias de las víctimas (maletas con nombres, zapatos, cabello humano, objetos personales), las celdas de castigo, el Muro de la Muerte donde se ejecutaban prisioneros, y las cámaras de gas originales. Cada exposición nacional (polaca, francesa, judía, etc.) presenta la historia desde diferentes perspectivas. La experiencia es profundamente conmovedora y difícil - tómate el tiempo que necesites para procesar lo que estás viendo.
+El complejo está en **Oświęcim**, a unos 70 km de Cracovia (aproximadamente 1,5 horas en coche o autobús). La mayoría de los tours salen temprano (07:00-08:00) y visitan primero Auschwitz I, el campo original, y después Auschwitz II-Birkenau, el campo de exterminio masivo.
 
-Auschwitz II-Birkenau es aún más impactante por su escala masiva. Los rieles del tren que entran directamente al campo, las ruinas de las cámaras de gas dinamitadas por los nazis antes de huir, los barracones de madera que se extienden hasta el horizonte, y el Memorial Internacional al final del campo crean una experiencia visceral de la magnitud del genocidio. Caminar por el mismo espacio donde ocurrió uno de los mayores crímenes de la humanidad es una experiencia que cambia la perspectiva sobre la historia, la humanidad y nuestra responsabilidad de nunca olvidar.
+La visita guiada dura aproximadamente 3,5 horas y es fundamental para comprender el contexto histórico, la escala de la tragedia y los detalles que dan sentido a lo que ves. Los educadores del museo transmiten la información con profundo respeto.
 
-Regresa a Cracovia alrededor de las 3:00-4:00 PM emocionalmente agotado pero con una comprensión profunda de la historia. Dedica la tarde a procesar la experiencia - camina tranquilamente por la ciudad, visita una iglesia para reflexión silenciosa, o simplemente descansa en tu alojamiento. No planifiques actividades intensas después de Auschwitz; respeta tu necesidad de procesar emociones. Muchos visitantes encuentran consuelo en una cena tranquila y conversación sobre lo vivido, o en escribir sobre la experiencia mientras está fresca en la memoria. Esta visita, aunque dura, es esencial para entender la historia europea del siglo XX y honrar la memoria de las víctimas.
+En **Auschwitz I** verás:
+
+- El infame letrero **"Arbeit Macht Frei"** (el trabajo os hace libres).
+- Barracones de ladrillo convertidos en exposiciones, con montañas de pertenencias de las víctimas: maletas con nombres, zapatos, cabello humano y objetos personales.
+- Las celdas de castigo y el **Muro de la Muerte**, donde se ejecutaba a prisioneros.
+- Las cámaras de gas originales.
+
+Cada exposición nacional (polaca, francesa, judía, etc.) presenta la historia desde una perspectiva distinta. Es una visita profundamente conmovedora y difícil: tómate el tiempo que necesites para procesar lo que estás viendo.
+
+**Auschwitz II-Birkenau** impacta aún más por su escala. Los rieles del tren que entran directamente al campo, las ruinas de las cámaras de gas dinamitadas por los nazis antes de huir, los barracones de madera que se extienden hasta el horizonte y el Memorial Internacional al final del campo muestran la magnitud del genocidio.
+
+Caminar por el espacio donde ocurrió uno de los mayores crímenes de la humanidad cambia la perspectiva sobre la historia, la humanidad y nuestra responsabilidad de no olvidar.
+
+Regresa a Cracovia alrededor de las 15:00-16:00, emocionalmente agotado pero con una comprensión profunda de la historia. Dedica la tarde a procesar la experiencia: camina con calma por la ciudad, entra en una iglesia para un rato de silencio o descansa en tu alojamiento.
+
+No planifiques actividades intensas después de Auschwitz; respeta tu necesidad de procesar emociones. Muchos visitantes encuentran consuelo en una cena tranquila y una conversación sobre lo vivido, o en escribir sobre la experiencia mientras está fresca en la memoria.
+
+Esta visita, aunque dura, es esencial para entender la historia europea del siglo XX y honrar la memoria de las víctimas.
+
+> [!WARNING/¿No consigues pase para Auschwitz?]
+> Los pases son nominales, gratuitos y de plazas limitadas, y solo se reservan online en la web oficial. Si además necesitas encajar el transporte desde Cracovia, la logística se complica.
+>
+> Nosotros diseñamos la ruta y nos encargamos de todas las reservas, para que la excursión encaje con el resto del viaje sin que pierdas tiempo buscando hueco.
 
 ## Día 3: Las Minas de Sal de Wieliczka
 
-El tercer día ofrece un contraste completo con la intensidad emocional de Auschwitz: una excursión a las Minas de Sal de Wieliczka, declaradas Patrimonio de la Humanidad por la UNESCO, una de las minas de sal más antiguas del mundo que ha estado en operación continua desde el siglo XIII. Ubicadas a solo 14 km de Cracovia (30 minutos en coche o tren), las minas son una maravilla subterránea de capillas talladas en sal, esculturas, lagos salinos y cámaras espectaculares que se extienden 287 metros bajo tierra.
+El tercer día contrasta con la intensidad emocional de Auschwitz: una excursión a las **Minas de Sal de Wieliczka**, Patrimonio de la Humanidad de la UNESCO y una de las minas de sal más antiguas del mundo, en operación continua desde el siglo XIII. Están a solo 14 km de Cracovia (unos 30 minutos en coche o tren).
 
-Reserva con antelación un tour guiado (obligatorio, aproximadamente 119 PLN) que dura 2.5-3 horas. Puedes llegar por tu cuenta en tren desde Kraków Główny hasta Wieliczka Rynek-Kopalnia (20 minutos, pocos PLN) o contratar un tour que incluya transporte (más cómodo). Llega temprano - las minas reciben miles de visitantes diarios y los grupos salen cada pocos minutos en diferentes idiomas. Vístete con capas ya que la temperatura subterránea es constante de 14-16°C durante todo el año, independientemente del clima en superficie.
+Son una maravilla subterránea de capillas talladas en sal, esculturas, lagos salinos y cámaras de gran belleza. El recorrido turístico llega hasta los 135 metros bajo tierra.
 
-La visita comienza bajando 378 escalones de madera (no te preocupes, la salida es en ascensor) hasta llegar a una profundidad de 64 metros. Desde allí, recorres 3 kilómetros de galerías subterráneas que muestran la evolución de la minería desde la Edad Media hasta el siglo XX. Verás cámaras excavadas en sal pura, lagos salinos de color verde esmeralda, túneles históricos con herramientas antiguas, y esculturas talladas completamente en sal de roca por los mineros a lo largo de los siglos.
+Antes de bajar, ten en cuenta:
 
-El punto culminante absoluto es la Capilla de Santa Kinga, ubicada a 101 metros de profundidad - una catedral subterránea completamente tallada en sal por tres mineros a lo largo de 30 años. Con 54 metros de largo, 15-18 metros de ancho y 12 metros de altura, esta capilla es impresionante: suelo de sal pulida, paredes con bajorrelieves de escenas bíblicas, enormes arañas de cristal de sal, y un altar con esculturas de sal representando la Última Cena. La acústica es excepcional y ocasionalmente se celebran misas y conciertos. El guía explicará las leyendas, la historia de la minería, los desafíos técnicos y curiosidades como que literalmente todo lo que ves (paredes, pisos, esculturas, escaleras) es sal.
+- **Tour guiado siempre**: la visita se hace con guía. Reserva online con antelación.
+- **Precio**: 143-169 PLN según la temporada (unos 32-38€); en noviembre rige la tarifa baja.
+- **Duración**: entre 2 y 3 horas.
+- **Cómo llegar**: en tren desde Kraków Główny hasta Wieliczka Rynek-Kopalnia (unos 20 minutos) o con un tour que incluya transporte, más cómodo.
+- **Ropa**: lleva capas, porque la temperatura bajo tierra ronda los 17-18°C todo el año.
 
-Después de la visita guiada, puedes explorar el Museo de la Sal subterráneo que muestra herramientas históricas, equipos de minería y la evolución tecnológica. Hay también una tienda donde puedes comprar lámparas de sal, productos de sal cosmética y souvenirs únicos. El ascenso a la superficie es en ascensor moderno - un alivio después de bajar tantos escalones. Regresa a Cracovia con la tarde libre para relajarte, explorar algún barrio que te hayas perdido, o simplemente disfrutar de un merecido masaje en uno de los spas de la ciudad. Cena en un restaurante tradicional polaco, quizás probando el kotlet schabowy (chuleta de cerdo empanizada) o gołąbki (hojas de col rellenas).
+Llega temprano: las minas reciben a miles de visitantes diarios y salen muchos grupos, en distintos idiomas, a lo largo del día.
+
+La visita comienza bajando unos 380 escalones de madera hasta el primer nivel, a 64 metros de profundidad (la salida es en ascensor). Desde allí recorres unos 3,5 km de galerías que muestran la evolución de la minería desde la Edad Media hasta el siglo XX.
+
+Verás cámaras excavadas en sal, lagos salinos de color verde esmeralda, túneles históricos con herramientas antiguas y esculturas talladas en sal de roca por los mineros a lo largo de los siglos.
+
+El punto culminante es la **Capilla de Santa Kinga**, a unos 100 metros de profundidad: una catedral subterránea tallada en sal por mineros a lo largo de décadas. Tiene suelo de sal pulida, paredes con bajorrelieves de escenas bíblicas, grandes arañas de cristal de sal y un altar con esculturas que representan la Última Cena.
+
+La acústica es excepcional y ocasionalmente se celebran misas y conciertos. El guía explica las leyendas, la historia de la minería, los desafíos técnicos y curiosidades como que casi todo lo que ves (paredes, suelos, esculturas, escaleras) es sal.
+
+El recorrido incluye la exposición del **Museo de las Salinas de Cracovia**, con herramientas históricas, equipos de minería y la evolución tecnológica. Hay también una tienda con lámparas de sal, cosmética de sal y souvenirs. La subida a la superficie es en ascensor, un alivio después de tantos escalones.
+
+Regresa a Cracovia con la tarde libre para relajarte, explorar algún barrio que te hayas perdido o disfrutar de un masaje en uno de los spas de la ciudad. Cena en un restaurante tradicional polaco, quizás con **kotlet schabowy** (chuleta de cerdo empanada) o **gołąbki** (hojas de col rellenas).
 
 ## Día 4: Kazimierz y la herencia judía
 
-El cuarto día está dedicado a explorar Kazimierz, el antiguo barrio judío de Cracovia que durante siglos fue el centro de la vida judía en Polonia antes del Holocausto. Hoy es un barrio bohemio vibrante lleno de sinagogas históricas, museos conmovedores, galerías de arte, cafés hipster, bares underground y tiendas vintage que conviven con memoriales del pasado. Comienza tu mañana en la Plaza Wolnica, el corazón histórico de Kazimierz, donde cada domingo hay un mercado de antigüedades.
+El cuarto día está dedicado a **Kazimierz**, el antiguo barrio judío de Cracovia, que durante siglos fue el centro de la vida judía en Polonia antes del Holocausto. Hoy es un barrio bohemio y vibrante, con sinagogas históricas, museos conmovedores, galerías de arte, cafés, bares y tiendas vintage que conviven con memoriales del pasado.
 
-Visita la Sinagoga Vieja (Stara Synagoga), la sinagoga más antigua de Polonia (siglo XV) que ahora alberga un museo sobre la historia y cultura de los judíos polacos (14 PLN). Continúa hacia la Sinagoga Remuh, una de las pocas sinagogas que sigue activa, con su cementerio judío contiguo del siglo XVI - uno de los pocos cementerios judíos preservados en Europa con lápidas originales de rabinos famosos y figuras históricas. La entrada es modesta (10 PLN) y los hombres deben cubrirse la cabeza (proporcionan kipás).
+Comienza la mañana en la **Plaza Wolnica**, el corazón histórico de Kazimierz, y sigue con las sinagogas:
 
-Explora las calles Szeroka, Józefa y Meiselsa, llenas de historia judía. Visita la Sinagoga Alta, la Sinagoga Izaaka, y la Sinagoga Kupa - cada una con su propia arquitectura e historia fascinante. El Museo de la Fábrica de Schindler (obligatorio reservar online con antelación, 32 PLN) está ubicado en la antigua fábrica de Oskar Schindler, el empresario alemán que salvó a más de 1.200 judíos durante el Holocausto. El museo es una experiencia multimedia inmersiva que recrea la vida en Cracovia durante la ocupación nazi, la historia del gueto, y el heroísmo de Schindler. Dedica al menos 2 horas a esta visita profundamente conmovedora.
+- **Sinagoga Vieja (Stara Synagoga)**, una de las más antiguas de Polonia (siglo XV), que alberga un museo sobre la historia y la cultura de los judíos polacos (22 PLN, unos 5€).
+- **Sinagoga Remuh**, una de las pocas que sigue activa, con su cementerio judío contiguo del siglo XVI y lápidas originales de rabinos y figuras históricas. La entrada es de pago (consulta la tarifa vigente) y los hombres deben cubrirse la cabeza (proporcionan kipás).
 
-Cruza el río Vístula hacia Podgórze, el barrio donde los nazis establecieron el gueto judío en 1941. Visita la Plac Bohaterów Getta (Plaza de los Héroes del Gueto) con su memorial de 70 sillas de metal vacías simbolizando los objetos abandonados por los judíos deportados. Camina por los fragmentos conservados del muro del gueto (construido con forma de lápidas judías como cruel ironía) en la calle Lwowska. Sube a la Farmacia del Águila (Pod Orłem), ahora museo, que fue la única farmacia dentro del gueto donde Tadeusz Pankiewicz ayudó clandestinamente a los prisioneros.
+Explora las calles **Szeroka**, **Józefa** y **Meiselsa**, llenas de historia judía. Visita también la Sinagoga Alta, la Sinagoga Izaaka y la Sinagoga Kupa, cada una con su propia arquitectura e historia.
 
-Regresa a Kazimierz para explorar su cara moderna y vibrante. La calle Józefa está llena de bares, cafés y restaurantes con música en vivo. Alchemia es un bar legendario en un edificio deteriorado lleno de muebles vintage y velas, perfecto para un trago. Singer es otro café icónico con máquinas de coser como mesas. Cena en un restaurante de comida judía tradicional como Hamsa o Klezmer Hois donde puedes probar platos como gefilte fish, challah, latkes y cholent acompañado de música klezmer en vivo. La escena nocturna de Kazimierz es animada especialmente los fines de semana, con bares que permanecen abiertos hasta tarde.
+El **Museo de la Fábrica de Schindler** ocupa la antigua fábrica de Oskar Schindler, el empresario alemán que salvó a más de 1.200 judíos durante el Holocausto. Conviene reservar online con antelación (60 PLN, unos 14€); los lunes hay entradas gratuitas limitadas que no se pueden reservar.
+
+La exposición multimedia recrea la vida en Cracovia durante la ocupación nazi, la historia del gueto y el heroísmo de Schindler. Dedica al menos 2 horas a esta visita profundamente conmovedora.
+
+Cruza el río Vístula hacia **Podgórze**, el barrio donde los nazis establecieron el gueto judío en 1941:
+
+- **Plac Bohaterów Getta** (Plaza de los Héroes del Gueto), con su memorial de 70 sillas de metal vacías que simbolizan los objetos abandonados por los judíos deportados.
+- Los fragmentos conservados del **muro del gueto**, construido con forma de lápidas judías como cruel ironía, en la calle Lwowska.
+- La **Farmacia del Águila (Pod Orłem)**, hoy museo (22 PLN, unos 5€), la única farmacia dentro del gueto, donde Tadeusz Pankiewicz ayudó clandestinamente a los prisioneros.
+
+Regresa a Kazimierz para explorar su cara moderna. La calle Józefa tiene bares, cafés y restaurantes con música en vivo. **Alchemia** es un bar en un edificio deteriorado, lleno de muebles vintage y velas, perfecto para un trago; **Singer** es otro café con máquinas de coser como mesas.
+
+Cena en un restaurante de comida judía tradicional como **Hamsa** o **Klezmer Hois**, donde puedes probar gefilte fish, challah, latkes y cholent con música klezmer en vivo. La noche de Kazimierz es animada, sobre todo los fines de semana, con bares abiertos hasta tarde.
 
 ## Día 5: El Castillo de Wawel y despedida
 
-Tu último día en Cracovia comienza con la visita al símbolo más importante de la identidad polaca: el Castillo de Wawel y su Catedral, situados en Wawel Hill a orillas del río Vístula. Este complejo fue la residencia de los reyes polacos durante más de 500 años y el centro del poder político y cultural del país. Llega temprano (las puertas abren a las 9:00 AM) porque las entradas son limitadas y se agotan rápidamente, especialmente en temporada alta. Compra tus entradas online con varios días de antelación o en taquilla el mismo día (llega antes de que abran).
+Tu último día empieza con el símbolo más importante de la identidad polaca: el **Castillo de Wawel** y su catedral, en la colina de Wawel, a orillas del Vístula. Este complejo fue la residencia de los reyes polacos durante más de 500 años y el centro del poder político y cultural del país.
 
-Hay varios circuitos de visita: las State Rooms con apartamentos reales decorados con tapices flamencos y muebles renacentistas (28 PLN), la Armería y Arsenal con armas medievales (28 PLN), la Tesorería de la Corona con joyas y regalia (28 PLN), y el Dragón de Wawel en la cueva subterránea (gratuito). El ticket completo cuesta alrededor de 82 PLN pero puedes elegir circuitos individuales según tu interés. Los jardines del castillo son gratuitos y ofrecen vistas espectaculares del río Vístula y la ciudad.
+Llega temprano (las puertas abren alrededor de las 09:00; el horario cambia según la temporada), porque las entradas son limitadas y se agotan rápido, sobre todo en temporada alta. Compra tus entradas online con varios días de antelación o en taquilla el mismo día (llega antes de que abran).
 
-La Catedral de Wawel (entrada gratuita a la nave principal, 12 PLN para Royal Tombs y 15 PLN para la torre Sigismund) es el santuario nacional de Polonia donde están coronados, casados y enterrados reyes, héroes nacionales y poetas. La arquitectura mezcla estilos desde el románico hasta el barroco. Sube a la torre para ver la campana Sigismund, una de las más grandes de Europa que solo repica en ocasiones especiales. Las capillas laterales son obras maestras del Renacimiento y el Barroco, especialmente la Capilla Sigismund con su cúpula dorada.
+Cada circuito se compra por separado (precios de la web oficial de Wawel):
 
-Después de Wawel, pasea por el paseo del río Vístula, especialmente animado en verano con bares flotantes, zonas de picnic y gente corriendo o paseando en bicicleta. Visita la estatua del Dragón de Wawel cerca del río que escupe fuego real cada pocos minutos (puedes activarlo enviando un SMS, instrucciones en el letrero). Cruza el Puente Bernatek con sus esculturas de acróbatas colgando, hasta el distrito de Podgórze.
+- **Estancias de Estado**, con apartamentos reales decorados con tapices flamencos y muebles renacentistas: 57 PLN (unos 13€).
+- **Tesorería de la Corona**, con joyas y regalia: 47 PLN (unos 11€).
+- **Armería**, con armas medievales: 47 PLN (unos 11€).
+- **Entrada combinada** de las plantas primera y segunda del castillo, con audioguía: 95 PLN (unos 22€).
 
-Dedica tus últimas horas en Cracovia a actividades que te hayas perdido o simplemente a absorber la atmósfera. Visita el Museo Nacional con arte polaco (martes gratis), explora las tiendas de artesanía local buscando souvenirs de calidad como cerámica de Bolesławiec, joyas de ámbar báltico, vodka Żubrówka con hierba de bisonte, o dulces tradicionales. Sube al Kopiec Kościuszki (Montículo de Kościuszko), un túmulo artificial de 34 metros de altura construido en 1823 que ofrece las mejores vistas panorámicas de 360 grados de Cracovia y los Tatras en días claros.
+La **Cueva del Dragón** es de pago y solo abre en temporada, así que confirma sus fechas en la web oficial. Los patios y jardines del recinto ofrecen vistas amplias del Vístula y de la ciudad.
 
-Para tu última cena, elige un restaurante especial - quizás Wierzynek, uno de los restaurantes más antiguos de Europa (desde 1364) en la Plaza del Mercado, o Pod Aniołami en bóvedas medievales del siglo XIII. Prueba los platos que te hayas perdido: zrazy (rollitos de carne), kluski śląskie (bolitas de patata), oscypek (queso ahumado de los Tatras) o placki ziemniaczane (tortitas de patata). Termina con un trago de vodka polaco en alguno de los bares de Kazimierz, brindando por los recuerdos de una ciudad que te ha mostrado tanto la belleza de la cultura polaca como las lecciones más importantes de la historia, y que probablemente te ha tocado el corazón de formas inesperadas.
+La **Catedral de Wawel** es el santuario nacional de Polonia, donde fueron coronados, casados y enterrados reyes, héroes nacionales y poetas. Su arquitectura mezcla estilos desde el románico hasta el barroco. Las tumbas reales y la torre tienen entrada aparte (consulta las tarifas en la web de la catedral).
+
+Sube a la torre para ver la campana **Sigismund**, que solo repica en ocasiones especiales. Las capillas laterales son obras maestras del Renacimiento y el Barroco, especialmente la **Capilla Sigismund**, con su cúpula dorada.
+
+Después de Wawel, pasea por la orilla del Vístula, muy animada en verano, con bares flotantes, zonas de picnic y gente corriendo o paseando en bicicleta. Cerca del río está la estatua del **Dragón de Wawel**, que escupe fuego a intervalos.
+
+Cruza el **Puente Bernatek**, con sus esculturas de acróbatas colgando, hasta el distrito de Podgórze.
+
+Dedica tus últimas horas a lo que te hayas perdido o a absorber la atmósfera:
+
+- **Museo Nacional**, con arte polaco (consulta en su web los días de entrada gratuita).
+- Tiendas de artesanía local con cerámica de **Bolesławiec**, joyas de ámbar báltico, vodka **Żubrówka** con hierba de bisonte o dulces tradicionales.
+- **Kopiec Kościuszki** (Montículo de Kościuszko), un túmulo artificial de 34 metros de altura construido en 1823, con vistas panorámicas de 360 grados de Cracovia y, en días claros, de los Tatras.
+
+Para tu última cena, elige un restaurante especial: quizás **Wierzynek**, uno de los restaurantes más antiguos de Europa (desde 1364), en la Plaza del Mercado, o **Pod Aniołami**, en bóvedas medievales del siglo XIII.
+
+Prueba los platos que te hayas perdido: **zrazy** (rollitos de carne), **kluski śląskie** (bolitas de patata), **oscypek** (queso ahumado de los Tatras) o **placki ziemniaczane** (tortitas de patata).
+
+Termina con un trago de vodka polaco en alguno de los bares de Kazimierz, brindando por una ciudad que te ha mostrado la belleza de la cultura polaca y las lecciones más importantes de la historia.
+
+> [!WARNING/¿Se agotan las entradas de Wawel o de la Fábrica de Schindler?]
+> Ambas visitas funcionan con entradas limitadas y, en temporada alta, se agotan rápido. Si llegas sin reserva, tendrás que recolocar el día entero.
+>
+> Nosotros diseñamos la ruta y nos encargamos de todas las reservas, para que cada visita caiga en el día y la hora que mejor encajan con el resto del viaje.
 
 ## Consejos prácticos para moverte por Cracovia
 
-Cracovia es una ciudad compacta y muy caminable, especialmente el casco antiguo (Stare Miasto) que es completamente peatonal. Puedes caminar de un extremo a otro del centro histórico en 20-30 minutos. El área dentro del parque Planty es prácticamente toda peatonal, perfecta para explorar a pie. Sin embargo, para llegar a barrios como Kazimierz, Podgórze o Nowa Huta, el transporte público es útil.
+Cracovia es compacta y muy caminable, sobre todo el casco antiguo (**Stare Miasto**), completamente peatonal. Puedes cruzar el centro histórico a pie en 20-30 minutos, y el área dentro del parque Planty es prácticamente toda peatonal.
 
-El sistema de transporte público de Cracovia incluye tranvías y autobuses operados por MPK Kraków. Los billetes son muy económicos: 4 PLN por 20 minutos, 6 PLN por 60 minutos, 16 PLN por 24 horas, 36 PLN por 72 horas. Compra billetes en máquinas en paradas (aceptan monedas y tarjetas), quioscos RUCH, o mediante la app Jakdojade. DEBES validar tu billete al subir al tranvía/autobús en las máquinas amarillas o arriesgas multas de 280 PLN. Los tranvías 3, 19, 24 y 50 conectan el centro con Kazimierz.
+Para llegar a barrios como Kazimierz, Podgórze o Nowa Huta, el transporte público es útil. Lo operan tranvías y autobuses de **MPK Kraków**. Estos son los billetes de la tarifa vigente desde el 2 de marzo de 2026 (zona I):
 
-Los taxis son relativamente económicos en Cracovia pero usa solo compañías oficiales como Radio Taxi (96 61), Barbakan Taxi (96 61) o apps como Uber, Bolt y Free Now que son aún más económicas y transparentes. Evita taxis sin licencia que esperan en zonas turísticas - cobran precios abusivos. Un trayecto típico dentro de la ciudad cuesta 15-30 PLN con apps, versus 50+ PLN con taxis irregulares.
+- **15 minutos**: 4 PLN (unos 0,90€).
+- **30 minutos**: 6 PLN (unos 1,40€).
+- **60 minutos**: 8 PLN (unos 1,80€).
+- **24 horas**: 20 PLN (unos 4,50€).
+- **72 horas**: 55 PLN (unos 12,50€).
 
-Alquilar bicicletas es una opción excelente en Cracovia con carriles bici extensos. El sistema de bicicletas públicas Wavelo tiene estaciones por toda la ciudad (primeros 20 minutos gratis, luego 1 PLN por hora). Para excursiones a Auschwitz y Wieliczka, la mayoría de visitantes reserva tours organizados que incluyen transporte, guía y entradas - mucho más cómodo que organizar transporte público por tu cuenta, especialmente para Auschwitz donde la logística puede ser complicada. Los tours cuestan 150-250 PLN dependiendo del tamaño del grupo e inclusiones.
+Compra los billetes en máquinas, en quioscos o con una app como **Jakdojade**. DEBES validar tu billete al subir al tranvía o autobús, o arriesgas una multa.
+
+Los taxis son relativamente económicos, pero usa solo compañías con licencia o apps como Uber, Bolt y Free Now, más transparentes. Evita los taxis sin licencia que esperan en zonas turísticas: cobran precios abusivos.
+
+Un trayecto típico dentro de la ciudad con una app cuesta 15-30 PLN (unos 3-7€), frente a 50 PLN o más (unos 11€ o más) con taxis irregulares.
+
+Cracovia tiene carriles bici y bicicletas públicas de alquiler; comprueba el operador y las tarifas vigentes en su app.
+
+Para las excursiones a Auschwitz y Wieliczka, la mayoría de visitantes reserva tours organizados que incluyen transporte, guía y entradas: mucho más cómodo que organizar el transporte público por tu cuenta, sobre todo para Auschwitz, donde la logística puede ser complicada. El precio varía según el tamaño del grupo y lo que incluya.
 
 ## Dónde comer: de los pierogi al zapiekanka
 
-La gastronomía polaca es reconfortante, sustanciosa y deliciosa, con influencias de Austria, Rusia, Alemania y Hungría. Los platos estrella que DEBES probar incluyen pierogi (empanadillas polacas rellenas de queso y patata, carne, col con hongos, o frutas para versión dulce), żurek (sopa agria de centeno servida en un pan hueco con salchicha y huevo), barszcz (sopa de remolacha, clara o con dumplings), bigos (estofado de col fermentada con carne, llamado "cazador's stew"), kotlet schabowy (chuleta de cerdo empanizada, similar al schnitzel), gołąbki (hojas de col rellenas de carne y arroz) y zapiekanka (baguette abierta con champiñones, queso derretido y salsa, el fast food polaco por excelencia).
+La gastronomía polaca es reconfortante y sustanciosa, con influencias de Austria, Rusia, Alemania y Hungría. Estos son los platos que DEBES probar:
 
-Para experiencias auténticas y económicas, los bar mleczny (bares de leche) son cafeterías estilo soviético con comida casera polaca a precios increíblemente bajos - un plato completo cuesta 10-20 PLN. Bar Mleczny Pod Temidą cerca del castillo o Milkbar Tomasza son excelentes opciones. El sistema es pedir en el mostrador, pagar, esperar tu número y recoger tu comida. No esperes lujo, pero la comida es auténtica y abundante.
+- **Pierogi**: empanadillas rellenas de queso y patata, carne, col con hongos o frutas en versión dulce.
+- **Żurek**: sopa agria de centeno servida en un pan hueco con salchicha y huevo.
+- **Barszcz**: sopa de remolacha, clara o con dumplings.
+- **Bigos**: estofado de col fermentada con carne, el "estofado del cazador".
+- **Kotlet schabowy**: chuleta de cerdo empanada, parecida al schnitzel.
+- **Gołąbki**: hojas de col rellenas de carne y arroz.
+- **Zapiekanka**: baguette abierta con champiñones, queso derretido y salsa, el fast food polaco por excelencia.
 
-Para pierogi de calidad, Pierogarnia Krakowiacy tiene más de 30 variedades hechas a mano; Zapiecek sirve pierogi tradicionales en ubicación céntrica. Para zapiekanka auténtica, ve a Plac Nowy en Kazimierz donde hay puestos circulares vendiendo esta delicia desde los años 70 - cuesta solo 10-15 PLN y es perfecta después de unas cervezas. Starka Restaurant ofrece cocina polaca elevada en ambiente elegante si buscas una experiencia gastronómica más refinada (pero sigue siendo asequible, 80-120 PLN por persona con bebidas).
+Para comer auténtico y barato, los **bar mleczny** (bares de leche) son cafeterías de estilo soviético con comida casera polaca a precios muy bajos: un plato completo cuesta 10-20 PLN (unos 2-5€). **Bar Mleczny Pod Temidą** y **Milkbar Tomasza** son buenas opciones.
 
-No te vayas sin probar dulces polacos: pączki (donuts rellenos, especialmente populares antes de Cuaresma), sernik (pastel de queso polaco), makowiec (rollo de semillas de amapola), y obwarzanek krakowski (pretzel con forma de rosca, vendido en carritos por toda la ciudad). Para bebidas: żubrówka (vodka de hierba de bisonte, mejor mezclado con jugo de manzana como "tatanka"), vodka tradicional polaco (prueba Wyborowa, Żołądkowa Gorzka o Krupnik), cerveza local Tyskie, Żywiec o cervezas artesanales de cervecerías locales. Las compañías de vodka ofrecen degustaciones/tours que son educativos y divertidos.
+El sistema es pedir en el mostrador, pagar, esperar tu número y recoger la comida. No esperes lujo, pero la comida es auténtica y abundante.
 
-Los restaurantes en la Plaza del Mercado son generalmente sobreprecio y calidad turística - camina 2-3 calles en cualquier dirección para mejor valor. Kazimierz tiene la mejor escena gastronómica alternativa con restaurantes internacionales, veganos, fusión y tradicionales judíos. Los polacos comen temprano - la mayoría de restaurantes se llenan entre 6-8 PM. Reserva para restaurantes populares, especialmente fines de semana.
+Para pierogi de calidad, **Pierogarnia Krakowiacy** tiene más de 30 variedades hechas a mano, y **Zapiecek** sirve pierogi tradicionales en una ubicación céntrica.
+
+Para una zapiekanka auténtica, ve a **Plac Nowy**, en Kazimierz, donde hay puestos circulares que la venden desde los años 70: cuesta 10-15 PLN (unos 2-3€) y es perfecta después de unas cervezas.
+
+**Starka Restaurant** ofrece cocina polaca más elaborada en un ambiente elegante, y sigue siendo asequible: 80-120 PLN por persona con bebidas (unos 18-27€).
+
+No te vayas sin probar los dulces polacos: **pączki** (donuts rellenos, muy populares antes de Cuaresma), **sernik** (pastel de queso), **makowiec** (rollo de semillas de amapola) y **obwarzanek krakowski** (pretzel con forma de rosca, vendido en carritos por toda la ciudad).
+
+Para beber, prueba la **żubrówka** (vodka de hierba de bisonte, mejor mezclada con jugo de manzana como "tatanka"), vodkas tradicionales como Wyborowa, Żołądkowa Gorzka o Krupnik, y cerveza local Tyskie, Żywiec o artesanal. Las destilerías ofrecen degustaciones y tours educativos y divertidos.
+
+Los restaurantes de la Plaza del Mercado son caros y de calidad turística: camina 2-3 calles en cualquier dirección para encontrar mejor valor. Kazimierz tiene la mejor escena gastronómica alternativa, con restaurantes internacionales, veganos, de fusión y judíos tradicionales.
+
+Los polacos comen temprano: la mayoría de los restaurantes se llenan entre las 18:00 y las 20:00. Reserva en los populares, sobre todo en fin de semana.
 
 ## Planifica tu presupuesto
 
-Cracovia es uno de los destinos más económicos de Europa Occidental, ofreciendo experiencias culturales de primer nivel a precios muy accesibles. Polonia usa el złoty polaco (PLN), y aunque cada vez más lugares aceptan euros, siempre obtendrás mejor cambio pagando en złoty. El tipo de cambio aproximado es 1 EUR = 4.3-4.5 PLN. Saca dinero de cajeros automáticos de bancos (evita Euronet que cobra comisiones altas) o cambia en kantors (casas de cambio) que abundan y suelen ofrecer mejores tasas que bancos.
+Cracovia es uno de los destinos económicos de Europa, con experiencias culturales de primer nivel a precios muy accesibles. Si quieres comparar con otras ciudades, repasa los [destinos europeos más económicos](/blog/destinos-europeos-mas-economicos).
 
-Las entradas a atracciones principales cuestan: Auschwitz-Birkenau entrada gratuita pero tour guiado recomendado 60-90 PLN, Minas de Sal 119 PLN, Castillo de Wawel circuitos individuales 28 PLN cada uno o combo 82 PLN, Basílica de Santa María 15 PLN, Museo de Schindler 32 PLN, sinagogas 10-14 PLN cada una. La Kraków Tourist Card (135 PLN por 2 días, 175 PLN por 3 días) incluye transporte público y descuentos en museos - calcula si vale la pena según tu itinerario.
+Polonia usa el złoty polaco (PLN), y aunque cada vez más lugares aceptan euros, siempre obtendrás mejor cambio pagando en złoty. El tipo de cambio ronda **1 EUR = 4,4 PLN** (4,4032 según el Banco Nacional de Polonia el 17 de noviembre de 2026).
 
-Para alojamiento, Cracovia ofrece excelente valor. El casco antiguo es más caro pero increíblemente conveniente; Kazimierz ofrece mejor relación calidad-precio con ambiente bohemio. Los hostels cuestan desde 40-70 PLN por noche en dormitorio, hoteles económicos 150-250 PLN por habitación doble, hoteles boutique 300-500 PLN. Los apartamentos Airbnb son populares y económicos (200-400 PLN para apartamentos completos). Reserva con antelación para festivales o temporada alta (abril-octubre).
+Saca dinero de cajeros automáticos de bancos (evita Euronet, que cobra comisiones altas) o cambia en **kantors** (casas de cambio), que abundan y suelen ofrecer mejores tasas que los bancos.
 
-El transporte público es extremadamente barato: billete de 24 horas solo 16 PLN. Taxis/Uber también son muy asequibles: 20-30 PLN para trayectos dentro de la ciudad. Para comidas, calcula 15-25 PLN para bar mleczny, 30-50 PLN para plato principal en restaurante casual, 80-120 PLN por persona con bebidas en restaurante medio-alto. Una cerveza cuesta 10-15 PLN en bares, 6-8 PLN en supermercados. Vodka en tienda 30-60 PLN botella. Zapiekanka en Kazimierz 10-15 PLN. Los supermercados Biedronka, Żabka o Carrefour Express tienen precios locales muy económicos.
+Las entradas a las atracciones principales cuestan:
+
+- **Auschwitz-Birkenau**: entrada gratuita al recinto; la visita con educador es de pago y su tarifa depende del tipo de visita y del grupo.
+- **Minas de Sal de Wieliczka**: 143-169 PLN según la temporada (unos 32-38€).
+- **Castillo de Wawel**: circuitos individuales de 47-57 PLN (unos 11-13€) o entrada combinada de 95 PLN (unos 22€).
+- **Museo de la Fábrica de Schindler**: 60 PLN (unos 14€).
+- **Sinagoga Vieja y Farmacia del Águila**: 22 PLN cada una (unos 5€).
+- **Basílica de Santa María y otras sinagogas**: de pago; consulta la tarifa vigente en cada web.
+
+Existe también una tarjeta turística (Kraków Tourist Card) con transporte y descuentos en museos: compara su precio vigente con tu itinerario para saber si compensa.
+
+Para alojamiento, Cracovia ofrece buen valor. El casco antiguo es más caro pero muy conveniente; Kazimierz ofrece mejor relación calidad-precio, con ambiente bohemio. Como orientación:
+
+- **Hostels**: desde 40-70 PLN por noche en dormitorio (unos 9-16€).
+- **Hoteles económicos**: 150-250 PLN por habitación doble (unos 35-55€).
+- **Hoteles boutique**: 300-500 PLN (unos 70-115€).
+- **Apartamentos completos**: 200-400 PLN (unos 45-90€).
+
+Reserva con antelación para festivales o temporada alta (abril-octubre).
+
+Para comer y moverte, calcula:
+
+- **Bar mleczny**: 15-25 PLN (unos 3-6€).
+- **Plato principal en restaurante casual**: 30-50 PLN (unos 7-11€).
+- **Restaurante medio-alto**: 80-120 PLN por persona con bebidas (unos 18-27€).
+- **Cerveza**: 10-15 PLN en bares (unos 2-3€) y 6-8 PLN en supermercados (unos 1,50-2€).
+- **Vodka en tienda**: 30-60 PLN la botella (unos 7-14€).
+- **Taxi o Uber dentro de la ciudad**: 20-30 PLN (unos 4,50-7€).
+
+Los supermercados Biedronka, Żabka o Carrefour Express tienen precios locales muy económicos.
+
+> [!WARNING/Nota importante]
+> Los precios, horarios y normativas pueden cambiar. Verifica siempre en webs oficiales antes de tu viaje.
 
 ## Consejos para visitar Auschwitz con respeto
 
-Visitar Auschwitz es una experiencia profundamente emotiva que requiere preparación mental y comportamiento respetuoso. Primero, DEBES reservar con antelación - la entrada es gratuita pero solo para horarios muy específicos (antes de 10 AM o después de 3 PM), y se agotan con semanas de anticipación. Los tours guiados (fuertemente recomendados) cuestan 60 PLN adicionales y deben reservarse con aún más antelación. Reserva a través del sitio web oficial visit.auschwitz.org para garantizar guías certificados y evitar estafas.
+Visitar Auschwitz es una experiencia profundamente emotiva que requiere preparación mental y comportamiento respetuoso. Primero, DEBES reservar con antelación: la entrada es gratuita, pero los pases son nominales, de plazas limitadas, y solo se reservan online; no se entregan en la entrada.
 
-Vístete apropiadamente: nada de ropa con mensajes ofensivos, shorts muy cortos o camisetas sin mangas. Lleva calzado cómodo ya que caminarás varios kilómetros entre ambos campos. El clima puede ser impredecible - lleva capas y paraguas/impermeable. En invierno, el frío puede ser intenso; en verano, el sol es fuerte y hay poca sombra. Lleva agua (hay fuentes) pero no comida - comer dentro del memorial es considerado irrespetuoso.
+El acceso empieza a las 07:30 y la última hora de entrada depende del mes: desde las 14:00 en diciembre hasta las 19:00 en junio, julio y agosto. Las visitas con educador tienen un coste aparte.
 
-Comportamiento esencial: mantén silencio y comportamiento solemne. Está PROHIBIDO: comer/beber (excepto agua), fumar, correr, gritar, hacer poses en fotos (selfies sonriendo, saltos, etc.), tocar los edificios o exposiciones. Puedes tomar fotos sin flash en la mayoría de áreas, pero está prohibido en ciertas salas con objetos particularmente sensibles (cabello, pertenencias personales) - respeta las señales. Los guías explicarán claramente dónde no se permite fotografiar.
+Reserva solo en el sitio oficial, **visit.auschwitz.org**, para garantizar guías certificados y evitar estafas.
 
-Prepárate emocionalmente: esta visita es dura. Ver las montañas de zapatos, las fotos de víctimas, las cámaras de gas es devastador. No hay vergüenza en llorar - es una reacción humana normal. Tómate tiempo, no sientas que debes apresurarte. Algunos visitantes necesitan salir temporalmente - está bien. Después de la visita, procesa la experiencia de la forma que necesites: escribir, hablar, silencio, caminar. No planifiques actividades festivas inmediatamente después. Esta visita cambia a las personas - permítete ese cambio y reflexiona sobre las lecciones de la historia para asegurar que "Nunca Más" sea más que palabras.
+Vístete con respeto y piensa en la logística:
 
-Cracovia en cinco días te ofrece una experiencia profundamente transformadora que combina la belleza del patrimonio medieval con las lecciones más importantes de la historia moderna. Esta guía te ayudará a descubrir una ciudad que ha sobrevivido invasiones, ocupaciones y tragedias, pero mantiene su alma intacta - donde la música klezmer resuena nuevamente en Kazimierz, donde los cafés bulliciosos llenan la plaza medieval más grande de Europa, y donde cada rincón cuenta historias de reyes, artistas, santos y héroes ordinarios que se alzaron contra el mal. Cracovia no es solo una ciudad hermosa para visitar; es un testimonio viviente de la resiliencia humana, un memorial a quienes perdimos, y un recordatorio de nuestra responsabilidad de construir un futuro mejor. "Nigdy więcej" - Nunca más.
+- Nada de ropa con mensajes ofensivos, shorts muy cortos o camisetas sin mangas.
+- Calzado cómodo, porque caminarás varios kilómetros entre ambos campos.
+- Capas y paraguas o impermeable: el clima puede ser impredecible. En invierno el frío puede ser intenso; en verano, el sol es fuerte y hay poca sombra.
+- Mochilas y bolsos de máximo 35x25x15 cm.
+- Agua, pero no comida: comer dentro del memorial se considera irrespetuoso.
+
+Mantén silencio y un comportamiento solemne. Está PROHIBIDO:
+
+- Comer o beber (excepto agua), fumar, correr o gritar.
+- Hacer poses en fotos (selfies sonriendo, saltos, etc.).
+- Tocar los edificios o las exposiciones.
+
+Puedes tomar fotos sin flash en la mayoría de las áreas, pero está prohibido en ciertas salas con objetos particularmente sensibles (cabello, pertenencias personales): respeta las señales. Los guías explicarán claramente dónde no se permite fotografiar.
+
+Prepárate emocionalmente: esta visita es dura. Ver las montañas de zapatos, las fotos de víctimas y las cámaras de gas es devastador. No hay vergüenza en llorar: es una reacción humana normal. Tómate tu tiempo y no sientas que debes apresurarte; si necesitas salir un momento, está bien.
+
+Después de la visita, procesa la experiencia de la forma que necesites: escribir, hablar, silencio, caminar. No planifiques actividades festivas inmediatamente después.
+
+## Cracovia en cinco días: historia y resiliencia
+
+Cracovia en cinco días ofrece una experiencia profundamente transformadora, que combina la belleza del patrimonio medieval con las lecciones más importantes de la historia moderna.
+
+Es una ciudad que ha sobrevivido a invasiones, ocupaciones y tragedias, pero mantiene su alma intacta: la música klezmer vuelve a sonar en Kazimierz y los cafés bulliciosos llenan la plaza medieval más grande de Europa.
+
+Cracovia no es solo una ciudad hermosa para visitar; es un testimonio vivo de la resiliencia humana, un memorial a quienes perdimos y un recordatorio de nuestra responsabilidad de construir un futuro mejor. "Nigdy więcej": nunca más.
+
+Si después sigues por Europa central, nuestra guía de [Praga en cinco días](/blog/praga-en-5-dias) es una buena continuación.
+
+### ¿Quieres este viaje, pero mejorado?
+
+Diseñamos tu ruta por Cracovia desde cero y nos encargamos de reservar cada servicio: vuelos, alojamiento, transporte y actividades. Además, te damos recomendaciones a tu medida y una app móvil para llevar el viaje en el bolsillo. Descubre cómo es [viajar a Cracovia a tu medida](/destinos/cracovia).
+
+[Reserva aquí tu videollamada gratuita de diagnóstico](/contacto)
