@@ -19,6 +19,8 @@ The rules are in `.claude/commands/blog-post.md` — read the whole file first, 
 
 The existing first-person content is the travellers' notes. Keep every experience and opinion in it, and add none:
 
+- First person singular ("mi viaje", "me quedaría") becomes plural ("nuestro viaje", "nos quedaríamos"): Lucas and Lucía travel together. Convert every instance, keeping the meaning, and list the converted lines under "Lines to confirm".
+- When the post's own visits contradict each other (a trip mentioned in one section that is missing from the list in another), change nothing and report it.
 - Do not strengthen an opinion: "no nos gustó" must not become "lo peor del viaje".
 - Do not turn advice into experience: "alquila un coche" must not become "alquilamos un coche" unless the post already says they did.
 - The opening hook and the closing reflection must come from what the post already says. When the rules would need an anecdote you do not have — a confession, a mistake — pick a hook that needs none (a question, a figure, a contrast). Never leave a `[TK]`: it fails the build.
