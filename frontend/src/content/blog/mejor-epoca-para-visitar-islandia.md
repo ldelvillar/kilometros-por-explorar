@@ -69,7 +69,7 @@ Para nosotros, las auroras boreales son una experiencia más impactante y memora
 
 Este es el argumento más fuerte a favor del verano. En nuestro viaje de febrero, varias carreteras estaban cerradas por nieve y hielo, y las F-roads (carreteras del interior) estaban completamente inaccesibles. Algunos lugares que queríamos visitar tuvieron que descartarse porque las condiciones no lo permitían.
 
-Necesitábamos consultar road.is y safe.is diariamente para verificar el estado de las carreteras antes de planificar cada día. Además, tuvimos un pequeño susto con la camper y la nieve.
+Necesitábamos consultar road.is y safetravel.is diariamente para verificar el estado de las carreteras antes de planificar cada día. Además, tuvimos un pequeño susto con la camper y la nieve.
 
 ![Nuestra camper atrapada en la nieve en Islandia](../../assets/images/blog/mejor-epoca-para-visitar-islandia/camper.webp)
 
