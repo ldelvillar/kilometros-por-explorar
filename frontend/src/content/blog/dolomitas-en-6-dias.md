@@ -2,32 +2,43 @@
 title: 'Qué ver en las Dolomitas en 6 días: ruta completa'
 description: 'Ruta por las Dolomitas en 6 días: lago de Garda, Molveno, Seceda, Val di Funes, Braies, Tre Cime y Sorapis. Itinerario día a día y consejos.'
 date: 2026-08-20
+updatedDate: 2026-11-17
 image: '../../assets/images/blog/dolomitas-en-6-dias/cover.webp'
 imageAlt: 'Pueblo alpino con iglesia de campanario ante las cumbres rocosas de las Dolomitas, Italia'
 destinations: ['norte-italia']
 faqs:
   - question: '¿Son suficientes 6 días para ver las Dolomitas?'
-    answer: 'Para <strong>recorrerlas enteras no</strong>, son un macizo enorme repartido entre tres provincias. Pero seis días dan de sobra para una ruta con los imprescindibles.'
+    answer: 'Para <strong>recorrerlas enteras no</strong>, son un macizo enorme repartido entre tres provincias. Pero seis días dan de sobra para una ruta con los lugares más emblemáticos.'
+  - question: '¿Cuánto cuesta subir a Seceda?'
+    answer: 'Desde Ortisei, el telecabina Seceda cuesta <strong>74€ ida y vuelta</strong>. Desde Santa Cristina, el telecabina Col Raiser cuesta <strong>34€ ida y vuelta</strong> y exige una hora más andando hasta la cresta. Es la opción más barata.'
   - question: '¿Hace falta coche para recorrer las Dolomitas?'
     answer: 'Sí. Hay autobuses entre los valles principales, pero <strong>no llegan a los inicios de ruta a la hora que interesa</strong> y te obligan a dormir siempre en el mismo sitio. Con coche puedes encadenar varios valles en un día y llegar temprano a los aparcamientos, que es la clave de todo el itinerario.'
   - question: '¿Hay que reservar aparcamiento en el Lago di Braies y en las Tre Cime?'
-    answer: 'En verano sí, en los dos. Al <strong>Lago di Braies</strong> solo se accede con reserva previa hasta las 16:00 (después ya puedes entrar libremente). A las <strong>Tre Cime</strong> se sube por una carretera a la que sólo se puede acceder con reserva previa, el precio son <strong>40€ por coche</strong>.'
+    answer: 'En pleno verano sí, en los dos. Al <strong>Lago di Braies</strong> solo se accede con reserva previa hasta las 16:00 (después ya puedes entrar libremente). A las <strong>Tre Cime</strong> se sube por una carretera a la que sólo se puede acceder con reserva previa, el precio son <strong>40€ por coche</strong>.'
   - question: '¿Cuál es la mejor época para hacer esta ruta?'
     answer: 'De <strong>mediados de mayo a mediados de septiembre</strong>, cuando los puertos están abiertos, los refugios funcionan y los senderos no tienen nieve. Las rutas en invierno requieren preparación adicional y condiciones climáticas más exigentes.'
 ---
 
-Las Dolomitas no se parecen a ninguna otra montaña de Europa. Tienen un paisaje único que te sorprenderá desde el primer día. Con seis días es imposible recorrerlas enteras, y conviene decirlo desde el principio. Lo que sí se puede hacer es una ruta muy bien resuelta que incluye los sitios más emblemáticos para dejarte con ganas de volver.
+Las Dolomitas no se parecen a ninguna otra montaña de Europa. Tienen un paisaje único que te sorprenderá desde el primer día. Con seis días es imposible recorrerlas enteras, y conviene decirlo desde el principio.
 
-Este es el itinerario que hicimos nosotros, donde incluimos consejos prácticos para que aproveches tu viaje al máximo. Porque aquí el problema no es encontrar sitios bonitos, es llegar a ellos: en verano, media docena de los accesos más famosos tienen cupo o reserva previa, y descubrirlo a las nueve de la mañana delante de una barrera es el error más caro del viaje.
+Lo que sí se puede hacer es una ruta muy bien resuelta por el [norte de Italia](/destinos/norte-italia) que incluye los sitios más emblemáticos para dejarte con ganas de volver.
+
+Este es el itinerario que hicimos nosotros, con consejos prácticos para que aproveches tu viaje al máximo.
+
+Aquí el problema no es encontrar sitios bonitos, es llegar a ellos: en verano, media docena de los accesos más famosos tienen cupo o reserva previa, y descubrirlo a las nueve de la mañana delante de una barrera es el error más caro del viaje.
 
 ## Día 1: Lago de Garda, la antesala de las montañas
 
 El primer día todavía no es montaña. La mayoría de vuelos aterrizan en Verona, Milán o Venecia. El lago de Garda queda de camino hacia el norte y así aprovechas la tarde en vez de quemarla conduciendo, merece mucho la pena.
 
-La primera parada es Sirmione, un pueblo colgado del extremo de una península estrecha que se mete dos kilómetros dentro del lago. En él te esperan el castillo Scaligero, rodeado de agua por los cuatro costados, y las Grotte di Catullo, las ruinas de una villa romana en la punta de la península entre olivos y con el lago abierto de fondo.
+La primera parada es Sirmione, un pueblo colgado del extremo de una península estrecha que se mete dos kilómetros dentro del lago.
+
+En él te esperan el castillo Scaligero, rodeado de agua por los cuatro costados, y las Grotte di Catullo, las ruinas de una villa romana en la punta de la península entre olivos y con el lago abierto de fondo.
 
 > [!WARNING/Consejo para aparcar]
 > Los aparcamientos en el casco histórico son bastante caros, y en verano son difíciles de encontrar. Lo mejor es aparcar en las afueras, donde hay una zona gratuita, y desde ahí caminar unos diez minutos hasta el bus lanzadera que te deja directamente en la parte turística.
+>
+> Nosotros diseñamos la ruta y nos encargamos de todas las reservas, así que tú solo te ocupas de conducir y disfrutar.
 
 ![Vistas desde el Scaligero de Sirmione](../../assets/images/blog/dolomitas-en-6-dias/vistas-castillo-sirmione.webp)
 
@@ -51,7 +62,9 @@ Después toca cruzar el valle del Adigio hasta el lago de Carezza. Es un lago pe
 
 ![Lago di Carezza con el macizo del Latemar reflejado en el agua](../../assets/images/blog/dolomitas-en-6-dias/lago-di-carezza.webp)
 
-Se aparca en la carretera de enfrente y se cruza por un paso subterráneo. El lago está vallado y se recorre entero por una pasarela en unos veinte minutos. El nivel del agua varía mucho a lo largo del verano, y con el lago bajo los reflejos no son los de las fotos. La luz de última hora de la tarde sobre el Latemar compensa igualmente.
+Se aparca en la carretera de enfrente y se cruza por un paso subterráneo. El lago está vallado y se recorre entero por una pasarela en unos veinte minutos.
+
+El nivel del agua varía mucho a lo largo del verano, y con el lago bajo los reflejos no son los de las fotos. La luz de última hora de la tarde sobre el Latemar compensa igualmente.
 
 ## Día 3: Seceda y el Val di Funes
 
@@ -74,6 +87,9 @@ La última parada es la iglesia de Santa Maddalena, a unos veinte minutos andand
 
 ![Atardecer desde la Iglesia de Santa Maddalena con las Odle al fondo](../../assets/images/blog/dolomitas-en-6-dias/cover.webp)
 
+> [!WARNING/Nota importante]
+> Los precios, horarios y normativas pueden cambiar. Verifica siempre en webs oficiales antes de tu viaje.
+
 ## Día 4: Lago di Dobbiaco y Lago di Braies
 
 Día tranquilo, de esos que necesitas entre dos jornadas de montaña. La primera visita es el Lago di Dobbiaco, un lago alpino alargado rodeado de montañas. Tiene una vuelta llana de un par de kilómetros, y está permitido el baño. Eso sí, el agua está helada. Es un lago de deshielo, y en verano la temperatura máxima ronda los 15ºC.
@@ -87,7 +103,9 @@ La vuelta completa al lago son unos 3,5 kilómetros llanos que se hacen en hora 
 Además, puedes alquilar unas barcas para dar un paseo por el lago, y está permitido el baño, aunque el agua aquí también está helada.
 
 > [!WARNING/Importante sobre las reservas de aparcamiento]
-> En verano sólo se puede acceder al aparcamiento con reserva previa hasta las 16:00, y las plazas vuelan. Nosotros fuimos a partir de las 16:00, cuando el acceso se libera. Ganas dos cosas, un aparcamiento sin reserva y un lago que se vacía de golpe en cuanto se marchan los autobuses del mediodía.
+> Entre julio y mediados de septiembre sólo se puede acceder al aparcamiento con reserva previa hasta las 16:00, y las plazas vuelan. Nosotros fuimos a partir de las 16:00, cuando el acceso se libera. Ganas dos cosas, un aparcamiento sin reserva y un lago que se vacía de golpe en cuanto se marchan los autobuses del mediodía.
+>
+> Si prefieres no pelearte con las reservas, diseñamos la ruta y nos encargamos de gestionarlas por ti.
 
 ## Día 5: Tre Cime di Lavaredo y Cadini di Misurina
 
@@ -127,12 +145,16 @@ Sobre la conducción, las carreteras están impecables, pero son puertos de mont
 
 Este itinerario es un itinerario de verano, y no admite mucha discusión. La ventana buena va de mediados de mayo a mediados de septiembre, cuando los puertos están abiertos, los refugios funcionan, los telecabinas operan a diario y los senderos altos están libres de nieve.
 
-En invierno las Dolomitas siguen siendo espectaculares, pero son otro viaje: esquí, carreteras de acceso cerradas (la de las Tres Cimas entre ellas) y una logística completamente distinta. No intentes adaptar esta ruta al invierno.
+En invierno las Dolomitas siguen mereciendo la visita, pero son otro viaje: esquí, carreteras de acceso cerradas (la de las Tres Cimas entre ellas) y una logística completamente distinta. No intentes adaptar esta ruta al invierno.
 
 ## Conclusión
 
 Seis días en las Dolomitas dan para mucho más de lo que parece sobre el mapa, y aún así te vas con la sensación de haber visto una esquina, porque los valles que dejas sin pisar dan para otros tres viajes.
 
-Si quieres alargarlo, Verona y Venecia quedan de camino a los aeropuertos, y son una buena opción para alargar tu viaje uno o dos días.
+Si quieres alargarlo, Verona y Venecia quedan de camino a los aeropuertos, y son una buena opción para sumar uno o dos días. Y si te quedas con ganas de más Italia, puedes seguir por el [sur de Italia](/destinos/sur-italia) o con nuestra guía de [Roma en 5 días](/blog/roma-en-5-dias).
 
-Si te apetece hacer esta ruta pero no quieres pelearte con reservas, gestiones y horarios, **estamos aquí para ayudarte**. [Escríbenos](/contacto) y organizamos juntos tu viaje a las Dolomitas a tu medida.
+### ¿Quieres este viaje, pero mejorado?
+
+Si te apetece hacer esta ruta pero no quieres pelearte con reservas, gestiones y horarios, diseñamos tu viaje a las Dolomitas desde cero y nos encargamos de reservar vuelos, alojamientos, transporte y actividades. Además, te pasamos recomendaciones y una app para llevar todo en el móvil.
+
+[Reserva aquí tu videollamada gratuita de diagnóstico](/contacto)
