@@ -7,7 +7,7 @@ argument-hint: <keyword> [notes / anecdotes]
 
 Write a new travel guide for the Kilómetros por Explorar blog. Input: $ARGUMENTS — a primary keyword, plus whatever notes, anecdotes, prices or photos Lucas & Lucía supply.
 
-The audience is independent travellers who want deep, practical, honest guides based on real experience. The article exists to rank in search and to turn readers into clients of the personalized trip-planning service, without sounding like a sales pitch.
+The audience is independent travellers who want deep, practical, honest guides based on real experience. The article exists to rank in search and to turn readers into clients of the service — a bespoke trip we design from scratch and book for them (flights, stays, transport, activities), never a catalogue package — without sounding like a sales pitch. Copy says we book it ("nos encargamos de reservar"); it never stresses that we pay.
 
 ## Workflow
 
@@ -20,7 +20,8 @@ The audience is independent travellers who want deep, practical, honest guides b
 - **Primary keyword**, 3-5 secondary keywords (variations) and LSI terms.
 - **Search intent** (informational, navigational or commercial) and how the article resolves it.
 - **Slug**: short, contains the primary keyword, no stop words (de, la, el, en, para, un, una). Check it does not collide with an existing file in `frontend/src/content/blog/`.
-- **FAQs**: 5-8 real questions ("¿Cómo...?", "¿Cuánto...?", "¿Dónde...?").
+- **FAQs**: 5-8 real questions ("¿Cómo...?", "¿Cuánto...?", "¿Dónde...?") that people actually search; stop at 5 rather than pad. None may repeat a question already used as an H2 — FAQs cover the side questions the body does not.
+- **Season**: summer, winter or all year (see section 4).
 - **Outline**: every H2/H3 with 2-3 bullets on what that section must cover. Mark which sections need a personal anecdote you do not have yet.
 
 Heading rules:
@@ -31,11 +32,11 @@ Heading rules:
 
 ## 2. Voice
 
-Write as Lucas and/or Lucía: first person singular or plural, close, like talking to a travelling friend, honest and practical. Passion without tourist hype; say the uncomfortable truth about safety, money and tourist traps, including your own mistakes ("Nosotros caímos en la trampa de...").
+Write as Lucas and Lucía: always first person plural ("nosotros"), never singular, close, like talking to a travelling friend, honest and practical. Passion without tourist hype; say the uncomfortable truth about safety, money and tourist traps, including your own mistakes ("Nosotros caímos en la trampa de...") — only mistakes that appear in the user's notes.
 
 - **Personal anecdotes come only from the notes the user gave you.** Never invent a trip, a meal, a mishap or an opinion attributed to Lucas or Lucía. If a section needs one and there is none, leave a `[TK]` marker for it.
-- **Personal tics are scarce.** Expressions like "En mi experiencia", "Admito que", "Truco pro", "La verdad es que" are used sparingly, and **no single one more than once** per article.
-- **Opening hook**: never start by summarising the article. Open with a provocative question, a figure, a contrast ("A primera vista parece... pero...") or a confession.
+- **Personal tics are scarce.** Expressions like "En nuestra experiencia", "Admitimos que", "Truco pro", "La verdad es que" are used sparingly, and **no single one more than once** per article.
+- **Opening hook**: never start by summarising the article. Open with a provocative question, a figure, a contrast ("A primera vista parece... pero...") or a confession (only one taken from the user's notes).
 - **No emojis** in the body. Dense in value, not in words.
 
 ## 3. Banned words
@@ -56,11 +57,14 @@ Readers plan real trips with this. Prefer being vaguer to being wrong.
 
 - **Do not invent specificity**: no exact timetables, cent-level prices or specific bus/metro lines unless the user supplied them or you verified them on an official source.
 - Use ranges and hedged language: "22-26€", "alrededor de las 09:00", "aproximadamente".
-- **Mandatory warning**: if the article contains prices, timetables or transport, include this block exactly once, where it reads naturally:
+- **Mandatory warning**: if the article contains prices, timetables or transport, include this alert exactly once, where it reads naturally. It does not count towards the 1-2 alerts of section 6, but it must not sit next to one of them:
 
   ```markdown
-  > **⚠️ Nota importante:** Los precios, horarios y normativas pueden cambiar. Verifica siempre en webs oficiales antes de tu viaje.
+  > [!WARNING/Nota importante]
+  > Los precios, horarios y normativas pueden cambiar. Verifica siempre en webs oficiales antes de tu viaje.
   ```
+
+- **Seasonal coherence**: state in the plan whether the article is for summer, winter or all year. If it is for one season, nothing in it may be impossible then (roads closed by snow, attractions shut for the season).
 
 ## 5. Formatting and readability
 
@@ -73,13 +77,13 @@ Readers plan real trips with this. Prefer being vaguer to being wrong.
 
 ## 6. Alerts
 
-**1 or 2 alerts** per article, never consecutive, each placed right after a dense section. Syntax (`remark-github-blockquote-alert` with a custom title; type is one of NOTE, TIP, IMPORTANT, WARNING, CAUTION):
+**1 or 2 alerts** per article (not counting the mandatory warning of section 4), never consecutive, each placed right after a dense section. Syntax (`remark-github-blockquote-alert` with a custom title; type is one of NOTE, TIP, IMPORTANT, WARNING, CAUTION):
 
 ```markdown
 > [!WARNING/¿No consigues entradas para el Reichstag?]
 > First paragraph: a real, honest problem with the destination (limited availability, complicated logistics...).
 >
-> Second paragraph: how our trip-planning service solves exactly that, conversational — never a hard sell or a price.
+> Second paragraph: how our service solves exactly that — usually because we design the route and handle the bookings — conversational, never a hard sell or a price.
 ```
 
 ## 7. Closing
@@ -88,7 +92,7 @@ The article ends with this structure, with no "Para terminar" style summary:
 
 1. A closing H2 section of 1-2 paragraphs: a personal, pragmatic or motivational reflection that connects with the reader.
 2. A CTA subheading: `### ¿Quieres este viaje, pero mejorado?` or a close variant.
-3. A short pitch for the service: route design, recommendations, the mobile app.
+3. A short pitch for the service: a route designed from scratch, every booking handled by us (flights, stays, transport, activities), recommendations and the mobile app.
 4. The final line, exactly: `[Reserva aquí tu videollamada gratuita de diagnóstico](/contacto)`
 
 ## 8. Frontmatter
@@ -107,6 +111,6 @@ The article ends with this structure, with no "Para terminar" style summary:
 
 1. Grep the new file (case-insensitive) for every banned word in section 3 and fix any hit.
 2. List every remaining `[TK: ...]` for the user. The build does not catch them, so the post must not be published until each one is resolved.
-3. Re-check the countable rules: paragraph length, internal links ≥ 3 and resolving, alerts 1-2, the warning block present if there are prices/times/transport, closing ends with the exact CTA link.
+3. Re-check the countable rules: paragraph length, internal links ≥ 3 and resolving, alerts 1-2 and none adjacent, the warning alert present if there are prices/times/transport, closing ends with the exact CTA link.
 4. Run `pnpm build`. If it fails only because the cover image is missing, say so; any other failure must be fixed.
-5. Hand the article path and the user's notes to the `blog-reviewer` agent. Fix every finding it reports, except ones you disagree with — list those for the user with your reason. Run it once only; do not loop.
+5. Hand the article path, the user's notes and the season from the plan to the `blog-reviewer` agent. Fix every finding it reports, except ones you disagree with — list those for the user with your reason. Run it once only; do not loop.

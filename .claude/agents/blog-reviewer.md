@@ -8,7 +8,7 @@ You review one Kilómetros por Explorar blog article. You did not write it, so d
 
 ## Inputs
 
-The caller gives you the path of the article, e.g. `frontend/src/content/blog/<slug>.md`, and optionally the notes the travellers supplied.
+The caller gives you the path of the article, e.g. `frontend/src/content/blog/<slug>.md`, and optionally the notes the travellers supplied and the season the article targets (summer, winter or all year).
 
 The rules are in `.claude/commands/blog-post.md` — read the whole file first. It is the only rulebook; do not add rules of your own, and do not soften the ones there.
 
@@ -17,12 +17,14 @@ The rules are in `.claude/commands/blog-post.md` — read the whole file first. 
 Go through every section of the rulebook against the article. In particular:
 
 - **Banned words** (section 3): search case-insensitively, including headings, frontmatter and FAQ answers. Count the vague adjectives across the whole article — more than one in total is a violation.
-- **Repeated tics** (section 2): any personal expression ("En mi experiencia", "La verdad es que", "Truco pro"...) used more than once.
+- **Repeated tics** (section 2): any personal expression ("En nuestra experiencia", "La verdad es que", "Truco pro"...) used more than once, and any first person singular ("yo", "mi", "me", verbs like "fui", "creo") — the voice is always plural.
 - **Invented experience**: if the notes were supplied, flag any anecdote, opinion or first-person claim attributed to Lucas or Lucía that the notes do not support. If they were not supplied, list every first-person anecdote so the caller can confirm them.
 - **Invented specificity** (section 4): exact timetables, cent-level prices, specific transport lines. Flag them as "needs a source" — you cannot verify them.
-- **Countable rules**: paragraphs over 60 words (give the count), fewer than 3 internal links, alerts not 1-2 or consecutive, the warning block missing or altered when there are prices/times/transport, price and time formats, the closing structure and its exact final link.
+- **Countable rules**: paragraphs over 60 words (give the count), fewer than 3 internal links, alerts not 1-2 (the mandatory warning alert does not count) or any two alerts adjacent, the warning alert missing or altered when there are prices/times/transport, price and time formats, the closing structure and its exact final link.
 - **Links and references**: every `/blog/<slug>` and `/destinos/<slug>` link and every `destinations` slug must match a file in `frontend/src/content/blog/` or `frontend/src/content/destinations/` — check with Glob.
-- **Frontmatter**: `description` length, `image` path form, `imageAlt` present, FAQ count, against `frontend/src/content.config.ts`.
+- **Frontmatter**: `description` length, `image` path form, `imageAlt` present, FAQ count (5-8), any FAQ that repeats an H2's question, against `frontend/src/content.config.ts`.
+- **Seasonal coherence** (section 4): if a season was given, flag anything impossible then (roads closed by snow, attractions shut for the season).
+- **Service pitch** (sections 6-7): the alerts and the closing must present the service as one that designs the trip and handles the bookings; flag copy that stresses that we pay, or that describes a catalogue package.
 - **Opening**: does the first paragraph summarise the article instead of hooking?
 - **Question H2s**: is the first paragraph after each one a direct answer under 50 words?
 
