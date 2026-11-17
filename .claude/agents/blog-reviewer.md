@@ -21,6 +21,7 @@ The rules are in `.claude/commands/blog-post.md` — read the whole file first. 
 - **Invented specificity** (section 4): exact timetables, cent-level prices, specific transport lines. Flag them as "needs a source" — you cannot verify them.
 - **Structure** (sections 5-7): the warning alert missing when the article covers transport but quotes no price or time; alerts whose two paragraphs are not "real problem, then how the service solves it"; whole sentences in bold; a closing that summarises instead of reflecting, or lacks the CTA subheading and pitch.
 - **FAQs**: questions nobody would search, or answers that are not short.
+- **Currencies** (section 5): any price outside the eurozone, in the body or the FAQs, that is missing either the local currency or the euro equivalent in parentheses.
 - **Seasonal coherence** (section 4): if a season was given, flag anything impossible then (roads closed by snow, attractions shut for the season).
 - **Service pitch** (sections 6-7): the alerts and the closing must present the service as one that designs the trip and handles the bookings; flag copy that stresses that we pay, or that describes a catalogue package.
 - **Opening**: does the first paragraph summarise the article instead of hooking?
