@@ -2,7 +2,7 @@
 
 ## Project
 
-**Kilómetros por Explorar** — a Spanish-language static marketing/content site for a personalized travel-itinerary service (run by Lucas & Lucía). It does not sell packages; it guides independent travelers and publishes SEO travel guides. All UI copy and content is in Spanish.
+**Kilómetros por Explorar** — a Spanish-language static marketing/content site for a personalized travel-itinerary service (run by Lucas & Lucía). Like an agency, it books and pays for every service (flights, stays, transport, activities) on the traveller's behalf, but it never sells catalogue packages — every trip is planned bespoke. Copy says _we book it_ ("nos encargamos de reservar"); it doesn't stress that we pay, since customers already expect that from an agency. It also publishes SEO travel guides. All UI copy and content is in Spanish.
 
 ## Commands
 

@@ -32,9 +32,10 @@ export const GET: APIRoute = async () => {
     '',
     'Kilómetros por Explorar es un servicio español de planificación de ' +
       'viajes personalizados (con sede en Madrid) que diseña itinerarios a ' +
-      'medida según los intereses y el presupuesto de cada viajero. No somos ' +
-      'una agencia de viajes: planificamos tu ruta y te damos las ' +
-      'recomendaciones, pero las reservas las haces tú directamente. Además ' +
+      'medida según los intereses y el presupuesto de cada viajero. Funciona ' +
+      'como una agencia de viajes —nos encargamos de reservar vuelos, ' +
+      'alojamientos, transportes y actividades—, pero sin paquetes ' +
+      'cerrados: cada viaje se planifica desde cero y a medida. Además ' +
       'del servicio de planificación, publicamos guías de viaje detalladas ' +
       '—presupuestos reales, rutas día a día y consejos prácticos— escritas a ' +
       'partir de experiencia propia.',

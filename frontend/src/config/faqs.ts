@@ -6,17 +6,17 @@ export const HOME_FAQS: FAQItem[] = [
   {
     question: '¿Sois una agencia de viajes?',
     answer:
-      'No, no somos una agencia de viajes. Somos planificadores de viajes personalizados. Diseñamos tu itinerario a medida, optimizamos rutas y buscamos alojamientos, actividades y recomendaciones, pero las reservas las haces tú directamente con los enlaces que te facilitamos. Esto te da total transparencia, flexibilidad y control, sin paquetes cerrados ni comisiones ocultas.',
+      'Sí, pero no una agencia tradicional. Como cualquier agencia, nos encargamos de reservar los vuelos, alojamientos, transportes y actividades, así que no tienes que gestionar ninguna reserva por tu cuenta. Lo que no hacemos es vender paquetes de catálogo: cada viaje lo diseñamos desde cero y a tu medida, con un itinerario día a día, rutas optimizadas y recomendaciones basadas en nuestra propia experiencia.',
   },
   {
     question: '¿Qué incluye exactamente vuestro servicio?',
     answer:
-      'Nuestro servicio incluye la planificación completa de tu viaje, totalmente personalizada según tus gustos, presupuesto y estilo de viaje. Diseñamos un itinerario detallado día por día, optimizamos rutas y transporte, seleccionamos actividades y recomendaciones, y te damos acceso a una app de viaje con mapas digitales, lugares marcados, horarios, distancias y toda la información organizada para que puedas seguirla fácilmente desde tu móvil. También podemos buscar alojamientos y vuelos si lo necesitas.',
+      'Nuestro servicio incluye la planificación completa de tu viaje, totalmente personalizada según tus gustos, presupuesto y estilo de viaje. Diseñamos un itinerario detallado día por día, optimizamos rutas y transporte, seleccionamos actividades y recomendaciones, y te damos acceso a una app de viaje con mapas digitales, lugares marcados, horarios, distancias y toda la información organizada para que puedas seguirla fácilmente desde tu móvil. Además, nos encargamos de reservar vuelos, alojamientos, transportes y actividades, para que no tengas que gestionar nada por tu cuenta.',
   },
   {
     question: '¿Cómo funciona el proceso de planificación?',
     answer:
-      'Es muy sencillo. Primero, nos cuentas tu idea de viaje a través de un breve formulario. Con esa información, diseñamos una propuesta inicial y, una vez confirmada, empezamos a crear tu itinerario personalizado. Cuando está listo, te lo entregamos en una app de viaje con mapas digitales, rutas, recomendaciones y toda la información organizada día por día. Si lo necesitas, también hacemos los ajustes o revisiones incluidos en tu paquete hasta dejar el viaje perfecto.',
+      'Es muy sencillo. Primero, nos cuentas tu idea de viaje a través de un breve formulario. Con esa información, diseñamos una propuesta inicial y, una vez confirmada, reservamos todos los servicios y creamos tu itinerario personalizado. Cuando está listo, te lo entregamos en una app de viaje con mapas digitales, rutas, recomendaciones y toda la información organizada día por día. Si lo necesitas, también hacemos los ajustes o revisiones incluidos en tu paquete hasta dejar el viaje perfecto.',
   },
   {
     question: '¿Trabajáis con cualquier destino?',
