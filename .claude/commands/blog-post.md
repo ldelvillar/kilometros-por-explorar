@@ -109,7 +109,7 @@ The article ends with this structure, with no "Para terminar" style summary:
 
 ## Verify before reporting
 
-1. Run `pnpm build`. Besides the schema, it runs `frontend/src/utils/assertBlogRules.ts`, which enforces the countable rules on every post dated (or `updatedDate`d) from 2026-10-26: banned words and vague adjectives, `[TK]` markers, emojis, manual ToC, paragraph and direct-answer length, "Qué ver" lists, price and time formats, internal links (≥ 3 and resolving), alerts, the warning alert, the final CTA line, `description` length, FAQ count, FAQs repeating an H2 and the `image` path. Fix every error it reports; if the build fails only because the cover image is missing, say so.
+1. Run `pnpm build`. Besides the schema, it runs `frontend/src/utils/assertBlogRules.ts`, which enforces the countable rules on every post: banned words and vague adjectives, `[TK]` markers, emojis, manual ToC, paragraph and direct-answer length, "Qué ver" lists, price and time formats, internal links (≥ 3 and resolving), alerts, the warning alert, the final CTA line, `description` length, FAQ count, FAQs repeating an H2 and the `image` path. Fix every error it reports; if the build fails only because the cover image is missing, say so.
 2. A `[TK: ...]` marker fails the build on purpose. If the user still owes an answer, list every marker for them and report the build as blocked on those alone.
 3. Transport mentions without a price or time are not detected: if the article covers transport, check the warning alert is there.
 4. Hand the article path, the user's notes and the season from the plan to the `blog-reviewer` agent. Fix every finding it reports, except ones you disagree with — list those for the user with your reason. Run it once only; do not loop.

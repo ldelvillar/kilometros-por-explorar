@@ -4,10 +4,6 @@ import path from 'node:path';
 const BLOG_DIR = 'src/content/blog';
 const DESTINATIONS_DIR = 'src/content/destinations';
 
-// Posts written or refreshed before the rulebook existed are exempt from the
-// house rules; only their internal links are checked.
-const RULES_SINCE = '2026-10-26';
-
 // Keep in sync with section 3 of .claude/commands/blog-post.md.
 const BANNED = [
   'joyas? escondidas?',
@@ -128,11 +124,6 @@ const checkPost = (
     if (!slugs.has(target))
       error(lineOf(match.index), `enlace roto a /${section}/${target}`);
   }
-
-  const date =
-    readField(frontmatter, 'updatedDate')[0] ??
-    readField(frontmatter, 'date')[0];
-  if (!date || date < RULES_SINCE) return errors;
 
   // Words: the whole file, frontmatter and FAQs included.
   const fullText = lines.join('\n');
