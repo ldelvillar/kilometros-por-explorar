@@ -2,19 +2,21 @@
 title: 'Qué ver en Roma en cinco días'
 description: 'Guía completa sobre los mejores sitios que visitar en Roma durante 5 días: desde el Coliseo y el Vaticano hasta el Trastevere y la dolce vita romana.'
 date: 2025-07-12
-updatedDate: 2026-08-21
+updatedDate: 2026-11-17
 image: '../../assets/images/blog/roma-en-5-dias/cover.webp'
 imageAlt: 'Fontana di Trevi en Roma con sus esculturas de mármol y el agua cayendo entre las rocas'
 destinations: ['roma']
 faqs:
   - question: '¿Es recomendable visitar Coliseo, Foro y Palatino el mismo día?'
-    answer: 'Sí, de hecho la entrada estándar es <strong>combinada para los tres sitios</strong>. Es una visita intensa de unas 3-4 horas. Nuestro consejo: empieza por el <strong>Foro Romano y el Palatino</strong> a primera hora (8:30-9:00 AM) cuando hay menos gente y deja el <strong>Coliseo</strong> para tu hora de entrada reservada. Lleva calzado muy cómodo.'
+    answer: 'Sí, la entrada estándar es <strong>combinada para los tres sitios</strong>. Es una visita intensa de unas 3-4 horas. Nuestro consejo: empieza por el <strong>Foro Romano y el Palatino</strong> a primera hora (08:30-09:00) cuando hay menos gente y deja el <strong>Coliseo</strong> para tu hora de entrada reservada. Lleva calzado muy cómodo.'
   - question: '¿Es obligatorio visitar el Vaticano?'
-    answer: 'Si aprecias el arte y la historia, sí. Los <strong>Museos Vaticanos</strong> (con la Capilla Sixtina) son impresionantes. Eso sí, las colas son legendarias: es <strong>absolutamente obligatorio reservar online</strong> con semanas de antelación. La entrada a la Basílica de San Pedro es gratuita, pero requiere pasar un control de seguridad que suele tener mucha espera.'
+    answer: 'Si aprecias el arte y la historia, sí. Los <strong>Museos Vaticanos</strong> (con la Capilla Sixtina) son impresionantes. Eso sí, las colas son legendarias: es <strong>absolutamente obligatorio reservar online</strong> con antelación. La entrada a la Basílica de San Pedro es gratuita, pero requiere pasar un control de seguridad que suele tener mucha espera.'
   - question: '¿Cuál es el mejor barrio para cenar en Roma?'
     answer: 'El barrio más encantador y animado es el <strong>Trastevere</strong>, lleno de callejones empedrados y trattorias. Si buscas una experiencia más auténtica y menos turística ("donde comen los romanos"), ve al barrio de <strong>Testaccio</strong>. Regla de oro: evita los restaurantes situados justo en las plazas principales (Navona, Panteón), suelen ser trampas para turistas.'
   - question: '¿Merece la pena contratar visitas guiadas?'
     answer: 'Para el centro histórico (fuentes y plazas) no es necesario. Sin embargo, para el <strong>Foro Romano</strong> recomendamos encarecidamente una visita guiada o una buena audioguía, ya que son ruinas complejas y sin contexto solo verás "piedras". Para el Vaticano, un guía también ayuda a navegar la inmensidad del museo sin perderte lo importante.'
+  - question: '¿Hay que pagar para ver la Fontana di Trevi y entrar al Panteón?'
+    answer: 'Sí, en los dos casos. Desde febrero de 2026, los visitantes no residentes pagan <strong>2€</strong> para acceder a la zona junto a la <strong>Fontana di Trevi</strong>, aunque verla desde la plaza sigue siendo gratis. El <strong>Panteón</strong> cuesta <strong>7€</strong> desde julio de 2026, con tarifa reducida de 2€ para jóvenes de 18 a 25 años. Confirma ambos precios en las webs oficiales antes de ir.'
 ---
 
 ¿De verdad la capital de Italia se puede conocer bien a pie, o es solo un caos de tráfico y turistas visitando ruinas a contrarreloj? A primera vista parece inabarcable, pero hemos comprobado que intentar tachar todas las plazas y barrios de la lista en apenas un fin de semana es el camino más rápido hacia el agotamiento.
@@ -41,14 +43,14 @@ La Antigua Roma no perdona a quienes improvisan. Iniciar la ruta explorando el *
 
 Nosotros recomendamos asegurar el horario de apertura más temprano para evitar las franjas centrales del día. Caminar por las amplias explanadas del Foro significa avanzar bajo el sol en un entorno arqueológico desprovisto de sombras.
 
-> [!WARNING/Nota importante]
-> Las entradas al Coliseo y los Museos Vaticanos se agotan en minutos debido a la reventa masiva y cambian de plataforma constantemente, lo que frustra a muchos viajeros independientes.
+> [!WARNING/¿No consigues entradas para el Coliseo?]
+> El Coliseo pone sus entradas a la venta con unos 30 días de antelación y exige elegir una franja horaria al comprar. En fechas de mucha demanda, las franjas más cotizadas pueden agotarse, y los Museos Vaticanos piden reservar con antelación.
 >
-> Nosotros monitorizamos directamente estas plataformas oficiales para cuadrar tu itinerario perfecto sin que pagues sobrecostes o te quedes sin entrar. Te diseñamos la ruta paso a paso adaptada a tu ritmo.
+> Nosotros diseñamos la ruta a tu medida y nos encargamos de reservar cada entrada, para que el orden de los días encaje con tus horarios.
 
 Dejando atrás la historia antigua, el trayecto continúa dando un pequeño paseo hacia la cercana **Piazza Venezia**. Allí, el **Monumento a Víctor Manuel II** (el Vittoriano) acapara toda la atención con su inmensa fachada de mármol blanco.
 
-Más allá de observarlo desde la base, sugerimos subir directamente a su terraza superior. Este balcón cuenta con un mirador espectacular que regala la altura perfecta para asimilar visualmente el trazado romano que acabas de recorrer.
+Más allá de observarlo desde la base, sugerimos subir directamente a su terraza superior. Este balcón funciona como mirador y regala la altura perfecta para asimilar visualmente el trazado romano que acabas de recorrer.
 
 Cuando llegue el cansancio de la tarde, anímate a buscar el **barrio de Monti**. A pesar de ubicarse en pleno centro, este distrito histórico funciona a un ritmo mucho más local. Perderse por sus calles empedradas facilita encontrar trattorias donde disfrutar de una cena auténtica.
 
@@ -58,27 +60,32 @@ Cuando llegue el cansancio de la tarde, anímate a buscar el **barrio de Monti**
 
 Si hay un lugar en Roma que requiere madrugar, es la **Fontana di Trevi**. Esta monumental fuente es una de las más impresionantes del mundo. Te recomendamos visitarla justo después de desayunar para poder apreciar sus detalles sin tener que esquivar a multitud de turistas.
 
+Desde febrero de 2026, los visitantes no residentes pagan **2€** para acceder a la zona junto a la fuente. Verla desde la plaza sigue siendo gratis.
+
 No olvides cumplir con la tradición: lanzar una moneda con la mano derecha sobre el hombro izquierdo para asegurar tu regreso a Roma. Con la plaza relativamente vacía de mañana, el sonido del agua cayendo es una experiencia casi hipnótica.
 
 ### El Panteón de Agripa y un buen café italiano
 
-Tu siguiente parada, a solo diez minutos a pie, es el **Panteón de Agripa**, el edificio mejor conservado de la Antigua Roma. Ten en cuenta que ahora requiere entrada de pago para acceder a su interior (5€ actualmente, aunque puede variar). Es muy recomendable reservar online tu acceso.
+Tu siguiente parada, a solo diez minutos a pie, es el **Panteón de Agripa**, uno de los edificios mejor conservados de la Antigua Roma. Ten en cuenta que requiere entrada de pago para acceder a su interior: **7€** desde julio de 2026 (2€ para jóvenes de 18 a 25 años). Es muy recomendable reservar online tu acceso.
 
-- [Ver ubicación en Google Maps](https://goo.gl/maps)
+- [Ver ubicación en el mapa](https://www.google.com/maps/search/?api=1&query=Pantheon+Roma)
 
 Cerca del Panteón se encuentran algunas de las cafeterías más históricas de la ciudad. Es el momento perfecto para hacer una pausa, pedir un auténtico _espresso_ o _cappuccino_ italiano en la barra y observar el ritmo de vida romano.
 
 ### Piazza Navona y el ambiente de Campo de' Fiori
 
-Continúa caminando hacia la espectacular **Piazza Navona**, famosa por su forma alargada al ser un antiguo estadio romano. Aquí debes detenerte a admirar la impresionante **Fuente de los Cuatro Ríos**, obra maestra del escultor Bernini. Roma no es siempre uno de los [destinos europeos más económicos](/blog/destinos-europeos-mas-economicos), pero disfrutar de sus calles no cuesta nada.
+Continúa caminando hacia la **Piazza Navona**, famosa por su forma alargada al ser un antiguo estadio romano. Aquí debes detenerte a admirar la impresionante **Fuente de los Cuatro Ríos**, obra maestra del escultor Bernini. Roma no es siempre uno de los [destinos europeos más económicos](/blog/destinos-europeos-mas-economicos), pero disfrutar de sus calles no cuesta nada.
 
 Termina la mañana perdiéndote por las calles hasta llegar a **Campo de' Fiori**. Esta plaza alberga un mercado diario muy pintoresco. Es una zona ideal para almorzar un trozo de pizza al corte o disfrutar de un exquisito _gelato_ artesanal mientras sigues paseando.
+
+> [!WARNING/Nota importante]
+> Los precios, horarios y normativas pueden cambiar. Verifica siempre en webs oficiales antes de tu viaje.
 
 ## Día 3: El Vaticano y el ambiente del Trastevere
 
 ### Museos Vaticanos, Capilla Sixtina y Basílica de San Pedro
 
-Dedicarás tu tercera mañana a explorar la **Ciudad del Vaticano**. Advertencia crucial: planificar esta visita requiere comprar las entradas oficiales con meses de antelación. Si lo dejas para la última semana, te tocará pagar el triple en reventa.
+Dedicarás tu tercera mañana a explorar la **Ciudad del Vaticano**. Advertencia crucial: planificar esta visita requiere comprar las entradas oficiales con antelación. Si lo dejas para la última semana, te tocará pagar de más en reventa.
 
 Recorre los extensos pasillos de los **Museos Vaticanos** hasta llegar a la sobrecogedora **Capilla Sixtina**. Después, accede a la **Basílica de San Pedro**. Subir a su inmensa cúpula es casi obligatorio para obtener las mejores vistas panorámicas de la plaza y de toda Roma.
 
@@ -86,7 +93,7 @@ Recorre los extensos pasillos de los **Museos Vaticanos** hasta llegar a la sobr
 
 A primera hora de la tarde, desciende por la Vía de la Conciliación alejándote del Vaticano. Pronto te toparás con el majestuoso **Castillo de Sant'Angelo**. Antiguo mausoleo del emperador Adriano, hoy es un fantástico museo con mucha historia.
 
-No es estrictamente necesario entrar si vas ajustado de tiempo o presupuesto. Lo verdaderamente espectacular aquí es cruzar el puente de Sant'Angelo al atardecer. Las estatuas de los ángeles contrastando con el cielo anaranjado regalan una de las postales más icónicas.
+No es estrictamente necesario entrar si vas ajustado de tiempo o presupuesto. Lo que más vale la pena aquí es cruzar el puente de Sant'Angelo al atardecer. Las estatuas de los ángeles contrastando con el cielo anaranjado regalan una de las postales más icónicas.
 
 ### Tarde y cena en el famoso barrio del Trastevere
 
@@ -104,15 +111,15 @@ Desde allí, puedes caminar por la exclusiva Vía de los Condotti o descender po
 
 ### Piazza del Popolo y los jardines de Villa Borghese
 
-La **Piazza del Popolo** es espectacular, con su obelisco central y las famosas iglesias gemelas. Después de admirarla, sube a la terraza del **monte Pincio**, justo encima de la plaza. Es otro de los grandes miradores gratuitos que ofrece la ciudad de Roma.
+La **Piazza del Popolo** destaca por su obelisco central y las famosas iglesias gemelas. Después de admirarla, sube a la terraza del **monte Pincio**, justo encima de la plaza. Es otro de los grandes miradores gratuitos que ofrece la ciudad de Roma.
 
 Desde el Pincio, adéntrate en la **Villa Borghese**. Este inmenso parque en forma de corazón es el pulmón verde de la capital. La tarde de tu cuarto día está pensada para pasear a tu ritmo y bajar las revoluciones.
 
-### La espectacular Galería Borghese (opcional)
+### La Galería Borghese (opcional)
 
 Si eres un apasionado del arte, dentro del parque se esconde la **Galería Borghese**. Alberga una de las colecciones privadas más extraordinarias del mundo, con esculturas de Bernini que te dejarán sin palabras, como el "Apolo y Dafne".
 
-Pero atención: este museo es pequeño y estricto con los aforos. Las entradas se agotan con semanas de anticipación. Si quieres incluir esta visita en tu itinerario, la reserva online previa es absolutamente innegociable.
+Pero atención: este museo es pequeño y estricto con los aforos. Las entradas pueden agotarse con mucha anticipación. Si quieres incluir esta visita en tu itinerario, la reserva online previa es absolutamente innegociable.
 
 ## Día 5: El barrio judío, las catacumbas y la Vía Apia
 
@@ -126,7 +133,7 @@ Aquí la parada gastronómica es obligatoria. No puedes marcharte sin probar su 
 
 Toca alejarse del centro. Utiliza el transporte público para llegar a las catacumbas romanas. Las dos más impresionantes y accesibles son las de las **Catacumbas de San Calixto** o las de San Sebastián.
 
-Adentrarte bajo tierra por estos antiguos túneles funerarios de los primeros cristianos es una experiencia sobrecogedora y un contraste brutal con el arte renacentista de los días anteriores. Haz caso a las normas y no te separes de tu grupo; es un laberinto real.
+Adentrarte bajo tierra por estos antiguos túneles funerarios de los primeros cristianos es una experiencia sobrecogedora y un fuerte contraste con el arte renacentista de los días anteriores. Haz caso a las normas y no te separes de tu grupo; es un laberinto real.
 
 ### Desconexión caminando por la antigua Vía Apia
 
@@ -142,10 +149,16 @@ La mejor época para viajar a Roma es la primavera (abril a junio) o el otoño (
 
 Nuestro itinerario propuesto está diseñado para hacerse un 80% caminando sin agotarse innecesariamente. Sin embargo, para trayectos largos, el billete BIT de autobús o metro será tu mejor aliado, aunque advertimos precaución con los objetos personales en las rutas más turísticas como el bús 64.
 
+## Roma sin prisas
+
+Cinco días dan margen para detenerse frente a la arquitectura antigua sin mirar el reloj, y para dedicar un día entero a lugares alejados del ritmo frenético del centro.
+
+Lo que mejor funciona en Roma es combinar entradas reservadas con tramos a pie sin horario, y ser flexible con el orden de los días.
+
 ### ¿Quieres este viaje, pero mejorado?
 
 Sabemos que planificar cinco días de visitas calculadas en Roma puede volverse abrumador entre comprar accesos a tiempo y evitar comer pasta mediocre a precio de oro turístico. Organizar los horarios de las entradas requiere tiempo, paciencia y conocimiento de la ciudad sobre el terreno.
 
-Por eso en Kilómetros por Explorar diseñamos rutas personalizadas paso a paso. Te armamos el encaje perfecto de horarios, reservas sugeridas y lugares recomendados donde comen los romanos, todo unificado de forma sencilla en nuestra app móvil.
+Por eso en Kilómetros por Explorar diseñamos tu ruta desde cero y nos encargamos de reservar vuelos, alojamiento, transporte y actividades. Te sumamos recomendaciones de lugares donde comen los romanos, todo reunido de forma sencilla en nuestra app móvil.
 
 [Reserva aquí tu videollamada gratuita de diagnóstico](/contacto)
